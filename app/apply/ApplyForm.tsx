@@ -1,0 +1,504 @@
+'use client';
+
+import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowLeft, Send, CheckCircle, Phone, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { toast } from "@/hooks/use-toast";
+import { sendNotification } from "@/services/notificationService";
+
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  strategy: string;
+  purchasePrice: string;
+  arv: string;
+  rehabAmount: string;
+  location: string;
+  dealOverview: string;
+}
+
+const ApplyForm = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    phone: "",
+    strategy: "",
+    purchasePrice: "",
+    arv: "",
+    rehabAmount: "",
+    location: "",
+    dealOverview: "",
+  });
+  const [errors, setErrors] = useState<Partial<FormData>>({});
+
+  const [suggestions, setSuggestions] = useState<string[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const addressWrapperRef = useRef<HTMLDivElement>(null);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (addressWrapperRef.current && !addressWrapperRef.current.contains(event.target as Node)) {
+        setShowSuggestions(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const formatPhone = (value: string): string => {
+    const numbers = value.replace(/\D/g, "");
+    const char: { [key: number]: string } = { 0: "(", 3: ") ", 6: "-" };
+    let formatted = "";
+    for (let i = 0; i < numbers.length && i < 10; i++) {
+      formatted += (char[i] || "") + numbers[i];
+    }
+    return formatted;
+  };
+
+  const formatCurrency = (value: string): string => {
+    const raw = value.replace(/\D/g, "");
+    if (raw) {
+      return Number(raw).toLocaleString("en-US");
+    }
+    return "";
+  };
+
+  const handleChange = (name: string, value: string) => {
+    let formattedValue = value;
+
+    if (name === "phone") {
+      formattedValue = formatPhone(value);
+    }
+
+    if (["purchasePrice", "arv", "rehabAmount"].includes(name)) {
+      formattedValue = formatCurrency(value);
+    }
+
+    if (name === "location") {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+
+      if (value.length > 2) {
+        debounceRef.current = setTimeout(async () => {
+          try {
+            const res = await fetch(
+              `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(value)}&countrycodes=us&limit=5&addressdetails=1`
+            );
+            if (res.ok) {
+              const data = await res.json();
+              setSuggestions(data.map((item: any) => item.display_name));
+              setShowSuggestions(true);
+            }
+          } catch (error) {
+            console.error("Address lookup failed", error);
+          }
+        }, 300);
+      } else {
+        setSuggestions([]);
+        setShowSuggestions(false);
+      }
+    }
+
+    setFormData((prev) => ({ ...prev, [name]: formattedValue }));
+    if (errors[name as keyof FormData]) {
+      setErrors((prev) => ({ ...prev, [name]: undefined }));
+    }
+  };
+
+  const handleSelectAddress = (address: string) => {
+    setFormData((prev) => ({ ...prev, location: address }));
+    setSuggestions([]);
+    setShowSuggestions(false);
+  };
+
+  const validate = (): boolean => {
+    const newErrors: Partial<FormData> = {};
+
+    if (!formData.name.trim() || formData.name.length < 2) {
+      newErrors.name = "Name is required";
+    }
+    if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Valid email is required";
+    }
+    if (!formData.phone.trim() || formData.phone.replace(/\D/g, "").length < 10) {
+      newErrors.phone = "Valid phone number is required";
+    }
+    if (!formData.strategy) {
+      newErrors.strategy = "Please select a strategy";
+    }
+    if (!formData.purchasePrice.trim()) {
+      newErrors.purchasePrice = "Purchase price is required";
+    }
+    if (!formData.location.trim() || formData.location.length < 2) {
+      newErrors.location = "Property location is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!validate()) {
+      toast({
+        title: "Please fix the errors",
+        description: "Some required fields are missing or invalid.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const success = await sendNotification("form", {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        program: formData.strategy,
+        loanAmount: formData.purchasePrice,
+        arv: formData.arv || "",
+        rehabAmount: formData.rehabAmount || "",
+        propertyAddress: formData.location,
+        message: formData.dealOverview || "",
+      });
+
+      if (success) {
+        setIsSubmitted(true);
+        toast({
+          title: "Application Submitted!",
+          description: "We'll review your deal and get back to you within 24 hours.",
+        });
+      } else {
+        toast({
+          title: "Submission Error",
+          description: "Please try again or email info@assetliftlending.com directly.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Submission Error",
+        description: "Please try again or email info@assetliftlending.com directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  if (isSubmitted) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center px-4">
+        <motion.div
+          className="text-center max-w-md"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+            className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/20 flex items-center justify-center"
+          >
+            <CheckCircle className="w-10 h-10 text-primary" />
+          </motion.div>
+          <h1 className="text-3xl font-bold mb-4">Application Received!</h1>
+          <p className="text-muted-foreground mb-8">
+            Thank you for submitting your deal. Our team will review your application and contact you within 24 hours.
+          </p>
+          <Button asChild>
+            <Link href="/">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Link>
+          </Button>
+        </motion.div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+        <div className="container px-4 md:px-6 h-16 flex items-center">
+          <Link href="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <ArrowLeft className="w-4 h-4" />
+            <span className="text-sm">Back</span>
+          </Link>
+        </div>
+      </header>
+
+      {/* Form content */}
+      <div className="container px-4 md:px-6 pt-32 pb-20">
+        <motion.div
+          className="max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {/* Header */}
+          <div className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="inline-block px-4 py-1 mb-4 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 rounded-full"
+            >
+              Immediate Soft-Quote
+            </motion.div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Apply for Funding</h1>
+            <p className="text-muted-foreground text-lg">
+              Tell us about your project. Our specialists review all inquiries within 60 minutes.
+            </p>
+            <div className="flex items-center justify-center gap-6 mt-6">
+              <a
+                href="tel:+19296392284"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                +1 929-639-2284
+              </a>
+              <a
+                href="mailto:info@assetliftlending.com"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                info@assetliftlending.com
+              </a>
+            </div>
+          </div>
+
+          {/* Form */}
+          <motion.form
+            onSubmit={onSubmit}
+            className="space-y-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            {/* Contact Info Section */}
+            <div className="bg-card border border-border rounded-xl p-6">
+              <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
+                <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">1</span>
+                Contact Information
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="name">Investor Full Name *</Label>
+                  <Input
+                    id="name"
+                    placeholder="John Smith"
+                    value={formData.name}
+                    onChange={(e) => handleChange("name", e.target.value)}
+                    className={`bg-background ${errors.name ? "border-destructive" : ""}`}
+                  />
+                  {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="email">Direct Email Address *</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="john@example.com"
+                    value={formData.email}
+                    onChange={(e) => handleChange("email", e.target.value)}
+                    className={`bg-background ${errors.email ? "border-destructive" : ""}`}
+                  />
+                  {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Primary Phone Number *</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="(555) 123-4567"
+                    value={formData.phone}
+                    onChange={(e) => handleChange("phone", e.target.value)}
+                    className={`bg-background ${errors.phone ? "border-destructive" : ""}`}
+                  />
+                  {errors.phone && <p className="text-sm text-destructive">{errors.phone}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="strategy">Investment Strategy *</Label>
+                  <Select
+                    value={formData.strategy}
+                    onValueChange={(value) => handleChange("strategy", value)}
+                  >
+                    <SelectTrigger className={`bg-background ${errors.strategy ? "border-destructive" : ""}`}>
+                      <SelectValue placeholder="Select strategy" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="fix-flip">Fix & Flip</SelectItem>
+                      <SelectItem value="ground-up">Ground-Up Construction</SelectItem>
+                      <SelectItem value="rental">Rental / DSCR</SelectItem>
+                      <SelectItem value="bridge">Bridge Loan</SelectItem>
+                      <SelectItem value="portfolio">Portfolio / Other</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  {errors.strategy && <p className="text-sm text-destructive">{errors.strategy}</p>}
+                </div>
+              </div>
+            </div>
+
+            {/* Deal Details Section */}
+            <div className="bg-card border border-border rounded-xl p-6">
+              <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
+                <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">2</span>
+                Deal Details
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6 mb-6">
+                <div className="space-y-2">
+                  <Label htmlFor="purchasePrice">Purchase Price / Refi *</Label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
+                    <Input
+                      id="purchasePrice"
+                      placeholder="500,000"
+                      value={formData.purchasePrice}
+                      onChange={(e) => handleChange("purchasePrice", e.target.value)}
+                      className={`pl-7 bg-background ${errors.purchasePrice ? "border-destructive" : ""}`}
+                      inputMode="numeric"
+                    />
+                  </div>
+                  {errors.purchasePrice && <p className="text-sm text-destructive">{errors.purchasePrice}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="arv">Projected ARV</Label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
+                    <Input
+                      id="arv"
+                      placeholder="750,000"
+                      value={formData.arv}
+                      onChange={(e) => handleChange("arv", e.target.value)}
+                      className="pl-7 bg-background"
+                      inputMode="numeric"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="rehabAmount">Rehab Amount</Label>
+                  <div className="relative">
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
+                    <Input
+                      id="rehabAmount"
+                      placeholder="100,000"
+                      value={formData.rehabAmount}
+                      onChange={(e) => handleChange("rehabAmount", e.target.value)}
+                      className="pl-7 bg-background"
+                      inputMode="numeric"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-2 relative" ref={addressWrapperRef}>
+                <Label htmlFor="location">Asset Location *</Label>
+                <Input
+                  id="location"
+                  placeholder="Start typing address, city, or state..."
+                  value={formData.location}
+                  onChange={(e) => handleChange("location", e.target.value)}
+                  autoComplete="off"
+                  className={`bg-background ${errors.location ? "border-destructive" : ""}`}
+                />
+                {errors.location && <p className="text-sm text-destructive">{errors.location}</p>}
+
+                {showSuggestions && suggestions.length > 0 && (
+                  <motion.ul
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="absolute z-50 left-0 right-0 mt-1 bg-popover border border-border rounded-lg shadow-lg max-h-60 overflow-y-auto"
+                  >
+                    {suggestions.map((addr, idx) => (
+                      <li
+                        key={idx}
+                        onMouseDown={(e) => {
+                          e.preventDefault();
+                          handleSelectAddress(addr);
+                        }}
+                        className="px-4 py-3 hover:bg-primary/10 cursor-pointer text-sm border-b border-border last:border-0 transition-colors"
+                      >
+                        {addr}
+                      </li>
+                    ))}
+                  </motion.ul>
+                )}
+              </div>
+            </div>
+
+            {/* Additional Info Section */}
+            <div className="bg-card border border-border rounded-xl p-6">
+              <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
+                <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">3</span>
+                Additional Information
+              </h3>
+              <div className="space-y-2">
+                <Label htmlFor="dealOverview">Deal Overview (Optional)</Label>
+                <Textarea
+                  id="dealOverview"
+                  placeholder="Tell us about your experience, timeline, current occupancy, exit strategy..."
+                  rows={4}
+                  value={formData.dealOverview}
+                  onChange={(e) => handleChange("dealOverview", e.target.value)}
+                  className="bg-background resize-none"
+                />
+              </div>
+            </div>
+
+            {/* Submit */}
+            <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
+              <Button
+                type="submit"
+                size="lg"
+                className="w-full text-lg py-7 glow-primary"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  "Processing..."
+                ) : (
+                  <>
+                    Submit Application
+                    <Send className="ml-2 w-5 h-5" />
+                  </>
+                )}
+              </Button>
+            </motion.div>
+
+            <p className="text-center text-sm text-muted-foreground">
+              By submitting, you agree to be contacted about your loan inquiry.
+            </p>
+          </motion.form>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default ApplyForm;
