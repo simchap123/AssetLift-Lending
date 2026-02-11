@@ -46,9 +46,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="text-foreground">Lift Your</span>
+            <span className="text-foreground">Close Faster</span>
             <br />
-            <span className="gradient-text">Deals Higher</span>
+            <span className="gradient-text">Scale Smarter</span>
           </motion.h1>
 
           {/* Subheadline */}
