@@ -6,9 +6,9 @@ interface LogoProps {
 const Logo = ({ className = "", size = 40 }: LogoProps) => {
   return (
     <img
-      src="/logo-new.jpg"
+      src="/logo.png"
       alt="Asset Lift Lending"
-      className={`rounded-lg ${className}`}
+      className={className}
       style={{
         height: size,
         width: 'auto',

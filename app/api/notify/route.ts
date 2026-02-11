@@ -1,14 +1,16 @@
 import nodemailer from 'nodemailer';
 import { NextRequest } from 'next/server';
 
+export const runtime = 'nodejs';
+
 export async function POST(req: NextRequest) {
   try {
     const { type, payload } = await req.json();
     const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
 
     if (!SMTP_USER || !SMTP_PASS) {
-      console.error("Missing SMTP credentials in environment variables.");
-      return Response.json({ error: 'Internal Server Error: SMTP credentials missing.' }, { status: 500 });
+      console.error("Missing SMTP credentials. SMTP_USER:", !!SMTP_USER, "SMTP_PASS:", !!SMTP_PASS);
+      return Response.json({ error: 'SMTP credentials missing. Check Vercel environment variables.' }, { status: 500 });
     }
 
     const transporter = nodemailer.createTransport({
@@ -20,6 +22,9 @@ export async function POST(req: NextRequest) {
         pass: SMTP_PASS,
       },
     });
+
+    // Verify SMTP connection before sending
+    await transporter.verify();
 
     const brokerSubject = type === 'form'
       ? `New Website Inquiry: ${payload.name || 'General'}`
@@ -89,7 +94,12 @@ export async function POST(req: NextRequest) {
 
     return Response.json({ success: true });
   } catch (error: any) {
-    console.error("Notification Error:", error);
-    return Response.json({ error: error.message || 'Internal Server Error' }, { status: 500 });
+    console.error("Notification Error:", error?.code, error?.message, error?.response);
+    const msg = error?.code === 'EAUTH'
+      ? 'SMTP authentication failed. Check SMTP_USER and SMTP_PASS (use a Gmail App Password, not your account password).'
+      : error?.code === 'ESOCKET' || error?.code === 'ECONNECTION'
+      ? 'Cannot connect to SMTP server. Check SMTP_HOST and SMTP_PORT.'
+      : error?.message || 'Internal Server Error';
+    return Response.json({ error: msg }, { status: 500 });
   }
 }
