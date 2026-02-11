@@ -34,7 +34,7 @@ If the user provides deal numbers (PP, Rehab, ARV), ALWAYS provide a "DEAL SUMMA
 export async function POST(req: NextRequest) {
   try {
     const { chatHistory } = await req.json();
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = process.env.GEMINI_API_KEY || process.env.API_KEY;
 
     if (!apiKey) {
       return Response.json({ error: 'Gemini API Key missing' }, { status: 500 });

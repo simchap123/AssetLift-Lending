@@ -107,7 +107,7 @@ export default function BlogPostLayout({ post, relatedPosts = [] }: BlogPostLayo
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">{section.heading}</h2>
                 <div className="text-muted-foreground leading-relaxed space-y-4">
                   {section.content.split('\n\n').map((paragraph, j) => (
-                    <p key={j}>{paragraph}</p>
+                    <p key={j} dangerouslySetInnerHTML={{ __html: paragraph }} />
                   ))}
                 </div>
               </motion.div>
