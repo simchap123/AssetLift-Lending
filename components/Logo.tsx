@@ -9,7 +9,7 @@ const Logo = ({ className = "", size = 40 }: LogoProps) => {
   return (
     <span className={className}>
       <img
-        src="/logo-light.jpg"
+        src="/logo.png"
         alt="Asset Lift Lending"
         className="dark:hidden"
         style={imgStyle}
