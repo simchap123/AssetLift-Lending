@@ -77,37 +77,6 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Company Details */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-6">Company Details</h2>
-            <div className="bg-card border border-border rounded-xl p-6 space-y-3">
-              <div className="flex justify-between py-2 border-b border-border">
-                <span className="text-muted-foreground">Company</span>
-                <span className="font-medium">AssetLift Lending</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-border">
-                <span className="text-muted-foreground">NMLS #</span>
-                <span className="font-medium">1324403</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-border">
-                <span className="text-muted-foreground">Type</span>
-                <span className="font-medium">Direct Private Lender</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-border">
-                <span className="text-muted-foreground">Coverage</span>
-                <span className="font-medium">46 U.S. States</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-border">
-                <span className="text-muted-foreground">Loan Range</span>
-                <span className="font-medium">$100K - $5MM+</span>
-              </div>
-              <div className="flex justify-between py-2">
-                <span className="text-muted-foreground">Headquarters</span>
-                <span className="font-medium">Greenville, SC</span>
-              </div>
-            </div>
-          </div>
-
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">Work With Us</h2>
