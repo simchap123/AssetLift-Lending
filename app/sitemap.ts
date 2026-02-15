@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { STATES } from '@/lib/data/states';
+import { CITIES } from '@/lib/data/cities';
 import { BLOG_POSTS } from '@/lib/data/blog-posts';
 import { COMPARISONS } from '@/lib/data/comparisons';
 
@@ -101,6 +102,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // City pages
+  const cityPages: MetadataRoute.Sitemap = CITIES.map((city) => ({
+    url: `${BASE_URL}/lending/${city.stateSlug}/${city.citySlug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   // Blog posts
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
@@ -117,5 +126,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...statePages, ...blogPages, ...comparisonPages];
+  return [...staticPages, ...statePages, ...cityPages, ...blogPages, ...comparisonPages];
 }
