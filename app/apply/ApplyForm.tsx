@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/select";
 import { toast } from "@/hooks/use-toast";
 import { sendNotification } from "@/services/notificationService";
+import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
 
 interface FormData {
   name: string;
@@ -182,6 +183,14 @@ const ApplyForm = () => {
       });
 
       if (success) {
+        // Fire Google Ads conversion
+        gtagReportConversion();
+        // Fire GA4 event for analytics
+        gtagEvent('generate_lead', {
+          currency: 'USD',
+          value: Number(formData.purchasePrice.replace(/\D/g, '')),
+        });
+
         setIsSubmitted(true);
         toast({
           title: "Application Submitted!",
