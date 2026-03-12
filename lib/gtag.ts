@@ -4,10 +4,11 @@ declare global {
   }
 }
 
-const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID?.trim();
+const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim();
 const CONVERSION_LABELS = [
-  process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL,       // Request quote
-  process.env.NEXT_PUBLIC_GOOGLE_ADS_SUBMIT_LEAD_FORM_LABEL, // Submit lead form
+  process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL?.trim(),       // Request quote
+  process.env.NEXT_PUBLIC_GOOGLE_ADS_SUBMIT_LEAD_FORM_LABEL?.trim(), // Submit lead form
 ].filter(Boolean) as string[];
 
 /**
@@ -35,4 +36,24 @@ export function gtagReportConversion(url?: string) {
 export function gtagEvent(action: string, params?: Record<string, unknown>) {
   if (typeof window === 'undefined' || !window.gtag) return;
   window.gtag('event', action, params);
+}
+
+/**
+ * Track a page view explicitly for Next.js App Router navigations.
+ */
+export function trackPageView(path: string) {
+  if (!GA_ID || typeof window === 'undefined' || !window.gtag) {
+    return false;
+  }
+
+  const pageLocation = new URL(path, window.location.origin).toString();
+
+  window.gtag('event', 'page_view', {
+    page_title: document.title,
+    page_path: path,
+    page_location: pageLocation,
+    send_to: GA_ID,
+  });
+
+  return true;
 }

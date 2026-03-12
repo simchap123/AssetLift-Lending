@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import AnalyticsPageTracker from "@/components/AnalyticsPageTracker";
 import ChatBot from "@/components/ChatBot";
 
 export const metadata: Metadata = {
@@ -93,6 +95,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-background antialiased">
         <Providers>
+          <Suspense fallback={null}>
+            <AnalyticsPageTracker />
+          </Suspense>
           {/* 3D Grid Background */}
           <div className="perspective-container" aria-hidden="true">
             <div className="grid-plane" />
