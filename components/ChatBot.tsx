@@ -188,7 +188,7 @@ const ChatBot = () => {
           <div className="flex items-center gap-3">
             {/* WhatsApp bubble */}
             <motion.a
-              href="https://wa.me/19296392284"
+              href="https://wa.me/19296392284?text=Hi%2C%20I%27m%20interested%20in%20getting%20financing%20for%20a%20real%20estate%20deal.%20Can%20you%20help%3F"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ scale: 0 }}
@@ -224,7 +224,7 @@ const ChatBot = () => {
       {/* WhatsApp bubble when chat is open */}
       {isOpen && (
         <motion.a
-          href="https://wa.me/19296392284"
+          href="https://wa.me/19296392284?text=Hi%2C%20I%27m%20interested%20in%20getting%20financing%20for%20a%20real%20estate%20deal.%20Can%20you%20help%3F"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ scale: 0 }}
