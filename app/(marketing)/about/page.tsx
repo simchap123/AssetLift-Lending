@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 export const metadata: Metadata = createMetadata({
   title: 'About AssetLift Lending | Direct Private Money Lender',
   description:
-    'AssetLift Lending is a direct private money lender providing fast, flexible real estate investment loans. NMLS #1324403. Nationwide lending in 46 states.',
+    'AssetLift Lending is a direct private money lender providing fast, flexible real estate investment loans. Nationwide lending in 46 states.',
   path: '/about',
 });
 

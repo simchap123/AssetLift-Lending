@@ -24,9 +24,12 @@ interface FormData {
   email: string;
   phone: string;
   strategy: string;
+  loanPurpose: string;
+  contactMethod: string;
   purchasePrice: string;
   arv: string;
   rehabAmount: string;
+  creditScore: string;
   location: string;
   dealOverview: string;
 }
@@ -39,9 +42,12 @@ const ApplyForm = () => {
     email: "",
     phone: "",
     strategy: "",
+    loanPurpose: "",
+    contactMethod: "",
     purchasePrice: "",
     arv: "",
     rehabAmount: "",
+    creditScore: "",
     location: "",
     dealOverview: "",
   });
@@ -144,6 +150,12 @@ const ApplyForm = () => {
     if (!formData.strategy) {
       newErrors.strategy = "Please select a strategy";
     }
+    if (!formData.loanPurpose) {
+      newErrors.loanPurpose = "Please select purchase or refinance";
+    }
+    if (!formData.contactMethod) {
+      newErrors.contactMethod = "Please select a contact method";
+    }
     if (!formData.purchasePrice.trim()) {
       newErrors.purchasePrice = "Purchase price is required";
     }
@@ -175,9 +187,12 @@ const ApplyForm = () => {
         email: formData.email,
         phone: formData.phone,
         program: formData.strategy,
+        loanPurpose: formData.loanPurpose,
+        contactMethod: formData.contactMethod,
         loanAmount: formData.purchasePrice,
         arv: formData.arv || "",
         rehabAmount: formData.rehabAmount || "",
+        creditScore: formData.creditScore || "",
         propertyAddress: formData.location,
         message: formData.dealOverview || "",
       });
@@ -370,6 +385,41 @@ const ApplyForm = () => {
                   </Select>
                   {errors.strategy && <p className="text-sm text-destructive">{errors.strategy}</p>}
                 </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="loanPurpose">Loan Purpose *</Label>
+                  <Select
+                    value={formData.loanPurpose}
+                    onValueChange={(value) => handleChange("loanPurpose", value)}
+                  >
+                    <SelectTrigger className={`bg-background ${errors.loanPurpose ? "border-destructive" : ""}`}>
+                      <SelectValue placeholder="Purchase or Refinance?" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="purchase">Purchase</SelectItem>
+                      <SelectItem value="refinance">Refinance</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  {errors.loanPurpose && <p className="text-sm text-destructive">{errors.loanPurpose}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="contactMethod">Preferred Contact Method *</Label>
+                  <Select
+                    value={formData.contactMethod}
+                    onValueChange={(value) => handleChange("contactMethod", value)}
+                  >
+                    <SelectTrigger className={`bg-background ${errors.contactMethod ? "border-destructive" : ""}`}>
+                      <SelectValue placeholder="How should we reach you?" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="phone">Phone Call</SelectItem>
+                      <SelectItem value="text">Text Message</SelectItem>
+                      <SelectItem value="email">Email</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  {errors.contactMethod && <p className="text-sm text-destructive">{errors.contactMethod}</p>}
+                </div>
               </div>
             </div>
 
@@ -379,7 +429,7 @@ const ApplyForm = () => {
                 <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">2</span>
                 Deal Details
               </h3>
-              <div className="grid md:grid-cols-3 gap-6 mb-6">
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="space-y-2">
                   <Label htmlFor="purchasePrice">Purchase Price / Refi *</Label>
                   <div className="relative">
@@ -424,6 +474,26 @@ const ApplyForm = () => {
                       inputMode="numeric"
                     />
                   </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="creditScore">Estimated Credit Score</Label>
+                  <Select
+                    value={formData.creditScore}
+                    onValueChange={(value) => handleChange("creditScore", value)}
+                  >
+                    <SelectTrigger className="bg-background">
+                      <SelectValue placeholder="Select range" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="760+">Excellent (760+)</SelectItem>
+                      <SelectItem value="720-759">Very Good (720–759)</SelectItem>
+                      <SelectItem value="680-719">Good (680–719)</SelectItem>
+                      <SelectItem value="640-679">Fair (640–679)</SelectItem>
+                      <SelectItem value="620-639">Below Average (620–639)</SelectItem>
+                      <SelectItem value="below-620">Poor (Below 620)</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
               </div>
 

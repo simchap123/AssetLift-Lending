@@ -37,9 +37,12 @@ export async function POST(req: NextRequest) {
         <p><strong>Email:</strong> ${payload.email || 'Not Provided'}</p>
         <p><strong>Phone:</strong> ${payload.phone || 'Not Provided'}</p>
         <p><strong>Program:</strong> ${payload.program || 'General Inquiry'}</p>
+        <p><strong>Loan Purpose:</strong> ${payload.loanPurpose || 'N/A'}</p>
+        <p><strong>Preferred Contact:</strong> ${payload.contactMethod || 'N/A'}</p>
         <p><strong>Purchase Price / Refi:</strong> $${payload.loanAmount || 'N/A'}</p>
         <p><strong>Projected ARV:</strong> $${payload.arv || 'N/A'}</p>
         <p><strong>Rehab Amount:</strong> $${payload.rehabAmount || 'N/A'}</p>
+        <p><strong>Est. Credit Score:</strong> ${payload.creditScore || 'N/A'}</p>
         <p><strong>Property:</strong> ${payload.propertyAddress || 'N/A'}</p>
         <p><strong>Message:</strong><br/>${payload.message || 'No message provided.'}</p>
         ${payload.analysis_result ? `
@@ -78,8 +81,7 @@ export async function POST(req: NextRequest) {
 
           <p style="font-size: 11px; color: #9ca3af; line-height: 1.5;">
             <strong>AssetLift Lending</strong><br/>
-            300 East McBee Ave., STE 200, Greenville, SC 29601<br/>
-            Direct Private Money Lender | NMLS #1324403
+            Direct Private Money Lender
           </p>
         </div>
       `;

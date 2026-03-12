@@ -20,10 +20,6 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
         answer: "AssetLift Lending is a direct private lender. This means we fund loans directly, giving us full control over underwriting, approvals, and timelines. No middlemen, no unnecessary delays."
       },
       {
-        question: "What is your NMLS number?",
-        answer: "Our NMLS number is 1324403. You can verify our license on the NMLS Consumer Access website."
-      },
-      {
         question: "Do you work with mortgage brokers?",
         answer: "Yes, we work with qualified mortgage brokers and loan officers. If you are a broker, contact us about our wholesale lending programs and competitive broker compensation."
       },

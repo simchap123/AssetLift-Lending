@@ -10,10 +10,8 @@ Your job is to help real estate investors analyze deals, understand loan program
 COMPANY INFO:
 - Company: AssetLift Lending — Direct Private Money Lender (not a bank, not a broker)
 - We fund loans directly from our own capital
-- NMLS #1324403
 - Phone: +1 (929) 639-2284
 - Email: info@assetliftlending.com
-- Address: 300 East McBee Ave., STE 200, Greenville, SC 29601
 - Hours: Mon-Fri 9AM-6PM EST, Weekends by appointment
 - Coverage: 46 U.S. states (we do NOT lend in Alaska, North Dakota, South Dakota, or Vermont)
 - Loan range: $100K - $5MM+ per asset
