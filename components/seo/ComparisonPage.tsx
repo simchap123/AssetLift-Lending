@@ -16,7 +16,24 @@ interface ComparisonPageProps {
   comparison: Comparison;
 }
 
+function getComparisonLabels(heroTitle: string) {
+  const parts = heroTitle.split(' vs ');
+  if (parts.length === 2) {
+    return {
+      left: parts[0].trim(),
+      right: parts[1].trim(),
+    };
+  }
+
+  return {
+    left: 'Option A',
+    right: 'Option B',
+  };
+}
+
 export default function ComparisonPage({ comparison }: ComparisonPageProps) {
+  const labels = getComparisonLabels(comparison.heroTitle);
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -50,10 +67,10 @@ export default function ComparisonPage({ comparison }: ComparisonPageProps) {
                 <tr>
                   <th className="text-left p-4 bg-card border border-border font-semibold">Feature</th>
                   <th className="text-left p-4 bg-primary/10 border border-border font-semibold text-primary">
-                    {comparison.comparisonTable.length > 0 ? 'Option A' : ''}
+                    {comparison.comparisonTable.length > 0 ? labels.left : ''}
                   </th>
                   <th className="text-left p-4 bg-card border border-border font-semibold">
-                    {comparison.comparisonTable.length > 0 ? 'Option B' : ''}
+                    {comparison.comparisonTable.length > 0 ? labels.right : ''}
                   </th>
                 </tr>
               </thead>
@@ -92,6 +109,33 @@ export default function ComparisonPage({ comparison }: ComparisonPageProps) {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-4xl mx-auto bg-card border border-border rounded-xl p-6">
+            <h2 className="text-2xl font-bold mb-3">Related Financing Pages</h2>
+            <p className="text-muted-foreground mb-5">
+              Move from the comparison into the lending product that best matches the deal,
+              property condition, and exit plan.
+            </p>
+            <div className="grid md:grid-cols-3 gap-3">
+              {[
+                { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+                { label: 'Bridge Loans', href: '/loans/bridge' },
+                { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-lg border border-border px-4 py-4 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  <span className="font-medium">{item.label}</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

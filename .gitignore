@@ -32,3 +32,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local planning / session docs
+PREDICTABLE-REVENUE.md
+SEO-PLAN.md
+SESSION-STATUS.md
+session-logs/

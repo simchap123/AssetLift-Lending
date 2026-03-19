@@ -66,6 +66,28 @@ export default function AboutPage() {
             </p>
           </div>
 
+          <div className="max-w-3xl mx-auto bg-card border border-border rounded-xl p-6 md:p-8 mb-16">
+            <h2 className="text-2xl font-bold mb-4">Licensing and Operating Details</h2>
+            <div className="grid md:grid-cols-2 gap-6 text-sm">
+              <div>
+                <p className="font-semibold mb-1">Company</p>
+                <p className="text-muted-foreground">AssetLift Lending</p>
+              </div>
+              <div>
+                <p className="font-semibold mb-1">NMLS</p>
+                <p className="text-muted-foreground">NMLS #1324403</p>
+              </div>
+              <div>
+                <p className="font-semibold mb-1">Primary Contact</p>
+                <p className="text-muted-foreground">info@assetliftlending.com | +1 (929) 639-2284</p>
+              </div>
+              <div>
+                <p className="font-semibold mb-1">Office</p>
+                <p className="text-muted-foreground">300 East McBee Ave., STE 200, Greenville, SC 29601</p>
+              </div>
+            </div>
+          </div>
+
           {/* Values */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-20">
             {[
