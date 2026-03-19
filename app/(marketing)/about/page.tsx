@@ -150,6 +150,38 @@ export default function AboutPage() {
             </div>
           </div>
 
+          <div className="max-w-5xl mx-auto mb-20">
+            <div className="bg-secondary/20 border border-border rounded-2xl p-6 md:p-8">
+              <h2 className="text-3xl font-bold mb-4">Common Deal Profiles We See</h2>
+              <p className="text-muted-foreground leading-relaxed mb-6 max-w-3xl">
+                These are not testimonials or promised outcomes. They are the types of investor
+                situations our team regularly underwrites, which is often more useful than generic
+                marketing copy when you are trying to decide if a lender fits the business plan.
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                {[
+                  {
+                    title: 'Fix & Flip Execution',
+                    desc: 'Borrowers buying outdated single-family homes with a defined rehab scope, realistic ARV support, and a short resale timeline.',
+                  },
+                  {
+                    title: 'Bridge to Stabilization',
+                    desc: 'Investors using short-term capital to close quickly, solve timing issues, or carry a property through lease-up before refinancing.',
+                  },
+                  {
+                    title: 'BRRRR and Rental Holds',
+                    desc: 'Operators improving a property, seasoning the rent story, and moving into DSCR financing once the asset is stable enough for long-term debt.',
+                  },
+                ].map((item) => (
+                  <div key={item.title} className="rounded-xl border border-border bg-card p-5">
+                    <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">Work With Us</h2>

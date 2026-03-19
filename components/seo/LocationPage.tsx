@@ -17,8 +17,74 @@ interface LocationPageProps {
   state: StateData;
 }
 
+const PRIORITY_STATE_GUIDANCE: Record<
+  string,
+  {
+    lenderView: string;
+    borrowerFocus: string[];
+    caution: string;
+  }
+> = {
+  florida: {
+    lenderView:
+      "Florida files tend to be won or lost on insurance realism, market velocity, and whether the borrower is buying into a clean resale corridor versus a story-driven coastal asset. In Tampa, Jacksonville, and the I-4 corridor, lenders usually get comfortable faster when the property is in a deep buyer pool with straightforward resale comps. In South Florida, the upside can be larger, but the file needs to account for higher carrying costs, more title/association friction, and a tighter margin for underwriting mistakes.",
+    borrowerFocus: [
+      "Budget wind, flood, and builder's risk coverage early instead of treating insurance as a closing-day surprise",
+      "Use real neighborhood comps rather than broad metro averages, especially in Miami-Dade and Broward",
+      "Show enough reserves to survive slower resale or storm-related project interruptions",
+    ],
+    caution:
+      "Coastal and condo-heavy Florida deals tend to look thinner than they seem if association rules, flood zones, or insurance costs are not underwritten honestly at the start.",
+  },
+  texas: {
+    lenderView:
+      "Texas creates strong investor volume because the major metros are deep, liquid, and diverse, but each one behaves differently. Dallas-Fort Worth and Houston reward disciplined entry points and clear comp support. Austin can punish aggressive ARV assumptions more quickly because the market has more pricing sensitivity at higher price bands. Across the state, lenders usually like repeatable suburban product and become more cautious when the borrower is relying on speculative appreciation instead of operational spread.",
+    borrowerFocus: [
+      "Keep ARV support tight and recent in DFW, Houston, San Antonio, and Austin submarkets",
+      "Address property tax and insurance carrying costs upfront because they materially affect hold math in Texas",
+      "Match the loan product to the business plan instead of forcing long-hold assets into short-term debt",
+    ],
+    caution:
+      "Texas deals often break when the borrower underestimates tax burden or assumes the refinance will be easy without first proving the stabilized numbers work.",
+  },
+  california: {
+    lenderView:
+      "California lenders usually focus less on whether there is demand and more on whether the borrower can execute precisely in a high-cost environment. The market rewards experienced operators who know their block, permit path, and resale ceiling. Los Angeles, San Diego, and Bay Area files can still price well, but they need disciplined scopes, strong liquidity, and a margin that survives permit drift or longer disposition timelines.",
+    borrowerFocus: [
+      "Bring contractor-ready scopes and realistic timing instead of optimistic renovation calendars",
+      "Account for permit complexity, ADU timing, and local resale banding before requesting leverage",
+      "Show enough cash to absorb change orders and longer hold periods in premium markets",
+    ],
+    caution:
+      "California projects rarely fail because there is no demand. They fail because execution costs, permitting, or over-improvement eat the spread the borrower thought was there.",
+  },
+  georgia: {
+    lenderView:
+      "Georgia, especially metro Atlanta, is attractive because there is real transaction depth across entry-level and mid-market housing. Lenders usually get comfortable with well-located single-family and small multifamily projects where the borrower understands neighborhood-by-neighborhood pricing. Atlanta also rewards operators who know when to flip versus when to stabilize into a DSCR exit, because some submarkets support one path much more cleanly than the other.",
+    borrowerFocus: [
+      "Underwrite at the neighborhood level instead of treating metro Atlanta as one market",
+      "Clarify whether the property is a resale play or a refinance hold before the term sheet stage",
+      "Prepare for title, contractor, and access coordination early on older housing stock",
+    ],
+    caution:
+      "Georgia files can look stronger than they are when the borrower assumes every Atlanta zip code behaves the same. Submarket discipline matters.",
+  },
+  'north-carolina': {
+    lenderView:
+      "North Carolina performs well for investors because it blends migration-driven demand with multiple strong metros instead of relying on one city. Charlotte and Raleigh support faster, cleaner exits when the property fits broad buyer demand. Secondary metros can still work well, but lenders usually want tighter comp logic and a more conservative business plan. In this state, the strongest files are the ones that respect local demand rather than assuming growth headlines alone will carry the deal.",
+    borrowerFocus: [
+      "Use current comps and rent support from the specific metro instead of statewide averages",
+      "Keep renovation scope aligned with neighborhood finish level rather than overshooting the resale bracket",
+      "Have a clear refinance plan for hold deals in Charlotte, Raleigh, and fast-growing suburban corridors",
+    ],
+    caution:
+      "North Carolina growth stories attract aggressive underwriting assumptions. Lenders respond better when the borrower shows a conservative local plan instead of macro optimism.",
+  },
+};
+
 export default function LocationPage({ state }: LocationPageProps) {
   const stateCities = CITIES.filter((city) => city.stateSlug === state.slug);
+  const stateGuidance = PRIORITY_STATE_GUIDANCE[state.slug];
 
   return (
     <div className="min-h-screen">
@@ -201,6 +267,40 @@ export default function LocationPage({ state }: LocationPageProps) {
           </div>
         </div>
       </section>
+
+      {stateGuidance && (
+        <section className="py-16 md:py-24 bg-secondary/20">
+          <div className="container px-4 md:px-6">
+            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 max-w-5xl mx-auto">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  How Lenders Usually View {state.name} Deals
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  {stateGuidance.lenderView}
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  {stateGuidance.caution}
+                </p>
+              </div>
+
+              <div className="bg-card border border-border rounded-2xl p-6">
+                <h3 className="text-xl font-semibold mb-4">
+                  What Strong {state.name} Borrowers Usually Prepare
+                </h3>
+                <div className="space-y-4">
+                  {stateGuidance.borrowerFocus.map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                      <p className="text-muted-foreground">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Programs Available */}
       <section className="py-16 md:py-24">

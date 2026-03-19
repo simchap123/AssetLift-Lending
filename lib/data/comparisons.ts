@@ -604,4 +604,180 @@ export const COMPARISONS: Comparison[] = [
       },
     ],
   },
+  {
+    slug: "bridge-loan-vs-dscr-loan",
+    title: "Bridge Loan vs DSCR Loan: Which One Fits the Property’s Current Stage?",
+    description:
+      "Compare bridge loans and DSCR loans for real estate investors. Learn when transitional short-term debt is the right tool and when stabilized rental financing is the better fit.",
+    publishedAt: "2026-03-18",
+    heroTitle: "Bridge Loan vs DSCR Loan",
+    introText:
+      "Bridge loans and DSCR loans are not competing answers to the exact same problem. They usually sit at different moments in the life of an investment property. A bridge loan is for transition. A DSCR loan is for stabilization. Investors get into trouble when they try to use long-term rental debt on a property that is not ready for it yet, or when they hold expensive bridge debt longer than necessary on an asset that has already become financeable. The better choice depends on what stage the property is in right now and what has to happen next.",
+    comparisonTable: [
+      {
+        feature: "Best Property Stage",
+        optionA: "Transitional, time-sensitive, vacant, payoff-driven, or not yet ready for permanent financing",
+        optionB: "Stabilized rental property with supportable income and a clean long-term hold plan",
+      },
+      {
+        feature: "Primary Exit Logic",
+        optionA: "Sale, refinance, lease-up, payoff event, or another transition milestone",
+        optionB: "Long-term ownership and rental cash flow",
+      },
+      {
+        feature: "Underwriting Focus",
+        optionA: "Current value, timing, borrower execution, and credibility of the exit strategy",
+        optionB: "Rental income support, DSCR ratio, leverage, and borrower reserves",
+      },
+      {
+        feature: "Typical Cost Profile",
+        optionA: "Higher short-term cost in exchange for speed and flexibility",
+        optionB: "Lower long-term cost relative to bridge debt once the asset is stable",
+      },
+      {
+        feature: "Timeline Fit",
+        optionA: "Months, not decades",
+        optionB: "Built for multi-year or 30-year investment holds",
+      },
+      {
+        feature: "Best Use Case",
+        optionA: "Closing fast or carrying the property through a temporary transition",
+        optionB: "Holding and scaling stabilized rentals without conventional income documentation",
+      },
+    ],
+    sections: [
+      {
+        heading: "When Bridge Debt Is the Right First Step",
+        content:
+          "Bridge financing is usually the right tool when the property is not yet ready to be judged as a stabilized rental. That can mean the asset is vacant, recently acquired, in light transition, waiting on lease-up, or caught in a timing gap that makes permanent financing premature. In those situations, the bridge loan buys time and flexibility so the borrower can create the cleaner DSCR file later rather than forcing one too early.",
+      },
+      {
+        heading: "When a DSCR Loan Is the Better Tool",
+        content:
+          "A DSCR loan is the better fit once the property behaves like a real long-term rental business. The rent story is supportable, the asset condition is stable enough for long-term debt, and the borrower wants to hold rather than transition. At that point, paying bridge pricing no longer makes sense if the file is ready for DSCR execution.",
+      },
+      {
+        heading: "Why Investors Often Use Them Sequentially",
+        content:
+          "In practice, many investors use bridge and DSCR debt sequentially rather than choosing one permanently. The bridge loan handles acquisition speed or transition risk. The DSCR loan becomes the takeout once the property is stabilized, rented, and ready for long-term financing. That sequence is often the cleanest way to protect the deal while still ending up in lower-cost debt.",
+      },
+      {
+        heading: "How to Decide Which Stage Your Property Is In",
+        content:
+          "The decision is simpler when you stop thinking in product labels and start thinking in asset stage. If the property still needs time, cleanup, leasing, or another milestone before it can be underwritten as a stable rental, bridge debt is usually doing a necessary job. If the property is already there, a DSCR loan is usually the cleaner answer.",
+      },
+    ],
+    verdict:
+      "Bridge loans are built for transition. DSCR loans are built for stabilized rentals. Investors who use each at the right stage usually get better execution, cleaner exits, and less unnecessary financing cost.",
+    faqs: [
+      {
+        question: "Can I use a bridge loan before refinancing into a DSCR loan?",
+        answer:
+          "Yes. That is a common sequence when the property needs to close quickly, lease up, season, or otherwise become more financeable before moving into long-term rental debt.",
+      },
+      {
+        question: "Why not just start with a DSCR loan?",
+        answer:
+          "Because some properties are not yet stable enough or well-documented enough for DSCR underwriting. In that case, bridge debt can solve the timing problem until the rental file is ready.",
+      },
+      {
+        question: "Which one is cheaper?",
+        answer:
+          "For a real long-term hold, DSCR debt is usually the cheaper structure over time. Bridge debt is more expensive, but it is solving a different short-term problem.",
+      },
+      {
+        question: "Does a vacant property automatically need a bridge loan?",
+        answer:
+          "Not always, but vacancy often makes the DSCR file more dependent on market-rent support and timing. Bridge debt becomes more useful when the property is still in transition rather than truly stabilized.",
+      },
+    ],
+  },
+  {
+    slug: "construction-loan-vs-fix-and-flip-loan",
+    title: "Construction Loan vs Fix and Flip Loan: Choosing the Right Rehab or Build Capital",
+    description:
+      "Compare construction loans and fix and flip loans for real estate investors. Learn when a lender should underwrite a rehab and when the project is really a ground-up or heavy-build file.",
+    publishedAt: "2026-03-18",
+    heroTitle: "Construction Loan vs Fix and Flip Loan",
+    introText:
+      "Investors often blur the line between a fix and flip loan and a construction loan, especially when a project is more than cosmetic but not a fully new build. Lenders do not. The distinction matters because the underwriting, draw structure, timeline risk, and borrower expectations are different. A fix and flip loan is built for acquiring and improving an existing asset. A construction loan is built for a project where the build process itself becomes the core risk. Choosing the wrong product usually creates friction later in underwriting or during draws.",
+    comparisonTable: [
+      {
+        feature: "Core Asset Type",
+        optionA: "Existing property being renovated, repositioned, or improved for resale or refinance",
+        optionB: "Ground-up build or project where construction execution is the primary business risk",
+      },
+      {
+        feature: "Underwriting Focus",
+        optionA: "Purchase basis, rehab scope, ARV support, and resale or refinance timeline",
+        optionB: "Plans, permits, contractor strength, budget, draw schedule, and completed value",
+      },
+      {
+        feature: "Typical Timeline",
+        optionA: "Shorter project duration tied to rehab and exit speed",
+        optionB: "Longer duration because the property has to be built or materially created",
+      },
+      {
+        feature: "Draw Complexity",
+        optionA: "Usually simpler rehab draws based on completed renovation milestones",
+        optionB: "More formal draw administration across multiple construction phases",
+      },
+      {
+        feature: "Best Exit",
+        optionA: "Resale or refinance after renovation is complete",
+        optionB: "Sale, refinance, or permanent financing after construction completion and stabilization",
+      },
+      {
+        feature: "Best Borrower Fit",
+        optionA: "Investors improving existing inventory with a defined scope and faster turnaround",
+        optionB: "Builders or developers managing longer execution timelines and more moving parts",
+      },
+    ],
+    sections: [
+      {
+        heading: "Where Fix and Flip Financing Fits Best",
+        content:
+          "Fix and flip financing is designed around value-add work on an existing property. The house, small multifamily, or townhome already exists. The investor is improving condition, updating finishes, correcting deferred maintenance, or repositioning the asset for resale or refinance. The lender is usually focused on whether the rehab plan is believable and whether the after-repair value supports the requested leverage.",
+      },
+      {
+        heading: "Where Construction Financing Becomes Necessary",
+        content:
+          "Construction financing becomes the cleaner fit when the project risk is no longer mainly rehab execution but actual construction execution. That includes ground-up projects, tear-down rebuilds, and heavier development files where plans, permits, staging, contractor oversight, and timeline risk dominate the underwriting conversation. In those files, the lender needs a more formal construction framework.",
+      },
+      {
+        heading: "Why the Gray Area Matters",
+        content:
+          "Some projects sit in the middle. Major additions, structural reconfiguration, or near-gut renovations can look like fix and flips from the borrower’s perspective but like construction risk from the lender’s perspective. Getting that classification right early matters because it affects leverage, draw administration, and how much operational rigor the lender expects from the borrower and contractor team.",
+      },
+      {
+        heading: "How Investors Should Decide Before Applying",
+        content:
+          "Start by asking what is really being created. If the business plan is primarily buying an existing asset and upgrading it, fix and flip financing is usually the right starting point. If the file depends on plans, permits, multi-phase construction, and a much longer execution cycle, it is more honest and usually more efficient to structure it as a construction loan from the start.",
+      },
+    ],
+    verdict:
+      "Fix and flip loans are best for improving existing properties. Construction loans are best when the build process itself becomes the main underwriting risk. Investors who classify the project correctly early usually avoid pricing surprises and draw friction later.",
+    faqs: [
+      {
+        question: "Can a heavy rehab still qualify as a fix and flip loan?",
+        answer:
+          "Sometimes yes, but only if the lender is comfortable that the scope still behaves like a rehab rather than a construction project. The more structural, permit-heavy, or phased the project becomes, the more likely it shifts into construction underwriting.",
+      },
+      {
+        question: "Which one usually closes faster?",
+        answer:
+          "Fix and flip loans usually close faster because the underwriting is simpler. Construction loans often require deeper review of plans, contractor credentials, draw logic, and project feasibility.",
+      },
+      {
+        question: "Do construction loans always require more documentation?",
+        answer:
+          "In most cases yes. Because the build process carries more execution risk, lenders usually want more project detail before they commit capital.",
+      },
+      {
+        question: "Can I refinance either one after the project is done?",
+        answer:
+          "Yes. Both products are commonly refinanced into longer-term debt after the property is complete, stabilized, or otherwise ready for a permanent exit.",
+      },
+    ],
+  },
 ];
