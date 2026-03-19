@@ -46,20 +46,20 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="text-foreground">Close Faster</span>
+            <span className="text-foreground">Hard Money Loans</span>
             <br />
-            <span className="gradient-text">Scale Smarter</span>
+            <span className="gradient-text">for Real Estate Investors</span>
           </motion.h1>
 
           {/* Subheadline */}
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10"
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Fast, flexible funding for real estate investors.
-            Close deals with confidence.
+            Fast fix and flip, bridge, DSCR rental, and construction financing with closings in
+            7 to 10 days for investors who need reliable execution.
           </motion.p>
 
           {/* CTA Buttons */}

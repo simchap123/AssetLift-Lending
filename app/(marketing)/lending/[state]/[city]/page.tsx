@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city) return {};
 
   return createMetadata({
-    title: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation} | AssetLift Lending`,
+    title: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
     description: `Fast hard money loans in ${city.cityName}, ${city.stateName}. Fix & flip, bridge, DSCR rental financing for ${city.cityName} real estate investors. Close in 7-10 days.`,
     path: `/lending/${city.stateSlug}/${city.citySlug}`,
   });

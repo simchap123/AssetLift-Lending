@@ -16,9 +16,10 @@ export const metadata: Metadata = createMetadata({
 export default function FixAndFlipPage() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'FinancialProduct',
+    '@type': 'LoanOrCredit',
     name: product.title,
     description: product.description,
+    category: 'Fix and Flip Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
     url: 'https://assetliftlending.com/loans/fix-and-flip',
   };

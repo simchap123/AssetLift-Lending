@@ -16,9 +16,10 @@ export const metadata: Metadata = createMetadata({
 export default function DSCRRentalPage() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'FinancialProduct',
+    '@type': 'LoanOrCredit',
     name: product.title,
     description: product.description,
+    category: 'DSCR Rental Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
     url: 'https://assetliftlending.com/loans/dscr-rental',
   };

@@ -16,9 +16,10 @@ export const metadata: Metadata = createMetadata({
 export default function GroundUpConstructionPage() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'FinancialProduct',
+    '@type': 'LoanOrCredit',
     name: product.title,
     description: product.description,
+    category: 'Ground-Up Construction Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
     url: 'https://assetliftlending.com/loans/ground-up-construction',
   };

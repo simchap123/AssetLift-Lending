@@ -17,7 +17,32 @@ interface BlogPostLayoutProps {
   relatedPosts?: BlogPost[];
 }
 
+const RESOURCE_MAP: Record<string, Array<{ label: string; href: string }>> = {
+  'Fix & Flip': [
+    { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+    { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
+    { label: 'How It Works', href: '/how-it-works' },
+  ],
+  'DSCR Rental': [
+    { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+    { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
+    { label: 'DSCR vs Conventional Rental Loans', href: '/compare/dscr-loans-vs-conventional-rental-loans' },
+  ],
+  Construction: [
+    { label: 'Ground-Up Construction Loans', href: '/loans/ground-up-construction' },
+    { label: 'Bridge Loans', href: '/loans/bridge' },
+    { label: 'How It Works', href: '/how-it-works' },
+  ],
+  Education: [
+    { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+    { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+    { label: 'Bridge Loans', href: '/loans/bridge' },
+  ],
+};
+
 export default function BlogPostLayout({ post, relatedPosts = [] }: BlogPostLayoutProps) {
+  const resources = RESOURCE_MAP[post.category] ?? RESOURCE_MAP.Education;
+
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -112,6 +137,29 @@ export default function BlogPostLayout({ post, relatedPosts = [] }: BlogPostLayo
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-16">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-3xl mx-auto bg-card border border-border rounded-xl p-6">
+            <h2 className="text-2xl font-bold mb-3">Related Financing Resources</h2>
+            <p className="text-muted-foreground mb-5">
+              If this topic matches an active deal, move from the educational guide into the
+              financing page that fits the property and exit plan.
+            </p>
+            <div className="grid md:grid-cols-3 gap-3">
+              {resources.map((resource) => (
+                <Link
+                  key={resource.href}
+                  href={resource.href}
+                  className="rounded-lg border border-border px-4 py-4 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  <span className="font-medium">{resource.label}</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

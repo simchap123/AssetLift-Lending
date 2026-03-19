@@ -10,6 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { CITIES } from '@/lib/data/cities';
 import type { StateData } from '@/lib/data/states';
 
 interface LocationPageProps {
@@ -17,6 +18,8 @@ interface LocationPageProps {
 }
 
 export default function LocationPage({ state }: LocationPageProps) {
+  const stateCities = CITIES.filter((city) => city.stateSlug === state.slug);
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -103,19 +106,98 @@ export default function LocationPage({ state }: LocationPageProps) {
             Top Markets in {state.name}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
-            {state.topCities.map((city, i) => (
-              <motion.div
-                key={city}
+            {state.topCities.map((cityName, i) => {
+              const cityPage = stateCities.find((city) => city.cityName === cityName);
+              const content = (
+                <>
+                  <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+                  <span className="font-medium">{cityName}</span>
+                </>
+              );
+
+              if (cityPage) {
+                return (
+                  <motion.div
+                    key={cityName}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                  >
+                    <Link
+                      href={`/lending/${cityPage.stateSlug}/${cityPage.citySlug}`}
+                      className="flex items-center gap-2 bg-card border border-border rounded-lg p-4 hover:border-primary/50 transition-colors"
+                    >
+                      {content}
+                    </Link>
+                  </motion.div>
+                );
+              }
+
+              return (
+                <motion.div
+                key={cityName}
                 className="flex items-center gap-2 bg-card border border-border rounded-lg p-4"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
               >
-                <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="font-medium">{city}</span>
+                {content}
               </motion.div>
-            ))}
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 max-w-5xl mx-auto">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                What Borrowers Need to Have Ready in {state.name}
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                In most {state.name} files, the biggest delays are not interest-rate related. They
+                come from weak supporting documents, insurance uncertainty, or unrealistic exit
+                assumptions. Borrowers who move quickly usually have the property story, budget,
+                and title/closing path organized before they ask for speed.
+              </p>
+              <div className="space-y-4">
+                {[
+                  'A clear purchase or refinance story with a believable payoff plan',
+                  'Supporting numbers for value, rent, rehab budget, or completed price',
+                  'Entity docs, insurance details, and a title company ready to move',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-6">
+              <h3 className="text-xl font-semibold mb-4">Useful Resources</h3>
+              <div className="space-y-3">
+                {[
+                  { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
+                  { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
+                  { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+                  { label: 'How It Works', href: '/how-it-works' },
+                ].map((resource) => (
+                  <Link
+                    key={resource.href}
+                    href={resource.href}
+                    className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <span className="font-medium">{resource.label}</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -16,7 +16,128 @@ interface LoanProductPageProps {
   product: LoanProduct;
 }
 
+const PRODUCT_INSIGHTS: Record<
+  string,
+  {
+    fitTitle: string;
+    fitBody: string;
+    watchouts: Array<{ title: string; detail: string }>;
+    resources: Array<{ label: string; href: string }>;
+  }
+> = {
+  'fix-and-flip': {
+    fitTitle: 'When Fix & Flip Debt Actually Makes Sense',
+    fitBody:
+      "The best fix and flip files are not just 'cheap enough' deals. They have a realistic rehab scope, enough margin after financing and carrying costs, and an exit that still works if the sale takes longer than expected. Borrowers usually get into trouble when they under-budget the rehab, overestimate the ARV, or assume every cosmetic project will sell on the first weekend.",
+    watchouts: [
+      {
+        title: 'ARV support matters more than optimism',
+        detail:
+          'If the after-repair value depends on best-case comps or a finish level the neighborhood does not support, leverage usually compresses quickly.',
+      },
+      {
+        title: 'Timeline slippage is expensive',
+        detail:
+          'A project that drifts by 60 days can erase margin through extra interest, utilities, insurance, and price reductions at resale.',
+      },
+      {
+        title: 'Contractor discipline changes the loan outcome',
+        detail:
+          'Borrowers with a credible GC, line-item scope, and draw discipline generally get through underwriting and construction with less friction.',
+      },
+    ],
+    resources: [
+      { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
+      { label: 'How to Finance Your First Fix and Flip', href: '/blog/how-to-finance-first-fix-and-flip' },
+      { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+    ],
+  },
+  'ground-up-construction': {
+    fitTitle: 'Where Construction Loans Usually Break Down',
+    fitBody:
+      'Ground-up execution is won before the first draw. The files that move smoothly usually have clean plans, realistic budgets, a proven GC, and a market where end values are already supported. The files that struggle tend to rely on thin builder experience, incomplete permits, or resale assumptions that need the market to keep running hotter.',
+    watchouts: [
+      {
+        title: 'Incomplete pre-close prep slows everything down',
+        detail:
+          'Missing plans, permit uncertainty, or vague budgets create delays before closing and usually create more draw friction later.',
+      },
+      {
+        title: 'Contingency is not optional',
+        detail:
+          'Material swings, site surprises, and labor delays are normal. A thin contingency reserve can turn a good project into a capital problem.',
+      },
+      {
+        title: 'Builder quality is underwritten',
+        detail:
+          'The GC is not just a vendor. Their experience, insurance, and prior delivery record directly affect how lenders view the risk.',
+      },
+    ],
+    resources: [
+      { label: 'Ground-Up Construction Financing Guide', href: '/blog/ground-up-construction-financing-guide' },
+      { label: 'Bridge Loans', href: '/loans/bridge' },
+      { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+    ],
+  },
+  'dscr-rental': {
+    fitTitle: 'What Experienced Rental Investors Usually Care About',
+    fitBody:
+      'Most seasoned DSCR borrowers are not looking for a theoretical maximum loan. They want a loan that closes in an entity, works with the rent profile, and still leaves room for cash flow after taxes, insurance, and vacancy. The strongest DSCR executions happen when the borrower treats the property like an operating business instead of just chasing leverage.',
+    watchouts: [
+      {
+        title: 'Break-even DSCR is not the same as healthy cash flow',
+        detail:
+          'A ratio that technically works can still leave the deal too thin once repairs, turnover, and management are layered in.',
+      },
+      {
+        title: 'Rent support has to survive appraisal review',
+        detail:
+          'Projected rent that cannot be defended by leases, comps, or short-term rental data is a common reason terms move late in the process.',
+      },
+      {
+        title: 'Entity and insurance details matter',
+        detail:
+          'If vesting, lease structure, or landlord coverage is sloppy, the file can stall even when the property cash flow is strong.',
+      },
+    ],
+    resources: [
+      { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
+      { label: 'DSCR Loans Explained', href: '/blog/dscr-loans-explained' },
+      { label: 'DSCR vs Conventional Rental Loans', href: '/compare/dscr-loans-vs-conventional-rental-loans' },
+    ],
+  },
+  bridge: {
+    fitTitle: 'When a Bridge Loan Is Better Than Waiting for Permanent Debt',
+    fitBody:
+      'Bridge debt works when speed is part of the edge. That usually means a property that needs to close before a conventional lender can move, a transition period before refinance, or a borrower solving a timing mismatch between sale proceeds and the next acquisition. The mistake is using bridge debt to cover a weak business plan instead of a short-term execution need.',
+    watchouts: [
+      {
+        title: 'Your exit has to be believable on day one',
+        detail:
+          'A bridge loan is only as good as the refinance, sale, or payoff event behind it. If that exit is vague, the risk profile rises quickly.',
+      },
+      {
+        title: 'Vacant or transitional assets need margin',
+        detail:
+          'Properties with lease-up risk, deferred maintenance, or title issues need more cushion than stabilized acquisitions.',
+      },
+      {
+        title: 'Short-term debt rewards decisiveness',
+        detail:
+          'The borrowers who use bridge debt well usually have a defined plan, a strong team, and a reason they cannot wait on bank timing.',
+      },
+    ],
+    resources: [
+      { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+      { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+      { label: 'How It Works', href: '/how-it-works' },
+    ],
+  },
+};
+
 export default function LoanProductPage({ product }: LoanProductPageProps) {
+  const insights = PRODUCT_INSIGHTS[product.slug];
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -108,6 +229,34 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
         </div>
       </section>
 
+      {insights && (
+        <section className="py-16 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 max-w-5xl mx-auto">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">{insights.fitTitle}</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">{insights.fitBody}</p>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6">
+                <h3 className="text-xl font-semibold mb-4">Related Resources</h3>
+                <div className="space-y-3">
+                  {insights.resources.map((resource) => (
+                    <Link
+                      key={resource.href}
+                      href={resource.href}
+                      className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                    >
+                      <span className="font-medium">{resource.label}</span>
+                      <ChevronRight className="w-4 h-4 text-primary" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Eligibility */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
@@ -145,6 +294,26 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
           </div>
         </div>
       </section>
+
+      {insights && (
+        <section className="py-16 md:py-24 bg-secondary/20">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+                What Usually Trips Borrowers Up
+              </h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                {insights.watchouts.map((item) => (
+                  <div key={item.title} className="bg-card border border-border rounded-xl p-6">
+                    <h3 className="font-semibold text-lg mb-3">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Use Cases */}
       <section className="py-16 md:py-24">

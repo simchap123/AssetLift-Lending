@@ -17,6 +17,7 @@ const PROGRAMS = [
 
 const RESOURCES = [
   { label: 'Blog', href: '/blog' },
+  { label: 'Markets', href: '/markets' },
   { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
   { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
   { label: 'FAQ', href: '/faq' },
@@ -123,6 +124,12 @@ const Navbar = () => {
               onClose={() => setOpenDropdown(null)}
             />
             <Link
+              href="/markets"
+              className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
+            >
+              Markets
+            </Link>
+            <Link
               href="/about"
               className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
             >
@@ -204,6 +211,13 @@ const Navbar = () => {
 
               <div className="border-t border-border my-2" />
 
+              <Link
+                href="/markets"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Markets
+              </Link>
               <Link
                 href="/about"
                 className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"

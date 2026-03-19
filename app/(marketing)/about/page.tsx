@@ -32,6 +32,13 @@ export default function AboutPage() {
     },
     areaServed: 'US',
     priceRange: '$100,000 - $5,000,000',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone: '+1-929-639-2284',
+      email: 'info@assetliftlending.com',
+      areaServed: 'US',
+    },
   };
 
   return (
@@ -75,6 +82,50 @@ export default function AboutPage() {
                 <p className="text-muted-foreground text-sm">{value.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-8 mb-20">
+            <div>
+              <h2 className="text-3xl font-bold mb-5">What Borrowers Actually Need From a Lender</h2>
+              <p className="text-muted-foreground leading-relaxed mb-5">
+                Sophisticated investors rarely choose a lender on headline rate alone. They want a
+                lender that can underwrite quickly, explain friction early, and still close when
+                the file has moving parts. That is the gap AssetLift is trying to fill.
+              </p>
+              <div className="space-y-4">
+                {[
+                  'Direct communication when a deal has valuation, title, or insurance issues',
+                  'Product fit across short-term flips, bridge situations, construction, and rental holds',
+                  'Execution that helps investors protect margin, not just get a term sheet',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-card border border-border rounded-xl p-6">
+              <h3 className="text-xl font-semibold mb-4">Explore Loan Programs</h3>
+              <div className="space-y-3">
+                {[
+                  { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+                  { label: 'Ground-Up Construction', href: '/loans/ground-up-construction' },
+                  { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+                  { label: 'Bridge Loans', href: '/loans/bridge' },
+                ].map((resource) => (
+                  <Link
+                    key={resource.href}
+                    href={resource.href}
+                    className="flex items-center justify-between gap-3 rounded-lg border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <span className="font-medium">{resource.label}</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* CTA */}

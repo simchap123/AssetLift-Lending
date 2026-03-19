@@ -4,6 +4,7 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import FAQ from "@/components/landing/FAQ";
 import CTA from "@/components/landing/CTA";
 import PromoBanner from "@/components/landing/PromoBanner";
+import MarketsPreview from "@/components/landing/MarketsPreview";
 import JsonLd from "@/components/JsonLd";
 
 export default function HomePage() {
@@ -32,6 +33,7 @@ export default function HomePage() {
       <main className="pt-14">
         <Hero />
         <LoanPrograms />
+        <MarketsPreview />
         <HowItWorks />
         <FAQ />
         <CTA />

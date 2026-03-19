@@ -16,9 +16,10 @@ export const metadata: Metadata = createMetadata({
 export default function BridgeLoanPage() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'FinancialProduct',
+    '@type': 'LoanOrCredit',
     name: product.title,
     description: product.description,
+    category: 'Bridge Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
     url: 'https://assetliftlending.com/loans/bridge',
   };

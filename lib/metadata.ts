@@ -10,6 +10,10 @@ interface CreateMetadataOptions {
   noIndex?: boolean;
 }
 
+function withBrand(title: string) {
+  return title.includes('AssetLift Lending') ? title : `${title} | AssetLift Lending`;
+}
+
 export function createMetadata({
   title,
   description,
@@ -26,7 +30,7 @@ export function createMetadata({
       canonical: url,
     },
     openGraph: {
-      title: `${title} | AssetLift Lending`,
+      title: withBrand(title),
       description,
       url,
       siteName: 'AssetLift Lending',
@@ -43,7 +47,7 @@ export function createMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} | AssetLift Lending`,
+      title: withBrand(title),
       description,
       images: [ogImage],
     },

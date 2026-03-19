@@ -131,6 +131,31 @@ export default function HowItWorksPage() {
           </div>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-20 bg-card border border-border rounded-xl p-8">
+          <h2 className="text-3xl font-bold mb-4">Choose the Right Loan Before You Apply</h2>
+          <p className="text-muted-foreground mb-6">
+            The fastest file is usually the one tied to the right loan product from the start.
+            If the deal needs rehab, bridge timing, construction draws, or rental qualification,
+            the application package should reflect that clearly.
+          </p>
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+            {[
+              { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+              { label: 'Ground-Up Construction', href: '/loans/ground-up-construction' },
+              { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+              { label: 'Bridge Loans', href: '/loans/bridge' },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-lg border border-border px-4 py-4 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+              >
+                <span className="font-medium">{item.label}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>

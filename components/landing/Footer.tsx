@@ -24,10 +24,13 @@ const Footer = () => {
                 <a href="#programs" className="hover:text-primary transition-colors">Loan Programs</a>
               </li>
               <li>
+                <Link href="/markets" className="hover:text-primary transition-colors">Markets</Link>
+              </li>
+              <li>
                 <Link href="/apply" className="hover:text-primary transition-colors">Apply Now</Link>
               </li>
               <li>
-                <Link href="/apply" className="hover:text-primary transition-colors">Contact Us</Link>
+                <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
               </li>
             </ul>
           </div>

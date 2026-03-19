@@ -35,6 +35,13 @@ export default function ContactPage() {
       opens: '09:00',
       closes: '18:00',
     },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone: '+1-929-639-2284',
+      email: 'info@assetliftlending.com',
+      areaServed: 'US',
+    },
   };
 
   return (
@@ -111,6 +118,21 @@ export default function ContactPage() {
                 Apply Online <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
+            <div className="grid md:grid-cols-3 gap-3 mt-8 text-left">
+              {[
+                { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+                { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+                { label: 'How It Works', href: '/how-it-works' },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-lg border border-border px-4 py-4 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  <span className="font-medium">{item.label}</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -126,6 +126,57 @@ export default function CityPage({ city }: CityPageProps) {
         </div>
       </section>
 
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 max-w-5xl mx-auto">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                What Usually Gets a {city.cityName} Deal Moving Faster
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                The cleanest files in {city.cityName} usually have a realistic budget, market
+                support for the value or rent story, and a borrower who already knows whether the
+                exit is a sale, a refinance, or a longer hold. Speed matters, but clarity matters
+                more. A fast lender still needs a file that makes sense.
+              </p>
+              <div className="space-y-4">
+                {[
+                  `A deal strategy that fits ${city.cityName}'s pricing and neighborhood comps`,
+                  'A title, insurance, and entity setup that will not create last-minute closing friction',
+                  'Numbers that still work if the sale timeline or refinance timing stretches',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <Users className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-6">
+              <h3 className="text-xl font-semibold mb-4">Useful Resources</h3>
+              <div className="space-y-3">
+                {[
+                  { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+                  { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+                  { label: 'How to Finance Your First Fix and Flip', href: '/blog/how-to-finance-first-fix-and-flip' },
+                  { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+                ].map((resource) => (
+                  <Link
+                    key={resource.href}
+                    href={resource.href}
+                    className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <span className="font-medium">{resource.label}</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Programs Available */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
