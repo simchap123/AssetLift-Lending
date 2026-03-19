@@ -56,6 +56,9 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Asset Lift Lending. All rights reserved.</p>
+          <Link href="/privacy" className="hover:text-primary transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
