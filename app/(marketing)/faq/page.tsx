@@ -8,6 +8,10 @@ import { Button } from '@/components/ui/button';
 import { FAQ_CATEGORIES, ALL_FAQS } from '@/lib/data/faq-expanded';
 import FAQAccordion from './FAQAccordion';
 
+function slugifyCategory(category: string) {
+  return category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
 export const metadata: Metadata = createMetadata({
   title: 'FAQ | Hard Money Loan Questions Answered',
   description:
@@ -44,13 +48,74 @@ export default function FAQPage() {
               Frequently Asked <span className="gradient-text">Questions</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Everything you need to know about hard money lending, our programs, and the application process.
+              Direct answers on hard money loans, fix and flip financing, DSCR rental loans,
+              bridge loans, qualifications, pricing, and what to expect before closing.
             </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto mb-12">
+            <div className="bg-card border border-border rounded-xl p-6 md:p-8">
+              <h2 className="text-2xl font-bold mb-3">Browse By Topic</h2>
+              <p className="text-muted-foreground mb-6">
+                Start with the lending topic that matches your deal stage, then move into the
+                related product page or calculator for specifics.
+              </p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
+                {FAQ_CATEGORIES.map((category) => (
+                  <a
+                    key={category.category}
+                    href={`#${slugifyCategory(category.category)}`}
+                    className="rounded-lg border border-border px-4 py-4 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <p className="font-medium mb-1">{category.category}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {category.items.length} answers
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* FAQ Sections */}
           <div className="max-w-3xl mx-auto mb-16">
             <FAQAccordion categories={FAQ_CATEGORIES} />
+          </div>
+
+          <div className="max-w-5xl mx-auto mb-16">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                {
+                  label: 'Fix & Flip Loans',
+                  href: '/loans/fix-and-flip',
+                  description: 'Program details, leverage, rehab draws, and loan requirements.',
+                },
+                {
+                  label: 'DSCR Rental Loans',
+                  href: '/loans/dscr-rental',
+                  description: 'Qualification rules, DSCR underwriting, and long-term rental options.',
+                },
+                {
+                  label: 'Bridge Loans',
+                  href: '/loans/bridge',
+                  description: 'Short-term capital for fast closings, payoffs, and transitional assets.',
+                },
+                {
+                  label: 'Compare Loan Options',
+                  href: '/compare/hard-money-lender-vs-bank',
+                  description: 'See when private lending, banks, and investor loan products fit best.',
+                },
+              ].map((resource) => (
+                <Link
+                  key={resource.href}
+                  href={resource.href}
+                  className="rounded-xl border border-border bg-card p-5 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  <p className="font-semibold mb-2">{resource.label}</p>
+                  <p className="text-sm text-muted-foreground">{resource.description}</p>
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* CTA */}

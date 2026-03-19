@@ -461,4 +461,142 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "fix-and-flip-loan-requirements",
+    title: "Fix and Flip Loan Requirements: What Lenders Actually Review Before They Fund",
+    description:
+      "A practical breakdown of fix and flip loan requirements, including credit, cash to close, scope of work, ARV support, reserves, and what usually slows approvals.",
+    publishedAt: "2026-03-18T09:00:00Z",
+    author: "AssetLift Team",
+    authorRole: "Lending Specialists",
+    readTime: "10 min read",
+    category: "Fix & Flip",
+    tags: [
+      "fix and flip loan requirements",
+      "fix and flip loans",
+      "hard money loans",
+      "rehab financing",
+      "real estate investing",
+      "loan approval",
+    ],
+    heroImage: "/blog/fix-and-flip-loan-requirements.jpg",
+    sections: [
+      {
+        heading: "The Real Standard: Lenders Are Reviewing the Deal and the Operator",
+        content:
+          "Fix and flip borrowers often assume approval is mostly about credit score. In practice, lenders are reviewing a mix of borrower strength, property economics, and execution risk. A solid borrower with a weak scope of work or inflated ARV can still get poor terms or a decline. A first-time investor with a conservative deal, enough cash, and a credible contractor can often get funded.\n\nThat is why fix and flip requirements should be viewed as a package rather than a checklist. The lender is trying to answer one question: does this borrower have enough margin, enough liquidity, and a believable enough plan to buy, renovate, and exit without creating avoidable risk mid-project.",
+      },
+      {
+        heading: "Credit, Liquidity, and Cash to Close",
+        content:
+          "Most lenders still want to see a workable credit profile, but private lending rarely underwrites the way a bank does. A borrower with a 680 score and clean recent history will usually price better than a borrower near the minimum score threshold, but neither gets approved on credit alone. What matters just as much is whether the borrower has enough cash to handle the down payment, closing costs, insurance, and normal project surprises.\n\nLiquidity is where many weak files get exposed. Bringing the minimum required cash to close is not the same as being adequately capitalized. Lenders want confidence that the borrower can cover change orders, extension risk, higher carrying costs, or slower resale. Thin liquidity often leads to reduced leverage even when the property itself looks strong.",
+      },
+      {
+        heading: "Why the Scope of Work and Budget Matter So Much",
+        content:
+          "A lender cannot underwrite a rehab project intelligently without a realistic scope of work. The scope should show what is being improved, what the budget is by line item, and whether the plan actually supports the projected after-repair value. Generic statements like 'light cosmetic rehab' do not help much. Specific scopes with contractor input, materials logic, and realistic timing do.\n\nBudgets also need to make operational sense. If the scope implies a six-figure renovation but the budget is thin, the lender will either question the ARV story or assume the borrower is underestimating the project. That is one of the fastest ways to lose confidence in a file. Serious operators submit numbers that look believable before they try to look aggressive.",
+      },
+      {
+        heading: "ARV Support, Comparable Sales, and Exit Logic",
+        content:
+          "Fix and flip approvals are heavily influenced by whether the projected resale value is defensible. Lenders look for comparable sales that are recent, nearby, and truly comparable in size, condition, and market position after renovation. Weak comp support creates more friction than almost anything else because it affects both leverage and exit confidence.\n\nThe same goes for resale timing. If the investor is relying on the very top of the market with no room for pricing pressure, the file becomes fragile. Strong deals usually have enough spread that the borrower can still exit safely if the resale takes longer or the final value comes in a bit below the optimistic case.",
+      },
+      {
+        heading: "What Usually Slows a Fix and Flip Approval",
+        content:
+          "Most delays are not caused by underwriting being unusually strict. They are caused by missing or messy documentation. Common examples include unsigned contracts, unclear entity paperwork, incomplete insurance details, weak scopes of work, unsupported ARV assumptions, and title or access issues that show up after the file is already moving.\n\nBorrowers who want faster approvals usually do the opposite. They submit a clean package early: contract, scope, budget, comps, entity documents, and a direct explanation of the exit. That does not guarantee the exact leverage they want, but it does make the file easier to underwrite and easier to close on time.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What credit score do I need for a fix and flip loan?",
+        answer:
+          "Many lenders want to see a score in the mid-600s or better, with stronger pricing available to borrowers above that range. But credit alone rarely decides the file. Liquidity, leverage, experience, and deal quality matter just as much.",
+      },
+      {
+        question: "Do lenders require renovation experience?",
+        answer:
+          "Experience helps and can improve leverage or pricing, but it is not always mandatory. First-time borrowers are more likely to be approved when the project is conservative, the contractor is credible, and reserves are strong.",
+      },
+      {
+        question: "What documents should I have ready before applying?",
+        answer:
+          "At a minimum, borrowers should have the purchase contract, rehab scope and budget, supporting comparable sales, entity documents, insurance plan, and a simple explanation of the exit strategy. Clean files move faster than incomplete ones.",
+      },
+      {
+        question: "Why do lenders care so much about ARV?",
+        answer:
+          "Because ARV drives both leverage and the likely exit. If the after-repair value is weak or unsupported, the lender has less confidence in the borrower’s ability to sell or refinance the property profitably after rehab.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-qualify-for-dscr-loan",
+    title: "How to Qualify for a DSCR Loan: What Investors Should Prepare Before Applying",
+    description:
+      "Learn how investors qualify for DSCR loans, what ratio lenders review, how rents are documented, and which file details usually improve approval odds.",
+    publishedAt: "2026-03-18T09:30:00Z",
+    author: "AssetLift Team",
+    authorRole: "Lending Specialists",
+    readTime: "10 min read",
+    category: "DSCR Rental",
+    tags: [
+      "how to qualify for dscr loan",
+      "dscr loan requirements",
+      "dscr rental loans",
+      "investment property financing",
+      "rental property loans",
+      "real estate investors",
+    ],
+    heroImage: "/blog/how-to-qualify-for-dscr-loan.jpg",
+    sections: [
+      {
+        heading: "DSCR Qualification Starts With the Property’s Income",
+        content:
+          "The defining feature of a DSCR loan is that the property’s income carries the file. That does not mean the borrower is irrelevant. It means the lender begins by asking whether the rent can support the proposed payment strongly enough to justify the loan. The cleaner the rent story, the easier the rest of the approval usually becomes.\n\nThis is a major change for investors who are used to conventional underwriting. The file is less about tax returns and more about rental support, leverage, reserves, credit profile, and whether the property is positioned as a stable business asset. Investors who understand that framework usually prepare much better files before they ever apply.",
+      },
+      {
+        heading: "What Ratio Lenders Are Really Looking For",
+        content:
+          "Most lenders want the rent to cover the projected PITIA payment at or above a minimum threshold. The exact target varies by lender and risk profile, but a stronger ratio generally produces stronger pricing and smoother approvals. Files at or near break-even can still get done in some cases, but the borrower should expect either more friction, more cash in the deal, or a pricing adjustment.\n\nThe practical takeaway is simple: the ratio is not just a math exercise. It is the lender’s shortcut for measuring whether the property behaves like a stable income-producing asset. Improving the ratio, even modestly, can change the quality of the offer materially.",
+      },
+      {
+        heading: "How Rental Income Usually Gets Documented",
+        content:
+          "For purchases, lenders often rely on a market rent schedule from the appraisal unless there is already a lease in place. For refinances, they may review the current lease, rent roll, or other income support depending on the property type and occupancy. Short-term rentals are often treated differently because lenders need a credible method for translating booking patterns into underwritable income.\n\nThis is where a lot of borrowers get tripped up. They assume their own rent estimate will carry the file. It usually will not. The lender wants third-party support that the market can reasonably deliver the income needed for the loan.",
+      },
+      {
+        heading: "The Other Borrower Factors That Still Matter",
+        content:
+          "Even though DSCR lending is property-driven, lenders still review the borrower’s credit, liquidity, entity structure, and overall file quality. A borrower with good reserves, clear entity documents, and a clean insurance/title setup will generally move faster than a borrower who treats the loan as if personal readiness no longer matters.\n\nReserves are especially important. They signal that the borrower can carry the property through vacancy, repairs, or transition periods without immediately destabilizing the loan. Strong reserves often help offset other areas that are merely adequate rather than excellent.",
+      },
+      {
+        heading: "How Investors Improve Approval Odds Before Submission",
+        content:
+          "The best DSCR applications are prepared with underwriting in mind. Investors should understand likely rent support before getting too far into the deal, confirm the leverage they actually want, and avoid filing on properties that only work at an aggressive rent assumption. It also helps to organize entity paperwork, insurance planning, and reserve documentation before the lender asks for them.\n\nIn practice, the cleanest DSCR files are boring in a good way. The property cash-flows. The documentation is organized. The borrower knows the business plan. The file does not require the lender to make heroic assumptions to justify the approval.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need tax returns to qualify for a DSCR loan?",
+        answer:
+          "Usually no. DSCR loans are designed so the property’s rental income drives qualification instead of personal income documentation. Lenders still review the borrower, but the file is not built around W-2s or tax returns the way conventional loans are.",
+      },
+      {
+        question: "What DSCR ratio is considered strong?",
+        answer:
+          "A stronger ratio is simply one that gives the property clear room above the monthly debt payment. Exact thresholds vary by lender, but files with more coverage generally receive better terms and cleaner approvals than files sitting right at the edge.",
+      },
+      {
+        question: "Can I qualify if the property is vacant?",
+        answer:
+          "Often yes, but the lender will usually rely on market-rent support from the appraisal or another approved source. The borrower should not assume vacancy automatically kills the file, but it does make third-party rent support more important.",
+      },
+      {
+        question: "What usually weakens a DSCR loan file?",
+        answer:
+          "Thin or unsupported rent, weak reserves, aggressive leverage, messy entity documentation, and poor property condition are common reasons a DSCR file gets weaker terms or more conditions during underwriting.",
+      },
+    ],
+  },
 ];

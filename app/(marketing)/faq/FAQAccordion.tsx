@@ -12,11 +12,15 @@ interface FAQAccordionProps {
   categories: FAQCategory[];
 }
 
+function slugifyCategory(category: string) {
+  return category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
 export default function FAQAccordion({ categories }: FAQAccordionProps) {
   return (
     <div className="space-y-12">
       {categories.map((category, catIndex) => (
-        <div key={catIndex}>
+        <div key={catIndex} id={slugifyCategory(category.category)}>
           <h2 className="text-2xl font-bold mb-6">{category.category}</h2>
           <Accordion type="single" collapsible className="space-y-3">
             {category.items.map((faq, i) => (
