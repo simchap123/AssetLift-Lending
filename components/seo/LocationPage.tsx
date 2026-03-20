@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { CITIES } from '@/lib/data/cities';
-import type { StateData } from '@/lib/data/states';
+import { STATES, type StateData } from '@/lib/data/states';
 
 interface LocationPageProps {
   state: StateData;
@@ -84,6 +84,7 @@ const PRIORITY_STATE_GUIDANCE: Record<
 
 export default function LocationPage({ state }: LocationPageProps) {
   const stateCities = CITIES.filter((city) => city.stateSlug === state.slug);
+  const nearbyStates = STATES.filter((entry) => entry.slug !== state.slug).slice(0, 8);
   const stateGuidance = PRIORITY_STATE_GUIDANCE[state.slug];
 
   return (
@@ -251,7 +252,62 @@ export default function LocationPage({ state }: LocationPageProps) {
                   { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
                   { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
                   { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+                  { label: 'What Is a Hard Money Loan?', href: '/blog/what-is-a-hard-money-loan' },
+                  { label: 'How Does a DSCR Loan Work?', href: '/blog/how-does-a-dscr-loan-work' },
                   { label: 'How It Works', href: '/how-it-works' },
+                ].map((resource) => (
+                  <Link
+                    key={resource.href}
+                    href={resource.href}
+                    className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <span className="font-medium">{resource.label}</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-secondary/20">
+        <div className="container px-4 md:px-6">
+          <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 max-w-5xl mx-auto">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                How Investors Usually Move Through a {state.name} Deal
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                In most {state.name} lending files, the financing path is less about one keyword
+                and more about where the property sits in its lifecycle. Distressed assets often
+                start with bridge or rehab capital. Stabilized rentals usually fit DSCR debt
+                better. Ground-up projects need stronger budgets, plans, and draw discipline from
+                day one.
+              </p>
+              <div className="space-y-4">
+                {[
+                  `Use short-term capital when the ${state.name} property is still transitional or not yet bankable`,
+                  'Move into DSCR or other long-term debt once the rent story and condition are stable',
+                  'Stress-test taxes, insurance, and hold costs before assuming the exit will be easy',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-6">
+              <h3 className="text-xl font-semibold mb-4">Popular Investor Guides</h3>
+              <div className="space-y-3">
+                {[
+                  { label: 'Questions to Ask a Hard Money Lender', href: '/blog/questions-to-ask-a-hard-money-lender' },
+                  { label: 'When Not to Use a Hard Money Loan', href: '/blog/when-not-to-use-a-hard-money-loan' },
+                  { label: 'Fix and Flip for Beginners', href: '/blog/fix-and-flip-for-beginners' },
+                  { label: 'ARV Meaning in Real Estate', href: '/blog/arv-meaning-real-estate' },
+                  { label: 'What Is LTC in Real Estate?', href: '/blog/what-is-ltc-in-real-estate' },
                 ].map((resource) => (
                   <Link
                     key={resource.href}
@@ -353,6 +409,31 @@ export default function LocationPage({ state }: LocationPageProps) {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              Explore More Lending States
+            </h2>
+            <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-8">
+              Investors operating in multiple markets can review additional state pages to compare
+              local lending context, borrower expectations, and market conditions.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {nearbyStates.map((entry) => (
+                <Link
+                  key={entry.slug}
+                  href={`/lending/${entry.slug}`}
+                  className="rounded-full border border-border px-4 py-2 text-sm font-medium hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  {entry.name}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

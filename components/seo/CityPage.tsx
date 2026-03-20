@@ -261,7 +261,59 @@ export default function CityPage({ city }: CityPageProps) {
                   { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
                   { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
                   { label: 'How to Finance Your First Fix and Flip', href: '/blog/how-to-finance-first-fix-and-flip' },
+                  { label: 'Questions to Ask a Hard Money Lender', href: '/blog/questions-to-ask-a-hard-money-lender' },
                   { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+                ].map((resource) => (
+                  <Link
+                    key={resource.href}
+                    href={resource.href}
+                    className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <span className="font-medium">{resource.label}</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-secondary/20">
+        <div className="container px-4 md:px-6">
+          <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 max-w-5xl mx-auto">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Financing Paths Investors Commonly Use in {city.cityName}
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                The strongest {city.cityName} files usually match the debt to the stage of the
+                asset. Transitional properties often fit bridge or rehab financing first.
+                Stabilized rentals tend to work better with DSCR debt. Construction projects need
+                stronger contractor, budget, and draw logic from the beginning.
+              </p>
+              <div className="space-y-4">
+                {[
+                  `Use bridge or rehab capital when the ${city.cityName} property still needs work or repositioning`,
+                  'Shift into long-term rental debt once condition and income support are stable',
+                  'Make sure taxes, insurance, and hold costs still leave room if timing slips',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <Users className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-6">
+              <h3 className="text-xl font-semibold mb-4">More Investor Guides</h3>
+              <div className="space-y-3">
+                {[
+                  { label: 'What Is a Hard Money Loan?', href: '/blog/what-is-a-hard-money-loan' },
+                  { label: 'Fix and Flip for Beginners', href: '/blog/fix-and-flip-for-beginners' },
+                  { label: 'How Does a DSCR Loan Work?', href: '/blog/how-does-a-dscr-loan-work' },
+                  { label: 'How to Get a Construction Loan', href: '/blog/how-to-get-a-construction-loan' },
                 ].map((resource) => (
                   <Link
                     key={resource.href}
