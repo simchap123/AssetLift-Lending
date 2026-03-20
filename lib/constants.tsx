@@ -94,6 +94,5 @@ export const BROKER_INFO = {
   name: 'AssetLift Lending',
   title: 'LOAN SPECIALIST TEAM',
   email: 'info@assetliftlending.com',
-  phone: '+1 929-639-2284',
-  nmls: '1324403'
+  phone: '+1 929-639-2284'
 };

@@ -23,10 +23,8 @@ export default function ContactPage() {
     url: 'https://assetliftlending.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '300 East McBee Ave., STE 200',
-      addressLocality: 'Greenville',
-      addressRegion: 'SC',
-      postalCode: '29601',
+      addressLocality: 'Queens',
+      addressRegion: 'NY',
       addressCountry: 'US',
     },
     openingHoursSpecification: {
@@ -91,7 +89,7 @@ export default function ContactPage() {
               </div>
               <h3 className="font-semibold mb-1">Office</h3>
               <p className="text-muted-foreground text-sm">
-                300 E McBee Ave, STE 200<br />Greenville, SC 29601
+                Queens, NY
               </p>
             </div>
             <div className="bg-card border border-border rounded-xl p-6 text-center">

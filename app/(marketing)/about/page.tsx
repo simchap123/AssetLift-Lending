@@ -24,10 +24,8 @@ export default function AboutPage() {
     email: 'info@assetliftlending.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '300 East McBee Ave., STE 200',
-      addressLocality: 'Greenville',
-      addressRegion: 'SC',
-      postalCode: '29601',
+      addressLocality: 'Queens',
+      addressRegion: 'NY',
       addressCountry: 'US',
     },
     areaServed: 'US',
@@ -74,8 +72,8 @@ export default function AboutPage() {
                 <p className="text-muted-foreground">AssetLift Lending</p>
               </div>
               <div>
-                <p className="font-semibold mb-1">NMLS</p>
-                <p className="text-muted-foreground">NMLS #1324403</p>
+                <p className="font-semibold mb-1">Coverage</p>
+                <p className="text-muted-foreground">Nationwide investment-property lending</p>
               </div>
               <div>
                 <p className="font-semibold mb-1">Primary Contact</p>
@@ -83,7 +81,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="font-semibold mb-1">Office</p>
-                <p className="text-muted-foreground">300 East McBee Ave., STE 200, Greenville, SC 29601</p>
+                <p className="text-muted-foreground">Queens, NY</p>
               </div>
             </div>
           </div>
