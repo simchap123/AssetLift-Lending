@@ -1,16 +1,8 @@
 import Link from "next/link";
 import { ArrowRight, MapPin } from "lucide-react";
+import { STATES } from "@/lib/data/states";
 
-const PRIORITY_STATES = [
-  { name: "Florida", href: "/lending/florida" },
-  { name: "Texas", href: "/lending/texas" },
-  { name: "California", href: "/lending/california" },
-  { name: "Georgia", href: "/lending/georgia" },
-  { name: "North Carolina", href: "/lending/north-carolina" },
-  { name: "Arizona", href: "/lending/arizona" },
-];
-
-const PRIORITY_CITIES = [
+const FEATURED_CITIES = [
   { name: "Miami", href: "/lending/florida/miami" },
   { name: "Tampa", href: "/lending/florida/tampa" },
   { name: "Austin", href: "/lending/texas/austin" },
@@ -28,22 +20,22 @@ export default function MarketsPreview() {
             Investor Markets
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Hard Money Lending in Priority Markets
+            Hard Money Lending Across Our Coverage Areas
           </h2>
           <p className="text-lg text-muted-foreground">
-            Explore the states and metros where we are actively building deeper market-specific
-            lending pages for real estate investors.
+            Explore the states and cities where AssetLift Lending offers financing for fix and
+            flip, bridge, DSCR rental, and ground-up construction projects.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
-            <h3 className="text-2xl font-bold mb-5">Top States</h3>
+            <h3 className="text-2xl font-bold mb-5">States We Serve</h3>
             <div className="grid sm:grid-cols-2 gap-3">
-              {PRIORITY_STATES.map((market) => (
+              {STATES.slice(0, 12).map((market) => (
                 <Link
-                  key={market.href}
-                  href={market.href}
+                  key={market.slug}
+                  href={`/lending/${market.slug}`}
                   className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
                 >
                   <span className="flex items-center gap-2 font-medium">
@@ -57,9 +49,9 @@ export default function MarketsPreview() {
           </div>
 
           <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
-            <h3 className="text-2xl font-bold mb-5">Top Cities</h3>
+            <h3 className="text-2xl font-bold mb-5">Featured Cities</h3>
             <div className="grid sm:grid-cols-2 gap-3">
-              {PRIORITY_CITIES.map((market) => (
+              {FEATURED_CITIES.map((market) => (
                 <Link
                   key={market.href}
                   href={market.href}
@@ -81,7 +73,7 @@ export default function MarketsPreview() {
             href="/markets"
             className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
           >
-            View all core lending markets <ArrowRight className="w-4 h-4" />
+            View all lending markets <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>

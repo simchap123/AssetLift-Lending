@@ -1299,4 +1299,73 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "brrrr-refinance-into-dscr-loan",
+    title: "How to Refinance a BRRRR Deal Into a DSCR Loan",
+    description:
+      "A practical guide for investors moving from rehab financing into DSCR debt after a BRRRR project is stabilized and ready for long-term rental underwriting.",
+    publishedAt: "2026-03-19T16:00:00Z",
+    author: "AssetLift Team",
+    authorRole: "Lending Specialists",
+    readTime: "10 min read",
+    category: "DSCR Rental",
+    tags: [
+      "brrrr strategy",
+      "dscr loan",
+      "refinance rental property",
+      "hard money refinance",
+      "rental property financing",
+      "real estate investing",
+    ],
+    heroImage: "/blog/brrrr-refinance-into-dscr-loan.jpg",
+    sections: [
+      {
+        heading: "Why BRRRR Investors Refinance Into DSCR Debt",
+        content:
+          "A BRRRR deal usually begins with short-term acquisition or rehab capital because the property is not yet clean enough, stable enough, or documented enough for long-term rental financing. Once the renovation is complete and the asset is leased or lease-ready, the financing objective changes. The investor is no longer solving for speed. The investor is solving for lower carrying cost, cleaner long-term structure, and capital recovery.\n\nThat is where DSCR debt often becomes the best fit. A DSCR loan lets the property qualify based primarily on rental income rather than personal tax-return complexity, which makes it a practical refinance path for active investors building a portfolio.",
+      },
+      {
+        heading: "When a Property Is Actually Ready for the DSCR Refinance",
+        content:
+          "Not every completed rehab is automatically ready for DSCR execution. The property should be in durable rental condition, the rent story should be supportable, and the appraisal should reflect the completed value without leaning on unrealistic assumptions. In many cases, the cleanest files are the ones where the property is already leased or where market-rent support is straightforward.\n\nThe refinance works best when the asset has clearly crossed from transitional to stabilized. If major punch-list items remain, the tenant plan is uncertain, or the rent estimate is still speculative, the file may need more time before it fits long-term debt.",
+      },
+      {
+        heading: "The Key Numbers Investors Should Underwrite Before They Refinance",
+        content:
+          "Before starting the DSCR refinance, investors should model three things carefully: expected appraised value, expected qualifying rent, and the likely debt-service coverage ratio at current market rates. That tells you whether the refinance will simply replace the old loan or whether it will also return enough capital to keep the BRRRR cycle moving.\n\nThis matters because many BRRRR plans fail in the refinance stage, not the renovation stage. The rehab may have gone well, but if the post-repair rent support is weak or the appraisal comes in soft, the investor can be forced to leave more cash in the deal than planned. The fix is not optimism. It is conservative underwriting before the refinance starts.",
+      },
+      {
+        heading: "What Lenders Usually Look for on the Refinance",
+        content:
+          "Lenders generally want to see a property that looks financeable for the long term. That means acceptable condition, sensible leverage, a believable rent number, and a borrower who can close the refinance without scrambling. Depending on the program, they may also look at seasoning, reserve expectations, entity structure, and whether the payoff from the old bridge or rehab loan creates any timing issues.\n\nThe strongest BRRRR files are the ones where the exit is organized before maturity pressure shows up. Investors who start the refinance conversation early usually have more room to choose terms instead of rushing into whatever will close first.",
+      },
+      {
+        heading: "How to Make the BRRRR Exit Cleaner",
+        content:
+          "The cleanest BRRRR exits usually come from disciplined project management on the front end. Keep the rehab scope aligned with what the rental market actually rewards. Document improvements clearly. Know what rent level is realistic before you ever buy the property. And do not wait until the hard money maturity date is close before preparing the refinance package.\n\nDSCR refinance works well when it is treated as part of the original business plan rather than an afterthought. Investors who underwrite the takeout debt early are usually the ones who recycle capital faster and build more resilient portfolios.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I refinance a hard money BRRRR loan into a DSCR loan?",
+        answer:
+          "Yes. That is one of the most common BRRRR exits. After the rehab is complete and the property is stabilized, many investors move from short-term rehab debt into a DSCR rental loan.",
+      },
+      {
+        question: "Do I need a tenant in place before a DSCR refinance?",
+        answer:
+          "Not always, but it often helps. Some programs can use market-rent support from the appraisal, while others are easier when the property is already leased and the income story is clearer.",
+      },
+      {
+        question: "What usually causes a BRRRR refinance to disappoint?",
+        answer:
+          "The most common issues are a softer-than-expected appraisal, weaker rent support than planned, or waiting too long to prepare the refinance before the short-term loan matures.",
+      },
+      {
+        question: "Why is DSCR debt popular for BRRRR investors?",
+        answer:
+          "Because it usually fits rental-property underwriting better than traditional income-documentation loans, especially for investors who are self-employed or scaling a portfolio.",
+      },
+    ],
+  },
 ];

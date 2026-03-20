@@ -10,7 +10,7 @@ import { CITIES } from "@/lib/data/cities";
 export const metadata: Metadata = createMetadata({
   title: "Hard Money Loan Markets",
   description:
-    "Browse AssetLift Lending's core hard money loan markets by state and city for fix and flip, bridge, DSCR rental, and construction financing.",
+    "Browse AssetLift Lending's hard money loan markets by state and city for fix and flip, bridge, DSCR rental, and construction financing.",
   path: "/markets",
 });
 
@@ -33,15 +33,15 @@ const PRIORITY_CITY_SLUGS = [
 ];
 
 export default function MarketsPage() {
-  const priorityStates = STATES.filter((state) => PRIORITY_STATE_SLUGS.includes(state.slug));
-  const priorityCities = CITIES.filter((city) => PRIORITY_CITY_SLUGS.includes(city.citySlug));
+  const featuredStates = STATES.filter((state) => PRIORITY_STATE_SLUGS.includes(state.slug));
+  const featuredCities = CITIES.filter((city) => PRIORITY_CITY_SLUGS.includes(city.citySlug));
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "AssetLift Lending Markets",
     description:
-      "Core hard money loan markets served by AssetLift Lending for real estate investors.",
+      "Hard money loan markets served by AssetLift Lending for real estate investors.",
     url: "https://www.assetliftlending.com/markets",
   };
 
@@ -62,20 +62,20 @@ export default function MarketsPage() {
               Hard Money Loan Markets for Real Estate Investors
             </h1>
             <p className="text-lg text-muted-foreground">
-              Start with the markets where we are concentrating the strongest local lending
-              coverage, then move into the product page that matches your deal strategy.
+              Browse the states where AssetLift Lending offers investor financing, then explore
+              city and product pages that match your project type and exit strategy.
             </p>
           </div>
 
           <div className="grid xl:grid-cols-[1.2fr_0.8fr] gap-8 mb-12">
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-3">Priority States</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-3">States We Serve</h2>
               <p className="text-muted-foreground mb-6">
-                These are the state markets where we should concentrate content depth, internal
-                links, and lead generation first.
+                We lend across 46 states for investment-property deals, including fix and flip,
+                bridge, DSCR rental, and ground-up construction scenarios.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
-                {priorityStates.map((state) => (
+                {STATES.map((state) => (
                   <Link
                     key={state.slug}
                     href={`/lending/${state.slug}`}
@@ -85,7 +85,10 @@ export default function MarketsPage() {
                       <MapPin className="w-4 h-4" />
                       {state.name}
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3">{state.marketHighlight}</p>
+                    <p className="text-sm text-muted-foreground mb-1">{state.marketHighlight}</p>
+                    <p className="text-xs text-muted-foreground mb-3">
+                      Median home price {state.medianHomePrice}
+                    </p>
                     <span className="inline-flex items-center gap-1 text-sm font-medium text-primary">
                       View {state.name} market <ArrowRight className="w-4 h-4" />
                     </span>
@@ -95,13 +98,13 @@ export default function MarketsPage() {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-3">Priority Cities</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-3">Featured City Pages</h2>
               <p className="text-muted-foreground mb-6">
-                City pages should earn rankings only where we can support them with market-specific
-                lending information and intent.
+                Explore a few borrower-facing city pages with local market context, then move into
+                the state or loan page that best matches the deal.
               </p>
               <div className="space-y-3">
-                {priorityCities.map((city) => (
+                {featuredCities.map((city) => (
                   <Link
                     key={`${city.stateSlug}-${city.citySlug}`}
                     href={`/lending/${city.stateSlug}/${city.citySlug}`}
@@ -118,6 +121,21 @@ export default function MarketsPage() {
                     <ArrowRight className="w-4 h-4 text-primary" />
                   </Link>
                 ))}
+              </div>
+
+              <div className="mt-6 rounded-xl border border-border bg-secondary/20 p-4">
+                <h3 className="font-semibold mb-2">Featured State Coverage</h3>
+                <div className="flex flex-wrap gap-2">
+                  {featuredStates.map((state) => (
+                    <Link
+                      key={state.slug}
+                      href={`/lending/${state.slug}`}
+                      className="rounded-full border border-border px-3 py-1.5 text-sm hover:border-primary/50 transition-colors"
+                    >
+                      {state.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
