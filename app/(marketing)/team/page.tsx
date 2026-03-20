@@ -15,25 +15,22 @@ export const metadata: Metadata = createMetadata({
 
 const teamMembers = [
   {
-    initials: 'JM',
-    name: 'John Mitchell',
-    title: 'Founder & Managing Director',
-    bio: 'Over 15 years of experience in real estate finance and private lending. Previously led originations at a national bridge lending platform before founding AssetLift Lending to bring a borrower-first approach to hard money.',
-    nmls: '000000',
+    initials: 'YP',
+    name: 'Yaakov Pentelnik',
+    title: 'Co-Founder & Managing Partner',
+    bio: 'Leads deal origination and borrower relationships at AssetLift Lending. Focused on building a lending platform that moves at the speed investors need, with the transparency and reliability to back it up.',
   },
   {
-    initials: 'SR',
-    name: 'Sarah Reeves',
-    title: 'Director of Underwriting',
-    bio: 'Decade-plus career spanning commercial real estate credit analysis and investment-property underwriting. Specializes in construction feasibility review and asset-based risk assessment for complex deal structures.',
-    nmls: '000000',
+    initials: 'LP',
+    name: 'Labi Pentelnik',
+    title: 'Co-Founder & Director of Operations',
+    bio: 'Oversees underwriting, capital deployment, and loan operations. Ensures every deal moves through the pipeline efficiently from application to funding, with clear communication at every step.',
   },
   {
-    initials: 'DK',
-    name: 'David Kim',
-    title: 'VP of Capital Markets',
-    bio: 'Background in structured finance and secondary-market loan sales. Manages lender relationships and capital allocation to ensure AssetLift maintains consistent funding capacity across all loan programs.',
-    nmls: '000000',
+    initials: 'IP',
+    name: 'Israel Pentelnik',
+    title: 'Co-Founder & Head of Capital Markets',
+    bio: 'Manages lender relationships, capital allocation, and portfolio strategy. Responsible for maintaining consistent funding capacity across all loan programs and markets.',
   },
 ];
 
@@ -61,21 +58,21 @@ export default function TeamPage() {
       addressCountry: 'US',
     },
     areaServed: 'US',
-    founder: {
-      '@type': 'Person',
-      name: 'John Mitchell',
-      jobTitle: 'Founder & Managing Director',
-    },
-    employee: [
+    founder: [
       {
         '@type': 'Person',
-        name: 'Sarah Reeves',
-        jobTitle: 'Director of Underwriting',
+        name: 'Yaakov Pentelnik',
+        jobTitle: 'Co-Founder & Managing Partner',
       },
       {
         '@type': 'Person',
-        name: 'David Kim',
-        jobTitle: 'VP of Capital Markets',
+        name: 'Labi Pentelnik',
+        jobTitle: 'Co-Founder & Director of Operations',
+      },
+      {
+        '@type': 'Person',
+        name: 'Israel Pentelnik',
+        jobTitle: 'Co-Founder & Head of Capital Markets',
       },
     ],
   };
@@ -116,11 +113,8 @@ export default function TeamPage() {
                   </div>
                   <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
                   <p className="text-primary text-sm font-medium mb-3">{member.title}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {member.bio}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    NMLS# {member.nmls}
                   </p>
                 </div>
               ))}
