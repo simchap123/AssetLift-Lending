@@ -27,6 +27,7 @@ const RESOURCE_MAP: Record<string, Array<{ label: string; href: string }>> = {
     { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
     { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
     { label: 'DSCR vs Conventional Rental Loans', href: '/compare/dscr-loans-vs-conventional-rental-loans' },
+    { label: 'BRRRR to DSCR Refinance Guide', href: '/blog/brrrr-refinance-into-dscr-loan' },
   ],
   Construction: [
     { label: 'Ground-Up Construction Loans', href: '/loans/ground-up-construction' },
@@ -38,6 +39,7 @@ const RESOURCE_MAP: Record<string, Array<{ label: string; href: string }>> = {
     { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
     { label: 'Bridge Loans', href: '/loans/bridge' },
     { label: 'Hard Money vs Bank', href: '/compare/hard-money-lender-vs-bank' },
+    { label: 'Questions to Ask a Hard Money Lender', href: '/blog/questions-to-ask-a-hard-money-lender' },
   ],
 };
 
