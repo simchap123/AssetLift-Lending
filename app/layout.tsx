@@ -102,6 +102,30 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* GEO: llms.txt for AI crawlers */}
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt - AI-readable site description" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLMs-full.txt - Comprehensive AI-readable content" />
+        {/* Speakable schema for voice assistants */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'AssetLift Lending - Hard Money Loans for Real Estate Investors',
+              url: 'https://www.assetliftlending.com',
+              speakable: {
+                '@type': 'SpeakableSpecification',
+                cssSelector: ['h1', 'h2', '[data-speakable]', '.hero-description'],
+              },
+              mainEntity: {
+                '@type': 'FinancialService',
+                name: 'AssetLift Lending',
+                description: 'Direct private money lender providing fast hard money loans for real estate investors. Fix & flip, DSCR rental, bridge, and construction loans in 46 states. Close in 7-10 days.',
+              },
+            }),
+          }}
+        />
       </head>
       <body className="min-h-screen bg-background antialiased">
         <Providers>
