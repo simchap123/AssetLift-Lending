@@ -1,84 +1,73 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Check, Hammer, Building2, Home, ArrowLeftRight } from "lucide-react";
 
-const LoanPrograms = () => {
-  const programs = [
-    {
-      id: "fix-flip",
-      title: "Fix & Flip",
-      subtitle: "INVESTMENTS",
-      maxValue: "92.5",
-      loanType: "LTC",
-      loanTypeLabel: "COST",
-      highlights: [
-        "Up to 92.5% LTC & 75% LTV",
-        "Up to 100% rehab funded",
-        "Loans up to $5MM",
-        "13, 19-month term options",
-        "1-4 unit residential properties",
-        "Pay no interest on undrawn renovation funds",
-      ],
-      otherOptions: "*Bridge only options available",
-      Icon: Hammer,
-    },
-    {
-      id: "ground-up",
-      title: "Ground-Up",
-      subtitle: "CONSTRUCTION",
-      maxValue: "90",
-      loanType: "LTC",
-      loanTypeLabel: "COST",
-      highlights: [
-        "Up to 90% LTC & 70% LTARV",
-        "Up to 100% of construction",
-        "Loans up to $5MM",
-        "19, 24-month term options",
-        "Spec builds, infills, neighborhood developments",
-        "Pay no interest on undrawn construction funds",
-      ],
-      otherOptions: "BUILD2RENT\u00AE: Flexible DSCR options",
-      Icon: Building2,
-    },
-    {
-      id: "bridge",
-      title: "Bridge",
-      subtitle: "FINANCING",
-      maxValue: "80",
-      loanType: "LTV",
-      loanTypeLabel: "VALUE",
-      highlights: [
-        "Up to 80% LTV",
-        "Quick closings in 7-10 days",
-        "Loans up to $5MM",
-        "6, 12, 18-month terms",
-        "Residential & commercial",
-        "Flexible exit strategies",
-      ],
-      Icon: ArrowLeftRight,
-    },
-    {
-      id: "rental",
-      title: "Rental / DSCR",
-      subtitle: "PROPERTIES",
-      maxValue: "80",
-      loanType: "LTV",
-      loanTypeLabel: "VALUE",
-      highlights: [
-        "Up to 80% LTV on purchase & refi",
-        "Up to 75% LTV on cash out",
-        "Loans up to $3MM",
-        "30-year fixed rate, 10|1 ARM & 5 year interest-only",
-        "1-4 unit residential properties",
-        "No personal income verification",
-      ],
-      Icon: Home,
-    },
-  ];
+const programs = [
+  {
+    id: "fix-flip",
+    title: "Fix & Flip",
+    description: "Buy and rehab residential. Close in as few as 10 days.",
+    href: "/loans/fix-and-flip",
+    highlights: [
+      "Up to 92.5% LTC & 75% LTV",
+      "Up to 100% rehab funded",
+      "Loans up to $5MM",
+      "13, 19-month term options",
+      "1-4 unit residential properties",
+      "Pay no interest on undrawn renovation funds",
+    ],
+    Icon: Hammer,
+  },
+  {
+    id: "ground-up",
+    title: "Ground-Up Construction",
+    description: "Build from the ground up. New investors welcome.",
+    href: "/loans/ground-up-construction",
+    highlights: [
+      "Up to 90% LTC & 70% LTARV",
+      "Up to 100% of construction",
+      "Loans up to $5MM",
+      "19, 24-month term options",
+      "Spec builds, infills, neighborhood developments",
+      "Pay no interest on undrawn construction funds",
+    ],
+    Icon: Building2,
+  },
+  {
+    id: "bridge",
+    title: "Bridge",
+    description: "Extract equity or refinance. Flexible exit strategies.",
+    href: "/loans/bridge",
+    highlights: [
+      "Up to 80% LTV",
+      "Quick closings in 7-10 days",
+      "Loans up to $5MM",
+      "6, 12, 18-month terms",
+      "Residential & commercial",
+      "Flexible exit strategies",
+    ],
+    Icon: ArrowLeftRight,
+  },
+  {
+    id: "rental",
+    title: "Rental / DSCR",
+    description: "Long-term financing. No personal income verification.",
+    href: "/loans/dscr-rental",
+    highlights: [
+      "Up to 80% LTV on purchase & refi",
+      "Up to 75% LTV on cash out",
+      "Loans up to $3MM",
+      "30-year fixed rate, 10|1 ARM & 5 year interest-only",
+      "1-4 unit residential properties",
+      "No personal income verification",
+    ],
+    Icon: Home,
+  },
+];
 
+const LoanPrograms = () => {
   return (
     <section id="programs" className="py-28 md:py-40 relative overflow-hidden">
       {/* Subtle background texture */}
@@ -109,14 +98,14 @@ const LoanPrograms = () => {
           </motion.div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
             Real Estate{" "}
-            <span className="relative">
+            <span className="relative inline-block">
               <span className="gradient-text">Financing</span>
               <motion.span
-                className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 rounded-full"
-                initial={{ scaleX: 0 }}
-                whileInView={{ scaleX: 1 }}
+                className="absolute -bottom-2 left-0 h-1 rounded-full bg-gradient-to-r from-primary to-yellow-500"
+                initial={{ width: 0 }}
+                whileInView={{ width: "100%" }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.5 }}
+                transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
               />
             </span>
           </h2>
@@ -125,8 +114,8 @@ const LoanPrograms = () => {
           </p>
         </motion.div>
 
-        {/* Program cards */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+        {/* Program cards — 2x2 grid */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
@@ -138,73 +127,70 @@ const LoanPrograms = () => {
                 delay: index * 0.1,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="group h-full"
+              className="group"
             >
-              <div className="relative flex flex-col h-full bg-card rounded-xl border border-border overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
-                {/* Header */}
-                <div className="relative bg-gradient-to-br from-zinc-900 to-zinc-800 dark:from-zinc-800 dark:to-zinc-900 p-5">
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-amber-400 to-primary" />
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <p className="text-primary text-[10px] font-semibold uppercase tracking-[0.2em] mb-1">
-                        {program.subtitle}
-                      </p>
-                      <h3 className="text-white text-xl font-bold">
+              <div className="relative flex flex-col bg-card rounded-2xl border border-border overflow-hidden transition-all duration-[400ms] ease-out hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+                {/* Top portion — always visible */}
+                <div className="p-7 pb-5">
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-2xl font-bold text-foreground mb-1.5 tracking-tight">
                         {program.title}
                       </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {program.description}
+                      </p>
                     </div>
-                    <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
-                      <program.Icon className="w-5 h-5 text-primary" />
-                    </div>
+                    <Link
+                      href={program.href}
+                      className="flex-shrink-0 ml-4 w-11 h-11 rounded-full border border-border bg-card flex items-center justify-center transition-all duration-[400ms] group-hover:border-primary/50 group-hover:bg-primary/10 group-hover:rotate-[-45deg]"
+                      aria-label={`Learn more about ${program.title}`}
+                    >
+                      <ArrowRight className="w-5 h-5 text-primary" />
+                    </Link>
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="p-5 flex flex-col flex-grow">
-                  <div className="mb-5 pb-5 border-b border-border">
-                    <p className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground mb-2">
-                      Maximum Leverage
-                    </p>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-5xl font-black tracking-tight text-foreground">
-                        {program.maxValue}
-                      </span>
-                      <span className="text-2xl font-bold text-foreground/70">%</span>
-                      <span className="ml-2 text-xs font-semibold text-muted-foreground uppercase">
-                        {program.loanType}
-                      </span>
+                {/* Bottom portion — hover reveal */}
+                <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-[400ms] ease-out">
+                  <div className="overflow-hidden">
+                    <div className="px-7 pb-7 pt-2">
+                      {/* Divider */}
+                      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-5" />
+
+                      <ul className="space-y-2.5 mb-6">
+                        {program.highlights.map((highlight, idx) => (
+                          <li key={idx} className="flex items-start gap-2.5 text-sm">
+                            <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                            <span className="text-muted-foreground leading-snug">{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <div className="flex items-center gap-4">
+                        <Link
+                          href={program.href}
+                          className="text-sm font-semibold text-primary hover:text-yellow-500 transition-colors duration-300 inline-flex items-center gap-1.5"
+                        >
+                          Learn More
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                        <Link
+                          href="/apply"
+                          className="inline-flex items-center justify-center gap-2 h-10 px-5 text-sm font-bold tracking-wide rounded-lg
+                            bg-gradient-to-r from-primary via-yellow-500 to-primary
+                            hover:from-amber-400 hover:via-yellow-400 hover:to-amber-400
+                            text-zinc-900
+                            shadow-[0_2px_8px_rgba(245,158,11,0.25)]
+                            hover:shadow-[0_4px_20px_rgba(245,158,11,0.4)]
+                            transition-all duration-300 ease-out"
+                        >
+                          Get Started
+                          <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
+                        </Link>
+                      </div>
                     </div>
                   </div>
-
-                  <ul className="space-y-2.5 mb-5 flex-grow">
-                    {program.highlights.map((highlight, idx) => (
-                      <li key={idx} className="flex items-start gap-2.5 text-sm">
-                        <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                        <span className="text-muted-foreground leading-snug">{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {program.otherOptions && (
-                    <p className="text-xs text-muted-foreground/70 italic mb-5 pl-6">
-                      {program.otherOptions}
-                    </p>
-                  )}
-
-                  <Link
-                    href="/apply"
-                    className="group/btn relative mt-auto w-full h-12 flex items-center justify-center gap-2
-                      bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500
-                      hover:from-amber-400 hover:via-yellow-400 hover:to-amber-400
-                      text-zinc-900 font-bold text-sm tracking-wide
-                      rounded-lg overflow-hidden
-                      shadow-[0_2px_8px_rgba(245,158,11,0.25)]
-                      hover:shadow-[0_4px_20px_rgba(245,158,11,0.4)]
-                      transition-all duration-300 ease-out"
-                  >
-                    <span className="relative z-10">Get Started</span>
-                    <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                  </Link>
                 </div>
               </div>
             </motion.div>

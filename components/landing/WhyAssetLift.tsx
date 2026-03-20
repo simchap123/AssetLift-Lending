@@ -1,92 +1,129 @@
 'use client';
 
-import { motion } from "framer-motion";
-import { Shield, Zap, DollarSign, Users, CheckCircle2, TrendingUp } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Plus, Minus } from "lucide-react";
 
-const benefits = [
+const panels = [
   {
-    icon: Zap,
-    title: "Close in 7 to 10 Days",
-    description:
-      "Our streamlined underwriting process and in-house decision making allow us to fund deals faster than traditional lenders. When you find the right property, speed matters.",
+    title: "Fast Processing",
+    content:
+      "Get pre-approved within 24 hours and close in as few as 10 days. Our streamlined underwriting process and in-house decision making allow us to fund deals faster than traditional lenders. When you find the right property, speed matters.",
   },
   {
-    icon: Shield,
-    title: "Direct Lender, Not a Broker",
-    description:
-      "AssetLift Lending funds loans from our own balance sheet. No middlemen, no third-party approvals, and no last-minute surprises at the closing table.",
+    title: "Direct Lender Advantage",
+    content:
+      "AssetLift Lending funds loans from our own balance sheet. No middlemen, no third-party approvals, and no last-minute surprises. The team you talk to is the team that underwrites, approves, and funds your loan. One point of contact from application through funding.",
   },
   {
-    icon: DollarSign,
-    title: "Up to 92.5% Loan-to-Cost",
-    description:
-      "We offer some of the highest leverage in the hard money lending industry. Keep more of your own capital available for additional investments and project reserves.",
+    title: "Highest Leverage Available",
+    content:
+      "We offer up to 92.5% loan-to-cost on fix and flip loans with 100% of rehab funded. Our DSCR rental loans go up to 80% LTV with no personal income verification. Keep more of your capital available for additional investments and project reserves.",
   },
   {
-    icon: Users,
     title: "Built for Repeat Investors",
-    description:
-      "Our programs reward experienced borrowers with better rates, higher leverage, and faster closings. The more you work with AssetLift, the better your terms become.",
-  },
-  {
-    icon: CheckCircle2,
-    title: "Transparent Terms from Day One",
-    description:
-      "You will know your rate, fees, and timeline before you commit. We believe real estate investors deserve upfront pricing with no hidden costs or surprise charges at closing.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Nationwide Coverage in 46 States",
-    description:
-      "Whether you are investing in Florida, Texas, California, or any of the other states we serve, AssetLift provides consistent execution and reliable funding across the country.",
+    content:
+      "Our programs reward experienced borrowers with better rates, higher leverage, and faster closings. The more you work with AssetLift, the better your terms become. Count on our full support before and after closing — your project is the start of a lasting relationship.",
   },
 ];
 
 const WhyAssetLift = () => {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const togglePanel = (index: number) => {
+    setOpenIndex(openIndex === index ? -1 : index);
+  };
+
   return (
     <section className="py-20 md:py-28 relative">
       <div className="container px-4 md:px-6">
-        <motion.div
-          className="max-w-3xl mx-auto text-center mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7 }}
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-            Why Real Estate Investors Choose{" "}
-            <span className="gradient-text">AssetLift Lending</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            AssetLift Lending is a direct private money lender that specializes in hard money loans
-            for real estate investors nationwide. We provide fast, flexible financing for fix and flip
-            projects, ground-up construction, DSCR rental properties, and bridge loans. Our team
-            understands that in competitive real estate markets, the ability to close quickly and
-            reliably is what separates successful investors from those who miss out on opportunities.
-          </p>
-        </motion.div>
+        {/* Two-column layout */}
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
+          {/* Left column — sticky heading */}
+          <motion.div
+            className="lg:sticky lg:top-32 lg:self-start"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7 }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+              Why Real Estate Investors Choose{" "}
+              <span className="gradient-text">AssetLift Lending</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              AssetLift Lending is a direct private money lender that specializes in hard money loans
+              for real estate investors nationwide. We provide fast, flexible financing for fix and flip
+              projects, ground-up construction, DSCR rental properties, and bridge loans. Our team
+              understands that in competitive real estate markets, the ability to close quickly and
+              reliably is what separates successful investors from those who miss out on opportunities.
+            </p>
+          </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
-          {benefits.map((benefit, index) => (
-            <motion.div
-              key={benefit.title}
-              className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-            >
-              <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <benefit.icon className="w-5 h-5 text-primary" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {benefit.description}
-              </p>
-            </motion.div>
-          ))}
+          {/* Right column — accordion panels */}
+          <motion.div
+            className="flex flex-col gap-3"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+          >
+            {panels.map((panel, index) => {
+              const isOpen = openIndex === index;
+
+              return (
+                <div
+                  key={panel.title}
+                  className={`border border-border rounded-xl overflow-hidden transition-colors duration-300 ${
+                    isOpen ? "border-l-4 border-l-primary bg-card" : "bg-card/50"
+                  }`}
+                >
+                  {/* Panel header */}
+                  <button
+                    onClick={() => togglePanel(index)}
+                    className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-secondary/40 transition-colors duration-200 cursor-pointer"
+                    aria-expanded={isOpen}
+                  >
+                    <span className="text-lg font-semibold pr-4">{panel.title}</span>
+                    <motion.span
+                      className="flex-shrink-0 text-primary"
+                      animate={{ rotate: isOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                    >
+                      {isOpen ? (
+                        <Minus className="w-5 h-5" />
+                      ) : (
+                        <Plus className="w-5 h-5" />
+                      )}
+                    </motion.span>
+                  </button>
+
+                  {/* Panel content */}
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        key="content"
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="overflow-hidden"
+                      >
+                        <div className="px-6 pb-5">
+                          <p className="text-muted-foreground leading-relaxed">
+                            {panel.content}
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              );
+            })}
+          </motion.div>
         </div>
 
+        {/* SEO content section */}
         <motion.div
           className="max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}

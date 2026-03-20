@@ -6,6 +6,47 @@ import { ArrowRight, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
+const buckets = [
+  {
+    title: "I'm Flipping",
+    subtitle: "Fix & Flip Loans",
+    href: "/loans/fix-and-flip",
+  },
+  {
+    title: "I'm Buying",
+    subtitle: "DSCR Rental Loans",
+    href: "/loans/dscr-rental",
+  },
+  {
+    title: "I'm Building",
+    subtitle: "Construction Loans",
+    href: "/loans/ground-up-construction",
+  },
+  {
+    title: "I'm Refinancing",
+    subtitle: "Bridge Loans",
+    href: "/loans/bridge",
+  },
+];
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const bucketVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const },
+  },
+};
+
 const Hero = () => {
   const stats = [
     { value: "$5MM+", label: "Max Loan" },
@@ -31,7 +72,7 @@ const Hero = () => {
       </div>
 
       <div className="container relative z-10 px-4 md:px-6">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -57,7 +98,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10"
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -66,22 +107,46 @@ const Hero = () => {
             7 to 10 days for investors who need reliable execution.
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* Standalone Get Funded CTA */}
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 mb-16"
+            className="mb-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <Button asChild size="lg" className="text-lg px-8 py-6 glow-primary">
+            <Button asChild size="lg" className="text-base px-6 py-5 glow-primary">
               <Link href="/apply">
                 Get Funded
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-primary/50 hover:bg-primary/10 backdrop-blur-sm">
-              <a href="#programs">View Programs</a>
-            </Button>
+          </motion.div>
+
+          {/* Bucket CTA Grid */}
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14 max-w-2xl"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {buckets.map((bucket) => (
+              <motion.div key={bucket.href} variants={bucketVariants}>
+                <Link
+                  href={bucket.href}
+                  className="group flex items-center justify-between gap-4 rounded-xl bg-card/80 backdrop-blur-lg border border-border/50 px-6 py-5 transition-all duration-300 ease-in-out hover:scale-[1.03] hover:border-primary hover:shadow-lg hover:shadow-primary/10"
+                >
+                  <div>
+                    <div className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                      {bucket.title}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {bucket.subtitle}
+                    </div>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-all duration-300 group-hover:translate-x-1 shrink-0" />
+                </Link>
+              </motion.div>
+            ))}
           </motion.div>
 
           {/* Stats */}
@@ -89,7 +154,7 @@ const Hero = () => {
             className="flex flex-wrap gap-8 md:gap-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -97,7 +162,7 @@ const Hero = () => {
                 className="text-center"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
+                transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
               >
                 <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{stat.value}</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wide">{stat.label}</div>

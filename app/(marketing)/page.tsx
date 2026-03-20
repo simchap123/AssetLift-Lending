@@ -4,8 +4,11 @@ import LoanPrograms from "@/components/landing/LoanPrograms";
 import HowItWorks from "@/components/landing/HowItWorks";
 import FAQ from "@/components/landing/FAQ";
 import CTA from "@/components/landing/CTA";
+import Testimonials from "@/components/landing/Testimonials";
 import PromoBanner from "@/components/landing/PromoBanner";
 import MarketsPreview from "@/components/landing/MarketsPreview";
+import AnimatedStats from "@/components/landing/AnimatedStats";
+import SectionDivider from "@/components/landing/SectionDivider";
 import JsonLd from "@/components/JsonLd";
 
 export default function HomePage() {
@@ -36,8 +39,12 @@ export default function HomePage() {
         <WhyAssetLift />
         <LoanPrograms />
         <MarketsPreview />
+        <SectionDivider className="text-foreground" />
+        <AnimatedStats />
+        <SectionDivider className="text-foreground" flip />
         <HowItWorks />
         <FAQ />
+        <Testimonials />
         <CTA />
       </main>
     </>
