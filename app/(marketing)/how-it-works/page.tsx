@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { createMetadata } from '@/lib/metadata';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import JsonLd from '@/components/JsonLd';
 import Link from 'next/link';
 import { ArrowRight, FileText, Search, ClipboardCheck, Banknote, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -60,7 +61,45 @@ export default function HowItWorksPage() {
     },
   ];
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Get a Hard Money Loan from AssetLift Lending',
+    description:
+      'Get funded in 4 simple steps: submit your deal, receive a 24-hour quote, complete due diligence, and close in 7-10 business days.',
+    url: 'https://www.assetliftlending.com/how-it-works',
+    totalTime: 'P10D',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Submit Your Deal',
+        text: 'Fill out our quick online form with your deal details: purchase price, rehab budget, ARV, or rental income. No application fee, no obligation.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Receive Your Quote',
+        text: 'A loan specialist reviews your deal and provides a detailed soft-quote within 24 hours, including estimated rate, leverage, fees, and terms.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Due Diligence',
+        text: 'We order a property valuation and title work. You submit entity documents, proof of insurance, and purchase contract. Underwriting works in parallel.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Close & Fund',
+        text: 'Once underwriting is complete and title is clear, close in as fast as 7-10 business days. Funds are wired directly to the title company.',
+      },
+    ],
+  };
+
   return (
+    <>
+    <JsonLd data={howToSchema} />
     <div className="pt-32 pb-20 md:pt-40">
       <div className="container px-4 md:px-6">
         <div className="max-w-3xl mx-auto mb-12">
@@ -170,5 +209,6 @@ export default function HowItWorksPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

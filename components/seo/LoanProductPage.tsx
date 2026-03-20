@@ -355,6 +355,15 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
         </div>
       </section>
 
+      {/* Lending Disclaimer */}
+      <section className="py-8">
+        <div className="container px-4 md:px-6">
+          <p className="text-xs text-muted-foreground/60 max-w-3xl mx-auto text-center leading-relaxed">
+            This page is for informational purposes only and does not constitute a loan offer, commitment to lend, or guarantee of terms. All loans are subject to underwriting approval, property valuation, and title review. Rates, terms, fees, and leverage vary based on property type, location, borrower experience, and deal structure. AssetLift Lending provides business-purpose loans for investment properties only and does not offer consumer residential mortgages.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6 text-center">

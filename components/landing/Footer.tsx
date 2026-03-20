@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="py-12 border-t border-border bg-card/50">
       <div className="container px-4 md:px-6">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-5 gap-8 mb-12">
           {/* Logo & tagline */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-3">
@@ -35,6 +35,31 @@ const Footer = () => {
               <li>
                 <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
               </li>
+              <li>
+                <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
+              </li>
+              <li>
+                <Link href="/licensing" className="hover:text-primary transition-colors">Licensing</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h4 className="font-semibold mb-4">Resources</h4>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>
+                <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
+              </li>
+              <li>
+                <Link href="/faq" className="hover:text-primary transition-colors">FAQ</Link>
+              </li>
+              <li>
+                <Link href="/tools/fix-and-flip-calculator" className="hover:text-primary transition-colors">Fix & Flip Calculator</Link>
+              </li>
+              <li>
+                <Link href="/tools/dscr-calculator" className="hover:text-primary transition-colors">DSCR Calculator</Link>
+              </li>
             </ul>
           </div>
 
@@ -59,9 +84,19 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Asset Lift Lending. All rights reserved.</p>
-          <Link href="/privacy" className="hover:text-primary transition-colors">
-            Privacy Policy
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link href="/privacy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+            <span>|</span>
+            <Link href="/terms" className="hover:text-primary transition-colors">
+              Terms
+            </Link>
+            <span>|</span>
+            <Link href="/licensing" className="hover:text-primary transition-colors">
+              Licensing
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
