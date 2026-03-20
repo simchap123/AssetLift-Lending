@@ -136,6 +136,12 @@ const Navbar = () => {
               About
             </Link>
             <Link
+              href="/team"
+              className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
+            >
+              Team
+            </Link>
+            <Link
               href="/how-it-works"
               className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
             >
@@ -224,6 +230,13 @@ const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/team"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Team
               </Link>
               <Link
                 href="/how-it-works"
