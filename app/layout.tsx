@@ -16,11 +16,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.assetliftlending.com"),
   title: {
-    default: "AssetLift Lending | Hard Money Loans for Real Estate Investors",
+    default: "Hard Money Loans for Real Estate Investors | AssetLift",
     template: "%s | AssetLift Lending",
   },
   description:
-    "Fast, flexible hard money loans for fix & flip, ground-up construction, DSCR rental, and bridge financing. Up to 92.5% LTC. Close in 7-10 days. Nationwide lender.",
+    "Fast hard money loans for fix & flip, construction, DSCR rental, and bridge financing. Up to 92.5% LTC. Close in 7-10 days.",
   keywords: [
     "hard money loans",
     "fix and flip loans",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.assetliftlending.com",
     siteName: "AssetLift Lending",
-    title: "AssetLift Lending | Hard Money Loans for Real Estate Investors",
+    title: "Hard Money Loans for Real Estate Investors | AssetLift",
     description:
-      "Fast, flexible hard money loans for fix & flip, ground-up construction, DSCR rental, and bridge financing. Up to 92.5% LTC. Close in 7-10 days.",
+      "Fast hard money loans for fix & flip, construction, DSCR rental, and bridge financing. Up to 92.5% LTC. Close in 7-10 days.",
     images: [
       {
         url: "/og-image.jpg",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AssetLift Lending | Hard Money Loans for Real Estate Investors",
+    title: "Hard Money Loans for Real Estate Investors | AssetLift",
     description:
-      "Fast, flexible hard money loans for fix & flip, ground-up construction, DSCR rental, and bridge financing.",
+      "Fast hard money loans for fix & flip, construction, DSCR rental, and bridge financing. Up to 92.5% LTC. Close in 7-10 days.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -75,6 +75,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.svg",
+    apple: "/apple-touch-icon.png",
   },
 };
 

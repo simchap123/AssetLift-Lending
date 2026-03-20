@@ -1,4 +1,5 @@
 import Hero from "@/components/landing/Hero";
+import WhyAssetLift from "@/components/landing/WhyAssetLift";
 import LoanPrograms from "@/components/landing/LoanPrograms";
 import HowItWorks from "@/components/landing/HowItWorks";
 import FAQ from "@/components/landing/FAQ";
@@ -32,6 +33,7 @@ export default function HomePage() {
       <PromoBanner />
       <main className="pt-14">
         <Hero />
+        <WhyAssetLift />
         <LoanPrograms />
         <MarketsPreview />
         <HowItWorks />

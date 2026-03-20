@@ -223,3 +223,60 @@
 .animate-floating {
   animation: floating 3s ease-in-out infinite;
 }
+
+/* Print styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+
+  .perspective-container,
+  .grid-plane,
+  .horizon-fade,
+  nav,
+  header,
+  footer,
+  .glow-primary,
+  button,
+  .fixed {
+    display: none !important;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after {
+    content: "";
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+    padding: 1rem 0 !important;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  .gradient-text {
+    -webkit-text-fill-color: black !important;
+    background: none !important;
+    color: black !important;
+  }
+}

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   const stats = [
@@ -16,10 +17,13 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/hero-house.jpg"
-          alt="Luxury home at sunset"
-          className="w-full h-full object-cover"
+          alt="Luxury investment property representing hard money loan opportunities for real estate investors"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
         />
         {/* Overlay for readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
