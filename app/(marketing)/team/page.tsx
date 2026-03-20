@@ -22,7 +22,7 @@ const teamMembers = [
   },
   {
     initials: 'IP',
-    name: 'Israel Pentelnik',
+    name: 'Yisroel Pentelnik',
     title: 'Co-Founder & Head of Capital Markets',
     bio: 'Manages lender relationships, capital allocation, and portfolio strategy. Responsible for maintaining consistent funding capacity across all loan programs and markets.',
   },
@@ -60,7 +60,7 @@ export default function TeamPage() {
       },
       {
         '@type': 'Person',
-        name: 'Israel Pentelnik',
+        name: 'Yisroel Pentelnik',
         jobTitle: 'Co-Founder & Head of Capital Markets',
       },
     ],

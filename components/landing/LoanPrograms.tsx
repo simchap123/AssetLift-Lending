@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Check, Hammer, Building2, Home, ArrowLeftRight } from "lucide-react";
+import { ArrowRight, Check, Hammer, Building2, Home, ArrowLeftRight, CalendarDays } from "lucide-react";
 
 const programs = [
   {
@@ -68,8 +68,10 @@ const programs = [
 ];
 
 const LoanPrograms = () => {
+  const consultHref = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_URL || "/contact";
+
   return (
-    <section id="programs" className="py-28 md:py-40 relative overflow-hidden">
+    <section id="programs" className="py-16 md:py-24 relative overflow-hidden">
       {/* Subtle background texture */}
       <div className="absolute inset-0 opacity-[0.015] dark:opacity-[0.03]">
         <div className="absolute inset-0" style={{
@@ -80,7 +82,7 @@ const LoanPrograms = () => {
       <div className="container px-4 md:px-6 relative">
         {/* Section header */}
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-14 md:mb-16"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -112,6 +114,22 @@ const LoanPrograms = () => {
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Institutional-grade leverage for fix & flip, construction, and rental portfolios.
           </p>
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href={consultHref}
+              className="inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
+            >
+              <CalendarDays className="w-4 h-4" />
+              Book a Free Consult
+            </Link>
+            <Link
+              href="/apply"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-95 transition-opacity"
+            >
+              Get Funded
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </motion.div>
 
         {/* Program cards — 2x2 grid */}

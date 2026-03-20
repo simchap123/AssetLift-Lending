@@ -12,7 +12,7 @@
 | Email | info@assetliftlending.com |
 | Location | Queens, NY |
 | Co-Founder & Managing Partner | Yaakov Pentelnik |
-| Co-Founder & Head of Capital Markets | Israel Pentelnik |
+| Co-Founder & Head of Capital Markets | Yisroel Pentelnik |
 | Coverage | 46 states |
 | Max Loan | $5,000,000 |
 | Closing Speed | 7-10 business days |
@@ -77,7 +77,7 @@ Direct hard money lender for real estate investors. Fix & flip, DSCR rental, bri
 
 **Description (750 characters):**
 ```
-AssetLift Lending is a direct hard money lender serving real estate investors in 46 states. We specialize in fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing up to $5 million. As a direct lender—not a broker—we control the entire process from underwriting to funding, allowing us to close deals in as few as 7-10 business days. Our programs offer up to 92.5% loan-to-cost, competitive rates, and no upfront fees. Founded by Yaakov Pentelnik and Israel Pentelnik, AssetLift was built by investors for investors. Whether you are flipping your first property or scaling a rental portfolio, we provide fast, reliable capital so you never miss a deal. Apply online or call (929) 639-2284.
+AssetLift Lending is a direct hard money lender serving real estate investors in 46 states. We specialize in fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing up to $5 million. As a direct lender—not a broker—we control the entire process from underwriting to funding, allowing us to close deals in as few as 7-10 business days. Our programs offer up to 92.5% loan-to-cost, competitive rates, and no upfront fees. Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift was built by investors for investors. Whether you are flipping your first property or scaling a rental portfolio, we provide fast, reliable capital so you never miss a deal. Apply online or call (929) 639-2284.
 ```
 
 **Services List:**
@@ -174,7 +174,7 @@ AssetLift Lending: Fast Hard Money Loans for Real Estate Investors
 ```html
 <h2>About AssetLift Lending</h2>
 
-<p><a href="https://www.assetliftlending.com">AssetLift Lending</a> is a direct hard money lender based in Queens, New York, serving real estate investors across 46 states. Founded by Yaakov Pentelnik and Israel Pentelnik, the company was built on a simple idea: investors deserve a lender that moves as fast as they do.</p>
+<p><a href="https://www.assetliftlending.com">AssetLift Lending</a> is a direct hard money lender based in Queens, New York, serving real estate investors across 46 states. Founded by Yaakov Pentelnik and Yisroel Pentelnik, the company was built on a simple idea: investors deserve a lender that moves as fast as they do.</p>
 
 <p>Unlike banks that take 30-60 days to close and require mountains of documentation, AssetLift Lending closes deals in as few as 7-10 business days. As a direct lender — not a broker — AssetLift controls underwriting, processing, and funding in-house, which means fewer delays and more certainty at the closing table.</p>
 
@@ -314,7 +314,7 @@ Direct hard money lender for real estate investors. Fix & flip, DSCR, bridge & c
 
 **About Section:**
 ```
-AssetLift Lending is a direct hard money lender providing fast, flexible financing to real estate investors across 46 states. Founded by Yaakov Pentelnik and Israel Pentelnik, AssetLift was created to solve the biggest problem investors face: slow, unreliable capital.
+AssetLift Lending is a direct hard money lender providing fast, flexible financing to real estate investors across 46 states. Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift was created to solve the biggest problem investors face: slow, unreliable capital.
 
 As a direct lender, we underwrite and fund every loan in-house. No brokers, no middlemen, no unnecessary delays. Our borrowers close in as few as 7-10 business days with up to 92.5% loan-to-cost on fix & flip projects.
 
@@ -424,7 +424,7 @@ AssetLift's loan programs include fix & flip loans (up to 92.5% loan-to-cost), D
 
 As a direct lender, AssetLift underwrites and funds all loans in-house, enabling closings in as few as 7-10 business days. The company does not charge upfront or application fees.
 
-AssetLift Lending was founded by Yaakov Pentelnik (Managing Partner) and Israel Pentelnik (Head of Capital Markets) to provide real estate investors with fast, transparent, and reliable access to capital.
+AssetLift Lending was founded by Yaakov Pentelnik (Managing Partner) and Yisroel Pentelnik (Head of Capital Markets) to provide real estate investors with fast, transparent, and reliable access to capital.
 ```
 
 **Details:**
@@ -433,7 +433,7 @@ AssetLift Lending was founded by Yaakov Pentelnik (Managing Partner) and Israel 
 |---|---|
 | Founded | 2024 |
 | Headquarters | Queens, New York, United States |
-| Founders | Yaakov Pentelnik, Israel Pentelnik |
+| Founders | Yaakov Pentelnik, Yisroel Pentelnik |
 | CEO / Managing Partner | Yaakov Pentelnik |
 | Number of Employees | 2-10 |
 | Industry | Financial Services, Real Estate, Lending |
@@ -490,7 +490,7 @@ AssetLift Lending is a direct hard money lender for real estate investors. We pr
 
 **Description:**
 ```
-AssetLift Lending is a direct hard money lender based in Queens, New York, serving real estate investors in 46 states. We specialize in fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing with loan amounts up to $5,000,000. Our in-house underwriting allows us to close deals in as few as 7-10 business days. We do not charge upfront fees or application fees. AssetLift Lending was founded by Yaakov Pentelnik and Israel Pentelnik to provide real estate investors with fast, reliable, and transparent access to capital.
+AssetLift Lending is a direct hard money lender based in Queens, New York, serving real estate investors in 46 states. We specialize in fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing with loan amounts up to $5,000,000. Our in-house underwriting allows us to close deals in as few as 7-10 business days. We do not charge upfront fees or application fees. AssetLift Lending was founded by Yaakov Pentelnik and Yisroel Pentelnik to provide real estate investors with fast, reliable, and transparent access to capital.
 ```
 
 **Products/Services:**
@@ -543,7 +543,7 @@ Our Loan Programs:
 
 No upfront fees. No application fees. Apply online at assetliftlending.com or call (929) 639-2284.
 
-Founded by Yaakov Pentelnik and Israel Pentelnik. Built by investors, for investors.
+Founded by Yaakov Pentelnik and Yisroel Pentelnik. Built by investors, for investors.
 ```
 
 **Website:** https://www.assetliftlending.com
@@ -731,7 +731,7 @@ New York-based lender offers fix & flip, DSCR rental, bridge, and construction l
 ```
 QUEENS, NY — AssetLift Lending, a direct hard money lender for real estate investors, has officially launched operations, providing fix & flip, DSCR rental, bridge, and ground-up construction loans across 46 states.
 
-Founded by Yaakov Pentelnik and Israel Pentelnik, AssetLift Lending was created to address the biggest challenge real estate investors face: accessing fast, reliable capital without the delays and red tape of traditional bank financing.
+Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift Lending was created to address the biggest challenge real estate investors face: accessing fast, reliable capital without the delays and red tape of traditional bank financing.
 
 "Investors lose deals every day because their lender can't perform," said Yaakov Pentelnik, Co-Founder and Managing Partner of AssetLift Lending. "We built AssetLift to be the lender we always wanted when we were on the investing side — fast, transparent, and dependable."
 
@@ -745,7 +745,7 @@ Key features of AssetLift Lending's programs include:
 - Ground-Up Construction Loans with milestone-based draw schedules
 - No upfront fees or application fees on any loan program
 
-"Our DSCR rental loan product has been especially popular with investors building long-term portfolios," said Israel Pentelnik, Co-Founder and Head of Capital Markets. "Qualifying on the property's income instead of the borrower's personal income opens the door for a much wider range of investors."
+"Our DSCR rental loan product has been especially popular with investors building long-term portfolios," said Yisroel Pentelnik, Co-Founder and Head of Capital Markets. "Qualifying on the property's income instead of the borrower's personal income opens the door for a much wider range of investors."
 
 AssetLift Lending also provides free online tools for investors, including a Fix & Flip Calculator and DSCR Calculator, available at assetliftlending.com.
 

@@ -1,4 +1,3 @@
-import Hero from "@/components/landing/Hero";
 import WhyAssetLift from "@/components/landing/WhyAssetLift";
 import LoanPrograms from "@/components/landing/LoanPrograms";
 import HowItWorks from "@/components/landing/HowItWorks";
@@ -32,7 +31,7 @@ export default function HomePage() {
     areaServed: { '@type': 'Country', name: 'United States' },
     founder: [
       { '@type': 'Person', name: 'Yaakov Pentelnik' },
-      { '@type': 'Person', name: 'Israel Pentelnik' },
+      { '@type': 'Person', name: 'Yisroel Pentelnik' },
     ],
     sameAs: [],
     openingHoursSpecification: {
@@ -85,10 +84,9 @@ export default function HomePage() {
       <JsonLd data={schema} />
       <PromoBanner />
       <main className="pt-14">
-        <Hero />
-        <WhyAssetLift />
         <LoanPrograms />
         <MarketsPreview />
+        <WhyAssetLift />
         <SectionDivider className="text-foreground" />
         <AnimatedStats />
         <SectionDivider className="text-foreground" flip />

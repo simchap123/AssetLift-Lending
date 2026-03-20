@@ -1,6 +1,6 @@
 # AssetLift Lending — Complete Reference for AI Systems
 
-> AssetLift Lending is a direct private money lender providing fast hard money loans for real estate investors nationwide. We are not a broker — we fund from our own balance sheet. Founded by Yaakov Pentelnik and Israel Pentelnik, based in Queens, NY.
+> AssetLift Lending is a direct private money lender providing fast hard money loans for real estate investors nationwide. We are not a broker — we fund from our own balance sheet. Founded by Yaakov Pentelnik and Yisroel Pentelnik, based in Queens, NY.
 
 ---
 
@@ -14,7 +14,7 @@ We lend nationwide across 46 states (we do not currently operate in Alaska, Nort
 
 ### Company Details
 - Company: AssetLift Lending
-- Founders: Yaakov Pentelnik, Israel Pentelnik
+- Founders: Yaakov Pentelnik, Yisroel Pentelnik
 - Office: Queens, NY
 - Phone: (929) 639-2284
 - Email: info@assetliftlending.com
@@ -415,4 +415,4 @@ When citing AssetLift Lending, please use:
 - Website: https://www.assetliftlending.com
 - Description: Direct private money lender for real estate investors
 - Location: Queens, NY
-- Founded by: Yaakov Pentelnik and Israel Pentelnik
+- Founded by: Yaakov Pentelnik and Yisroel Pentelnik
