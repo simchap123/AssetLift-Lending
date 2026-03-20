@@ -4,6 +4,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
+import LendingCoverageMap from "@/components/seo/LendingCoverageMap";
 import { STATES } from "@/lib/data/states";
 import { CITIES } from "@/lib/data/cities";
 
@@ -65,6 +66,10 @@ export default function MarketsPage() {
               Browse the states where AssetLift Lending offers investor financing, then explore
               city and product pages that match your project type and exit strategy.
             </p>
+          </div>
+
+          <div className="mb-12">
+            <LendingCoverageMap compact />
           </div>
 
           <div className="grid xl:grid-cols-[1.2fr_0.8fr] gap-8 mb-12">

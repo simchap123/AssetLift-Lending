@@ -1,15 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, MapPin } from "lucide-react";
-import { STATES } from "@/lib/data/states";
-
-const FEATURED_CITIES = [
-  { name: "Miami", href: "/lending/florida/miami" },
-  { name: "Tampa", href: "/lending/florida/tampa" },
-  { name: "Austin", href: "/lending/texas/austin" },
-  { name: "Dallas", href: "/lending/texas/dallas" },
-  { name: "Atlanta", href: "/lending/georgia/atlanta" },
-  { name: "Charlotte", href: "/lending/north-carolina/charlotte" },
-];
+import { ArrowRight } from "lucide-react";
+import LendingCoverageMap from "@/components/seo/LendingCoverageMap";
 
 export default function MarketsPreview() {
   return (
@@ -28,45 +19,7 @@ export default function MarketsPreview() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
-            <h3 className="text-2xl font-bold mb-5">States We Serve</h3>
-            <div className="grid sm:grid-cols-2 gap-3">
-              {STATES.slice(0, 12).map((market) => (
-                <Link
-                  key={market.slug}
-                  href={`/lending/${market.slug}`}
-                  className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
-                >
-                  <span className="flex items-center gap-2 font-medium">
-                    <MapPin className="w-4 h-4 text-primary" />
-                    {market.name}
-                  </span>
-                  <ArrowRight className="w-4 h-4 text-primary" />
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
-            <h3 className="text-2xl font-bold mb-5">Featured Cities</h3>
-            <div className="grid sm:grid-cols-2 gap-3">
-              {FEATURED_CITIES.map((market) => (
-                <Link
-                  key={market.href}
-                  href={market.href}
-                  className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
-                >
-                  <span className="flex items-center gap-2 font-medium">
-                    <MapPin className="w-4 h-4 text-primary" />
-                    {market.name}
-                  </span>
-                  <ArrowRight className="w-4 h-4 text-primary" />
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
+        <LendingCoverageMap />
 
         <div className="mt-8">
           <Link
