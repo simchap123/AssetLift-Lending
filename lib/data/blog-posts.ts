@@ -1013,4 +1013,142 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "hard-money-lender-92-ltc",
+    title: "Hard Money Lenders Offering 92% LTC: What That Leverage Really Means for Investors",
+    description:
+      "Understand how 92% LTC hard money leverage works, what lenders still cap with ARV rules, and when high-leverage private lending improves a deal instead of weakening it.",
+    publishedAt: "2026-03-19T12:15:00Z",
+    author: "AssetLift Team",
+    authorRole: "Lending Specialists",
+    readTime: "9 min read",
+    category: "Fix & Flip",
+    tags: [
+      "hard money lender 92 ltc",
+      "92% ltc hard money loan",
+      "fix and flip financing",
+      "hard money loans",
+      "high leverage lending",
+      "ltc real estate loan",
+    ],
+    heroImage: "/blog/hard-money-lender-92-ltc.jpg",
+    sections: [
+      {
+        heading: "Why 92% LTC Gets Attention From Investors",
+        content:
+          "High-LTC hard money offers get attention because they promise capital efficiency. If a lender will finance up to 92% of total project cost, the borrower can preserve more cash for reserves, multiple deals, or unexpected project friction. For active investors, that can materially improve portfolio velocity.\n\nBut sophisticated borrowers know the headline number is not the whole structure. The real question is whether the leverage survives ARV limits, project quality, and the lender’s view of execution risk. That is where the useful conversation starts.",
+      },
+      {
+        heading: "What High-LTC Lenders Still Need to See",
+        content:
+          "Lenders offering leverage in the low-90s still want disciplined files. They usually need strong comparable sales, a believable rehab scope, realistic timing, enough borrower reserves, and a completed value that comfortably supports the total capitalization. A borrower asking for 92% LTC on a thin-spread project is not presenting a strong leverage case. They are presenting a fragile one.\n\nThat is why the files that win the best leverage often look conservative everywhere else. The lender needs confidence that the project can absorb normal stress without immediately becoming unstable.",
+      },
+      {
+        heading: "How ARV Limits Keep 92% LTC From Being Unlimited",
+        content:
+          "The biggest misconception around high-LTC lending is that cost-based leverage is the only thing that matters. It is not. The lender still checks total exposure against after-repair value, and that is often what forces proceeds lower than the borrower expected. If the purchase basis is too high or the completed value is too optimistic, the LTC quote becomes less relevant because the ARV cap takes over.\n\nThis is why experienced investors underwrite the project from both directions. They ask not only how much cost can be financed, but also whether the total project still fits cleanly inside the completed-value framework.",
+      },
+      {
+        heading: "When 92% LTC Helps and When It Hurts",
+        content:
+          "High leverage helps when the borrower is using it on a fundamentally strong project with real margin, strong local demand, and disciplined execution. In those situations, the extra leverage can improve return on equity and allow the borrower to keep more dry powder available. It hurts when the borrower uses it to rescue a weak deal or ignore a thin spread. Then the leverage is acting as camouflage, not as a strategic tool.\n\nThe best investors use high-LTC debt to improve good projects. They do not rely on it to force bad ones into existence.",
+      },
+      {
+        heading: "How to Evaluate a 92% LTC Offer Properly",
+        content:
+          "Borrowers should compare more than proceeds. They should look at draw execution, fee structure, extension terms, ARV discipline, and how the project behaves if timing or pricing shifts. A lender offering slightly less leverage with stronger reliability may still produce a better project outcome than the lender advertising the highest number.\n\nThe real test is whether the financing structure keeps the deal healthy after the first underwriting call and after the first unexpected problem. That is the standard that matters more than marketing copy.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is 92% LTC available on every hard money deal?",
+        answer:
+          "No. High leverage is usually limited to stronger files with credible comps, realistic budgets, sufficient reserves, and enough margin at the completed-value level.",
+      },
+      {
+        question: "Why would a lender advertise 92% LTC and still lower proceeds later?",
+        answer:
+          "Because final proceeds are still constrained by appraisal, ARV caps, marketability, and the overall quality of the project. The initial quote is not the same thing as final underwriting.",
+      },
+      {
+        question: "Does higher LTC always improve returns?",
+        answer:
+          "Not automatically. Higher leverage can improve return on equity, but it also reduces the cushion for mistakes. It works best on deals that are already strong without needing rescue leverage.",
+      },
+      {
+        question: "What type of borrower usually gets the best high-LTC terms?",
+        answer:
+          "Borrowers with disciplined scopes, strong comp support, enough liquidity, and a credible exit plan usually get the cleanest high-leverage terms because the overall file looks stable.",
+      },
+    ],
+  },
+  {
+    slug: "rental-property-loans-for-investors",
+    title: "Rental Property Loans for Investors: How to Choose the Right Financing Strategy",
+    description:
+      "Compare rental property loan options for investors, including DSCR, conventional, bridge, and refinance paths, so you can choose financing that fits the property and hold plan.",
+    publishedAt: "2026-03-19T12:45:00Z",
+    author: "AssetLift Team",
+    authorRole: "Lending Specialists",
+    readTime: "10 min read",
+    category: "DSCR Rental",
+    tags: [
+      "rental property loans",
+      "rental property loans for investors",
+      "dscr rental loans",
+      "investment property financing",
+      "real estate investors",
+      "buy and hold loans",
+    ],
+    heroImage: "/blog/rental-property-loans-for-investors.jpg",
+    sections: [
+      {
+        heading: "There Is No Single Best Rental Property Loan",
+        content:
+          "Investors often talk about rental property loans as if there is one universal product they should be chasing. In reality, the right financing depends on the condition of the property, the borrower’s documentation profile, whether the asset is already stabilized, and how aggressively the investor plans to scale.\n\nThat is why the financing conversation should start with the business plan, not the rate sheet. The best loan is the one that matches the property’s current stage and the investor’s hold strategy.",
+      },
+      {
+        heading: "When DSCR Loans Make the Most Sense",
+        content:
+          "DSCR loans are usually the cleanest fit for stabilized or stabilizing rentals where the rent can support the debt and the borrower wants investor-focused underwriting. They are especially useful for self-employed investors, borrowers holding property in an entity, and operators who are building beyond the limits of conventional lending.\n\nThe main advantage is alignment. The file is judged more by how the property performs as a rental than by how the borrower looks on paper as a traditional wage earner.",
+      },
+      {
+        heading: "When Conventional or Transitional Debt Still Matters",
+        content:
+          "Conventional loans still make sense for investors who qualify easily, are early in portfolio growth, and want the lowest possible long-term borrowing cost on a clean asset. Transitional debt such as bridge or rehab capital matters when the property is not yet ready for long-term rental underwriting. That can happen when the asset is vacant, mid-renovation, or waiting on lease-up.\n\nMany sophisticated investors therefore do not choose one loan type forever. They move from transitional capital into long-term rental debt as the property matures.",
+      },
+      {
+        heading: "How Investors Should Evaluate Rental Financing",
+        content:
+          "Borrowers should look at more than rate. They should compare entity flexibility, property-count scalability, documentation burden, reserves, prepayment structure, and whether the loan actually fits the intended hold period. A cheaper product with the wrong structure can still be more expensive if it forces friction later.\n\nThis is especially true for portfolio builders. The right loan is often the one that scales cleanly across multiple properties, not just the one that looks best on a single closing disclosure.",
+      },
+      {
+        heading: "How to Match the Loan to the Asset Stage",
+        content:
+          "A stabilized rental with supportable income is usually ready for long-term rental debt. A vacant or transitional property may need bridge or rehab financing first. A recently improved BRRRR project may start with short-term capital and then refinance into DSCR once the rent story is established. Thinking in stages usually leads to better financing decisions than thinking only in product names.\n\nThe property tells you what kind of debt it is ready for if you are willing to underwrite it honestly.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best loan for a rental property investor?",
+        answer:
+          "It depends on the asset and the investor’s plan. Stabilized rentals often fit DSCR or conventional financing, while transitional assets may need bridge or rehab capital first.",
+      },
+      {
+        question: "Are DSCR loans good for buy-and-hold investors?",
+        answer:
+          "Yes. DSCR loans are often one of the most practical long-term products for buy-and-hold investors because they focus on rental income and can scale better than conventional loans.",
+      },
+      {
+        question: "Can I use short-term debt before moving into a rental loan?",
+        answer:
+          "Yes. Many investors buy or improve a property with short-term capital and then refinance into DSCR or another long-term rental product once the property is stabilized.",
+      },
+      {
+        question: "Should I only compare rental loans by interest rate?",
+        answer:
+          "No. Structure, flexibility, reserves, prepayment terms, and how well the loan fits the hold strategy matter just as much as the note rate.",
+      },
+    ],
+  },
 ];

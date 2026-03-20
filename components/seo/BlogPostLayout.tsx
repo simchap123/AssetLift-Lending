@@ -21,7 +21,7 @@ const RESOURCE_MAP: Record<string, Array<{ label: string; href: string }>> = {
   'Fix & Flip': [
     { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
     { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
-    { label: 'How It Works', href: '/how-it-works' },
+    { label: '90% LTC Fix & Flip Guide', href: '/blog/90-ltc-fix-and-flip-loan' },
   ],
   'DSCR Rental': [
     { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
@@ -37,6 +37,7 @@ const RESOURCE_MAP: Record<string, Array<{ label: string; href: string }>> = {
     { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
     { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
     { label: 'Bridge Loans', href: '/loans/bridge' },
+    { label: 'Hard Money vs Bank', href: '/compare/hard-money-lender-vs-bank' },
   ],
 };
 
