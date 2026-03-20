@@ -16,7 +16,108 @@ interface CityPageProps {
   city: CityData;
 }
 
+const PRIORITY_CITY_GUIDANCE: Record<
+  string,
+  {
+    lenderView: string;
+    borrowerFocus: string[];
+  }
+> = {
+  'florida/miami': {
+    lenderView:
+      "Miami files usually get underwritten through the lens of complexity as much as upside. Lenders know the city can produce strong profits, but they also know condo rules, insurance cost, title friction, and luxury-market variability can erode margin quickly. The strongest Miami files usually involve clean title, realistic HOA and carrying-cost assumptions, and a neighborhood-specific exit strategy rather than a broad 'South Florida appreciation' story.",
+    borrowerFocus: [
+      "Underwrite condo association restrictions and insurance cost before finalizing leverage expectations",
+      "Keep comps extremely local because Brickell, Little Havana, Wynwood, and suburban Miami behave very differently",
+      "Show enough liquidity to survive longer disposition timelines on higher-end product",
+    ],
+  },
+  'florida/tampa': {
+    lenderView:
+      "Tampa is attractive to lenders because the market often balances resale demand with workable entry points. It tends to reward investors who stay disciplined on neighborhood-level pricing and do not over-renovate into a resale bracket the buyer pool will not support. Fix and flip, bridge, and rental-transition files all work here when the borrower is honest about hold costs and insurance.",
+    borrowerFocus: [
+      "Use neighborhood-level comps in Seminole Heights, West Tampa, and other fast-moving submarkets",
+      "Budget insurance and hold costs clearly so the file still works if timing stretches",
+      "Match the debt to the exit plan instead of forcing short-term capital into a long-hold strategy",
+    ],
+  },
+  'florida/orlando': {
+    lenderView:
+      "Orlando lenders usually like multiple exit paths, especially when a property can work as resale, long-term rental, or short-term rental depending on the area. The market moves best for borrowers who understand local rules and who can explain whether the property is really a tourist-corridor play, a suburban family-home flip, or a rental hold in a job-driven submarket.",
+    borrowerFocus: [
+      "Clarify whether the property is a flip, long-term hold, or short-term rental before underwriting",
+      "Support the rent or resale story with local data instead of broad Orlando growth assumptions",
+      "Prepare for zoning, STR restrictions, or HOA limits before relying on the most aggressive exit",
+    ],
+  },
+  'texas/dallas': {
+    lenderView:
+      "Dallas tends to reward borrowers who keep the file simple and disciplined. Lenders like the metro because of depth and liquidity, but they still want to see realistic taxes, conservative resale assumptions, and comps tied to the actual neighborhood instead of a wide DFW radius. The file usually gets stronger when the borrower shows they understand exactly who the end buyer or tenant is.",
+    borrowerFocus: [
+      "Budget property taxes honestly because they can materially change the hold math",
+      "Keep ARV and rent support tied to the exact submarket rather than metro-wide averages",
+      "Show a resale or refinance path that still works if pricing softens slightly",
+    ],
+  },
+  'texas/houston': {
+    lenderView:
+      "Houston gives lenders a lot of volume, but it also demands discipline around flood exposure, taxes, and neighborhood-specific demand. The strongest Houston files are the ones where the borrower has already accounted for insurance, understands whether the area is a flip market or a cash-flow market, and has not confused permissive development rules with automatic project profitability.",
+    borrowerFocus: [
+      "Address flood, insurance, and tax exposure before the term sheet stage",
+      "Separate appreciation-driven neighborhoods from true cash-flow neighborhoods in the underwriting story",
+      "Use realistic timelines for resale and construction, especially in outer suburban markets",
+    ],
+  },
+  'georgia/atlanta': {
+    lenderView:
+      "Atlanta is deep enough that lenders can get comfortable quickly when the borrower knows the submarket. The city supports flips, bridge situations, and rental holds, but not every neighborhood behaves the same. Strong files usually explain exactly why the property works in that specific pocket of Atlanta rather than leaning on broad metro growth and hoping the lender fills in the rest.",
+    borrowerFocus: [
+      "Anchor value and rent assumptions to the exact neighborhood rather than just 'Atlanta'",
+      "Decide early whether the deal is best as resale, BRRRR, or stabilized rental debt",
+      "Bring a scope and contractor plan that match the finish level of nearby sold comps",
+    ],
+  },
+  'north-carolina/charlotte': {
+    lenderView:
+      "Charlotte lenders usually like the combination of migration, employer growth, and broad buyer demand, but they still want to know the property fits the local price band. The strongest Charlotte deals tend to be the ones with clean suburban or in-town buyer pools, realistic rehab plans, and a refinance path that makes sense if the borrower intends to hold.",
+    borrowerFocus: [
+      "Match renovation quality to the neighborhood’s actual buyer expectations",
+      "Use current local comps instead of leaning on citywide appreciation headlines",
+      "Show reserves and a refinance plan on hold-oriented deals",
+    ],
+  },
+  'north-carolina/raleigh': {
+    lenderView:
+      "Raleigh looks strong to lenders because of the Research Triangle’s employment base, but the best files are still conservative. Borrowers who rely on local rent support, clear resale comps, and a straightforward scope usually get cleaner execution than borrowers who assume macro growth alone makes the deal safe.",
+    borrowerFocus: [
+      "Support the property story with local comps and rent data from the exact submarket",
+      "Avoid over-improving into a price point the neighborhood does not consistently trade at",
+      "Prepare a realistic timeline for both renovation and exit, especially on first projects",
+    ],
+  },
+  'california/los-angeles': {
+    lenderView:
+      "Los Angeles files are often less about finding demand and more about proving control over execution. Lenders usually focus on whether the borrower understands permit timing, neighborhood resale ceilings, and how much capital the project may require if the hold extends. Strong LA files are disciplined, local, and financially overprepared rather than merely optimistic.",
+    borrowerFocus: [
+      "Use hyper-local comps because pricing can change materially from one pocket to the next",
+      "Budget for permit, hold, and insurance friction instead of assuming a straight-line timeline",
+      "Show enough liquidity to absorb change orders or slower resale in premium markets",
+    ],
+  },
+  'california/san-diego': {
+    lenderView:
+      "San Diego usually rewards borrowers who combine good local comp support with a realistic understanding of coastal versus inland behavior. Lenders like the long-term demand profile, but they still need a believable plan around pricing, construction timing, and the specific neighborhood buyer pool. ADU and small multifamily angles can work well when the borrower can document the completed value convincingly.",
+    borrowerFocus: [
+      "Keep the underwriting story specific to the neighborhood and property type",
+      "Document ADU, multifamily, or value-add assumptions with strong local support",
+      "Model the deal so it still works if resale or lease-up takes longer than planned",
+    ],
+  },
+};
+
 export default function CityPage({ city }: CityPageProps) {
+  const cityGuidance = PRIORITY_CITY_GUIDANCE[`${city.stateSlug}/${city.citySlug}`];
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -176,6 +277,37 @@ export default function CityPage({ city }: CityPageProps) {
           </div>
         </div>
       </section>
+
+      {cityGuidance && (
+        <section className="py-16 md:py-24 bg-secondary/20">
+          <div className="container px-4 md:px-6">
+            <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-8 max-w-5xl mx-auto">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  How Lenders Usually View {city.cityName} Deals
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  {cityGuidance.lenderView}
+                </p>
+              </div>
+
+              <div className="bg-card border border-border rounded-2xl p-6">
+                <h3 className="text-xl font-semibold mb-4">
+                  What Strong {city.cityName} Files Usually Include
+                </h3>
+                <div className="space-y-4">
+                  {cityGuidance.borrowerFocus.map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <Users className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                      <p className="text-muted-foreground">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Programs Available */}
       <section className="py-16 md:py-24">
