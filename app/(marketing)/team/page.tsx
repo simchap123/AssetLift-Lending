@@ -21,12 +21,6 @@ const teamMembers = [
     bio: 'Leads deal origination and borrower relationships at AssetLift Lending. Focused on building a lending platform that moves at the speed investors need, with the transparency and reliability to back it up.',
   },
   {
-    initials: 'LP',
-    name: 'Labi Pentelnik',
-    title: 'Co-Founder & Director of Operations',
-    bio: 'Oversees underwriting, capital deployment, and loan operations. Ensures every deal moves through the pipeline efficiently from application to funding, with clear communication at every step.',
-  },
-  {
     initials: 'IP',
     name: 'Israel Pentelnik',
     title: 'Co-Founder & Head of Capital Markets',
@@ -66,11 +60,6 @@ export default function TeamPage() {
       },
       {
         '@type': 'Person',
-        name: 'Labi Pentelnik',
-        jobTitle: 'Co-Founder & Director of Operations',
-      },
-      {
-        '@type': 'Person',
         name: 'Israel Pentelnik',
         jobTitle: 'Co-Founder & Head of Capital Markets',
       },
@@ -102,7 +91,7 @@ export default function TeamPage() {
           {/* Leadership Section */}
           <div className="max-w-5xl mx-auto mb-20">
             <h2 className="text-3xl font-bold mb-8 text-center">Leadership</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {teamMembers.map((member) => (
                 <div
                   key={member.name}
