@@ -21,7 +21,7 @@ export default function BridgeLoanPage() {
     description: product.description,
     category: 'Bridge Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
-    url: 'https://assetliftlending.com/loans/bridge',
+    url: 'https://www.assetliftlending.com/loans/bridge',
   };
 
   const faqSchema = {

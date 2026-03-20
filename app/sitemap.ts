@@ -4,7 +4,7 @@ import { CITIES } from '@/lib/data/cities';
 import { BLOG_POSTS } from '@/lib/data/blog-posts';
 import { COMPARISONS } from '@/lib/data/comparisons';
 
-const BASE_URL = 'https://assetliftlending.com';
+const BASE_URL = 'https://www.assetliftlending.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

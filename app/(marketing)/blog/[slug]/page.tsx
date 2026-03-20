@@ -40,7 +40,7 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.publishedAt,
     author: { '@type': 'Organization', name: post.author },
     publisher: { '@type': 'Organization', name: 'AssetLift Lending' },
-    url: `https://assetliftlending.com/blog/${post.slug}`,
+    url: `https://www.assetliftlending.com/blog/${post.slug}`,
   };
 
   const faqSchema =

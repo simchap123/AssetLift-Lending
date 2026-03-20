@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import AnalyticsPageTracker from "@/components/AnalyticsPageTracker";
 import ChatBot from "@/components/ChatBot";
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-space-grotesk",
+});
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://assetliftlending.com"),
+  metadataBase: new URL("https://www.assetliftlending.com"),
   title: {
     default: "AssetLift Lending | Hard Money Loans for Real Estate Investors",
     template: "%s | AssetLift Lending",
@@ -25,10 +32,13 @@ export const metadata: Metadata = {
     "asset-based lending",
   ],
   authors: [{ name: "AssetLift Lending" }],
+  alternates: {
+    canonical: "https://www.assetliftlending.com",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://assetliftlending.com",
+    url: "https://www.assetliftlending.com",
     siteName: "AssetLift Lending",
     title: "AssetLift Lending | Hard Money Loans for Real Estate Investors",
     description:
@@ -74,12 +84,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={spaceGrotesk.variable} suppressHydrationWarning>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
         {/* Anti-FOUC: set theme before paint */}
         <script
           dangerouslySetInnerHTML={{

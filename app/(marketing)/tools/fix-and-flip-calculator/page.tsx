@@ -18,7 +18,7 @@ export default function FixAndFlipCalculatorPage() {
     name: 'Fix & Flip Calculator',
     description:
       'Estimate your fix and flip project profitability including acquisition, renovation, holding costs, and projected return.',
-    url: 'https://assetliftlending.com/tools/fix-and-flip-calculator',
+    url: 'https://www.assetliftlending.com/tools/fix-and-flip-calculator',
     applicationCategory: 'FinanceApplication',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
   };

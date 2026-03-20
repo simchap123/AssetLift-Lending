@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const BASE_URL = 'https://assetliftlending.com';
+const BASE_URL = 'https://www.assetliftlending.com';
 
 interface CreateMetadataOptions {
   title: string;

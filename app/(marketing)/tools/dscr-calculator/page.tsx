@@ -18,7 +18,7 @@ export default function DSCRCalculatorPage() {
     name: 'DSCR Calculator',
     description:
       'Calculate your debt service coverage ratio (DSCR) to determine eligibility for rental property loans.',
-    url: 'https://assetliftlending.com/tools/dscr-calculator',
+    url: 'https://www.assetliftlending.com/tools/dscr-calculator',
     applicationCategory: 'FinanceApplication',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
   };

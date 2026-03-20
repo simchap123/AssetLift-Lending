@@ -21,7 +21,7 @@ export default function GroundUpConstructionPage() {
     description: product.description,
     category: 'Ground-Up Construction Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
-    url: 'https://assetliftlending.com/loans/ground-up-construction',
+    url: 'https://www.assetliftlending.com/loans/ground-up-construction',
   };
 
   const faqSchema = {

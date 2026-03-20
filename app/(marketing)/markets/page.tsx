@@ -42,7 +42,7 @@ export default function MarketsPage() {
     name: "AssetLift Lending Markets",
     description:
       "Core hard money loan markets served by AssetLift Lending for real estate investors.",
-    url: "https://assetliftlending.com/markets",
+    url: "https://www.assetliftlending.com/markets",
   };
 
   return (

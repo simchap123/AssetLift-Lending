@@ -35,7 +35,7 @@ export default async function StateLendingPage({ params }: Props) {
     '@type': 'LocalBusiness',
     name: `AssetLift Lending - ${state.name}`,
     description: `Hard money loans and private lending in ${state.name}`,
-    url: `https://assetliftlending.com/lending/${state.slug}`,
+    url: `https://www.assetliftlending.com/lending/${state.slug}`,
     areaServed: {
       '@type': 'State',
       name: state.name,

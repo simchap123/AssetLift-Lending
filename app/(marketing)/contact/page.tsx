@@ -20,7 +20,7 @@ export default function ContactPage() {
     name: 'AssetLift Lending',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
-    url: 'https://assetliftlending.com',
+    url: 'https://www.assetliftlending.com',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Queens',

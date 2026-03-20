@@ -20,7 +20,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       position: index + 1,
       name: item.label,
       ...(item.href && {
-        item: `https://assetliftlending.com${item.href}`,
+        item: `https://www.assetliftlending.com${item.href}`,
       }),
     })),
   };

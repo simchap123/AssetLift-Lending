@@ -21,7 +21,7 @@ export default function FixAndFlipPage() {
     description: product.description,
     category: 'Fix and Flip Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
-    url: 'https://assetliftlending.com/loans/fix-and-flip',
+    url: 'https://www.assetliftlending.com/loans/fix-and-flip',
   };
 
   const faqSchema = {

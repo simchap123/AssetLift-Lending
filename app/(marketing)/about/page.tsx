@@ -19,7 +19,7 @@ export default function AboutPage() {
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
     description: 'Direct private money lender for real estate investors',
-    url: 'https://assetliftlending.com',
+    url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
     address: {

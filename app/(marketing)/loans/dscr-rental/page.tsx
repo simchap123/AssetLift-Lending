@@ -21,7 +21,7 @@ export default function DSCRRentalPage() {
     description: product.description,
     category: 'DSCR Rental Loan',
     provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
-    url: 'https://assetliftlending.com/loans/dscr-rental',
+    url: 'https://www.assetliftlending.com/loans/dscr-rental',
   };
 
   const faqSchema = {

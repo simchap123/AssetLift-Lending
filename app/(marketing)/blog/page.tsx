@@ -20,7 +20,7 @@ export default function BlogListingPage() {
     name: 'AssetLift Lending Blog',
     description:
       'Real estate investing and hard money lending insights from AssetLift Lending.',
-    url: 'https://assetliftlending.com/blog',
+    url: 'https://www.assetliftlending.com/blog',
     publisher: { '@type': 'Organization', name: 'AssetLift Lending' },
   };
 
@@ -37,7 +37,7 @@ export default function BlogListingPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-              Blog
+              Hard Money Lending Blog
             </h1>
             <p className="text-lg text-muted-foreground mb-12">
               Expert insights on hard money lending, fix & flip investing, rental

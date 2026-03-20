@@ -14,7 +14,7 @@ export default function HomePage() {
     name: 'AssetLift Lending',
     description:
       'AssetLift Lending provides fast hard money loans for real estate investors. Fix & flip, bridge, DSCR rental, and ground-up construction financing nationwide.',
-    url: 'https://assetliftlending.com',
+    url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     areaServed: { '@type': 'Country', name: 'United States' },
     serviceType: [

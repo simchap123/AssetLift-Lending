@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
-    sitemap: 'https://assetliftlending.com/sitemap.xml',
+    sitemap: 'https://www.assetliftlending.com/sitemap.xml',
   };
 }
