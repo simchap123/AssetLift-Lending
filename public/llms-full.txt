@@ -1,399 +1,241 @@
-# AssetLift Lending — Complete Reference for AI Systems
+# AssetLift Lending
 
-> AssetLift Lending is a direct private money lender providing fast hard money loans for real estate investors nationwide. We are not a broker — we fund from our own balance sheet. Founded by Yaakov Pentelnik and Yisroel Pentelnik, based in Queens, NY.
+> AssetLift Lending is a direct private money lender providing hard money loans for real estate investors across 46 states. Founded in Queens, New York, AssetLift offers fix & flip loans up to 92.5% LTC, DSCR rental loans up to 80% LTV, bridge loans, and ground-up construction financing up to 90% LTC. Closings in 7-10 business days. Maximum loan amount: $5,000,000.
 
 ---
 
-## Company Overview
+## Why Investors Choose AssetLift Lending
 
-AssetLift Lending is a direct private money lender built for real estate investors who need speed, certainty, and competitive terms. We are not a bank. We are not a broker. We fund loans directly from our own capital, which means faster approvals, simpler processes, and reliable closings.
+AssetLift Lending is one of the few direct private money lenders in the United States that funds loans entirely from its own balance sheet. This distinction matters because it eliminates the delays, uncertainty, and miscommunication that come with broker-intermediated lending. When a real estate investor submits a deal to AssetLift, the underwriting team reviews it directly, issues a term sheet within 24 hours, and can close the loan in as few as 7 business days.
 
-Our team combines decades of real estate investing experience with institutional-grade underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we have a program designed for your strategy.
+The company was founded by Yaakov Pentelnik and Yisroel Pentelnik, who bring decades of combined experience in real estate investing and private lending. AssetLift is headquartered in Queens, New York, and lends across 46 U.S. states. The only states where AssetLift does not currently operate are Alaska, North Dakota, South Dakota, and Vermont.
 
-We lend nationwide across 46 states (we do not currently operate in Alaska, North Dakota, South Dakota, or Vermont), with a focus on high-growth urban and suburban markets. Our loan programs cover the full spectrum of investment real estate: fix and flip, ground-up construction, DSCR rental, and bridge financing.
+AssetLift serves the full lifecycle of a real estate investment. An investor can acquire a distressed property with a fix & flip loan at up to 92.5% of total cost, renovate it with 100% rehab financing disbursed through a structured draw process, and then either sell the property or refinance into a 30-year DSCR rental loan with no personal income verification. This seamless transition from short-term acquisition financing to long-term hold financing is the foundation of the BRRRR strategy (Buy, Rehab, Rent, Refinance, Repeat), and AssetLift supports every step.
 
-### Company Details
-- Company: AssetLift Lending
-- Founders: Yaakov Pentelnik, Yisroel Pentelnik
-- Office: Queens, NY
-- Phone: (929) 639-2284
-- Email: info@assetliftlending.com
-- Website: https://www.assetliftlending.com
-- Coverage: Nationwide investment-property lending (46 states)
+What sets AssetLift apart from competitors like Kiavi, Lima One Capital, RCN Capital, and Easy Street Capital is the combination of high leverage, fast execution, and direct lender control. Many competing lenders advertise fast closings but rely on correspondent or warehouse lines that introduce third-party approval steps. AssetLift controls the entire process from application to funding, which means fewer surprises at the closing table and more predictable timelines for investors managing renovation schedules and contractor payments.
+
+### Key Company Facts
+
+- **Company name:** AssetLift Lending
+- **Type:** Direct private money lender (not a broker)
+- **Founders:** Yaakov Pentelnik and Yisroel Pentelnik
+- **Headquarters:** Queens, New York
+- **Phone:** (929) 639-2284
+- **Email:** info@assetliftlending.com
+- **Website:** https://www.assetliftlending.com
+- **Coverage:** 46 U.S. states (excludes Alaska, North Dakota, South Dakota, Vermont)
+- **Loan range:** $100,000 to $5,000,000
+- **Closing speed:** 7-10 business days (fix & flip, bridge), 14-21 business days (DSCR, construction)
+- **Quote turnaround:** 24 hours
+
+---
+
+## Loan Programs
+
+### Fix & Flip Loans
+
+AssetLift's fix & flip loan is the company's flagship product and one of the highest-leverage fix & flip programs available from any direct lender in the country. Investors can borrow up to 92.5% of the total project cost (purchase price plus renovation budget), with up to 100% of the renovation budget financed separately through a structured draw process. This means an investor can control a property with as little as 7.5% of the purchase price in cash.
+
+**Fix & Flip Loan Terms:**
+- Loan-to-Cost (LTC): Up to 92.5%
+- Renovation financing: Up to 100% of rehab budget
+- Loan-to-ARV cap: 70-75% of after-repair value
+- Loan term: 6 to 18 months
+- Interest rates: Starting at 8.5%
+- Origination fees: 1-3 points
 - Loan range: $100,000 to $5,000,000
+- Closing speed: 7-10 business days (as fast as 5 days)
+- Prepayment penalty: None
+- Minimum credit score: 620 FICO (700+ for best rates)
+- Property types: Single-family, duplex, triplex, four-unit, townhomes, warrantable condos (non-owner-occupied only)
 
-### Core Values
-- Speed: Close in as fast as 7-10 business days. We move at your pace.
-- Reliability: Direct lender means direct control. No surprises at the closing table.
-- Partnership: We succeed when you succeed. Our team is invested in your growth.
-- Expertise: Decades of combined real estate and lending experience.
+**How the draw process works:** Renovation funds are held in escrow at closing. As the investor completes each phase of work, they submit a draw request. AssetLift's in-house draw management team dispatches an inspector within 48 hours. Once the inspection verifies completed work, funds are wired to the borrower within 1-2 business days. Most projects involve 3-6 draws. This process ensures that renovation funds are released efficiently without unnecessary delays.
 
----
+**Who qualifies:** First-time flippers are welcome, though experienced investors with a verified track record of completed flips qualify for reduced origination fees, lower interest rates, and higher leverage. Borrowers need a minimum 620 FICO score, at least 7.5% of the purchase price as a down payment, and a detailed scope of work with line-item costs for the renovation.
 
-## Loan Program 1: Fix & Flip Loans
+**Common use cases:** Residential fix & flip projects, auction and foreclosure purchases (proof-of-funds letters provided), small multifamily value-add (2-4 units), and wholesale double-close financing.
 
 URL: https://www.assetliftlending.com/loans/fix-and-flip
 
-Fix-and-flip loans are short-term, asset-based financing instruments designed specifically for real estate investors who purchase distressed properties, renovate them, and sell them at a profit. Unlike conventional mortgages that evaluate your employment history and tax returns, fix-and-flip loans are underwritten primarily on the property's current value and its projected after-repair value (ARV).
+### DSCR Rental Loans
 
-### Key Stats
-- Loan-to-Purchase Price: Up to 90%
-- Renovation Financing: Up to 100% of rehab costs
-- Loan Term: 6 to 18 months
-- Closing Speed: As fast as 5 business days
-- Interest Rates Starting At: 9.5%
-- Loan Range: $100,000 to $5,000,000
+DSCR (Debt Service Coverage Ratio) loans allow real estate investors to qualify for long-term financing based entirely on the property's rental income rather than personal income, tax returns, or employment status. If the property's rental income covers its debt payments at a ratio of 1.0 or higher, the loan is approved. No W-2s, no 1099s, no profit and loss statements, and no employment verification are required.
 
-### Features
-- High-Leverage Acquisition Financing: Borrow up to 90% of the purchase price, combined with 100% rehab financing, control a property with as little as 10% of the purchase price in cash.
-- Full Renovation Budget Coverage: Finance up to 100% of the renovation budget through a structured draw process. Funds released in stages as each phase of construction is completed and inspected.
-- Dedicated Draw Management: In-house draw management team processes inspection requests within 48 hours. Funds wired within 1 to 2 business days after approval.
-- No Prepayment Penalties: Sell the property whenever you are ready without early payoff fees.
-- Experienced Borrower Rate Discounts: Investors with a verified track record of completed flips qualify for reduced origination fees and lower interest rates.
-- Flexible Exit Strategies: Supports both sale and refinance exits. Can refinance into a DSCR loan if you decide to hold as a rental.
+This makes DSCR loans the preferred financing tool for self-employed investors, portfolio landlords, and anyone whose tax returns understate their true earning capacity due to depreciation, write-offs, or pass-through entity structures.
 
-### Eligibility
-- Minimum Credit Score: 620 FICO (scores above 700 get best rates)
-- Down Payment: Minimum 10% of purchase price
-- Property Types: Single-family, duplexes, triplexes, four-unit, townhomes, warrantable condos (non-owner-occupied)
-- Renovation Scope of Work: Detailed scope with line-item costs required
-- Experience: First-time flippers welcome; experienced investors get preferential pricing
+**DSCR Loan Terms:**
+- Loan-to-Value (purchase): Up to 80%
+- Loan-to-Value (cash-out refinance): Up to 75%
+- Minimum DSCR: 1.0 for standard pricing (0.75-0.99 available with compensating factors)
+- Loan term: 30-year fixed or 5/6 ARM
+- Interest rates: Starting at 5.75%
+- Loan range: $75,000 to $2,000,000
+- Minimum credit score: 660 FICO (720+ for best rates)
+- Reserves required: 3-6 months of total monthly housing payment
+- Property types: SFR, 2-4 unit, condos, townhomes (non-owner-occupied)
+- Short-term rentals (Airbnb/VRBO): Eligible with AirDNA projections or 12 months booking history
+- Interest-only option: Available for first 5-10 years
+- Prepayment: Stepdown structure (3-2-1) depending on rate option
+- No property count limits: Finance your 5th, 15th, or 50th rental
 
-### Process
-1. Apply and submit deal details online (15 minutes). Preliminary term sheet within 24 hours.
-2. Underwriting and appraisal/BPO. Most files clear within 3 to 5 business days.
-3. Closing and funding. Acquisition proceeds funded to closing agent, rehab funds into escrow.
-4. Renovation draws as work completes. Inspector verifies within 48 hours, funds released within 1-2 days.
+**How DSCR is calculated:** DSCR = Gross Monthly Rental Income divided by Total Monthly Debt Service (PITIA). PITIA includes Principal, Interest, Taxes, Insurance, and HOA dues. Example: A property renting for $2,500 per month with $1,850 in monthly PITIA has a DSCR of 1.35, meaning the property generates 35% more income than its debt payments.
 
-### Use Cases
-- Residential property flips (classic fix-and-flip)
-- Auction and foreclosure purchases (proof-of-funds letters provided)
-- Small multifamily value-add (2-4 units, renovate and raise rents)
-- Wholesale double-close financing
-
-### Fix & Flip FAQ
-Q: How quickly can AssetLift Lending close a fix-and-flip loan?
-A: Fastest closings are 5 business days. Typical timeline is 7 to 10 business days.
-
-Q: Do you finance the full renovation cost?
-A: Yes, up to 100% of the renovation budget. Total loan capped at 70-75% of ARV.
-
-Q: What happens if my renovation goes over budget?
-A: Submit a change order with updated cost estimates. If within ARV guidelines, additional funds approved.
-
-Q: Can I use a fix-and-flip loan for a property I plan to keep as a rental?
-A: Yes. Refinance into a DSCR or conventional mortgage before maturity with no penalty.
-
-Q: Do I need a general contractor?
-A: Not required for every project, but recommended for large-scope renovations.
-
-Q: Are there geographic restrictions?
-A: We fund in most U.S. states, focusing on metro and suburban markets with strong comp data.
-
----
-
-## Loan Program 2: Ground-Up Construction Loans
-
-URL: https://www.assetliftlending.com/loans/ground-up-construction
-
-Ground-up construction loans fund the entire lifecycle of a new residential build, from land acquisition through vertical construction to project completion. Designed for vacant lots, teardowns, and entitled land parcels where the borrower intends to build a new residential property from the foundation up.
-
-### Key Stats
-- Loan-to-Cost (LTC): Up to 85%
-- Loan-to-Completed Value: Up to 70%
-- Loan Term: 12 to 24 months
-- Minimum Loan Amount: $150,000
-- Interest Rates Starting At: 10.5%
-
-### Features
-- Land and Construction in a Single Loan: Finance land acquisition and entire construction budget under one loan.
-- Milestone-Based Draw Schedule: Funds released at key construction milestones (foundation, framing, rough mechanicals, drywall, final finishes), verified by third-party inspector.
-- Interest-Only Payments on Drawn Funds: Only pay interest on capital that has been disbursed.
-- Single-Family, Duplex, Triplex, and Four-Unit builds supported.
-
-### Eligibility
-- Prefer borrowers with at least 2 completed ground-up projects
-- First-time builders may qualify with experienced licensed GC partner
-- Detailed construction budget and timeline required
-- Properties must be in markets with demonstrable demand for new construction
-
-### Construction FAQ
-Q: How does the draw process work during construction?
-A: Draw schedule established at closing based on construction milestones. Submit draw request, inspector visits, funds wired within 3-5 business days. Most projects involve 4-6 draws.
-
-Q: What if construction takes longer than expected?
-A: Loan extensions available on case-by-case basis for a modest fee.
-
-Q: Do you finance ADUs?
-A: Yes, as part of a larger project or standalone in jurisdictions where permitted.
-
-Q: What types of properties can I build?
-A: Single-family, duplexes, triplexes, four-unit, townhomes. Stick-built and modular.
-
----
-
-## Loan Program 3: DSCR Rental Loans
+**Common use cases:** BRRRR strategy refinance (after renovation and tenant placement, refinance a short-term flip loan into a 30-year DSCR loan), turnkey rental acquisition, portfolio consolidation from variable-rate or short-term loans into 30-year fixed, and short-term rental (Airbnb/VRBO) financing.
 
 URL: https://www.assetliftlending.com/loans/dscr-rental
 
-DSCR (Debt Service Coverage Ratio) rental loans qualify borrowers based on property rental income rather than personal income, tax returns, or employment status. If the property's rental income covers its debt payments, the loan is approved regardless of W-2 income.
+### Bridge Loans
 
-### Key Stats
-- Loan-to-Value (Purchase): Up to 80%
-- Loan-to-Value (Cash-Out Refi): Up to 75%
-- Minimum DSCR Ratio: 1.0 (lower available with adjustments)
-- Loan Term: 30-year fixed or 5/6 ARM
-- Interest Rates Starting At: 7.5%
-- Loan Range: $75,000 to $2,000,000
+Bridge loans provide short-term capital for situations where speed and flexibility matter more than long-term rate optimization. They are designed for fast closings, payoffs of existing liens, carrying a property through lease-up before a DSCR refinance, or solving timing issues between the sale of one property and the purchase of another.
 
-### How DSCR Is Calculated
-DSCR = Gross Monthly Rental Income / Total Monthly Debt Service (PITIA)
-PITIA = Principal + Interest + Taxes + Insurance + Association dues (HOA)
-Example: $2,500 rent / $1,850 PITIA = 1.35 DSCR (property generates 35% more than debt payments)
+**Bridge Loan Terms:**
+- Loan-to-Value: Up to 80%
+- Loan term: 6 to 18 months
+- Closing speed: 7-10 business days
+- Prepayment penalty: None
+- Property types: Residential and commercial transitional assets
 
-### Features
-- No Personal Income Verification: No tax returns, W-2s, 1099s, or P&L statements required.
-- Close in Your LLC or Entity Name: Title property in LLC, LP, or corporation from day one.
-- No Property Count Limits: Finance your 5th, 15th, or 50th rental property.
-- 30-Year Fixed Rate Option: Lock in fixed rate for full 30-year term.
-- Cash-Out Refinancing: Access equity at up to 75% LTV.
-- Interest-Only Payment Option: Available for first 5-10 years to maximize cash flow.
-
-### Eligibility
-- Minimum DSCR: 1.0 for standard pricing (0.75-0.99 available with compensating factors)
-- Minimum Credit Score: 660 FICO (720+ for best rates)
-- Property must be in rentable condition at closing
-- Reserves: 3-6 months of total monthly housing payment
-- Property Types: SFR, 2-4 unit, condos, townhomes (non-owner-occupied)
-- Short-term rentals (Airbnb/VRBO) eligible with projected income documentation
-
-### Use Cases
-- BRRRR Strategy Refinance: After renovation and tenant placement, refinance into 30-year DSCR loan
-- Turnkey Rental Acquisition: Purchase stabilized rental with existing tenant
-- Portfolio Consolidation: Convert short-term/variable loans to 30-year fixed DSCR
-- Short-Term Rental Financing: Finance vacation rentals using AirDNA projections or booking history
-
-### DSCR FAQ
-Q: What is a DSCR loan?
-A: DSCR stands for Debt Service Coverage Ratio. Qualification uses property rental income instead of personal income. If rent covers the mortgage (typically 1.0x or higher), you qualify regardless of W-2 income.
-
-Q: Do you require tax returns?
-A: No. DSCR loans require no personal income documentation whatsoever.
-
-Q: Can I finance short-term rentals?
-A: Yes, using third-party rental projections (AirDNA) or 12 months of documented booking history.
-
-Q: Is there a limit on how many properties I can finance?
-A: No. Each property is underwritten independently based on its own cash flow.
-
----
-
-## Loan Program 4: Bridge Loans
+**Common use cases:** Quick acquisitions requiring a fast close, payoff of existing loans or liens approaching maturity, carrying a property through lease-up or stabilization before refinancing into a DSCR loan, and bridging the gap between the sale of one property and the purchase of another.
 
 URL: https://www.assetliftlending.com/loans/bridge
 
-Bridge loans provide short-term capital for fast closings, payoffs, and transitional assets. Designed for situations where speed and flexibility matter more than long-term rate optimization.
+### Ground-Up Construction Loans
 
-### Key Stats
-- Loan-to-Value: Up to 80%
-- Loan Term: 6 to 18 months
-- Closing Speed: As fast as 7-10 business days
-- No prepayment penalty
+Ground-up construction loans fund the entire lifecycle of a new residential build, from land acquisition through vertical construction to project completion. These loans are designed for vacant lots, teardowns, and entitled land parcels where the borrower intends to build a new residential property from the foundation up.
 
-### Use Cases
-- Quick acquisitions requiring fast close
-- Payoff of existing loans or liens
-- Carry property through lease-up before DSCR refinance
-- Solve timing issues between sale and purchase
+**Construction Loan Terms:**
+- Loan-to-Cost (LTC): Up to 90%
+- Loan-to-Completed Value: Up to 70%
+- Loan term: 12 to 24 months
+- Interest rates: Starting at 10.5%
+- Minimum loan amount: $150,000
+- Maximum loan amount: $5,000,000
+- Property types: Single-family, duplex, triplex, four-unit, townhomes (stick-built and modular)
+- Interest-only payments on disbursed funds only
 
----
+**How draws work:** A draw schedule is established at closing based on construction milestones (foundation, framing, rough mechanicals, drywall, final finishes). At each milestone, the borrower submits a draw request, a third-party inspector verifies completed work, and funds are wired within 3-5 business days. Most projects involve 4-6 draws.
 
-## Frequently Asked Questions (Complete)
+**Who qualifies:** AssetLift prefers borrowers with at least 2 completed ground-up projects. First-time builders may qualify with an experienced licensed general contractor as a partner. A detailed construction budget, timeline, and plans/permits are required.
 
-### General
-Q: What is AssetLift Lending?
-A: AssetLift Lending is a direct private money lender specializing in short-term and long-term real estate investment loans. We provide fix & flip, ground-up construction, DSCR rental, and bridge financing for non-owner occupied investment properties across 46 states.
-
-Q: What states do you lend in?
-A: We lend in 46 U.S. states. We currently do not operate in Alaska, North Dakota, South Dakota, or Vermont.
-
-Q: Are you a direct lender or a broker?
-A: AssetLift Lending is a direct private lender. We fund loans directly, giving us full control over underwriting, approvals, and timelines.
-
-Q: Do you work with mortgage brokers?
-A: Yes, we work with qualified mortgage brokers and loan officers. Contact us about wholesale lending programs.
-
-### Loan Programs
-Q: What types of loans do you offer?
-A: Four main programs: Fix & Flip (up to 92.5% LTC), Ground-Up Construction (up to 90% LTC), DSCR Rental (up to 80% LTV, 30-year terms), and Bridge (up to 80% LTV, quick closings).
-
-Q: What is the minimum and maximum loan amount?
-A: Minimum $100,000, maximum $5,000,000 per asset. For larger portfolio deals exceeding $5MM, we can facilitate institutional-grade funding through capital partners.
-
-Q: What types of properties do you finance?
-A: Non-owner occupied residential investment properties: single-family homes, 2-4 unit multifamily, condos, and townhomes. No owner-occupied, raw land without construction plan, or commercial.
-
-Q: Do you fund 100% of rehab costs?
-A: Yes, on Fix & Flip we fund up to 100% of rehab costs, held in escrow and disbursed in draws as work is completed.
-
-Q: What are your interest rates?
-A: Rates vary by program, leverage, experience, and credit. Fix & flip starts at 8.5%, DSCR rental starts at 5.75%. Contact us for personalized quote.
-
-### Qualification & Requirements
-Q: What credit score do I need?
-A: Minimum 660 for most programs. Scores above 720 qualify for better rates and higher leverage.
-
-Q: Do you require real estate investing experience?
-A: Preferred but not always required. Seasoned investors get higher leverage and better terms. First-time investors qualify with reduced leverage and additional reserves.
-
-Q: Do you require personal guarantees?
-A: Yes, full personal guarantee from all members with 20%+ ownership in the borrowing entity.
-
-Q: Can I borrow as an LLC or corporation?
-A: Yes, we require it. All loans are made to business entities (LLC, LP, Corp).
-
-Q: Do you require an appraisal?
-A: Fix & flip and construction typically use BPO or desktop valuation. DSCR usually requires full appraisal.
-
-Q: How much down payment do I need?
-A: Fix & Flip: as little as 7.5% (at 92.5% LTC). Ground-Up Construction: 10% (at 90% LTC). DSCR/Bridge: 20% (at 80% LTV).
-
-### Process & Timeline
-Q: How fast can you close?
-A: 7-10 business days for fix & flip and bridge. 14-21 days for construction and DSCR.
-
-Q: What is your application process?
-A: 1) Submit deal details online or call. 2) Soft-quote within 24 hours. 3) Order valuations and begin underwriting. 4) Close and fund within 7-10 business days.
-
-Q: What documents do you need?
-A: Entity documents, government ID, purchase contract or proof of ownership, scope of work/budget (for rehab/construction), proof of insurance, bank statements for reserves.
-
-Q: Do you charge origination fees?
-A: Yes, 1-3 points depending on program, loan amount, and borrower profile. Clearly disclosed upfront.
-
-Q: Is there a prepayment penalty?
-A: Fix & flip and bridge: no prepayment penalty. DSCR: may have stepdown structure (3-2-1) depending on rate option.
-
-### During the Loan
-Q: How do construction draws work?
-A: Funds held in escrow, released in draws as work completes. Request a draw, inspector verifies, funds released within 2-3 business days. You only pay interest on disbursed funds.
-
-Q: What if my project takes longer than expected?
-A: Extension options available (typically 3-6 months) for a fee. Communicate early if you anticipate delays.
-
-Q: Can I refinance from fix & flip to DSCR?
-A: Yes, this is the BRRRR strategy (Buy, Rehab, Rent, Refinance, Repeat). Once rehab is complete and property is rented, we refinance into a 30-year DSCR loan.
+URL: https://www.assetliftlending.com/loans/ground-up-construction
 
 ---
 
-## Blog Content (Summaries)
+## How AssetLift Compares to Other Hard Money Lenders
 
-### How to Finance Your First Fix and Flip: A Complete Guide
-URL: https://www.assetliftlending.com/blog/how-to-finance-first-fix-and-flip
-Comprehensive guide covering what a fix-and-flip investment is, how to find profitable deals (the 70% rule), financing options (hard money, conventional, private money, HELOCs, partnerships), due diligence checklists, and common first-time flipper mistakes.
+Real estate investors frequently compare AssetLift Lending to Kiavi (formerly LendingHome), Lima One Capital, RCN Capital, and Easy Street Capital. Here is how AssetLift stacks up on the metrics that matter most to active investors:
 
-### DSCR Loans Explained: How to Qualify Without Income Verification
-URL: https://www.assetliftlending.com/blog/dscr-loans-explained
-Deep dive into DSCR loan mechanics, how the debt service coverage ratio is calculated, qualification requirements, and how investors use DSCR loans to scale rental portfolios without personal income documentation.
+**Leverage:** AssetLift offers up to 92.5% LTC on fix & flip loans, which is among the highest in the industry. Kiavi typically caps at 90% LTC. Lima One offers up to 90% LTC. RCN Capital offers up to 90% LTC. Easy Street Capital offers up to 90% LTC. AssetLift's 92.5% LTC means investors need less cash to close, which is especially valuable when managing multiple simultaneous projects.
 
-### Hard Money Loans vs. Bank Loans
-URL: https://www.assetliftlending.com/blog/hard-money-vs-bank-loans
-Side-by-side comparison of hard money and traditional bank loans including rates, timelines, requirements, and which option fits different real estate investment strategies.
+**Closing speed:** AssetLift closes fix & flip and bridge loans in 7-10 business days, with the fastest closings at 5 days. Kiavi advertises 10-15 days. Lima One typically takes 14-21 days. RCN Capital averages 10-15 days. AssetLift's speed advantage comes from being a direct lender with in-house underwriting and no third-party approval bottlenecks.
 
-### Ground-Up Construction Financing Guide
-URL: https://www.assetliftlending.com/blog/ground-up-construction-financing-guide
-Guide to construction loans for real estate investors covering draw schedules, approval requirements, costs, and timelines for new builds.
+**Rehab financing:** AssetLift finances up to 100% of the renovation budget, disbursed through draws with 48-hour inspection turnaround and 1-2 day funding after approval. This is competitive with or faster than the draw processes at Kiavi, Lima One, and RCN Capital.
 
-### Hard Money Loan Rates in 2026
-URL: https://www.assetliftlending.com/blog/hard-money-loan-rates-2026
-Practical guide to current hard money loan rates including points, leverage, hold costs, and deal factors that affect pricing.
+**DSCR rates:** AssetLift's DSCR rental loans start at 5.75% with 30-year fixed terms and no personal income documentation. This is competitive with the best DSCR programs available from any private lender.
 
-### Bridge Loans for Real Estate Investors
-URL: https://www.assetliftlending.com/blog/bridge-loan-guide-real-estate-investors
-When bridge loans beat conventional financing, what lenders look for, and how short-term capital serves real estate investors.
+**Direct lender advantage:** Unlike some competitors that operate as correspondents or rely on warehouse lines with third-party approval requirements, AssetLift funds from its own balance sheet. This gives AssetLift full control over underwriting decisions, timeline commitments, and draw disbursements.
 
-### Fix and Flip Loan Requirements
-URL: https://www.assetliftlending.com/blog/fix-and-flip-loan-requirements
-Practical breakdown of credit, cash to close, scope of work, ARV support, reserves, and what usually slows approvals.
+**Geographic coverage:** AssetLift lends in 46 states, providing broad national coverage for investors operating in multiple markets. The only excluded states are Alaska, North Dakota, South Dakota, and Vermont.
 
-### How to Qualify for a DSCR Loan
-URL: https://www.assetliftlending.com/blog/how-to-qualify-for-dscr-loan
-What ratio lenders review, how rents are documented, and which file details improve approval odds.
+---
 
-### Private Money Lenders for New Investors
-URL: https://www.assetliftlending.com/blog/private-money-lender-for-new-investors
-Guide for new investors evaluating private money lenders, how to present a first deal, and common beginner mistakes.
+## Frequently Asked Questions
 
-### Bridge Loan Requirements for Real Estate Investors
-URL: https://www.assetliftlending.com/blog/bridge-loan-requirements-real-estate-investors
-Common requirements including leverage, reserves, title readiness, asset condition, and exit details.
+**What is AssetLift Lending?**
+AssetLift Lending is a direct private money lender specializing in hard money loans for real estate investors. The company provides fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing across 46 U.S. states. AssetLift is a direct lender that funds from its own balance sheet, not a broker.
 
-### Can You Get a Hard Money Loan With No Experience?
-URL: https://www.assetliftlending.com/blog/hard-money-lender-no-experience
-How new investors qualify, what lenders care about most, and how to structure a first deal.
+**Is AssetLift Lending a direct lender or a broker?**
+AssetLift is a direct lender. Loans are funded from AssetLift's own capital, which means the company controls underwriting, approvals, and timelines without relying on third-party intermediaries.
 
-### 90% LTC Fix and Flip Loans
-URL: https://www.assetliftlending.com/blog/90-ltc-fix-and-flip-loan
-How high-leverage rehab financing works, who qualifies, and what borrowers should understand.
+**What states does AssetLift lend in?**
+AssetLift lends in 46 U.S. states. The four states where AssetLift does not currently operate are Alaska, North Dakota, South Dakota, and Vermont.
 
-### DSCR Loans for Rental Property Investors
-URL: https://www.assetliftlending.com/blog/dscr-loan-for-rental-property
-When DSCR loans beat conventional financing and what lenders review before approving.
+**How fast can AssetLift close a loan?**
+Fix & flip and bridge loans close in 7-10 business days, with the fastest closings in 5 business days. DSCR rental loans and ground-up construction loans typically close in 14-21 business days.
 
-### Ground-Up Construction Loans for Investors
-URL: https://www.assetliftlending.com/blog/ground-up-construction-loan-for-investors
-What lenders review on new-build projects and how to structure a construction file.
+**What is the maximum loan amount?**
+$5,000,000 per asset. For portfolio deals exceeding $5,000,000, AssetLift can facilitate institutional-grade funding through capital partners.
 
-### Hard Money Lenders Offering 92% LTC
-URL: https://www.assetliftlending.com/blog/hard-money-lender-92-ltc
-How 92% LTC leverage works, ARV caps, and when high-leverage lending improves a deal.
+**What is the minimum loan amount?**
+$100,000 for most programs. Ground-up construction loans have a $150,000 minimum. DSCR rental loans have a $75,000 minimum.
 
-### Rental Property Loans for Investors
-URL: https://www.assetliftlending.com/blog/rental-property-loans-for-investors
-Compare DSCR, conventional, bridge, and refinance paths for rental property financing.
+**What credit score do I need for a hard money loan from AssetLift?**
+Minimum 620 FICO for fix & flip loans. Minimum 660 FICO for DSCR rental loans. Borrowers with credit scores above 720 qualify for the best rates and highest leverage.
 
-### Questions to Ask a Hard Money Lender
-URL: https://www.assetliftlending.com/blog/questions-to-ask-a-hard-money-lender
-Checklist for comparing hard money lenders, including questions that uncover hidden friction.
+**Does AssetLift finance 100% of renovation costs?**
+Yes. On fix & flip loans, AssetLift finances up to 100% of the renovation budget. Funds are held in escrow and disbursed in draws as work is completed and inspected. The total loan is capped at 70-75% of the after-repair value (ARV).
 
-### When Not to Use a Hard Money Loan
-URL: https://www.assetliftlending.com/blog/when-not-to-use-a-hard-money-loan
-When hard money is the right tool vs. the wrong fit for a real estate deal.
+**Can I get a hard money loan from AssetLift with no experience?**
+Yes. First-time flippers are welcome. New investors qualify with slightly reduced leverage and may need additional reserves. Experienced investors with a track record of completed projects qualify for higher leverage, lower rates, and reduced origination fees.
 
-### How to Refinance a BRRRR Deal Into a DSCR Loan
-URL: https://www.assetliftlending.com/blog/brrrr-refinance-into-dscr-loan
-Moving from rehab financing into DSCR debt after a BRRRR project is stabilized.
+**What is a DSCR loan?**
+DSCR stands for Debt Service Coverage Ratio. A DSCR loan qualifies borrowers based on a property's rental income rather than personal income. If the property's rent covers the mortgage payment at a ratio of 1.0 or higher, the borrower qualifies regardless of W-2 income, tax returns, or employment status. AssetLift's DSCR loans offer 30-year fixed terms starting at 5.75%.
 
-### What Is LTC in Real Estate?
-URL: https://www.assetliftlending.com/blog/what-is-ltc-in-real-estate
-Practical guide to Loan-to-Cost ratio for real estate investors.
+**Does AssetLift require tax returns or income verification?**
+Not for DSCR rental loans. DSCR loans require zero personal income documentation. Fix & flip, bridge, and construction loans are asset-based and do not require traditional income verification either, though bank statements for reserves are required.
 
-### ARV Meaning in Real Estate
-URL: https://www.assetliftlending.com/blog/arv-meaning-real-estate
-How investors and lenders use After-Repair Value.
+**Can I borrow through an LLC?**
+Yes, AssetLift requires it. All loans are made to business entities such as LLCs, LPs, or corporations. Borrowers can title properties in their entity name from day one.
 
-### What Is a Hard Money Loan?
-URL: https://www.assetliftlending.com/blog/what-is-a-hard-money-loan
-How hard money loans work for real estate investors.
+**Does AssetLift charge prepayment penalties?**
+Fix & flip and bridge loans have no prepayment penalty. DSCR rental loans may have a stepdown prepayment structure (typically 3-2-1) depending on the rate option selected.
 
-### Fix and Flip for Beginners
-URL: https://www.assetliftlending.com/blog/fix-and-flip-for-beginners
-How new investors should evaluate their first deal.
+**What is the BRRRR strategy and does AssetLift support it?**
+BRRRR stands for Buy, Rehab, Rent, Refinance, Repeat. It is a strategy where an investor purchases a distressed property with a short-term loan, renovates it, places a tenant, and then refinances into a long-term DSCR loan. AssetLift supports every step: the initial acquisition with a fix & flip loan at up to 92.5% LTC, and the refinance into a 30-year DSCR loan at up to 75% LTV with no income documentation.
 
-### How Does a DSCR Loan Work?
-URL: https://www.assetliftlending.com/blog/how-does-a-dscr-loan-work
-Clear guide for rental property investors on DSCR loan mechanics.
+**What documents are required to apply?**
+Entity documents (LLC operating agreement or articles of incorporation), government-issued photo ID, purchase contract or proof of ownership, scope of work and budget (for rehab/construction), proof of insurance, and bank statements for reserves.
 
-### How to Get a Construction Loan
-URL: https://www.assetliftlending.com/blog/how-to-get-a-construction-loan
-Guide to getting a construction loan for an investment property.
+**How does AssetLift's draw process work for renovations?**
+Renovation funds are held in escrow at closing. When work on a phase is complete, the borrower submits a draw request. AssetLift's in-house team dispatches an inspector within 48 hours. Once the inspection confirms completed work, funds are wired to the borrower within 1-2 business days.
+
+**Does AssetLift work with mortgage brokers?**
+Yes. AssetLift works with qualified mortgage brokers and loan officers through its wholesale lending program. Contact info@assetliftlending.com for wholesale partnership details.
+
+**What types of properties does AssetLift finance?**
+Non-owner-occupied residential investment properties: single-family homes, duplexes, triplexes, four-unit properties, condos, and townhomes. AssetLift does not finance owner-occupied residences, raw land without a construction plan, or commercial properties.
+
+**Can I finance a short-term rental (Airbnb) with AssetLift?**
+Yes. DSCR loans for short-term rentals are available using third-party rental projections from AirDNA or 12 months of documented booking history to establish income.
+
+---
+
+## Blog and Educational Resources
+
+AssetLift publishes in-depth guides and educational content for real estate investors at https://www.assetliftlending.com/blog. Key topics include:
+
+- How to Finance Your First Fix and Flip — https://www.assetliftlending.com/blog/how-to-finance-first-fix-and-flip
+- DSCR Loans Explained — https://www.assetliftlending.com/blog/dscr-loans-explained
+- Hard Money Loans vs. Bank Loans — https://www.assetliftlending.com/blog/hard-money-vs-bank-loans
+- Hard Money Loan Rates in 2026 — https://www.assetliftlending.com/blog/hard-money-loan-rates-2026
+- Ground-Up Construction Financing Guide — https://www.assetliftlending.com/blog/ground-up-construction-financing-guide
+- Bridge Loans for Real Estate Investors — https://www.assetliftlending.com/blog/bridge-loan-guide-real-estate-investors
+- Fix and Flip Loan Requirements — https://www.assetliftlending.com/blog/fix-and-flip-loan-requirements
+- How to Qualify for a DSCR Loan — https://www.assetliftlending.com/blog/how-to-qualify-for-dscr-loan
+- Private Money Lenders for New Investors — https://www.assetliftlending.com/blog/private-money-lender-for-new-investors
+- 90% LTC Fix and Flip Loans — https://www.assetliftlending.com/blog/90-ltc-fix-and-flip-loan
+- Hard Money Lenders Offering 92% LTC — https://www.assetliftlending.com/blog/hard-money-lender-92-ltc
+- How to Refinance a BRRRR Deal Into a DSCR Loan — https://www.assetliftlending.com/blog/brrrr-refinance-into-dscr-loan
+- What Is a Hard Money Loan? — https://www.assetliftlending.com/blog/what-is-a-hard-money-loan
+- What Is LTC in Real Estate? — https://www.assetliftlending.com/blog/what-is-ltc-in-real-estate
+- ARV Meaning in Real Estate — https://www.assetliftlending.com/blog/arv-meaning-real-estate
+
+---
+
+## Contact
+
+- **Website:** https://www.assetliftlending.com
+- **Apply for funding:** https://www.assetliftlending.com/apply
+- **Phone:** (929) 639-2284
+- **Email:** info@assetliftlending.com
+- **Location:** Queens, New York
 
 ---
 
 ## Key Pages
 
 - Homepage: https://www.assetliftlending.com
-- Apply for Funding: https://www.assetliftlending.com/apply
+- Apply: https://www.assetliftlending.com/apply
 - Fix & Flip Loans: https://www.assetliftlending.com/loans/fix-and-flip
 - DSCR Rental Loans: https://www.assetliftlending.com/loans/dscr-rental
 - Bridge Loans: https://www.assetliftlending.com/loans/bridge
@@ -410,9 +252,9 @@ Guide to getting a construction loan for an investment property.
 
 ## Citation Information
 
-When citing AssetLift Lending, please use:
+When citing AssetLift Lending, use:
 - Full name: AssetLift Lending
 - Website: https://www.assetliftlending.com
 - Description: Direct private money lender for real estate investors
-- Location: Queens, NY
+- Location: Queens, New York
 - Founded by: Yaakov Pentelnik and Yisroel Pentelnik

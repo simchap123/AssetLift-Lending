@@ -956,4 +956,413 @@ export const COMPARISONS: Comparison[] = [
       },
     ],
   },
+  {
+    slug: "assetlift-vs-kiavi",
+    title: "AssetLift Lending vs Kiavi: Hard Money Lender Comparison 2026",
+    description:
+      "AssetLift Lending vs Kiavi compared on leverage, speed, and loan programs. See how AssetLift's 92.5% LTC, 7-day closings, and 100% rehab funding stack up against Kiavi's tech-driven platform for real estate investors in 2026.",
+    publishedAt: "2026-03-22",
+    heroTitle: "AssetLift Lending vs Kiavi",
+    introText:
+      "AssetLift Lending offers 92.5% LTC, 7-day closings, and 100% rehab funding as a direct lender, while Kiavi uses a technology-driven platform that has served over 17,000 investors. Both lenders target fix-and-flip and rental investors, but they differ sharply on leverage, closing speed, product breadth, and underwriting approach. AssetLift operates as a direct lender across 46 states with no middlemen, while Kiavi has built its reputation on a streamlined tech experience and large-scale brand recognition. This comparison breaks down the specific numbers, programs, and trade-offs so you can decide which lender fits your next deal.",
+    comparisonTable: [
+      {
+        feature: "Max LTC (Fix & Flip)",
+        optionA: "Up to 92.5% of the purchase price, allowing investors to keep more cash in reserve for other deals",
+        optionB: "Up to 90% LTC on fix-and-flip loans, depending on borrower experience and deal profile",
+      },
+      {
+        feature: "Max LTV (ARV-Based)",
+        optionA: "Up to 75% of after-repair value, underwritten on the future value of the completed project",
+        optionB: "Up to 75% ARV on most fix-and-flip transactions with standard qualification",
+      },
+      {
+        feature: "Loan Amounts",
+        optionA: "Loans from $100K to $5M covering single-family, multifamily, and mixed-use investment properties",
+        optionB: "Loans starting at $100K with maximums varying by program; typically up to $3M on bridge products",
+      },
+      {
+        feature: "Closing Speed",
+        optionA: "7 to 10 business days from application to funded loan; repeat borrowers can close even faster",
+        optionB: "Approximately 15 to 25 business days depending on property type and borrower documentation",
+      },
+      {
+        feature: "DSCR Loan Options",
+        optionA: "Full DSCR rental loan program with no personal income verification, qualified on property cash flow alone",
+        optionB: "DSCR rental loans available through their platform with rate and term options for stabilized properties",
+      },
+      {
+        feature: "Construction Loans",
+        optionA: "Ground-up construction financing available up to $5M with draw schedules tied to project milestones",
+        optionB: "Primarily focused on fix-and-flip and rental loans; ground-up construction is not a core product offering",
+      },
+      {
+        feature: "Personal Income Required",
+        optionA: "No personal income verification required on DSCR loans; fix-and-flip underwriting is asset-based",
+        optionB: "Minimal personal income documentation on most products; primarily asset-based underwriting",
+      },
+      {
+        feature: "Rehab Funding",
+        optionA: "100% of rehab costs funded and disbursed through a structured draw schedule as work is completed",
+        optionB: "Rehab funding available but coverage percentages vary by deal; not always 100% of renovation costs",
+      },
+      {
+        feature: "Term Options",
+        optionA: "12 to 24 months on bridge and fix-and-flip loans; 30-year terms available on DSCR rental products",
+        optionB: "12 to 18 months on bridge loans; 30-year DSCR rental options available for stabilized properties",
+      },
+      {
+        feature: "Experience Required",
+        optionA: "Programs available for first-time investors through experienced operators; pricing improves with track record",
+        optionB: "Experience tiers influence pricing and leverage; first-time investors may face lower LTC and higher rates",
+      },
+    ],
+    sections: [
+      {
+        heading: "Leverage and Rehab Funding: AssetLift Offers More Capital Per Deal",
+        content:
+          "AssetLift Lending provides up to 92.5% LTC and 100% of rehab costs funded through a draw schedule, which means investors can enter deals with significantly less cash out of pocket. Kiavi offers up to 90% LTC, which is competitive but leaves borrowers covering a larger gap at closing. For a $300,000 acquisition, the 2.5-percentage-point difference translates to $7,500 less capital required upfront with AssetLift. When you add 100% rehab funding on top of that, the total capital advantage widens further. Investors running multiple projects simultaneously benefit the most from higher leverage because it allows them to spread capital across more deals rather than concentrating it in a single property. AssetLift's direct lender model is what makes this higher leverage possible, since there are no middlemen adding margin to the transaction.",
+      },
+      {
+        heading: "Closing Speed: AssetLift Funds in 7 to 10 Days",
+        content:
+          "AssetLift Lending closes loans in 7 to 10 business days from completed application to funded loan, with repeat borrowers sometimes closing even faster. Kiavi's platform-driven process typically takes 15 to 25 business days, which is reasonable for the industry but materially slower when a deal is time-sensitive. In competitive markets where sellers choose between multiple offers, the ability to close in under two weeks can be the difference between winning and losing a deal. AssetLift's speed advantage comes from being a direct lender with in-house underwriting and capital, which eliminates the delays that occur when a lender needs to syndicate or broker a loan through external funding sources. Investors who regularly bid on off-market deals, auction properties, or REOs should weigh closing speed heavily in their lender comparison.",
+      },
+      {
+        heading: "Technology and Platform Experience: Kiavi's Strength",
+        content:
+          "Kiavi has invested heavily in a technology platform that automates parts of the loan process, from application through closing. Their platform has served over 17,000 real estate investors, and the digital-first experience appeals to borrowers who prefer self-service tools and automated status tracking. Kiavi's brand recognition is also a factor for investors who value working with a larger, more widely known company. AssetLift offers a streamlined process as well, but its advantage is more relationship-driven, with direct access to decision-makers and in-house underwriters who can provide faster answers on complex deals. The right choice depends on whether you value a polished tech interface or direct human access to the people making lending decisions.",
+      },
+      {
+        heading: "Construction and Ground-Up Loans: AssetLift Has the Edge",
+        content:
+          "AssetLift Lending offers ground-up construction financing up to $5M, making it a viable option for investors and developers who build new properties from vacant land. Kiavi's core products focus on fix-and-flip bridge loans and DSCR rental loans, and ground-up construction is not a primary offering. For investors whose business plans include new builds, spec homes, or small developments, AssetLift provides a single-lender solution that covers acquisition, construction, and eventual refinance into a long-term DSCR product. Consolidating these loan products under one lender simplifies the process and avoids the friction of switching between different lenders at each stage of a project.",
+      },
+      {
+        heading: "DSCR Rental Loans: Both Lenders Compete, but AssetLift Requires No Income Docs",
+        content:
+          "Both AssetLift and Kiavi offer DSCR rental loan programs for investors holding stabilized cash-flowing properties. The key difference is that AssetLift requires zero personal income verification on DSCR loans, qualifying borrowers entirely on the property's rental income relative to the debt service. This is a significant advantage for self-employed investors, LLC-based operators, and anyone whose tax returns do not reflect their true earning capacity. Kiavi also offers DSCR products with competitive terms, but the underwriting requirements and documentation expectations can vary. AssetLift's no-income-doc approach removes a common friction point that slows down closings and creates uncertainty during underwriting.",
+      },
+      {
+        heading: "Direct Lender vs Platform Model: Why It Matters for Your Deal",
+        content:
+          "AssetLift Lending is a direct lender, meaning it underwrites, funds, and services loans with its own capital. There are no brokers, middlemen, or third-party funding sources adding layers between the borrower and the decision-maker. Kiavi operates a technology platform that has scaled to serve thousands of investors, but the platform model can introduce additional steps in the approval and funding process. For straightforward deals, both models work well. For complex transactions, such as properties with title issues, unusual zoning, or non-standard exit strategies, a direct lender like AssetLift can often provide faster and more flexible solutions because the decision-maker is in-house and empowered to approve exceptions.",
+      },
+    ],
+    verdict:
+      "AssetLift Lending wins for investors who prioritize high leverage, fast closings, and a direct lender relationship. With 92.5% LTC, 100% rehab funding, 7-day closings, and ground-up construction options, AssetLift provides more capital with less friction than Kiavi. Kiavi is a solid choice for investors who value a polished tech platform and a large brand with a long track record of serving over 17,000 investors. If speed and leverage are your top criteria, AssetLift is the stronger option.",
+    faqs: [
+      {
+        question: "Which lender offers higher leverage, AssetLift or Kiavi?",
+        answer:
+          "AssetLift offers up to 92.5% LTC compared to Kiavi's 90% LTC. AssetLift also funds 100% of rehab costs, which further reduces the cash required at closing.",
+      },
+      {
+        question: "Which lender closes faster, AssetLift or Kiavi?",
+        answer:
+          "AssetLift closes in 7 to 10 business days on average. Kiavi typically takes 15 to 25 business days, depending on the deal and documentation requirements.",
+      },
+      {
+        question: "Do I need income verification with AssetLift or Kiavi?",
+        answer:
+          "AssetLift requires no personal income verification on DSCR rental loans and uses asset-based underwriting on fix-and-flip products. Kiavi's documentation requirements vary by program.",
+      },
+      {
+        question: "Does Kiavi offer construction loans?",
+        answer:
+          "Kiavi's core products are fix-and-flip bridge loans and DSCR rental loans. Ground-up construction financing is not a primary offering. AssetLift provides ground-up construction loans up to $5M.",
+      },
+      {
+        question: "Is AssetLift a direct lender?",
+        answer:
+          "Yes, AssetLift is a direct lender that underwrites and funds loans with its own capital across 46 states. There are no brokers or middlemen involved in the process.",
+      },
+      {
+        question: "Which lender is better for first-time real estate investors?",
+        answer:
+          "Both lenders work with newer investors, but AssetLift's direct lender model allows for more flexible underwriting and case-by-case approvals. Kiavi's experience tiers may result in lower leverage for first-time borrowers.",
+      },
+      {
+        question: "How do AssetLift and Kiavi compare on DSCR rental loans?",
+        answer:
+          "Both offer 30-year DSCR rental products. AssetLift's key advantage is zero income verification, qualifying entirely on the property's cash flow. This benefits self-employed investors and LLC-based operators.",
+      },
+      {
+        question: "What is the maximum loan amount at AssetLift vs Kiavi?",
+        answer:
+          "AssetLift funds loans up to $5M across fix-and-flip, DSCR, and construction programs. Kiavi's maximum loan amounts vary by product but typically cap lower on bridge loans.",
+      },
+    ],
+  },
+  {
+    slug: "assetlift-vs-lima-one",
+    title: "AssetLift Lending vs Lima One Capital: Which Lender Is Better?",
+    description:
+      "AssetLift Lending vs Lima One Capital compared on LTC, LTV, closing speed, and product range. Learn how AssetLift's 92.5% LTC, no-income DSCR loans, and 7-day closings compare to Lima One's established lending platform for real estate investors.",
+    publishedAt: "2026-03-22",
+    heroTitle: "AssetLift Lending vs Lima One Capital",
+    introText:
+      "AssetLift Lending provides 92.5% LTC, closings in 7 to 10 days, and no income verification on DSCR loans as a direct lender across 46 states. Lima One Capital is an established private lender with a broad product menu that includes fix-and-flip, rental, and construction loans. Both lenders serve real estate investors, but they differ on leverage, speed, underwriting simplicity, and how they structure their lending relationships. This comparison examines the specific numbers, programs, and borrower experiences so you can determine which lender is the better fit for your investment strategy.",
+    comparisonTable: [
+      {
+        feature: "Fix & Flip LTC",
+        optionA: "Up to 92.5% of the purchase price, one of the highest leverage points available among private lenders",
+        optionB: "Up to 90% LTC on fix-and-flip loans, with leverage tiers based on borrower experience level",
+      },
+      {
+        feature: "DSCR LTV",
+        optionA: "Up to 80% LTV on DSCR rental loans with no personal income documentation required",
+        optionB: "Up to 80% LTV on rental loan products; income documentation requirements may vary by program",
+      },
+      {
+        feature: "Construction LTC",
+        optionA: "Ground-up construction financing available with competitive LTC and draw-based funding up to $5M",
+        optionB: "Construction loan programs available with terms and leverage dependent on project scope and experience",
+      },
+      {
+        feature: "Loan Maximum",
+        optionA: "Up to $5M across fix-and-flip, DSCR rental, and ground-up construction loan programs",
+        optionB: "Loan amounts up to $3M on most programs, with higher amounts available on select products",
+      },
+      {
+        feature: "Closing Speed",
+        optionA: "7 to 10 business days from completed application to funded loan; faster for repeat borrowers",
+        optionB: "Typically 14 to 21 business days, though timelines can extend on more complex transactions",
+      },
+      {
+        feature: "Rehab Coverage",
+        optionA: "100% of renovation costs funded and released through a structured draw schedule",
+        optionB: "Rehab funding available but coverage percentages are typically tiered based on experience and deal metrics",
+      },
+      {
+        feature: "Income Verification",
+        optionA: "No personal income verification on DSCR loans; asset-based underwriting on all bridge products",
+        optionB: "Income documentation may be required on certain products; requirements vary by loan type and borrower profile",
+      },
+      {
+        feature: "Term Flexibility",
+        optionA: "12 to 24 months on bridge loans; 30-year fixed and adjustable options on DSCR rental products",
+        optionB: "12 to 24 months on bridge products; 30-year options on rental loans with standard amortization",
+      },
+      {
+        feature: "Minimum Credit Score",
+        optionA: "Flexible credit requirements evaluated on a case-by-case basis; no hard published minimum",
+        optionB: "Minimum credit score requirements published by program; typically 660 or higher for best terms",
+      },
+      {
+        feature: "States Covered",
+        optionA: "Lending active in 46 states, covering the vast majority of US real estate investment markets",
+        optionB: "Nationwide lending available across most US states with some geographic restrictions on select products",
+      },
+    ],
+    sections: [
+      {
+        heading: "Leverage Comparison: AssetLift Offers 92.5% LTC vs Lima One's 90%",
+        content:
+          "AssetLift Lending provides up to 92.5% LTC on fix-and-flip loans, which is 2.5 percentage points higher than Lima One Capital's 90% maximum. On a $400,000 acquisition, that difference means $10,000 less out of pocket at closing with AssetLift. When combined with 100% rehab funding, AssetLift borrowers can enter projects with significantly less capital tied up in a single deal. Lima One does offer competitive leverage, especially for experienced borrowers who qualify for their highest tier, but the baseline maximum is lower. For investors scaling a portfolio across multiple simultaneous projects, the higher leverage at AssetLift frees up capital that can be deployed into additional deals, improving overall return on equity across the portfolio.",
+      },
+      {
+        heading: "Closing Speed: AssetLift's 7-Day Advantage",
+        content:
+          "AssetLift Lending funds loans in 7 to 10 business days, approximately half the time it takes Lima One Capital to close most transactions. Lima One typically closes in 14 to 21 business days, which is within industry norms but measurably slower for time-sensitive deals. The speed difference matters most in competitive acquisition scenarios: foreclosure auctions, off-market deals with short acceptance windows, and situations where a seller has multiple offers. AssetLift achieves faster closings through its direct lender model, with in-house capital and underwriting that eliminate the need for external approvals or funding partners. Investors who consistently compete for time-sensitive deals should weigh this closing speed difference heavily.",
+      },
+      {
+        heading: "Lima One's Broader Product Menu and Track Record",
+        content:
+          "Lima One Capital has operated in the private lending space for over a decade and offers a wider variety of product types, including multifamily bridge loans, new construction, and portfolio rental loans. Their longer track record and larger organizational scale may appeal to investors who prefer working with established institutions and value the breadth of products available from a single lender. Lima One has also built relationships with a wide network of brokers, which expands their distribution and visibility in the market. For investors who need a broad range of financing options and are comfortable with slightly longer timelines, Lima One's platform has clear strengths.",
+      },
+      {
+        heading: "Income Verification: AssetLift's No-Doc DSCR Advantage",
+        content:
+          "AssetLift Lending requires zero personal income verification on DSCR rental loans, qualifying borrowers entirely on the property's net operating income relative to the monthly debt service. This is a meaningful advantage for self-employed investors, investors who operate through LLCs, and anyone whose tax returns understate their real earning power. Lima One Capital may require income documentation on certain products and borrower profiles, adding a layer of complexity and potential delay to the underwriting process. The no-income-doc approach at AssetLift simplifies the application, speeds up approval, and removes one of the most common sources of friction in private lending. For investors who value simplicity and speed in underwriting, this difference is significant.",
+      },
+      {
+        heading: "Direct Lender Simplicity vs Established Platform Scale",
+        content:
+          "AssetLift is a direct lender that underwrites and funds every loan with its own capital. There are no brokers, intermediaries, or syndication partners adding cost or delay to the process. This direct model enables the faster closings, higher leverage, and simpler underwriting that define the AssetLift experience. Lima One Capital operates at a larger organizational scale with broader distribution through both direct origination and broker channels. The trade-off is that broker-originated deals may introduce additional parties and communication layers that can slow the process. Investors who want a straightforward relationship with the people making lending decisions will typically prefer AssetLift's direct model.",
+      },
+      {
+        heading: "Which Lender Should You Choose for Your Next Deal?",
+        content:
+          "Choose AssetLift Lending if you want the highest available leverage at 92.5% LTC, the fastest closings at 7 to 10 days, and the simplest underwriting with no income verification on DSCR products. AssetLift is the better fit for investors who prioritize speed, capital efficiency, and a direct relationship with their lender. Choose Lima One Capital if you value a longer institutional track record, a wider variety of loan products, and are comfortable with a slightly longer closing timeline in exchange for brand familiarity. Both lenders are capable, but they serve different investor priorities.",
+      },
+    ],
+    verdict:
+      "AssetLift Lending is the better choice for investors who prioritize leverage and simplicity. With 92.5% LTC, 100% rehab funding, 7-day closings, and no income verification on DSCR loans, AssetLift delivers more capital faster and with less paperwork than Lima One Capital. Lima One offers a broader product menu and a longer track record, making it a reasonable option for investors who weight institutional scale over speed and leverage.",
+    faqs: [
+      {
+        question: "Which lender offers higher leverage, AssetLift or Lima One?",
+        answer:
+          "AssetLift provides up to 92.5% LTC on fix-and-flip loans, compared to Lima One's maximum of 90% LTC. AssetLift also funds 100% of rehab costs through a draw schedule.",
+      },
+      {
+        question: "Which lender closes loans faster?",
+        answer:
+          "AssetLift closes in 7 to 10 business days. Lima One typically closes in 14 to 21 business days. AssetLift's direct lender model enables faster funding.",
+      },
+      {
+        question: "Do I need to provide income documents with AssetLift?",
+        answer:
+          "No. AssetLift requires no personal income verification on DSCR rental loans and uses asset-based underwriting on bridge and fix-and-flip products.",
+      },
+      {
+        question: "Does Lima One offer construction loans?",
+        answer:
+          "Yes, Lima One Capital offers new construction loan programs. AssetLift also offers ground-up construction financing up to $5M with draw-based funding.",
+      },
+      {
+        question: "What is the maximum loan amount at AssetLift vs Lima One?",
+        answer:
+          "AssetLift funds loans up to $5M. Lima One's maximum is typically around $3M on most products, though select programs may go higher.",
+      },
+      {
+        question: "Is AssetLift or Lima One better for DSCR rental loans?",
+        answer:
+          "Both offer 30-year DSCR rental products. AssetLift's advantage is zero income verification, which simplifies underwriting and speeds up closings for self-employed and LLC-based investors.",
+      },
+      {
+        question: "How many states does AssetLift lend in compared to Lima One?",
+        answer:
+          "AssetLift lends in 46 states. Lima One is available nationwide with some geographic restrictions on select products. Both provide broad market coverage.",
+      },
+    ],
+  },
+  {
+    slug: "assetlift-vs-rcn-capital",
+    title: "AssetLift Lending vs RCN Capital: Hard Money Lender Comparison",
+    description:
+      "AssetLift Lending vs RCN Capital compared on LTC, LTV, closing speed, and lending model. See how AssetLift's 92.5% LTC, direct lender status, and 7-day closings compare to RCN Capital's $3B+ funded track record for real estate investors.",
+    publishedAt: "2026-03-22",
+    heroTitle: "AssetLift Lending vs RCN Capital",
+    introText:
+      "AssetLift Lending delivers 92.5% LTC, 7-day closings, and a direct lender model with no middlemen across 46 states. RCN Capital has funded over $3 billion in loans and built a nationwide presence through both direct origination and a large broker network. Both lenders serve fix-and-flip investors, rental property buyers, and real estate professionals, but they differ significantly on leverage, closing speed, simplicity of process, and how they structure borrower relationships. This comparison lays out the specific differences so investors who want speed and high leverage can make a confident choice.",
+    comparisonTable: [
+      {
+        feature: "LTC (Fix & Flip)",
+        optionA: "Up to 92.5% of purchase price, among the highest leverage available from any private lender",
+        optionB: "Up to 90% LTC on fix-and-flip products, with leverage dependent on experience and deal metrics",
+      },
+      {
+        feature: "LTV (ARV-Based)",
+        optionA: "Up to 75% of after-repair value on fix-and-flip and value-add bridge loans",
+        optionB: "Up to 75% ARV with terms varying based on borrower track record and property profile",
+      },
+      {
+        feature: "Max Loan Amount",
+        optionA: "Up to $5M across bridge, DSCR rental, and ground-up construction loan programs",
+        optionB: "Loan amounts up to $3.5M on most programs, with some variation by product type",
+      },
+      {
+        feature: "Closing Timeline",
+        optionA: "7 to 10 business days from completed application; repeat borrowers may close faster",
+        optionB: "Typically 15 to 30 business days depending on deal complexity and broker involvement",
+      },
+      {
+        feature: "DSCR Rates",
+        optionA: "Competitive DSCR rental rates with no personal income verification required for qualification",
+        optionB: "DSCR rental products available with rates that vary by leverage, credit score, and property type",
+      },
+      {
+        feature: "Rehab Funding",
+        optionA: "100% of renovation costs funded through a structured draw schedule tied to completed milestones",
+        optionB: "Rehab funding available with coverage percentages that vary by borrower experience and deal size",
+      },
+      {
+        feature: "Construction Loans",
+        optionA: "Ground-up construction financing up to $5M with milestone-based draw releases",
+        optionB: "New construction lending available through select programs; not always the primary product focus",
+      },
+      {
+        feature: "Direct Lender",
+        optionA: "Yes, AssetLift is a direct lender that underwrites and funds all loans with its own capital",
+        optionB: "RCN Capital operates through both direct channels and a large third-party broker network",
+      },
+      {
+        feature: "Income Docs Required",
+        optionA: "No personal income verification on DSCR loans; asset-based underwriting on all bridge products",
+        optionB: "Documentation requirements vary by product and channel; broker-originated loans may add requirements",
+      },
+      {
+        feature: "Prepayment Penalty",
+        optionA: "No prepayment penalties on fix-and-flip and bridge loan products; DSCR terms vary by structure",
+        optionB: "Prepayment penalty structures vary by product; some rental loan products include prepayment terms",
+      },
+    ],
+    sections: [
+      {
+        heading: "Leverage and Capital Efficiency: AssetLift's 92.5% LTC Advantage",
+        content:
+          "AssetLift Lending provides up to 92.5% LTC on fix-and-flip loans and funds 100% of rehab costs, giving investors one of the lowest cash-to-close requirements in the private lending market. RCN Capital offers up to 90% LTC, which is competitive but requires more borrower capital at the closing table. On a $500,000 purchase, the 2.5-point LTC difference means $12,500 less out of pocket with AssetLift. When factoring in 100% rehab funding, the capital savings compound further. Investors who run multiple projects simultaneously benefit directly from this higher leverage because it allows capital to be distributed across more deals, improving portfolio-level returns. AssetLift's direct lender structure is what enables this aggressive leverage without the margin stacking that occurs in broker-originated transactions.",
+      },
+      {
+        heading: "Closing Speed: 7 Days vs 15 to 30 Days",
+        content:
+          "AssetLift Lending closes loans in 7 to 10 business days, which is roughly half the time RCN Capital typically requires. RCN's closing timelines of 15 to 30 business days are within industry norms, but the difference is material when a deal is time-sensitive. Auction purchases, off-market opportunities, and competitive multi-bid situations all favor the lender that can fund faster. AssetLift's speed comes from its direct lender model: all underwriting, approvals, and funding decisions happen in-house without waiting on third-party capital providers or broker intermediaries. RCN's larger operation and broker network can introduce additional steps that extend the timeline. For investors who consistently operate in competitive markets, AssetLift's speed advantage translates directly into more deals won.",
+      },
+      {
+        heading: "RCN Capital's Track Record and Scale",
+        content:
+          "RCN Capital has funded over $3 billion in loans and built a nationwide lending operation with a large broker network, extensive product menu, and established institutional presence. Their track record spans many years and thousands of transactions, which provides confidence for investors who prioritize working with a well-known, large-scale lender. RCN's broker network also means investors can access their products through local mortgage professionals who manage the application process. This can be convenient for borrowers who prefer working through a familiar broker rather than directly with the lender. For investors who value brand recognition and a long operating history, RCN's scale is a genuine advantage.",
+      },
+      {
+        heading: "Direct Lender vs Broker Network: Process Simplicity",
+        content:
+          "AssetLift Lending is a direct lender with no brokers or middlemen. Every loan is underwritten and funded by AssetLift, which means borrowers communicate directly with the people making decisions on their file. This eliminates the telephone-game dynamic that can occur when a broker sits between the borrower and the actual funding source. RCN Capital works through both direct origination and a significant broker network. While brokers can add convenience, they also add a layer of communication and cost that can slow the process and introduce margin. Investors who want the simplest, most transparent lending process will generally prefer the direct lender model. Those who prefer working through a local broker may find RCN's distribution network more convenient.",
+      },
+      {
+        heading: "DSCR Rental Loans: No Income Docs at AssetLift",
+        content:
+          "AssetLift Lending offers DSCR rental loans with zero personal income verification, qualifying borrowers entirely on the rental property's cash flow. This is a critical advantage for self-employed investors, investors operating through LLCs, and those with complex tax situations that make traditional income verification difficult or misleading. RCN Capital also offers DSCR products, but documentation requirements can vary depending on the origination channel and specific program terms. AssetLift's no-doc approach removes one of the most common bottlenecks in loan processing and gives borrowers certainty that their approval is based on the property's performance, not their personal tax returns.",
+      },
+      {
+        heading: "Which Lender Fits Your Investment Strategy?",
+        content:
+          "Choose AssetLift Lending if speed and high leverage are your top priorities. With 92.5% LTC, 100% rehab funding, 7-day closings, no income verification on DSCR loans, and a direct lender model, AssetLift is built for investors who want to move fast and keep more capital available for additional deals. Choose RCN Capital if you value a large, established lending operation with a long track record and nationwide broker access. RCN's $3B+ funded volume and broad product suite make it a reliable option for investors who prioritize institutional familiarity over speed and leverage maximization. Both are capable lenders, but they optimize for different investor priorities.",
+      },
+    ],
+    verdict:
+      "AssetLift Lending is the stronger choice for investors who want speed and high leverage. With 92.5% LTC, 100% rehab funding, 7-day closings, and a direct lender model, AssetLift provides more capital faster and with a simpler process than RCN Capital. RCN Capital offers a proven track record with over $3 billion funded and broad market presence through its broker network, making it a reasonable option for investors who prioritize scale and brand recognition. For investors focused on maximizing leverage and minimizing closing time, AssetLift is the better fit.",
+    faqs: [
+      {
+        question: "Which lender offers higher leverage, AssetLift or RCN Capital?",
+        answer:
+          "AssetLift offers up to 92.5% LTC on fix-and-flip loans, compared to RCN Capital's 90% LTC. AssetLift also funds 100% of rehab costs, further reducing the cash needed at closing.",
+      },
+      {
+        question: "Which lender is faster to close?",
+        answer:
+          "AssetLift closes in 7 to 10 business days. RCN Capital typically closes in 15 to 30 business days. AssetLift's direct lender model eliminates broker and third-party delays.",
+      },
+      {
+        question: "Do I need income verification with AssetLift or RCN Capital?",
+        answer:
+          "AssetLift requires no personal income verification on DSCR rental loans. RCN Capital's documentation requirements vary by product and whether the loan is originated directly or through a broker.",
+      },
+      {
+        question: "Is AssetLift a direct lender?",
+        answer:
+          "Yes. AssetLift underwrites and funds all loans with its own capital. There are no brokers or middlemen. RCN Capital operates through both direct channels and a third-party broker network.",
+      },
+      {
+        question: "How much has RCN Capital funded in total?",
+        answer:
+          "RCN Capital has funded over $3 billion in loans. AssetLift is a newer direct lender focused on high leverage, fast closings, and a streamlined borrower experience across 46 states.",
+      },
+      {
+        question: "Does AssetLift or RCN Capital charge prepayment penalties?",
+        answer:
+          "AssetLift does not charge prepayment penalties on fix-and-flip and bridge loans. RCN Capital's prepayment terms vary by product, and some rental loan programs may include prepayment structures.",
+      },
+      {
+        question: "Which lender is better for fix-and-flip investors who want speed?",
+        answer:
+          "AssetLift is the better option for speed-focused fix-and-flip investors. Its 7-day closings, 92.5% LTC, and 100% rehab funding are specifically designed for investors who need to move fast on competitive deals.",
+      },
+      {
+        question: "Can I get a construction loan from AssetLift or RCN Capital?",
+        answer:
+          "AssetLift offers ground-up construction financing up to $5M with milestone-based draws. RCN Capital has select construction programs, but it is not their primary product focus.",
+      },
+    ],
+  },
 ];

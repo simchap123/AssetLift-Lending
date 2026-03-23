@@ -114,10 +114,14 @@ const LoanPrograms = () => {
               <span className="gradient-text">Financing</span>
               <motion.span
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 rounded-full"
-                initial={{ scaleX: 0 }}
-                whileInView={{ scaleX: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.5 }}
+                initial={{ x: "-30%" }}
+                animate={{ x: "30%" }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  ease: "easeInOut",
+                }}
               />
             </span>
           </h2>

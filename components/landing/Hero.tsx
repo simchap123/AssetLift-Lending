@@ -8,9 +8,10 @@ import Image from "next/image";
 
 const Hero = () => {
   const stats = [
-    { value: "$5MM+", label: "Max Loan" },
-    { value: "92.5%", label: "LTC" },
-    { value: "24HR", label: "Funding" },
+    { value: "$5M+", label: "Max Loan" },
+    { value: "92.5%", label: "Max LTC" },
+    { value: "7-Day", label: "Closings" },
+    { value: "46", label: "States" },
   ];
 
   return (

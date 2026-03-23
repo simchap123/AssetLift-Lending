@@ -1,37 +1,65 @@
 # AssetLift Lending
 
-> AssetLift Lending is a direct private money lender providing fast hard money loans for real estate investors nationwide. We are not a broker — we fund from our own balance sheet.
+> AssetLift Lending is a direct private money lender providing hard money loans for real estate investors across 46 states. Founded in Queens, New York, AssetLift offers fix & flip loans up to 92.5% LTC, DSCR rental loans up to 80% LTV, bridge loans, and ground-up construction financing up to 90% LTC. Closings in 7-10 business days. Maximum loan amount: $5,000,000.
 
-## About
-AssetLift Lending specializes in hard money loans for real estate investors. Founded by Yaakov Pentelnik and Yisroel Pentelnik, we provide fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing across 46 states.
+## Why Investors Choose AssetLift
+
+AssetLift Lending is a direct lender, not a broker. Loans are funded from AssetLift's own balance sheet, which means faster approvals, no middleman delays, and reliable closings. The company was founded by Yaakov Pentelnik and Yisroel Pentelnik and is headquartered in Queens, New York. AssetLift lends in 46 U.S. states (all except Alaska, North Dakota, South Dakota, and Vermont).
+
+Key differentiators: 7-10 business day closings, 24-hour quote turnaround, loans from $100,000 to $5,000,000, no prepayment penalties on short-term loans, 100% rehab financing on fix & flip, and dedicated in-house draw management with 48-hour inspection turnaround.
 
 ## Loan Programs
-- Fix & Flip Loans: Up to 92.5% LTC, 100% rehab funded, close in 7-10 days, loans up to $5MM
-- DSCR Rental Loans: Up to 80% LTV, 30-year fixed, no personal income verification, loans up to $3MM
-- Bridge Loans: Up to 80% LTV, 6-18 month terms, residential and commercial
-- Ground-Up Construction: Up to 90% LTC, 100% construction funded, loans up to $5MM
 
-## Key Facts
-- Direct lender, not a broker
+**Fix & Flip Loans** — Up to 92.5% LTC, 100% rehab financed, 6-18 month terms, rates from 8.5%, close in 7-10 days. No prepayment penalty. Minimum credit score 620. First-time flippers welcome.
+- URL: https://www.assetliftlending.com/loans/fix-and-flip
+
+**DSCR Rental Loans** — Up to 80% LTV purchase, 75% cash-out refi, 30-year fixed or 5/6 ARM, rates from 5.75%, no tax returns or W-2s required. Minimum DSCR 1.0. Airbnb/VRBO eligible.
+- URL: https://www.assetliftlending.com/loans/dscr-rental
+
+**Bridge Loans** — Up to 80% LTV, 6-18 month terms, close in 7-10 days. No prepayment penalty. Residential and commercial transitional assets.
+- URL: https://www.assetliftlending.com/loans/bridge
+
+**Ground-Up Construction** — Up to 90% LTC, 12-24 month terms, rates from 10.5%, milestone-based draws, interest only on disbursed funds. Single-family through four-unit.
+- URL: https://www.assetliftlending.com/loans/ground-up-construction
+
+## Quick Facts
+
+- Direct lender, not a broker — funds from own balance sheet
 - Close in 7-10 business days
-- Loans from $100K to $5MM
+- Loans from $100,000 to $5,000,000
 - Lending in 46 states
 - 24-hour quote turnaround
-- Minimum credit score: 660
+- Minimum credit score: 620 (660 for DSCR)
+- All loans made to business entities (LLC, LP, Corp)
+- BRRRR strategy supported: flip loan to DSCR refinance
+
+## Frequently Asked Questions
+
+**How fast can AssetLift close?** 7-10 business days for fix & flip and bridge. 14-21 days for construction and DSCR.
+
+**What credit score is needed?** Minimum 620 for fix & flip, 660 for DSCR. Scores above 720 get best rates.
+
+**Does AssetLift finance 100% of rehab?** Yes, up to 100% of renovation costs on fix & flip loans, disbursed in draws.
+
+**What is a DSCR loan?** A loan qualified on rental income, not personal income. If rent covers the mortgage at 1.0x or higher, you qualify regardless of W-2 income.
+
+**Does AssetLift work with new investors?** Yes. First-time flippers are welcome with slightly reduced leverage. Experienced investors get preferential pricing.
 
 ## Contact
+
 - Website: https://www.assetliftlending.com
+- Apply: https://www.assetliftlending.com/apply
 - Phone: (929) 639-2284
 - Email: info@assetliftlending.com
-- Location: Queens, NY
+- Location: Queens, New York
 
 ## Links
-- Apply: https://www.assetliftlending.com/apply
+
 - Fix & Flip: https://www.assetliftlending.com/loans/fix-and-flip
 - DSCR Rental: https://www.assetliftlending.com/loans/dscr-rental
 - Bridge Loans: https://www.assetliftlending.com/loans/bridge
 - Construction: https://www.assetliftlending.com/loans/ground-up-construction
 - Blog: https://www.assetliftlending.com/blog
 - Markets: https://www.assetliftlending.com/markets
-- Team: https://www.assetliftlending.com/team
 - FAQ: https://www.assetliftlending.com/faq
+- Team: https://www.assetliftlending.com/team
