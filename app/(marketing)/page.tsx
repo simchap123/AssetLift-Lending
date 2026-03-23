@@ -1,3 +1,4 @@
+import Hero from "@/components/landing/Hero";
 import WhyAssetLift from "@/components/landing/WhyAssetLift";
 import LoanPrograms from "@/components/landing/LoanPrograms";
 import HowItWorks from "@/components/landing/HowItWorks";
@@ -6,8 +7,6 @@ import CTA from "@/components/landing/CTA";
 import Testimonials from "@/components/landing/Testimonials";
 import PromoBanner from "@/components/landing/PromoBanner";
 import MarketsPreview from "@/components/landing/MarketsPreview";
-import AnimatedStats from "@/components/landing/AnimatedStats";
-import SectionDivider from "@/components/landing/SectionDivider";
 import JsonLd from "@/components/JsonLd";
 
 export default function HomePage() {
@@ -84,12 +83,10 @@ export default function HomePage() {
       <JsonLd data={schema} />
       <PromoBanner />
       <main className="pt-14">
+        <Hero />
+        <WhyAssetLift />
         <LoanPrograms />
         <MarketsPreview />
-        <WhyAssetLift />
-        <SectionDivider className="text-foreground" />
-        <AnimatedStats />
-        <SectionDivider className="text-foreground" flip />
         <HowItWorks />
         <FAQ />
         <Testimonials />
