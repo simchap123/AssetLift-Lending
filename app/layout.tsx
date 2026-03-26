@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
+import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import AnalyticsPageTracker from "@/components/AnalyticsPageTracker";
 import ChatBot from "@/components/ChatBot";
@@ -141,6 +142,13 @@ export default function RootLayout({
           <ChatBot />
         </Providers>
         <GoogleAnalytics />
+        {/* LeadConnector Chat Widget (GHL/A2P) */}
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="69bae59888f7834d50ca2684"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
