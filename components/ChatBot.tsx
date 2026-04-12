@@ -30,17 +30,28 @@ const ChatBot = () => {
     }
   }, [messages, isLoading]);
 
-  /* ---- Hide only the LC launcher bubble, not the chat window itself ---- */
+  /* ---- Hide the entire LC widget until user clicks "Chat with Us" ---- */
   useEffect(() => {
     const style = document.createElement('style');
-    style.id = 'hide-lc-bubble';
+    style.id = 'hide-lc-widget';
     style.textContent = `
-      /* Hide the LC launcher button only — chat window stays visible when opened */
+      [id^="lc_text-widget"],
+      [id^="lc_text-widget"] *,
       .lc_text-widget-open,
-      [id^="lc_text-widget"] > div:last-child,
-      [id^="lc_text-widget"] button[aria-label],
-      .chat-widget-container > div:last-child > div:last-child {
+      iframe[src*="leadconnectorhq"],
+      iframe[src*="leadconnectorhq"] + div,
+      div[style*="leadconnectorhq"],
+      .chat-widget-container {
         display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        position: fixed !important;
+        bottom: -9999px !important;
+        right: -9999px !important;
       }
     `;
     document.head.appendChild(style);
@@ -49,36 +60,26 @@ const ChatBot = () => {
 
   const openLeadConnector = () => {
     setMenuOpen(false);
-    // Temporarily show all LC elements so we can click the open button
-    const hideStyle = document.getElementById('hide-lc-bubble') as HTMLStyleElement | null;
-    if (hideStyle) hideStyle.disabled = true;
+    // Remove the hiding CSS entirely so LC can render
+    const hideStyle = document.getElementById('hide-lc-widget');
+    if (hideStyle) hideStyle.remove();
 
-    // Give LC a moment to render, then find and click its button
+    // Reset any inline styles on LC elements
     setTimeout(() => {
+      const els = document.querySelectorAll<HTMLElement>('[id^="lc_text-widget"], .chat-widget-container');
+      els.forEach((el) => {
+        el.style.cssText = '';
+        el.style.setProperty('display', 'block', 'important');
+        el.style.setProperty('visibility', 'visible', 'important');
+        el.style.setProperty('opacity', '1', 'important');
+        el.style.setProperty('pointer-events', 'auto', 'important');
+      });
+      // Click the LC open button
       const lcBtn = document.querySelector<HTMLElement>(
         '[id^="lc_text-widget"] button, .lc_text-widget-open'
       );
-      if (lcBtn) {
-        lcBtn.click();
-        // Re-hide the launcher bubble after the chat window opens
-        setTimeout(() => {
-          if (hideStyle) hideStyle.disabled = false;
-        }, 500);
-      } else {
-        // If no button found, try showing the widget container directly
-        const els = document.querySelectorAll<HTMLElement>('[id^="lc_text-widget"]');
-        els.forEach((el) => {
-          el.style.setProperty('display', 'block', 'important');
-        });
-        setTimeout(() => {
-          const btn = document.querySelector<HTMLElement>('[id^="lc_text-widget"] button');
-          if (btn) btn.click();
-          setTimeout(() => {
-            if (hideStyle) hideStyle.disabled = false;
-          }, 500);
-        }, 300);
-      }
-    }, 100);
+      if (lcBtn) lcBtn.click();
+    }, 200);
   };
 
   const handleSend = async () => {
