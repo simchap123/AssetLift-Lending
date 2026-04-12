@@ -142,13 +142,6 @@ export default function RootLayout({
           <ChatBot />
         </Providers>
         <GoogleAnalytics />
-        {/* LeadConnector Chat Widget (GHL/A2P) */}
-        <Script
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="69bae59888f7834d50ca2684"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );

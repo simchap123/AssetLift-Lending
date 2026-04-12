@@ -30,56 +30,42 @@ const ChatBot = () => {
     }
   }, [messages, isLoading]);
 
-  /* ---- Hide the entire LC widget until user clicks "Chat with Us" ---- */
-  useEffect(() => {
-    const style = document.createElement('style');
-    style.id = 'hide-lc-widget';
-    style.textContent = `
-      [id^="lc_text-widget"],
-      [id^="lc_text-widget"] *,
-      .lc_text-widget-open,
-      iframe[src*="leadconnectorhq"],
-      iframe[src*="leadconnectorhq"] + div,
-      div[style*="leadconnectorhq"],
-      .chat-widget-container {
-        display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
-        pointer-events: none !important;
-        width: 0 !important;
-        height: 0 !important;
-        overflow: hidden !important;
-        position: fixed !important;
-        bottom: -9999px !important;
-        right: -9999px !important;
-      }
-    `;
-    document.head.appendChild(style);
-    return () => { document.head.removeChild(style); };
-  }, []);
+  const lcLoadedRef = useRef(false);
 
   const openLeadConnector = () => {
     setMenuOpen(false);
-    // Remove the hiding CSS entirely so LC can render
-    const hideStyle = document.getElementById('hide-lc-widget');
-    if (hideStyle) hideStyle.remove();
 
-    // Reset any inline styles on LC elements
-    setTimeout(() => {
-      const els = document.querySelectorAll<HTMLElement>('[id^="lc_text-widget"], .chat-widget-container');
-      els.forEach((el) => {
-        el.style.cssText = '';
-        el.style.setProperty('display', 'block', 'important');
-        el.style.setProperty('visibility', 'visible', 'important');
-        el.style.setProperty('opacity', '1', 'important');
-        el.style.setProperty('pointer-events', 'auto', 'important');
-      });
-      // Click the LC open button
+    // If LC script already loaded, just click the open button
+    if (lcLoadedRef.current) {
       const lcBtn = document.querySelector<HTMLElement>(
         '[id^="lc_text-widget"] button, .lc_text-widget-open'
       );
       if (lcBtn) lcBtn.click();
-    }, 200);
+      return;
+    }
+
+    // Dynamically inject the LC script on first click
+    const script = document.createElement('script');
+    script.src = 'https://widgets.leadconnectorhq.com/loader.js';
+    script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+    script.setAttribute('data-widget-id', '69bae59888f7834d50ca2684');
+    script.async = true;
+    document.body.appendChild(script);
+    lcLoadedRef.current = true;
+
+    // Wait for the widget to load, then open it
+    const checkAndOpen = setInterval(() => {
+      const lcBtn = document.querySelector<HTMLElement>(
+        '[id^="lc_text-widget"] button, .lc_text-widget-open'
+      );
+      if (lcBtn) {
+        clearInterval(checkAndOpen);
+        lcBtn.click();
+      }
+    }, 300);
+
+    // Stop checking after 10 seconds
+    setTimeout(() => clearInterval(checkAndOpen), 10000);
   };
 
   const handleSend = async () => {
