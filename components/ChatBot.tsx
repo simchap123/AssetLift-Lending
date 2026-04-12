@@ -13,12 +13,9 @@ import { Message } from '@/lib/types';
 const WHATSAPP_URL =
   'https://wa.me/19296392284?text=Hi%2C%20I%27m%20interested%20in%20getting%20financing%20for%20a%20real%20estate%20deal.%20Can%20you%20help%3F';
 
-const LC_WIDGET_ID = '69bae59888f7834d50ca2684';
-
 const ChatBot = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
-  const [lcChatOpen, setLcChatOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     { role: 'model', text: "Hi! I'm your AssetLift deal analyst. Send me your numbers (Purchase Price, Rehab, ARV) and I'll run a quick analysis for you." },
   ]);
@@ -33,21 +30,56 @@ const ChatBot = () => {
     }
   }, [messages, isLoading]);
 
-  /* ---- Hide the LeadConnector default bubble so ours is the only one ---- */
+  /* ---- Hide only the LC launcher bubble, not the chat window itself ---- */
   useEffect(() => {
     const style = document.createElement('style');
+    style.id = 'hide-lc-bubble';
     style.textContent = `
-      /* Hide LC default launcher bubble */
+      /* Hide the LC launcher button only — chat window stays visible when opened */
       .lc_text-widget-open,
-      [id^="lc_text-widget"],
-      iframe[src*="leadconnectorhq"] + div,
-      .chat-widget-container > div:last-child {
+      [id^="lc_text-widget"] > div:last-child,
+      [id^="lc_text-widget"] button[aria-label],
+      .chat-widget-container > div:last-child > div:last-child {
         display: none !important;
       }
     `;
     document.head.appendChild(style);
     return () => { document.head.removeChild(style); };
   }, []);
+
+  const openLeadConnector = () => {
+    setMenuOpen(false);
+    // Temporarily show all LC elements so we can click the open button
+    const hideStyle = document.getElementById('hide-lc-bubble') as HTMLStyleElement | null;
+    if (hideStyle) hideStyle.disabled = true;
+
+    // Give LC a moment to render, then find and click its button
+    setTimeout(() => {
+      const lcBtn = document.querySelector<HTMLElement>(
+        '[id^="lc_text-widget"] button, .lc_text-widget-open'
+      );
+      if (lcBtn) {
+        lcBtn.click();
+        // Re-hide the launcher bubble after the chat window opens
+        setTimeout(() => {
+          if (hideStyle) hideStyle.disabled = false;
+        }, 500);
+      } else {
+        // If no button found, try showing the widget container directly
+        const els = document.querySelectorAll<HTMLElement>('[id^="lc_text-widget"]');
+        els.forEach((el) => {
+          el.style.setProperty('display', 'block', 'important');
+        });
+        setTimeout(() => {
+          const btn = document.querySelector<HTMLElement>('[id^="lc_text-widget"] button');
+          if (btn) btn.click();
+          setTimeout(() => {
+            if (hideStyle) hideStyle.disabled = false;
+          }, 500);
+        }, 300);
+      }
+    }, 100);
+  };
 
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
@@ -91,50 +123,6 @@ const ChatBot = () => {
       });
     }
   };
-
-  /* =========== LeadConnector Chat Panel =========== */
-  if (lcChatOpen) {
-    return (
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.9, y: 20 }}
-          transition={{ duration: 0.2 }}
-          className="w-80 md:w-[400px] h-[550px] bg-card border border-primary/30 rounded-2xl shadow-2xl flex flex-col overflow-hidden"
-        >
-          {/* Header */}
-          <div className="bg-primary text-primary-foreground p-4 flex justify-between items-center">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary-foreground/20 flex items-center justify-center">
-                <MessageSquare className="w-5 h-5" />
-              </div>
-              <div>
-                <h3 className="font-semibold">Chat with Us</h3>
-                <p className="text-xs opacity-80">We typically reply instantly</p>
-              </div>
-            </div>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setLcChatOpen(false)}
-              className="text-primary-foreground hover:bg-primary-foreground/20"
-            >
-              <X className="w-5 h-5" />
-            </Button>
-          </div>
-
-          {/* LC Widget Iframe */}
-          <iframe
-            src={`https://widgets.leadconnectorhq.com/chat-widget/${LC_WIDGET_ID}`}
-            className="flex-grow w-full border-0 bg-background"
-            title="Chat with AssetLift Lending"
-            allow="microphone"
-          />
-        </motion.div>
-      </div>
-    );
-  }
 
   /* =========== Deal Analyst Chat Panel =========== */
   if (chatOpen) {
@@ -267,7 +255,7 @@ const ChatBot = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.05 }}
-              onClick={() => { setLcChatOpen(true); setMenuOpen(false); }}
+              onClick={openLeadConnector}
               className="flex items-center gap-3 px-5 py-3 rounded-full bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-opacity cursor-pointer"
             >
               <MessageSquare className="w-5 h-5" />
