@@ -32,15 +32,36 @@ const ChatBot = () => {
 
   const lcLoadedRef = useRef(false);
 
+  /** Find the LC bubble button inside the shadow DOM */
+  const getLcBubble = () => {
+    const widget = document.querySelector('chat-widget');
+    if (!widget?.shadowRoot) return null;
+    return widget.shadowRoot.querySelector<HTMLElement>('#lc_text-widget--btn');
+  };
+
+  /** Hide the LC launcher bubble & prompt inside the shadow DOM */
+  const hideLcBubble = () => {
+    const widget = document.querySelector('chat-widget');
+    if (!widget?.shadowRoot) return;
+    const sr = widget.shadowRoot;
+    const bubble = sr.querySelector<HTMLElement>('#lc_text-widget--btn');
+    const prompt = sr.querySelector<HTMLElement>('.lc_text-widget--prompt');
+    if (bubble) bubble.style.display = 'none';
+    if (prompt) prompt.style.display = 'none';
+  };
+
   const openLeadConnector = () => {
     setMenuOpen(false);
 
-    // If LC script already loaded, just click the open button
+    // If LC script already loaded, click the bubble to open chat
     if (lcLoadedRef.current) {
-      const lcBtn = document.querySelector<HTMLElement>(
-        '[id^="lc_text-widget"] button, .lc_text-widget-open'
-      );
-      if (lcBtn) lcBtn.click();
+      const lcBtn = getLcBubble();
+      if (lcBtn) {
+        lcBtn.style.display = '';  // Unhide temporarily to click
+        lcBtn.click();
+        // Re-hide the bubble after chat opens
+        setTimeout(hideLcBubble, 500);
+      }
       return;
     }
 
@@ -53,14 +74,14 @@ const ChatBot = () => {
     document.body.appendChild(script);
     lcLoadedRef.current = true;
 
-    // Wait for the widget to load, then open it
+    // Wait for the widget to render inside shadow DOM, then open + hide bubble
     const checkAndOpen = setInterval(() => {
-      const lcBtn = document.querySelector<HTMLElement>(
-        '[id^="lc_text-widget"] button, .lc_text-widget-open'
-      );
+      const lcBtn = getLcBubble();
       if (lcBtn) {
         clearInterval(checkAndOpen);
         lcBtn.click();
+        // Hide the bubble + prompt after the chat window opens
+        setTimeout(hideLcBubble, 500);
       }
     }, 300);
 
