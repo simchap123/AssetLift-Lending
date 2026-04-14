@@ -5,9 +5,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import FlipCalculator from './FlipCalculator';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Fix & Flip Calculator - Estimate Your Flip Profit',
+  title: 'Fix & Flip Calculator | House Flip Profit Estimator',
   description:
-    'Free fix and flip calculator. Estimate purchase costs, renovation budget, holding costs, and projected profit on your next house flip.',
+    'Use our free fix and flip calculator to estimate rehab costs, holding costs, projected resale value, and profit on your next house flip.',
   path: '/tools/fix-and-flip-calculator',
 });
 

@@ -8,6 +8,11 @@ interface CreateMetadataOptions {
   path: string;
   ogImage?: string;
   noIndex?: boolean;
+  keywords?: string[];
+  category?: string;
+  type?: 'website' | 'article';
+  publishedTime?: string;
+  modifiedTime?: string;
 }
 
 function withBrand(title: string) {
@@ -20,12 +25,19 @@ export function createMetadata({
   path,
   ogImage = '/og-image.jpg',
   noIndex = false,
+  keywords,
+  category,
+  type = 'website',
+  publishedTime,
+  modifiedTime,
 }: CreateMetadataOptions): Metadata {
   const url = `${BASE_URL}${path}`;
 
   return {
     title,
     description,
+    ...(keywords && { keywords }),
+    ...(category && { category }),
     alternates: {
       canonical: url,
     },
@@ -43,7 +55,9 @@ export function createMetadata({
         },
       ],
       locale: 'en_US',
-      type: 'website',
+      type,
+      ...(publishedTime && { publishedTime }),
+      ...(modifiedTime && { modifiedTime }),
     },
     twitter: {
       card: 'summary_large_image',

@@ -5,9 +5,9 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import DSCRCalculator from './DSCRCalculator';
 
 export const metadata: Metadata = createMetadata({
-  title: 'DSCR Calculator - Debt Service Coverage Ratio',
+  title: 'DSCR Calculator | Rental Property Loan Eligibility',
   description:
-    'Free DSCR calculator for rental property investors. Calculate your debt service coverage ratio to determine loan eligibility.',
+    'Use our free DSCR calculator to measure rental income coverage and estimate eligibility for DSCR rental property loans and refinance deals.',
   path: '/tools/dscr-calculator',
 });
 

@@ -7,9 +7,9 @@ import { ArrowRight, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contact Us | AssetLift Lending',
+  title: 'Contact AssetLift Lending | Hard Money Loan Quotes',
   description:
-    'Contact AssetLift Lending for fast hard money loan quotes. Call (929) 639-2284, email info@assetliftlending.com, or apply online. Response within 60 minutes.',
+    'Contact AssetLift Lending for fast hard money loan quotes on fix and flip, DSCR, bridge, and construction deals. Call, email, or apply online today.',
   path: '/contact',
 });
 

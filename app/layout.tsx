@@ -17,11 +17,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.assetliftlending.com"),
   title: {
-    default: "Hard Money Loans for Real Estate Investors | AssetLift",
+    default: "Hard Money Loans | Fix & Flip, DSCR & Bridge | AssetLift",
     template: "%s | AssetLift Lending",
   },
   description:
-    "Fast hard money loans for fix & flip, construction, DSCR rental, and bridge financing. Up to 92.5% LTC. Close in 7-10 days.",
+    "Direct hard money lender for fix and flip, DSCR rental, bridge, and construction loans. Close in 7-10 days with fast quotes and nationwide investor financing.",
   keywords: [
     "hard money loans",
     "fix and flip loans",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.assetliftlending.com",
     siteName: "AssetLift Lending",
-    title: "Hard Money Loans for Real Estate Investors | AssetLift",
+    title: "Hard Money Loans | Fix & Flip, DSCR & Bridge | AssetLift",
     description:
-      "Fast hard money loans for fix & flip, construction, DSCR rental, and bridge financing. Up to 92.5% LTC. Close in 7-10 days.",
+      "Direct hard money lender for fix and flip, DSCR rental, bridge, and construction loans. Close in 7-10 days with fast quotes and nationwide investor financing.",
     images: [
       {
         url: "/og-image.jpg",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hard Money Loans for Real Estate Investors | AssetLift",
+    title: "Hard Money Loans | Fix & Flip, DSCR & Bridge | AssetLift",
     description:
-      "Fast hard money loans for fix & flip, construction, DSCR rental, and bridge financing. Up to 92.5% LTC. Close in 7-10 days.",
+      "Direct hard money lender for fix and flip, DSCR rental, bridge, and construction loans. Close in 7-10 days with fast quotes and nationwide investor financing.",
     images: ["/og-image.jpg"],
   },
   robots: {

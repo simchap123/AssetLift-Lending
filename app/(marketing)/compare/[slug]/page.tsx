@@ -22,6 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: comparison.title,
     description: comparison.description,
     path: `/compare/${comparison.slug}`,
+    category: 'Comparison',
+    type: 'article',
+    publishedTime: comparison.publishedAt,
+    modifiedTime: comparison.publishedAt,
   });
 }
 
@@ -29,6 +33,31 @@ export default async function CompareSlugPage({ params }: Props) {
   const { slug } = await params;
   const comparison = COMPARISONS.find((c) => c.slug === slug);
   if (!comparison) notFound();
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: comparison.title,
+    description: comparison.description,
+    datePublished: comparison.publishedAt,
+    dateModified: comparison.publishedAt,
+    articleSection: 'Comparison',
+    mainEntityOfPage: `https://www.assetliftlending.com/compare/${comparison.slug}`,
+    publisher: {
+      '@type': 'Organization',
+      name: 'AssetLift Lending',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.assetliftlending.com/logo.png',
+      },
+    },
+    author: {
+      '@type': 'Organization',
+      name: 'AssetLift Lending',
+    },
+    about: comparison.heroTitle,
+    url: `https://www.assetliftlending.com/compare/${comparison.slug}`,
+  };
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -42,6 +71,7 @@ export default async function CompareSlugPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={articleSchema} />
       <JsonLd data={faqSchema} />
       <div className="container px-4 md:px-6 pt-32">
         <Breadcrumbs

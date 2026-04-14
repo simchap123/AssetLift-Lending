@@ -22,6 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.description,
     path: `/blog/${post.slug}`,
+    keywords: post.tags,
+    category: post.category,
+    type: 'article',
+    publishedTime: post.publishedAt,
+    modifiedTime: post.publishedAt,
   });
 }
 
@@ -30,7 +35,22 @@ export default async function BlogPostPage({ params }: Props) {
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   if (!post) notFound();
 
-  const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 3);
+  const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug)
+    .sort((a, b) => {
+      const aScore =
+        Number(a.category === post.category) +
+        a.tags.filter((tag) => post.tags.includes(tag)).length;
+      const bScore =
+        Number(b.category === post.category) +
+        b.tags.filter((tag) => post.tags.includes(tag)).length;
+      return bScore - aScore;
+    })
+    .slice(0, 3);
+
+  const articleBody = post.sections
+    .map((section) => `${section.heading} ${section.content.replace(/<[^>]+>/g, ' ')}`)
+    .join(' ');
+  const wordCount = articleBody.split(/\s+/).filter(Boolean).length;
 
   const schema = {
     '@context': 'https://schema.org',
@@ -38,8 +58,29 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.publishedAt,
-    author: { '@type': 'Organization', name: post.author },
-    publisher: { '@type': 'Organization', name: 'AssetLift Lending' },
+    dateModified: post.publishedAt,
+    articleSection: post.category,
+    keywords: post.tags.join(', '),
+    wordCount,
+    mainEntityOfPage: `https://www.assetliftlending.com/blog/${post.slug}`,
+    author: {
+      '@type': 'Organization',
+      name: post.author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AssetLift Lending',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.assetliftlending.com/logo.png',
+      },
+    },
+    about: post.tags,
+    isPartOf: {
+      '@type': 'Blog',
+      name: 'AssetLift Lending Blog',
+      url: 'https://www.assetliftlending.com/blog',
+    },
     url: `https://www.assetliftlending.com/blog/${post.slug}`,
   };
 

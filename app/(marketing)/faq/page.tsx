@@ -13,9 +13,9 @@ function slugifyCategory(category: string) {
 }
 
 export const metadata: Metadata = createMetadata({
-  title: 'FAQ | Hard Money Loan Questions Answered',
+  title: 'Hard Money Loan FAQ | DSCR, Bridge & Fix and Flip',
   description:
-    'Get answers to common questions about hard money loans, fix & flip financing, DSCR loans, loan requirements, application process, rates, and more.',
+    'Get answers about hard money loans, fix and flip financing, DSCR rental loans, bridge loans, rates, requirements, closings, and underwriting.',
   path: '/faq',
 });
 

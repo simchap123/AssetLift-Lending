@@ -9,9 +9,9 @@ import { STATES } from "@/lib/data/states";
 import { CITIES } from "@/lib/data/cities";
 
 export const metadata: Metadata = createMetadata({
-  title: "Hard Money Loan Markets",
+  title: "Hard Money Lender by State | 46 Lending Markets",
   description:
-    "Browse AssetLift Lending's hard money loan markets by state and city for fix and flip, bridge, DSCR rental, and construction financing.",
+    "Browse AssetLift Lending markets by state and city for hard money loans, fix and flip financing, bridge loans, DSCR rentals, and construction deals.",
   path: "/markets",
 });
 
@@ -44,6 +44,30 @@ export default function MarketsPage() {
     description:
       "Hard money loan markets served by AssetLift Lending for real estate investors.",
     url: "https://www.assetliftlending.com/markets",
+    mainEntity: [
+      {
+        "@type": "ItemList",
+        name: "State Lending Pages",
+        numberOfItems: STATES.length,
+        itemListElement: STATES.map((state, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url: `https://www.assetliftlending.com/lending/${state.slug}`,
+          name: `Hard Money Loans in ${state.name}`,
+        })),
+      },
+      {
+        "@type": "ItemList",
+        name: "Featured City Lending Pages",
+        numberOfItems: featuredCities.length,
+        itemListElement: featuredCities.map((city, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url: `https://www.assetliftlending.com/lending/${city.stateSlug}/${city.citySlug}`,
+          name: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
+        })),
+      },
+    ],
   };
 
   return (

@@ -8,8 +8,9 @@ import LoanProductPage from '@/components/seo/LoanProductPage';
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'ground-up-construction')!;
 
 export const metadata: Metadata = createMetadata({
-  title: product.title,
-  description: product.description,
+  title: 'Ground-Up Construction Loans | Up to 85% LTC',
+  description:
+    'Finance land, vertical construction, and draw-based project costs with ground-up construction loans for builders and real estate investors.',
   path: '/loans/ground-up-construction',
 });
 

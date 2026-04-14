@@ -7,9 +7,9 @@ import { ArrowRight, FileText, Search, ClipboardCheck, Banknote, CheckCircle } f
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'How It Works | Apply for Hard Money Loans in 4 Steps',
+  title: 'How Our Hard Money Loans Work | Close in 7-10 Days',
   description:
-    'Get funded in 4 simple steps: submit your deal, get a 24-hour quote, complete due diligence, and close in 7-10 days. Learn about our streamlined hard money loan process.',
+    'See how AssetLift Lending handles hard money loan quotes, underwriting, due diligence, and closing for fix and flip, bridge, DSCR, and construction deals.',
   path: '/how-it-works',
 });
 

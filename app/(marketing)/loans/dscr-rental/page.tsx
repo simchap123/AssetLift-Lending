@@ -8,8 +8,9 @@ import LoanProductPage from '@/components/seo/LoanProductPage';
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'dscr-rental')!;
 
 export const metadata: Metadata = createMetadata({
-  title: product.title,
-  description: product.description,
+  title: 'DSCR Rental Loans | 30-Year Investor Financing',
+  description:
+    'Qualify for DSCR rental loans based on property cash flow, not personal income. Get fast quotes for purchase and refinance investor loans.',
   path: '/loans/dscr-rental',
 });
 

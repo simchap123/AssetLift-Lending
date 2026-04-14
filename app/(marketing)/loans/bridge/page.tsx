@@ -8,8 +8,9 @@ import LoanProductPage from '@/components/seo/LoanProductPage';
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'bridge')!;
 
 export const metadata: Metadata = createMetadata({
-  title: product.title,
-  description: product.description,
+  title: 'Bridge Loans for Real Estate Investors | Fast Closings',
+  description:
+    'Close fast with bridge loans for transitional properties, quick purchases, refinance gaps, and investor deals that cannot wait on bank timelines.',
   path: '/loans/bridge',
 });
 

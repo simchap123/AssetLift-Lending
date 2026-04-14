@@ -7,9 +7,9 @@ import { ArrowRight, Building2, Clock, MapPin, DollarSign, Shield, Handshake } f
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Our Team | Meet the AssetLift Lending Leadership',
+  title: 'AssetLift Lending Team | Private Lending Leadership',
   description:
-    'Meet the team behind AssetLift Lending. Experienced real estate lending professionals providing fast, flexible hard money loans nationwide.',
+    'Meet the AssetLift Lending leadership team behind our direct hard money, DSCR, bridge, and construction lending programs for real estate investors.',
   path: '/team',
 });
 

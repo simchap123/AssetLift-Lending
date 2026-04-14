@@ -7,21 +7,45 @@ import { BLOG_POSTS } from '@/lib/data/blog-posts';
 import { Clock, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Blog - Real Estate Investing & Hard Money Lending Insights',
+  title: 'Hard Money Lending Blog | Fix & Flip, DSCR & Bridge',
   description:
-    'Expert guides on fix & flip financing, DSCR loans, bridge lending, and real estate investing strategies from AssetLift Lending.',
+    'Read expert guides on hard money loans, fix and flip financing, DSCR rentals, bridge loans, construction lending, and real estate investing strategy.',
   path: '/blog',
 });
 
 export default function BlogListingPage() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Blog',
+    '@type': 'CollectionPage',
     name: 'AssetLift Lending Blog',
     description:
       'Real estate investing and hard money lending insights from AssetLift Lending.',
     url: 'https://www.assetliftlending.com/blog',
+    about: [
+      'Hard money loans',
+      'Fix and flip financing',
+      'DSCR loans',
+      'Bridge loans',
+      'Ground-up construction loans',
+    ],
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'AssetLift Lending',
+      url: 'https://www.assetliftlending.com',
+    },
     publisher: { '@type': 'Organization', name: 'AssetLift Lending' },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListOrder: 'https://schema.org/ItemListOrderDescending',
+      numberOfItems: BLOG_POSTS.length,
+      itemListElement: BLOG_POSTS.map((post, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        url: `https://www.assetliftlending.com/blog/${post.slug}`,
+        name: post.title,
+        description: post.description,
+      })),
+    },
   };
 
   return (

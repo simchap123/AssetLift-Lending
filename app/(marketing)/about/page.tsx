@@ -7,9 +7,9 @@ import { ArrowRight, Shield, Zap, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About AssetLift Lending | Direct Private Money Lender',
+  title: 'About AssetLift Lending | Direct Hard Money Lender',
   description:
-    'AssetLift Lending is a direct private money lender providing fast, flexible real estate investment loans. Nationwide lending in 46 states.',
+    'Learn about AssetLift Lending, a direct hard money lender for real estate investors offering fix and flip, DSCR, bridge, and construction loans nationwide.',
   path: '/about',
 });
 
