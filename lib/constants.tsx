@@ -59,7 +59,7 @@ export const LENDING_PROCESS: ProcessStep[] = [
   },
   {
     title: 'Review',
-    description: 'Our specialists provide a soft-quote within 24 hours of submission.'
+    description: 'Our team gets back to you within 24 hours of submission, usually within a few hours.'
   },
   {
     title: 'Due Diligence',
@@ -67,7 +67,7 @@ export const LENDING_PROCESS: ProcessStep[] = [
   },
   {
     title: 'Funding',
-    description: 'Final approval and closing, often within 7-10 business days.'
+    description: 'Final approval and closing can happen in as fast as 7-14 business days.'
   }
 ];
 
@@ -78,7 +78,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     question: "How long does it take to get a loan approved?",
-    answer: "We provide soft-quotes and pre-approvals within 24 hours. Full funding typically occurs within 7 to 10 business days."
+    answer: "We get back to you within 24 hours, usually within a few hours. Many deals can close in as fast as 7 to 14 business days, subject to underwriting and valuation."
   },
   {
     question: "Do you offer financing for first-time investors?",

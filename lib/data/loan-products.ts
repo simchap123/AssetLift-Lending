@@ -28,7 +28,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       { label: "Loan-to-Purchase Price", value: "Up to 90%" },
       { label: "Renovation Financing", value: "Up to 100% of rehab costs" },
       { label: "Loan Term", value: "6 to 18 months" },
-      { label: "Closing Speed", value: "As fast as 5 business days" },
+      { label: "Closing Speed", value: "As fast as 7-14 business days" },
       { label: "Interest Rates Starting At", value: "9.5%" },
     ],
     features: [
@@ -138,7 +138,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         question: "How quickly can AssetLift Lending close a fix-and-flip loan?",
         answer:
-          "Our fastest closings are 5 business days from the date a complete application is received. The typical timeline is 7 to 10 business days. Speed depends on how quickly the appraisal is completed, how fast you provide requested documents, and the title company's scheduling availability. Repeat borrowers with pre-approved profiles can close even faster because much of the underwriting is already complete.",
+          "Many straightforward files can close in as fast as 7 to 14 business days from the date a complete application is received. Timing depends on how quickly valuations are completed, how fast you provide requested documents, and the title company's scheduling availability.",
       },
       {
         question: "Do you finance the full renovation cost?",
@@ -330,7 +330,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       { label: "Loan-to-Value (Cash-Out Refi)", value: "Up to 75%" },
       { label: "Minimum DSCR Ratio", value: "1.0 (lower available with adjustments)" },
       { label: "Loan Term", value: "30-year fixed or 5/6 ARM" },
-      { label: "Interest Rates Starting At", value: "7.5%" },
+      { label: "Interest Rates Starting At", value: "5.75%" },
     ],
     features: [
       {

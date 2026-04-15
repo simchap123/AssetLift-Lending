@@ -7,9 +7,9 @@ import { ArrowRight, Shield, Zap, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About AssetLift Lending | Direct Hard Money Lender',
+  title: 'About AssetLift Lending | Private Capital Solutions',
   description:
-    'Learn about AssetLift Lending, a direct hard money lender for real estate investors offering fix and flip, DSCR, bridge, and construction loans nationwide.',
+    'Learn about AssetLift Lending and our private capital solutions for real estate investors, including fix and flip, DSCR, bridge, and construction financing nationwide.',
   path: '/about',
 });
 
@@ -18,7 +18,7 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
-    description: 'Direct private money lender for real estate investors',
+    description: 'Private capital solutions for real estate investors',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
@@ -54,10 +54,10 @@ export default function AboutPage() {
               About <span className="gradient-text">AssetLift Lending</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              AssetLift Lending is a direct private money lender built for real estate investors who need speed, certainty, and competitive terms. We are not a bank. We are not a broker. We fund loans directly from our own capital, which means faster approvals, simpler processes, and reliable closings.
+              AssetLift Lending is built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank, and depending on the deal, program, and market, we may deliver financing through direct lending, table-funded execution, white-label capital, or brokered lender relationships.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Our team combines decades of real estate investing experience with institutional-grade underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we have a program designed for your strategy.
+              Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to match each file to the execution path that best fits the strategy.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We lend nationwide across 46 states, with a focus on high-growth urban and suburban markets. Our loan programs cover the full spectrum of investment real estate: fix and flip, ground-up construction, DSCR rental, and bridge financing.
@@ -89,8 +89,8 @@ export default function AboutPage() {
           {/* Values */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-20">
             {[
-              { icon: Zap, title: 'Speed', desc: 'Close in as fast as 7-10 business days. We move at your pace.' },
-              { icon: Shield, title: 'Reliability', desc: 'Direct lender means direct control. No surprises at the closing table.' },
+              { icon: Zap, title: 'Speed', desc: 'Hear back within 24 hours, usually within a few hours, and close in as fast as 7-14 business days.' },
+              { icon: Shield, title: 'Reliability', desc: 'We structure each deal through the most reliable lending channel available for the file.' },
               { icon: Users, title: 'Partnership', desc: 'We succeed when you succeed. Our team is invested in your growth.' },
               { icon: Award, title: 'Expertise', desc: 'Decades of combined real estate and lending experience.' },
             ].map((value, i) => (

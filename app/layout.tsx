@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | AssetLift Lending",
   },
   description:
-    "Direct hard money lender for fix and flip, DSCR rental, bridge, and construction loans. Close in 7-10 days with fast quotes and nationwide investor financing.",
+    "Private capital solutions for fix and flip, DSCR rental, bridge, and construction loans. Hear back within 24 hours, usually within a few hours, and close in as fast as 7-14 days.",
   keywords: [
     "hard money loans",
     "fix and flip loans",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "AssetLift Lending",
     title: "Hard Money Loans | Fix & Flip, DSCR & Bridge | AssetLift",
     description:
-      "Direct hard money lender for fix and flip, DSCR rental, bridge, and construction loans. Close in 7-10 days with fast quotes and nationwide investor financing.",
+      "Private capital solutions for fix and flip, DSCR rental, bridge, and construction loans. Hear back within 24 hours, usually within a few hours, and close in as fast as 7-14 days.",
     images: [
       {
         url: "/og-image.jpg",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hard Money Loans | Fix & Flip, DSCR & Bridge | AssetLift",
     description:
-      "Direct hard money lender for fix and flip, DSCR rental, bridge, and construction loans. Close in 7-10 days with fast quotes and nationwide investor financing.",
+      "Private capital solutions for fix and flip, DSCR rental, bridge, and construction loans. Hear back within 24 hours, usually within a few hours, and close in as fast as 7-14 days.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -122,7 +122,7 @@ export default function RootLayout({
               mainEntity: {
                 '@type': 'FinancialService',
                 name: 'AssetLift Lending',
-                description: 'Direct private money lender providing fast hard money loans for real estate investors. Fix & flip, DSCR rental, bridge, and construction loans in 46 states. Close in 7-10 days.',
+                description: 'Private capital solutions for real estate investors. Fix & flip, DSCR rental, bridge, and construction loans in 46 states with responses within 24 hours and closings as fast as 7-14 days.',
               },
             }),
           }}

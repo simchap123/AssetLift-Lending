@@ -32,7 +32,7 @@ const CTA = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Submit your deal in minutes. Get a response within 24 hours.
+            Submit your deal in minutes. We will get back to you within 24 hours, usually within a few hours.
           </p>
 
           <motion.div

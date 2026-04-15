@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 export const metadata: Metadata = createMetadata({
   title: 'AssetLift Lending Team | Private Lending Leadership',
   description:
-    'Meet the AssetLift Lending leadership team behind our direct hard money, DSCR, bridge, and construction lending programs for real estate investors.',
+    'Meet the AssetLift Lending leadership team behind our private capital solutions for fix and flip, DSCR, bridge, and construction financing.',
   path: '/team',
 });
 
@@ -31,7 +31,7 @@ const teamMembers = [
 const companyStats = [
   { icon: MapPin, label: 'Lending in 46 states', detail: 'Nationwide coverage' },
   { icon: DollarSign, label: 'Loans up to $5MM', detail: 'Flexible capital' },
-  { icon: Clock, label: 'Close in 7-10 days', detail: 'Fast execution' },
+  { icon: Clock, label: 'Close in 7-14 days', detail: 'Fast execution' },
   { icon: Building2, label: '24-hour quotes', detail: 'Rapid turnaround' },
 ];
 
@@ -42,7 +42,7 @@ export default function TeamPage() {
     name: 'AssetLift Lending',
     url: 'https://www.assetliftlending.com',
     description:
-      'Direct private money lender providing fast, flexible hard money loans for real estate investors nationwide.',
+      'Private capital solutions for real estate investors nationwide.',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
     address: {
@@ -128,11 +128,11 @@ export default function TeamPage() {
             <div className="bg-secondary/20 border border-border rounded-2xl p-6 md:p-8">
               <h2 className="text-3xl font-bold mb-5">Our Approach to Lending</h2>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-3xl">
-                AssetLift is a direct lender, not a broker. That distinction matters. When you
-                work with a broker, your file gets passed between multiple parties, each adding
-                time, cost, and uncertainty. When you work with us, the team you talk to is the
-                team that underwrites, approves, and funds your loan. One point of contact, one
-                set of expectations, one closing.
+                AssetLift structures deals through the execution path that best fits the file.
+                Depending on the program, market, and scenario, that may mean direct lending,
+                table-funded or white-label execution, or placing the deal with a lender partner.
+                What matters to borrowers is clear communication, realistic terms, and a team that
+                stays accountable from inquiry through closing.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -141,8 +141,8 @@ export default function TeamPage() {
                     <div>
                       <p className="font-semibold mb-1">Direct Capital, Direct Decisions</p>
                       <p className="text-sm text-muted-foreground">
-                        We fund from our own balance sheet. No waiting on third-party approvals
-                        or last-minute funding surprises.
+                        We work to match each deal to the most reliable capital source and
+                        execution path available for the file.
                       </p>
                     </div>
                   </div>
@@ -187,7 +187,7 @@ export default function TeamPage() {
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Work With Our Team?</h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Get a quote in 24 hours. Our team is ready to review your deal and move fast.
+              Hear back within 24 hours, usually within a few hours. Our team is ready to review your deal and move fast.
             </p>
             <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
               <Link href="/apply">

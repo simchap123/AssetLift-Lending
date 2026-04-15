@@ -9,7 +9,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     items: [
       {
         question: "What is AssetLift Lending?",
-        answer: "AssetLift Lending is a direct private money lender specializing in short-term and long-term real estate investment loans. We provide fix & flip, ground-up construction, DSCR rental, and bridge financing for non-owner occupied investment properties across 46 states."
+        answer: "AssetLift Lending provides private capital solutions for short-term and long-term real estate investment loans. We offer fix & flip, ground-up construction, DSCR rental, and bridge financing for non-owner occupied investment properties across 46 states."
       },
       {
         question: "What states do you lend in?",
@@ -17,7 +17,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "Are you a direct lender or a broker?",
-        answer: "AssetLift Lending is a direct private lender. This means we fund loans directly, giving us full control over underwriting, approvals, and timelines. No middlemen, no unnecessary delays."
+        answer: "Depending on the deal, program, and market, AssetLift may deliver financing through direct lending, table-funded or white-label execution, or placement with a lending partner. Our goal is to match your file to the execution path that gives you the best chance of a reliable closing."
       },
       {
         question: "Do you work with mortgage brokers?",
@@ -88,11 +88,11 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     items: [
       {
         question: "How fast can you close a loan?",
-        answer: "We can close in as fast as 7-10 business days for straightforward fix & flip and bridge deals. Ground-up construction and DSCR loans typically take 14-21 days due to additional due diligence requirements."
+        answer: "Many deals can close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity. Some programs and more complex files may take longer."
       },
       {
         question: "What is your application process?",
-        answer: "Step 1: Submit your deal details through our online form or call us. Step 2: We provide a soft-quote within 24 hours. Step 3: If you accept, we order valuations and begin underwriting. Step 4: Close and fund, typically within 7-10 business days."
+        answer: "Step 1: Submit your deal details through our online form or call us. Step 2: We get back to you within 24 hours, usually within a few hours. Step 3: If you move forward, we order valuations and begin underwriting. Step 4: Close and fund, often in as fast as 7-14 business days."
       },
       {
         question: "What documents do you need?",

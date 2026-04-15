@@ -209,7 +209,7 @@ const ApplyForm = () => {
         setIsSubmitted(true);
         toast({
           title: "Application Submitted!",
-          description: "We'll review your deal and get back to you within 24 hours.",
+          description: "We'll get back to you within 24 hours, usually within a few hours.",
         });
       } else {
         toast({
@@ -249,7 +249,7 @@ const ApplyForm = () => {
           </motion.div>
           <h1 className="text-3xl font-bold mb-4">Application Received!</h1>
           <p className="text-muted-foreground mb-8">
-            Thank you for submitting your deal. Our team will review your application and contact you within 24 hours.
+            Thank you for submitting your deal. Our team will contact you within 24 hours, usually within a few hours.
           </p>
           <Button asChild>
             <Link href="/">
@@ -289,11 +289,11 @@ const ApplyForm = () => {
               animate={{ opacity: 1, y: 0 }}
               className="inline-block px-4 py-1 mb-4 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 rounded-full"
             >
-              Immediate Soft-Quote
+              Fast Response
             </motion.div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Apply for Funding</h1>
             <p className="text-muted-foreground text-lg">
-              Tell us about your project. Our specialists review all inquiries within 60 minutes.
+              Tell us about your project. Our team will get back to you within 24 hours, usually within a few hours.
             </p>
             <div className="flex items-center justify-center gap-6 mt-6">
               <a

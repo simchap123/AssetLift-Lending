@@ -371,7 +371,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
             Ready to Get Started?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-            Submit your deal in minutes. Get a soft-quote within 24 hours.
+            Submit your deal in minutes. Hear back within 24 hours, usually within a few hours.
           </p>
           <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
             <Link href="/apply">

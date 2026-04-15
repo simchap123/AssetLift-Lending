@@ -7,7 +7,7 @@ import { ArrowRight, FileText, Search, ClipboardCheck, Banknote, CheckCircle } f
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'How Our Hard Money Loans Work | Close in 7-10 Days',
+  title: 'How Our Hard Money Loans Work | Close in 7-14 Days',
   description:
     'See how AssetLift Lending handles hard money loan quotes, underwriting, due diligence, and closing for fix and flip, bridge, DSCR, and construction deals.',
   path: '/how-it-works',
@@ -30,9 +30,9 @@ export default function HowItWorksPage() {
       icon: Search,
       number: '02',
       title: 'Receive Your Quote',
-      description: 'A loan specialist reviews your deal and provides a detailed soft-quote within 24 hours. This includes estimated rate, leverage, fees, and terms. If the numbers work for you, we move forward.',
+      description: 'A loan specialist reviews your deal and gets back to you within 24 hours, usually within a few hours. This includes a soft-quote or a request for any missing items needed to move forward.',
       details: [
-        'Soft-quote within 24 hours',
+        'Response within 24 hours, usually within a few hours',
         'Clear breakdown of all costs',
         'Direct access to your loan specialist',
       ],
@@ -52,9 +52,9 @@ export default function HowItWorksPage() {
       icon: Banknote,
       number: '04',
       title: 'Close & Fund',
-      description: 'Once underwriting is complete and title is clear, we schedule your closing. For fix & flip and bridge loans, this typically happens within 7-10 business days of acceptance. Funds are wired directly to the title company.',
+      description: 'Once underwriting is complete and title is clear, we schedule your closing. For many hard money deals, this can happen in as fast as 7-14 business days, subject to valuation, title, and file complexity. Funds are wired to the title company at closing.',
       details: [
-        'Close in as fast as 7-10 business days',
+        'Close in as fast as 7-14 business days',
         'Funds wired same day as closing',
         'Rehab/construction funds held in escrow for draws',
       ],
@@ -66,7 +66,7 @@ export default function HowItWorksPage() {
     '@type': 'HowTo',
     name: 'How to Get a Hard Money Loan from AssetLift Lending',
     description:
-      'Get funded in 4 simple steps: submit your deal, receive a 24-hour quote, complete due diligence, and close in 7-10 business days.',
+      'Get funded in 4 simple steps: submit your deal, hear back within 24 hours, complete due diligence, and close in as fast as 7-14 business days.',
     url: 'https://www.assetliftlending.com/how-it-works',
     totalTime: 'P10D',
     step: [
@@ -80,7 +80,7 @@ export default function HowItWorksPage() {
         '@type': 'HowToStep',
         position: 2,
         name: 'Receive Your Quote',
-        text: 'A loan specialist reviews your deal and provides a detailed soft-quote within 24 hours, including estimated rate, leverage, fees, and terms.',
+        text: 'A loan specialist reviews your deal and gets back to you within 24 hours, usually within a few hours, with a soft-quote or any follow-up items needed to proceed.',
       },
       {
         '@type': 'HowToStep',
@@ -92,7 +92,7 @@ export default function HowItWorksPage() {
         '@type': 'HowToStep',
         position: 4,
         name: 'Close & Fund',
-        text: 'Once underwriting is complete and title is clear, close in as fast as 7-10 business days. Funds are wired directly to the title company.',
+        text: 'Once underwriting is complete and title is clear, close in as fast as 7-14 business days. Funds are wired directly to the title company.',
       },
     ],
   };
@@ -199,7 +199,7 @@ export default function HowItWorksPage() {
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-            Submit your deal today and receive a soft-quote within 24 hours. No fees, no obligation.
+            Submit your deal today and hear back within 24 hours, usually within a few hours. No fees, no obligation.
           </p>
           <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
             <Link href="/apply">

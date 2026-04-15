@@ -57,7 +57,7 @@ export default function ContactPage() {
               Get in <span className="gradient-text">Touch</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Have a deal to discuss? Need a quote? Our loan specialists typically respond within 60 minutes during business hours.
+              Have a deal to discuss? Need a quote? Our team will get back to you within 24 hours, and usually within a few hours during business hours.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export default function ContactPage() {
               Fastest Way to Get a Quote
             </h2>
             <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-              Submit your deal details through our online application. You will receive a detailed soft-quote including rate, leverage, and terms within 24 hours.
+              Submit your deal details through our online application. You will hear back within 24 hours, usually within a few hours, with a soft-quote or a request for any missing items.
             </p>
             <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
               <Link href="/apply">

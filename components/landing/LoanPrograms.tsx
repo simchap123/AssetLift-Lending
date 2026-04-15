@@ -53,7 +53,7 @@ const LoanPrograms = () => {
       loanTypeLabel: "VALUE",
       highlights: [
         "Up to 80% LTV",
-        "Quick closings in 7-10 days",
+        "Quick closings in as fast as 7-14 days",
         "Loans up to $5MM",
         "6, 12, 18-month terms",
         "Residential & commercial",

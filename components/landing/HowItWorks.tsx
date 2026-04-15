@@ -80,7 +80,7 @@ const HowItWorks = () => {
     {
       icon: Search,
       title: "Review",
-      description: "We evaluate within 24 hours",
+      description: "We get back to you within 24 hours",
       number: "02",
     },
     {
@@ -123,7 +123,7 @@ const HowItWorks = () => {
             animate={isHeaderInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            From application to funding in days, not weeks
+            Hear back within 24 hours and close in as fast as 7-14 days
           </motion.p>
         </motion.div>
 

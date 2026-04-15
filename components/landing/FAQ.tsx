@@ -16,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: "How quickly can you close?",
-      answer: "We can close in as fast as 7-10 business days for straightforward deals. Our streamlined process and in-house underwriting allow us to move quickly while maintaining thorough due diligence.",
+      answer: "Many deals can close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.",
     },
     {
       question: "What are your minimum loan requirements?",

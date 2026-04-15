@@ -10,7 +10,7 @@ const Hero = () => {
   const stats = [
     { value: "$5M+", label: "Max Loan" },
     { value: "92.5%", label: "Max LTC" },
-    { value: "7-Day", label: "Closings" },
+    { value: "7-14", label: "Days" },
     { value: "46", label: "States" },
   ];
 
@@ -63,8 +63,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Fast fix and flip, bridge, DSCR rental, and construction financing with closings in
-            7 to 10 days for investors who need reliable execution.
+            Fast fix and flip, bridge, DSCR rental, and construction financing with responses
+            within 24 hours, usually within a few hours, and closings in as fast as 7 to 14 days.
           </motion.p>
 
           {/* CTA Buttons */}

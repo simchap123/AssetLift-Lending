@@ -242,7 +242,7 @@ export default function BlogPostLayout({ post, relatedPosts = [] }: BlogPostLayo
       <section className="py-16">
         <div className="container px-4 md:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Get Funded?</h2>
-          <p className="text-muted-foreground mb-8">Apply today and get a response within 24 hours.</p>
+          <p className="text-muted-foreground mb-8">Apply today and hear back within 24 hours, usually within a few hours.</p>
           <Button asChild size="lg" className="glow-primary">
             <Link href="/apply">
               Apply for Funding <ArrowRight className="ml-2 w-5 h-5" />

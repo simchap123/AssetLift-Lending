@@ -8,12 +8,12 @@ const panels = [
   {
     title: "Fast Processing",
     content:
-      "Get pre-approved within 24 hours and close in as few as 10 days. Our streamlined underwriting process and in-house decision making allow us to fund deals faster than traditional lenders. When you find the right property, speed matters.",
+      "Hear back within 24 hours, usually within a few hours, and close in as fast as 7 to 14 days on many deals. When you find the right property, speed matters, but so does realistic execution.",
   },
   {
-    title: "Direct Lender Advantage",
+    title: "Flexible Capital Execution",
     content:
-      "AssetLift Lending funds loans from our own balance sheet. No middlemen, no third-party approvals, and no last-minute surprises. The team you talk to is the team that underwrites, approves, and funds your loan. One point of contact from application through funding.",
+      "Depending on the deal, we may execute through direct lending, table-funded or white-label structures, or lender-partner placement. The goal is not to force one channel on every file. It is to get you the strongest realistic execution path for the deal.",
   },
   {
     title: "Highest Leverage Available",
@@ -52,7 +52,7 @@ const WhyAssetLift = () => {
               <span className="gradient-text">AssetLift Lending</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              AssetLift Lending is a direct private money lender that specializes in hard money loans
+              AssetLift Lending provides private capital solutions
               for real estate investors nationwide. We provide fast, flexible financing for fix and flip
               projects, ground-up construction, DSCR rental properties, and bridge loans. Our team
               understands that in competitive real estate markets, the ability to close quickly and
@@ -139,14 +139,13 @@ const WhyAssetLift = () => {
               Traditional bank financing is too slow for most investment properties. By the time a
               conventional lender completes their underwriting process, the deal has already gone to
               another buyer. Hard money loans from AssetLift Lending solve this problem by providing
-              asset-based financing with fast approvals and closings in as few as seven business days.
+              asset-based financing with fast responses and closings in as fast as seven to fourteen business days.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              As a direct lender, every loan decision is made in-house by our underwriting team. There
-              are no brokers adding time and fees to the process. When you submit a deal to AssetLift,
-              the same team that reviews your application is the team that approves and funds your loan.
-              This means fewer delays, clearer communication, and a more predictable closing process
-              from start to finish.
+              Depending on the file, AssetLift may execute through direct lending, table-funded or
+              white-label structures, or lender-partner placement. What stays consistent is the way
+              we communicate: clear expectations, realistic terms, and one team helping move the file
+              from submission through closing.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Whether you are a first-time flipper looking for your initial investment property or an

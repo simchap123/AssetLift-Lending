@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
 
           <div style="background: #f9fafb; padding: 25px; border-radius: 4px; margin: 25px 0;">
             <p style="margin: 0; font-size: 12px; color: #6b7280; text-transform: uppercase; font-weight: bold; letter-spacing: 0.05em;">What happens next?</p>
-            <p style="margin: 10px 0 0 0; font-weight: bold; font-size: 16px;">One of our loan specialists will contact you within 60 minutes with a soft-quote or a request for additional items.</p>
+            <p style="margin: 10px 0 0 0; font-weight: bold; font-size: 16px;">One of our loan specialists will contact you within 24 hours, usually within a few hours, with a soft-quote or a request for additional items.</p>
           </div>
 
           <p>If you have immediate questions, feel free to reply to this email or call us at +1 929-639-2284.</p>
@@ -81,7 +81,7 @@ export async function POST(req: NextRequest) {
 
           <p style="font-size: 11px; color: #9ca3af; line-height: 1.5;">
             <strong>AssetLift Lending</strong><br/>
-            Direct Private Money Lender
+            Private Capital Solutions for Real Estate Investors
           </p>
         </div>
       `;
