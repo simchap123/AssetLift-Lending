@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 export const metadata: Metadata = createMetadata({
   title: 'AssetLift Lending Team | Private Lending Leadership',
   description:
-    'Meet the AssetLift Lending leadership team behind our private capital solutions for fix and flip, DSCR, bridge, and construction financing.',
+    'Meet the AssetLift Lending leadership team behind our private lending platform for fix and flip, DSCR, bridge, and construction financing, with some deals brokered with capital partners.',
   path: '/team',
 });
 
@@ -32,7 +32,7 @@ const companyStats = [
   { icon: MapPin, label: 'Lending in 46 states', detail: 'Nationwide coverage' },
   { icon: DollarSign, label: 'Loans up to $5MM', detail: 'Flexible capital' },
   { icon: Clock, label: 'Close in 7-14 days', detail: 'Fast execution' },
-  { icon: Building2, label: '24-hour quotes', detail: 'Rapid turnaround' },
+  { icon: Building2, label: 'Response within 24 hours', detail: 'Usually within a few hours' },
 ];
 
 export default function TeamPage() {
@@ -42,7 +42,7 @@ export default function TeamPage() {
     name: 'AssetLift Lending',
     url: 'https://www.assetliftlending.com',
     description:
-      'Private capital solutions for real estate investors nationwide.',
+      'Private lending for real estate investors nationwide, with some deals brokered with capital partners.',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
     address: {
@@ -128,11 +128,11 @@ export default function TeamPage() {
             <div className="bg-secondary/20 border border-border rounded-2xl p-6 md:p-8">
               <h2 className="text-3xl font-bold mb-5">Our Approach to Lending</h2>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-3xl">
-                AssetLift structures deals through the execution path that best fits the file.
-                Depending on the program, market, and scenario, that may mean direct lending,
-                table-funded or white-label execution, or placing the deal with a lender partner.
-                What matters to borrowers is clear communication, realistic terms, and a team that
-                stays accountable from inquiry through closing.
+                AssetLift structures deals through the lending path that best fits the file.
+                In practice, that means private lending on many deals, with some deals brokered
+                with capital partners when the program, market, or scenario calls for it. What
+                matters to borrowers is clear communication, realistic terms, and a team that stays
+                accountable from inquiry through closing.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
@@ -141,8 +141,8 @@ export default function TeamPage() {
                     <div>
                       <p className="font-semibold mb-1">Direct Capital, Direct Decisions</p>
                       <p className="text-sm text-muted-foreground">
-                        We work to match each deal to the most reliable capital source and
-                        execution path available for the file.
+                        We work to match each deal to the most reliable private lending or
+                        capital-partner path available for the file.
                       </p>
                     </div>
                   </div>

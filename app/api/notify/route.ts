@@ -81,7 +81,7 @@ export async function POST(req: NextRequest) {
 
           <p style="font-size: 11px; color: #9ca3af; line-height: 1.5;">
             <strong>AssetLift Lending</strong><br/>
-            Private Capital Solutions for Real Estate Investors
+            Private Lending for Real Estate Investors
           </p>
         </div>
       `;

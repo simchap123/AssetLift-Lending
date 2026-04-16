@@ -9,7 +9,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     items: [
       {
         question: "What is AssetLift Lending?",
-        answer: "AssetLift Lending provides private capital solutions for short-term and long-term real estate investment loans. We offer fix & flip, ground-up construction, DSCR rental, and bridge financing for non-owner occupied investment properties across 46 states."
+        answer: "AssetLift Lending provides private lending for short-term and long-term real estate investment loans. We offer fix & flip, ground-up construction, DSCR rental, and bridge financing for non-owner occupied investment properties across 46 states, with some deals brokered with capital partners."
       },
       {
         question: "What states do you lend in?",
@@ -17,7 +17,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "Are you a direct lender or a broker?",
-        answer: "Depending on the deal, program, and market, AssetLift may deliver financing through direct lending, table-funded or white-label execution, or placement with a lending partner. Our goal is to match your file to the execution path that gives you the best chance of a reliable closing."
+        answer: "AssetLift provides private lending on many deals, and some deals are brokered with capital partners depending on the program, market, and borrower profile. Our goal is to match your file to the path that gives you the best chance of a reliable closing."
       },
       {
         question: "Do you work with mortgage brokers?",

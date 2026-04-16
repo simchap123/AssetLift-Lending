@@ -964,7 +964,7 @@ export const COMPARISONS: Comparison[] = [
     publishedAt: "2026-03-22",
     heroTitle: "AssetLift Lending vs Kiavi",
     introText:
-      "AssetLift Lending offers 92.5% LTC, closings as fast as 7-14 business days, and 100% rehab funding as a direct lender, while Kiavi uses a technology-driven platform that has served over 17,000 investors. Both lenders target fix-and-flip and rental investors, but they differ sharply on leverage, closing speed, product breadth, and underwriting approach. AssetLift operates with private capital solutions across 46 states with no middlemen, while Kiavi has built its reputation on a streamlined tech experience and large-scale brand recognition. This comparison breaks down the specific numbers, programs, and trade-offs so you can decide which lender fits your next deal.",
+      "AssetLift Lending offers 92.5% LTC, closings as fast as 7-14 business days, and 100% rehab funding through its private lending platform, while Kiavi uses a technology-driven platform that has served over 17,000 investors. Both lenders target fix-and-flip and rental investors, but they differ sharply on leverage, closing speed, product breadth, and underwriting approach. AssetLift operates with private lending solutions across 46 states, while Kiavi has built its reputation on a streamlined tech experience and large-scale brand recognition. This comparison breaks down the specific numbers, programs, and trade-offs so you can decide which lender fits your next deal.",
     comparisonTable: [
       {
         feature: "Max LTC (Fix & Flip)",
@@ -1021,7 +1021,7 @@ export const COMPARISONS: Comparison[] = [
       {
         heading: "Leverage and Rehab Funding: AssetLift Offers More Capital Per Deal",
         content:
-          "AssetLift Lending provides up to 92.5% LTC and 100% of rehab costs funded through a draw schedule, which means investors can enter deals with significantly less cash out of pocket. Kiavi offers up to 90% LTC, which is competitive but leaves borrowers covering a larger gap at closing. For a $300,000 acquisition, the 2.5-percentage-point difference translates to $7,500 less capital required upfront with AssetLift. When you add 100% rehab funding on top of that, the total capital advantage widens further. Investors running multiple projects simultaneously benefit the most from higher leverage because it allows them to spread capital across more deals rather than concentrating it in a single property. AssetLift's private capital execution model is what makes this higher leverage possible, since there are no middlemen adding margin to the transaction.",
+          "AssetLift Lending provides up to 92.5% LTC and 100% of rehab costs funded through a draw schedule, which means investors can enter deals with significantly less cash out of pocket. Kiavi offers up to 90% LTC, which is competitive but leaves borrowers covering a larger gap at closing. For a $300,000 acquisition, the 2.5-percentage-point difference translates to $7,500 less capital required upfront with AssetLift. When you add 100% rehab funding on top of that, the total capital advantage widens further. Investors running multiple projects simultaneously benefit the most from higher leverage because it allows them to spread capital across more deals rather than concentrating it in a single property. AssetLift's lending platform is built to maximize workable leverage while keeping execution aligned to the specifics of the file.",
       },
       {
         heading: "Closing Speed: AssetLift Funds in 7 to 10 Days",
@@ -1046,7 +1046,7 @@ export const COMPARISONS: Comparison[] = [
       {
         heading: "Execution Model vs Platform Model: Why It Matters for Your Deal",
         content:
-          "AssetLift Lending may execute through direct lending, table-funded or white-label structures, or lender-partner channels depending on the deal, program, and market. Borrowers still benefit from a coordinated process and a single team helping move the file forward. Kiavi operates a technology platform that has scaled to serve thousands of investors, but the platform model can introduce additional steps in the approval and funding process. For straightforward deals, both models work well. For complex transactions, such as properties with title issues, unusual zoning, or non-standard exit strategies, a direct lender like AssetLift can often provide faster and more flexible solutions because the decision-maker is in-house and empowered to approve exceptions.",
+          "AssetLift Lending may execute through direct lending, table-funded or white-label structures, or lender-partner channels depending on the deal, program, and market. Borrowers still benefit from a coordinated process and a single team helping move the file forward. Kiavi operates a technology platform that has scaled to serve thousands of investors, but the platform model can introduce additional steps in the approval and funding process. For straightforward deals, both models work well. For complex transactions, such as properties with title issues, unusual zoning, or non-standard exit strategies, AssetLift's flexible execution model can create a faster and more workable path because the file can be matched to the most realistic capital route instead of forcing a single structure on every borrower.",
       },
     ],
     verdict:
@@ -1073,7 +1073,7 @@ export const COMPARISONS: Comparison[] = [
           "Kiavi's core products are fix-and-flip bridge loans and DSCR rental loans. Ground-up construction financing is not a primary offering. AssetLift provides ground-up construction loans up to $5M.",
       },
       {
-        question: "Is AssetLift a direct lender?",
+        question: "How does AssetLift execute loans?",
         answer:
           "AssetLift may execute through direct lending, table-funded or white-label structures, or lender-partner channels depending on the deal, program, and market.",
       },
@@ -1164,7 +1164,7 @@ export const COMPARISONS: Comparison[] = [
       {
         heading: "Closing Speed: AssetLift's 7-Day Advantage",
         content:
-          "AssetLift Lending funds loans in 7 to 14 business days, approximately half the time it takes Lima One Capital to close most transactions. Lima One typically closes in 14 to 21 business days, which is within industry norms but measurably slower for time-sensitive deals. The speed difference matters most in competitive acquisition scenarios: foreclosure auctions, off-market deals with short acceptance windows, and situations where a seller has multiple offers. AssetLift achieves faster closings through its private capital execution model, with in-house capital and underwriting that eliminate the need for external approvals or funding partners. Investors who consistently compete for time-sensitive deals should weigh this closing speed difference heavily.",
+          "AssetLift Lending funds loans in 7 to 14 business days, approximately half the time it takes Lima One Capital to close most transactions. Lima One typically closes in 14 to 21 business days, which is within industry norms but measurably slower for time-sensitive deals. The speed difference matters most in competitive acquisition scenarios: foreclosure auctions, off-market deals with short acceptance windows, and situations where a seller has multiple offers. AssetLift achieves faster closings through a private lending platform and capital-partner execution model designed to keep the file moving through the most workable channel. Investors who consistently compete for time-sensitive deals should weigh this closing speed difference heavily.",
       },
       {
         heading: "Lima One's Broader Product Menu and Track Record",
@@ -1184,7 +1184,7 @@ export const COMPARISONS: Comparison[] = [
       {
         heading: "Which Lender Should You Choose for Your Next Deal?",
         content:
-          "Choose AssetLift Lending if you want the highest available leverage at 92.5% LTC, the fastest closings at 7 to 14 days, and the simplest underwriting with no income verification on DSCR products. AssetLift is the better fit for investors who prioritize speed, capital efficiency, and a direct relationship with their lender. Choose Lima One Capital if you value a longer institutional track record, a wider variety of loan products, and are comfortable with a slightly longer closing timeline in exchange for brand familiarity. Both lenders are capable, but they serve different investor priorities.",
+          "Choose AssetLift Lending if you want the highest available leverage at 92.5% LTC, the fastest closings at 7 to 14 days, and the simplest underwriting with no income verification on DSCR products. AssetLift is the better fit for investors who prioritize speed, capital efficiency, and a hands-on relationship through the lending process. Choose Lima One Capital if you value a longer institutional track record, a wider variety of loan products, and are comfortable with a slightly longer closing timeline in exchange for brand familiarity. Both lenders are capable, but they serve different investor priorities.",
       },
     ],
     verdict:
@@ -1231,11 +1231,11 @@ export const COMPARISONS: Comparison[] = [
     slug: "assetlift-vs-rcn-capital",
     title: "AssetLift Lending vs RCN Capital: Hard Money Lender Comparison",
     description:
-      "AssetLift Lending vs RCN Capital compared on LTC, LTV, closing speed, and lending model. See how AssetLift's 92.5% LTC, direct lender status, and closings as fast as 7-14 business days compare to RCN Capital's $3B+ funded track record for real estate investors.",
+      "AssetLift Lending vs RCN Capital compared on LTC, LTV, closing speed, and lending model. See how AssetLift's 92.5% LTC, private lending platform, and closings as fast as 7-14 business days compare to RCN Capital's $3B+ funded track record for real estate investors.",
     publishedAt: "2026-03-22",
     heroTitle: "AssetLift Lending vs RCN Capital",
     introText:
-      "AssetLift Lending delivers 92.5% LTC, closings as fast as 7-14 business days, and a private capital execution model with no middlemen across 46 states. RCN Capital has funded over $3 billion in loans and built a nationwide presence through both direct origination and a large broker network. Both lenders serve fix-and-flip investors, rental property buyers, and real estate professionals, but they differ significantly on leverage, closing speed, simplicity of process, and how they structure borrower relationships. This comparison lays out the specific differences so investors who want speed and high leverage can make a confident choice.",
+      "AssetLift Lending delivers 92.5% LTC, closings as fast as 7-14 business days, and a private lending platform across 46 states. RCN Capital has funded over $3 billion in loans and built a nationwide presence through both direct origination and a large broker network. Both lenders serve fix-and-flip investors, rental property buyers, and real estate professionals, but they differ significantly on leverage, closing speed, simplicity of process, and how they structure borrower relationships. This comparison lays out the specific differences so investors who want speed and high leverage can make a confident choice.",
     comparisonTable: [
       {
         feature: "LTC (Fix & Flip)",
@@ -1292,12 +1292,12 @@ export const COMPARISONS: Comparison[] = [
       {
         heading: "Leverage and Capital Efficiency: AssetLift's 92.5% LTC Advantage",
         content:
-          "AssetLift Lending provides up to 92.5% LTC on fix-and-flip loans and funds 100% of rehab costs, giving investors one of the lowest cash-to-close requirements in the private lending market. RCN Capital offers up to 90% LTC, which is competitive but requires more borrower capital at the closing table. On a $500,000 purchase, the 2.5-point LTC difference means $12,500 less out of pocket with AssetLift. When factoring in 100% rehab funding, the capital savings compound further. Investors who run multiple projects simultaneously benefit directly from this higher leverage because it allows capital to be distributed across more deals, improving portfolio-level returns. AssetLift's direct lender structure is what enables this aggressive leverage without the margin stacking that occurs in broker-originated transactions.",
+          "AssetLift Lending provides up to 92.5% LTC on fix-and-flip loans and funds 100% of rehab costs, giving investors one of the lowest cash-to-close requirements in the private lending market. RCN Capital offers up to 90% LTC, which is competitive but requires more borrower capital at the closing table. On a $500,000 purchase, the 2.5-point LTC difference means $12,500 less out of pocket with AssetLift. When factoring in 100% rehab funding, the capital savings compound further. Investors who run multiple projects simultaneously benefit directly from this higher leverage because it allows capital to be distributed across more deals, improving portfolio-level returns. AssetLift's platform is built to structure aggressive but workable leverage without forcing every file through the same channel.",
       },
       {
         heading: "Closing Speed: 7 Days vs 15 to 30 Days",
         content:
-          "AssetLift Lending closes loans in 7 to 14 business days, which is roughly half the time RCN Capital typically requires. RCN's closing timelines of 15 to 30 business days are within industry norms, but the difference is material when a deal is time-sensitive. Auction purchases, off-market opportunities, and competitive multi-bid situations all favor the lender that can fund faster. AssetLift's speed comes from its private capital execution model: all underwriting, approvals, and funding decisions happen in-house without waiting on third-party capital providers or broker intermediaries. RCN's larger operation and broker network can introduce additional steps that extend the timeline. For investors who consistently operate in competitive markets, AssetLift's speed advantage translates directly into more deals won.",
+          "AssetLift Lending closes loans in 7 to 14 business days, which is roughly half the time RCN Capital typically requires. RCN's closing timelines of 15 to 30 business days are within industry norms, but the difference is material when a deal is time-sensitive. Auction purchases, off-market opportunities, and competitive multi-bid situations all favor the lender that can fund faster. AssetLift's speed comes from a flexible private lending execution model that can move a file through the most realistic capital path without unnecessary handoff friction. RCN's larger operation and broker network can introduce additional steps that extend the timeline. For investors who consistently operate in competitive markets, AssetLift's speed advantage translates directly into more deals won.",
       },
       {
         heading: "RCN Capital's Track Record and Scale",
@@ -1339,14 +1339,14 @@ export const COMPARISONS: Comparison[] = [
           "AssetLift requires no personal income verification on DSCR rental loans. RCN Capital's documentation requirements vary by product and whether the loan is originated directly or through a broker.",
       },
       {
-        question: "Is AssetLift a direct lender?",
+        question: "How does AssetLift fund and structure deals?",
         answer:
           "AssetLift may execute through direct lending or lender-partner channels depending on the deal, program, and market. RCN Capital operates through both direct channels and a third-party broker network.",
       },
       {
         question: "How much has RCN Capital funded in total?",
         answer:
-          "RCN Capital has funded over $3 billion in loans. AssetLift is a newer direct lender focused on high leverage, fast closings, and a streamlined borrower experience across 46 states.",
+          "RCN Capital has funded over $3 billion in loans. AssetLift is a newer private lending platform focused on high leverage, fast closings, and a streamlined borrower experience across 46 states.",
       },
       {
         question: "Does AssetLift or RCN Capital charge prepayment penalties?",

@@ -1967,7 +1967,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "How can I lower my hard money loan rate?",
         answer:
-          "The most effective ways to lower your rate are: build a track record of completed deals, improve your credit score above 720, bring more equity (lower LTC/LTV), work with a direct lender like AssetLift instead of a broker, compare quotes from multiple lenders, and negotiate volume pricing for repeat business.",
+          "The most effective ways to lower your rate are: build a track record of completed deals, improve your credit score above 720, bring more equity (lower LTC/LTV), work with a private lending platform like AssetLift, compare quotes from multiple lenders, and negotiate volume pricing for repeat business.",
       },
       {
         question: "Do hard money rates change based on the property type?",

@@ -13,7 +13,7 @@ const panels = [
   {
     title: "Flexible Capital Execution",
     content:
-      "Depending on the deal, we may execute through direct lending, table-funded or white-label structures, or lender-partner placement. The goal is not to force one channel on every file. It is to get you the strongest realistic execution path for the deal.",
+      "We provide private lending on many deals, and some deals are brokered with capital partners when that is the strongest fit for the file. The goal is not to force one structure on every scenario. It is to get you the strongest realistic path to closing.",
   },
   {
     title: "Highest Leverage Available",
@@ -52,7 +52,7 @@ const WhyAssetLift = () => {
               <span className="gradient-text">AssetLift Lending</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              AssetLift Lending provides private capital solutions
+              AssetLift Lending provides private lending
               for real estate investors nationwide. We provide fast, flexible financing for fix and flip
               projects, ground-up construction, DSCR rental properties, and bridge loans. Our team
               understands that in competitive real estate markets, the ability to close quickly and
@@ -142,10 +142,10 @@ const WhyAssetLift = () => {
               asset-based financing with fast responses and closings in as fast as seven to fourteen business days.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Depending on the file, AssetLift may execute through direct lending, table-funded or
-              white-label structures, or lender-partner placement. What stays consistent is the way
-              we communicate: clear expectations, realistic terms, and one team helping move the file
-              from submission through closing.
+              Depending on the file, AssetLift may provide direct private lending or broker the
+              deal with a capital partner. What stays consistent is the way we communicate: clear
+              expectations, realistic terms, and one team helping move the file from submission
+              through closing.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Whether you are a first-time flipper looking for your initial investment property or an

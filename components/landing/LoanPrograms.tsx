@@ -106,7 +106,7 @@ const LoanPrograms = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            Direct Private Lender
+            Private Lending Solutions
           </motion.div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
             Real Estate{" "}

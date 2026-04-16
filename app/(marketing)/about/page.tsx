@@ -7,9 +7,9 @@ import { ArrowRight, Shield, Zap, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About AssetLift Lending | Private Capital Solutions',
+  title: 'About AssetLift Lending | Private Lending',
   description:
-    'Learn about AssetLift Lending and our private capital solutions for real estate investors, including fix and flip, DSCR, bridge, and construction financing nationwide.',
+    'Learn about AssetLift Lending and our private lending platform for real estate investors, including fix and flip, DSCR, bridge, and construction financing, with some deals brokered with capital partners.',
   path: '/about',
 });
 
@@ -18,7 +18,7 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
-    description: 'Private capital solutions for real estate investors',
+    description: 'Private lending for real estate investors, with some deals brokered with capital partners',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
@@ -54,10 +54,10 @@ export default function AboutPage() {
               About <span className="gradient-text">AssetLift Lending</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              AssetLift Lending is built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank, and depending on the deal, program, and market, we may deliver financing through direct lending, table-funded execution, white-label capital, or brokered lender relationships.
+              AssetLift Lending is built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank. We provide private lending, and for some deals we broker the financing through capital partners when that is the best fit for the file.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to match each file to the execution path that best fits the strategy.
+              Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to match each file to the lending approach that best fits the strategy.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We lend nationwide across 46 states, with a focus on high-growth urban and suburban markets. Our loan programs cover the full spectrum of investment real estate: fix and flip, ground-up construction, DSCR rental, and bridge financing.
