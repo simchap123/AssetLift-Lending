@@ -1113,6 +1113,22 @@ const CITY_PROGRAM_TOPICS = CITIES.filter((city) =>
       `${city.cityName.toLowerCase()} bridge lender`,
     ],
   },
+  {
+    slug: `dscr-loans-${city.citySlug}-${city.stateAbbreviation.toLowerCase()}`,
+    title: `DSCR Loans in ${city.cityName}, ${city.stateAbbreviation}`,
+    description: `A local guide to DSCR loans in ${city.cityName}, including how rental investors qualify and what lenders usually review in this market.`,
+    category: 'DSCR Rental',
+    programLabel: 'DSCR Rental Loans',
+    programPath: '/loans/dscr-rental',
+    cityPath: `/lending/${city.stateSlug}/${city.citySlug}`,
+    focus: 'DSCR rental',
+    tags: [
+      `DSCR loans ${city.cityName.toLowerCase()}`,
+      `${city.cityName.toLowerCase()} rental property loan`,
+      `${city.cityName.toLowerCase()} investment property financing`,
+      `${city.cityName.toLowerCase()} DSCR lender`,
+    ],
+  },
 ]);
 
 const buildCityProgramPost = (
