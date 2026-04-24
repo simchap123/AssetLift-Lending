@@ -14,6 +14,14 @@ export const metadata: Metadata = createMetadata({
 });
 
 export default function BlogListingPage() {
+  const categoryCounts = BLOG_POSTS.reduce<Record<string, number>>((acc, post) => {
+    acc[post.category] = (acc[post.category] ?? 0) + 1;
+    return acc;
+  }, {});
+  const topCategories = Object.entries(categoryCounts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 4);
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -67,6 +75,33 @@ export default function BlogListingPage() {
               Expert insights on hard money lending, fix & flip investing, rental
               strategies, and building wealth through real estate.
             </p>
+
+            <div className="grid gap-4 md:grid-cols-3 mb-8">
+              <div className="rounded-xl border border-border bg-card p-5">
+                <p className="text-sm text-muted-foreground mb-1">Published guides</p>
+                <p className="text-3xl font-bold">{BLOG_POSTS.length}</p>
+              </div>
+              <div className="rounded-xl border border-border bg-card p-5">
+                <p className="text-sm text-muted-foreground mb-1">Core categories</p>
+                <p className="text-3xl font-bold">{Object.keys(categoryCounts).length}</p>
+              </div>
+              <div className="rounded-xl border border-border bg-card p-5">
+                <p className="text-sm text-muted-foreground mb-1">Newest focus</p>
+                <p className="text-3xl font-bold">Local SEO</p>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-3 mb-12">
+              {topCategories.map(([category, count]) => (
+                <span
+                  key={category}
+                  className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm"
+                >
+                  <span className="font-medium">{category}</span>
+                  <span className="text-muted-foreground">{count}</span>
+                </span>
+              ))}
+            </div>
 
             <div className="space-y-8">
               {BLOG_POSTS.map((post) => (

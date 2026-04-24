@@ -1,4 +1,6 @@
-﻿export interface BlogPost {
+import { GENERATED_BLOG_POSTS } from './generated-blog-posts';
+
+export interface BlogPost {
   slug: string;
   title: string;
   description: string;
@@ -16,7 +18,7 @@
   faqs: Array<{ question: string; answer: string }>;
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+const BASE_BLOG_POSTS: BlogPost[] = [
   // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // POST 1: Fix & Flip Financing Guide
   // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -2266,7 +2268,6 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 ];
 
-
-
-
-
+export const BLOG_POSTS: BlogPost[] = [...BASE_BLOG_POSTS, ...GENERATED_BLOG_POSTS].sort(
+  (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+);

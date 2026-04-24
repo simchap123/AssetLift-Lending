@@ -29,10 +29,20 @@ const RESOURCE_MAP: Record<string, Array<{ label: string; href: string }>> = {
     { label: 'DSCR vs Conventional Rental Loans', href: '/compare/dscr-loans-vs-conventional-rental-loans' },
     { label: 'BRRRR to DSCR Refinance Guide', href: '/blog/brrrr-refinance-into-dscr-loan' },
   ],
+  Comparisons: [
+    { label: 'Compare AssetLift', href: '/compare' },
+    { label: 'How Funding Works', href: '/how-funding-works' },
+    { label: 'Apply for Funding', href: '/apply' },
+  ],
   Construction: [
     { label: 'Ground-Up Construction Loans', href: '/loans/ground-up-construction' },
     { label: 'Bridge Loans', href: '/loans/bridge' },
     { label: 'How It Works', href: '/how-it-works' },
+  ],
+  'Local Markets': [
+    { label: 'Markets Coverage', href: '/markets' },
+    { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+    { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
   ],
   Education: [
     { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },

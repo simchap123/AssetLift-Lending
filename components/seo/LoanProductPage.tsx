@@ -23,6 +23,13 @@ const PRODUCT_INSIGHTS: Record<
     fitBody: string;
     watchouts: Array<{ title: string; detail: string }>;
     resources: Array<{ label: string; href: string }>;
+    walkthroughs?: Array<{
+      title: string;
+      duration: string;
+      summary: string;
+      href: string;
+      chapters: string[];
+    }>;
   }
 > = {
   'fix-and-flip': {
@@ -50,6 +57,32 @@ const PRODUCT_INSIGHTS: Record<
       { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
       { label: 'How to Finance Your First Fix and Flip', href: '/blog/how-to-finance-first-fix-and-flip' },
       { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+    ],
+    walkthroughs: [
+      {
+        title: 'Fix and Flip Loans Explained',
+        duration: '3 min walkthrough',
+        summary:
+          'A simple borrower-facing explanation of what a fix and flip loan covers, how leverage usually works, and what makes a file financeable.',
+        href: '/blog/how-to-finance-first-fix-and-flip',
+        chapters: ['Acquisition leverage', 'Rehab escrow', 'ARV and exit plan'],
+      },
+      {
+        title: 'How Rehab Draws Actually Work',
+        duration: '2 min walkthrough',
+        summary:
+          'A clean explanation of inspections, draw requests, and what borrowers should prepare before funds are released.',
+        href: '/blog/how-fix-and-flip-draws-work',
+        chapters: ['Scope approval', 'Inspection timing', 'Draw release'],
+      },
+      {
+        title: 'Purchase, Rehab, and Exit Timeline',
+        duration: '4 min walkthrough',
+        summary:
+          'A step-by-step look at how a real file moves from contract to closing, through renovation, and into resale or refinance.',
+        href: '/blog/what-happens-if-a-flip-takes-longer-than-expected',
+        chapters: ['Underwriting', 'Project management', 'Sale or refinance'],
+      },
     ],
   },
   'ground-up-construction': {
@@ -294,6 +327,55 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
           </div>
         </div>
       </section>
+
+      {insights?.walkthroughs && (
+        <section className="py-16 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="max-w-3xl mb-10">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Borrower Walkthroughs
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  These short explainers are structured so borrowers can understand the file
+                  before they apply. They also give you a clean content base if you want to
+                  narrate them into AI video later.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                {insights.walkthroughs.map((walkthrough) => (
+                  <Link
+                    key={walkthrough.title}
+                    href={walkthrough.href}
+                    className="rounded-2xl border border-border bg-card p-6 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-3">
+                      {walkthrough.duration}
+                    </p>
+                    <h3 className="text-xl font-semibold mb-3">{walkthrough.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                      {walkthrough.summary}
+                    </p>
+                    <div className="space-y-2 mb-5">
+                      {walkthrough.chapters.map((chapter) => (
+                        <div
+                          key={chapter}
+                          className="rounded-lg border border-border px-3 py-2 text-sm text-muted-foreground"
+                        >
+                          {chapter}
+                        </div>
+                      ))}
+                    </div>
+                    <span className="inline-flex items-center gap-1 text-sm font-medium text-primary">
+                      Open explainer <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {insights && (
         <section className="py-16 md:py-24 bg-secondary/20">
