@@ -18,6 +18,7 @@ import {
 import { toast } from "@/hooks/use-toast";
 import { sendNotification } from "@/services/notificationService";
 import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
+import { metaTrackLead } from "@/lib/meta-pixel";
 
 interface FormData {
   name: string;
@@ -202,6 +203,11 @@ const ApplyForm = () => {
         gtagReportConversion();
         // Fire GA4 event for analytics
         gtagEvent('generate_lead', {
+          currency: 'USD',
+          value: Number(formData.purchasePrice.replace(/\D/g, '')),
+        });
+        // Fire Meta Pixel lead event
+        metaTrackLead({
           currency: 'USD',
           value: Number(formData.purchasePrice.replace(/\D/g, '')),
         });

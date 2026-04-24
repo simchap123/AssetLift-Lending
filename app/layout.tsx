@@ -5,6 +5,7 @@ import "./globals.css";
 import Providers from "@/components/Providers";
 import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import MetaPixel from "@/components/MetaPixel";
 import AnalyticsPageTracker from "@/components/AnalyticsPageTracker";
 import ChatBot from "@/components/ChatBot";
 
@@ -142,6 +143,7 @@ export default function RootLayout({
           <ChatBot />
         </Providers>
         <GoogleAnalytics />
+        <MetaPixel />
       </body>
     </html>
   );
