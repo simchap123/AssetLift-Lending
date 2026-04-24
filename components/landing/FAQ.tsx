@@ -42,8 +42,8 @@ const FAQ = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">FAQ</h2>
-          <p className="text-muted-foreground text-lg">
+          <h2 data-speakable className="text-4xl md:text-5xl font-bold mb-4">FAQ</h2>
+          <p data-speakable className="text-muted-foreground text-lg">
             Quick answers to common questions
           </p>
         </motion.div>
@@ -74,7 +74,7 @@ const FAQ = () => {
                   <AccordionTrigger className="text-left hover:text-primary hover:no-underline py-5 text-base font-medium">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
+                  <AccordionContent className="text-muted-foreground pb-5" data-speakable>
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

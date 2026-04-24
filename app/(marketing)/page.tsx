@@ -11,6 +11,7 @@ import PromoBanner from "@/components/landing/PromoBanner";
 import MarketsPreview from "@/components/landing/MarketsPreview";
 import AnimatedStats from "@/components/landing/AnimatedStats";
 import JsonLd from "@/components/JsonLd";
+import { AGGREGATE_REVIEW_RATING, BORROWER_REVIEWS } from "@/lib/data/reviews";
 
 export const metadata: Metadata = createMetadata({
   title: "Hard Money Loans for Real Estate Investors",
@@ -74,7 +75,23 @@ export default function HomePage() {
       { '@type': 'Person', name: 'Yaakov Pentelnik' },
       { '@type': 'Person', name: 'Yisroel Pentelnik' },
     ],
-    sameAs: [],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone: '+1-929-639-2284',
+      email: 'info@assetliftlending.com',
+      areaServed: 'US',
+      availableLanguage: 'English',
+    },
+    knowsAbout: [
+      'Hard money loans',
+      'Private lending',
+      'Fix and flip loans',
+      'DSCR rental loans',
+      'Bridge loans',
+      'Ground-up construction financing',
+      'Real estate investor financing',
+    ],
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -101,7 +118,7 @@ export default function HomePage() {
         {
           '@type': 'Offer',
           name: 'DSCR Rental Loans',
-          description: 'Long-term financing for rental properties with rates starting as low as 5.75%. Qualify on rental income, not personal income, with up to 80% LTV.',
+          description: 'Long-term financing for rental properties with rates starting as low as 5.75% for qualifying scenarios. Qualify on rental income, not personal income, with up to 80% LTV.',
           url: 'https://www.assetliftlending.com/loans/dscr-rental',
         },
         {
@@ -133,10 +150,37 @@ export default function HomePage() {
     })),
   };
 
+  const reviewSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FinancialService',
+    name: 'AssetLift Lending',
+    url: 'https://www.assetliftlending.com',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ...AGGREGATE_REVIEW_RATING,
+    },
+    review: BORROWER_REVIEWS.map((review) => ({
+      '@type': 'Review',
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: review.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      author: {
+        '@type': 'Person',
+        name: review.name,
+      },
+      name: `${review.type} borrower review`,
+      reviewBody: review.text,
+    })),
+  };
+
   return (
     <>
       <JsonLd data={schema} />
       <JsonLd data={faqSchema} />
+      <JsonLd data={reviewSchema} />
       <PromoBanner />
       <main className="pt-14">
         <Hero />

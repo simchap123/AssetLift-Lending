@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import LendingCoverageMap from "@/components/seo/LendingCoverageMap";
+import { CITIES } from "@/lib/data/cities";
+
+const FEATURED_CITIES = CITIES.slice(0, 6);
 
 export default function MarketsPreview() {
   return (
@@ -22,12 +25,32 @@ export default function MarketsPreview() {
         <LendingCoverageMap />
 
         <div className="mt-8">
-          <Link
-            href="/markets"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
-          >
-            View all lending markets <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-wrap gap-2 mb-5">
+            {FEATURED_CITIES.map((city) => (
+              <Link
+                key={`${city.stateSlug}-${city.citySlug}`}
+                href={`/lending/${city.stateSlug}/${city.citySlug}`}
+                className="rounded-full border border-border px-3 py-1.5 text-sm hover:border-primary/50 transition-colors"
+              >
+                {city.cityName}, {city.stateAbbreviation}
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-5">
+            <Link
+              href="/markets"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+            >
+              View all lending markets <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/compare"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+            >
+              Compare lenders and loan options <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

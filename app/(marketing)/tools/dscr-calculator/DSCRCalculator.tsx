@@ -235,6 +235,77 @@ export default function DSCRCalculator() {
               </div>
             </div>
           </div>
+
+          <div className="max-w-4xl mx-auto mt-16 space-y-8">
+            <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                What This DSCR Number Actually Tells You
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  DSCR is a shortcut for one lender question: does the property itself produce
+                  enough income to support the proposed debt? A higher ratio usually means more
+                  room for vacancy, maintenance pressure, or conservative underwriting.
+                </p>
+                <p>
+                  This calculator uses monthly rent and debt-related housing costs to estimate that
+                  ratio quickly. It is useful for screening deals before you apply, but the final
+                  lender calculation may still depend on the appraisal rent schedule, reserve
+                  requirements, leverage, and the specific program rules.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-6">
+              {[
+                {
+                  title: '1.25x and above',
+                  text: 'Usually signals a stronger rental file with more room for pricing flexibility and cleaner approval odds.',
+                },
+                {
+                  title: '1.00x to 1.24x',
+                  text: 'Often still workable, but the lender may rely more heavily on leverage, reserves, and overall file quality.',
+                },
+                {
+                  title: 'Below 1.00x',
+                  text: 'May require a no-ratio program or a different capital structure if the property cash flow does not support standard DSCR terms.',
+                },
+              ].map((item) => (
+                <div key={item.title} className="rounded-2xl border border-border bg-card p-6">
+                  <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="rounded-2xl border border-border bg-secondary/20 p-6 md:p-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">DSCR Calculator FAQ</h2>
+              <div className="space-y-6">
+                {[
+                  {
+                    question: 'What is a good DSCR for a rental property?',
+                    answer:
+                      'A DSCR of 1.25x or better is typically viewed as strong because income exceeds debt service by a meaningful margin. Many files can still work below that level, but the deal usually becomes more sensitive to leverage and reserve requirements.',
+                  },
+                  {
+                    question: 'Does DSCR use gross rent or adjusted rent?',
+                    answer:
+                      'That depends on the lender and program. Many lenders start with market rent and compare it against PITIA, but some adjust for vacancy or use a specific appraisal rent figure rather than the borrower’s estimate.',
+                  },
+                  {
+                    question: 'Can a property qualify if DSCR is below 1.0x?',
+                    answer:
+                      'Sometimes. Some programs allow no-ratio or low-ratio scenarios, but pricing and structure are usually less favorable when the rent does not fully cover the proposed monthly debt service.',
+                  },
+                ].map((faq) => (
+                  <div key={faq.question}>
+                    <h3 className="font-semibold mb-2">{faq.question}</h3>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

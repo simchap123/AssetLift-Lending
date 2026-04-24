@@ -50,6 +50,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.h1
+              data-speakable
               className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -61,7 +62,8 @@ const Hero = () => {
             </motion.h1>
 
             <motion.p
-              className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-6"
+              data-speakable
+              className="hero-description text-lg md:text-xl text-muted-foreground max-w-2xl mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}

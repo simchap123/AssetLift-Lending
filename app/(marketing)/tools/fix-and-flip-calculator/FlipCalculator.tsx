@@ -212,6 +212,78 @@ export default function FlipCalculator() {
               </div>
             </div>
           </div>
+
+          <div className="max-w-4xl mx-auto mt-16 space-y-8">
+            <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                How to Underwrite a Flip More Realistically
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  A fix and flip calculator is most useful when it helps you pressure-test the deal
+                  instead of confirming the number you want to see. The cleanest projects usually
+                  have enough spread to survive one or two things going wrong without wiping out the
+                  margin.
+                </p>
+                <p>
+                  Start with the purchase, rehab budget, and after-repair value. Then be harder on
+                  the assumptions that investors most often understate: carry time, financing cost,
+                  and selling friction. If the deal only works under optimistic timelines, it
+                  probably does not have enough room.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-6">
+              {[
+                {
+                  title: 'Watch the ARV',
+                  text: 'Use closed comparable sales from the exact neighborhood and avoid stretching into the highest comp unless the finish level truly supports it.',
+                },
+                {
+                  title: 'Model the hold honestly',
+                  text: 'Permits, contractor delays, inspection lag, and resale timing all extend carrying cost. A six-month hold can become eight quickly.',
+                },
+                {
+                  title: 'Protect cash reserves',
+                  text: 'Gross profit can look strong while the actual cash required is still too high. Compare projected margin against the cash you need to control the project.',
+                },
+              ].map((item) => (
+                <div key={item.title} className="rounded-2xl border border-border bg-card p-6">
+                  <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="rounded-2xl border border-border bg-secondary/20 p-6 md:p-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">Fix and Flip Calculator FAQ</h2>
+              <div className="space-y-6">
+                {[
+                  {
+                    question: 'What profit margin should a house flip target?',
+                    answer:
+                      'There is no universal threshold, but strong flips usually have enough projected spread to absorb rehab changes, financing drag, and a softer resale than expected. If the margin disappears with minor pressure, the deal is likely too thin.',
+                  },
+                  {
+                    question: 'Should I judge a flip by gross profit or ROI?',
+                    answer:
+                      'You should use both. Gross profit tells you whether the project is worth the effort in absolute dollars, while ROI shows whether your own capital is being used efficiently compared with other opportunities.',
+                  },
+                  {
+                    question: 'What numbers do investors most often miss?',
+                    answer:
+                      'The most common misses are interest carry, utilities, insurance, price reductions, and extra time between rehab completion and the final sale. Those items usually matter more than shaving a few points off the rehab line.',
+                  },
+                ].map((faq) => (
+                  <div key={faq.question}>
+                    <h3 className="font-semibold mb-2">{faq.question}</h3>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

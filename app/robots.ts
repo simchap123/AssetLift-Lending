@@ -8,9 +8,9 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/'],
       },
-      // Explicitly allow AI crawlers
+      // Explicitly allow AI crawlers used for search and user-requested retrieval.
       {
-        userAgent: 'GPTBot',
+        userAgent: 'OAI-SearchBot',
         allow: '/',
       },
       {
@@ -18,11 +18,11 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
-        userAgent: 'Google-Extended',
+        userAgent: 'GPTBot',
         allow: '/',
       },
       {
-        userAgent: 'Anthropic',
+        userAgent: 'Google-Extended',
         allow: '/',
       },
       {
@@ -30,15 +30,23 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
+        userAgent: 'Claude-User',
+        allow: '/',
+      },
+      {
+        userAgent: 'Claude-SearchBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'anthropic-ai',
+        allow: '/',
+      },
+      {
         userAgent: 'PerplexityBot',
         allow: '/',
       },
       {
-        userAgent: 'Bytespider',
-        allow: '/',
-      },
-      {
-        userAgent: 'CCBot',
+        userAgent: 'Perplexity-User',
         allow: '/',
       },
       {

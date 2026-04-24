@@ -37,6 +37,14 @@ export default function AboutPage() {
       email: 'info@assetliftlending.com',
       areaServed: 'US',
     },
+    knowsAbout: [
+      'Hard money loans',
+      'Fix and flip financing',
+      'Bridge loans',
+      'DSCR rental loans',
+      'Ground-up construction financing',
+      'Real estate investor lending',
+    ],
   };
 
   return (
@@ -174,6 +182,46 @@ export default function AboutPage() {
                   <div key={item.title} className="rounded-xl border border-border bg-card p-5">
                     <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8 mb-20">
+            <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
+              <h2 className="text-3xl font-bold mb-4">How We Think About Execution</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Investors usually remember a lender for one of two reasons: the file stayed on
+                track when the deal became messy, or the lender created avoidable friction after
+                making a strong first impression. AssetLift is designed around the first outcome.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                That means surfacing issues early, staying realistic about leverage and timeline,
+                and matching the loan structure to the actual business plan instead of the most
+                aggressive version of the story. A clean bridge file should move differently than a
+                ground-up build, and a BRRRR refinance should move differently than a first-time
+                flip.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Our approach is operationally simple: communicate quickly, underwrite the actual
+                risk, and make sure borrowers know what can still derail the closing before they
+                sink more time or money into the file.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
+              <h2 className="text-3xl font-bold mb-4">Who We Work Best With</h2>
+              <div className="space-y-4">
+                {[
+                  'Investors buying properties that need speed, rehab funding, or a non-bank credit box',
+                  'Borrowers who want a lender that understands both flip exits and rental transitions',
+                  'Operators who need realistic feedback on leverage, reserves, valuation support, and closing friction',
+                  'Repeat borrowers and referral partners looking for consistent communication across multiple deals',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <Users className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-muted-foreground">{item}</p>
                   </div>
                 ))}
               </div>

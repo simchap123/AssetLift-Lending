@@ -58,9 +58,9 @@ export default function MarketsPage() {
       },
       {
         "@type": "ItemList",
-        name: "Featured City Lending Pages",
-        numberOfItems: featuredCities.length,
-        itemListElement: featuredCities.map((city, index) => ({
+        name: "City Lending Pages",
+        numberOfItems: CITIES.length,
+        itemListElement: CITIES.map((city, index) => ({
           "@type": "ListItem",
           position: index + 1,
           url: `https://www.assetliftlending.com/lending/${city.stateSlug}/${city.citySlug}`,
@@ -166,6 +166,34 @@ export default function MarketsPage() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="bg-card border border-border rounded-2xl p-6 md:p-8 mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">City Landing Pages</h2>
+            <p className="text-muted-foreground mb-6 max-w-3xl">
+              City-level pages are where local hard money queries usually happen. Browse the full
+              index below to move directly into metro-specific pages for borrowers searching terms
+              like hard money lender, fix and flip loans, and bridge loans plus city modifiers.
+            </p>
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+              {CITIES.map((city) => (
+                <Link
+                  key={`${city.stateSlug}-${city.citySlug}`}
+                  href={`/lending/${city.stateSlug}/${city.citySlug}`}
+                  className="rounded-xl border border-border p-4 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  <p className="font-semibold mb-1">
+                    {city.cityName}, {city.stateAbbreviation}
+                  </p>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Median home price {city.medianHomePrice}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-primary">
+                    View city page <ArrowRight className="w-4 h-4" />
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
 
