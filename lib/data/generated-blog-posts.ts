@@ -1055,6 +1055,130 @@ const buildQuestionPost = (
   ],
 });
 
+const CITY_PROGRAM_TARGETS = [
+  'los-angeles',
+  'san-diego',
+  'austin',
+  'dallas',
+  'houston',
+  'miami',
+  'tampa',
+  'orlando',
+  'atlanta',
+  'charlotte',
+  'raleigh',
+  'phoenix',
+  'nashville',
+  'seattle',
+  'sacramento',
+  'fort-worth',
+  'san-antonio',
+  'jacksonville',
+  'philadelphia',
+  'denver',
+] as const;
+
+const CITY_PROGRAM_TOPICS = CITIES.filter((city) =>
+  CITY_PROGRAM_TARGETS.includes(city.citySlug as (typeof CITY_PROGRAM_TARGETS)[number]),
+).flatMap((city) => [
+  {
+    slug: `fix-and-flip-loans-${city.citySlug}-${city.stateAbbreviation.toLowerCase()}`,
+    title: `Fix and Flip Loans in ${city.cityName}, ${city.stateAbbreviation}`,
+    description: `A local guide to fix and flip loans in ${city.cityName}, including how investors structure rehab deals and what lenders usually want to see.`,
+    category: 'Fix & Flip',
+    programLabel: 'Fix & Flip Loans',
+    programPath: '/loans/fix-and-flip',
+    cityPath: `/lending/${city.stateSlug}/${city.citySlug}`,
+    focus: 'fix and flip',
+    tags: [
+      `fix and flip loans ${city.cityName.toLowerCase()}`,
+      `hard money lender ${city.cityName.toLowerCase()}`,
+      `${city.cityName.toLowerCase()} rehab loan`,
+      `${city.cityName.toLowerCase()} house flipping`,
+    ],
+  },
+  {
+    slug: `bridge-loans-${city.citySlug}-${city.stateAbbreviation.toLowerCase()}`,
+    title: `Bridge Loans in ${city.cityName}, ${city.stateAbbreviation}`,
+    description: `How bridge loans work for investors in ${city.cityName} and what makes short-term transition files stronger in this market.`,
+    category: 'Bridge',
+    programLabel: 'Bridge Loans',
+    programPath: '/loans/bridge',
+    cityPath: `/lending/${city.stateSlug}/${city.citySlug}`,
+    focus: 'bridge',
+    tags: [
+      `bridge loans ${city.cityName.toLowerCase()}`,
+      `hard money lender ${city.cityName.toLowerCase()}`,
+      `${city.cityName.toLowerCase()} investor financing`,
+      `${city.cityName.toLowerCase()} bridge lender`,
+    ],
+  },
+]);
+
+const buildCityProgramPost = (
+  topic: (typeof CITY_PROGRAM_TOPICS)[number],
+  index: number,
+): BlogPost => {
+  const city = CITIES.find((entry) => topic.slug.includes(entry.citySlug));
+
+  if (!city) {
+    throw new Error(`Missing city for city program topic: ${topic.slug}`);
+  }
+
+  return {
+    slug: topic.slug,
+    title: topic.title,
+    description: topic.description,
+    publishedAt: publishedAtFor(
+      STATES.length +
+        CITIES.length +
+        COMPARISON_TOPICS.length +
+        EDUCATION_TOPICS.length +
+        PROGRAM_MARKET_TOPICS.length +
+        QUESTION_TOPICS.length +
+        index,
+    ),
+    author: 'AssetLift Team',
+    authorRole: 'Lending Specialists',
+    readTime: '6 min read',
+    category: topic.category,
+    tags: topic.tags,
+    heroImage: '/blog/city-program-guide.jpg',
+    sections: [
+      {
+        heading: `Why ${topic.focus.toUpperCase()} Search Intent Is Strong in ${city.cityName}`,
+        content: `${city.overview}\n\nWhen investors search for ${topic.focus} financing in ${city.cityName}, they are usually trying to solve a local problem, not just learn a definition. They want to know whether the lender understands neighborhoods, timelines, and exit patterns in a market where the median home price is around ${city.medianHomePrice}. That matters because a term sheet that looks fine in the abstract can break down quickly if the local comps, scope, or carry costs are weak.\n\nThe best borrowers in ${city.cityName} usually prepare the file around the actual submarket, not broad city-level optimism. That is what makes the financing more believable and easier to close.`,
+      },
+      {
+        heading: `What Makes a ${city.cityName} File Stronger`,
+        content: `${city.investmentHighlight}\n\nIn practical terms, lenders usually want to see a coherent property plan, a realistic budget, and an exit that still works if the timeline drifts. For a ${topic.focus} file, that means understanding how neighborhoods like ${city.topNeighborhoods.slice(0, 4).join(', ')} behave, whether the renovation or transition plan matches local demand, and whether the borrower has left enough room for the unexpected.`,
+      },
+      {
+        heading: `How Borrowers Usually Improve Terms in ${city.cityName}`,
+        content: `Better outcomes usually come from tighter underwriting assumptions, not just stronger negotiation. In ${city.cityName}, borrowers often improve terms by showing better comp support, cleaner contractor detail, more realistic reserves, and a clearer payoff story. That is usually more effective than chasing an aggressive headline that later gets squeezed by appraisal or diligence.\n\nIf you are active in ${city.cityName}, start with the <a href="${topic.cityPath}">${city.cityName} market page</a>, then compare it with <a href="${topic.programPath}">${topic.programLabel}</a> so the structure matches the actual deal.`,
+      },
+      {
+        heading: `Best Next Step for ${city.cityName} Investors`,
+        content: `The practical next step is to turn the deal into a lender-ready file. That means contract terms, scope, title readiness, insurance assumptions, and exit discipline all need to line up before the borrower starts shopping the market too aggressively.\n\nFor borrowers in ${city.cityName}, the fastest path is usually reviewing the local market page, pressure-testing the numbers against the correct product, and then moving into the <a href="/apply">application</a> once the file is coherent.`,
+      },
+    ],
+    faqs: [
+      {
+        question: `Are ${topic.programLabel.toLowerCase()} common in ${city.cityName}?`,
+        answer: `Yes. ${topic.programLabel} are commonly used in ${city.cityName} for investors who need speed, flexibility, or a cleaner fit for the property plan than a conventional lender can usually provide.`,
+      },
+      {
+        question: `What do lenders usually want to see in ${city.cityName}?`,
+        answer: `They usually want realistic local comps, a believable scope or transition plan, honest carry costs, and an exit that still works if the timeline stretches.`,
+      },
+      {
+        question: `What should I review before applying in ${city.cityName}?`,
+        answer: `Review the ${city.cityName} market page and the matching product page first. That gives you the best read on whether the numbers still work once real underwriting begins.`,
+      },
+    ],
+  };
+};
+
 export const GENERATED_BLOG_POSTS: BlogPost[] = [
   ...STATES.map((state, index) => buildStateGuide(state, index)),
   ...CITIES.map((city, index) => buildCityGuide(city, index)),
@@ -1062,4 +1186,5 @@ export const GENERATED_BLOG_POSTS: BlogPost[] = [
   ...EDUCATION_TOPICS.map((topic, index) => buildEducationPost(topic, index)),
   ...PROGRAM_MARKET_TOPICS.map((topic, index) => buildProgramMarketPost(topic, index)),
   ...QUESTION_TOPICS.map((topic, index) => buildQuestionPost(topic, index)),
+  ...CITY_PROGRAM_TOPICS.map((topic, index) => buildCityProgramPost(topic, index)),
 ];
