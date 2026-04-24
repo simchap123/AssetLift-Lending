@@ -694,9 +694,372 @@ const buildEducationPost = (
   ],
 });
 
+const STATE_PROGRAM_TARGETS = [
+  'florida',
+  'texas',
+  'california',
+  'georgia',
+  'north-carolina',
+  'arizona',
+  'tennessee',
+  'ohio',
+  'pennsylvania',
+  'virginia',
+  'washington',
+  'colorado',
+  'nevada',
+  'indiana',
+  'missouri',
+  'south-carolina',
+] as const;
+
+const PROGRAM_MARKET_TOPICS = STATES.filter((state) =>
+  STATE_PROGRAM_TARGETS.includes(state.slug as (typeof STATE_PROGRAM_TARGETS)[number]),
+).flatMap((state) => [
+  {
+    slug: `fix-and-flip-loans-in-${state.slug}`,
+    title: `Fix and Flip Loans in ${state.name}`,
+    description: `How investors use fix and flip loans in ${state.name}, what lenders usually look for, and how to structure a cleaner rehab file.`,
+    category: 'Fix & Flip',
+    programLabel: 'Fix & Flip Loans',
+    programPath: '/loans/fix-and-flip',
+    calculatorLabel: 'Fix & Flip Calculator',
+    calculatorPath: '/tools/fix-and-flip-calculator',
+    focus: 'fix and flip',
+    tags: [
+      `fix and flip loans ${state.name.toLowerCase()}`,
+      `${state.name.toLowerCase()} hard money lender`,
+      `${state.name.toLowerCase()} rehab loans`,
+      `${state.name.toLowerCase()} house flipping`,
+    ],
+  },
+  {
+    slug: `dscr-loans-in-${state.slug}`,
+    title: `DSCR Loans in ${state.name}`,
+    description: `A borrower guide to DSCR rental financing in ${state.name}, including what lenders review and how investors prepare stronger refinance and purchase files.`,
+    category: 'DSCR Rental',
+    programLabel: 'DSCR Rental Loans',
+    programPath: '/loans/dscr-rental',
+    calculatorLabel: 'DSCR Calculator',
+    calculatorPath: '/tools/dscr-calculator',
+    focus: 'DSCR rental',
+    tags: [
+      `DSCR loans ${state.name.toLowerCase()}`,
+      `${state.name.toLowerCase()} rental property loans`,
+      `${state.name.toLowerCase()} investment property financing`,
+      `${state.name.toLowerCase()} DSCR lender`,
+    ],
+  },
+]);
+
+const buildProgramMarketPost = (
+  topic: (typeof PROGRAM_MARKET_TOPICS)[number],
+  index: number,
+): BlogPost => {
+  const state = STATES.find((entry) => topic.slug.endsWith(entry.slug));
+
+  if (!state) {
+    throw new Error(`Missing state for program market topic: ${topic.slug}`);
+  }
+
+  const topCities = state.topCities.slice(0, 3).join(', ');
+  const focusCity = state.topCities[0] ?? state.name;
+
+  return {
+    slug: topic.slug,
+    title: topic.title,
+    description: topic.description,
+    publishedAt: publishedAtFor(
+      STATES.length +
+        CITIES.length +
+        COMPARISON_TOPICS.length +
+        EDUCATION_TOPICS.length +
+        index,
+    ),
+    author: 'AssetLift Team',
+    authorRole: 'Lending Specialists',
+    readTime: '7 min read',
+    category: topic.category,
+    tags: topic.tags,
+    heroImage: '/blog/state-program-guide.jpg',
+    sections: [
+      {
+        heading: `Why ${topic.focus.toUpperCase()} Search Intent Is Strong in ${state.name}`,
+        content: `${state.overview}\n\nBorrowers searching for ${topic.focus} financing in ${state.name} are usually not looking for a generic explanation. They want to know whether the lender understands markets like ${topCities}, how the program behaves under local conditions, and what usually makes a file stronger or weaker in that state. That is especially true when investors are comparing multiple lenders who all claim speed, leverage, and flexibility.\n\nThe useful question is not whether ${topic.programLabel.toLowerCase()} exist in ${state.name}. They obviously do. The better question is what kind of file actually closes cleanly and still works at payoff. That usually comes down to property plan, local comp support, reserves, and whether the exit still makes sense if the timeline slips.`,
+      },
+      {
+        heading: `What Lenders Usually Want to See in ${state.name}`,
+        content: `In ${state.name}, the strongest ${topic.focus} files tend to be organized before the borrower starts shopping term sheets. For a fix and flip file, that means a realistic scope, defendable after-repair value, and enough margin for interest, taxes, insurance, and sale friction. For a DSCR file, it means rent support, reserves, entity readiness, and a payment structure that still leaves room for the property to perform.\n\n${state.marketHighlight} That matters because lenders are not just underwriting the property. They are underwriting whether the borrower understands how deals really move in ${focusCity} and the rest of ${state.name}.`,
+      },
+      {
+        heading: `How Investors Usually Improve Terms in ${state.name}`,
+        content: `Better terms usually come from cleaner files, not from louder negotiation. Borrowers in ${state.name} often improve their outcome by tightening the basis, bringing better contractor detail, or showing a clearer payoff strategy. That is more useful than chasing a headline rate that changes later once appraisal, title, or insurance start putting pressure on the deal.\n\nIf you are actively buying or refinancing in ${state.name}, the best sequence is to review <a href="/lending/${state.slug}">${state.name} market coverage</a>, then move into <a href="${topic.programPath}">${topic.programLabel}</a> and the matching <a href="${topic.calculatorPath}">${topic.calculatorLabel}</a>. That gives you a more realistic starting point before the file goes live.`,
+      },
+      {
+        heading: `Best Next Step for ${state.name} Borrowers`,
+        content: `The right next step is not asking for maximum leverage in the abstract. It is turning your deal into something a lender can believe in. That means the contract, scope, reserves, insurance assumptions, and exit all have to line up with the real market. Borrowers who can do that usually get through underwriting faster and with fewer surprises.\n\nIf you are active in ${state.name}, start with the market and product pages, pressure-test the numbers, and move into the <a href="/apply">application</a> once the file is coherent. That is where the structure gets matched to the deal instead of staying hypothetical.`,
+      },
+    ],
+    faqs: [
+      {
+        question: `Are ${topic.programLabel.toLowerCase()} common in ${state.name}?`,
+        answer: `Yes. ${topic.programLabel} are commonly used by investors in ${state.name}, but the strongest outcomes usually come from borrowers who bring a well-prepared file with realistic local assumptions rather than just chasing the highest leverage.`,
+      },
+      {
+        question: `What is the biggest mistake borrowers make in ${state.name}?`,
+        answer: `The most common mistake is relying on broad state-level optimism instead of local underwriting. Deals in ${state.name} get stronger when the borrower has neighborhood-level comps, honest carry costs, and a believable exit plan.`,
+      },
+      {
+        question: `What should I review before applying in ${state.name}?`,
+        answer: `Review the ${state.name} market page, the relevant product page, and the matching calculator. That usually gives borrowers the clearest picture of whether the deal still works once real underwriting starts.`,
+      },
+    ],
+  };
+};
+
+const QUESTION_TOPICS = [
+  {
+    slug: 'what-is-a-hard-money-loan-for-real-estate-investors',
+    title: 'What Is a Hard Money Loan for Real Estate Investors?',
+    description: 'A plain-English guide to how hard money loans work for investors, what they cost, and when they make sense.',
+    category: 'Education',
+    focus: 'hard money loans for investors',
+    primaryLabel: 'Fix & Flip Loans',
+    primaryPath: '/loans/fix-and-flip',
+    tags: ['what is a hard money loan', 'hard money explained', 'investor financing basics'],
+  },
+  {
+    slug: 'when-does-a-bridge-loan-make-sense',
+    title: 'When Does a Bridge Loan Make Sense?',
+    description: 'Learn when bridge debt is the right tool for investors and when it is just covering a weak business plan.',
+    category: 'Bridge',
+    focus: 'when bridge debt is actually useful',
+    primaryLabel: 'Bridge Loans',
+    primaryPath: '/loans/bridge',
+    tags: ['when to use a bridge loan', 'bridge loan strategy', 'short-term real estate financing'],
+  },
+  {
+    slug: 'what-does-dscr-mean-in-real-estate',
+    title: 'What Does DSCR Mean in Real Estate?',
+    description: 'A straightforward explanation of DSCR, how lenders calculate it, and why it matters to rental-property borrowers.',
+    category: 'DSCR Rental',
+    focus: 'the meaning of DSCR in rental lending',
+    primaryLabel: 'DSCR Loans Explained',
+    primaryPath: '/blog/dscr-loans-explained',
+    tags: ['what is DSCR', 'DSCR meaning', 'rental property DSCR'],
+  },
+  {
+    slug: 'how-fast-can-a-hard-money-loan-close',
+    title: 'How Fast Can a Hard Money Loan Close?',
+    description: 'What actually controls closing speed on a hard money loan, and what borrowers can do to move faster.',
+    category: 'Education',
+    focus: 'hard money closing speed',
+    primaryLabel: 'How It Works',
+    primaryPath: '/how-it-works',
+    tags: ['hard money closing time', 'close investor loan fast', 'bridge loan speed'],
+  },
+  {
+    slug: 'how-much-down-payment-for-fix-and-flip-loan',
+    title: 'How Much Down Payment Do You Need for a Fix and Flip Loan?',
+    description: 'A borrower guide to down payment, reserves, and cash-to-close on fix and flip projects.',
+    category: 'Fix & Flip',
+    focus: 'cash-to-close on a fix and flip loan',
+    primaryLabel: 'Fix & Flip Calculator',
+    primaryPath: '/tools/fix-and-flip-calculator',
+    tags: ['fix and flip down payment', 'cash to close flip', 'rehab loan down payment'],
+  },
+  {
+    slug: 'how-do-rehab-draws-work',
+    title: 'How Do Rehab Draws Work?',
+    description: 'A guide to inspections, draw requests, and funding releases on rehab and fix and flip loans.',
+    category: 'Fix & Flip',
+    focus: 'rehab draw mechanics',
+    primaryLabel: 'How Fix and Flip Draws Work',
+    primaryPath: '/blog/how-fix-and-flip-draws-work',
+    tags: ['rehab draws', 'fix and flip draw process', 'construction draw guide'],
+  },
+  {
+    slug: 'what-credit-score-do-you-need-for-dscr-loan',
+    title: 'What Credit Score Do You Need for a DSCR Loan?',
+    description: 'How credit score affects DSCR pricing, leverage, and lender flexibility.',
+    category: 'DSCR Rental',
+    focus: 'credit score expectations on DSCR loans',
+    primaryLabel: 'DSCR Rental Loans',
+    primaryPath: '/loans/dscr-rental',
+    tags: ['DSCR credit score', 'credit score for rental loan', 'DSCR loan requirements'],
+  },
+  {
+    slug: 'can-you-use-hard-money-for-brrrr',
+    title: 'Can You Use Hard Money for BRRRR?',
+    description: 'Yes, but only if the purchase, rehab, rent, and refinance plan all work together.',
+    category: 'Education',
+    focus: 'using hard money in a BRRRR strategy',
+    primaryLabel: 'BRRRR to DSCR Refinance Guide',
+    primaryPath: '/blog/brrrr-refinance-into-dscr-loan',
+    tags: ['hard money for BRRRR', 'BRRRR financing', 'rehab to refinance'],
+  },
+  {
+    slug: 'what-fees-are-on-a-hard-money-loan',
+    title: 'What Fees Are on a Hard Money Loan?',
+    description: 'A borrower-first explanation of points, underwriting fees, extension costs, and other hard money loan fees.',
+    category: 'Education',
+    focus: 'hard money fee structure',
+    primaryLabel: 'Hard Money Loan Fees Explained',
+    primaryPath: '/blog/hard-money-loan-fees-explained',
+    tags: ['hard money fees', 'loan points', 'bridge loan fees'],
+  },
+  {
+    slug: 'how-to-qualify-for-dscr-loan',
+    title: 'How Do You Qualify for a DSCR Loan?',
+    description: 'A practical guide to rent coverage, reserves, entity setup, and credit for DSCR borrowers.',
+    category: 'DSCR Rental',
+    focus: 'DSCR qualification',
+    primaryLabel: 'DSCR Loans Explained',
+    primaryPath: '/blog/dscr-loans-explained',
+    tags: ['qualify for DSCR loan', 'DSCR requirements', 'rental property loan qualification'],
+  },
+  {
+    slug: 'how-to-choose-hard-money-lender',
+    title: 'How to Choose a Hard Money Lender',
+    description: 'The questions borrowers should ask before selecting a hard money lender for a live deal.',
+    category: 'Education',
+    focus: 'selecting the right hard money lender',
+    primaryLabel: 'Questions to Ask a Hard Money Lender',
+    primaryPath: '/blog/questions-to-ask-a-hard-money-lender',
+    tags: ['choose a hard money lender', 'compare hard money lenders', 'investor loan questions'],
+  },
+  {
+    slug: 'can-you-close-investment-loan-in-llc',
+    title: 'Can You Close an Investment Property Loan in an LLC?',
+    description: 'How LLC vesting works on business-purpose real estate loans and what documents lenders usually need.',
+    category: 'Education',
+    focus: 'closing an investor loan in an LLC',
+    primaryLabel: 'How Funding Works',
+    primaryPath: '/how-funding-works',
+    tags: ['LLC investment property loan', 'entity closing', 'LLC hard money loan'],
+  },
+  {
+    slug: 'how-is-arv-calculated',
+    title: 'How Is ARV Calculated?',
+    description: 'Learn how after-repair value is estimated and where investors usually make the biggest ARV mistakes.',
+    category: 'Fix & Flip',
+    focus: 'ARV calculation and comp logic',
+    primaryLabel: 'Fix & Flip Calculator',
+    primaryPath: '/tools/fix-and-flip-calculator',
+    tags: ['how to calculate ARV', 'after repair value', 'flip comps'],
+  },
+  {
+    slug: 'what-is-business-purpose-loan',
+    title: 'What Is a Business-Purpose Loan?',
+    description: 'A plain-English guide to business-purpose real estate lending and how it differs from consumer mortgages.',
+    category: 'Education',
+    focus: 'business-purpose loan positioning',
+    primaryLabel: 'How Funding Works',
+    primaryPath: '/how-funding-works',
+    tags: ['business purpose loan', 'investment property lending', 'non-owner occupied loan'],
+  },
+  {
+    slug: 'when-should-you-refinance-after-rehab',
+    title: 'When Should You Refinance After Rehab?',
+    description: 'How investors decide when a renovated property is ready for refinance instead of continued short-term debt.',
+    category: 'Education',
+    focus: 'timing a refinance after rehab',
+    primaryLabel: 'Refinance After Renovation Guide',
+    primaryPath: '/blog/refinance-after-renovation-guide',
+    tags: ['refinance after rehab', 'BRRRR timing', 'post rehab refinance'],
+  },
+  {
+    slug: 'what-reserves-do-lenders-want',
+    title: 'What Reserves Do Lenders Want to See?',
+    description: 'A guide to liquidity, reserves, and why lenders care about cash beyond the down payment.',
+    category: 'Education',
+    focus: 'reserves and liquidity in investor lending',
+    primaryLabel: 'DSCR Loan Reserves Explained',
+    primaryPath: '/blog/dscr-loan-reserves-explained',
+    tags: ['loan reserves', 'liquidity for investors', 'DSCR reserves'],
+  },
+  {
+    slug: 'can-you-get-dscr-loan-for-airbnb',
+    title: 'Can You Get a DSCR Loan for an Airbnb?',
+    description: 'How DSCR lenders review short-term rentals and what borrowers should expect on underwriting.',
+    category: 'DSCR Rental',
+    focus: 'DSCR on short-term rentals',
+    primaryLabel: 'How Short-Term Rental DSCR Qualification Works',
+    primaryPath: '/blog/short-term-rental-dscr-qualification',
+    tags: ['DSCR for Airbnb', 'short term rental DSCR', 'vacation rental financing'],
+  },
+  {
+    slug: 'what-kills-hard-money-deal',
+    title: 'What Usually Kills a Hard Money Deal?',
+    description: 'A borrower guide to the most common reasons hard money files fall apart before closing.',
+    category: 'Education',
+    focus: 'why hard money deals fail before closing',
+    primaryLabel: 'How It Works',
+    primaryPath: '/how-it-works',
+    tags: ['hard money deal falls apart', 'loan denial reasons', 'investor closing problems'],
+  },
+];
+
+const buildQuestionPost = (
+  topic: (typeof QUESTION_TOPICS)[number],
+  index: number,
+): BlogPost => ({
+  slug: topic.slug,
+  title: topic.title,
+  description: topic.description,
+  publishedAt: publishedAtFor(
+    STATES.length +
+      CITIES.length +
+      COMPARISON_TOPICS.length +
+      EDUCATION_TOPICS.length +
+      PROGRAM_MARKET_TOPICS.length +
+      index,
+  ),
+  author: 'AssetLift Team',
+  authorRole: 'Lending Specialists',
+  readTime: '5 min read',
+  category: topic.category,
+  tags: topic.tags,
+  heroImage: '/blog/question-guide.jpg',
+  sections: [
+    {
+      heading: `The Real Answer on ${topic.focus}`,
+      content: `${topic.title} is usually asked because borrowers are trying to simplify a deal decision into one question. The reality is more specific. Lenders are looking at structure, timing, reserves, property risk, and whether the borrower has a coherent path from application to payoff. That is why the answer to ${topic.focus} is rarely just yes or no.\n\nWhat matters more is whether the file is clean, realistic, and built around the actual business plan. Borrowers who understand that early tend to waste less time and compare financing options more effectively.`,
+    },
+    {
+      heading: 'What Borrowers Usually Miss',
+      content: `The biggest mistake is focusing on the headline answer instead of the underlying mechanics. Even when the broad answer is favorable, the actual outcome still depends on valuation, title, reserves, insurance, contractor execution, and the payoff strategy. Borrowers get into trouble when they assume the term sheet alone guarantees a good deal.\n\nThat is why the better approach is to understand the process around the question, not just the surface definition. It is also why internal resources that explain the next layer matter more than generic search summaries.`,
+    },
+    {
+      heading: 'How to Use This in a Live Deal',
+      content: `If this question is showing up because you are actively buying, refinancing, or comparing lenders, use it as a trigger to pressure-test the file. Review the matching resource at <a href="${topic.primaryPath}">${topic.primaryLabel}</a>, then make sure the numbers still work once real underwriting starts.\n\nThe strongest next step is almost always the same: get specific about the property, the timeline, and the exit. Once those are clear, the financing decision gets much easier and much less theoretical.`,
+    },
+    {
+      heading: 'Best Next Step',
+      content: `Borrowers who move efficiently usually do two things. They study the correct resource instead of reading generic advice, and they turn the question into a concrete file with documentation and realistic assumptions. That is the difference between researching financing and actually preparing to close.\n\nIf this topic matches your deal, review <a href="${topic.primaryPath}">${topic.primaryLabel}</a> and move into the <a href="/apply">application</a> once the numbers and documents are organized.`,
+    },
+  ],
+  faqs: [
+    {
+      question: `Why do borrowers ask about ${topic.focus}?`,
+      answer: `Usually because they want a faster way to understand whether a loan or structure fits their deal. The better answer comes from looking at the whole file, not just the headline question.`,
+    },
+    {
+      question: `What matters more than the surface answer?`,
+      answer: `Execution. Even when the broad answer is yes, the actual closing outcome depends on property quality, reserves, valuation support, title, and the borrower’s exit plan.`,
+    },
+    {
+      question: `What should I review next?`,
+      answer: `Start with ${topic.primaryLabel} at ${topic.primaryPath}. That will usually give you the practical next layer before you compare live term sheets or submit an application.`,
+    },
+  ],
+});
+
 export const GENERATED_BLOG_POSTS: BlogPost[] = [
   ...STATES.map((state, index) => buildStateGuide(state, index)),
   ...CITIES.map((city, index) => buildCityGuide(city, index)),
   ...COMPARISON_TOPICS.map((topic, index) => buildComparisonPost(topic, index)),
   ...EDUCATION_TOPICS.map((topic, index) => buildEducationPost(topic, index)),
+  ...PROGRAM_MARKET_TOPICS.map((topic, index) => buildProgramMarketPost(topic, index)),
+  ...QUESTION_TOPICS.map((topic, index) => buildQuestionPost(topic, index)),
 ];

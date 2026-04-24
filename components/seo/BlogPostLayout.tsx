@@ -34,6 +34,11 @@ const RESOURCE_MAP: Record<string, Array<{ label: string; href: string }>> = {
     { label: 'How Funding Works', href: '/how-funding-works' },
     { label: 'Apply for Funding', href: '/apply' },
   ],
+  Bridge: [
+    { label: 'Bridge Loans', href: '/loans/bridge' },
+    { label: 'How It Works', href: '/how-it-works' },
+    { label: 'Markets Coverage', href: '/markets' },
+  ],
   Construction: [
     { label: 'Ground-Up Construction Loans', href: '/loans/ground-up-construction' },
     { label: 'Bridge Loans', href: '/loans/bridge' },
