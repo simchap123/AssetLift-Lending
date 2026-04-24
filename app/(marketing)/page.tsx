@@ -109,12 +109,12 @@ export default function HomePage() {
       '@type': 'OfferCatalog',
       name: 'Loan Programs',
       itemListElement: [
-        {
-          '@type': 'Offer',
-          name: 'Fix & Flip Loans',
-          description: 'Short-term financing for purchasing and renovating investment properties. Up to 92.5% LTC, 100% of rehab funded, with many files closing in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.',
-          url: 'https://www.assetliftlending.com/loans/fix-and-flip',
-        },
+          {
+            '@type': 'Offer',
+            name: 'Fix & Flip Loans',
+            description: 'Short-term financing for purchasing and renovating investment properties. Up to 92.5% LTC, 100% of rehab funded, and closings in as fast as 5 business days for experienced investors with 3 or more completed flips, subject to underwriting, valuation, title, and file complexity.',
+            url: 'https://www.assetliftlending.com/loans/fix-and-flip',
+          },
         {
           '@type': 'Offer',
           name: 'DSCR Rental Loans',

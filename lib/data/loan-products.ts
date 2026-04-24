@@ -18,7 +18,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     slug: "fix-and-flip",
     title: "Fix & Flip Loans - Fast Funding for House Flipping Projects",
     description:
-      "AssetLift Lending offers fix-and-flip loans with fast closings, rates starting as low as 8.5% for qualifying scenarios, and up to 90% LTV. Finance your next renovation project with business-purpose financing built for real estate investors.",
+      "AssetLift Lending offers fix-and-flip loans with rates starting as low as 8.5% for qualifying scenarios, up to 90% LTV, and closings in as fast as 5 business days for experienced investors with 3 or more completed flips, subject to underwriting, valuation, title, and file complexity.",
     heroTitle: "Fix & Flip Loans",
     heroSubtitle:
       "Close in days, not months. Get the capital you need to acquire and renovate investment properties with speed and certainty.",
@@ -28,7 +28,10 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       { label: "Loan-to-Purchase Price", value: "Up to 90%" },
       { label: "Renovation Financing", value: "Up to 100% of rehab costs" },
       { label: "Loan Term", value: "6 to 18 months" },
-      { label: "Closing Speed", value: "As fast as 7-14 business days" },
+      {
+        label: "Closing Speed",
+        value: "As fast as 5 business days for experienced investors with 3+ completed flips",
+      },
       { label: "Interest Rates Starting At", value: "8.5%" },
     ],
     features: [
@@ -55,7 +58,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         title: "Experienced Borrower Rate Discounts",
         description:
-          "Investors with a verified track record of completed flips qualify for reduced origination fees and lower interest rates. We reward experience because experienced borrowers reduce our risk. Bring documentation of your last 3 to 5 completed projects at application and our pricing team will build a customized rate sheet for your deal.",
+          "Investors with a verified track record of completed flips qualify for reduced origination fees, lower interest rates, and potentially faster closings. Experienced investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Bring documentation of your last 3 to 5 completed projects at application and our pricing team will build a customized rate sheet for your deal.",
       },
       {
         title: "Flexible Exit Strategies",
@@ -87,7 +90,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         requirement: "Real Estate Experience",
         detail:
-          "First-time flippers are welcome, though borrowers with no prior flipping experience may face slightly higher rates or lower maximum leverage. Having a licensed general contractor on your team or documented construction management experience strengthens your application. Repeat borrowers with 3 or more completed flips receive preferential pricing.",
+          "First-time flippers are welcome, though borrowers with no prior flipping experience may face slightly higher rates or lower maximum leverage. Having a licensed general contractor on your team or documented construction management experience strengthens your application. Repeat borrowers with 3 or more completed flips receive preferential pricing and may qualify for closings in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
       },
     ],
     process: [
@@ -138,7 +141,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         question: "How quickly can AssetLift Lending close a fix-and-flip loan?",
         answer:
-          "Many straightforward files can close in as fast as 7 to 14 business days from the date a complete application is received. Timing depends on how quickly valuations are completed, how fast you provide requested documents, and the title company's scheduling availability.",
+          "Many straightforward fix-and-flip files can close in as fast as 7 to 14 business days from the date a complete application is received. Experienced investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
       },
       {
         question: "Do you finance the full renovation cost?",

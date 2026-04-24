@@ -26,6 +26,7 @@ LOAN PROGRAMS:
    - Term: 6-18 months
    - Rates starting at 8.5%
    - Many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
+   - Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
    - No prepayment penalties
    - Min FICO: 620+ (best rates at 700+)
    - Min down payment: 10% of purchase price
@@ -71,6 +72,7 @@ LOAN PROGRAMS:
    - Term: 3-24 months
    - Rates starting at 10%
    - Many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
+   - Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
    - Loan range: $100K - $3MM
    - Interest-only monthly payments
    - No prepayment penalties
@@ -83,7 +85,7 @@ PROCESS (4 STEPS):
 1. Submit Your Deal - online form takes <5 min, no fee, no credit pull
 2. Receive Quote - hear back within 24 hours, usually within a few hours, with a soft-quote or any follow-up items needed
 3. Due Diligence - appraisal/BPO ordered, title + insurance run concurrently (3-5 biz days)
-4. Close & Fund - many hard money deals can close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
+4. Close & Fund - many hard money deals can close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity. Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
 
 DOCUMENTS TYPICALLY NEEDED:
 - Purchase contract or proof of ownership

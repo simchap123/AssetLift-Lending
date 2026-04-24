@@ -16,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: "How quickly can you close?",
-      answer: "Many deals can close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.",
+      answer: "Many deals can close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity. Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
     },
     {
       question: "What are your minimum loan requirements?",
