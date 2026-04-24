@@ -25,7 +25,7 @@ LOAN PROGRAMS:
    - Total loan capped at 70-75% of ARV
    - Term: 6-18 months
    - Rates starting at 8.5%
-   - Close in as fast as 7-14 business days
+   - Many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
    - No prepayment penalties
    - Min FICO: 620+ (best rates at 700+)
    - Min down payment: 10% of purchase price
@@ -70,7 +70,7 @@ LOAN PROGRAMS:
    - Up to 75% LTV (as-is value)
    - Term: 3-24 months
    - Rates starting at 10%
-   - Close in as fast as 7-14 business days
+   - Many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
    - Loan range: $100K - $3MM
    - Interest-only monthly payments
    - No prepayment penalties

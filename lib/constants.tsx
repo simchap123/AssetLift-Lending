@@ -67,18 +67,18 @@ export const LENDING_PROCESS: ProcessStep[] = [
   },
   {
     title: 'Funding',
-    description: 'Final approval and closing can happen in as fast as 7-14 business days.'
+    description: 'Final approval and many closings can happen in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.'
   }
 ];
 
 export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "What states does AssetLift Lending operate in?",
-    answer: "We lend nationwide across the US, with some exclusions in AK, ND, SD, and VT. We are heavily focused on high-growth urban and suburban markets."
+    answer: "We currently provide financing in 46 U.S. states and do not currently operate in Alaska, North Dakota, South Dakota, or Vermont. We are heavily focused on high-growth urban and suburban markets."
   },
   {
     question: "How long does it take to get a loan approved?",
-    answer: "We get back to you within 24 hours, usually within a few hours. Many deals can close in as fast as 7 to 14 business days, subject to underwriting and valuation."
+    answer: "We get back to you within 24 hours, usually within a few hours. Many deals can close in as fast as 7 to 14 business days, subject to underwriting, valuation, title, and file complexity."
   },
   {
     question: "Do you offer financing for first-time investors?",

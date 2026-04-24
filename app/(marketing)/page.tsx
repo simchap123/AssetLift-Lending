@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
 import Hero from "@/components/landing/Hero";
 import WhyAssetLift from "@/components/landing/WhyAssetLift";
@@ -16,7 +16,7 @@ import { AGGREGATE_REVIEW_RATING, BORROWER_REVIEWS } from "@/lib/data/reviews";
 export const metadata: Metadata = createMetadata({
   title: "Hard Money Loans for Real Estate Investors",
   description:
-    "Private lending for fix and flip, DSCR rental, bridge, and construction loans. Hear back within 24 hours, usually within a few hours, and close in as fast as 7-14 days.",
+    "Private lending for fix and flip, DSCR rental, bridge, and construction loans. Hear back within 24 hours, usually within a few hours, and many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.",
   path: "/",
   keywords: [
     "hard money loans",
@@ -112,7 +112,7 @@ export default function HomePage() {
         {
           '@type': 'Offer',
           name: 'Fix & Flip Loans',
-          description: 'Short-term financing for purchasing and renovating investment properties. Up to 92.5% LTC, 100% of rehab funded, with closings in as fast as 7-14 business days.',
+          description: 'Short-term financing for purchasing and renovating investment properties. Up to 92.5% LTC, 100% of rehab funded, with many files closing in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.',
           url: 'https://www.assetliftlending.com/loans/fix-and-flip',
         },
         {
@@ -124,7 +124,7 @@ export default function HomePage() {
         {
           '@type': 'Offer',
           name: 'Bridge Loans',
-          description: 'Short-term capital for fast closings and transitional situations. Up to 80% LTV with closings in as fast as 7-14 business days.',
+          description: 'Short-term capital for fast closings and transitional situations. Up to 80% LTV with many files closing in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.',
           url: 'https://www.assetliftlending.com/loans/bridge',
         },
         {
@@ -196,3 +196,4 @@ export default function HomePage() {
     </>
   );
 }
+

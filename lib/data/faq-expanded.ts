@@ -121,7 +121,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "Can I refinance from a fix & flip loan to a DSCR loan?",
-        answer: "Absolutely - this is a very common strategy known as BRRRR (Buy, Rehab, Rent, Refinance, Repeat). Once your rehab is complete and the property is rented, we can seamlessly refinance you into a 30-year DSCR loan."
+        answer: "Absolutely - this is a very common strategy known as BRRRR (Buy, Rehab, Rent, Refinance, Repeat). Once your rehab is complete and the property is rented, you may be able to refinance into a 30-year DSCR loan, subject to the property, appraisal, rent support, and the actual execution path."
       },
     ],
   },

@@ -341,7 +341,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         title: "Close in Your LLC or Entity Name",
         description:
-          "Title the property in your LLC, LP, or corporation from day one. Unlike conventional mortgages that require individual vesting, DSCR loans are originated directly in the name of your business entity. This preserves the liability protection you set up your LLC to provide, without the risk of triggering a due-on-sale clause by transferring title after closing.",
+          "Title the property in your LLC, LP, or corporation from day one. Unlike conventional mortgages that often require individual vesting, DSCR loans can typically close in the name of your business entity, subject to program guidelines and the actual execution path. This helps preserve the liability protection you set up your LLC to provide without having to rely on a post-closing title transfer.",
       },
       {
         title: "No Property Count Limits",
