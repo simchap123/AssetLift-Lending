@@ -9,7 +9,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     items: [
       {
         question: "What is AssetLift Lending?",
-        answer: "AssetLift Lending provides private lending for short-term and long-term real estate investment loans. We offer fix & flip, ground-up construction, DSCR rental, and bridge financing for non-owner occupied investment properties across 46 states, with some deals brokered with capital partners."
+        answer: "AssetLift Lending is a business-purpose real estate investment financing platform. We work with borrowers on fix and flip, ground-up construction, DSCR rental, and bridge scenarios for non-owner-occupied investment properties across 46 states. Depending on the file, a deal may be funded directly or placed with a capital partner."
       },
       {
         question: "What states do you lend in?",
@@ -17,7 +17,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "Are you a direct lender or a broker?",
-        answer: "AssetLift provides private lending on many deals, and some deals are brokered with capital partners depending on the program, market, and borrower profile. Our goal is to match your file to the path that gives you the best chance of a reliable closing."
+        answer: "It depends on the transaction. AssetLift may provide direct lending on some deals, and some deals may be brokered or placed with capital partners depending on the program, market, borrower profile, and actual file structure. Borrowers should not assume every transaction is funded through the same channel."
       },
       {
         question: "Do you work with mortgage brokers?",
@@ -50,7 +50,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "What are your interest rates?",
-        answer: "Rates vary by program, leverage, experience, and credit profile. Fix & flip rates start as low as 8.5%, and DSCR rental rates start as low as 5.75%. Contact us for a personalized rate quote based on your specific deal."
+        answer: "Rates vary by program, leverage, execution path, experience, and credit profile. Fix and flip rates start as low as 8.5%, and DSCR rental rates start as low as 5.75% for qualifying scenarios. Contact us for a personalized quote based on your specific deal."
       },
     ],
   },
@@ -92,7 +92,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "What is your application process?",
-        answer: "Step 1: Submit your deal details through our online form or call us. Step 2: We get back to you within 24 hours, usually within a few hours. Step 3: If you move forward, we order valuations and begin underwriting. Step 4: Close and fund, often in as fast as 7-14 business days."
+        answer: "Step 1: Submit your deal details through our online form or call us. Step 2: We get back to you within 24 hours, usually within a few hours. Step 3: If you move forward, we order valuations and begin underwriting. Step 4: If approved, the loan proceeds through the applicable lending or partner-funding channel and may close in as fast as 7-14 business days on many files."
       },
       {
         question: "What documents do you need?",

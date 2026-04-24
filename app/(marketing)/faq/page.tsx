@@ -101,9 +101,9 @@ export default function FAQPage() {
                   description: 'Short-term capital for fast closings, payoffs, and transitional assets.',
                 },
                 {
-                  label: 'Compare Loan Options',
-                  href: '/compare/hard-money-lender-vs-bank',
-                  description: 'See when private lending, banks, and investor loan products fit best.',
+                  label: 'How Funding Works',
+                  href: '/how-funding-works',
+                  description: 'See how direct lending, brokered transactions, and partner-capital execution may differ.',
                 },
               ].map((resource) => (
                 <Link

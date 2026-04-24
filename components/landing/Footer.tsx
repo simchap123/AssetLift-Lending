@@ -36,6 +36,9 @@ const Footer = () => {
                 <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
               </li>
               <li>
+                <Link href="/how-funding-works" className="hover:text-primary transition-colors">How Funding Works</Link>
+              </li>
+              <li>
                 <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
               </li>
               <li>

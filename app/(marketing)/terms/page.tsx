@@ -61,12 +61,31 @@ export default function TermsPage() {
                   Rates, terms, fees, and leverage are subject to change without notice.
                 </li>
                 <li>
+                  Loan programs may be funded directly, brokered, or placed with third-party
+                  lending partners depending on the transaction.
+                </li>
+                <li>
                   Past performance of funded loans does not guarantee future results.
                 </li>
               </ul>
               <p className="mt-4">
                 AssetLift Lending reserves the right to modify, suspend, or discontinue any loan
                 program at any time without prior notice.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-foreground mb-3">Execution and Funding Channels</h2>
+              <p className="mb-4">
+                Website references to lending products, rates, timelines, or program availability
+                do not mean that every transaction is funded directly by AssetLift Lending. Depending
+                on the transaction, AssetLift may act in a lending, brokering, referral, or
+                capital-partner placement capacity to help move the file toward closing.
+              </p>
+              <p>
+                Borrowers should review all transaction-specific disclosures, lender documents,
+                compensation disclosures where applicable, and state-specific notices provided in
+                connection with the actual loan structure.
               </p>
             </section>
 
@@ -131,7 +150,14 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold text-foreground mb-3">Contact</h2>
               <p>
                 If you have questions about these Terms of Service, contact AssetLift Lending at
-                `info@assetliftlending.com` or `+1 (929) 639-2284`.
+                {' '}
+                <a href="mailto:info@assetliftlending.com" className="underline hover:text-primary transition-colors">
+                  info@assetliftlending.com
+                </a>{' '}
+                or{' '}
+                <a href="tel:+19296392284" className="underline hover:text-primary transition-colors">
+                  +1 (929) 639-2284
+                </a>.
               </p>
             </section>
           </div>

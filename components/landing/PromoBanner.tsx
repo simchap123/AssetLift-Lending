@@ -5,9 +5,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const messages = [
-  { text: "DSCR Rates Starting As Low As", highlight: "5.75%" },
+  { text: "Qualifying DSCR Rates Starting As Low As", highlight: "5.75%" },
   {
-    text: "Hard Money Fix & Flip Loans Starting As Low As",
+    text: "Qualifying Fix and Flip Rates Starting As Low As",
     highlight: "8.5%",
   },
 ];
@@ -49,7 +49,7 @@ const PromoBanner = () => {
           href="/apply"
           className="inline-flex items-center gap-2 px-5 py-2 bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-bold rounded-md transition-all duration-200 hover:shadow-[0_0_20px_hsl(45,93%,47%,0.4)] hover:scale-105 shrink-0"
         >
-          Get Started
+          Get My Quote
           <ArrowRight className="w-4 h-4" />
         </Link>
       </div>

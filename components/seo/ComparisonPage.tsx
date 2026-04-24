@@ -33,6 +33,7 @@ function getComparisonLabels(heroTitle: string) {
 
 export default function ComparisonPage({ comparison }: ComparisonPageProps) {
   const labels = getComparisonLabels(comparison.heroTitle);
+  const topFeatures = comparison.comparisonTable.slice(0, 4);
 
   return (
     <div className="min-h-screen">
@@ -54,7 +55,37 @@ export default function ComparisonPage({ comparison }: ComparisonPageProps) {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {comparison.introText}
             </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href="/apply"
+                className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:opacity-95 transition-opacity"
+              >
+                Get a Quote <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/compare"
+                className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-3 text-sm font-semibold hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+              >
+                View More Comparisons
+              </Link>
+            </div>
           </motion.div>
+        </div>
+      </section>
+
+      <section className="pb-12">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+            {topFeatures.map((row) => (
+              <div key={row.feature} className="rounded-xl border border-border bg-card p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-2">
+                  {row.feature}
+                </p>
+                <p className="font-semibold mb-2">{row.optionA}</p>
+                <p className="text-sm text-muted-foreground">{row.optionB}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

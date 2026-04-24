@@ -12,7 +12,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What types of properties do you lend on?",
-      answer: "We finance non-owner occupied residential investment properties including single-family homes, 2-4 unit properties, condos, and townhomes. We focus on fix & flip, ground-up construction, rental, and bridge loan scenarios.",
+      answer: "We finance non-owner-occupied residential investment properties including single-family homes, 2-4 unit properties, condos, and townhomes. The most common use cases are fix and flip, bridge, DSCR rental, and ground-up construction files.",
     },
     {
       question: "How quickly can you close?",
@@ -20,15 +20,15 @@ const FAQ = () => {
     },
     {
       question: "What are your minimum loan requirements?",
-      answer: "Our minimum loan amount is $100,000 and maximum is $5,000,000. We require a minimum credit score of 660 and prefer borrowers with real estate investing experience, though we work with first-time investors on a case-by-case basis.",
+      answer: "Most programs start at $100,000 and go up to $5,000,000. We generally look for a 660+ credit profile, enough liquidity to support the deal, and a business plan that makes sense for the property and exit.",
     },
     {
       question: "Do you require personal guarantees?",
-      answer: "Yes, we typically require a full personal guarantee from all members with 20%+ ownership in the borrowing entity. This helps us offer competitive rates and terms.",
+      answer: "Yes. We typically require a full personal guarantee from all members with 20% or more ownership in the borrowing entity.",
     },
     {
       question: "What states do you lend in?",
-      answer: "We are a nationwide lender, providing financing in most U.S. states. Some state-specific restrictions may apply. Contact us to confirm availability in your market.",
+      answer: "We lend in 46 states. If you are not sure whether your market fits our current footprint, reach out and we can confirm quickly.",
     },
   ];
 
@@ -42,9 +42,9 @@ const FAQ = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <h2 data-speakable className="text-4xl md:text-5xl font-bold mb-4">FAQ</h2>
+          <h2 data-speakable className="text-4xl md:text-5xl font-bold mb-4">Questions Borrowers Ask Before They Apply</h2>
           <p data-speakable className="text-muted-foreground text-lg">
-            Quick answers to common questions
+            Quick answers on timing, loan fit, guarantees, and eligibility.
           </p>
         </motion.div>
 

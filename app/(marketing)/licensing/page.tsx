@@ -55,7 +55,7 @@ export default function LicensingPage() {
             Licensing & Disclosures
           </h1>
           <p className="text-muted-foreground text-lg mb-10">
-            Regulatory information, lending disclosures, and compliance details.
+            Regulatory information, execution-model disclosures, and business-purpose lending details.
           </p>
 
           <div className="space-y-10 text-muted-foreground leading-relaxed">
@@ -100,8 +100,8 @@ export default function LicensingPage() {
                   owner-occupied financing.
                 </p>
                 <p>
-                  All loans are subject to underwriting approval, property valuation, title
-                  review, and borrower qualification.
+                  All loans are subject to underwriting approval, property valuation, title review,
+                  borrower qualification, and program availability.
                 </p>
                 <p>
                   Interest rates, fees, terms, and leverage vary based on property type, location,
@@ -110,6 +110,33 @@ export default function LicensingPage() {
                 <p>
                   Loan products described on this website are for informational purposes only and
                   do not constitute a commitment to lend.
+                </p>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-foreground mb-3">Execution Model Disclosure</h2>
+              <div className="space-y-4">
+                <p>
+                  AssetLift Lending may handle transactions through direct lending, brokered
+                  execution, or capital-partner / third-party funding structures depending on the
+                  deal, program, market, and borrower profile.
+                </p>
+                <p>
+                  This website should not be read to mean that every transaction is funded directly
+                  by AssetLift or that every program is available through the same lending channel.
+                </p>
+                <p>
+                  If a transaction is placed with a third-party lender or capital partner, the
+                  borrower may receive additional lender-specific, broker, licensing, or closing
+                  disclosures as required by applicable law and the actual transaction structure.
+                </p>
+                <p>
+                  For a plain-English explanation of how deals may be handled, review our{' '}
+                  <a href="/how-funding-works" className="underline hover:text-primary transition-colors">
+                    How Funding Works
+                  </a>{' '}
+                  page.
                 </p>
               </div>
             </section>
@@ -147,9 +174,15 @@ export default function LicensingPage() {
                   state-specific availability.
                 </p>
                 <p>
-                  State-specific licensing and disclosure information will be published here as
-                  applicable. If you have questions about lending activity in a particular state,
-                  please contact us directly.
+                  State-specific licensing obligations can vary depending on whether a transaction
+                  is originated, brokered, table-funded, white-labeled, or otherwise executed
+                  through a partner channel. If you have questions about lending activity in a
+                  particular state, contact us directly before relying on any website description.
+                </p>
+                <p>
+                  State-specific licensing and disclosure information should be reviewed and updated
+                  with counsel and your licensing team based on the exact entity, role, and
+                  transaction structure used in that state.
                 </p>
               </div>
             </section>

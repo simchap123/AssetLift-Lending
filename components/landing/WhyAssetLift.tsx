@@ -23,7 +23,7 @@ const panels = [
   {
     title: "Built for Repeat Investors",
     content:
-      "Our programs reward experienced borrowers with better rates, higher leverage, and faster closings. The more you work with AssetLift, the better your terms become. Count on our full support before and after closing — your project is the start of a lasting relationship.",
+      "Our programs reward experienced borrowers with better rates, higher leverage, and faster closings. The more you work with AssetLift, the better your terms become. Count on our full support before and after closing. Your project is the start of a lasting relationship.",
   },
 ];
 
@@ -39,7 +39,7 @@ const WhyAssetLift = () => {
       <div className="container px-4 md:px-6">
         {/* Two-column layout */}
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
-          {/* Left column — sticky heading */}
+        {/* Left column: sticky heading */}
           <motion.div
             className="lg:sticky lg:top-32 lg:self-start"
             initial={{ opacity: 0, x: -30 }}
@@ -48,19 +48,17 @@ const WhyAssetLift = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-              Why Real Estate Investors Choose{" "}
+              Why Borrowers Choose{" "}
               <span className="gradient-text">AssetLift Lending</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              AssetLift Lending provides private lending
-              for real estate investors nationwide. We provide fast, flexible financing for fix and flip
-              projects, ground-up construction, DSCR rental properties, and bridge loans. Our team
-              understands that in competitive real estate markets, the ability to close quickly and
-              reliably is what separates successful investors from those who miss out on opportunities.
+              AssetLift helps real estate investors finance deals that banks usually slow down,
+              overcomplicate, or decline. The focus is simple: give borrowers a realistic path to
+              closing for fix and flip, bridge, rental, and construction files without wasting time.
             </p>
           </motion.div>
 
-          {/* Right column — accordion panels */}
+          {/* Right column: accordion panels */}
           <motion.div
             className="flex flex-col gap-3"
             initial={{ opacity: 0, x: 30 }}
@@ -133,27 +131,23 @@ const WhyAssetLift = () => {
         >
           <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8">
             <h3 className="text-2xl font-bold mb-4">
-              Hard Money Lending Built for Today&apos;s Real Estate Market
+              Financing Built for Real Deals, Not Perfect Files
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Traditional bank financing is too slow for most investment properties. By the time a
-              conventional lender completes their underwriting process, the deal has already gone to
-              another buyer. Hard money loans from AssetLift Lending solve this problem by providing
-              asset-based financing with fast responses and closings in as fast as seven to fourteen business days.
+              Most borrowers do not need more lender marketing. They need a financing partner who
+              can tell them quickly whether the leverage, timeline, title, insurance, and exit
+              story actually make sense. That is where AssetLift is strongest.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Depending on the file, AssetLift may provide direct private lending or broker the
-              deal with a capital partner. What stays consistent is the way we communicate: clear
-              expectations, realistic terms, and one team helping move the file from submission
-              through closing.
+              Instead of forcing every opportunity into one credit box, we look for the financing
+              structure that best fits the property and the borrower&apos;s plan. That can mean private
+              lending directly or a capital-partner execution path, but the borrower still gets one
+              coordinated process and one team driving the file forward.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Whether you are a first-time flipper looking for your initial investment property or an
-              experienced investor scaling a portfolio of rental properties, AssetLift Lending has loan
-              programs designed to match your strategy. Our fix and flip loans offer up to 92.5%
-              loan-to-cost with 100% of rehab funded. Our DSCR rental loans provide long-term
-              financing with no personal income verification required. And our bridge and construction
-              programs give you the flexibility to execute on complex deals with confidence.
+              If you are buying a value-add property, bridging a timing gap, refinancing into DSCR
+              debt, or funding a build, the page should make one thing clear: this is lender copy
+              written around borrower outcomes, not around generic buzzwords.
             </p>
           </div>
         </motion.div>

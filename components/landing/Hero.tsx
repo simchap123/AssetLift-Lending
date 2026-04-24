@@ -8,15 +8,22 @@ import Image from "next/image";
 
 const Hero = () => {
   const trustPoints = [
-    "Fix & flip, bridge, DSCR, and construction financing",
-    "We get back to you within 24 hours, usually within a few hours",
-    "Close in as fast as 7-14 days on many deals",
+    "Fix and flip, bridge, DSCR, and construction loan options",
+    "Hear back within 24 hours, usually within a few hours",
+    "Many deals close in as fast as 7-14 days",
   ];
 
   const proofItems = [
     { icon: Clock3, label: "Response Time", value: "Within 24 Hours" },
     { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 7-14 Days" },
     { icon: MapPinned, label: "Coverage", value: "46 States" },
+  ];
+
+  const quickLinks = [
+    { label: "Compare options", href: "/compare" },
+    { label: "Browse markets", href: "/markets" },
+    { label: "Use calculators", href: "/tools/fix-and-flip-calculator" },
+    { label: "Read guides", href: "/blog" },
   ];
 
   return (
@@ -45,7 +52,7 @@ const Hero = () => {
             >
               <TrendingUp className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">
-                Private Lending for Real Estate Investors
+                Financing for Real Estate Investors
               </span>
             </motion.div>
 
@@ -56,9 +63,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <span className="text-foreground">Close Faster.</span>
+              <span className="text-foreground">Get the Deal Closed.</span>
               <br />
-              <span className="gradient-text">Scale Smarter.</span>
+              <span className="gradient-text">Keep Your Capital Moving.</span>
             </motion.h1>
 
             <motion.p
@@ -68,9 +75,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Private lending for investors who need realistic leverage, fast communication,
-              and a lender that can actually move. We handle fix and flip, bridge, DSCR rental,
-              and construction financing nationwide.
+              Fast financing for investors who need a clear answer, realistic leverage, and a team
+              that knows how to move a file from quote to closing. We handle fix and flip, bridge,
+              DSCR rental, and construction scenarios across 46 states.
             </motion.p>
 
             <motion.p
@@ -79,8 +86,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
             >
-              Many deals are closed through our private lending platform, and some deals are
-              brokered with capital partners when that creates the strongest path to execution.
+              Some deals are funded through our private lending platform, and some are placed with
+              capital partners when that creates the strongest path to closing.
             </motion.p>
 
             <motion.div
@@ -132,9 +139,8 @@ const Hero = () => {
                   Speed matters, but clear execution matters more.
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Investors come to AssetLift when they need a lender that communicates quickly,
-                  tells them what is realistic, and helps them get to the closing table without
-                  unnecessary surprises.
+                  Borrowers come to AssetLift when timing matters, the file has moving parts, and
+                  they want straight answers before they waste time chasing the wrong lender.
                 </p>
               </div>
 
@@ -163,8 +169,25 @@ const Hero = () => {
                 </p>
                 <p className="text-lg font-semibold">Rates starting as low as 5.75%</p>
                 <p className="text-sm text-background/75 mt-1">
-                  Available for qualifying rental-property scenarios.
+                  For qualifying DSCR rental-property scenarios.
                 </p>
+              </div>
+
+              <div className="mt-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-3">
+                  Quick Paths
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  {quickLinks.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="rounded-xl border border-border bg-secondary/20 px-4 py-3 text-sm font-medium hover:border-primary/50 hover:bg-secondary/35 transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>

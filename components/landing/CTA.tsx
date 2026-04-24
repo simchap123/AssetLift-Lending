@@ -40,6 +40,7 @@ const CTA = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
               <Link href="/apply">
@@ -47,7 +48,24 @@ const CTA = () => {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
+            <Button asChild size="lg" variant="outline" className="text-lg px-10 py-7">
+              <Link href="/contact">
+                Talk to Our Team
+              </Link>
+            </Button>
           </motion.div>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-5 text-sm">
+            <Link href="/compare" className="font-medium text-primary hover:text-primary/80 transition-colors">
+              Compare lenders
+            </Link>
+            <Link href="/markets" className="font-medium text-primary hover:text-primary/80 transition-colors">
+              Browse markets
+            </Link>
+            <Link href="/tools/dscr-calculator" className="font-medium text-primary hover:text-primary/80 transition-colors">
+              Run DSCR numbers
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>

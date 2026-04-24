@@ -61,6 +61,28 @@ export default function ContactPage() {
             </p>
           </div>
 
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="rounded-2xl border border-border bg-secondary/20 p-6 md:p-8">
+              <h2 className="text-2xl font-bold mb-3">Before You Reach Out</h2>
+              <p className="text-muted-foreground mb-4">
+                AssetLift handles business-purpose financing for non-owner-occupied investment
+                properties. Depending on the file, a transaction may be funded directly or may be
+                placed with a lending partner.
+              </p>
+              <p className="text-muted-foreground">
+                If you want more detail on how those structures work, review our{' '}
+                <Link href="/how-funding-works" className="text-primary hover:text-primary/80 transition-colors">
+                  How Funding Works
+                </Link>{' '}
+                and{' '}
+                <Link href="/licensing" className="text-primary hover:text-primary/80 transition-colors">
+                  Licensing & Disclosures
+                </Link>{' '}
+                pages.
+              </p>
+            </div>
+          </div>
+
           {/* Contact Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-16">
             <a

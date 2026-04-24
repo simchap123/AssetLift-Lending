@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Star } from 'lucide-react';
 import { BORROWER_REVIEWS } from '@/lib/data/reviews';
 
@@ -45,8 +46,20 @@ const Testimonials = () => {
           What Our Borrowers Say
         </h2>
         <p className="text-muted-foreground text-lg">
-          Real reviews from real investors
+          Borrower feedback matters because execution quality is what people remember.
         </p>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 grid md:grid-cols-3 gap-4">
+        {[
+          'Speed shows up repeatedly because time-sensitive deals are where weak lenders usually break down.',
+          'Communication matters because borrowers need realistic expectations before appraisal, title, and insurance costs pile up.',
+          'Repeat business matters because the best proof is when investors come back for the next deal.',
+        ].map((item) => (
+          <div key={item} className="rounded-2xl border border-border bg-card p-5 text-left">
+            <p className="text-sm text-muted-foreground">{item}</p>
+          </div>
+        ))}
       </div>
 
       <div
@@ -65,6 +78,18 @@ const Testimonials = () => {
         {allReviews.map((review, i) => (
           <ReviewCard key={i} {...review} />
         ))}
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 flex flex-wrap items-center justify-center gap-5 text-sm">
+        <Link href="/about" className="font-medium text-primary hover:text-primary/80 transition-colors">
+          Learn how AssetLift works
+        </Link>
+        <Link href="/compare" className="font-medium text-primary hover:text-primary/80 transition-colors">
+          Compare loan options
+        </Link>
+        <Link href="/apply" className="font-medium text-primary hover:text-primary/80 transition-colors">
+          Get your deal reviewed
+        </Link>
       </div>
     </section>
   );

@@ -24,6 +24,7 @@ const LoanPrograms = () => {
         "Pay no interest on undrawn renovation funds",
       ],
       otherOptions: "*Bridge only options available",
+      href: "/loans/fix-and-flip",
       Icon: Hammer,
     },
     {
@@ -42,6 +43,7 @@ const LoanPrograms = () => {
         "Pay no interest on undrawn construction funds",
       ],
       otherOptions: "BUILD2RENT\u00AE: Flexible DSCR options",
+      href: "/loans/ground-up-construction",
       Icon: Building2,
     },
     {
@@ -59,6 +61,7 @@ const LoanPrograms = () => {
         "Residential & commercial",
         "Flexible exit strategies",
       ],
+      href: "/loans/bridge",
       Icon: ArrowLeftRight,
     },
     {
@@ -76,6 +79,7 @@ const LoanPrograms = () => {
         "1-4 unit residential properties",
         "No personal income verification",
       ],
+      href: "/loans/dscr-rental",
       Icon: Home,
     },
   ];
@@ -212,20 +216,28 @@ const LoanPrograms = () => {
                     </p>
                   )}
 
-                  <Link
-                    href="/apply"
-                    className="group/btn relative mt-auto w-full h-12 flex items-center justify-center gap-2
-                      bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500
-                      hover:from-amber-400 hover:via-yellow-400 hover:to-amber-400
-                      text-zinc-900 font-bold text-sm tracking-wide
-                      rounded-lg overflow-hidden
-                      shadow-[0_2px_8px_rgba(245,158,11,0.25)]
-                      hover:shadow-[0_4px_20px_rgba(245,158,11,0.4)]
-                      transition-all duration-300 ease-out"
-                  >
-                    <span className="relative z-10">Get Started</span>
-                    <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                  </Link>
+                  <div className="mt-auto grid grid-cols-2 gap-3">
+                    <Link
+                      href={program.href}
+                      className="flex h-12 items-center justify-center rounded-lg border border-border text-sm font-semibold hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                    >
+                      Learn More
+                    </Link>
+                    <Link
+                      href="/apply"
+                      className="group/btn relative flex h-12 items-center justify-center gap-2
+                        bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500
+                        hover:from-amber-400 hover:via-yellow-400 hover:to-amber-400
+                        text-zinc-900 font-bold text-sm tracking-wide
+                        rounded-lg overflow-hidden
+                        shadow-[0_2px_8px_rgba(245,158,11,0.25)]
+                        hover:shadow-[0_4px_20px_rgba(245,158,11,0.4)]
+                        transition-all duration-300 ease-out"
+                    >
+                      <span className="relative z-10">Get Started</span>
+                      <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </motion.div>
