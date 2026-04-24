@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const messages = [
-  { text: "Qualifying DSCR Rates Starting As Low As", highlight: "5.75%" },
+  { text: "Qualifying DSCR Rates Starting As Low As", highlight: "5.85%" },
   {
     text: "Qualifying Fix and Flip Rates Starting As Low As",
     highlight: "8.5%",

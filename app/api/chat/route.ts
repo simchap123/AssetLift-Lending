@@ -24,7 +24,7 @@ LOAN PROGRAMS:
    - Up to 100% of rehab costs (held in escrow, drawn as work completes)
    - Total loan capped at 70-75% of ARV
    - Term: 6-18 months
-   - Rates starting at 9.5%
+   - Rates starting at 8.5%
    - Close in as fast as 7-14 business days
    - No prepayment penalties
    - Min FICO: 620+ (best rates at 700+)
@@ -51,7 +51,7 @@ LOAN PROGRAMS:
 3. DSCR RENTAL LOANS
    - Up to 80% LTV (purchase), 75% LTV (cash-out refi)
    - 30-year fixed or 5/6 ARM
-   - Rates starting as low as 5.75%
+   - Rates starting as low as 5.85%
    - NO personal income verification - no tax returns, W-2s, or 1099s needed
    - Qualification based entirely on property rental income vs. mortgage payment
    - DSCR formula: Gross Monthly Rent / PITIA (principal + interest + taxes + insurance + HOA)

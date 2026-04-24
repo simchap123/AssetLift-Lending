@@ -18,7 +18,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     slug: "fix-and-flip",
     title: "Fix & Flip Loans - Fast Funding for House Flipping Projects",
     description:
-      "AssetLift Lending offers fix-and-flip loans with fast closings, competitive rates, and up to 90% LTV. Finance your next renovation project with a lender built for real estate investors.",
+      "AssetLift Lending offers fix-and-flip loans with fast closings, rates starting as low as 8.5% for qualifying scenarios, and up to 90% LTV. Finance your next renovation project with business-purpose financing built for real estate investors.",
     heroTitle: "Fix & Flip Loans",
     heroSubtitle:
       "Close in days, not months. Get the capital you need to acquire and renovate investment properties with speed and certainty.",
@@ -29,7 +29,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       { label: "Renovation Financing", value: "Up to 100% of rehab costs" },
       { label: "Loan Term", value: "6 to 18 months" },
       { label: "Closing Speed", value: "As fast as 7-14 business days" },
-      { label: "Interest Rates Starting At", value: "9.5%" },
+      { label: "Interest Rates Starting At", value: "8.5%" },
     ],
     features: [
       {
@@ -319,18 +319,18 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     slug: "dscr-rental",
     title: "DSCR Rental Loans - No Income Verification Financing for Investment Properties",
     description:
-      "Qualify for a rental property loan based on property cash flow, not personal income. AssetLift Lending's DSCR loans offer 30-year terms, LLC vesting, and no tax return requirements for real estate investors.",
+      "Qualify for a rental property loan based on property cash flow, not personal income. AssetLift Lending's DSCR loans offer rates starting as low as 5.85% for qualifying scenarios, 30-year terms, LLC vesting, and no tax return requirements for real estate investors.",
     heroTitle: "DSCR Rental Loans",
     heroSubtitle:
       "Qualify on rental income, not tax returns. Scale your rental portfolio with 30-year financing designed exclusively for real estate investors.",
     overview:
-      "DSCR (Debt Service Coverage Ratio) rental loans represent the most significant innovation in investment property financing in the last decade. They solve a problem that has frustrated rental property investors for years: the disconnect between the income a portfolio generates and the income shown on personal tax returns. Real estate investors, especially those who are self-employed or who aggressively depreciate their properties, often report low taxable income despite holding portfolios worth millions of dollars. Conventional lenders see low reported income and decline the application. DSCR lenders see a cash-flowing property and fund the deal.\n\nThe concept is straightforward. Instead of verifying the borrower's personal income through tax returns and pay stubs, a DSCR lender divides the property's gross rental income by the total monthly debt obligation (principal, interest, taxes, insurance, and HOA). If the resulting ratio meets or exceeds the lender's minimum threshold, typically 1.0 to 1.25, the loan is approved. No W-2s. No 1099s. No tax returns. No debt-to-income ratio calculations. The property qualifies itself.\n\nAssetLift Lending's DSCR rental loan program offers 30-year fixed and adjustable rate options, loan amounts from $75,000 to $2 million, and the ability to close in the name of an LLC or other business entity. We finance single-family homes, 2-4 unit properties, condos, and townhomes, and there is no limit on the number of properties you can finance with us. Whether you are refinancing a property you just finished rehabbing or purchasing a turnkey rental, our DSCR product is designed to keep your portfolio growing without the documentation headaches of conventional lending.\n\nFor investors who have outgrown the conventional lending box, hit the Fannie Mae property count ceiling, or simply prefer the speed and simplicity of asset-based qualification, DSCR loans from AssetLift Lending provide the most scalable path to building a rental portfolio that generates lasting, tax-advantaged wealth.",
+      "DSCR (Debt Service Coverage Ratio) rental loans represent the most significant innovation in investment property financing in the last decade. They solve a problem that has frustrated rental property investors for years: the disconnect between the income a portfolio generates and the income shown on personal tax returns. Real estate investors, especially those who are self-employed or who aggressively depreciate their properties, often report low taxable income despite holding portfolios worth millions of dollars. Conventional lenders see low reported income and decline the application. DSCR lenders see a cash-flowing property and fund the deal.\n\nThe concept is straightforward. Instead of verifying the borrower's personal income through tax returns and pay stubs, a DSCR lender divides the property's gross rental income by the total monthly debt obligation (principal, interest, taxes, insurance, and HOA). If the resulting ratio meets or exceeds the lender's minimum threshold, typically 1.0 to 1.25, the loan is approved. No W-2s. No 1099s. No tax returns. No debt-to-income ratio calculations. The property qualifies itself.\n\nAssetLift Lending's DSCR rental loan program offers rates starting as low as 5.85% for qualifying scenarios, 30-year fixed and adjustable-rate options, loan amounts from $75,000 to $2 million, and the ability to close in the name of an LLC or other business entity. We finance single-family homes, 2-4 unit properties, condos, and townhomes, and there is no limit on the number of properties you can finance with us. Whether you are refinancing a property you just finished rehabbing or purchasing a turnkey rental, our DSCR product is designed to keep your portfolio growing without the documentation headaches of conventional lending.\n\nFor investors who have outgrown the conventional lending box, hit the Fannie Mae property count ceiling, or simply prefer the speed and simplicity of asset-based qualification, DSCR loans from AssetLift Lending provide the most scalable path to building a rental portfolio that generates lasting, tax-advantaged wealth.",
     keyStats: [
       { label: "Loan-to-Value (Purchase)", value: "Up to 80%" },
       { label: "Loan-to-Value (Cash-Out Refi)", value: "Up to 75%" },
       { label: "Minimum DSCR Ratio", value: "1.0 (lower available with adjustments)" },
       { label: "Loan Term", value: "30-year fixed or 5/6 ARM" },
-      { label: "Interest Rates Starting At", value: "5.75%" },
+      { label: "Interest Rates Starting At", value: "5.85%" },
     ],
     features: [
       {

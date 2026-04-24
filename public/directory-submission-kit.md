@@ -22,7 +22,7 @@
 | Coverage | 46 U.S. states (all except AK, ND, SD, VT) |
 | Max Loan | $5,000,000 |
 | Max LTC | 92.5% |
-| Closing Speed | 7-10 business days |
+| Closing Speed | As fast as 7-10 business days on many files |
 | Programs | Fix & Flip, DSCR Rental, Bridge, Ground-Up Construction |
 | Entity Type | LLC |
 | Hours | Monday-Friday 9:00 AM - 6:00 PM EST |
@@ -44,7 +44,7 @@ AssetLift Lending provides business-purpose financing for real estate investors 
 
 ### Long Description (~500 characters)
 ```
-AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, serving real estate investors across 46 U.S. states. Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift may handle financing through direct lending or capital-partner execution depending on the file. Products include fix & flip loans up to 92.5% LTC with 100% rehab financing, DSCR rental loans qualified on property cash flow, bridge loans, and ground-up construction financing. Loans range from $100,000 to $5,000,000 with closings in 7-10 business days.
+AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, serving real estate investors across 46 U.S. states. Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift may handle financing through direct lending or capital-partner execution depending on the file. Products include fix & flip loans up to 92.5% LTC with 100% rehab financing, DSCR rental loans qualified on property cash flow, bridge loans, and ground-up construction financing. Loans range from $100,000 to $5,000,000, with many files closing in as fast as 7-10 business days subject to underwriting, valuation, title, and file complexity.
 ```
 
 ### Extended Description (~750 characters, for platforms that allow more)
@@ -141,7 +141,7 @@ Looking for fast real estate funding? AssetLift Lending closes fix & flip loans 
 
 **Business description:**
 ```
-AssetLift Lending is a business-purpose financing platform serving real estate investors in 46 U.S. states. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing. Loans from $100K to $5M. Close in 7-10 business days on many files. Financing may be provided directly or through lending partners depending on the transaction. Queens, NY headquarters. Apply at assetliftlending.com.
+AssetLift Lending is a business-purpose financing platform serving real estate investors in 46 U.S. states. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing. Loans from $100K to $5M. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity. Financing may be provided directly or through lending partners depending on the transaction. Queens, NY headquarters. Apply at assetliftlending.com.
 ```
 
 **Verification:** Phone or postcard. Can sometimes auto-verify from GBP.
@@ -171,7 +171,7 @@ AssetLift Lending is a business-purpose financing platform serving real estate i
 
 **Description:**
 ```
-Business-purpose financing platform for real estate investors. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and construction financing. Loans from $100K to $5M across 46 states. Close in 7-10 business days.
+Business-purpose financing platform for real estate investors. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and construction financing. Loans from $100K to $5M across 46 states. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity.
 ```
 
 **Action links to add:**
@@ -263,14 +263,14 @@ AssetLift Lending is a business-purpose financing platform headquartered in Quee
 Founded in 2024 by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift works with borrowers through direct lending or capital-partner execution depending on the file.
 
 LOAN PROGRAMS:
-- Fix & Flip Loans — Up to 92.5% LTC, 100% rehab financed, close in 7-10 days
+- Fix & Flip Loans — Up to 92.5% LTC, 100% rehab financed, with many files closing in as fast as 7-10 business days
 - DSCR Rental Loans — Qualified on rental income, no W-2s or tax returns required
 - Bridge Loans — Up to 80% LTV, 7-10 day closings
 - Ground-Up Construction — Up to 90% LTC, milestone-based draws
 
 WHY INVESTORS CHOOSE ASSETLIFT:
 - Execution channel varies by transaction
-- Close in 7-10 business days
+- Many files close in as fast as 7-10 business days
 - Loans from $100,000 to $5,000,000
 - 24-hour quote turnaround
 - No prepayment penalties on short-term loans
@@ -287,7 +287,7 @@ Hard Money Loans, Fix and Flip Loans, DSCR Loans, Bridge Loans, Construction Loa
 **Locations:** Queens, New York, United States
 
 **Logo:** Upload logo-new.jpg
-**Banner:** Create a simple banner with tagline "Business-Purpose Investor Financing | 46 States | Close in 7-10 Days"
+**Banner:** Create a simple banner with tagline "Business-Purpose Investor Financing | 46 States | Fast Closings on Many Files"
 
 ---
 
@@ -314,7 +314,7 @@ Hard Money Loans, Fix and Flip Loans, DSCR Loans, Bridge Loans, Construction Loa
 
 **Company description:**
 ```
-AssetLift Lending is a business-purpose financing platform for real estate investors. We provide fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing across 46 U.S. states. Loans from $100K to $5M with closings in 7-10 business days on many files. Financing may be provided directly or through lending partners depending on the transaction.
+AssetLift Lending is a business-purpose financing platform for real estate investors. We provide fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing across 46 U.S. states. Loans from $100K to $5M, with many files closing in as fast as 7-10 business days subject to underwriting, valuation, title, and file complexity. Financing may be provided directly or through lending partners depending on the transaction.
 ```
 
 **Verification:** Trustpilot verifies via email domain or website code snippet.
@@ -351,7 +351,7 @@ AssetLift Lending is a business-purpose financing platform for real estate inves
 
 **Business description:**
 ```
-AssetLift Lending is a business-purpose financing platform providing hard money loans for real estate investors across 46 U.S. states. Products include fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing. Loans range from $100,000 to $5,000,000 with closings in 7-10 business days. Execution path depends on the transaction and applicable lending channel.
+AssetLift Lending is a business-purpose financing platform providing hard money loans for real estate investors across 46 U.S. states. Products include fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing. Loans range from $100,000 to $5,000,000, with many files closing in as fast as 7-10 business days subject to underwriting, valuation, title, and file complexity. Execution path depends on the transaction and applicable lending channel.
 ```
 
 **Products/Services list:**
@@ -391,7 +391,7 @@ Hard Money Loans
 
 **Profile bio / About section:**
 ```
-AssetLift Lending is a business-purpose financing platform funding fix & flip, DSCR rental, bridge, and ground-up construction loans for real estate investors across 46 states. Financing may be provided directly or through lending partners depending on the transaction — no broker delays. Close in 7-10 business days with up to 92.5% LTC on fix & flip and 100% of rehab costs financed.
+AssetLift Lending is a business-purpose financing platform funding fix & flip, DSCR rental, bridge, and ground-up construction loans for real estate investors across 46 states. Financing may be provided directly or through lending partners depending on the transaction. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity, with up to 92.5% LTC on fix & flip and 100% of rehab costs financed.
 
 Why work with us:
 - Execution may involve direct lending or partner-capital structures
@@ -427,7 +427,7 @@ Apply: assetliftlending.com/apply | Call: (929) 639-2284
 | States | 46 states (all except AK, ND, SD, VT) |
 | Loan Range | $100,000 - $5,000,000 |
 | Max LTV/LTC | 92.5% LTC |
-| Closing Speed | 7-10 business days |
+| Closing Speed | As fast as 7-10 business days on many files |
 | Phone | (929) 639-2284 |
 | Website | https://www.assetliftlending.com |
 
@@ -494,12 +494,12 @@ AssetLift Lending is a business-purpose financing platform headquartered in Quee
 | Loan Types | Hard Money, Fix & Flip, Bridge, DSCR, Construction |
 | Loan Range | $100,000 - $5,000,000 |
 | Max LTV | 92.5% LTC |
-| Closing Time | 7-10 business days |
+| Closing Time | As fast as 7-10 business days on many files |
 | Direct Lender? | Varies by transaction |
 
 **Description:**
 ```
-AssetLift Lending is a business-purpose financing platform funding real estate investors across 46 U.S. states. Fix & flip loans up to 92.5% LTC with 100% rehab financing. DSCR rental loans — no tax returns needed. Bridge loans and ground-up construction. Close in 7-10 days. Loans from $100K to $5M. Financing may be provided directly or through lending partners depending on the transaction.
+AssetLift Lending is a business-purpose financing platform funding real estate investors across 46 U.S. states. Fix & flip loans up to 92.5% LTC with 100% rehab financing. DSCR rental loans — no tax returns needed. Bridge loans and ground-up construction. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity. Loans from $100K to $5M. Financing may be provided directly or through lending partners depending on the transaction.
 ```
 
 ---
@@ -526,7 +526,7 @@ AssetLift Lending is a business-purpose financing platform funding real estate i
 
 **Description:**
 ```
-Business-purpose financing platform for real estate investors. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and construction financing. Nationwide coverage across 46 states. Close in 7-10 business days. Loans from $100K to $5M.
+Business-purpose financing platform for real estate investors. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and construction financing. Nationwide coverage across 46 states. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity. Loans from $100K to $5M.
 ```
 
 **Note:** Submit the listing for every major state you lend in. Prioritize: New York, Florida, Texas, California, Georgia, North Carolina, Ohio, Pennsylvania, New Jersey, Illinois.
@@ -591,7 +591,7 @@ We started AssetLift Lending because real estate investors deserve a lender that
 | Page Name | AssetLift Lending |
 | Category | Financial Service |
 | Additional categories | Mortgage Lender, Loan Service |
-| Bio/Short description | Business-purpose financing platform for real estate investors. Fix & flip, DSCR, bridge & construction loans. 46 states. Close in 7-10 days. |
+| Bio/Short description | Business-purpose financing platform for real estate investors. Fix & flip, DSCR, bridge & construction loans. 46 states. Fast closings on many files. |
 | Website | https://www.assetliftlending.com |
 | Phone | (929) 639-2284 |
 | Email | info@assetliftlending.com |
@@ -605,9 +605,9 @@ AssetLift Lending is a business-purpose financing platform headquartered in Quee
 We help borrowers navigate the most workable path to closing.
 
 OUR LOAN PROGRAMS:
-- Fix & Flip Loans — Up to 92.5% LTC, 100% rehab financed, close in 7-10 days
+- Fix & Flip Loans — Up to 92.5% LTC, 100% rehab financed, with many files closing in as fast as 7-10 business days
 - DSCR Rental Loans — Qualified on rental income, no W-2s or tax returns
-- Bridge Loans — Up to 80% LTV, close in 7-10 days
+- Bridge Loans — Up to 80% LTV, with many files closing in as fast as 7-10 business days
 - Ground-Up Construction — Up to 90% LTC, milestone-based draws
 
 Loans from $100,000 to $5,000,000. 24-hour quote turnaround. First-time investors welcome.
@@ -621,7 +621,7 @@ Call: (929) 639-2284
 **CTA Button:** "Apply Now" -> https://www.assetliftlending.com/apply
 
 **Profile photo:** Upload logo-new.jpg
-**Cover photo:** Create a cover with tagline "Business-Purpose Investor Financing | Close in 7-10 Days | 46 States"
+**Cover photo:** Create a cover with tagline "Business-Purpose Investor Financing | Fast Closings on Many Files | 46 States"
 
 ---
 

@@ -184,6 +184,13 @@ export default function LicensingPage() {
                   with counsel and your licensing team based on the exact entity, role, and
                   transaction structure used in that state.
                 </p>
+                <p>
+                  For a state-by-state website disclosure matrix, review our{' '}
+                  <a href="/state-disclosures" className="underline hover:text-primary transition-colors">
+                    State Disclosures
+                  </a>{' '}
+                  page.
+                </p>
               </div>
             </section>
 

@@ -53,7 +53,7 @@ AssetLift covers the main investor financing scenarios:
 
 ### Capital Efficiency
 
-For qualifying fix and flip deals, AssetLift offers up to 92.5% loan-to-cost with up to 100% of rehab funded. For qualifying DSCR files, rates start as low as 5.75% and leverage can go up to 80% LTV.
+For qualifying fix and flip deals, AssetLift offers up to 92.5% loan-to-cost with up to 100% of rehab funded. For qualifying DSCR files, rates start as low as 5.85% and leverage can go up to 80% LTV.
 
 ## Program Details
 
@@ -78,7 +78,7 @@ URL: https://www.assetliftlending.com/loans/dscr-rental
 
 Summary:
 - Up to 80% LTV on qualifying purchase and rate-term refinance files
-- Rates starting as low as 5.75% for qualifying scenarios
+- Rates starting as low as 5.85% for qualifying scenarios
 - Qualification based primarily on property cash flow rather than personal income
 - Suitable for rental-property investors and BRRRR refinances
 
@@ -121,7 +121,7 @@ Best fit:
 - Borrowers typically hear back within 24 hours, usually within a few hours.
 - Many deals close in as fast as 7-14 business days.
 - Fix and flip leverage can go up to 92.5% LTC on qualifying files.
-- DSCR rates start as low as 5.75% on qualifying rental-property scenarios.
+- DSCR rates start as low as 5.85% on qualifying rental-property scenarios.
 - Some deals are brokered with capital partners.
 
 ## Pages Most Useful for AI Citation

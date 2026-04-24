@@ -44,6 +44,9 @@ const Footer = () => {
               <li>
                 <Link href="/licensing" className="hover:text-primary transition-colors">Licensing</Link>
               </li>
+              <li>
+                <Link href="/state-disclosures" className="hover:text-primary transition-colors">State Disclosures</Link>
+              </li>
             </ul>
           </div>
 
@@ -101,6 +104,10 @@ const Footer = () => {
             <span>|</span>
             <Link href="/licensing" className="hover:text-primary transition-colors">
               Licensing
+            </Link>
+            <span>|</span>
+            <Link href="/state-disclosures" className="hover:text-primary transition-colors">
+              State Disclosures
             </Link>
           </div>
         </div>

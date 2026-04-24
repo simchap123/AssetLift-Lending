@@ -167,7 +167,7 @@ const Hero = () => {
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-2">
                   DSCR Highlight
                 </p>
-                <p className="text-lg font-semibold">Rates starting as low as 5.75%</p>
+                <p className="text-lg font-semibold">Rates starting as low as 5.85%</p>
                 <p className="text-sm text-background/75 mt-1">
                   For qualifying DSCR rental-property scenarios.
                 </p>

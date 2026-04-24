@@ -20,6 +20,7 @@ const RESOURCES = [
   { label: 'Compare', href: '/compare' },
   { label: 'Markets', href: '/markets' },
   { label: 'How Funding Works', href: '/how-funding-works' },
+  { label: 'State Disclosures', href: '/state-disclosures' },
   { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
   { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
   { label: 'FAQ', href: '/faq' },

@@ -10,7 +10,7 @@ const product = LOAN_PRODUCTS.find((p) => p.slug === 'fix-and-flip')!;
 export const metadata: Metadata = createMetadata({
   title: 'Fix & Flip Loans | Up to 90% Purchase Financing',
   description:
-    'Get fix and flip loans with fast closings, up to 90% purchase financing, rehab funding, and direct hard money lending for real estate investors.',
+    'Get fix and flip loans with fast closings, up to 90% purchase financing, rehab funding, and business-purpose financing built for real estate investors.',
   path: '/loans/fix-and-flip',
 });
 
