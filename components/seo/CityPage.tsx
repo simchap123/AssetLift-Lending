@@ -143,12 +143,12 @@ export default function CityPage({ city }: CityPageProps) {
               Fast, flexible real estate investment financing for {city.cityName} investors. Fix & flip, bridge, DSCR rental, and construction loans with responses within 24 hours and closings in as fast as 7-14 days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="text-lg px-8 py-6 glow-primary">
+              <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 glow-primary">
                 <Link href="/apply">
                   Apply Now <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6">
                 <a href="tel:+19296392284">Call (929) 639-2284</a>
               </Button>
             </div>
@@ -424,7 +424,7 @@ export default function CityPage({ city }: CityPageProps) {
           <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
             Get funded for your next {city.cityName} deal. Hear back within 24 hours, usually within a few hours.
           </p>
-          <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
+          <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-10 py-6 sm:py-7 glow-primary">
             <Link href="/apply">
               Apply for Funding <ArrowRight className="ml-2 w-5 h-5" />
             </Link>

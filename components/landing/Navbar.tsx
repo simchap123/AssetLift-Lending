@@ -182,7 +182,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <motion.div
-            className="md:hidden py-4 border-t border-border bg-background"
+            className="md:hidden py-4 border-t border-border bg-background max-h-[calc(100svh-4rem)] overflow-y-auto"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}

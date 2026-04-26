@@ -6,6 +6,13 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { BLOG_POSTS } from '@/lib/data/blog-posts';
 import { Clock, ArrowRight } from 'lucide-react';
 
+const START_HERE_LINKS = [
+  { label: 'Compare Lenders', href: '/compare', blurb: 'High-intent comparisons for borrowers evaluating options.' },
+  { label: 'Browse Markets', href: '/markets', blurb: 'State and city pages for local hard money and DSCR intent.' },
+  { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator', blurb: 'Run quick deal math before you apply.' },
+  { label: 'DSCR Calculator', href: '/tools/dscr-calculator', blurb: 'Check rental coverage and long-term financing fit.' },
+];
+
 export const metadata: Metadata = createMetadata({
   title: 'Hard Money Lending Blog | Fix & Flip, DSCR & Bridge',
   description:
@@ -100,6 +107,24 @@ export default function BlogListingPage() {
                   <span className="font-medium">{category}</span>
                   <span className="text-muted-foreground">{count}</span>
                 </span>
+              ))}
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2 mb-12">
+              {START_HERE_LINKS.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-2xl border border-border bg-card p-5 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <p className="font-semibold mb-2">{item.label}</p>
+                      <p className="text-sm text-muted-foreground">{item.blurb}</p>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                  </div>
+                </Link>
               ))}
             </div>
 

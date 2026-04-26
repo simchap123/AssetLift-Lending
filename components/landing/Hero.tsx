@@ -10,12 +10,12 @@ const Hero = () => {
   const trustPoints = [
     "Fix and flip, bridge, DSCR, and construction loan options",
     "Hear back within 24 hours, usually within a few hours",
-    "Many deals close in as fast as 7-14 days",
+    "Many deals close in as fast as 7-14 business days",
   ];
 
   const proofItems = [
     { icon: Clock3, label: "Response Time", value: "Within 24 Hours" },
-    { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 7-14 Days" },
+    { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 7-14 Business Days" },
     { icon: MapPinned, label: "Coverage", value: "46 States" },
   ];
 
@@ -27,7 +27,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden py-24 sm:py-28">
       <div className="absolute inset-0">
         <Image
           src="/hero-house.jpg"
@@ -58,7 +58,7 @@ const Hero = () => {
 
             <motion.h1
               data-speakable
-              className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -96,13 +96,13 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <Button asChild size="lg" className="text-lg px-8 py-6 glow-primary">
+              <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 glow-primary">
                 <Link href="/apply">
                   Get My Deal Reviewed
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-primary/50 hover:bg-primary/10 backdrop-blur-sm">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 border-primary/50 hover:bg-primary/10 backdrop-blur-sm">
                 <a href="#programs">View Loan Programs</a>
               </Button>
             </motion.div>
@@ -130,7 +130,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="lg:justify-self-end w-full max-w-md"
           >
-            <div className="rounded-3xl border border-border/80 bg-background/85 p-6 shadow-2xl backdrop-blur-md">
+            <div className="rounded-3xl border border-border/80 bg-background/85 p-5 sm:p-6 shadow-2xl backdrop-blur-md">
               <div className="mb-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
                   Why Borrowers Reach Out
@@ -177,7 +177,7 @@ const Hero = () => {
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-3">
                   Quick Paths
                 </p>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {quickLinks.map((item) => (
                     <Link
                       key={item.href}

@@ -16,7 +16,7 @@ function StarRating() {
 
 function ReviewCard({ name, type, text }: { name: string; type: string; text: string }) {
   return (
-    <div className="bg-card border border-border rounded-xl p-6 min-w-[320px] max-w-[400px] flex-shrink-0 select-none">
+    <div className="bg-card border border-border rounded-xl p-6 min-w-[280px] sm:min-w-[320px] max-w-[400px] flex-shrink-0 select-none snap-start">
       <StarRating />
       <p className="text-foreground text-sm leading-relaxed mb-4">&ldquo;{text}&rdquo;</p>
       <div>
@@ -62,8 +62,16 @@ const Testimonials = () => {
         ))}
       </div>
 
+      <div className="md:hidden px-4 sm:px-6 lg:px-8">
+        <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+          {BORROWER_REVIEWS.map((review, i) => (
+            <ReviewCard key={i} {...review} />
+          ))}
+        </div>
+      </div>
+
       <div
-        className="flex gap-6 hover:[animation-play-state:paused]"
+        className="hidden md:flex gap-6 hover:[animation-play-state:paused]"
         style={{
           animation: 'marquee-scroll 30s linear infinite',
           width: 'max-content',

@@ -1076,6 +1076,17 @@ const CITY_PROGRAM_TARGETS = [
   'jacksonville',
   'philadelphia',
   'denver',
+  'pittsburgh',
+  'las-vegas',
+  'portland',
+  'indianapolis',
+  'kansas-city',
+  'st-louis',
+  'minneapolis',
+  'virginia-beach',
+  'columbus-oh',
+  'cleveland',
+  'cincinnati',
 ] as const;
 
 const CITY_PROGRAM_TOPICS = CITIES.filter((city) =>
