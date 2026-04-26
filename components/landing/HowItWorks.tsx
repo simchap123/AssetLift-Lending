@@ -74,31 +74,31 @@ const HowItWorks = () => {
     {
       icon: FileText,
       title: "Submit Your Deal",
-      description: "Send the purchase, scope, rent story, or exit plan in a few minutes",
+      description: "Share the address, purchase, scope, rent story, or exit plan in a few minutes.",
       number: "01",
     },
     {
       icon: Search,
       title: "Get a Real Answer",
-      description: "We review the file and get back to you within 24 hours, usually within a few hours",
+      description: "We review the scenario and tell you what is workable, what needs support, and where the friction is.",
       number: "02",
     },
     {
       icon: ClipboardCheck,
       title: "Clear Due Diligence",
-      description: "Valuation, title, insurance, and borrower items move in parallel to keep the file clean",
+      description: "Valuation, title, insurance, and borrower items move in parallel to keep the file moving cleanly.",
       number: "03",
     },
     {
       icon: Banknote,
       title: "Close and Fund",
-      description: "Once the file is ready, many deals close in as fast as 5 days",
+      description: "Once the file is ready, many deals close in as fast as 5 business days.",
       number: "04",
     },
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-secondary/30 relative overflow-hidden">
+    <section className="py-24 md:py-32 bg-secondary/25 relative overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-20" />
 
       <div className="container px-4 md:px-6 relative z-10">
@@ -115,7 +115,7 @@ const HowItWorks = () => {
             animate={isHeaderInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            How It Works
+            From Scenario to Closing
           </motion.h2>
           <motion.p
             className="text-muted-foreground text-lg max-w-xl mx-auto"
@@ -123,7 +123,7 @@ const HowItWorks = () => {
             animate={isHeaderInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            A cleaner process for borrowers who want speed without last-minute surprises
+            The process is designed to reduce noise, surface issues early, and keep execution organized.
           </motion.p>
         </motion.div>
 
@@ -136,19 +136,19 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <div className="mt-14 max-w-5xl mx-auto grid md:grid-cols-3 gap-4">
+        <div className="mt-14 max-w-5xl mx-auto grid gap-4 md:grid-cols-3">
           {[
             {
-              title: "If your deal is time-sensitive",
-              text: "Bridge and fix and flip borrowers usually care most about how fast the lender can identify real issues and still get to the table.",
+              title: "Fast answer first",
+              text: "Borrowers need to know early whether the leverage and timeline are realistic before paying for the wrong path.",
             },
             {
-              title: "If your plan is to hold the property",
-              text: "DSCR borrowers usually need clarity on rental support, leverage, reserves, and whether the refinance path really works.",
+              title: "Execution stays visible",
+              text: "A cleaner borrower experience means fewer handoff surprises, tighter communication, and less confusion on next steps.",
             },
             {
-              title: "If the file has moving parts",
-              text: "Construction and more complex scenarios need more than a rate quote. They need a lender that can explain the process before costs start stacking up.",
+              title: "Closing is the real product",
+              text: "The point is not just a quote. The point is getting the file all the way to the table without a messy process.",
             },
           ].map((item) => (
             <div key={item.title} className="rounded-2xl border border-border bg-card p-5 text-left">

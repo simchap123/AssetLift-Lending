@@ -28,11 +28,11 @@ const CTA = () => {
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Ready to <span className="gradient-text">Close Your Next Deal?</span>
+            Ready for a <span className="gradient-text">Cleaner Borrowing Experience?</span>
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Submit your deal in minutes. We will get back to you within 24 hours, usually within a few hours.
+            Submit the scenario, talk through the file, or compare your options first. The site should make every next step obvious.
           </p>
 
           <motion.div
@@ -44,13 +44,13 @@ const CTA = () => {
           >
             <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-10 py-6 sm:py-7 glow-primary">
               <Link href="/apply">
-                Apply for Funding
+                Review My Deal
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-10 py-6 sm:py-7">
               <Link href="/contact">
-                Talk to Our Team
+                Talk to the Team
               </Link>
             </Button>
           </motion.div>

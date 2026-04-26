@@ -11,7 +11,7 @@ const LoanPrograms = () => {
     {
       id: "fix-flip",
       title: "Fix & Flip",
-      subtitle: "INVESTMENTS",
+      subtitle: "SHORT-TERM INVESTOR CAPITAL",
       maxValue: "92.5",
       loanType: "LTC",
       loanTypeLabel: "COST",
@@ -19,7 +19,7 @@ const LoanPrograms = () => {
         "Up to 92.5% LTC & 75% LTV",
         "Up to 100% rehab funded",
         "Loans up to $5MM",
-        "13, 19-month term options",
+        "Terms built for acquisition and rehab",
         "1-4 unit residential properties",
         "Pay no interest on undrawn renovation funds",
       ],
@@ -30,7 +30,7 @@ const LoanPrograms = () => {
     {
       id: "ground-up",
       title: "Ground-Up",
-      subtitle: "CONSTRUCTION",
+      subtitle: "NEW BUILD FINANCING",
       maxValue: "90",
       loanType: "LTC",
       loanTypeLabel: "COST",
@@ -38,7 +38,7 @@ const LoanPrograms = () => {
         "Up to 90% LTC & 70% LTARV",
         "Up to 100% of construction",
         "Loans up to $5MM",
-        "19, 24-month term options",
+        "Built for experienced operators",
         "Spec builds, infills, neighborhood developments",
         "Pay no interest on undrawn construction funds",
       ],
@@ -49,7 +49,7 @@ const LoanPrograms = () => {
     {
       id: "bridge",
       title: "Bridge",
-      subtitle: "FINANCING",
+      subtitle: "SPEED AND TRANSITIONAL CAPITAL",
       maxValue: "80",
       loanType: "LTV",
       loanTypeLabel: "VALUE",
@@ -57,7 +57,7 @@ const LoanPrograms = () => {
         "Up to 80% LTV",
         "Quick closings in as fast as 5 days",
         "Loans up to $5MM",
-        "6, 12, 18-month terms",
+        "Flexible short-term structure",
         "Residential & commercial",
         "Flexible exit strategies",
       ],
@@ -67,7 +67,7 @@ const LoanPrograms = () => {
     {
       id: "rental",
       title: "Rental / DSCR",
-      subtitle: "PROPERTIES",
+      subtitle: "LONG-TERM RENTAL DEBT",
       maxValue: "80",
       loanType: "LTV",
       loanTypeLabel: "VALUE",
@@ -75,7 +75,7 @@ const LoanPrograms = () => {
         "Up to 80% LTV on purchase & refi",
         "Up to 75% LTV on cash out",
         "Loans up to $3MM",
-        "30-year fixed rate, 10|1 ARM & 5 year interest-only",
+        "30-year fixed and ARM options",
         "1-4 unit residential properties",
         "No personal income verification",
       ],
@@ -113,9 +113,9 @@ const LoanPrograms = () => {
             Private Lending Solutions
           </motion.div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-            Real Estate{" "}
+            Loan Programs{" "}
             <span className="relative">
-              <span className="gradient-text">Financing</span>
+              <span className="gradient-text">Built for Investors</span>
               <motion.span
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 rounded-full"
                 initial={{ x: "-30%" }}
@@ -130,7 +130,8 @@ const LoanPrograms = () => {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Institutional-grade leverage for fix & flip, construction, and rental portfolios.
+            Choose the right structure faster. Every program is organized around deal type,
+            leverage, and the likely exit.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -188,7 +189,7 @@ const LoanPrograms = () => {
                 <div className="p-5 flex flex-col flex-grow">
                   <div className="mb-5 pb-5 border-b border-border">
                     <p className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground mb-2">
-                      Maximum Leverage
+                      Top End Leverage
                     </p>
                     <div className="flex items-baseline gap-1">
                       <span className="text-5xl font-black tracking-tight text-foreground">
@@ -221,7 +222,7 @@ const LoanPrograms = () => {
                       href={program.href}
                       className="flex h-12 items-center justify-center rounded-lg border border-border text-sm font-semibold hover:border-primary/50 hover:bg-secondary/30 transition-colors"
                     >
-                      Learn More
+                      Program Details
                     </Link>
                     <Link
                       href="/apply"

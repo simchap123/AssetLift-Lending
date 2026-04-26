@@ -2,32 +2,32 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BadgeCheck, Clock3, MapPinned, TrendingUp } from "lucide-react";
+import { ArrowRight, BadgeCheck, Building2, Clock3, MapPinned, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Hero = () => {
-  const trustPoints = [
-    "Fix and flip, bridge, DSCR, and construction loan options",
-    "Hear back within 24 hours, usually within a few hours",
-    "Many deals close in as fast as 5 business days",
-  ];
-
   const proofItems = [
     { icon: Clock3, label: "Response Time", value: "Within 24 Hours" },
     { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 5 Business Days" },
     { icon: MapPinned, label: "Coverage", value: "46 States" },
   ];
 
+  const borrowerSignals = [
+    "Fix & flip, bridge, DSCR, and construction programs",
+    "Real answers on leverage, timing, reserves, and exit strategy",
+    "One clear path from quote to closing",
+  ];
+
   const quickLinks = [
-    { label: "Compare options", href: "/compare" },
-    { label: "Browse markets", href: "/markets" },
-    { label: "Use calculators", href: "/tools/fix-and-flip-calculator" },
-    { label: "Read guides", href: "/blog" },
+    { label: "Compare lenders", href: "/compare" },
+    { label: "Browse states", href: "/markets" },
+    { label: "Run DSCR numbers", href: "/tools/dscr-calculator" },
+    { label: "Read investor guides", href: "/blog" },
   ];
 
   return (
-    <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden py-24 sm:py-28">
+    <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden py-24 sm:py-28">
       <div className="absolute inset-0">
         <Image
           src="/hero-house.jpg"
@@ -63,9 +63,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <span className="text-foreground">Get the Deal Closed.</span>
+              <span className="text-foreground">Investor Financing</span>
               <br />
-              <span className="gradient-text">Keep Your Capital Moving.</span>
+              <span className="gradient-text">That Looks Cleaner on Paper and Closes Faster in Practice.</span>
             </motion.h1>
 
             <motion.p
@@ -75,9 +75,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Fast financing for investors who need a clear answer, realistic leverage, and a team
-              that knows how to move a file from quote to closing. We handle fix and flip, bridge,
-              DSCR rental, and construction scenarios across 46 states.
+              Financing for borrowers who need speed, clean execution, and a lender that can
+              actually explain the file. AssetLift handles fix and flip, bridge, DSCR rental,
+              and construction scenarios across 46 states.
             </motion.p>
 
             <motion.p
@@ -86,8 +86,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
             >
-              Some deals are funded through our private lending platform, and some are placed with
-              capital partners when that creates the strongest path to closing.
+              We structure the most workable path to closing, whether that means private lending
+              directly or a capital-partner execution path for the scenario in front of us.
             </motion.p>
 
             <motion.div
@@ -98,12 +98,12 @@ const Hero = () => {
             >
               <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 glow-primary">
                 <Link href="/apply">
-                  Get My Deal Reviewed
+                  Review My Deal
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 border-primary/50 hover:bg-primary/10 backdrop-blur-sm">
-                <a href="#programs">View Loan Programs</a>
+                <a href="#programs">See Loan Options</a>
               </Button>
             </motion.div>
 
@@ -113,10 +113,10 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              {trustPoints.map((point) => (
+              {borrowerSignals.map((point) => (
                 <div
                   key={point}
-                  className="rounded-xl border border-border/80 bg-background/70 px-4 py-4 backdrop-blur-sm"
+                  className="rounded-2xl border border-border/80 bg-background/72 px-4 py-4 backdrop-blur-sm"
                 >
                   <p className="text-sm leading-relaxed text-foreground/90">{point}</p>
                 </div>
@@ -130,17 +130,17 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="lg:justify-self-end w-full max-w-md"
           >
-            <div className="rounded-3xl border border-border/80 bg-background/85 p-5 sm:p-6 shadow-2xl backdrop-blur-md">
+            <div className="rounded-[28px] border border-border/80 bg-background/88 p-5 shadow-2xl backdrop-blur-md sm:p-6">
               <div className="mb-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-                  Why Borrowers Reach Out
+                  Borrower Snapshot
                 </p>
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">
-                  Speed matters, but clear execution matters more.
+                  The cleaner the file, the faster the close.
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Borrowers come to AssetLift when timing matters, the file has moving parts, and
-                  they want straight answers before they waste time chasing the wrong lender.
+                  Borrowers usually come to us when a bank is too slow, the deal is too nuanced,
+                  or they need a direct answer on what can actually get done.
                 </p>
               </div>
 
@@ -163,14 +163,39 @@ const Hero = () => {
                 ))}
               </div>
 
-              <div className="rounded-2xl bg-foreground px-5 py-4 text-background">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-2">
-                  DSCR Highlight
-                </p>
-                <p className="text-lg font-semibold">Rates starting as low as 5.85%</p>
-                <p className="text-sm text-background/75 mt-1">
-                  For qualifying DSCR rental-property scenarios.
-                </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div className="rounded-2xl bg-foreground px-5 py-4 text-background">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-2">
+                    DSCR
+                  </p>
+                  <p className="text-lg font-semibold">Rates from 5.85%</p>
+                  <p className="mt-1 text-sm text-background/75">
+                    For qualifying rental-property scenarios.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-border bg-secondary/35 px-5 py-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-2">
+                    Fix &amp; Flip
+                  </p>
+                  <p className="text-lg font-semibold">Rates from 8.5%</p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    High-leverage short-term investor financing.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-5 rounded-2xl border border-border bg-secondary/20 p-4">
+                <div className="mb-4 flex items-center gap-2">
+                  <Building2 className="h-4 w-4 text-primary" />
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    Best Fit
+                  </p>
+                </div>
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <p>Buying a value-add property and need speed.</p>
+                  <p>Refinancing a stabilized rental without income docs.</p>
+                  <p>Working through a deal that needs a realistic capital path.</p>
+                </div>
               </div>
 
               <div className="mt-5">

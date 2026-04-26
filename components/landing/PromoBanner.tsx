@@ -1,55 +1,31 @@
 'use client';
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-const messages = [
-  { text: "Qualifying DSCR Rates Starting As Low As", highlight: "5.85%" },
-  {
-    text: "Qualifying Fix and Flip Rates Starting As Low As",
-    highlight: "8.5%",
-  },
-];
-
 const PromoBanner = () => {
-  const [current, setCurrent] = useState(0);
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible(false);
-      setTimeout(() => {
-        setCurrent((prev) => (prev + 1) % messages.length);
-        setIsVisible(true);
-      }, 350);
-    }, 3500);
-    return () => clearInterval(interval);
-  }, []);
-
-  const msg = messages[current];
-
   return (
-    <div className="fixed top-16 md:top-20 left-0 right-0 z-40 bg-foreground border-b border-primary/20">
-      <div className="container flex items-center justify-center gap-4 md:gap-6 px-4 py-3 md:py-3.5">
-        <span
-          className="text-sm md:text-base font-medium text-background/90 tracking-wide transition-all duration-300 ease-out"
-          style={{
-            opacity: isVisible ? 1 : 0,
-            transform: isVisible ? "translateY(0)" : "translateY(-8px)",
-          }}
-        >
-          {msg.text}{" "}
-          <span className="text-primary font-extrabold text-base md:text-lg">
-            {msg.highlight}
+    <div className="fixed top-16 md:top-20 left-0 right-0 z-40 border-b border-primary/15 bg-foreground/96 backdrop-blur-lg">
+      <div className="container flex flex-wrap items-center justify-center gap-3 px-4 py-2.5 md:gap-4 md:py-3">
+        <div className="hidden md:flex items-center gap-2 rounded-full border border-primary/20 bg-background/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-background/75">
+          Investor Terms
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-background/90">
+          <span className="rounded-full border border-primary/20 bg-background/5 px-3 py-1 font-medium">
+            DSCR from <span className="font-bold text-primary">5.85%</span>
           </span>
-        </span>
-
+          <span className="rounded-full border border-primary/20 bg-background/5 px-3 py-1 font-medium">
+            Fix &amp; Flip from <span className="font-bold text-primary">8.5%</span>
+          </span>
+          <span className="hidden sm:inline rounded-full border border-primary/20 bg-background/5 px-3 py-1 font-medium">
+            Many files close in as fast as <span className="font-bold text-primary">5 business days</span>
+          </span>
+        </div>
         <Link
           href="/apply"
-          className="inline-flex items-center gap-2 px-5 py-2 bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-bold rounded-md transition-all duration-200 hover:shadow-[0_0_20px_hsl(45,93%,47%,0.4)] hover:scale-105 shrink-0"
+          className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-bold text-primary-foreground transition-all duration-200 hover:bg-primary/90 hover:shadow-[0_0_20px_hsl(45,93%,47%,0.35)]"
         >
-          Get My Quote
+          Review My Deal
           <ArrowRight className="w-4 h-4" />
         </Link>
       </div>

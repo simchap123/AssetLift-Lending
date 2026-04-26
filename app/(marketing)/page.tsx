@@ -185,12 +185,12 @@ export default function HomePage() {
       <main className="pt-14">
         <Hero />
         <AnimatedStats />
-        <WhyAssetLift />
         <LoanPrograms />
-        <MarketsPreview />
+        <WhyAssetLift />
         <HowItWorks />
-        <FAQ />
+        <MarketsPreview />
         <Testimonials />
+        <FAQ />
         <CTA />
       </main>
     </>

@@ -1,45 +1,40 @@
 'use client';
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Minus } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowRightLeft, BadgeCheck, Layers3, TrendingUp } from "lucide-react";
 
-const panels = [
+const proofCards = [
   {
-    title: "Fast Processing",
+    title: "Faster Borrower Clarity",
     content:
-      "Hear back within 24 hours, usually within a few hours, and close in as fast as 5 business days on many deals, subject to underwriting, valuation, title, and file complexity.",
+      "Borrowers hear quickly whether the file is workable, what the leverage looks like, and what can slow it down before costs start stacking up.",
+    icon: BadgeCheck,
   },
   {
-    title: "Flexible Capital Execution",
+    title: "Flexible Capital Structure",
     content:
-      "We provide private lending on many deals, and some deals are brokered with capital partners when that is the strongest fit for the file. The goal is not to force one structure on every scenario. It is to get you the strongest realistic path to closing.",
+      "Some deals fit direct private lending. Some are better handled through capital partners. The job is to route the file through the cleanest closing path, not force one structure everywhere.",
+    icon: ArrowRightLeft,
   },
   {
-    title: "Highest Leverage Available",
+    title: "Capital Efficiency",
     content:
-      "We offer up to 92.5% loan-to-cost on fix and flip loans with 100% of rehab funded. Our DSCR rental loans go up to 80% LTV with no personal income verification. Keep more of your capital available for additional investments and project reserves.",
+      "Up to 92.5% LTC on fix and flip and investor-friendly DSCR leverage help borrowers keep more capital available for additional deals and reserves.",
+    icon: TrendingUp,
   },
   {
-    title: "Built for Repeat Investors",
+    title: "Cleaner Repeat Experience",
     content:
-      "Our programs reward experienced borrowers with better rates, higher leverage, and faster closings. The more you work with AssetLift, the better your terms become. Count on our full support before and after closing. Your project is the start of a lasting relationship.",
+      "Repeat investors want less friction, tighter communication, and a team that already understands the way they buy, rehab, refinance, and exit.",
+    icon: Layers3,
   },
 ];
 
 const WhyAssetLift = () => {
-  const [openIndex, setOpenIndex] = useState(0);
-
-  const togglePanel = (index: number) => {
-    setOpenIndex(openIndex === index ? -1 : index);
-  };
-
   return (
     <section className="py-20 md:py-28 relative">
       <div className="container px-4 md:px-6">
-        {/* Two-column layout */}
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
-        {/* Left column: sticky heading */}
+        <div className="mx-auto mb-16 grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <motion.div
             className="lg:sticky lg:top-32 lg:self-start"
             initial={{ opacity: 0, x: -30 }}
@@ -52,76 +47,43 @@ const WhyAssetLift = () => {
               <span className="gradient-text">AssetLift Lending</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              AssetLift helps real estate investors finance deals that banks usually slow down,
-              overcomplicate, or decline. The focus is simple: give borrowers a realistic path to
-              closing for fix and flip, bridge, rental, and construction files without wasting time.
+              The pitch is simple: move faster than a bank, stay cleaner than a messy broker chain,
+              and give investors a financing process that feels organized from the first call to funding.
             </p>
+            <div className="mt-8 rounded-2xl border border-border bg-secondary/25 p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-3">
+                Core Borrower Outcomes
+              </p>
+              <div className="space-y-3 text-sm text-muted-foreground">
+                <p>Move faster on time-sensitive purchases.</p>
+                <p>Keep more capital available across multiple deals.</p>
+                <p>Get a financing process that is easier to understand and easier to repeat.</p>
+              </div>
+            </div>
           </motion.div>
 
-          {/* Right column: accordion panels */}
           <motion.div
-            className="flex flex-col gap-3"
+            className="grid gap-4 sm:grid-cols-2"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            {panels.map((panel, index) => {
-              const isOpen = openIndex === index;
-
-              return (
-                <div
-                  key={panel.title}
-                  className={`border border-border rounded-xl overflow-hidden transition-colors duration-300 ${
-                    isOpen ? "border-l-4 border-l-primary bg-card" : "bg-card/50"
-                  }`}
-                >
-                  {/* Panel header */}
-                  <button
-                    onClick={() => togglePanel(index)}
-                    className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-secondary/40 transition-colors duration-200 cursor-pointer"
-                    aria-expanded={isOpen}
-                  >
-                    <span className="text-lg font-semibold pr-4">{panel.title}</span>
-                    <motion.span
-                      className="flex-shrink-0 text-primary"
-                      animate={{ rotate: isOpen ? 180 : 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
-                    >
-                      {isOpen ? (
-                        <Minus className="w-5 h-5" />
-                      ) : (
-                        <Plus className="w-5 h-5" />
-                      )}
-                    </motion.span>
-                  </button>
-
-                  {/* Panel content */}
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        key="content"
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="overflow-hidden"
-                      >
-                        <div className="px-6 pb-5">
-                          <p className="text-muted-foreground leading-relaxed">
-                            {panel.content}
-                          </p>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+            {proofCards.map((card) => (
+              <div
+                key={card.title}
+                className="rounded-2xl border border-border bg-card p-6 transition-colors duration-300 hover:border-primary/40"
+              >
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
+                  <card.icon className="h-5 w-5 text-primary" />
                 </div>
-              );
-            })}
+                <h3 className="mb-3 text-xl font-semibold">{card.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{card.content}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
 
-        {/* SEO content section */}
         <motion.div
           className="max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
@@ -131,23 +93,21 @@ const WhyAssetLift = () => {
         >
           <div className="bg-secondary/30 border border-border rounded-2xl p-6 md:p-8">
             <h3 className="text-2xl font-bold mb-4">
-              Financing Built for Real Deals, Not Perfect Files
+              Built for Real Files, Not Marketing Decks
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Most borrowers do not need more lender marketing. They need a financing partner who
-              can tell them quickly whether the leverage, timeline, title, insurance, and exit
-              story actually make sense. That is where AssetLift is strongest.
+              Most borrowers do not need another vague lender promise. They need someone who can
+              tell them quickly whether the timeline, leverage, title, insurance, reserves, and
+              exit story actually hold together.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Instead of forcing every opportunity into one credit box, we look for the financing
-              structure that best fits the property and the borrower&apos;s plan. That can mean private
-              lending directly or a capital-partner execution path, but the borrower still gets one
-              coordinated process and one team driving the file forward.
+              AssetLift is strongest when the borrower needs a clean path through a nuanced file:
+              value-add purchases, rental refinances, bridge scenarios, and projects where timing
+              matters and the wrong lender wastes weeks.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              If you are buying a value-add property, bridging a timing gap, refinancing into DSCR
-              debt, or funding a build, the page should make one thing clear: this is lender copy
-              written around borrower outcomes, not around generic buzzwords.
+              The goal is a lender experience that feels more organized, more technical, and easier
+              to trust on the first visit.
             </p>
           </div>
         </motion.div>
