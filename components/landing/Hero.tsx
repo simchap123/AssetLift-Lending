@@ -26,6 +26,13 @@ const Hero = () => {
     { label: "Read investor guides", href: "/blog" },
   ];
 
+  const programLinks = [
+    { label: "Fix & Flip", href: "/loans/fix-and-flip" },
+    { label: "DSCR Rental", href: "/loans/dscr-rental" },
+    { label: "Bridge", href: "/loans/bridge" },
+    { label: "Construction", href: "/loans/ground-up-construction" },
+  ];
+
   return (
     <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden py-24 sm:py-28">
       <div className="absolute inset-0">
@@ -108,10 +115,37 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
+              className="mb-8 rounded-2xl border border-border/80 bg-background/72 p-4 backdrop-blur-sm"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.36 }}
+            >
+              <div className="mb-3 flex items-center justify-between gap-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                  Programs We Offer
+                </p>
+                <a href="#programs" className="text-xs font-medium text-primary hover:text-primary/80 transition-colors">
+                  View all
+                </a>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                {programLinks.map((program) => (
+                  <Link
+                    key={program.href}
+                    href={program.href}
+                    className="rounded-xl border border-border bg-secondary/25 px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/50 hover:bg-secondary/40"
+                  >
+                    {program.label}
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
               className="grid gap-3 sm:grid-cols-3"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.42 }}
             >
               {borrowerSignals.map((point) => (
                 <div
