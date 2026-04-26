@@ -13,6 +13,37 @@ const START_HERE_LINKS = [
   { label: 'DSCR Calculator', href: '/tools/dscr-calculator', blurb: 'Check rental coverage and long-term financing fit.' },
 ];
 
+const CATEGORY_GUIDES: Record<string, { href: string; blurb: string }> = {
+  'Fix & Flip': {
+    href: '/loans/fix-and-flip',
+    blurb: 'Rehab funding, draw process, timelines, and repeat-flipper execution.',
+  },
+  'DSCR Rental': {
+    href: '/loans/dscr-rental',
+    blurb: 'Rental-property financing, refinance strategy, and DSCR qualification.',
+  },
+  Bridge: {
+    href: '/loans/bridge',
+    blurb: 'Short-term acquisition and stabilization financing for transitional deals.',
+  },
+  Construction: {
+    href: '/loans/ground-up-construction',
+    blurb: 'Ground-up and heavy-project financing with draws and execution controls.',
+  },
+  Comparisons: {
+    href: '/compare',
+    blurb: 'High-intent lender comparisons for borrowers evaluating alternatives.',
+  },
+  Education: {
+    href: '/how-it-works',
+    blurb: 'Process guides, underwriting prep, and closing-readiness articles.',
+  },
+  'Local Markets': {
+    href: '/markets',
+    blurb: 'State and city search intent for borrowers who finance deals locally.',
+  },
+};
+
 export const metadata: Metadata = createMetadata({
   title: 'Hard Money Lending Blog | Fix & Flip, DSCR & Bridge',
   description:
@@ -27,7 +58,8 @@ export default function BlogListingPage() {
   }, {});
   const topCategories = Object.entries(categoryCounts)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 4);
+    .slice(0, 6);
+  const latestPosts = BLOG_POSTS.slice(0, 3);
 
   const schema = {
     '@context': 'https://schema.org',
@@ -126,6 +158,70 @@ export default function BlogListingPage() {
                   </div>
                 </Link>
               ))}
+            </div>
+
+            <div className="mb-12">
+              <div className="flex items-end justify-between gap-4 mb-5">
+                <div>
+                  <h2 className="text-2xl font-bold tracking-tight">Browse by Topic</h2>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Start with the content bucket that matches the deal you are actively working on.
+                  </p>
+                </div>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                {topCategories.map(([category, count]) => {
+                  const guide = CATEGORY_GUIDES[category] ?? {
+                    href: '/how-it-works',
+                    blurb: 'Borrower education and financing process guidance.',
+                  };
+
+                  return (
+                    <Link
+                      key={category}
+                      href={guide.href}
+                      className="rounded-2xl border border-border bg-card p-5 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <p className="font-semibold mb-2">{category}</p>
+                          <p className="text-sm text-muted-foreground mb-3">{guide.blurb}</p>
+                          <span className="inline-flex rounded-full bg-secondary px-3 py-1 text-xs text-muted-foreground">
+                            {count} articles
+                          </span>
+                        </div>
+                        <ArrowRight className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="mb-12 rounded-3xl border border-border bg-card p-6 md:p-8">
+              <div className="flex items-end justify-between gap-4 mb-6">
+                <div>
+                  <h2 className="text-2xl font-bold tracking-tight">Latest Publishing Sprint</h2>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Fresh content built around investor intent, local search, and lender comparison queries.
+                  </p>
+                </div>
+              </div>
+              <div className="grid gap-4 md:grid-cols-3">
+                {latestPosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="rounded-2xl border border-border bg-background p-5 hover:border-primary/50 transition-colors"
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">
+                      {post.category}
+                    </p>
+                    <h3 className="font-semibold mb-2 line-clamp-2">{post.title}</h3>
+                    <p className="text-sm text-muted-foreground line-clamp-3">{post.description}</p>
+                  </Link>
+                ))}
+              </div>
             </div>
 
             <div className="space-y-8">

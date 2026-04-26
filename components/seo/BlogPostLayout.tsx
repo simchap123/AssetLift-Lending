@@ -60,6 +60,8 @@ const RESOURCE_MAP: Record<string, Array<{ label: string; href: string }>> = {
 
 export default function BlogPostLayout({ post, relatedPosts = [] }: BlogPostLayoutProps) {
   const resources = RESOURCE_MAP[post.category] ?? RESOURCE_MAP.Education;
+  const quickTakeaways = post.sections.slice(0, 3).map((section) => section.heading);
+  const quickAnswer = post.faqs[0]?.answer ?? post.description;
 
   return (
     <div className="min-h-screen">
@@ -103,6 +105,34 @@ export default function BlogPostLayout({ post, relatedPosts = [] }: BlogPostLayo
                   <Clock className="w-4 h-4" />
                   {post.readTime}
                 </span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.05 }}
+              className="mt-8 rounded-2xl border border-border bg-card p-6"
+            >
+              <div className="grid gap-6 md:grid-cols-[1.4fr_1fr]">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
+                    Quick Answer
+                  </p>
+                  <p className="text-base leading-7 text-foreground/90">{quickAnswer}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
+                    Key Takeaways
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    {quickTakeaways.map((takeaway) => (
+                      <li key={takeaway} className="rounded-lg bg-secondary/40 px-3 py-2">
+                        {takeaway}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </motion.div>
           </div>
