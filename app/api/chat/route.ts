@@ -25,8 +25,7 @@ LOAN PROGRAMS:
    - Total loan capped at 70-75% of ARV
    - Term: 6-18 months
    - Rates starting at 8.5%
-   - Many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
-   - Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
+   - Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
    - No prepayment penalties
    - Min FICO: 620+ (best rates at 700+)
    - Min down payment: 10% of purchase price
@@ -47,7 +46,7 @@ LOAN PROGRAMS:
    - Min FICO: 660+ (best at 720+)
    - Requires: 2+ completed ground-up builds, licensed GC, approved plans & permits
    - Down payment: 15% equity + 3-6 months interest reserves
-   - Timeline: feasibility review in 48 hours, close in 10-14 business days
+   - Timeline: feasibility review in 48 hours, with many files closing in as fast as 5 business days subject to underwriting, valuation, title, and file complexity
 
 3. DSCR RENTAL LOANS
    - Up to 80% LTV (purchase), 75% LTV (cash-out refi)
@@ -63,7 +62,7 @@ LOAN PROGRAMS:
    - Interest-only option available (first 5-10 years)
    - Cash-out refinance up to 75% LTV
    - Down payment: 20% (DSCR 1.25+), 25% (DSCR 1.0-1.24), 25-30% (DSCR <1.0)
-   - Many DSCR files close inside the broader 7-14 business day range, though some may take longer based on appraisal and file complexity
+   - Many DSCR files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
    - Perfect for BRRRR strategy (convert fix & flip to long-term rental)
    - Prepayment: may have stepdown structure (e.g. 3-2-1)
 
@@ -71,8 +70,7 @@ LOAN PROGRAMS:
    - Up to 75% LTV (as-is value)
    - Term: 3-24 months
    - Rates starting at 10%
-   - Many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
-   - Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
+   - Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
    - Loan range: $100K - $3MM
    - Interest-only monthly payments
    - No prepayment penalties
@@ -85,7 +83,7 @@ PROCESS (4 STEPS):
 1. Submit Your Deal - online form takes <5 min, no fee, no credit pull
 2. Receive Quote - hear back within 24 hours, usually within a few hours, with a soft-quote or any follow-up items needed
 3. Due Diligence - appraisal/BPO ordered, title + insurance run concurrently (3-5 biz days)
-4. Close & Fund - many hard money deals can close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity. Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
+4. Close & Fund - many hard money deals can close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
 
 DOCUMENTS TYPICALLY NEEDED:
 - Purchase contract or proof of ownership

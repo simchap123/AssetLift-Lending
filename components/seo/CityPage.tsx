@@ -81,14 +81,14 @@ const PRIORITY_CITY_GUIDANCE: Record<
     lenderView:
       "Charlotte lenders usually like the combination of migration, employer growth, and broad buyer demand, but they still want to know the property fits the local price band. The strongest Charlotte deals tend to be the ones with clean suburban or in-town buyer pools, realistic rehab plans, and a refinance path that makes sense if the borrower intends to hold.",
     borrowerFocus: [
-      "Match renovation quality to the neighborhood’s actual buyer expectations",
+      "Match renovation quality to the neighborhoodÃ¢â‚¬â„¢s actual buyer expectations",
       "Use current local comps instead of leaning on citywide appreciation headlines",
       "Show reserves and a refinance plan on hold-oriented deals",
     ],
   },
   'north-carolina/raleigh': {
     lenderView:
-      "Raleigh looks strong to lenders because of the Research Triangle’s employment base, but the best files are still conservative. Borrowers who rely on local rent support, clear resale comps, and a straightforward scope usually get cleaner execution than borrowers who assume macro growth alone makes the deal safe.",
+      "Raleigh looks strong to lenders because of the Research TriangleÃ¢â‚¬â„¢s employment base, but the best files are still conservative. Borrowers who rely on local rent support, clear resale comps, and a straightforward scope usually get cleaner execution than borrowers who assume macro growth alone makes the deal safe.",
     borrowerFocus: [
       "Support the property story with local comps and rent data from the exact submarket",
       "Avoid over-improving into a price point the neighborhood does not consistently trade at",
@@ -140,7 +140,7 @@ export default function CityPage({ city }: CityPageProps) {
               Hard Money Loans in {city.cityName}
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mb-8">
-              Fast, flexible real estate investment financing for {city.cityName} investors. Fix & flip, bridge, DSCR rental, and construction loans with responses within 24 hours and closings in as fast as 7-14 days.
+              Fast, flexible real estate investment financing for {city.cityName} investors. Fix & flip, bridge, DSCR rental, and construction loans with responses within 24 hours and closings in as fast as 5 days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 glow-primary">
@@ -165,7 +165,7 @@ export default function CityPage({ city }: CityPageProps) {
               <div className="text-sm text-muted-foreground">Max LTC</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-primary">7-14</div>
+              <div className="text-2xl md:text-3xl font-bold text-primary">5</div>
               <div className="text-sm text-muted-foreground">Days to Close</div>
             </div>
             <div>
@@ -372,7 +372,7 @@ export default function CityPage({ city }: CityPageProps) {
               { title: 'Fix & Flip Loans', desc: 'Up to 92.5% LTC with 100% rehab funding. 13-19 month terms.', href: '/loans/fix-and-flip' },
               { title: 'Ground-Up Construction', desc: 'Up to 90% LTC with 100% construction funding. 19-24 month terms.', href: '/loans/ground-up-construction' },
               { title: 'DSCR Rental Loans', desc: 'Up to 80% LTV. 30-year fixed rate. No income verification.', href: '/loans/dscr-rental' },
-              { title: 'Bridge Loans', desc: 'Up to 80% LTV. Close in as fast as 7-14 days. Flexible exit strategies.', href: '/loans/bridge' },
+              { title: 'Bridge Loans', desc: 'Up to 80% LTV. Close in as fast as 5 days. Flexible exit strategies.', href: '/loans/bridge' },
             ].map((program, i) => (
               <Link
                 key={i}

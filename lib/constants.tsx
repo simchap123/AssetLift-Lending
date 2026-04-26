@@ -16,7 +16,7 @@ export const LOAN_PROGRAMS: LoanProgram[] = [
     ],
     otherOptions: '*Bridge only options available',
     color: 'bg-primary',
-    icon: '🏠'
+    icon: 'ðŸ '
   },
   {
     id: 'ground-up',
@@ -33,7 +33,7 @@ export const LOAN_PROGRAMS: LoanProgram[] = [
     ],
     otherOptions: 'BUILD2RENT\u00AE: Flexible DSCR options',
     color: 'bg-charcoal',
-    icon: '🏗️'
+    icon: 'ðŸ—ï¸'
   },
   {
     id: 'rental',
@@ -48,7 +48,7 @@ export const LOAN_PROGRAMS: LoanProgram[] = [
       '1-4 unit residential properties'
     ],
     color: 'bg-charcoal-lighter',
-    icon: '🏘️'
+    icon: 'ðŸ˜ï¸'
   }
 ];
 
@@ -67,7 +67,7 @@ export const LENDING_PROCESS: ProcessStep[] = [
   },
   {
     title: 'Funding',
-    description: 'Final approval and many closings can happen in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.'
+    description: 'Final approval and many closings can happen in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.'
   }
 ];
 
@@ -78,7 +78,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     question: "How long does it take to get a loan approved?",
-    answer: "We get back to you within 24 hours, usually within a few hours. Many deals can close in as fast as 7 to 14 business days, subject to underwriting, valuation, title, and file complexity."
+    answer: "We get back to you within 24 hours, usually within a few hours. Many deals can close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity."
   },
   {
     question: "Do you offer financing for first-time investors?",

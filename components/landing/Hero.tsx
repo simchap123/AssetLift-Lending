@@ -10,12 +10,12 @@ const Hero = () => {
   const trustPoints = [
     "Fix and flip, bridge, DSCR, and construction loan options",
     "Hear back within 24 hours, usually within a few hours",
-    "Many deals close in as fast as 7-14 business days",
+    "Many deals close in as fast as 5 business days",
   ];
 
   const proofItems = [
     { icon: Clock3, label: "Response Time", value: "Within 24 Hours" },
-    { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 7-14 Business Days" },
+    { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 5 Business Days" },
     { icon: MapPinned, label: "Coverage", value: "46 States" },
   ];
 

@@ -18,7 +18,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     slug: "fix-and-flip",
     title: "Fix & Flip Loans - Fast Funding for House Flipping Projects",
     description:
-      "AssetLift Lending offers fix-and-flip loans with rates starting as low as 8.5% for qualifying scenarios, up to 90% LTV, and closings in as fast as 5 business days for experienced investors with 3 or more completed flips, subject to underwriting, valuation, title, and file complexity.",
+      "AssetLift Lending offers fix-and-flip loans with rates starting as low as 8.5% for qualifying scenarios, up to 90% LTV, and closings in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
     heroTitle: "Fix & Flip Loans",
     heroSubtitle:
       "Close in days, not months. Get the capital you need to acquire and renovate investment properties with speed and certainty.",
@@ -30,7 +30,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       { label: "Loan Term", value: "6 to 18 months" },
       {
         label: "Closing Speed",
-        value: "As fast as 5 business days for experienced investors with 3+ completed flips",
+        value: "As fast as 5 business days",
       },
       { label: "Interest Rates Starting At", value: "8.5%" },
     ],
@@ -58,7 +58,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         title: "Experienced Borrower Rate Discounts",
         description:
-          "Investors with a verified track record of completed flips qualify for reduced origination fees, lower interest rates, and potentially faster closings. Experienced investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Bring documentation of your last 3 to 5 completed projects at application and our pricing team will build a customized rate sheet for your deal.",
+          "Investors with a verified track record of completed flips qualify for reduced origination fees, lower interest rates, and potentially faster closings. Bring documentation of your last 3 to 5 completed projects at application and our pricing team will build a customized rate sheet for your deal.",
       },
       {
         title: "Flexible Exit Strategies",
@@ -90,7 +90,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         requirement: "Real Estate Experience",
         detail:
-          "First-time flippers are welcome, though borrowers with no prior flipping experience may face slightly higher rates or lower maximum leverage. Having a licensed general contractor on your team or documented construction management experience strengthens your application. Repeat borrowers with 3 or more completed flips receive preferential pricing and may qualify for closings in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+          "First-time flippers are welcome, though borrowers with no prior flipping experience may face slightly higher rates or lower maximum leverage. Having a licensed general contractor on your team or documented construction management experience strengthens your application. Repeat borrowers with 3 or more completed flips receive preferential pricing.",
       },
     ],
     process: [
@@ -124,7 +124,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         title: "Auction and Foreclosure Purchases",
         description:
-          "Auction purchases require proof of funds and rapid closing. AssetLift Lending provides proof-of-funds letters for active borrowers and can close within 5 to 7 business days, making it possible to compete at courthouse auctions, HUD sales, and bank-owned property liquidations where traditional financing is not an option.",
+          "Auction purchases require proof of funds and rapid closing. AssetLift Lending provides proof-of-funds letters for active borrowers and can close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity, making it possible to compete at courthouse auctions, HUD sales, and bank-owned property liquidations where traditional financing is not an option.",
       },
       {
         title: "Small Multifamily Value-Add",
@@ -141,7 +141,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         question: "How quickly can AssetLift Lending close a fix-and-flip loan?",
         answer:
-          "Many straightforward fix-and-flip files can close in as fast as 7 to 14 business days from the date a complete application is received. Experienced investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+          "Many straightforward fix-and-flip files can close in as fast as 5 business days from the date a complete application is received, subject to underwriting, valuation, title, and file complexity.",
       },
       {
         question: "Do you finance the full renovation cost?",
@@ -250,7 +250,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         step: "Underwriting and Due Diligence",
         description:
-          "Upon term sheet acceptance, we commission a full appraisal based on the proposed plans and specifications, review the title report and zoning compliance, verify the general contractor's license and insurance, and complete a background and credit review of the borrower. This phase typically takes 10 to 14 business days.",
+          "Upon term sheet acceptance, we commission a full appraisal based on the proposed plans and specifications, review the title report and zoning compliance, verify the general contractor's license and insurance, and complete a background and credit review of the borrower. Many files move from this phase to closing in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
       },
       {
         step: "Closing and Initial Funding",
@@ -403,7 +403,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         step: "Appraisal and Underwriting",
         description:
-          "We order a full appraisal that includes a rental survey to establish the property's fair market rent. The underwriting review covers the property's condition, the borrower's credit profile, and the entity documentation (if closing in an LLC). Because no income verification is required, the underwriting timeline is significantly shorter than conventional loans, typically 5 to 10 business days.",
+          "We order a full appraisal that includes a rental survey to establish the property's fair market rent. The underwriting review covers the property's condition, the borrower's credit profile, and the entity documentation (if closing in an LLC). Because no income verification is required, many files move through underwriting and toward closing in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
       },
       {
         step: "Conditional Approval and Document Collection",
@@ -413,7 +413,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         step: "Closing",
         description:
-          "We coordinate with the title company or closing attorney to prepare and execute loan documents. Funds are wired at closing for purchases, or disbursed within 3 business days for refinances after the rescission period (where applicable). The entire process from application to funded loan typically takes 14 to 21 business days.",
+          "We coordinate with the title company or closing attorney to prepare and execute loan documents. Funds are wired at closing for purchases, or disbursed promptly for refinances after any applicable rescission period. Many DSCR files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
       },
     ],
     useCases: [
@@ -475,16 +475,16 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     slug: "bridge",
     title: "Bridge Loans for Real Estate Investors - Short-Term Capital When You Need It Most",
     description:
-      "AssetLift Lending offers bridge loans for real estate investors who need fast, flexible capital to close acquisitions, reposition assets, or bridge the gap between transactions. Close in as few as 3 days.",
+      "AssetLift Lending offers bridge loans for real estate investors who need fast, flexible capital to close acquisitions, reposition assets, or bridge the gap between transactions. Close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
     heroTitle: "Bridge Loans",
     heroSubtitle:
       "Bridge the gap between opportunity and long-term financing. Close fast, act decisively, and execute your strategy without waiting on slow capital.",
     overview:
-      "Bridge loans are short-term financing instruments that provide immediate capital to real estate investors who need to move quickly, cannot wait for conventional underwriting timelines, or face situations where traditional lending products do not apply. The term \"bridge\" refers to the loan's purpose: it bridges the gap between an immediate capital need and a longer-term financing solution or asset disposition. Bridge loans are not a permanent financing tool. They are a tactical weapon deployed when speed, certainty, and flexibility matter more than cost.\n\nThe scenarios that call for bridge loans are varied and time-sensitive. An investor may need to close on a property in 5 days to beat a competing offer. A borrower's conventional loan may fall through 48 hours before closing, and they need replacement capital to avoid losing their earnest money. A property owner may need to pull equity from an existing asset to fund a down payment on a new acquisition before the first property sells. In each case, a bridge loan solves a problem that no other financing product can address within the required timeframe.\n\nAssetLift Lending's bridge loan program is built for exactly these situations. We offer loan terms from 3 to 24 months, with closings as fast as 3 business days for borrowers with pre-approved profiles and clear title. Our bridge loans finance acquisitions, refinances, cash-out equity extraction, and partner buyouts on residential and small commercial properties. Loan amounts range from $100,000 to $3 million, with leverage up to 75% of the as-is property value.\n\nThe cost of a bridge loan is higher than a conventional mortgage, but the value it provides is measured in deals saved, opportunities captured, and financial flexibility preserved. For investors operating in competitive markets where the best deals go under contract within hours, having access to fast, reliable bridge capital is not a luxury. It is a requirement for staying in the game.",
+      "Bridge loans are short-term financing instruments that provide immediate capital to real estate investors who need to move quickly, cannot wait for conventional underwriting timelines, or face situations where traditional lending products do not apply. The term \"bridge\" refers to the loan's purpose: it bridges the gap between an immediate capital need and a longer-term financing solution or asset disposition. Bridge loans are not a permanent financing tool. They are a tactical weapon deployed when speed, certainty, and flexibility matter more than cost.\n\nThe scenarios that call for bridge loans are varied and time-sensitive. An investor may need to close on a property in 5 days to beat a competing offer. A borrower's conventional loan may fall through 48 hours before closing, and they need replacement capital to avoid losing their earnest money. A property owner may need to pull equity from an existing asset to fund a down payment on a new acquisition before the first property sells. In each case, a bridge loan solves a problem that no other financing product can address within the required timeframe.\n\nAssetLift Lending's bridge loan program is built for exactly these situations. We offer loan terms from 3 to 24 months, with many files closing in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Our bridge loans finance acquisitions, refinances, cash-out equity extraction, and partner buyouts on residential and small commercial properties. Loan amounts range from $100,000 to $3 million, with leverage up to 75% of the as-is property value.\n\nThe cost of a bridge loan is higher than a conventional mortgage, but the value it provides is measured in deals saved, opportunities captured, and financial flexibility preserved. For investors operating in competitive markets where the best deals go under contract within hours, having access to fast, reliable bridge capital is not a luxury. It is a requirement for staying in the game.",
     keyStats: [
       { label: "Loan-to-Value (As-Is)", value: "Up to 75%" },
       { label: "Loan Term", value: "3 to 24 months" },
-      { label: "Closing Speed", value: "As fast as 3 business days" },
+      { label: "Closing Speed", value: "As fast as 5 business days" },
       { label: "Loan Amount Range", value: "$100,000 to $3,000,000" },
       { label: "Interest Rates Starting At", value: "10%" },
     ],
@@ -492,7 +492,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         title: "Rapid Closing Capability",
         description:
-          "We close bridge loans in as few as 3 business days for borrowers with clean title, pre-approved borrower profiles, and complete documentation. Standard bridge closings take 5 to 10 business days. This speed allows you to make competitive offers with short due diligence periods and close before other buyers can even secure financing.",
+          "We close many bridge loans in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. This speed allows you to make competitive offers with short due diligence periods and close before other buyers can even secure financing.",
       },
       {
         title: "Flexible Collateral Types",
@@ -561,7 +561,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         step: "Closing and Funding",
         description:
-          "We coordinate directly with the title company or closing attorney to prepare documents, schedule signing, and wire funds. Bridge loan closings are streamlined with fewer documents than conventional transactions. Funds are wired to the title company on the day of closing, and you take possession of the property immediately. The entire process from first contact to funded loan can be as short as 3 to 7 business days.",
+          "We coordinate directly with the title company or closing attorney to prepare documents, schedule signing, and wire funds. Bridge loan closings are streamlined with fewer documents than conventional transactions. Funds are wired to the title company on the day of closing, and you take possession of the property immediately. Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
       },
     ],
     useCases: [
@@ -578,7 +578,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         title: "Rescue Capital for Failed Conventional Closings",
         description:
-          "Conventional loan approvals fall through more often than borrowers expect, sometimes days before the scheduled closing. When a bank pulls approval at the last minute due to an appraisal issue, underwriting condition, or policy change, a bridge loan can step in to save the deal. We have closed rescue bridge loans in as few as 3 business days to prevent borrowers from losing their earnest money deposit and the deal.",
+          "Conventional loan approvals fall through more often than borrowers expect, sometimes days before the scheduled closing. When a bank pulls approval at the last minute due to an appraisal issue, underwriting condition, or policy change, a bridge loan can step in to save the deal. We have closed rescue bridge loans in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity, to help borrowers avoid losing earnest money and the deal itself.",
       },
       {
         title: "Equity Extraction for Down Payments",
@@ -590,7 +590,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         question: "How fast can AssetLift Lending actually close a bridge loan?",
         answer:
-          "Our fastest documented closing is 3 business days from application to funding. This is achievable when the borrower has a pre-approved profile with us, the property has a recent appraisal or clear comparable sales data, and the title is clean. For first-time borrowers or properties requiring a new appraisal, 5 to 10 business days is a more realistic expectation. In every case, we structure the process to move as fast as your deal requires.",
+          "Many bridge files can close in as fast as 5 business days from application to funding, subject to underwriting, valuation, title, and file complexity. Borrowers with clean title, complete documentation, and a straightforward scenario are best positioned for the fastest execution. In every case, we structure the process to move as fast as your deal requires.",
       },
       {
         question: "What is the typical interest rate on a bridge loan?",

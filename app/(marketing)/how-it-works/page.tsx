@@ -52,9 +52,9 @@ export default function HowItWorksPage() {
       icon: Banknote,
       number: '04',
       title: 'Close & Fund',
-      description: 'Once underwriting is complete and title is clear, we schedule your closing. For many hard money deals, this can happen in as fast as 7-14 business days, subject to valuation, title, and file complexity. Funds are wired to the title company at closing.',
+      description: 'Once underwriting is complete and title is clear, we schedule your closing. For many hard money deals, this can happen in as fast as 5 business days, subject to valuation, title, and file complexity. Funds are wired to the title company at closing.',
       details: [
-        'Many files close in as fast as 7-14 business days',
+        'Many files close in as fast as 5 business days',
         'Funds wired same day as closing',
         'Rehab/construction funds held in escrow for draws',
       ],
@@ -66,7 +66,7 @@ export default function HowItWorksPage() {
     '@type': 'HowTo',
     name: 'How to Get a Hard Money Loan from AssetLift Lending',
     description:
-      'Get funded in 4 simple steps: submit your deal, hear back within 24 hours, complete due diligence, and many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.',
+      'Get funded in 4 simple steps: submit your deal, hear back within 24 hours, complete due diligence, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.',
     url: 'https://www.assetliftlending.com/how-it-works',
     totalTime: 'P10D',
     step: [
@@ -92,7 +92,7 @@ export default function HowItWorksPage() {
         '@type': 'HowToStep',
         position: 4,
         name: 'Close & Fund',
-        text: 'Once underwriting is complete and title is clear, many files can close in as fast as 7-14 business days, subject to valuation, title, and file complexity. Funds are wired directly to the title company.',
+        text: 'Once underwriting is complete and title is clear, many files can close in as fast as 5 business days, subject to valuation, title, and file complexity. Funds are wired directly to the title company.',
       },
     ],
   };

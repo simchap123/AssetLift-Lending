@@ -97,7 +97,7 @@ export default function AboutPage() {
           {/* Values */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-20">
             {[
-              { icon: Zap, title: 'Speed', desc: 'Hear back within 24 hours, usually within a few hours, and many files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.' },
+              { icon: Zap, title: 'Speed', desc: 'Hear back within 24 hours, usually within a few hours, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.' },
               { icon: Shield, title: 'Reliability', desc: 'We structure each deal through the most reliable lending channel available for the file.' },
               { icon: Users, title: 'Partnership', desc: 'We succeed when you succeed. Our team is invested in your growth.' },
               { icon: Award, title: 'Expertise', desc: 'Decades of combined real estate and lending experience.' },

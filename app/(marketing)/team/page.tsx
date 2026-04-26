@@ -31,7 +31,7 @@ const teamMembers = [
 const companyStats = [
   { icon: MapPin, label: 'Lending in 46 states', detail: 'Nationwide coverage' },
   { icon: DollarSign, label: 'Loans up to $5MM', detail: 'Flexible capital' },
-  { icon: Clock, label: 'Fast closings on many files', detail: '7-14 business days for many straightforward files' },
+  { icon: Clock, label: 'Fast closings on many files', detail: '5 business days for many straightforward files' },
   { icon: Building2, label: 'Response within 24 hours', detail: 'Usually within a few hours' },
 ];
 

@@ -92,7 +92,7 @@ const HowItWorks = () => {
     {
       icon: Banknote,
       title: "Close and Fund",
-      description: "Once the file is ready, many deals close in as fast as 7-14 days",
+      description: "Once the file is ready, many deals close in as fast as 5 days",
       number: "04",
     },
   ];

@@ -8,7 +8,7 @@ const panels = [
   {
     title: "Fast Processing",
     content:
-      "Hear back within 24 hours, usually within a few hours, and close in as fast as 7 to 14 business days on many deals. Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+      "Hear back within 24 hours, usually within a few hours, and close in as fast as 5 business days on many deals, subject to underwriting, valuation, title, and file complexity.",
   },
   {
     title: "Flexible Capital Execution",

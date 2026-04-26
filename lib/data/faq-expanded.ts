@@ -88,11 +88,11 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     items: [
       {
         question: "How fast can you close a loan?",
-        answer: "Many deals can close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity. Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Some programs and more complex files may take longer."
+        answer: "Many deals can close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Some programs and more complex files may take longer."
       },
       {
         question: "What is your application process?",
-        answer: "Step 1: Submit your deal details through our online form or call us. Step 2: We get back to you within 24 hours, usually within a few hours. Step 3: If you move forward, we order valuations and begin underwriting. Step 4: If approved, the loan proceeds through the applicable lending or partner-funding channel and may close in as fast as 7-14 business days on many files. Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity."
+        answer: "Step 1: Submit your deal details through our online form or call us. Step 2: We get back to you within 24 hours, usually within a few hours. Step 3: If you move forward, we order valuations and begin underwriting. Step 4: If approved, the loan proceeds through the applicable lending or partner-funding channel and may close in as fast as 5 business days on many files."
       },
       {
         question: "What documents do you need?",

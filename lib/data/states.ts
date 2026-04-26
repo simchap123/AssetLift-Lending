@@ -39,7 +39,7 @@ export const STATES: StateData[] = [
       {
         question: "How fast can I close on a hard money loan in Alabama?",
         answer:
-          "AssetLift Lending typically closes hard money loans in Alabama within 7 to 14 business days. Alabama is a title-theory state, so closings can move quickly once a clear title commitment is in hand.",
+          "AssetLift Lending typically closes hard money loans in Alabama within 5 business days. Alabama is a title-theory state, so closings can move quickly once a clear title commitment is in hand.",
       },
     ],
   },
@@ -207,7 +207,7 @@ export const STATES: StateData[] = [
       {
         question: "How quickly are hard money loans processed in Delaware?",
         answer:
-          "AssetLift typically closes hard money loans in Delaware within 10 to 14 business days. Delaware's streamlined title process and smaller market size can sometimes allow faster closings compared to larger states.",
+          "AssetLift typically closes hard money loans in Delaware in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Delaware's streamlined title process and smaller market size can support efficient closings when the file is ready.",
       },
     ],
   },
@@ -902,7 +902,7 @@ export const STATES: StateData[] = [
       {
         question: "How fast can I close a hard money loan in North Carolina?",
         answer:
-          "North Carolina is an attorney-close state, meaning a licensed attorney must conduct the closing. Despite this requirement, hard money loans typically close in 10-14 business days. AssetLift works with a network of experienced North Carolina real estate attorneys to ensure fast closings.",
+          "North Carolina is an attorney-close state, meaning a licensed attorney must conduct the closing. Even with that requirement, many hard money loans close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. AssetLift works with experienced North Carolina real estate attorneys to help keep files moving efficiently.",
       },
       {
         question: "Is North Carolina a non-judicial foreclosure state?",

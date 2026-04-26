@@ -134,7 +134,7 @@ export default function LocationPage({ state }: LocationPageProps) {
               <div className="text-sm text-muted-foreground">Max LTC</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-primary">7-14</div>
+              <div className="text-2xl md:text-3xl font-bold text-primary">5</div>
               <div className="text-sm text-muted-foreground">Days to Close</div>
             </div>
             <div>
@@ -369,7 +369,7 @@ export default function LocationPage({ state }: LocationPageProps) {
               { title: 'Fix & Flip Loans', desc: 'Up to 92.5% LTC with 100% rehab funding. 13-19 month terms.', href: '/loans/fix-and-flip' },
               { title: 'Ground-Up Construction', desc: 'Up to 90% LTC with 100% construction funding. 19-24 month terms.', href: '/loans/ground-up-construction' },
               { title: 'DSCR Rental Loans', desc: 'Up to 80% LTV. 30-year fixed rate. No income verification.', href: '/loans/dscr-rental' },
-              { title: 'Bridge Loans', desc: 'Up to 80% LTV. Close in as fast as 7-14 days. Flexible exit strategies.', href: '/loans/bridge' },
+              { title: 'Bridge Loans', desc: 'Up to 80% LTV. Close in as fast as 5 days. Flexible exit strategies.', href: '/loans/bridge' },
             ].map((program, i) => (
               <Link
                 key={i}
