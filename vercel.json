@@ -5,10 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.assetliftlending.com"
+          "value": "assetliftlending.com"
         }
       ],
-      "destination": "https://assetliftlending.com/:path*",
+      "destination": "https://www.assetliftlending.com/:path*",
       "permanent": true
     },
     {
@@ -20,7 +20,7 @@
           "value": "http"
         }
       ],
-      "destination": "https://assetliftlending.com/:path*",
+      "destination": "https://www.assetliftlending.com/:path*",
       "permanent": true
     }
   ]
