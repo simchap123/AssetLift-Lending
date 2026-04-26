@@ -29,7 +29,7 @@ const PromoBanner = () => {
   const msg = messages[current];
 
   return (
-    <div className="fixed top-16 md:top-20 left-0 right-0 z-40 border-b border-primary/15 bg-[#1a1a2e]">
+    <div className="fixed top-16 md:top-20 left-0 right-0 z-40 border-b border-primary/20 bg-[#1a1a2e] dark:bg-gradient-to-r dark:from-[#0c0e17] dark:via-[#131528] dark:to-[#0c0e17] dark:border-primary/30 shadow-sm">
       <div className="container flex items-center justify-center gap-4 md:gap-6 px-4 py-2.5 md:py-3">
         <span
           className="text-sm md:text-base font-medium text-white/90 tracking-wide transition-all duration-300 ease-out"
