@@ -185,10 +185,10 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
             <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">
               {product.heroSubtitle}
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+            <h1 data-speakable className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
               {product.heroTitle}
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mb-8">
+            <p data-speakable className="text-lg text-muted-foreground max-w-2xl mb-8">
               {product.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -230,7 +230,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Overview</h2>
+            <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-8">Overview</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
               {product.overview.split('\n\n').map((p, i) => (
                 <p key={i}>{p}</p>
@@ -243,7 +243,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       {/* Features */}
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Key Features</h2>
+          <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-12 text-center">Key Features</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {product.features.map((feature, i) => (
               <motion.div
@@ -254,7 +254,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
               >
-                <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
+                <h3 data-speakable className="font-semibold text-lg mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground text-sm">{feature.description}</p>
               </motion.div>
             ))}
@@ -267,7 +267,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
           <div className="container px-4 md:px-6">
             <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 max-w-5xl mx-auto">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">{insights.fitTitle}</h2>
+                <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-6">{insights.fitTitle}</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">{insights.fitBody}</p>
               </div>
               <div className="bg-card border border-border rounded-2xl p-6">
@@ -294,7 +294,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Eligibility Requirements</h2>
+            <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-8">Eligibility Requirements</h2>
             <div className="space-y-4">
               {product.eligibility.map((req, i) => (
                 <div key={i} className="flex items-start gap-3">
@@ -313,14 +313,14 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       {/* Process */}
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">How It Works</h2>
+          <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-12 text-center">How It Works</h2>
           <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {product.process.map((step, i) => (
               <div key={i} className="text-center">
                 <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg mx-auto mb-4">
                   {i + 1}
                 </div>
-                <h3 className="font-semibold mb-2">{step.step}</h3>
+                <h3 data-speakable className="font-semibold mb-2">{step.step}</h3>
                 <p className="text-muted-foreground text-sm">{step.description}</p>
               </div>
             ))}
@@ -333,7 +333,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
           <div className="container px-4 md:px-6">
             <div className="max-w-5xl mx-auto">
               <div className="max-w-3xl mb-10">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-4">
                   Borrower Walkthroughs
                 </h2>
                 <p className="text-lg text-muted-foreground">
@@ -381,7 +381,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
         <section className="py-16 md:py-24 bg-secondary/20">
           <div className="container px-4 md:px-6">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+              <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-8 text-center">
                 What Usually Trips Borrowers Up
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
@@ -401,7 +401,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Who Is This For?</h2>
+            <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-8">Who Is This For?</h2>
             <div className="space-y-6">
               {product.useCases.map((uc, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl p-6">
@@ -417,7 +417,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       {/* FAQs */}
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container px-4 md:px-6 max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+          <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
           <Accordion type="single" collapsible className="space-y-4">
             {product.faqs.map((faq, i) => (
               <AccordionItem
@@ -449,7 +449,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       {/* CTA */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Get Started?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">

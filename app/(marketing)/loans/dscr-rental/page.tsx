@@ -25,6 +25,17 @@ export default function DSCRRentalPage() {
     url: 'https://www.assetliftlending.com/loans/dscr-rental',
   };
 
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'DSCR Rental Financing',
+    serviceType: 'DSCR rental loan',
+    provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
+    areaServed: 'US',
+    url: 'https://www.assetliftlending.com/loans/dscr-rental',
+    description: product.description,
+  };
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -38,6 +49,7 @@ export default function DSCRRentalPage() {
   return (
     <>
       <JsonLd data={schema} />
+      <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
       <div className="container px-4 md:px-6 pt-32">
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/#programs' }, { label: 'DSCR Rental' }]} />

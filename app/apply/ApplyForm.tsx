@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, Send, CheckCircle, Phone, Mail } from "lucide-react";
+import { ArrowLeft, Send, CheckCircle, Phone, Mail, BadgeCheck, Clock3, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -270,7 +270,6 @@ const ApplyForm = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container px-4 md:px-6 h-16 flex items-center">
           <Link href="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
@@ -280,46 +279,88 @@ const ApplyForm = () => {
         </div>
       </header>
 
-      {/* Form content */}
       <div className="container px-4 md:px-6 pt-32 pb-20">
         <motion.div
-          className="max-w-3xl mx-auto"
+          className="max-w-6xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {/* Header */}
-          <div className="text-center mb-12">
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-block px-4 py-1 mb-4 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 rounded-full"
-            >
-              Fast Response
-            </motion.div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Apply for Funding</h1>
-            <p className="text-muted-foreground text-lg">
-              Tell us about your project. Our team will get back to you within 24 hours, usually within a few hours.
-            </p>
-            <div className="flex items-center justify-center gap-6 mt-6">
-              <a
-                href="tel:+19296392284"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+          <div className="mb-12 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+            <div className="lg:sticky lg:top-28">
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="inline-block rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
               >
-                <Phone className="w-4 h-4" />
-                +1 929-639-2284
-              </a>
-              <a
-                href="mailto:info@assetliftlending.com"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                info@assetliftlending.com
-              </a>
-            </div>
-          </div>
+                Deal Review
+              </motion.div>
+              <h1 className="mt-5 text-4xl font-bold tracking-tight md:text-5xl">
+                Send the File.
+                <br />
+                <span className="gradient-text">Get a Real Answer.</span>
+              </h1>
+              <p className="mt-5 text-lg text-muted-foreground">
+                This form is for borrowers who want a clean read on the deal, the likely leverage,
+                and the fastest workable path to closing.
+              </p>
 
-          {/* Form */}
+              <div className="mt-8 grid gap-4">
+                {[
+                  {
+                    icon: Clock3,
+                    title: "Fast response",
+                    text: "You will hear back within 24 hours, usually within a few hours.",
+                  },
+                  {
+                    icon: BadgeCheck,
+                    title: "Cleaner review",
+                    text: "We look at the full scenario, not just one headline number.",
+                  },
+                  {
+                    icon: ShieldCheck,
+                    title: "Straight expectations",
+                    text: "If the file needs more support, we would rather say it early than waste your time.",
+                  },
+                ].map((item) => (
+                  <div key={item.title} className="rounded-2xl border border-border bg-card p-5">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl bg-primary/10">
+                      <item.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <h2 className="font-semibold">{item.title}</h2>
+                    <p className="mt-2 text-sm text-muted-foreground">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 rounded-2xl border border-border bg-secondary/20 p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Best to include</p>
+                <div className="mt-3 space-y-2 text-sm text-muted-foreground">
+                  <p>Purchase or current value</p>
+                  <p>Property location</p>
+                  <p>Rehab scope or rental plan</p>
+                  <p>Any timing pressure or closing deadline</p>
+                </div>
+              </div>
+
+              <div className="mt-6 flex flex-wrap gap-4 text-sm">
+                <a
+                  href="tel:+19296392284"
+                  className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <Phone className="w-4 h-4" />
+                  +1 929-639-2284
+                </a>
+                <a
+                  href="mailto:info@assetliftlending.com"
+                  className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <Mail className="w-4 h-4" />
+                  info@assetliftlending.com
+                </a>
+              </div>
+            </div>
+
           <motion.form
             onSubmit={onSubmit}
             className="space-y-8"
@@ -327,8 +368,7 @@ const ApplyForm = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            {/* Contact Info Section */}
-            <div className="bg-card border border-border rounded-xl p-6">
+            <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
               <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
                 <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">1</span>
                 Contact Information
@@ -341,7 +381,7 @@ const ApplyForm = () => {
                     placeholder="John Smith"
                     value={formData.name}
                     onChange={(e) => handleChange("name", e.target.value)}
-                    className={`bg-background ${errors.name ? "border-destructive" : ""}`}
+                    className={`h-11 rounded-xl bg-background ${errors.name ? "border-destructive" : ""}`}
                   />
                   {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
                 </div>
@@ -354,7 +394,7 @@ const ApplyForm = () => {
                     placeholder="john@example.com"
                     value={formData.email}
                     onChange={(e) => handleChange("email", e.target.value)}
-                    className={`bg-background ${errors.email ? "border-destructive" : ""}`}
+                    className={`h-11 rounded-xl bg-background ${errors.email ? "border-destructive" : ""}`}
                   />
                   {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
                 </div>
@@ -367,7 +407,7 @@ const ApplyForm = () => {
                     placeholder="(555) 123-4567"
                     value={formData.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
-                    className={`bg-background ${errors.phone ? "border-destructive" : ""}`}
+                    className={`h-11 rounded-xl bg-background ${errors.phone ? "border-destructive" : ""}`}
                   />
                   {errors.phone && <p className="text-sm text-destructive">{errors.phone}</p>}
                 </div>
@@ -378,7 +418,7 @@ const ApplyForm = () => {
                     value={formData.strategy}
                     onValueChange={(value) => handleChange("strategy", value)}
                   >
-                    <SelectTrigger className={`bg-background ${errors.strategy ? "border-destructive" : ""}`}>
+                    <SelectTrigger className={`h-11 rounded-xl bg-background ${errors.strategy ? "border-destructive" : ""}`}>
                       <SelectValue placeholder="Select strategy" />
                     </SelectTrigger>
                     <SelectContent>
@@ -398,7 +438,7 @@ const ApplyForm = () => {
                     value={formData.loanPurpose}
                     onValueChange={(value) => handleChange("loanPurpose", value)}
                   >
-                    <SelectTrigger className={`bg-background ${errors.loanPurpose ? "border-destructive" : ""}`}>
+                    <SelectTrigger className={`h-11 rounded-xl bg-background ${errors.loanPurpose ? "border-destructive" : ""}`}>
                       <SelectValue placeholder="Purchase or Refinance?" />
                     </SelectTrigger>
                     <SelectContent>
@@ -415,7 +455,7 @@ const ApplyForm = () => {
                     value={formData.contactMethod}
                     onValueChange={(value) => handleChange("contactMethod", value)}
                   >
-                    <SelectTrigger className={`bg-background ${errors.contactMethod ? "border-destructive" : ""}`}>
+                    <SelectTrigger className={`h-11 rounded-xl bg-background ${errors.contactMethod ? "border-destructive" : ""}`}>
                       <SelectValue placeholder="How should we reach you?" />
                     </SelectTrigger>
                     <SelectContent>
@@ -429,8 +469,7 @@ const ApplyForm = () => {
               </div>
             </div>
 
-            {/* Deal Details Section */}
-            <div className="bg-card border border-border rounded-xl p-6">
+            <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
               <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
                 <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">2</span>
                 Deal Details
@@ -445,7 +484,7 @@ const ApplyForm = () => {
                       placeholder="500,000"
                       value={formData.purchasePrice}
                       onChange={(e) => handleChange("purchasePrice", e.target.value)}
-                      className={`pl-7 bg-background ${errors.purchasePrice ? "border-destructive" : ""}`}
+                      className={`h-11 rounded-xl bg-background pl-7 ${errors.purchasePrice ? "border-destructive" : ""}`}
                       inputMode="numeric"
                     />
                   </div>
@@ -461,7 +500,7 @@ const ApplyForm = () => {
                       placeholder="750,000"
                       value={formData.arv}
                       onChange={(e) => handleChange("arv", e.target.value)}
-                      className="pl-7 bg-background"
+                      className="h-11 rounded-xl bg-background pl-7"
                       inputMode="numeric"
                     />
                   </div>
@@ -476,7 +515,7 @@ const ApplyForm = () => {
                       placeholder="100,000"
                       value={formData.rehabAmount}
                       onChange={(e) => handleChange("rehabAmount", e.target.value)}
-                      className="pl-7 bg-background"
+                      className="h-11 rounded-xl bg-background pl-7"
                       inputMode="numeric"
                     />
                   </div>
@@ -488,7 +527,7 @@ const ApplyForm = () => {
                     value={formData.creditScore}
                     onValueChange={(value) => handleChange("creditScore", value)}
                   >
-                    <SelectTrigger className="bg-background">
+                    <SelectTrigger className="h-11 rounded-xl bg-background">
                       <SelectValue placeholder="Select range" />
                     </SelectTrigger>
                     <SelectContent>
@@ -511,7 +550,7 @@ const ApplyForm = () => {
                   value={formData.location}
                   onChange={(e) => handleChange("location", e.target.value)}
                   autoComplete="off"
-                  className={`bg-background ${errors.location ? "border-destructive" : ""}`}
+                  className={`h-11 rounded-xl bg-background ${errors.location ? "border-destructive" : ""}`}
                 />
                 {errors.location && <p className="text-sm text-destructive">{errors.location}</p>}
 
@@ -538,8 +577,7 @@ const ApplyForm = () => {
               </div>
             </div>
 
-            {/* Additional Info Section */}
-            <div className="bg-card border border-border rounded-xl p-6">
+            <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
               <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
                 <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">3</span>
                 Additional Information
@@ -552,34 +590,35 @@ const ApplyForm = () => {
                   rows={4}
                   value={formData.dealOverview}
                   onChange={(e) => handleChange("dealOverview", e.target.value)}
-                  className="bg-background resize-none"
+                  className="rounded-xl bg-background resize-none"
                 />
               </div>
             </div>
 
-            {/* Submit */}
+            <div className="rounded-3xl border border-border bg-secondary/15 p-5 text-sm text-muted-foreground">
+              By submitting, you agree to be contacted about your loan inquiry. This form is for
+              business-purpose investment property financing only.
+            </div>
+
             <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
               <Button
                 type="submit"
                 size="lg"
-                className="w-full text-lg py-7 glow-primary"
+                className="w-full rounded-full py-7 text-lg glow-primary"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
                   "Processing..."
                 ) : (
                   <>
-                    Submit Application
+                    Submit Deal for Review
                     <Send className="ml-2 w-5 h-5" />
                   </>
                 )}
               </Button>
             </motion.div>
-
-            <p className="text-center text-sm text-muted-foreground">
-              By submitting, you agree to be contacted about your loan inquiry.
-            </p>
           </motion.form>
+          </div>
         </motion.div>
       </div>
     </div>

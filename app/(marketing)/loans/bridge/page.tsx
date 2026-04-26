@@ -25,6 +25,17 @@ export default function BridgeLoanPage() {
     url: 'https://www.assetliftlending.com/loans/bridge',
   };
 
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Bridge Financing',
+    serviceType: 'Bridge loan',
+    provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
+    areaServed: 'US',
+    url: 'https://www.assetliftlending.com/loans/bridge',
+    description: product.description,
+  };
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -38,6 +49,7 @@ export default function BridgeLoanPage() {
   return (
     <>
       <JsonLd data={schema} />
+      <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
       <div className="container px-4 md:px-6 pt-32">
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/#programs' }, { label: 'Bridge Loans' }]} />

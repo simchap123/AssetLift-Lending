@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, ArrowRight } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import Logo from "@/components/Logo";
 
@@ -96,7 +96,7 @@ const Navbar = () => {
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"
+        isScrolled ? "border-b border-border bg-background/80 backdrop-blur-xl" : "bg-transparent"
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -104,14 +104,12 @@ const Navbar = () => {
     >
       <div className="container px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
           <Link href="/" className="flex items-center">
             <Logo size={36} className="md:hidden" />
             <Logo size={42} className="hidden md:block" />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-5">
             <DropdownMenu
               label="Programs"
               items={PROGRAMS}
@@ -127,6 +125,12 @@ const Navbar = () => {
               onClose={() => setOpenDropdown(null)}
             />
             <Link
+              href="/how-it-works"
+              className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
+            >
+              Process
+            </Link>
+            <Link
               href="/markets"
               className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
             >
@@ -138,36 +142,30 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link
-              href="/team"
-              className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
-            >
-              Team
-            </Link>
-            <Link
-              href="/how-it-works"
-              className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
-            >
-              How It Works
-            </Link>
+            <div className="flex items-center gap-2 rounded-full border border-border bg-background/70 px-3 py-2">
             <a
               href="tel:+19296392284"
-              className="text-foreground/90 hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
               aria-label="Call us"
             >
               <Phone className="w-4 h-4" />
+                <span className="hidden lg:inline">Call</span>
             </a>
+              <div className="h-4 w-px bg-border" />
             <ThemeToggle />
-            <Button asChild size="sm" className="px-6 font-bold shadow-[0_0_20px_hsl(45,93%,47%,0.3)] hover:shadow-[0_0_30px_hsl(45,93%,47%,0.5)] hover:scale-105 transition-all duration-200">
-              <Link href="/apply">Get Funded</Link>
+            </div>
+            <Button asChild size="sm" className="rounded-full px-5 font-bold shadow-[0_0_20px_hsl(45,93%,47%,0.28)] transition-all duration-200 hover:shadow-[0_0_30px_hsl(45,93%,47%,0.45)]">
+              <Link href="/apply">
+                Review Deal
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
           </nav>
 
-          {/* Mobile menu button */}
           <div className="md:hidden flex items-center gap-2">
             <ThemeToggle />
             <button
-              className="p-2"
+              className="rounded-full border border-border bg-background/75 p-2.5 backdrop-blur-sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
@@ -182,12 +180,22 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <motion.div
-            className="md:hidden py-4 border-t border-border bg-background max-h-[calc(100svh-4rem)] overflow-y-auto"
+            className="md:hidden border-t border-border bg-background/95 py-4 backdrop-blur-xl max-h-[calc(100svh-4rem)] overflow-y-auto"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
           >
-            <nav className="flex flex-col gap-1">
+            <nav className="flex flex-col gap-4">
+              <div className="rounded-2xl border border-border bg-secondary/20 p-4">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">
+                  Fast Investor Financing
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Review programs, compare options, or send a deal for a real answer.
+                </p>
+              </div>
+
+              <div>
               <p className="px-2 py-1 text-xs font-bold uppercase text-muted-foreground tracking-wider">
                 Programs
               </p>
@@ -195,15 +203,15 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    className="mx-1 block rounded-xl px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/35 hover:text-foreground"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
+              </div>
 
-              <div className="border-t border-border my-2" />
-
+              <div>
               <p className="px-2 py-1 text-xs font-bold uppercase text-muted-foreground tracking-wider">
                 Resources
               </p>
@@ -211,63 +219,50 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    className="mx-1 block rounded-xl px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/35 hover:text-foreground"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
+              </div>
 
-              <div className="border-t border-border my-2" />
+              <div className="grid grid-cols-2 gap-3 px-1">
+                <Link
+                  href="/how-it-works"
+                  className="rounded-xl border border-border px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/35 hover:text-foreground"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Process
+                </Link>
+                <Link
+                  href="/contact"
+                  className="rounded-xl border border-border px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/35 hover:text-foreground"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact
+                </Link>
+                <Link
+                  href="/about"
+                  className="rounded-xl border border-border px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/35 hover:text-foreground"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  About
+                </Link>
+                <a
+                  href="tel:+19296392284"
+                  className="flex items-center justify-center gap-2 rounded-xl border border-border px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/35 hover:text-foreground"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Phone className="w-4 h-4" />
+                  Call
+                </a>
+              </div>
 
-              <Link
-                href="/markets"
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Markets
-              </Link>
-              <Link
-                href="/about"
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                href="/team"
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Team
-              </Link>
-              <Link
-                href="/how-it-works"
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                How It Works
-              </Link>
-              <Link
-                href="/contact"
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
-              </Link>
-              <a
-                href="tel:+19296392284"
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <Phone className="w-4 h-4" />
-                Call Us
-              </a>
-
-              <div className="mt-2 px-2">
-                <Button asChild className="w-full">
+              <div className="px-1">
+                <Button asChild className="w-full rounded-full">
                   <Link href="/apply" onClick={() => setIsMobileMenuOpen(false)}>
-                    Get Funded
+                    Review My Deal
                   </Link>
                 </Button>
               </div>

@@ -35,7 +35,7 @@ export default function DSCRCalculatorPage() {
         '@type': 'HowToStep',
         position: 1,
         name: 'Enter rent',
-        text: 'Add the property’s expected monthly gross rent.',
+        text: "Add the property's expected monthly gross rent.",
       },
       {
         '@type': 'HowToStep',
@@ -61,7 +61,7 @@ export default function DSCRCalculatorPage() {
         name: 'What is a good DSCR for a rental property?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A DSCR of 1.25x or higher is usually considered strong because the property’s income materially exceeds the monthly debt load. Some programs can still work below that threshold depending on leverage, reserves, and the lender’s guidelines.',
+          text: "A DSCR of 1.25x or higher is usually considered strong because the property's income materially exceeds the monthly debt load. Some programs can still work below that threshold depending on leverage, reserves, and the lender's guidelines.",
         },
       },
       {
