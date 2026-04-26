@@ -170,6 +170,7 @@ const PRODUCT_INSIGHTS: Record<
 
 export default function LoanProductPage({ product }: LoanProductPageProps) {
   const insights = PRODUCT_INSIGHTS[product.slug];
+  const isFixAndFlip = product.slug === 'fix-and-flip';
 
   return (
     <div className="min-h-screen">
@@ -177,29 +178,96 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       <section className="pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="container px-4 md:px-6">
           <motion.div
-            className="max-w-4xl"
+            className="max-w-5xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">
-              {product.heroSubtitle}
-            </p>
-            <h1 data-speakable className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-              {product.heroTitle}
-            </h1>
-            <p data-speakable className="text-lg text-muted-foreground max-w-2xl mb-8">
-              {product.description}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 glow-primary">
-                <Link href="/apply">
-                  Apply Now <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6">
-                <a href="tel:+19296392284">Call (929) 639-2284</a>
-              </Button>
+            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+              <div>
+                <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">
+                  {product.heroSubtitle}
+                </p>
+                <h1 data-speakable className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                  {product.heroTitle}
+                </h1>
+                <p data-speakable className="text-lg text-muted-foreground max-w-2xl mb-6 leading-relaxed">
+                  {product.description}
+                </p>
+                {isFixAndFlip && (
+                  <div className="mb-8 rounded-2xl border border-border bg-secondary/25 p-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-3">
+                      Best Fit
+                    </p>
+                    <div className="grid gap-3 sm:grid-cols-3 text-sm">
+                      <div className="rounded-xl bg-background px-4 py-3 text-foreground/90">
+                        Value-add houses, condos, and 2-4 unit projects.
+                      </div>
+                      <div className="rounded-xl bg-background px-4 py-3 text-foreground/90">
+                        Investors who need a fast answer on leverage and rehab.
+                      </div>
+                      <div className="rounded-xl bg-background px-4 py-3 text-foreground/90">
+                        Borrowers planning either a resale or DSCR refinance exit.
+                      </div>
+                    </div>
+                  </div>
+                )}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 glow-primary">
+                    <Link href="/apply">
+                      Review My Deal <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6">
+                    <a href="tel:+19296392284">Call (929) 639-2284</a>
+                  </Button>
+                </div>
+              </div>
+
+              {isFixAndFlip && (
+                <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
+                    Borrower Quick Start
+                  </p>
+                  <h2 className="text-2xl font-bold tracking-tight mb-3">
+                    What helps a flip file move fast.
+                  </h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                    Experienced investors with 3 or more completed flips may close in as fast as
+                    5 business days, subject to underwriting, valuation, title, and file complexity.
+                    The fastest files usually come in organized from day one.
+                  </p>
+                  <div className="space-y-3 mb-5">
+                    {[
+                      'Signed purchase contract',
+                      'Line-item rehab scope and budget',
+                      'Local comp support for ARV',
+                      'Borrower or GC experience summary',
+                    ].map((item) => (
+                      <div key={item} className="flex items-start gap-3 rounded-xl bg-secondary/30 px-4 py-3">
+                        <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
+                        <span className="text-sm text-foreground/90">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    <Link
+                      href="/resources/fix-and-flip-deal-checklist"
+                      className="flex items-center justify-between rounded-xl border border-border px-4 py-3 text-sm font-medium transition-colors hover:border-primary/50 hover:bg-secondary/30"
+                    >
+                      Free deal checklist
+                      <ChevronRight className="h-4 w-4 text-primary" />
+                    </Link>
+                    <Link
+                      href="/tools/fix-and-flip-calculator"
+                      className="flex items-center justify-between rounded-xl border border-border px-4 py-3 text-sm font-medium transition-colors hover:border-primary/50 hover:bg-secondary/30"
+                    >
+                      Run deal math
+                      <ChevronRight className="h-4 w-4 text-primary" />
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
           </motion.div>
         </div>
@@ -377,6 +445,70 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
         </section>
       )}
 
+      {isFixAndFlip && (
+        <section className="py-16 md:py-24 bg-secondary/20">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="max-w-3xl mb-10">
+                <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-4">
+                  Free Fix &amp; Flip Deal Checklist
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Borrowers usually lose time on the same things: weak comp support, thin rehab
+                  budgets, missing entity documents, and unrealistic timelines. This checklist gives
+                  you the clean version of what to line up before you submit a deal.
+                </p>
+              </div>
+              <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
+                <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-4">
+                    What it includes
+                  </p>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {[
+                      'Acquisition and leverage checklist',
+                      'Rehab budget and draw prep',
+                      'ARV and comp validation prompts',
+                      'Closing-readiness document list',
+                      'Exit-plan review for resale or refinance',
+                      'Common underwriting mistakes to avoid',
+                    ].map((item) => (
+                      <div key={item} className="flex items-start gap-3 rounded-2xl bg-secondary/25 px-4 py-4">
+                        <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
+                        <span className="text-sm text-foreground/90">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="rounded-3xl border border-border bg-foreground p-6 md:p-8 text-background">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-4">
+                    Best next step
+                  </p>
+                  <h3 className="text-2xl font-bold tracking-tight mb-3">
+                    Open the checklist, run your numbers, then send the deal.
+                  </h3>
+                  <p className="text-sm leading-relaxed text-background/80 mb-6">
+                    This is built for real borrowers, not generic lead-gen fluff. Use it to clean
+                    up the file before you apply so the first quote you get is closer to something
+                    that can actually close.
+                  </p>
+                  <div className="space-y-3">
+                    <Button asChild size="lg" className="w-full bg-primary text-primary-foreground hover:opacity-95">
+                      <Link href="/resources/fix-and-flip-deal-checklist">
+                        Open the Checklist <ArrowRight className="ml-2 h-5 w-5" />
+                      </Link>
+                    </Button>
+                    <Button asChild variant="outline" size="lg" className="w-full border-background/20 bg-transparent text-background hover:bg-background/10 hover:text-background">
+                      <Link href="/apply">Send Us Your Deal</Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {insights && (
         <section className="py-16 md:py-24 bg-secondary/20">
           <div className="container px-4 md:px-6">
@@ -440,7 +572,7 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
       {/* Lending Disclaimer */}
       <section className="py-8">
         <div className="container px-4 md:px-6">
-          <p className="text-xs text-muted-foreground/60 max-w-3xl mx-auto text-center leading-relaxed">
+          <p className="text-xs text-muted-foreground max-w-3xl mx-auto text-center leading-relaxed">
             This page is for informational purposes only and does not constitute a loan offer, commitment to lend, or guarantee of terms. All loans are subject to underwriting approval, property valuation, and title review. Rates, terms, fees, leverage, and closing timelines vary based on property type, location, borrower experience, deal structure, and the actual execution path. Depending on the transaction, financing may be provided directly or through a lending partner. AssetLift Lending provides business-purpose loans for investment properties only and does not offer consumer residential mortgages.
           </p>
         </div>

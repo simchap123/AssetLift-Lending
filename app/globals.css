@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 10%;
 
-    --primary: 45 93% 47%;
+    --primary: 42 88% 38%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 10% 94%;
     --secondary-foreground: 220 15% 10%;
 
     --muted: 220 10% 94%;
-    --muted-foreground: 220 10% 45%;
+    --muted-foreground: 220 10% 34%;
 
-    --accent: 45 93% 47%;
+    --accent: 42 88% 38%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,13 +32,13 @@
 
     --border: 220 10% 88%;
     --input: 220 10% 88%;
-    --ring: 45 93% 47%;
+    --ring: 42 88% 38%;
 
     --radius: 0.5rem;
 
     /* Custom colors */
-    --gold: 45 93% 47%;
-    --gold-dark: 45 93% 40%;
+    --gold: 42 88% 38%;
+    --gold-dark: 42 88% 33%;
     --charcoal: 220 15% 10%;
     --charcoal-light: 220 15% 15%;
     --charcoal-lighter: 220 15% 20%;
