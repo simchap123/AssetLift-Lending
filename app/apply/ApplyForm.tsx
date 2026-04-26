@@ -199,14 +199,11 @@ const ApplyForm = () => {
       });
 
       if (success) {
-        // Fire Google Ads conversion
         gtagReportConversion();
-        // Fire GA4 event for analytics
         gtagEvent('generate_lead', {
           currency: 'USD',
           value: Number(formData.purchasePrice.replace(/\D/g, '')),
         });
-        // Fire Meta Pixel lead event
         metaTrackLead({
           currency: 'USD',
           value: Number(formData.purchasePrice.replace(/\D/g, '')),
@@ -532,10 +529,10 @@ const ApplyForm = () => {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="760+">Excellent (760+)</SelectItem>
-                      <SelectItem value="720-759">Very Good (720–759)</SelectItem>
-                      <SelectItem value="680-719">Good (680–719)</SelectItem>
-                      <SelectItem value="640-679">Fair (640–679)</SelectItem>
-                      <SelectItem value="620-639">Below Average (620–639)</SelectItem>
+                      <SelectItem value="720-759">Very Good (720-759)</SelectItem>
+                      <SelectItem value="680-719">Good (680-719)</SelectItem>
+                      <SelectItem value="640-679">Fair (640-679)</SelectItem>
+                      <SelectItem value="620-639">Below Average (620-639)</SelectItem>
                       <SelectItem value="below-620">Poor (Below 620)</SelectItem>
                     </SelectContent>
                   </Select>

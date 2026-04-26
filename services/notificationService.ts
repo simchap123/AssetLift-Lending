@@ -26,3 +26,23 @@ export async function sendNotification(type: 'form' | 'chat', data: any) {
     return false;
   }
 }
+
+export async function sendFormNotification(formData: FormData) {
+  try {
+    const response = await fetch(NOTIFICATION_ENDPOINT, {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error(`Form notification failed (${response.status}):`, errorText);
+      return false;
+    }
+
+    return true;
+  } catch (error) {
+    console.error('Error sending multipart form notification:', error);
+    return false;
+  }
+}

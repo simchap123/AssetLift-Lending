@@ -73,6 +73,9 @@ const Footer = () => {
                 <Link href="/faq" className="hover:text-primary transition-colors">FAQ</Link>
               </li>
               <li>
+                <Link href="/resources/fix-and-flip-borrower-package" className="hover:text-primary transition-colors">Fix & Flip Borrower Package</Link>
+              </li>
+              <li>
                 <Link href="/tools/fix-and-flip-calculator" className="hover:text-primary transition-colors">Fix & Flip Calculator</Link>
               </li>
               <li>

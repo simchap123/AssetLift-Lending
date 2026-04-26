@@ -3,9 +3,52 @@ import { NextRequest } from 'next/server';
 
 export const runtime = 'nodejs';
 
+const DOCUMENT_LABELS: Record<string, string> = {
+  llcDocumentsFile: 'LLC Documents',
+  purchaseContractFile: 'Purchase Contract',
+  governmentIdFile: 'Government-Issued ID',
+  scopeOfWorkFile: 'Scope of Work',
+  recentExperienceFile: 'Recent Experience / Track Record',
+  bankStatementFile: 'Bank Statement',
+};
+
 export async function POST(req: NextRequest) {
   try {
-    const { type, payload } = await req.json();
+    const contentType = req.headers.get('content-type') || '';
+    let type = 'form';
+    let payload: Record<string, any> = {};
+    let attachments: Array<{ filename: string; content: Buffer }> = [];
+
+    if (contentType.includes('multipart/form-data')) {
+      const formData = await req.formData();
+      type = String(formData.get('type') || 'form');
+
+      for (const [key, value] of formData.entries()) {
+        if (!(value instanceof File)) {
+          payload[key] = typeof value === 'string' ? value : '';
+        }
+      }
+
+      const uploadedDocuments: string[] = [];
+
+      for (const [fieldName, label] of Object.entries(DOCUMENT_LABELS)) {
+        const value = formData.get(fieldName);
+        if (value instanceof File && value.size > 0) {
+          attachments.push({
+            filename: value.name,
+            content: Buffer.from(await value.arrayBuffer()),
+          });
+          uploadedDocuments.push(label);
+        }
+      }
+
+      payload.uploadedDocuments = uploadedDocuments;
+    } else {
+      const json = await req.json();
+      type = json.type;
+      payload = json.payload || {};
+    }
+
     const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
 
     if (!SMTP_USER || !SMTP_PASS) {
@@ -44,6 +87,15 @@ export async function POST(req: NextRequest) {
         <p><strong>Rehab Amount:</strong> $${payload.rehabAmount || 'N/A'}</p>
         <p><strong>Est. Credit Score:</strong> ${payload.creditScore || 'N/A'}</p>
         <p><strong>Property:</strong> ${payload.propertyAddress || 'N/A'}</p>
+        <p><strong>Title Contact:</strong> ${payload.titleContact || 'N/A'}</p>
+        <p><strong>Insurance Contact:</strong> ${payload.insuranceContact || 'N/A'}</p>
+        <p><strong>SSN Last 4:</strong> ${payload.ssnLast4 || 'Not provided'}</p>
+        <p><strong>Appraisal Payment Status:</strong> ${payload.appraisalPaymentStatus || 'N/A'}</p>
+        <p><strong>Uploaded Documents:</strong> ${
+          Array.isArray(payload.uploadedDocuments) && payload.uploadedDocuments.length > 0
+            ? payload.uploadedDocuments.join(', ')
+            : 'No files uploaded'
+        }</p>
         <p><strong>Message:</strong><br/>${payload.message || 'No message provided.'}</p>
         ${payload.analysis_result ? `
           <div style="margin-top: 20px; padding: 15px; background: #f4f7fa; border-left: 4px solid #2563eb;">
@@ -60,6 +112,7 @@ export async function POST(req: NextRequest) {
       replyTo: payload.email || SMTP_USER,
       subject: brokerSubject,
       html: brokerHtml,
+      attachments,
     });
 
     if (type === 'form' && payload.email) {
@@ -74,6 +127,12 @@ export async function POST(req: NextRequest) {
             <p style="margin: 0; font-size: 12px; color: #6b7280; text-transform: uppercase; font-weight: bold; letter-spacing: 0.05em;">What happens next?</p>
             <p style="margin: 10px 0 0 0; font-weight: bold; font-size: 16px;">One of our loan specialists will contact you within 24 hours, usually within a few hours, with a soft-quote or a request for additional items.</p>
           </div>
+
+          ${
+            Array.isArray(payload.uploadedDocuments) && payload.uploadedDocuments.length > 0
+              ? `<p>We also received the following uploaded items: <strong>${payload.uploadedDocuments.join(', ')}</strong>.</p>`
+              : ''
+          }
 
           <p>If you have immediate questions, feel free to reply to this email or call us at +1 929-639-2284.</p>
 
