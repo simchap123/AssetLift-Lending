@@ -7,9 +7,9 @@ import { ArrowRight, Shield, Zap, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About AssetLift Lending | Private Lending',
+  title: 'About Us | Private Lending for Real Estate Investors',
   description:
-    'Learn about AssetLift Lending and our private lending platform for real estate investors, including fix and flip, DSCR, bridge, and construction financing, with some deals brokered with capital partners.',
+    'AssetLift Lending provides private financing for real estate investors. Fix & flip, DSCR, bridge, and construction loans in 46 states.',
   path: '/about',
 });
 

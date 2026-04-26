@@ -70,9 +70,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <span className="text-foreground">Investor Financing</span>
+              <span className="text-foreground">Hard Money Loans</span>
               <br />
-              <span className="gradient-text">That Looks Cleaner on Paper and Closes Faster in Practice.</span>
+              <span className="gradient-text">for Real Estate Investors</span>
             </motion.h1>
 
             <motion.p

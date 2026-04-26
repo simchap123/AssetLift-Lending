@@ -45,7 +45,7 @@ export default function FAQPage() {
           {/* Hero */}
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-              Frequently Asked <span className="gradient-text">Questions</span>
+              Hard Money Loan <span className="gradient-text">FAQ</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               Direct answers on hard money loans, fix and flip financing, DSCR rental loans,

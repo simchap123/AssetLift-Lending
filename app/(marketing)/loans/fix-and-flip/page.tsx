@@ -10,7 +10,7 @@ const product = LOAN_PRODUCTS.find((p) => p.slug === 'fix-and-flip')!;
 export const metadata: Metadata = createMetadata({
   title: 'Fix & Flip Loans | Up to 90% Purchase Financing',
   description:
-    'Get fix and flip loans with up to 90% purchase financing, rehab funding, and closings in as fast as 5 business days subject to underwriting, valuation, title, and file complexity.',
+    'Fix and flip loans with up to 90% purchase financing and 100% rehab funding. Close in as fast as 5 business days. 46 states.',
   path: '/loans/fix-and-flip',
 });
 

@@ -21,7 +21,16 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#programs" className="hover:text-primary transition-colors">Loan Programs</a>
+                <Link href="/loans/fix-and-flip" className="hover:text-primary transition-colors">Fix & Flip Loans</Link>
+              </li>
+              <li>
+                <Link href="/loans/dscr-rental" className="hover:text-primary transition-colors">DSCR Rental Loans</Link>
+              </li>
+              <li>
+                <Link href="/loans/bridge" className="hover:text-primary transition-colors">Bridge Loans</Link>
+              </li>
+              <li>
+                <Link href="/loans/ground-up-construction" className="hover:text-primary transition-colors">Construction Loans</Link>
               </li>
               <li>
                 <Link href="/markets" className="hover:text-primary transition-colors">Markets</Link>

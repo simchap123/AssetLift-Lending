@@ -16,7 +16,7 @@ import { AGGREGATE_REVIEW_RATING, BORROWER_REVIEWS } from "@/lib/data/reviews";
 export const metadata: Metadata = createMetadata({
   title: "Hard Money Loans for Real Estate Investors",
   description:
-    "Private lending for fix and flip, DSCR rental, bridge, and construction loans. Hear back within 24 hours, usually within a few hours, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+    "Private lending for fix & flip, DSCR rental, bridge, and construction loans in 46 states. Hear back within 24 hours. Many files close in as fast as 5 business days.",
   path: "/",
   keywords: [
     "hard money loans",

@@ -64,8 +64,13 @@ export default async function BlogPostPage({ params }: Props) {
     wordCount,
     mainEntityOfPage: `https://www.assetliftlending.com/blog/${post.slug}`,
     author: {
-      '@type': 'Organization',
+      '@type': 'Person',
       name: post.author,
+      jobTitle: post.authorRole,
+      worksFor: {
+        '@type': 'Organization',
+        name: 'AssetLift Lending',
+      },
     },
     publisher: {
       '@type': 'Organization',

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return createMetadata({
     title: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
-    description: `Fast hard money loans in ${city.cityName}, ${city.stateName}. Fix & flip, bridge, DSCR rental financing for ${city.cityName} real estate investors. Hear back within 24 hours, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.`,
+    description: `Hard money loans in ${city.cityName}, ${city.stateAbbreviation}. Fix & flip, bridge, and DSCR rental financing for ${city.cityName} investors. Close in as fast as 5 business days.`,
     path: `/lending/${city.stateSlug}/${city.citySlug}`,
   });
 }
@@ -69,7 +69,7 @@ export default async function CityLendingPage({ params }: Props) {
         <Breadcrumbs
           items={[
             { label: 'Home', href: '/' },
-            { label: 'Lending', href: '/#programs' },
+            { label: 'Markets', href: '/markets' },
             { label: city.stateName, href: `/lending/${city.stateSlug}` },
             { label: city.cityName },
           ]}

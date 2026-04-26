@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!state) return {};
   return createMetadata({
     title: `Hard Money Loans in ${state.name}`,
-    description: `Fast hard money loans in ${state.name}. Fix & flip, bridge, DSCR rental, and construction financing for ${state.name} real estate investors. Hear back within 24 hours, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.`,
+    description: `Hard money loans in ${state.name}. Fix & flip, bridge, DSCR rental, and construction financing for ${state.name} investors. Close in as fast as 5 business days.`,
     path: `/lending/${state.slug}`,
   });
 }
@@ -62,7 +62,7 @@ export default async function StateLendingPage({ params }: Props) {
         <Breadcrumbs
           items={[
             { label: 'Home', href: '/' },
-            { label: 'Lending', href: '/#programs' },
+            { label: 'Markets', href: '/markets' },
             { label: state.name },
           ]}
         />
