@@ -17,6 +17,7 @@ Built with Next.js 15, Tailwind CSS, deployed on Vercel.
 - Blog posts should be 1,500+ words for competitive finance keywords
 - Meta descriptions must be under 155 characters
 - The site operates as a broker with white-label capital partners
+- **Positioning: AssetLift Lending is a MORTGAGE BROKERAGE, NOT a private lender.** On directory listings, profiles, and any external-facing copy, always use "mortgage broker", "loan brokerage", or "real estate loan broker". Never say "private lender" or "direct lender" on third-party sites. The site itself uses softer language (e.g. "private lending solutions") but we don't want to misrepresent what we are externally.
 
 ## Daily Content Expansion Task
 When starting a session, if asked to expand content or if running /expand-content:
