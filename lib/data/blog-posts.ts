@@ -1654,7 +1654,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-19T19:00:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
-    readTime: "9 min read",
+    readTime: "8 min read",
     category: "DSCR Rental",
     tags: [
       "how does a dscr loan work",
@@ -1667,51 +1667,51 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     heroImage: "/blog/how-does-a-dscr-loan-work.jpg",
     sections: [
       {
-        heading: "The Core Idea Behind a DSCR Loan",
+        heading: "DSCR Loans Qualify on the Property, Not Your Tax Returns",
         content:
-          "A DSCR loan works by underwriting the property's ability to support its own debt rather than leaning mainly on the borrower's personal income documents. DSCR stands for debt service coverage ratio, and the lender uses that ratio to judge whether the expected rent is strong enough relative to the monthly housing expense.\n\nThat structure is why DSCR loans have become so popular with rental investors. The product fits the business model better than conventional lending often does, especially for borrowers who are self-employed, buy in entities, or are scaling past the normal property-count limits of agency-style financing.",
+          "A DSCR loan qualifies you based on the rental income the property generates, not your personal W-2s, tax returns, or pay stubs. DSCR stands for Debt Service Coverage Ratio -- it measures whether the property's rent covers its own mortgage payment.\n\nThis is the core difference from conventional investment-property loans. With a conventional loan, the lender calculates your personal debt-to-income ratio. Every car payment, student loan, and existing mortgage counts against you. With a DSCR loan, none of that matters. The lender looks at one question: does this property's rent support this property's debt?\n\nThat's why DSCR loans have become the default financing tool for rental portfolio builders. If you're self-employed and write off most of your income, a conventional lender sees a borrower who \"doesn't make enough money.\" A DSCR lender doesn't look at your income at all. If you already own 10 financed properties (the conventional loan ceiling), DSCR has no cap. If you want to close in your LLC, DSCR allows it from day one -- no post-closing deed transfer required.",
       },
       {
-        heading: "How the Ratio Is Calculated",
+        heading: "How to Calculate DSCR (With a Real Example)",
         content:
-          "At a practical level, the lender compares rental income to the monthly debt obligation. That usually includes principal, interest, taxes, insurance, and sometimes association dues. If the rent comfortably covers that payment stack, the file tends to look stronger. If the property only barely covers the payment, or falls short, the leverage or pricing usually changes.\n\nDifferent lenders and programs have slightly different tolerances, but the important idea is the same: the property needs to behave like a viable income-producing asset, not just a piece of real estate the borrower wants to own.",
+          "The DSCR formula is straightforward:\n\nDSCR = Monthly Gross Rent / Monthly PITIA\n\nPITIA stands for Principal + Interest + Taxes + Insurance + Association dues (HOA). Here's how it works on a real deal.\n\nYou're buying a single-family rental for $275,000 with 25% down. Your loan amount is $206,250. At a 7.5% rate on a 30-year fixed term, your monthly principal and interest is $1,442. Property taxes run $275/month, insurance is $135/month, and there's no HOA. Your total PITIA is $1,852/month.\n\nThe property rents for $2,200/month. Your DSCR is $2,200 / $1,852 = 1.19.\n\nWhat that 1.19 means: the rent covers the full payment with 19% left over. Most lenders want a minimum DSCR of 1.0 (break-even). Here's how different ratios typically affect your terms:\n\n1.25+ DSCR: Best pricing. You may qualify for 80% LTV and the lowest rate tier.\n\n1.0-1.24 DSCR: Standard approval. Most programs at 75% LTV with competitive rates.\n\n0.75-0.99 DSCR: The property doesn't fully cover its payment. Some lenders still approve, but expect a rate premium of 0.5-1.0% and max LTV of 65-70%. You're essentially betting on appreciation or future rent growth.\n\nBelow 0.75 DSCR: Most lenders decline. The property isn't performing well enough as a rental to support the debt.",
       },
       {
-        heading: "What Lenders Usually Review Beyond the Ratio",
+        heading: "What Else Lenders Review Beyond the Ratio",
         content:
-          "Even though DSCR loans are more property-driven, they are not ratio-only products. Lenders still look at credit, reserves, leverage, property condition, appraisal support, and whether the rent number is believable. A property can technically show a ratio that works and still become a weak file if the valuation, rent support, or borrower liquidity is shaky.\n\nThis is one of the biggest misconceptions in the market. DSCR lending can be simpler than conventional underwriting, but it is not careless underwriting.",
+          "A strong DSCR ratio doesn't automatically approve the loan. Lenders evaluate the full picture:\n\nCredit score: Minimum 660 at most lenders. Below 700, expect rate adjustments of 0.25-0.75%. Above 740, you'll qualify for the best pricing tiers.\n\nReserves: Most DSCR lenders require 3-6 months of PITIA payments in liquid reserves after closing. On a $1,852/month payment, that's $5,556-$11,112 sitting in your bank account. Some lenders count retirement accounts at 60-70% of value.\n\nLTV (Loan-to-Value): Maximum LTV ranges from 75-80% for purchases (20-25% down) and 70-80% for cash-out refinances, depending on credit score, DSCR ratio, and property type.\n\nRent documentation: Lenders verify the rent number using one of two methods. If the property has an existing lease, they use the lease amount. If it's vacant or being purchased, they order a 1007 rent schedule (an appraiser's estimate of market rent for the property). The rent number on the 1007 is what goes into your DSCR calculation -- not what you think you can get.\n\nProperty condition: The property needs to be habitable and rent-ready. Lenders won't approve a DSCR loan on a property that needs significant repair. If there's deferred maintenance, you may need to complete repairs before closing or use a short-term bridge loan first.",
       },
       {
-        heading: "When DSCR Loans Are Usually the Best Fit",
+        heading: "Three Common DSCR Scenarios Investors Run Into",
         content:
-          "DSCR loans usually fit stabilized or nearly stabilized rental properties, especially when the borrower wants entity-friendly ownership, scalable documentation, and a long-term rental structure. They are often a natural exit after bridge or rehab debt on a BRRRR project, and they are also useful for experienced investors who do not want every new acquisition to depend on tax-return analysis.\n\nThe product is strongest when the property is clearly behaving like a durable rental. Transitional assets still need transitional debt first.",
+          "Scenario 1 -- The clean purchase. You find a rent-ready duplex listed at $320,000. Both units are occupied with leases totaling $3,100/month. At 75% LTV, your loan is $240,000. PITIA comes to $2,350/month. DSCR = 1.32. This is a straightforward approval -- strong ratio, existing leases, minimal lender questions.\n\nScenario 2 -- The BRRRR refinance. You bought a single-family for $150,000, spent $40,000 on rehab, and now it appraises at $250,000. You've had a tenant at $1,800/month for 3 months. You apply for a cash-out DSCR refi at 75% LTV ($187,500). PITIA is $1,580/month. DSCR = 1.14. Approved -- and the $187,500 loan pays off your $165,000 bridge balance with room to recoup some rehab cash.\n\nScenario 3 -- The tight deal. You're buying a condo for $200,000. It rents for $1,400/month, but the HOA is $350/month. At 75% LTV ($150,000), your PITIA including the HOA hits $1,520/month. DSCR = 0.92. The rent doesn't cover the payment. Options: put 30% down instead of 25% to shrink the loan and boost the ratio, negotiate a lower purchase price, or find a lender that allows sub-1.0 DSCR with a rate adjustment. High-HOA condos are one of the most common DSCR deal-killers.",
       },
       {
-        heading: "How Borrowers Should Prepare for a DSCR File",
+        heading: "What You Need to Apply for a DSCR Loan",
         content:
-          "Borrowers should start with realistic rent support, reasonable leverage expectations, clean insurance and entity details, and enough reserves to make the lender comfortable. It also helps to think through the property from the lender's side: does this look like a stable rental, and does the debt fit the asset without strain?\n\nThe smoother DSCR files are usually the ones where the borrower has already answered those questions before submitting the loan request.",
+          "DSCR applications are lighter than conventional loans, but you still need documentation. Here's the typical checklist:\n\nFor the property: Purchase contract (if buying) or current mortgage statement (if refinancing). Existing lease or the lender will order a 1007 rent schedule. Property insurance quote. HOA statement if applicable.\n\nFor you as the borrower: Government-issued ID. Entity documents if closing in an LLC (articles of organization, operating agreement, EIN letter). Two months of bank or brokerage statements showing reserves. Credit authorization.\n\nWhat you don't need: Tax returns. W-2s. Pay stubs. Profit-and-loss statements. Employment verification. Personal financial statement (at most lenders).\n\nTimeline: Most DSCR loans close in 2-4 weeks from application. The main bottleneck is the appraisal -- if the appraiser is backed up, it can add a week. For purchases, make sure your offer allows at least 21-30 days to close so the appraisal has time to come in.\n\nCosts to expect: Origination fee of 0.5-2 points ($1,000-$4,000 on a $200,000 loan). Appraisal fee of $400-$700. Title and escrow fees vary by state. Prepayment penalty is common -- typically a 3-year or 5-year stepdown (5% in year 1, 4% in year 2, etc.). Factor the prepay penalty into your hold plan. If you might sell in 2 years, a $200,000 loan with a 5/4/3/2/1 prepay costs you $8,000 to exit in year 2.",
       },
     ],
     faqs: [
       {
         question: "How does a DSCR loan work in simple terms?",
         answer:
-          "It works by using the property's rental income to help qualify the loan instead of depending mainly on the borrower's personal income documents.",
+          "The lender divides the property's monthly rent by the total monthly payment (principal, interest, taxes, insurance, and HOA). If the result is 1.0 or higher, the rent covers the payment and the loan is generally approvable. No personal income documentation is required.",
       },
       {
-        question: "Do DSCR lenders only care about the ratio?",
+        question: "What DSCR ratio do most lenders require?",
         answer:
-          "No. They also care about leverage, credit, reserves, property condition, appraisal support, and whether the rent story is believable.",
+          "Most lenders prefer a minimum DSCR of 1.0, meaning rent fully covers the payment. Some lenders approve ratios as low as 0.75 with higher down payments and rate premiums. A DSCR above 1.25 typically unlocks the best rates and highest leverage.",
       },
       {
-        question: "Are DSCR loans good for buy-and-hold investors?",
+        question: "Do I need tax returns for a DSCR loan?",
         answer:
-          "Yes. They are often one of the most practical long-term products for buy-and-hold investors, especially those scaling beyond conventional lending limits.",
+          "No. DSCR loans do not require tax returns, W-2s, pay stubs, or income verification. You'll need a credit check, bank statements for reserves, property insurance, and either an existing lease or appraiser's rent estimate.",
       },
       {
-        question: "Can a BRRRR investor refinance into a DSCR loan?",
+        question: "Can I get a DSCR loan in an LLC?",
         answer:
-          "Yes. That is one of the most common DSCR use cases once the rehab is complete and the property is stabilized as a rental.",
+          "Yes. DSCR loans close directly in your LLC's name. You'll provide your articles of organization, operating agreement, and EIN letter. This is a major advantage over conventional loans, which require personal-name title.",
       },
     ],
   },
