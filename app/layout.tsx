@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | AssetLift Lending",
   },
   description:
-    "Private lending for fix and flip, DSCR rental, bridge, and construction loans, with some deals brokered with capital partners. Hear back within 24 hours, usually within a few hours, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+    "Fix & flip, DSCR rental, bridge, and construction loans for real estate investors. Responses within 24 hours. Close in as fast as 5 days.",
   keywords: [
     "hard money loans",
     "fix and flip loans",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "AssetLift Lending",
     title: "Hard Money Loans | Fix & Flip, DSCR & Bridge | AssetLift",
     description:
-      "Private lending for fix and flip, DSCR rental, bridge, and construction loans, with some deals brokered with capital partners. Hear back within 24 hours, usually within a few hours, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+      "Fix & flip, DSCR rental, bridge, and construction loans for real estate investors. Responses within 24 hours. Close in as fast as 5 days.",
     images: [
       {
         url: "/og-image.jpg",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hard Money Loans | Fix & Flip, DSCR & Bridge | AssetLift",
     description:
-      "Private lending for fix and flip, DSCR rental, bridge, and construction loans, with some deals brokered with capital partners. Hear back within 24 hours, usually within a few hours, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+      "Fix & flip, DSCR rental, bridge, and construction loans for real estate investors. Responses within 24 hours. Close in as fast as 5 days.",
     images: ["/og-image.jpg"],
   },
   robots: {

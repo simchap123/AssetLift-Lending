@@ -89,6 +89,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    // Loan programs hub
+    {
+      url: `${BASE_URL}/loans`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
     // Loan product pages
     {
       url: `${BASE_URL}/loans/fix-and-flip`,
@@ -113,6 +120,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
+    },
+    // Tools hub
+    {
+      url: `${BASE_URL}/tools`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.7,
     },
     // Tool pages
     {

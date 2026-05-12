@@ -7,7 +7,7 @@ import { ArrowRight, Shield, Zap, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About Us | Private Lending for Real Estate Investors',
+  title: 'About Us | Private Real Estate Lending',
   description:
     'AssetLift Lending provides private financing for real estate investors. Fix & flip, DSCR, bridge, and construction loans in 46 states.',
   path: '/about',
