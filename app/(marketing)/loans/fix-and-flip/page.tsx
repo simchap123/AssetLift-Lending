@@ -52,7 +52,7 @@ export default function FixAndFlipPage() {
       <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
       <div className="container px-4 md:px-6 pt-32">
-        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/#programs' }, { label: 'Fix & Flip' }]} />
+        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/loans' }, { label: 'Fix & Flip' }]} />
       </div>
       <LoanProductPage product={product} />
     </>

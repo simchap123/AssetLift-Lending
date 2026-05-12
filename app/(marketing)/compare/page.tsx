@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, Scale, Search } from 'lucide-react';
+import { ArrowRight, Banknote, Scale, Search } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { createMetadata } from '@/lib/metadata';
@@ -107,6 +107,39 @@ export default function CompareHubPage() {
                 ))}
               </div>
             </div>
+          </div>
+
+          <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <Banknote className="w-5 h-5 text-primary" />
+              <h2 className="text-2xl md:text-3xl font-bold">Loan Programs</h2>
+            </div>
+            <p className="text-muted-foreground mb-5">
+              After comparing options, explore the loan product that fits your deal.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+                { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+                { label: 'Bridge Loans', href: '/loans/bridge' },
+                { label: 'Ground-Up Construction Loans', href: '/loans/ground-up-construction' },
+              ].map((loan) => (
+                <Link
+                  key={loan.href}
+                  href={loan.href}
+                  className="flex items-center justify-between rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                >
+                  <span className="text-sm font-medium">{loan.label}</span>
+                  <ArrowRight className="w-4 h-4 text-primary" />
+                </Link>
+              ))}
+            </div>
+            <Link
+              href="/loans"
+              className="inline-flex items-center gap-1 text-sm font-medium text-primary mt-4"
+            >
+              View all loan programs <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

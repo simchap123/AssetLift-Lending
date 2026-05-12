@@ -52,7 +52,7 @@ export default function BridgeLoanPage() {
       <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
       <div className="container px-4 md:px-6 pt-32">
-        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/#programs' }, { label: 'Bridge Loans' }]} />
+        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/loans' }, { label: 'Bridge Loans' }]} />
       </div>
       <LoanProductPage product={product} />
     </>

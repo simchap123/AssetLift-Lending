@@ -16,6 +16,49 @@ interface LoanProductPageProps {
   product: LoanProduct;
 }
 
+const RELATED_GUIDES: Record<
+  string,
+  Array<{ label: string; href: string }>
+> = {
+  'fix-and-flip': [
+    { label: 'How to Finance Your First Fix and Flip', href: '/blog/how-to-finance-first-fix-and-flip' },
+    { label: 'Fix and Flip Loan Requirements', href: '/blog/fix-and-flip-loan-requirements' },
+    { label: '90% LTC Fix and Flip Loans', href: '/blog/90-ltc-fix-and-flip-loan' },
+    { label: 'Fix and Flip for Beginners', href: '/blog/fix-and-flip-for-beginners' },
+    { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
+    { label: 'Borrower Package', href: '/resources/fix-and-flip-borrower-package' },
+    { label: 'Fix and Flip vs BRRRR Strategy', href: '/compare/fix-and-flip-vs-brrrr-strategy' },
+    { label: 'View all loan programs', href: '/loans' },
+  ],
+  'dscr-rental': [
+    { label: 'DSCR Loans Explained', href: '/blog/dscr-loans-explained' },
+    { label: 'How to Qualify for a DSCR Loan', href: '/blog/how-to-qualify-for-dscr-loan' },
+    { label: 'DSCR Loans for Rental Property', href: '/blog/dscr-loan-for-rental-property' },
+    { label: 'How Does a DSCR Loan Work?', href: '/blog/how-does-a-dscr-loan-work' },
+    { label: 'BRRRR to DSCR Refinance Guide', href: '/blog/brrrr-refinance-into-dscr-loan' },
+    { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
+    { label: 'DSCR vs Conventional Rental Loans', href: '/compare/dscr-loans-vs-conventional-rental-loans' },
+    { label: 'View all loan programs', href: '/loans' },
+  ],
+  bridge: [
+    { label: 'Bridge Loans for Real Estate Investors', href: '/blog/bridge-loan-guide-real-estate-investors' },
+    { label: 'Bridge Loan Requirements', href: '/blog/bridge-loan-requirements-real-estate-investors' },
+    { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+    { label: 'When Not to Use a Hard Money Loan', href: '/blog/when-not-to-use-a-hard-money-loan' },
+    { label: 'Bridge Loans vs Hard Money Loans', href: '/compare/bridge-loans-vs-hard-money-loans' },
+    { label: 'How It Works', href: '/how-it-works' },
+    { label: 'View all loan programs', href: '/loans' },
+  ],
+  'ground-up-construction': [
+    { label: 'Ground-Up Construction Financing Guide', href: '/blog/ground-up-construction-financing-guide' },
+    { label: 'Ground-Up Construction Loans for Investors', href: '/blog/ground-up-construction-loan-for-investors' },
+    { label: 'How to Get a Construction Loan', href: '/blog/how-to-get-a-construction-loan' },
+    { label: 'Construction Loan vs Fix and Flip Loan', href: '/compare/construction-loan-vs-fix-and-flip-loan' },
+    { label: 'How It Works', href: '/how-it-works' },
+    { label: 'View all loan programs', href: '/loans' },
+  ],
+};
+
 const PRODUCT_INSIGHTS: Record<
   string,
   {
@@ -568,6 +611,32 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
           </Accordion>
         </div>
       </section>
+
+      {/* Related Guides */}
+      {RELATED_GUIDES[product.slug] && (
+        <section className="py-16 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-3xl mx-auto">
+              <h2 data-speakable className="text-3xl md:text-4xl font-bold mb-4">Related Guides &amp; Tools</h2>
+              <p className="text-muted-foreground mb-8">
+                Explore in-depth articles, calculators, and comparison guides related to {product.heroTitle.toLowerCase()}.
+              </p>
+              <div className="space-y-3">
+                {RELATED_GUIDES[product.slug].map((guide) => (
+                  <Link
+                    key={guide.href}
+                    href={guide.href}
+                    className="flex items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <span className="text-sm font-medium">{guide.label}</span>
+                    <ChevronRight className="w-4 h-4 flex-shrink-0 text-primary" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Lending Disclaimer */}
       <section className="py-8">

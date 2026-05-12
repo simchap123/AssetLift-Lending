@@ -52,7 +52,7 @@ export default function GroundUpConstructionPage() {
       <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
       <div className="container px-4 md:px-6 pt-32">
-        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/#programs' }, { label: 'Ground-Up Construction' }]} />
+        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/loans' }, { label: 'Ground-Up Construction' }]} />
       </div>
       <LoanProductPage product={product} />
     </>
