@@ -1023,7 +1023,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-19T12:15:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
-    readTime: "9 min read",
+    readTime: "7 min read",
     category: "Fix & Flip",
     tags: [
       "hard money lender 92 ltc",
@@ -1036,29 +1036,29 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     heroImage: "/blog/hard-money-lender-92-ltc.jpg",
     sections: [
       {
-        heading: "Why 92% LTC Gets Attention From Investors",
+        heading: "What 92% LTC Actually Means in Dollar Terms",
         content:
-          "High-LTC hard money offers get attention because they promise capital efficiency. If a lender will finance up to 92% of total project cost, the borrower can preserve more cash for reserves, multiple deals, or unexpected project friction. For active investors, that can materially improve portfolio velocity.\n\nBut sophisticated borrowers know the headline number is not the whole structure. The real question is whether the leverage survives ARV limits, project quality, and the lenderÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s view of execution risk. That is where the useful conversation starts.",
+          "LTC stands for loan-to-cost. When a lender offers 92% LTC, they will finance up to 92% of the total project cost, which includes both the purchase price and the renovation budget. The borrower covers the remaining 8% as a down payment, plus closing costs and reserves.\n\nHere is a concrete example. Say you are buying a property for $200,000 with a $50,000 rehab budget. Total project cost is $250,000. At 92% LTC, the lender finances up to $230,000. Your out-of-pocket contribution is $20,000, plus origination fees (typically 1.5 to 3 points, so $3,450 to $6,900 on this loan), insurance, and cash reserves the lender requires (usually 3 to 6 months of interest payments).\n\nCompare that to a lender at 80% LTC on the same deal: they finance $200,000, and you bring $50,000 plus fees. The difference is $30,000 in cash you either keep in reserves or deploy on a second project. For investors running multiple flips, that capital efficiency is the entire point.",
       },
       {
-        heading: "What High-LTC Lenders Still Need to See",
+        heading: "The ARV Cap That Changes Everything",
         content:
-          "Lenders offering leverage in the low-90s still want disciplined files. They usually need strong comparable sales, a believable rehab scope, realistic timing, enough borrower reserves, and a completed value that comfortably supports the total capitalization. A borrower asking for 92% LTC on a thin-spread project is not presenting a strong leverage case. They are presenting a fragile one.\n\nThat is why the files that win the best leverage often look conservative everywhere else. The lender needs confidence that the project can absorb normal stress without immediately becoming unstable.",
+          "Here is where most borrowers get surprised: 92% LTC is not the only constraint. Every lender also caps total loan exposure at a percentage of the after-repair value (ARV), typically 70% to 75%. Whichever limit produces the lower loan amount is what you actually get.\n\nUsing the same deal: $200,000 purchase, $50,000 rehab, $250,000 total cost. The 92% LTC calculation gives you a $230,000 loan. But if the ARV appraises at $310,000 and the lender caps at 70% ARV, the maximum loan is $217,000. The ARV cap just reduced your proceeds by $13,000 even though the LTC headline says 92%.\n\nThis is why comparing lenders on LTC alone is misleading. Ask every lender two questions: what is your maximum LTC, and what is your maximum percentage of ARV? Then run both calculations on your specific deal to see which one controls.",
       },
       {
-        heading: "How ARV Limits Keep 92% LTC From Being Unlimited",
+        heading: "When High LTC Improves a Deal",
         content:
-          "The biggest misconception around high-LTC lending is that cost-based leverage is the only thing that matters. It is not. The lender still checks total exposure against after-repair value, and that is often what forces proceeds lower than the borrower expected. If the purchase basis is too high or the completed value is too optimistic, the LTC quote becomes less relevant because the ARV cap takes over.\n\nThis is why experienced investors underwrite the project from both directions. They ask not only how much cost can be financed, but also whether the total project still fits cleanly inside the completed-value framework.",
+          "High leverage makes the most sense on deals with a strong spread between total cost and ARV. If you are buying at $180,000, putting in $40,000 of rehab, and the ARV is $320,000, total cost is $220,000. At 92% LTC that is a $202,400 loan. At 70% ARV that is $224,000. The LTC cap controls, and you bring roughly $17,600 plus fees. The ARV spread is wide enough that the leverage works without strain.\n\nThis lets you preserve capital for reserves or a second deal. An investor running three flips simultaneously at 92% LTC needs roughly $60,000 in total down payments versus $150,000 at 80% LTC. That is the difference between scaling and being stuck.",
       },
       {
-        heading: "When 92% LTC Helps and When It Hurts",
+        heading: "When High LTC Hurts",
         content:
-          "High leverage helps when the borrower is using it on a fundamentally strong project with real margin, strong local demand, and disciplined execution. In those situations, the extra leverage can improve return on equity and allow the borrower to keep more dry powder available. It hurts when the borrower uses it to rescue a weak deal or ignore a thin spread. Then the leverage is acting as camouflage, not as a strategic tool.\n\nThe best investors use high-LTC debt to improve good projects. They do not rely on it to force bad ones into existence.",
+          "High leverage backfires on thin deals. If total cost is $250,000 and the ARV is only $290,000, you have a $40,000 gross spread. After loan interest ($12,000 to $15,000 on a 6-month hold), origination points ($5,000 to $7,000), selling costs ($17,000 to $20,000 in commissions and closing costs), and holding expenses ($3,000 to $5,000 in taxes, insurance, utilities), you are at breakeven or a loss. High leverage did not create the problem, but it did not fix it either, and borrowing more on a deal with no margin just increases your exposure if the ARV comes in low or the renovation runs over.\n\nThe rule is straightforward: high LTC amplifies good deals and accelerates bad ones. If the deal works at 80% LTC, using 92% LTC makes it more capital-efficient. If the deal only works because you are borrowing 92%, the deal itself is the problem.",
       },
       {
-        heading: "How to Evaluate a 92% LTC Offer Properly",
+        heading: "What to Compare Beyond the LTC Number",
         content:
-          "Borrowers should compare more than proceeds. They should look at draw execution, fee structure, extension terms, ARV discipline, and how the project behaves if timing or pricing shifts. A lender offering slightly less leverage with stronger reliability may still produce a better project outcome than the lender advertising the highest number.\n\nThe real test is whether the financing structure keeps the deal healthy after the first underwriting call and after the first unexpected problem. That is the standard that matters more than marketing copy.",
+          "When evaluating a high-LTC lender, look at the full loan cost, not just leverage. Key items to compare across lender quotes:\n\n<strong>Origination points:</strong> 1.5 to 3 points is typical. On a $230,000 loan, 1 extra point costs you $2,300 at closing.\n\n<strong>Draw process:</strong> How are rehab funds released? Some lenders reimburse after you complete work and pass inspection (you front the cash). Others advance draws before each phase. The difference matters if your reserves are tight.\n\n<strong>Extension terms:</strong> Most fix-and-flip loans are 6 to 12 months. If your project runs long, extension fees of 0.5% to 1% per month add up fast. A 2-month extension on $230,000 at 1% per month costs $4,600.\n\n<strong>Prepayment penalties:</strong> Some lenders charge a minimum interest guarantee (3 to 6 months of interest regardless of when you pay off). If you flip in 4 months but owe 6 months of interest, your effective cost jumps.\n\nA lender at 90% LTC with 1.5 points and no prepayment penalty can cost less overall than a lender at 92% LTC with 3 points and a 6-month interest minimum. Run the total cost of borrowing over your expected hold period before choosing.",
       },
     ],
     faqs: [
