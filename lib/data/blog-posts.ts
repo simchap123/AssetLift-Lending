@@ -1092,7 +1092,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-19T12:45:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
-    readTime: "10 min read",
+    readTime: "7 min read",
     category: "DSCR Rental",
     tags: [
       "rental property loans",
@@ -1105,51 +1105,51 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     heroImage: "/blog/rental-property-loans-for-investors.jpg",
     sections: [
       {
-        heading: "There Is No Single Best Rental Property Loan",
+        heading: "Four Loan Types for Rental Investors, and When Each Fits",
         content:
-          "Investors often talk about rental property loans as if there is one universal product they should be chasing. In reality, the right financing depends on the condition of the property, the borrowerÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s documentation profile, whether the asset is already stabilized, and how aggressively the investor plans to scale.\n\nThat is why the financing conversation should start with the business plan, not the rate sheet. The best loan is the one that matches the propertyÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s current stage and the investorÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s hold strategy.",
+          "Most rental investors have four realistic financing options. Each one fits a different property stage, borrower profile, and hold plan.\n\nConventional (Fannie/Freddie): Rates typically 6.5-7.5% on investment properties, 25% down, full income documentation (tax returns, W-2s, pay stubs). Best for W-2 borrowers with fewer than 10 financed properties who want the lowest possible rate. The ceiling is 10 conventional investment-property mortgages per borrower, and every loan shows on your personal DTI.\n\nDSCR loans: Rates starting around 5.85-8.5% depending on leverage and credit. Qualification is based on the property's rental income versus the monthly payment, not your personal income. No tax returns, no W-2s, no DTI calculation. You can hold title in an LLC from day one. No limit on how many you can carry. Best for self-employed investors, portfolio builders past 4-5 properties, or anyone who doesn't want to document personal income.\n\nBridge loans: Short-term (12-24 months), interest-only, typically 9-12% rates. Use these when you're acquiring a property that isn't rent-ready yet -- vacant, needs light rehab, or needs lease-up time before it qualifies for permanent financing.\n\nHard money / fix-and-flip loans: Short-term (6-18 months), higher rates (10-13%), but they fund rehab costs. Use these for heavy renovation projects that you plan to BRRRR -- buy, rehab, rent, refinance into DSCR once stabilized.",
       },
       {
-        heading: "When DSCR Loans Make the Most Sense",
+        heading: "DSCR Math: How Lenders Size Your Loan",
         content:
-          "DSCR loans are usually the cleanest fit for stabilized or stabilizing rentals where the rent can support the debt and the borrower wants investor-focused underwriting. They are especially useful for self-employed investors, borrowers holding property in an entity, and operators who are building beyond the limits of conventional lending.\n\nThe main advantage is alignment. The file is judged more by how the property performs as a rental than by how the borrower looks on paper as a traditional wage earner.",
+          "DSCR stands for Debt Service Coverage Ratio. The formula is simple: monthly rent divided by monthly payment (principal + interest + taxes + insurance + HOA). Most lenders want a DSCR of 1.0 or higher, meaning rent covers the full payment.\n\nHere's a real example. You're buying a rental for $250,000 at 75% LTV. Your loan amount is $187,500. At 7.25% on a 30-year term, your principal and interest payment is about $1,279/month. Add $250/month for taxes and $125/month for insurance. Your total PITIA is $1,654/month.\n\nIf the property rents for $1,900/month, your DSCR is 1.15 ($1,900 / $1,654). That's a comfortable approval at most lenders.\n\nIf the property only rents for $1,500/month, your DSCR drops to 0.91. Some lenders will still approve at 0.75 DSCR, but you'll pay a rate premium -- typically 0.5-1.0% higher -- and may be capped at 70% LTV instead of 75-80%.\n\nThe takeaway: run the DSCR math before you make an offer. If the numbers are tight at 75% LTV, you either need a lower purchase price, higher rent, or more cash down.",
       },
       {
-        heading: "When Conventional or Transitional Debt Still Matters",
+        heading: "Conventional vs. DSCR: A Side-by-Side Comparison",
         content:
-          "Conventional loans still make sense for investors who qualify easily, are early in portfolio growth, and want the lowest possible long-term borrowing cost on a clean asset. Transitional debt such as bridge or rehab capital matters when the property is not yet ready for long-term rental underwriting. That can happen when the asset is vacant, mid-renovation, or waiting on lease-up.\n\nMany sophisticated investors therefore do not choose one loan type forever. They move from transitional capital into long-term rental debt as the property matures.",
+          "Here's how the two main long-term options compare on a $200,000 rental property purchase:\n\nConventional loan: 25% down ($50,000), rate around 7.0%, monthly P&I of $998. You'll need to provide 2 years of tax returns, W-2s, and a full personal financial statement. The loan shows on your credit as personal debt. Closing takes 30-45 days. You're limited to 10 total investment mortgages.\n\nDSCR loan: 20-25% down ($40,000-$50,000), rate around 7.25-7.75%, monthly P&I of $1,024-$1,058. You provide a lease or rent estimate, bank statements for reserves (typically 3-6 months of payments), and property insurance. No tax returns. Title can be in your LLC. Closing in 2-3 weeks. No limit on property count.\n\nThe conventional loan saves you roughly $25-60/month on the payment. But if you're self-employed, own 6+ properties, or want to hold in an LLC without a personal guarantee headache, the DSCR loan removes friction that the conventional loan creates.\n\nFor your first 1-3 rentals with strong W-2 income, conventional often wins on cost. By property 4 or 5, most investors switch to DSCR because the documentation burden and DTI limits start choking their ability to scale.",
       },
       {
-        heading: "How Investors Should Evaluate Rental Financing",
+        heading: "The BRRRR Financing Path: Bridge to DSCR",
         content:
-          "Borrowers should look at more than rate. They should compare entity flexibility, property-count scalability, documentation burden, reserves, prepayment structure, and whether the loan actually fits the intended hold period. A cheaper product with the wrong structure can still be more expensive if it forces friction later.\n\nThis is especially true for portfolio builders. The right loan is often the one that scales cleanly across multiple properties, not just the one that looks best on a single closing disclosure.",
+          "The BRRRR strategy (Buy, Rehab, Rent, Refinance, Repeat) requires two loans in sequence, and most investors get the second one wrong.\n\nStep 1 -- Buy and rehab with short-term debt. You purchase a distressed property for $140,000 and put $45,000 into renovations. Your total cost basis is $185,000. A bridge or fix-and-flip lender funds 85-90% of the purchase and 100% of the rehab. Your cash in: roughly $20,000-$25,000 plus closing costs.\n\nStep 2 -- Stabilize. You finish the rehab, get the property rented at $1,650/month, and let the tenant season for at least one payment (some DSCR lenders require 3-6 months of lease history).\n\nStep 3 -- Refinance into DSCR. The property appraises at $245,000 after renovation. At 75% LTV, your DSCR loan is $183,750. That pays off your $185,000 bridge loan almost entirely -- and if you hit 80% LTV, you get $196,000, pulling out some of your original cash.\n\nThe mistake investors make: they take a bridge loan with a 6-month term, but the rehab takes 5 months and the DSCR refi takes another 45 days. Now they're past term and paying extension fees ($2,000-$5,000 per month). Build in at least 2-3 months of buffer when choosing your bridge loan term.",
       },
       {
-        heading: "How to Match the Loan to the Asset Stage",
+        heading: "Five Questions to Answer Before Choosing a Rental Loan",
         content:
-          "A stabilized rental with supportable income is usually ready for long-term rental debt. A vacant or transitional property may need bridge or rehab financing first. A recently improved BRRRR project may start with short-term capital and then refinance into DSCR once the rent story is established. Thinking in stages usually leads to better financing decisions than thinking only in product names.\n\nThe property tells you what kind of debt it is ready for if you are willing to underwrite it honestly.",
+          "Before you compare rate sheets, answer these five questions. They'll narrow your options faster than any lender call.\n\n1. Is the property rent-ready today? If yes, go straight to DSCR or conventional. If no (vacant, needs work, needs tenants), you need short-term debt first.\n\n2. Can you document personal income? If you have W-2s and clean tax returns showing enough income, conventional is an option. If you're self-employed, write off heavily, or simply don't want to share personal financials, DSCR is the play.\n\n3. How many financed properties do you already have? Under 4, conventional is easy. At 5-6, conventional gets harder (higher reserves required). At 10+, conventional is off the table and DSCR is your primary path.\n\n4. Do you want to hold in an LLC? Conventional loans require personal-name title (you can transfer to an LLC after closing, but it technically triggers a due-on-sale clause). DSCR loans close directly in your LLC with no issues.\n\n5. What's your exit timeline? If you're holding 10+ years, optimize for the lowest rate. If you might sell or refinance in 3-5 years, pay close attention to prepayment penalties. Many DSCR loans carry a 3-year or 5-year prepay penalty (typically 5% of the balance in year 1, declining 1% per year). A 3-year stepdown on a $200,000 loan costs $10,000 if you sell in year 1.",
       },
     ],
     faqs: [
       {
         question: "What is the best loan for a rental property investor?",
         answer:
-          "It depends on the asset and the investorÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s plan. Stabilized rentals often fit DSCR or conventional financing, while transitional assets may need bridge or rehab capital first.",
+          "For stabilized rentals with a tenant in place, DSCR loans are usually the best fit because they qualify on rental income, not personal income, and have no limit on property count. For your first 1-3 rentals with strong W-2 income, conventional loans offer lower rates but require full income documentation.",
       },
       {
-        question: "Are DSCR loans good for buy-and-hold investors?",
+        question: "What DSCR ratio do I need to qualify?",
         answer:
-          "Yes. DSCR loans are often one of the most practical long-term products for buy-and-hold investors because they focus on rental income and can scale better than conventional loans.",
+          "Most lenders prefer a DSCR of 1.0 or higher (rent covers the full payment). Some lenders approve down to 0.75 DSCR with a rate premium of 0.5-1.0% and lower maximum LTV (typically 70% instead of 75-80%).",
       },
       {
-        question: "Can I use short-term debt before moving into a rental loan?",
+        question: "Can I use a bridge loan and then refinance into a DSCR loan?",
         answer:
-          "Yes. Many investors buy or improve a property with short-term capital and then refinance into DSCR or another long-term rental product once the property is stabilized.",
+          "Yes, this is the standard BRRRR path. You buy and rehab with short-term bridge or fix-and-flip debt, stabilize the property with a tenant, then refinance into a 30-year DSCR loan. Build in 2-3 months of buffer on your bridge term to avoid costly extensions.",
       },
       {
-        question: "Should I only compare rental loans by interest rate?",
+        question: "How many rental properties can I finance with DSCR loans?",
         answer:
-          "No. Structure, flexibility, reserves, prepayment terms, and how well the loan fits the hold strategy matter just as much as the note rate.",
+          "There is no set limit. Unlike conventional loans, which cap out at 10 financed investment properties per borrower, DSCR loans are underwritten property by property with no portfolio cap. Many investors use DSCR loans specifically to scale past the conventional ceiling.",
       },
     ],
   },
