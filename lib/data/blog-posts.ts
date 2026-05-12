@@ -540,7 +540,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-18T09:30:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
-    readTime: "10 min read",
+    readTime: "8 min read",
     category: "DSCR Rental",
     tags: [
       "how to qualify for dscr loan",
@@ -553,51 +553,51 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     heroImage: "/blog/how-to-qualify-for-dscr-loan.jpg",
     sections: [
       {
-        heading: "DSCR Qualification Starts With the PropertyÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Income",
+        heading: "The Six Things a DSCR Lender Checks",
         content:
-          "The defining feature of a DSCR loan is that the propertyÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s income carries the file. That does not mean the borrower is irrelevant. It means the lender begins by asking whether the rent can support the proposed payment strongly enough to justify the loan. The cleaner the rent story, the easier the rest of the approval usually becomes.\n\nThis is a major change for investors who are used to conventional underwriting. The file is less about tax returns and more about rental support, leverage, reserves, credit profile, and whether the property is positioned as a stable business asset. Investors who understand that framework usually prepare much better files before they ever apply.",
+          "DSCR qualification is simpler than conventional underwriting, but it's not automatic. Lenders evaluate six core factors, roughly in this order of importance:\n\n1. DSCR ratio -- Does the rent cover the payment? Minimum 0.75-1.0 depending on the lender. The higher the ratio, the better the terms.\n\n2. Credit score -- Minimum 660 at most lenders. Score tiers: 660-679 (approved with rate adjustments of 0.5-1.0%), 680-719 (standard pricing), 720-739 (better pricing), 740+ (best available rates and highest LTV options).\n\n3. Down payment / LTV -- Typically 20-25% down for purchases (75-80% LTV). Higher credit and higher DSCR can unlock 80% LTV. Lower credit or sub-1.0 DSCR may cap you at 65-70% LTV.\n\n4. Reserves -- 3-6 months of PITIA payments in liquid accounts after closing. On a $1,700/month payment, that's $5,100-$10,200.\n\n5. Property condition -- Must be habitable and rent-ready. No gutted kitchens, missing HVAC, or active code violations.\n\n6. Rent documentation -- Existing lease (strongest), or appraiser's 1007 rent schedule for vacant or new-acquisition properties.\n\nNotice what's missing: tax returns, W-2s, pay stubs, employment verification, and personal debt-to-income ratio. DSCR lenders don't ask for any of them.",
       },
       {
-        heading: "What Ratio Lenders Are Really Looking For",
+        heading: "How Your DSCR Ratio Changes Your Loan Terms",
         content:
-          "Most lenders want the rent to cover the projected PITIA payment at or above a minimum threshold. The exact target varies by lender and risk profile, but a stronger ratio generally produces stronger pricing and smoother approvals. Files at or near break-even can still get done in some cases, but the borrower should expect either more friction, more cash in the deal, or a pricing adjustment.\n\nThe practical takeaway is simple: the ratio is not just a math exercise. It is the lenderÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s shortcut for measuring whether the property behaves like a stable income-producing asset. Improving the ratio, even modestly, can change the quality of the offer materially.",
+          "The ratio isn't just pass/fail. It's a sliding scale that directly affects your rate, LTV, and closing experience.\n\nHere's a $240,000 single-family rental example at 75% LTV ($180,000 loan) with a 720 credit score. Taxes are $250/month, insurance is $130/month, no HOA. At a 7.25% rate, your monthly PITIA is $1,608.\n\nIf rent is $2,010/month: DSCR = 1.25. You're in the best tier. Expect the quoted rate with no ratio-based adjustments. Some lenders will offer 80% LTV at this level.\n\nIf rent is $1,770/month: DSCR = 1.10. Solid approval. Standard pricing, 75% LTV, minimal conditions.\n\nIf rent is $1,608/month: DSCR = 1.00. Break-even. Most lenders approve but some add a 0.125-0.25% rate bump. Still a clean file if credit and reserves are strong.\n\nIf rent is $1,450/month: DSCR = 0.90. The property doesn't cover its payment. Lenders that allow sub-1.0 DSCR will typically cap LTV at 70% and add 0.5-0.75% to the rate. Your effective loan shrinks to $168,000, meaning you need $72,000 down instead of $60,000.\n\nIf rent is $1,200/month: DSCR = 0.75. Borderline. Only a few lenders go this low, and they'll want 35% down (65% LTV) with 6+ months of reserves and 700+ credit. At this level, seriously question whether the deal makes sense as a rental.\n\nThe practical takeaway: every $100/month in additional rent moves your DSCR by roughly 0.06 points on this deal. That might not sound like much, but crossing from 0.95 to 1.05 can save you $12,000 in additional down payment and 0.5% on your rate.",
       },
       {
-        heading: "How Rental Income Usually Gets Documented",
+        heading: "How Lenders Verify Your Rent Number",
         content:
-          "For purchases, lenders often rely on a market rent schedule from the appraisal unless there is already a lease in place. For refinances, they may review the current lease, rent roll, or other income support depending on the property type and occupancy. Short-term rentals are often treated differently because lenders need a credible method for translating booking patterns into underwritable income.\n\nThis is where a lot of borrowers get tripped up. They assume their own rent estimate will carry the file. It usually will not. The lender wants third-party support that the market can reasonably deliver the income needed for the loan.",
+          "Your rent estimate doesn't qualify the loan. The lender's rent verification does. There are three methods, and which one applies depends on your situation.\n\nMethod 1 -- Existing lease (strongest). If the property has a signed lease with a tenant in place, the lender uses the lease amount. A 12-month lease is stronger than a month-to-month. If you're buying a property with a tenant, get a copy of the lease during due diligence so you can run your DSCR math before committing.\n\nMethod 2 -- Form 1007 rent schedule (most common for purchases). The appraiser fills out a single-family comparable rent schedule, pulling 3 recent rental comps within a reasonable radius. The 1007 number becomes your official rent for DSCR purposes. This is where deals get surprised: you might expect $2,000/month based on Zillow, but the appraiser's comps support $1,750. Your DSCR just dropped 12%.\n\nMethod 3 -- Operating income statement (multi-unit). For 2-4 unit properties, the appraiser completes a Form 216 operating income statement, estimating market rent for each unit and deducting a vacancy/collection loss factor (typically 5-10%).\n\nHow to protect yourself: Before making an offer, pull 3-5 rental comps yourself. Use Zillow, Rentometer, and local Craigslist/Facebook Marketplace listings. Look at properties within a half-mile with similar bed/bath counts and square footage. If your deal only works at the very top of the comp range, you're taking a risk that the 1007 won't support your number.\n\nFor short-term rentals (Airbnb/VRBO): Most DSCR lenders either don't count STR income or discount it by 25-30%. Some specialized programs use a 12-month AirDNA average. If the property depends on peak-season rates to hit 1.0 DSCR, most lenders will decline.",
       },
       {
-        heading: "The Other Borrower Factors That Still Matter",
+        heading: "Reserves: The Qualification Factor Most Borrowers Underestimate",
         content:
-          "Even though DSCR lending is property-driven, lenders still review the borrowerÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s credit, liquidity, entity structure, and overall file quality. A borrower with good reserves, clear entity documents, and a clean insurance/title setup will generally move faster than a borrower who treats the loan as if personal readiness no longer matters.\n\nReserves are especially important. They signal that the borrower can carry the property through vacancy, repairs, or transition periods without immediately destabilizing the loan. Strong reserves often help offset other areas that are merely adequate rather than excellent.",
+          "Reserves are the #1 reason otherwise good DSCR files stall in underwriting. Investors plan for the down payment and closing costs but forget that the lender also wants to see 3-6 months of payments sitting in the bank after closing.\n\nHere's how the math adds up on a $250,000 purchase at 75% LTV:\n\nDown payment: $62,500\nClosing costs (origination, appraisal, title, escrow): $5,000-$8,000\nReserves (6 months x $1,750 PITIA): $10,500\nTotal cash needed: $78,000-$81,000\n\nMany investors budget $65,000-$70,000 for this deal and come up short on reserves. The lender won't waive the requirement -- they'll either decline or ask you to bring a co-signer with additional liquidity.\n\nWhat counts as reserves: Checking and savings accounts (100% of balance). Brokerage/investment accounts (typically 60-70% of value after accounting for liquidation costs). Retirement accounts like 401(k) or IRA (usually 60% of vested balance). Gift funds generally don't count.\n\nWhat doesn't count: Equity in other properties. Pending rent payments. Cash in a safe. Crypto (most lenders don't accept it, though some will at a deep discount).\n\nPro tip: If you're buying multiple properties this year, keep a dedicated reserve account with enough to cover 6 months of PITIA on your next deal at all times. Scrambling to show reserves at the last minute delays closings.",
       },
       {
-        heading: "How Investors Improve Approval Odds Before Submission",
+        heading: "A Pre-Application Checklist That Saves You Time",
         content:
-          "The best DSCR applications are prepared with underwriting in mind. Investors should understand likely rent support before getting too far into the deal, confirm the leverage they actually want, and avoid filing on properties that only work at an aggressive rent assumption. It also helps to organize entity paperwork, insurance planning, and reserve documentation before the lender asks for them.\n\nIn practice, the cleanest DSCR files are boring in a good way. The property cash-flows. The documentation is organized. The borrower knows the business plan. The file does not require the lender to make heroic assumptions to justify the approval.",
+          "Before you submit a DSCR application, run through this checklist. If you can check every box, your file will move fast.\n\nProperty ready: The property is habitable (no major deferred maintenance), has working HVAC/plumbing/electrical, and either has a tenant with a signed lease or is in a market where the 1007 rent schedule will support your target DSCR.\n\nDSCR pre-check: You've estimated rent using 3+ comps, calculated your expected PITIA (including taxes, insurance, and any HOA), and your ratio is above 1.0. If it's between 0.75 and 1.0, you know you'll need extra down payment and a higher rate.\n\nCredit pulled: You've checked your credit score within the last 30 days. If you're below 700, you know you'll see rate adjustments. If you're below 660, you need to either improve your score or find a portfolio lender with different minimums.\n\nReserves confirmed: You have 3-6 months of expected PITIA in liquid, documentable accounts. You can produce 2 months of bank statements showing the balances.\n\nEntity documents ready: If closing in an LLC -- articles of organization, operating agreement, EIN letter. If closing in personal name, just your government ID.\n\nInsurance quoted: You've gotten a landlord policy quote (not homeowner's -- DSCR lenders require a landlord/dwelling policy). Having the quote ready shaves days off the timeline.\n\nDown payment sourced: Funds are seasoned in your account (most lenders want 60 days). If you recently transferred a large sum, be prepared to document the source.\n\nIf any of these are missing, you can still apply, but expect the lender to pause your file until you provide them. Getting ahead of the checklist is the single biggest thing you can do to close faster.",
       },
     ],
     faqs: [
       {
         question: "Do I need tax returns to qualify for a DSCR loan?",
         answer:
-          "Usually no. DSCR loans are designed so the propertyÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s rental income drives qualification instead of personal income documentation. Lenders still review the borrower, but the file is not built around W-2s or tax returns the way conventional loans are.",
+          "No. DSCR loans do not require tax returns, W-2s, pay stubs, or employment verification. Qualification is based on the property's rental income relative to the mortgage payment, plus the borrower's credit score and reserves.",
       },
       {
         question: "What DSCR ratio is considered strong?",
         answer:
-          "A stronger ratio is simply one that gives the property clear room above the monthly debt payment. Exact thresholds vary by lender, but files with more coverage generally receive better terms and cleaner approvals than files sitting right at the edge.",
+          "A DSCR of 1.25 or higher typically unlocks the best rates and highest LTV (up to 80%). A ratio of 1.0-1.24 gets standard approval. Below 1.0, expect higher down payments and rate premiums. Most lenders won't go below 0.75.",
       },
       {
         question: "Can I qualify if the property is vacant?",
         answer:
-          "Often yes, but the lender will usually rely on market-rent support from the appraisal or another approved source. The borrower should not assume vacancy automatically kills the file, but it does make third-party rent support more important.",
+          "Yes. The lender will order a 1007 rent schedule from the appraiser to establish market rent. The appraiser pulls 3 comparable rental properties to estimate what your property should rent for, and that number is used for the DSCR calculation.",
       },
       {
         question: "What usually weakens a DSCR loan file?",
         answer:
-          "Thin or unsupported rent, weak reserves, aggressive leverage, messy entity documentation, and poor property condition are common reasons a DSCR file gets weaker terms or more conditions during underwriting.",
+          "The most common issues are: rent estimate comes in lower than expected on the 1007, insufficient reserves after accounting for down payment and closing costs, credit score below 680 (triggers rate adjustments), and property needing repairs that make it non-rentable at closing.",
       },
     ],
   },
