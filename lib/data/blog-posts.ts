@@ -1447,7 +1447,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-19T17:30:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
-    readTime: "8 min read",
+    readTime: "6 min read",
     category: "Fix & Flip",
     tags: [
       "arv meaning real estate",
@@ -1460,29 +1460,29 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     heroImage: "/blog/arv-meaning-real-estate.jpg",
     sections: [
       {
-        heading: "What ARV Means",
+        heading: "What ARV Means and Why It Controls Your Deal",
         content:
-          "ARV stands for after-repair value. It is the estimated value of a property after the planned renovation work is complete. Investors use it to judge whether a deal has enough spread, and lenders use it to decide how much risk they are comfortable taking on a rehab or bridge file.\n\nIn practice, ARV is one of the most important numbers in value-add real estate because it connects the purchase, the rehab budget, and the exit. If the ARV is realistic, the project can be underwritten cleanly. If it is inflated, almost every other part of the deal becomes weaker.",
+          "ARV stands for after-repair value. It is the estimated market value of a property after all planned renovations are complete. For fix-and-flip investors, ARV is the number that determines whether a deal is worth pursuing, how much a lender will finance, and what your profit margin looks like.\n\nA quick example: you find a distressed 3-bedroom house listed at $175,000. You estimate $45,000 in renovation costs. Renovated homes on the same street have sold for $290,000 to $310,000 in the past 90 days. Your ARV estimate is $295,000 (using the median, not the top). That $295,000 figure drives every other calculation: your maximum offer price, your loan proceeds, and your projected profit.",
       },
       {
-        heading: "How ARV Is Estimated",
+        heading: "How to Estimate ARV With Real Comps",
         content:
-          "ARV is usually estimated by looking at comparable sales of renovated properties that are similar in size, layout, condition, location, and buyer appeal. Appraisers and experienced investors do not just ask what homes sold for nearby. They ask which finished properties would compete with this one after the planned work is done.\n\nThat means the quality of the scope matters. A light cosmetic rehab does not justify comparing the property to top-of-market full-gut renovations. The more honestly the future product is described, the more useful the ARV estimate becomes.",
+          "Estimating ARV correctly starts with pulling comparable sales, not comparable listings. Only closed transactions show what buyers actually paid. Here is the process:\n\n<strong>Step 1: Pull 3 to 5 closed sales within a half-mile radius from the past 90 days.</strong> Filter for renovated properties similar to what yours will look like after rehab. Match on bedroom count, bathroom count, square footage (within 15% to 20%), lot size, and property type.\n\n<strong>Step 2: Adjust for differences.</strong> If your comp has a garage and your property does not, adjust downward. If your property has 200 more square feet, adjust upward using the local price-per-square-foot for that neighborhood. Common adjustments include square footage ($50 to $150 per square foot depending on market), bedroom count ($5,000 to $15,000 per bedroom), and garage ($10,000 to $25,000).\n\n<strong>Step 3: Use the median, not the highest comp.</strong> If your five comps sold for $280,000, $290,000, $295,000, $305,000, and $320,000, your ARV should be around $295,000, not $320,000. The $320,000 sale may have had features your property will not have, like a corner lot, a finished basement, or a premium school zone.\n\nAppraisers follow this same approach. If your ARV estimate is significantly higher than what an appraiser would conclude, you will run into problems when the lender orders the appraisal.",
       },
       {
-        heading: "Why ARV Matters to Lenders",
+        heading: "How Lenders Use ARV to Size Your Loan",
         content:
-          "Many bridge and rehab lenders size loans using both cost-based and value-based guardrails. Even when a lender offers strong LTC, the ARV still helps determine whether the total exposure is appropriate. That is why ARV can quietly become the real sizing limit in a deal.\n\nFrom the lender's perspective, ARV is not about optimism. It is about exit protection. If the completed asset can support the exposure, the loan is easier to justify. If the value story depends on aggressive comps or perfect execution, the lender will usually either reduce proceeds or price the file more conservatively.",
+          "Most fix-and-flip lenders use two constraints when sizing a loan: loan-to-cost (LTC) and a percentage of ARV. Whichever produces the lower number is what you get.\n\nUsing the example above: $175,000 purchase + $45,000 rehab = $220,000 total cost. If the lender offers 90% LTC, the cost-based loan is $198,000. If the lender also caps at 70% of ARV and the appraisal comes in at $295,000, the ARV-based cap is $206,500. In this case, the LTC constraint controls and you get $198,000.\n\nBut change the numbers slightly. If the purchase price is $200,000 and the ARV only appraises at $275,000, then 90% LTC gives $220,500 while 70% of ARV gives $192,500. Now the ARV cap controls and your proceeds drop by $28,000 from what you expected. This is exactly how investors get surprised at closing: they focused on the LTC headline and ignored the ARV guardrail.",
       },
       {
-        heading: "Where Investors Go Wrong With ARV",
+        heading: "The 70% Rule and How ARV Fits In",
         content:
-          "The most common mistake is choosing comps that reflect the best possible sale rather than the most probable one. Investors sometimes also ignore differences in lot quality, layout, school district, street appeal, or the depth of the renovation. A property can be beautifully renovated and still not belong in the same comp set as the very best house in the neighborhood.\n\nThe second mistake is treating ARV as a promise instead of a range. Healthy underwriting usually assumes some cushion. If the deal only works at the top of the range, the project is probably tighter than it looks.",
+          "The 70% rule is a back-of-envelope formula that uses ARV as its anchor: Maximum purchase price = (ARV x 0.70) - Renovation costs. Using our $295,000 ARV and $45,000 rehab: $295,000 x 0.70 = $206,500 - $45,000 = $161,500 maximum purchase price.\n\nThe 30% buffer covers loan interest and origination fees (typically 3% to 5% of the loan amount), selling costs (agent commissions at 5% to 6% of sale price, plus closing costs), holding costs (taxes, insurance, utilities during the renovation), and your profit. On a $295,000 sale, selling costs alone run $17,000 to $22,000. If your purchase price is much above the 70% rule result, the margin gets thin quickly.\n\nThis rule is a starting point, not gospel. In competitive markets, experienced investors sometimes pay up to 75% of ARV minus rehab when they can execute faster or cheaper than average. But for a first or second flip, the 70% rule provides the safety margin you need while learning.",
       },
       {
-        heading: "How to Use ARV More Professionally",
+        heading: "Common ARV Mistakes That Kill Deals",
         content:
-          "Use ARV to test the deal, not to rescue it. Underwrite a believable finished product, compare it to real renovated sales, and stress the outcome if the exit is slower or slightly softer than hoped. If the project still works, the ARV is probably grounded. If the entire margin disappears when you get a little more conservative, the deal may need to be re-traded or passed on.\n\nExperienced borrowers make lenders comfortable because they use ARV as a disciplined underwriting tool, not as sales language. That usually leads to cleaner financing conversations and fewer surprises once appraisal comes in.",
+          "<strong>Using active listings as comps.</strong> A house listed at $310,000 is not a comp. It is a seller's opinion. It might sell for $285,000, or it might sit for 90 days and expire. Only closed sales count.\n\n<strong>Cherry-picking the highest sale.</strong> If four comps sold between $280,000 and $300,000 and one outlier sold for $340,000, that outlier probably had something your property will not replicate. Basing your entire deal on it means one bad appraisal wipes out your profit.\n\n<strong>Ignoring location differences within the same zip code.</strong> Two streets a quarter mile apart can have a $30,000 to $50,000 difference in resale value based on traffic, school boundaries, flood zones, or proximity to commercial areas. Comps need to match the micro-location, not just the zip code.\n\n<strong>Overestimating the impact of your renovation.</strong> A $50,000 kitchen and bathroom remodel does not automatically add $50,000 in value. The renovation only adds value up to what the market will pay for a finished home in that location. If the neighborhood caps at $300,000 regardless of finishes, spending $60,000 on renovations versus $40,000 will not change your ARV.",
       },
     ],
     faqs: [
