@@ -3,7 +3,7 @@ import { createMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
-import { ArrowRight, Shield, Zap, Users, Award } from 'lucide-react';
+import { ArrowRight, Shield, Zap, Users, Award, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = createMetadata({
@@ -24,8 +24,10 @@ export default function AboutPage() {
     email: 'info@assetliftlending.com',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Queens',
+      streetAddress: '7 Youmans Dr',
+      addressLocality: 'Spring Valley',
       addressRegion: 'NY',
+      postalCode: '10977',
       addressCountry: 'US',
     },
     areaServed: 'US',
@@ -62,13 +64,54 @@ export default function AboutPage() {
               About <span className="gradient-text">AssetLift Lending</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              AssetLift Lending is built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank. We provide private lending, and for some deals we broker the financing through capital partners when that is the best fit for the file.
+              AssetLift Lending is a mortgage brokerage built for real estate investors who need speed, certainty, and competitive terms. We are not a retail bank. We operate as a broker with white-label capital partners, which means we can match each deal to the right lending source instead of forcing every file into one lender&apos;s credit box.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift was born out of a straightforward frustration: too many real estate investors were losing deals because their lender could not move fast enough, communicate clearly enough, or think creatively enough about the file. The brothers saw an opportunity to build a brokerage that combined hands-on real estate knowledge with access to multiple capital sources, giving borrowers better options and faster execution.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Our team combines real estate investing experience with institutional-style underwriting to deliver financing that actually works for investors in the field. Whether you are flipping your first house or scaling a portfolio of rental properties, we work to match each file to the lending approach that best fits the strategy.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We lend nationwide across 46 states, with a focus on high-growth urban and suburban markets. Our loan programs cover the full spectrum of investment real estate: fix and flip, ground-up construction, DSCR rental, and bridge financing.
+              We finance deals nationwide across 46 states, with loan amounts from $100,000 to $5,000,000. Our loan programs cover the full spectrum of investment real estate: fix and flip, ground-up construction, DSCR rental, and bridge financing. Based in the New York metro area, we serve borrowers from coast to coast with the same level of responsiveness and attention to detail.
+            </p>
+          </div>
+
+          {/* Founders */}
+          <div className="max-w-5xl mx-auto mb-20">
+            <h2 className="text-3xl font-bold mb-6 text-center">Meet the Founders</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-card border border-border rounded-xl p-6 md:p-8">
+                <h3 className="text-xl font-semibold mb-3">Yaakov Pentelnik</h3>
+                <p className="text-sm font-medium text-primary mb-3">Co-Founder</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Yaakov brings deep experience in real estate finance and a borrower-first mindset to every deal AssetLift touches. His background in structuring investment property transactions means he understands the pressure points borrowers face: tight closing deadlines, appraisal gaps, title issues, and the kind of last-minute friction that kills deals. He built AssetLift to eliminate as much of that friction as possible by maintaining relationships with multiple capital partners and staying hands-on through every file.
+                </p>
+              </div>
+              <div className="bg-card border border-border rounded-xl p-6 md:p-8">
+                <h3 className="text-xl font-semibold mb-3">Yisroel Pentelnik</h3>
+                <p className="text-sm font-medium text-primary mb-3">Co-Founder</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Yisroel focuses on operations, underwriting workflow, and making sure the borrower experience at AssetLift stays fast and transparent as the company scales. He is the person making sure files move through the pipeline without unnecessary delays, that borrowers get honest feedback early, and that the team maintains the responsiveness that sets AssetLift apart from larger shops. His operational discipline keeps the brokerage running efficiently across 46 states.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Hybrid Broker Model */}
+          <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold mb-5">The Hybrid Broker Model: Why It Matters</h2>
+            <p className="text-muted-foreground leading-relaxed mb-5">
+              Most borrowers do not care whether their lender is a direct lender, a fund, or a broker. They care about rate, speed, and whether the deal actually closes. But the structure behind the scenes matters more than most people realize, because it determines how flexible the lender can be when the file does not fit neatly into a standard box.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-5">
+              AssetLift operates as a mortgage brokerage with white-label capital partners. In practice, that means we are not locked into a single lender&apos;s guidelines. If one capital source cannot do the deal because of property type, borrower experience, leverage, or geography, we have other options. A direct lender that turns you down has nowhere else to send the file. A broker with the right relationships can usually find a fit.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-5">
+              This model also lets us be more competitive on pricing. Because we work with multiple capital sources, we can shop the deal internally and present the borrower with the best available terms rather than the only available terms. For repeat investors doing multiple deals a year, that difference in rate or leverage can add up to tens of thousands of dollars in savings.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              The tradeoff is that we have to be selective about which capital partners we work with. We vet our lending sources for reliability, speed, and fair dealing, because our reputation depends on the borrower&apos;s experience from application through payoff. If a capital partner cannot close on time or creates unnecessary friction, we stop sending them deals.
             </p>
           </div>
 
@@ -81,15 +124,23 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="font-semibold mb-1">Coverage</p>
-                <p className="text-muted-foreground">Nationwide investment-property lending</p>
+                <p className="text-muted-foreground">46 U.S. states, loans from $100K to $5M</p>
               </div>
               <div>
-                <p className="font-semibold mb-1">Primary Contact</p>
-                <p className="text-muted-foreground">info@assetliftlending.com | +1 (929) 639-2284</p>
+                <p className="font-semibold mb-1">Structure</p>
+                <p className="text-muted-foreground">Mortgage brokerage with white-label capital partners</p>
+              </div>
+              <div>
+                <p className="font-semibold mb-1">Phone</p>
+                <p className="text-muted-foreground">(929) 639-2284</p>
+              </div>
+              <div>
+                <p className="font-semibold mb-1">Email</p>
+                <p className="text-muted-foreground">info@assetliftlending.com</p>
               </div>
               <div>
                 <p className="font-semibold mb-1">Office</p>
-                <p className="text-muted-foreground">Queens, NY</p>
+                <p className="text-muted-foreground">7 Youmans Dr, Spring Valley, NY 10977</p>
               </div>
             </div>
           </div>
@@ -97,10 +148,10 @@ export default function AboutPage() {
           {/* Values */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-20">
             {[
-              { icon: Zap, title: 'Speed', desc: 'Hear back within 24 hours, usually within a few hours, and many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.' },
-              { icon: Shield, title: 'Reliability', desc: 'We structure each deal through the most reliable lending channel available for the file.' },
-              { icon: Users, title: 'Partnership', desc: 'We succeed when you succeed. Our team is invested in your growth.' },
-              { icon: Award, title: 'Expertise', desc: 'Decades of combined real estate and lending experience.' },
+              { icon: Zap, title: 'Speed', desc: 'Every inquiry gets a response within 24 hours, usually within a few hours. Many deals close in as few as 5 business days, subject to underwriting, valuation, title, and file complexity. We know that in competitive markets, a slow lender costs you the deal.' },
+              { icon: Shield, title: 'Transparency', desc: 'No hidden fees, no bait-and-switch term sheets. We surface potential issues early in the process so you can make informed decisions before you spend more time or money on the file. If we cannot do the deal, we tell you upfront.' },
+              { icon: Users, title: 'Flexibility', desc: 'We work with first-time investors and experienced operators alike. Because we broker through multiple capital partners, we can find solutions for files that a single direct lender would decline. Different deal, different source, same service.' },
+              { icon: Award, title: 'Expertise', desc: 'Our founders and team bring hands-on real estate investing experience to every file. We understand rehab scopes, ARV analysis, rental market dynamics, and exit strategies because we have been on the borrower side of the table.' },
             ].map((value, i) => (
               <div key={i} className="bg-card border border-border rounded-xl p-6 text-center">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -231,9 +282,23 @@ export default function AboutPage() {
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">Work With Us</h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Whether you are an investor, broker, or capital partner, we would love to hear from you.
+            <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
+              Whether you are an investor, broker, or capital partner, we would love to hear from you. Start with a quick application or reach out directly. No commitment, no hard credit pull to get a quote.
             </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-primary" />
+                <a href="tel:+19296392284" className="hover:text-primary transition-colors">(929) 639-2284</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-primary" />
+                <a href="mailto:info@assetliftlending.com" className="hover:text-primary transition-colors">info@assetliftlending.com</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-primary" />
+                <span>Spring Valley, NY</span>
+              </div>
+            </div>
             <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
               <Link href="/apply">
                 Get Started <ArrowRight className="ml-2 w-5 h-5" />
