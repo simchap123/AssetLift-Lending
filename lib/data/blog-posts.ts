@@ -1058,7 +1058,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-19T12:15:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
-    readTime: "7 min read",
+    readTime: "10 min read",
     category: "Fix & Flip",
     tags: [
       "hard money lender 92 ltc",
@@ -1083,12 +1083,17 @@ const BASE_BLOG_POSTS: BlogPost[] = [
       {
         heading: "When High LTC Improves a Deal",
         content:
-          "High leverage makes the most sense on deals with a strong spread between total cost and ARV. If you are buying at $180,000, putting in $40,000 of rehab, and the ARV is $320,000, total cost is $220,000. At 92% LTC that is a $202,400 loan. At 70% ARV that is $224,000. The LTC cap controls, and you bring roughly $17,600 plus fees. The ARV spread is wide enough that the leverage works without strain.\n\nThis lets you preserve capital for reserves or a second deal. An investor running three flips simultaneously at 92% LTC needs roughly $60,000 in total down payments versus $150,000 at 80% LTC. That is the difference between scaling and being stuck.",
+          "High leverage makes the most sense on deals with a strong spread between total cost and ARV. If you are buying at $180,000, putting in $40,000 of rehab, and the ARV is $320,000, total cost is $220,000. At 92% LTC that is a $202,400 loan. At 70% ARV that is $224,000. The LTC cap controls, and you bring roughly $17,600 plus fees. The ARV spread is wide enough that the leverage works without strain.\n\nThis lets you preserve capital for reserves or a second deal. An investor running three flips simultaneously at 92% LTC needs roughly $60,000 in total down payments versus $150,000 at 80% LTC. That is the difference between scaling and being stuck.\n\nHigh LTC also matters for the BRRRR strategy. If you buy a distressed duplex for $160,000, spend $55,000 on rehab, and the post-renovation appraisal comes in at $290,000, your total cost basis is $215,000. At 92% LTC, the lender funds $197,800. You bring $17,200 plus closing costs. After renovation, you place tenants at $2,600/month combined and refinance into a DSCR loan at 75% of the new appraised value ($217,500). The DSCR refinance pays off the hard money loan and returns most or all of your cash, which you recycle into the next acquisition. Without high LTC on the front end, you tie up $43,000 instead of $17,200 -- and that delays your next deal by months.",
       },
       {
         heading: "When High LTC Hurts",
         content:
           "High leverage backfires on thin deals. If total cost is $250,000 and the ARV is only $290,000, you have a $40,000 gross spread. After loan interest ($12,000 to $15,000 on a 6-month hold), origination points ($5,000 to $7,000), selling costs ($17,000 to $20,000 in commissions and closing costs), and holding expenses ($3,000 to $5,000 in taxes, insurance, utilities), you are at breakeven or a loss. High leverage did not create the problem, but it did not fix it either, and borrowing more on a deal with no margin just increases your exposure if the ARV comes in low or the renovation runs over.\n\nThe rule is straightforward: high LTC amplifies good deals and accelerates bad ones. If the deal works at 80% LTC, using 92% LTC makes it more capital-efficient. If the deal only works because you are borrowing 92%, the deal itself is the problem.",
+      },
+      {
+        heading: "How to Qualify for 92% LTC Hard Money Terms",
+        content:
+          "Not every borrower or every deal gets 92% LTC. Lenders reserve their highest leverage for files that check several boxes simultaneously. Here is what most high-LTC programs require:\n\n<strong>Credit score:</strong> Most lenders want 680+ for 90%+ LTC. Below 680, you may still qualify for the program but at 85% LTC instead. Above 720, some lenders offer rate discounts on top of the maximum leverage.\n\n<strong>Liquidity:</strong> Expect to show 3-6 months of interest payments in reserve after closing. On a $230,000 loan at 11%, that is $2,108/month in interest, so $6,325-$12,650 in verified reserves. This is not optional. Lenders want to know you can carry the property if the rehab timeline slips or the sale takes longer than expected.\n\n<strong>Experience:</strong> First-time investors can access high-LTC programs, but the underwriting is tighter. Lenders may require a lower ARV cap (65% instead of 70%), a more detailed scope of work, or a licensed general contractor instead of self-managing the rehab. Borrowers with 3+ completed flips in the last 36 months typically get the best combination of high leverage and low cost.\n\n<strong>Deal quality:</strong> The property itself has to justify the leverage. Strong comp support within a half-mile radius, a realistic renovation scope that matches the neighborhood, and a clear exit strategy (sale or refinance) all factor into whether the lender approves at 92% or scales back to 85%. A deal in a hot resale market with recent renovated comps at your target ARV is a different underwriting conversation than a deal in a stagnant market with comps 18 months old.\n\n<strong>Scope of work:</strong> High-LTC lenders scrutinize the renovation budget more closely because they are funding more of it. Expect to provide a line-item budget (not just a lump sum), contractor bids or estimates, and a realistic timeline. If your budget says $35,000 for a full gut rehab on a 2,000 square foot home, underwriting is going to push back.",
       },
       {
         heading: "What to Compare Beyond the LTC Number",
@@ -1100,7 +1105,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
       {
         question: "Is 92% LTC available on every hard money deal?",
         answer:
-          "No. High leverage is usually limited to stronger files with credible comps, realistic budgets, sufficient reserves, and enough margin at the completed-value level.",
+          "No. High leverage is usually limited to stronger files with credible comps, realistic budgets, sufficient reserves, and enough margin at the completed-value level. Most lenders also require a minimum credit score of 680 and 3-6 months of interest reserves after closing. If your deal has a thin ARV spread or your renovation budget is aggressive relative to the neighborhood, the lender may approve you at 85% LTC instead.",
       },
       {
         question: "Why would a lender advertise 92% LTC and still lower proceeds later?",
@@ -1110,7 +1115,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
       {
         question: "Does higher LTC always improve returns?",
         answer:
-          "Not automatically. Higher leverage can improve return on equity, but it also reduces the cushion for mistakes. It works best on deals that are already strong without needing rescue leverage.",
+          "Not automatically. Higher leverage improves return on equity because you are deploying less of your own cash, but it also increases your monthly carry cost and reduces the cushion for mistakes. A deal that produces $45,000 in profit at 80% LTC still produces about the same gross profit at 92% LTC -- but your cash-on-cash return is higher because you put less in. The catch: if the rehab runs over or the sale takes longer than planned, you are paying interest on a larger loan balance every month.",
       },
       {
         question: "What type of borrower usually gets the best high-LTC terms?",
@@ -1571,7 +1576,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-19T18:00:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
-    readTime: "8 min read",
+    readTime: "11 min read",
     category: "Education",
     tags: [
       "what is a hard money loan",
