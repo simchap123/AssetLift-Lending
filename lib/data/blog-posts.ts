@@ -1507,7 +1507,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-19T17:30:00Z",
     author: "AssetLift Team",
     authorRole: "Lending Specialists",
-    readTime: "6 min read",
+    readTime: "10 min read",
     category: "Fix & Flip",
     tags: [
       "arv meaning real estate",
@@ -1540,6 +1540,11 @@ const BASE_BLOG_POSTS: BlogPost[] = [
           "The 70% rule is a back-of-envelope formula that uses ARV as its anchor: Maximum purchase price = (ARV x 0.70) - Renovation costs. Using our $295,000 ARV and $45,000 rehab: $295,000 x 0.70 = $206,500 - $45,000 = $161,500 maximum purchase price.\n\nThe 30% buffer covers loan interest and origination fees (typically 3% to 5% of the loan amount), selling costs (agent commissions at 5% to 6% of sale price, plus closing costs), holding costs (taxes, insurance, utilities during the renovation), and your profit. On a $295,000 sale, selling costs alone run $17,000 to $22,000. If your purchase price is much above the 70% rule result, the margin gets thin quickly.\n\nThis rule is a starting point, not gospel. In competitive markets, experienced investors sometimes pay up to 75% of ARV minus rehab when they can execute faster or cheaper than average. But for a first or second flip, the 70% rule provides the safety margin you need while learning.",
       },
       {
+        heading: "How ARV Affects Your Exit Strategy",
+        content:
+          "ARV does not just determine your loan amount -- it shapes your entire exit plan. There are two primary exits on a rehab deal, and ARV plays a different role in each.\n\n<strong>Exit 1: Sell (fix and flip).</strong> Your ARV is your projected sale price. After subtracting selling costs (agent commissions, transfer taxes, title fees -- typically 7-9% of the sale price), holding costs, and loan payoff, what remains is your profit. On a $295,000 ARV, selling costs alone run $20,650 to $26,550. If your total project cost including financing is $235,000, your gross profit before selling costs is $60,000. After selling costs, you net $33,450 to $39,350. That is the real number, not the $60,000 you see on the surface.\n\n<strong>Exit 2: Refinance and hold (BRRRR).</strong> Your ARV determines how much cash you recover on the refinance. If the property appraises at $295,000 post-renovation and you refinance into a DSCR loan at 75% LTV, your new loan is $221,250. If your hard money payoff balance is $198,000, you pull out $23,250 in cash (minus refinance closing costs of $4,000-$6,000). Combined with any rent collected during the transition, this is how you recycle capital. If the ARV appraisal comes in at $270,000 instead, your new loan drops to $202,500 -- and you only recover $4,500 before closing costs. A $25,000 miss on ARV cost you nearly $19,000 in recovered capital.\n\nThis is why conservative ARV estimates protect you on both exits. An aggressive ARV makes a deal look profitable on paper, but the appraisal at refinance or the market at resale will correct it. Better to underwrite conservatively and be pleasantly surprised than to stretch the number and scramble when reality arrives.",
+      },
+      {
         heading: "Common ARV Mistakes That Kill Deals",
         content:
           "<strong>Using active listings as comps.</strong> A house listed at $310,000 is not a comp. It is a seller's opinion. It might sell for $285,000, or it might sit for 90 days and expire. Only closed sales count.\n\n<strong>Cherry-picking the highest sale.</strong> If four comps sold between $280,000 and $300,000 and one outlier sold for $340,000, that outlier probably had something your property will not replicate. Basing your entire deal on it means one bad appraisal wipes out your profit.\n\n<strong>Ignoring location differences within the same zip code.</strong> Two streets a quarter mile apart can have a $30,000 to $50,000 difference in resale value based on traffic, school boundaries, flood zones, or proximity to commercial areas. Comps need to match the micro-location, not just the zip code.\n\n<strong>Overestimating the impact of your renovation.</strong> A $50,000 kitchen and bathroom remodel does not automatically add $50,000 in value. The renovation only adds value up to what the market will pay for a finished home in that location. If the neighborhood caps at $300,000 regardless of finishes, spending $60,000 on renovations versus $40,000 will not change your ARV.",
@@ -1554,17 +1559,22 @@ const BASE_BLOG_POSTS: BlogPost[] = [
       {
         question: "Why do hard money lenders care about ARV?",
         answer:
-          "Because ARV helps them judge the strength of the exit and whether the total loan exposure makes sense relative to the completed property value.",
+          "Because ARV determines the lender's worst-case recovery if the borrower defaults. If a lender funds $198,000 on a property with a $295,000 ARV, their loan-to-ARV ratio is 67% -- meaning even in a forced sale at a discount, they are likely to recover the full loan balance. Lenders typically cap at 70-75% of ARV to maintain this safety margin.",
       },
       {
         question: "Can my ARV estimate be higher than the appraiser's?",
         answer:
-          "Yes. Borrower estimates are often more optimistic than appraisal conclusions, especially when the comp set or rehab scope is too aggressive.",
+          "Yes, and it frequently is. Borrowers tend to use the highest comps and assume premium finishes will command top-of-market pricing. Appraisers use a wider comp set and apply more conservative adjustments. A 5-10% gap between your estimate and the appraisal is common. Budget for the possibility that the appraisal comes in lower, because your loan proceeds will be based on the appraiser's number, not yours.",
       },
       {
         question: "What is the biggest ARV mistake investors make?",
         answer:
-          "Using top-of-market comps that do not really match the finished product. That can make the deal look much stronger than it really is.",
+          "Using top-of-market comps that do not match the finished product. If your highest comp sold for $340,000 but had a finished basement, two-car garage, and premium lot that your property will never have, basing your deal on that number creates a false sense of margin. Use the median of genuinely comparable sales, not the ceiling.",
+      },
+      {
+        question: "How do I verify my ARV estimate before making an offer?",
+        answer:
+          "Pull 3-5 closed sales (not active listings) within a half-mile radius from the last 90 days. Filter for renovated properties with similar bedroom count, square footage (within 15-20%), and finish level. Adjust for differences like garages, lot size, and extra bathrooms. Use the median adjusted value as your ARV. If you cannot find at least three strong comps, the ARV estimate is unreliable and you should widen the search radius or reconsider the deal.",
       },
     ],
   },
