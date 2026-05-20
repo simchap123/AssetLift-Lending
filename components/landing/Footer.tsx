@@ -1,6 +1,15 @@
 import Link from "next/link";
 import Logo from "@/components/Logo";
 
+const FEATURED_MARKETS = [
+  { label: "Florida", href: "/lending/florida" },
+  { label: "Texas", href: "/lending/texas" },
+  { label: "California", href: "/lending/california" },
+  { label: "Georgia", href: "/lending/georgia" },
+  { label: "Miami, FL", href: "/lending/florida/miami" },
+  { label: "Austin, TX", href: "/lending/texas/austin" },
+];
+
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-border bg-card/50">
@@ -81,6 +90,19 @@ const Footer = () => {
               <li>
                 <Link href="/tools/dscr-calculator" className="hover:text-primary transition-colors">DSCR Calculator</Link>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">Featured Markets</h4>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              {FEATURED_MARKETS.map((market) => (
+                <li key={market.href}>
+                  <Link href={market.href} className="hover:text-primary transition-colors">
+                    {market.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

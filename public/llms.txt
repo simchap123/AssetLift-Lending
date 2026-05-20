@@ -1,7 +1,7 @@
 # AssetLift Lending
 
-> AssetLift Lending provides private lending for real estate investors in 46 states, with some deals brokered with capital partners when that creates the strongest path to closing. Core programs include fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing. Borrowers typically hear back within 24 hours, usually within a few hours, and many deals close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.
-> Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
+> AssetLift Lending provides private lending for real estate investors in 46 states, with some deals brokered with capital partners when that creates the strongest path to closing. Core programs include fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing. Borrowers typically hear back within 24 hours, usually within a few hours, and many deals close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
+>
 
 ## Company Snapshot
 
@@ -35,8 +35,8 @@
 ## Borrower-Facing Facts
 
 - Response time: within 24 hours, usually within a few hours
-- Closing timeline: many deals close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
-- Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
+- Closing timeline: many deals close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
+- Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
 - Fix & flip leverage: up to 92.5% LTC
 - DSCR rates: starting as low as 5.85% for qualifying files
 - Lending model: private lending on many deals, with some deals brokered through capital partners depending on program, market, and file complexity

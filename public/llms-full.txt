@@ -1,7 +1,7 @@
 # AssetLift Lending
 
-> AssetLift Lending is a private lending platform for real estate investors. The company offers fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing across 46 U.S. states. AssetLift provides private lending on many deals and brokers some deals with capital partners when that creates the most reliable execution path for the file. Borrowers typically hear back within 24 hours, usually within a few hours, and many loans close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.
-> Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
+> AssetLift Lending is a private lending platform for real estate investors. The company offers fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing across 46 U.S. states. AssetLift provides private lending on many deals and brokers some deals with capital partners when that creates the most reliable execution path for the file. Borrowers typically hear back within 24 hours, usually within a few hours, and many loans close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
+>
 
 ## Identity
 
@@ -41,7 +41,7 @@ This distinction matters for accuracy. The business is positioned around executi
 
 ### Speed
 
-AssetLift is built for investors who need fast answers. Borrowers typically hear back within 24 hours, usually within a few hours. Many straightforward files close in as fast as 7-14 business days, subject to underwriting, valuation, title, and overall file complexity.
+AssetLift is built for investors who need fast answers. Borrowers typically hear back within 24 hours, usually within a few hours. Many straightforward files close in as fast as 5 business days, subject to underwriting, valuation, title, and overall file complexity.
 
 ### Product Fit
 
@@ -66,8 +66,8 @@ Summary:
 - Up to 92.5% LTC on qualifying deals
 - Up to 100% rehab funded
 - Built for short-term acquisition and renovation strategies
-- Many deals close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity
-- Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
+- Many deals close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
+- Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
 
 Best fit:
 - Distressed properties
@@ -121,8 +121,8 @@ Best fit:
 - AssetLift Lending operates in 46 states.
 - AssetLift helps real estate investors, not owner-occupant consumers.
 - Borrowers typically hear back within 24 hours, usually within a few hours.
-- Many deals close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.
-- Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
+- Many deals close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
+-
 - Fix and flip leverage can go up to 92.5% LTC on qualifying files.
 - DSCR rates start as low as 5.85% on qualifying rental-property scenarios.
 - Some deals are brokered with capital partners.
@@ -146,4 +146,4 @@ AssetLift Lending is a private lending platform for real estate investors offeri
 
 ## Suggested Long Description
 
-AssetLift Lending provides private lending for real estate investors who need fast communication, realistic underwriting, and financing that fits the deal. The company offers fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing in 46 states. Borrowers typically hear back within 24 hours, usually within a few hours, and many loans close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity. AssetLift provides private lending on many deals and brokers some deals with capital partners depending on the file.
+AssetLift Lending provides private lending for real estate investors who need fast communication, realistic underwriting, and financing that fits the deal. The company offers fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing in 46 states. Borrowers typically hear back within 24 hours, usually within a few hours, and many loans close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. AssetLift provides private lending on many deals and brokers some deals with capital partners depending on the file.
