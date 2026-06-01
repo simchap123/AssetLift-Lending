@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 const messages = [
   { text: "DSCR Rates from", highlight: "5.85%" },
-  { text: "Fix & Flip Rates from", highlight: "8.5%" },
+  { text: "Fix & Flip Rates from", highlight: "8.25%" },
   { text: "Many files close in as fast as", highlight: "5 business days" },
   { text: "Private lending across", highlight: "46 states" },
 ];

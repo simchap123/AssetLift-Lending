@@ -5,9 +5,9 @@ export const LOAN_PROGRAMS: LoanProgram[] = [
     id: 'fix-flip',
     title: 'Fix & Flip',
     subtitle: 'INVESTMENTS',
-    maxLTC: '92.5%',
+    maxLTC: '95%',
     highlights: [
-      'Up to 92.5% LTC & 75% LTV',
+      'Up to 95% LTC & 75% LTV',
       'Up to 100% rehab funded',
       'Loans up to $5MM',
       '13, 19-month term options',

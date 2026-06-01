@@ -18,27 +18,27 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     slug: "fix-and-flip",
     title: "Fix & Flip Loans - Fast Funding for House Flipping Projects",
     description:
-      "AssetLift Lending offers fix-and-flip loans with rates starting as low as 8.5% for qualifying scenarios, up to 90% LTV, and closings in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+      "AssetLift Lending offers fix-and-flip loans with rates starting as low as 8.25% for qualifying scenarios, up to 95% LTC, and closings in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
     heroTitle: "Fix & Flip Loans",
     heroSubtitle:
       "Close in days, not months. Get the capital you need to acquire and renovate investment properties with speed and certainty.",
     overview:
-      "Fix-and-flip loans are short-term, asset-based financing instruments designed specifically for real estate investors who purchase distressed properties, renovate them, and sell them at a profit. Unlike conventional mortgages that evaluate your employment history and tax returns, fix-and-flip loans are underwritten primarily on the property's current value and its projected after-repair value (ARV). This means experienced flippers and first-time investors alike can access capital based on the strength of the deal rather than their personal financial profile.\n\nAssetLift Lending's fix-and-flip program provides acquisition financing up to 90% of the purchase price and 100% of the renovation budget, with total loan amounts capped at 70% to 75% of the after-repair value. Loan terms range from 6 to 18 months, giving borrowers ample time to complete renovations and list the property for sale without the pressure of an artificially short deadline. Renovation funds are held in escrow and disbursed through a structured draw process as work is completed, ensuring that capital is deployed efficiently and that the project stays on track.\n\nOur underwriting team evaluates every deal based on comparable sales data, the scope of the renovation plan, and the borrower's experience level. We fund single-family homes, duplexes, triplexes, four-unit properties, townhomes, and condos in markets across the country. Whether you are flipping your first house or your fiftieth, our streamlined process is designed to move at the speed your deals demand.\n\nThe fix-and-flip market remains one of the most profitable segments of real estate investing for those who execute disciplined renovation plans and buy at the right price. With property values continuing to reward well-positioned renovations and buyer demand staying strong in most metro areas, access to fast, reliable capital is the single biggest competitive advantage a flipper can have. AssetLift Lending exists to provide exactly that advantage.",
+      "Fix-and-flip loans are short-term, asset-based financing instruments designed specifically for real estate investors who purchase distressed properties, renovate them, and sell them at a profit. Unlike conventional mortgages that evaluate your employment history and tax returns, fix-and-flip loans are underwritten primarily on the property's current value and its projected after-repair value (ARV). This means experienced flippers and first-time investors alike can access capital based on the strength of the deal rather than their personal financial profile.\n\nAssetLift Lending's fix-and-flip program provides up to 95% LTC on qualifying scenarios and up to 100% of the renovation budget, with total loan amounts generally capped at 70% to 75% of the after-repair value. Loan terms range from 6 to 18 months, giving borrowers ample time to complete renovations and list the property for sale without the pressure of an artificially short deadline. Renovation funds are held in escrow and disbursed through a structured draw process as work is completed, ensuring that capital is deployed efficiently and that the project stays on track.\n\nOur underwriting team evaluates every deal based on comparable sales data, the scope of the renovation plan, and the borrower's experience level. We fund single-family homes, duplexes, triplexes, four-unit properties, townhomes, and condos in markets across the country. Whether you are flipping your first house or your fiftieth, our streamlined process is designed to move at the speed your deals demand.\n\nThe fix-and-flip market remains one of the most profitable segments of real estate investing for those who execute disciplined renovation plans and buy at the right price. With property values continuing to reward well-positioned renovations and buyer demand staying strong in most metro areas, access to fast, reliable capital is the single biggest competitive advantage a flipper can have. AssetLift Lending exists to provide exactly that advantage.",
     keyStats: [
-      { label: "Loan-to-Purchase Price", value: "Up to 90%" },
+      { label: "Loan-to-Cost (LTC)", value: "Up to 95%" },
       { label: "Renovation Financing", value: "Up to 100% of rehab costs" },
       { label: "Loan Term", value: "6 to 18 months" },
       {
         label: "Closing Speed",
         value: "As fast as 5 business days",
       },
-      { label: "Interest Rates Starting At", value: "8.5%" },
+      { label: "Interest Rates Starting At", value: "8.25%" },
     ],
     features: [
       {
         title: "High-Leverage Acquisition Financing",
         description:
-          "Borrow up to 90% of the purchase price on your next flip, reducing the out-of-pocket capital required to get into a deal. Combined with 100% rehab financing, you can control a property with as little as 10% of the purchase price in cash, freeing up liquidity for additional projects or reserves.",
+          "Borrow up to 95% LTC on qualifying fix and flip projects, reducing the out-of-pocket capital required to get into a deal. Combined with 100% rehab financing, you can preserve more liquidity for additional projects, reserves, and closing costs.",
       },
       {
         title: "Full Renovation Budget Coverage",

@@ -211,7 +211,7 @@ const Hero = () => {
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-2">
                     Fix &amp; Flip
                   </p>
-                  <p className="text-lg font-semibold">Rates from 8.5%</p>
+                  <p className="text-lg font-semibold">Rates from 8.25%</p>
                   <p className="mt-1 text-sm text-muted-foreground">
                     High-leverage short-term investor financing.
                   </p>

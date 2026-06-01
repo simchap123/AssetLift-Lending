@@ -30,7 +30,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     items: [
       {
         question: "What types of loans do you offer?",
-        answer: "We offer four main loan programs: Fix & Flip loans (up to 92.5% LTC), Ground-Up Construction loans (up to 90% LTC), DSCR Rental loans (up to 80% LTV with 30-year terms), and Bridge loans (up to 80% LTV with quick closings)."
+        answer: "We offer four main loan programs: Fix & Flip loans (up to 95% LTC), Ground-Up Construction loans (up to 90% LTC), DSCR Rental loans (up to 80% LTV with 30-year terms), and Bridge loans (up to 80% LTV with quick closings)."
       },
       {
         question: "What is the minimum and maximum loan amount?",
@@ -50,7 +50,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "What are your interest rates?",
-        answer: "Rates vary by program, leverage, execution path, experience, and credit profile. Fix and flip rates start as low as 8.5%, and DSCR rental rates start as low as 5.85% for qualifying scenarios. Contact us for a personalized quote based on your specific deal."
+        answer: "Rates vary by program, leverage, execution path, experience, and credit profile. Fix and flip rates start as low as 8.25%, and DSCR rental rates start as low as 5.85% for qualifying scenarios. Contact us for a personalized quote based on your specific deal."
       },
     ],
   },
@@ -79,7 +79,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
       },
       {
         question: "How much down payment do I need?",
-        answer: "Down payment requirements vary by program: Fix & Flip requires as little as 7.5% of total project cost (at 92.5% LTC), Ground-Up Construction requires 10% (at 90% LTC), and DSCR Rental/Bridge requires 20% (at 80% LTV)."
+        answer: "Down payment requirements vary by program: Fix & Flip requires as little as 5% of total project cost (at 95% LTC), Ground-Up Construction requires 10% (at 90% LTC), and DSCR Rental/Bridge requires 20% (at 80% LTV)."
       },
     ],
   },

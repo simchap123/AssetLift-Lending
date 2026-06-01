@@ -130,7 +130,7 @@ export default function LocationPage({ state }: LocationPageProps) {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-primary">92.5%</div>
+              <div className="text-2xl md:text-3xl font-bold text-primary">95%</div>
               <div className="text-sm text-muted-foreground">Max LTC</div>
             </div>
             <div>
@@ -366,7 +366,7 @@ export default function LocationPage({ state }: LocationPageProps) {
           </h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
-              { title: 'Fix & Flip Loans', desc: 'Up to 92.5% LTC with 100% rehab funding. 13-19 month terms.', href: '/loans/fix-and-flip' },
+              { title: 'Fix & Flip Loans', desc: 'Up to 95% LTC with 100% rehab funding. Rates starting as low as 8.25%.', href: '/loans/fix-and-flip' },
               { title: 'Ground-Up Construction', desc: 'Up to 90% LTC with 100% construction funding. 19-24 month terms.', href: '/loans/ground-up-construction' },
               { title: 'DSCR Rental Loans', desc: 'Up to 80% LTV. 30-year fixed rate. No income verification.', href: '/loans/dscr-rental' },
               { title: 'Bridge Loans', desc: 'Up to 80% LTV. Close in as fast as 5 days. Flexible exit strategies.', href: '/loans/bridge' },
