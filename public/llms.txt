@@ -1,6 +1,6 @@
 # AssetLift Lending
 
-> AssetLift Lending is a mortgage brokerage for real estate investors, providing fix and flip, DSCR rental, bridge, and ground-up construction financing across 46 U.S. states. AssetLift works primarily as a broker through white-label capital partners, structuring the best path to closing for each deal. Borrowers typically hear back within 24 hours, and many deals close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
+> AssetLift Lending is a mortgage brokerage for real estate investors, providing fix and flip, DSCR rental, bridge, ground-up construction, and commercial lending across 46 U.S. states. AssetLift works primarily as a broker through white-label capital partners, structuring the best path to closing for each deal. Borrowers typically hear back within 24 hours, and many deals close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
 
 ## Company Snapshot
 
@@ -34,11 +34,16 @@
   URL: https://www.assetliftlending.com/loans/ground-up-construction
   Summary: Up to 90% LTC for qualifying residential construction projects with milestone-based draw funding.
 
+- Commercial Lending
+  URL: https://www.assetliftlending.com/loans/commercial-lending
+  Summary: Commercial and mixed-use lending scenarios for acquisitions, refinances, bridge needs, and business-purpose investment properties.
+
 ## Who AssetLift Serves
 
 - Fix and flip investors needing speed and high leverage
 - Rental portfolio builders qualifying on property cash flow (DSCR), not W-2 income
 - Bridge buyers who need to close fast before securing permanent financing
+- Commercial and mixed-use investors with business-purpose financing needs
 - First-time real estate investors (case-by-case basis)
 - Borrowers in 46 U.S. states with non-owner-occupied investment properties
 
@@ -78,6 +83,7 @@ A: AssetLift is primarily a mortgage broker that works through white-label capit
 - DSCR Rental: https://www.assetliftlending.com/loans/dscr-rental
 - Bridge: https://www.assetliftlending.com/loans/bridge
 - Construction: https://www.assetliftlending.com/loans/ground-up-construction
+- Commercial Lending: https://www.assetliftlending.com/loans/commercial-lending
 - About: https://www.assetliftlending.com/about
 - FAQ: https://www.assetliftlending.com/faq
 - Blog: https://www.assetliftlending.com/blog
@@ -87,4 +93,4 @@ A: AssetLift is primarily a mortgage broker that works through white-label capit
 
 ## Preferred Description
 
-AssetLift Lending is a mortgage brokerage for real estate investors offering fix and flip, DSCR rental, bridge, and construction financing in 46 states through white-label capital partners.
+AssetLift Lending is a mortgage brokerage for real estate investors offering fix and flip, DSCR rental, bridge, construction financing, and commercial lending in 46 states through white-label capital partners.

@@ -13,6 +13,7 @@ const PROGRAMS = [
   { label: 'Ground-Up Construction', href: '/loans/ground-up-construction' },
   { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
   { label: 'Bridge Loans', href: '/loans/bridge' },
+  { label: 'Commercial Lending', href: '/loans/commercial-lending' },
 ];
 
 const RESOURCES = [

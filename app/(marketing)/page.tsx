@@ -25,6 +25,7 @@ export const metadata: Metadata = createMetadata({
     "DSCR loans",
     "bridge loans",
     "construction loans",
+    "commercial lending",
     "real estate investor financing",
   ],
 });
@@ -58,7 +59,7 @@ export default function HomePage() {
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
     description:
-      'AssetLift Lending provides private lending for real estate investors, with some deals brokered with capital partners. Fix and flip, bridge, DSCR rental, and ground-up construction financing in 46 states.',
+      'AssetLift Lending provides private lending for real estate investors, with some deals brokered with capital partners. Fix and flip, bridge, DSCR rental, ground-up construction, and commercial lending scenarios in 46 states.',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
@@ -104,6 +105,7 @@ export default function HomePage() {
       'Bridge Loans',
       'DSCR Rental Loans',
       'Construction Loans',
+      'Commercial Lending',
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -132,6 +134,12 @@ export default function HomePage() {
           name: 'Ground-Up Construction Loans',
           description: 'Finance new residential builds from land acquisition through completion. Up to 90% LTC with milestone-based draws and private lending execution.',
           url: 'https://www.assetliftlending.com/loans/ground-up-construction',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Commercial Lending',
+          description: 'Commercial and mixed-use lending scenarios for acquisitions, refinances, bridge needs, and business-purpose investment properties.',
+          url: 'https://www.assetliftlending.com/loans/commercial-lending',
         },
       ],
     },

@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 export const metadata: Metadata = createMetadata({
   title: 'Contact AssetLift Lending | Hard Money Loan Quotes',
   description:
-    'Contact AssetLift Lending for fast hard money loan quotes on fix and flip, DSCR, bridge, and construction deals. Call, email, or apply online today.',
+    'Contact AssetLift Lending for fast hard money loan quotes on fix and flip, DSCR, bridge, construction, and commercial lending deals. Call, email, or apply online today.',
   path: '/contact',
 });
 
@@ -138,10 +138,11 @@ export default function ContactPage() {
                 Apply Online <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <div className="grid md:grid-cols-3 gap-3 mt-8 text-left">
+            <div className="grid md:grid-cols-4 gap-3 mt-8 text-left">
               {[
                 { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
                 { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+                { label: 'Commercial Lending', href: '/loans/commercial-lending' },
                 { label: 'How It Works', href: '/how-it-works' },
               ].map((item) => (
                 <Link

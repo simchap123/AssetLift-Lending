@@ -423,6 +423,7 @@ const ApplyForm = () => {
                       <SelectItem value="ground-up">Ground-Up Construction</SelectItem>
                       <SelectItem value="rental">Rental / DSCR</SelectItem>
                       <SelectItem value="bridge">Bridge Loan</SelectItem>
+                      <SelectItem value="commercial">Commercial Lending</SelectItem>
                       <SelectItem value="portfolio">Portfolio / Other</SelectItem>
                     </SelectContent>
                   </Select>

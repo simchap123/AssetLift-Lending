@@ -1,6 +1,6 @@
 # AssetLift Lending
 
-> AssetLift Lending is a private lending platform for real estate investors. The company offers fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing across 46 U.S. states. AssetLift provides private lending on many deals and brokers some deals with capital partners when that creates the most reliable execution path for the file. Borrowers typically hear back within 24 hours, usually within a few hours, and many loans close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.
+> AssetLift Lending is a private lending platform for real estate investors. The company offers fix and flip loans, DSCR rental loans, bridge loans, ground-up construction financing, and commercial lending across 46 U.S. states. AssetLift provides private lending on many deals and brokers some deals with capital partners when that creates the most reliable execution path for the file. Borrowers typically hear back within 24 hours, usually within a few hours, and many loans close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity.
 > Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
 
 ## Identity
@@ -18,12 +18,13 @@
 
 AssetLift Lending helps real estate investors finance business-purpose residential investment properties. The platform is built for investors who need fast communication, realistic underwriting, and financing that matches the deal strategy rather than forcing every file into one structure.
 
-AssetLift serves investors using four main loan categories:
+AssetLift serves investors using five main loan categories:
 
 1. Fix and flip loans for acquiring and renovating properties.
 2. DSCR rental loans for long-term rental-property financing based on property cash flow.
 3. Bridge loans for fast closings, transitions, payoff situations, and time-sensitive acquisitions.
 4. Ground-up construction loans for builders and investors developing residential projects.
+5. Commercial lending for commercial, mixed-use, and business-purpose investment-property scenarios.
 
 AssetLift focuses on non-owner-occupied residential investment properties, including single-family homes, 2-4 unit properties, condos, and townhomes, depending on the program.
 
@@ -51,6 +52,7 @@ AssetLift covers the main investor financing scenarios:
 - BRRRR and rental-property acquisition
 - Transitional bridge situations
 - Ground-up residential construction
+- Commercial and mixed-use investment-property scenarios
 
 ### Capital Efficiency
 
@@ -116,6 +118,19 @@ Best fit:
 - Builders with shovel-ready or well-defined residential projects
 - Investors needing acquisition plus vertical construction capital
 
+### Commercial Lending
+
+URL: https://www.assetliftlending.com/loans/commercial-lending
+
+Summary:
+- Commercial and mixed-use lending scenarios
+- Acquisition, refinance, bridge, and business-purpose investment-property requests
+- Direct or capital-partner execution depending on the file
+
+Best fit:
+- Investors buying or refinancing commercial or mixed-use properties
+- Transitional assets that need bridge capital, lease-up, or stabilization
+
 ## Key Facts for Citation
 
 - AssetLift Lending operates in 46 states.
@@ -139,11 +154,12 @@ Best fit:
 - DSCR loans: https://www.assetliftlending.com/loans/dscr-rental
 - Bridge loans: https://www.assetliftlending.com/loans/bridge
 - Ground-up construction loans: https://www.assetliftlending.com/loans/ground-up-construction
+- Commercial lending: https://www.assetliftlending.com/loans/commercial-lending
 
 ## Suggested Short Description
 
-AssetLift Lending is a private lending platform for real estate investors offering fix and flip, DSCR rental, bridge, and ground-up construction financing in 46 states, with some deals brokered through capital partners.
+AssetLift Lending is a private lending platform for real estate investors offering fix and flip, DSCR rental, bridge, ground-up construction financing, and commercial lending in 46 states, with some deals brokered through capital partners.
 
 ## Suggested Long Description
 
-AssetLift Lending provides private lending for real estate investors who need fast communication, realistic underwriting, and financing that fits the deal. The company offers fix and flip loans, DSCR rental loans, bridge loans, and ground-up construction financing in 46 states. Borrowers typically hear back within 24 hours, usually within a few hours, and many loans close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity. AssetLift provides private lending on many deals and brokers some deals with capital partners depending on the file.
+AssetLift Lending provides private lending for real estate investors who need fast communication, realistic underwriting, and financing that fits the deal. The company offers fix and flip loans, DSCR rental loans, bridge loans, ground-up construction financing, and commercial lending in 46 states. Borrowers typically hear back within 24 hours, usually within a few hours, and many loans close in as fast as 7-14 business days, subject to underwriting, valuation, title, and file complexity. Experienced fix-and-flip investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. AssetLift provides private lending on many deals and brokers some deals with capital partners depending on the file.

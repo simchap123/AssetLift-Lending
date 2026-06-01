@@ -79,6 +79,13 @@ LOAN PROGRAMS:
    - Reserves: 6-12 months of interest payments
    - Use cases: auctions, off-market deals, gap financing, rescue capital, partner buyouts
 
+5. COMMERCIAL LENDING
+   - Commercial and mixed-use investment-property scenarios
+   - Acquisition, refinance, bridge, and transitional capital requests
+   - Terms are scenario-based and depend on asset type, location, occupancy, income, valuation, borrower profile, and exit
+   - Some scenarios may be funded directly and others may be placed with capital partners
+   - Best starting documents: property address, asset type, requested loan amount, rent roll, leases, trailing operating statements, purchase contract or payoff statement, and exit plan
+
 PROCESS (4 STEPS):
 1. Submit Your Deal - online form takes <5 min, no fee, no credit pull
 2. Receive Quote - hear back within 24 hours, usually within a few hours, with a soft-quote or any follow-up items needed

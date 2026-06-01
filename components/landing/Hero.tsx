@@ -14,7 +14,7 @@ const Hero = () => {
   ];
 
   const borrowerSignals = [
-    "Fix & flip, bridge, DSCR, and construction programs",
+    "Fix & flip, bridge, DSCR, construction, and commercial lending programs",
     "Real answers on leverage, timing, reserves, and exit strategy",
     "One clear path from quote to closing",
   ];
@@ -31,6 +31,7 @@ const Hero = () => {
     { label: "DSCR Rental", href: "/loans/dscr-rental" },
     { label: "Bridge", href: "/loans/bridge" },
     { label: "Construction", href: "/loans/ground-up-construction" },
+    { label: "Commercial", href: "/loans/commercial-lending" },
   ];
 
   return (
@@ -84,7 +85,7 @@ const Hero = () => {
             >
               Financing for borrowers who need speed, clean execution, and a lender that can
               actually explain the file. AssetLift handles fix and flip, bridge, DSCR rental,
-              and construction scenarios across 46 states.
+              construction, and commercial lending scenarios across 46 states.
             </motion.p>
 
             <motion.p
@@ -128,7 +129,7 @@ const Hero = () => {
                   View all
                 </a>
               </div>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {programLinks.map((program) => (
                   <Link
                     key={program.href}

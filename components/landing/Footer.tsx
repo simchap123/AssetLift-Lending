@@ -33,6 +33,9 @@ const Footer = () => {
                 <Link href="/loans/ground-up-construction" className="hover:text-primary transition-colors">Construction Loans</Link>
               </li>
               <li>
+                <Link href="/loans/commercial-lending" className="hover:text-primary transition-colors">Commercial Lending</Link>
+              </li>
+              <li>
                 <Link href="/markets" className="hover:text-primary transition-colors">Markets</Link>
               </li>
               <li>

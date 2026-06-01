@@ -472,6 +472,149 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     ],
   },
   {
+    slug: "commercial-lending",
+    title: "Commercial Lending - Flexible Financing for Investment Properties",
+    description:
+      "AssetLift Lending reviews commercial lending scenarios for investors seeking acquisition, refinance, bridge, and transitional financing on commercial or mixed-use investment properties.",
+    heroTitle: "Commercial Lending",
+    heroSubtitle:
+      "Finance commercial and mixed-use investment properties with a structure built around the asset, the business plan, and the exit.",
+    overview:
+      "Commercial lending is built for investment properties that do not fit neatly into a standard residential loan box. These scenarios can include mixed-use buildings, small commercial assets, multifamily properties beyond residential program limits, and business-purpose real estate where the underwriting needs to focus on collateral value, income, tenancy, and exit strategy.\n\nAssetLift Lending reviews commercial lending requests for acquisitions, refinances, cash-out needs, bridge situations, and transitional assets. Some files may be funded directly and others may be placed with a capital partner when that creates the cleanest execution path. The goal is to understand the property, the borrower, and the payoff plan before forcing the deal into a generic structure.\n\nCommercial files vary more than residential investor loans, so final terms depend on property type, location, occupancy, net operating income, sponsor experience, valuation support, title, and the intended exit. Strong submissions usually include a rent roll, trailing operating statements, purchase contract or payoff statement, property photos, and a clear explanation of how the loan will be repaid.",
+    keyStats: [
+      { label: "Loan Purpose", value: "Purchase, refinance, bridge" },
+      { label: "Property Types", value: "Commercial and mixed-use" },
+      { label: "Structure", value: "Scenario-based" },
+      { label: "Review Speed", value: "Fast scenario review" },
+      { label: "Execution", value: "Direct or partner placed" },
+    ],
+    features: [
+      {
+        title: "Commercial and Mixed-Use Review",
+        description:
+          "Submit commercial, mixed-use, and larger investment-property scenarios for a practical review of leverage, collateral, income, and exit fit.",
+      },
+      {
+        title: "Acquisition and Refinance Options",
+        description:
+          "Commercial lending can support new purchases, rate-and-term refinances, cash-out requests, and short-term payoff needs depending on the property and sponsor profile.",
+      },
+      {
+        title: "Bridge and Transitional Capital",
+        description:
+          "For assets that need lease-up, stabilization, repairs, or timing flexibility, commercial bridge structures can provide room to execute before permanent financing or sale.",
+      },
+      {
+        title: "Capital Partner Placement",
+        description:
+          "When a file is better served by a specialized commercial lender, AssetLift can route the scenario through lending partners rather than forcing it into a residential program.",
+      },
+      {
+        title: "Asset-Based Underwriting",
+        description:
+          "Commercial files are reviewed around property value, income, borrower experience, liquidity, marketability, and the credibility of the repayment plan.",
+      },
+    ],
+    eligibility: [
+      {
+        requirement: "Business Purpose",
+        detail:
+          "The property must be for investment or business-purpose use. AssetLift Lending does not offer consumer owner-occupied residential mortgages.",
+      },
+      {
+        requirement: "Property Information",
+        detail:
+          "Borrowers should provide the property address, asset type, occupancy, rent roll if applicable, purchase price or payoff amount, and requested loan amount.",
+      },
+      {
+        requirement: "Income and Valuation Support",
+        detail:
+          "For income-producing assets, operating statements, leases, rent rolls, and market support help determine whether the requested structure is realistic.",
+      },
+      {
+        requirement: "Sponsor Strength",
+        detail:
+          "Borrower experience, liquidity, credit profile, entity documents, and ownership structure all affect the available commercial lending path.",
+      },
+      {
+        requirement: "Defined Exit",
+        detail:
+          "Commercial bridge and transitional files need a credible exit, such as refinance, sale, lease-up, stabilization, or payoff from another transaction.",
+      },
+    ],
+    process: [
+      {
+        step: "Submit the Scenario",
+        description:
+          "Send the property address, asset type, requested loan amount, purchase or refinance details, and a short summary of the business plan.",
+      },
+      {
+        step: "Initial Fit Review",
+        description:
+          "AssetLift reviews collateral, location, income, sponsor profile, and exit strategy to determine whether the file fits direct lending or a capital partner path.",
+      },
+      {
+        step: "Term Direction",
+        description:
+          "If the scenario is workable, you receive direction on likely structure, documentation needs, valuation requirements, and timing.",
+      },
+      {
+        step: "Underwriting and Closing",
+        description:
+          "The file moves through valuation, title, entity, insurance, income, and borrower review before final terms and closing.",
+      },
+    ],
+    useCases: [
+      {
+        title: "Mixed-Use Building Acquisition",
+        description:
+          "Purchase a property with both commercial and residential income where the structure needs to account for lease mix, occupancy, and market value.",
+      },
+      {
+        title: "Commercial Bridge Financing",
+        description:
+          "Use short-term capital to acquire or refinance an asset while completing lease-up, stabilization, repairs, or a planned sale.",
+      },
+      {
+        title: "Cash-Out Refinance",
+        description:
+          "Access equity from a commercial or mixed-use investment property when the asset, income, and sponsor profile support the requested leverage.",
+      },
+      {
+        title: "Partner-Placed Commercial Loan",
+        description:
+          "Route specialized commercial scenarios to capital partners when a dedicated commercial lender is the most reliable execution path.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What property types fit Commercial Lending?",
+        answer:
+          "Commercial lending may fit mixed-use buildings, small commercial properties, multifamily assets outside standard residential program limits, and other business-purpose investment real estate. Final fit depends on the asset, market, income, borrower, and requested structure.",
+      },
+      {
+        question: "Are commercial loans funded directly by AssetLift?",
+        answer:
+          "Some scenarios may be handled directly and others may be brokered or placed with capital partners. AssetLift routes the file through the path that appears most workable for the property and borrower profile.",
+      },
+      {
+        question: "What documents should I send for a commercial scenario?",
+        answer:
+          "Start with the property address, purchase contract or payoff statement, requested loan amount, rent roll, leases if available, trailing operating statements, property photos, and a summary of the exit plan.",
+      },
+      {
+        question: "Can Commercial Lending be used for bridge financing?",
+        answer:
+          "Yes. Commercial lending can include short-term bridge structures for acquisition, refinance, stabilization, lease-up, partner buyout, or timing-driven payoff needs when the exit is credible.",
+      },
+      {
+        question: "How are commercial loan terms determined?",
+        answer:
+          "Terms are scenario-based and depend on property type, location, loan-to-value, net operating income, borrower experience, liquidity, credit profile, title, valuation, and the planned exit.",
+      },
+    ],
+  },
+  {
     slug: "bridge",
     title: "Bridge Loans for Real Estate Investors - Short-Term Capital When You Need It Most",
     description:

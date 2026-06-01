@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Check, Hammer, Building2, Home, ArrowLeftRight, CalendarDays } from "lucide-react";
+import { ArrowRight, Check, Hammer, Building2, Home, ArrowLeftRight, CalendarDays, Landmark } from "lucide-react";
 
 const LoanPrograms = () => {
   const consultHref = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_URL || "/contact";
@@ -82,6 +82,24 @@ const LoanPrograms = () => {
       href: "/loans/dscr-rental",
       Icon: Home,
     },
+    {
+      id: "commercial",
+      title: "Commercial",
+      subtitle: "INVESTOR BUSINESS-PURPOSE DEBT",
+      maxValue: "75",
+      loanType: "LTV",
+      loanTypeLabel: "VALUE",
+      highlights: [
+        "Commercial and mixed-use scenarios",
+        "Acquisition, refinance, and bridge options",
+        "Loan structures matched to the asset",
+        "Fast scenario review",
+        "Flexible capital partner execution",
+        "Business-purpose investment properties",
+      ],
+      href: "/loans/commercial-lending",
+      Icon: Landmark,
+    },
   ];
 
   return (
@@ -152,7 +170,7 @@ const LoanPrograms = () => {
         </motion.div>
 
         {/* Program cards */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
