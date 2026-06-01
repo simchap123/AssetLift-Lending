@@ -27,8 +27,12 @@ const PRIORITY_STATE_SLUGS = [
 const PRIORITY_CITY_SLUGS = [
   "miami",
   "tampa",
+  "fort-lauderdale",
+  "st-petersburg",
   "austin",
   "dallas",
+  "plano",
+  "arlington",
   "atlanta",
   "charlotte",
 ];

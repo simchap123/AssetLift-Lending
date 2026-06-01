@@ -3,7 +3,18 @@ import { ArrowRight } from "lucide-react";
 import LendingCoverageMap from "@/components/seo/LendingCoverageMap";
 import { CITIES } from "@/lib/data/cities";
 
-const FEATURED_CITIES = CITIES.slice(0, 6);
+const FEATURED_CITY_SLUGS = [
+  "miami",
+  "tampa",
+  "fort-lauderdale",
+  "st-petersburg",
+  "austin",
+  "dallas",
+  "plano",
+  "arlington",
+];
+
+const FEATURED_CITIES = CITIES.filter((city) => FEATURED_CITY_SLUGS.includes(city.citySlug));
 
 export default function MarketsPreview() {
   return (

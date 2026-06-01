@@ -5,20 +5,28 @@
       "schedule": "5 4 * * *"
     },
     {
+      "path": "/api/seo/authority",
+      "schedule": "5 8 * * *"
+    },
+    {
       "path": "/api/seo/run/programmatic",
       "schedule": "5 10 * * *"
     },
     {
-      "path": "/api/seo/authority",
-      "schedule": "35 10 * * *"
+      "path": "/api/seo/run/audit",
+      "schedule": "5 13 * * *"
     },
     {
       "path": "/api/seo/run/strategy",
-      "schedule": "5 22 * * *"
+      "schedule": "5 16 * * *"
     },
     {
-      "path": "/api/seo/authority",
-      "schedule": "35 22 * * *"
+      "path": "/api/seo/run/ideas",
+      "schedule": "5 18 * * *"
+    },
+    {
+      "path": "/api/seo/run/programmatic",
+      "schedule": "5 22 * * *"
     }
   ],
   "redirects": [

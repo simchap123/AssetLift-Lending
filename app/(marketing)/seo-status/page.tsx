@@ -7,6 +7,7 @@ import lastRun from '@/public/seo/last-run.json';
 import backlinkQueue from '@/public/seo/backlink-queue.json';
 import backlinkOutreach from '@/public/seo/backlink-outreach.json';
 import searchConsoleStatus from '@/public/seo/search-console-status.json';
+import { SEO_AUTHORITY_SCHEDULE, SEO_DAILY_PRIORITY_MAP, SEO_JOBS } from '@/lib/seo/config';
 
 export const metadata: Metadata = createMetadata({
   title: 'SEO Automation Status',
@@ -138,6 +139,25 @@ export default function SeoStatusPage() {
           />
 
           <StatusCard
+            title="Daily Schedule"
+            accent="bg-slate-600"
+            body={
+              <div className="space-y-3">
+                {Object.values(SEO_JOBS).map((job) => (
+                  <div key={job.slug} className="rounded-2xl bg-muted/60 px-3 py-2">
+                    <div className="font-medium text-foreground">{job.label}</div>
+                    <div>{job.scheduleLabel}</div>
+                  </div>
+                ))}
+                <p className="text-xs">
+                  These jobs are the daily publishing and visibility passes that support indexed
+                  city pages, authority, deeper content, internal linking, and conversion work.
+                </p>
+              </div>
+            }
+          />
+
+          <StatusCard
             title="Search Console"
             accent="bg-emerald-600"
             body={
@@ -156,6 +176,34 @@ export default function SeoStatusPage() {
                   {(searchConsoleStatus as { property?: string | null }).property ?? 'Not configured'}
                 </p>
               </>
+            }
+          />
+        </div>
+
+        <div className="mt-6">
+          <StatusCard
+            title="Priority Map"
+            accent="bg-slate-700"
+            body={
+              <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+                {SEO_DAILY_PRIORITY_MAP.map((item) => (
+                  <div key={item.key} className="rounded-2xl bg-muted/60 px-3 py-3">
+                    <div className="text-xs uppercase tracking-[0.18em] text-foreground/70">
+                      {item.key}
+                    </div>
+                    <div className="font-medium text-foreground">{item.label}</div>
+                    <div>{item.focus}</div>
+                    <div className="text-xs text-foreground/70">{item.job}</div>
+                  </div>
+                ))}
+                <div className="rounded-2xl bg-muted/60 px-3 py-3">
+                  <div className="text-xs uppercase tracking-[0.18em] text-foreground/70">
+                    Authority
+                  </div>
+                  <div className="font-medium text-foreground">{SEO_AUTHORITY_SCHEDULE.label}</div>
+                  <div>{SEO_AUTHORITY_SCHEDULE.scheduleLabel}</div>
+                </div>
+              </div>
             }
           />
         </div>

@@ -17,38 +17,78 @@ export const SEO_JOBS: Record<string, SeoJobConfig> = {
   audit: {
     slug: 'audit',
     label: 'SEO Audit',
-    scheduleLabel: '04:05 UTC / 00:05 ET during DST',
+    scheduleLabel: '04:05 UTC and 13:05 UTC / 00:05 ET and 09:05 ET during DST',
     keywords: ['hard money lender', 'DSCR loans', 'fix and flip loans'],
   },
   programmatic: {
     slug: 'programmatic',
-    label: 'Morning SEO + AI Visibility Publish',
-    scheduleLabel: '10:05 UTC / 06:05 ET during DST',
-    keywords: [
-      'hard money lender in city',
-      'fix and flip loans state',
-      'DSCR loans state',
-      'AI search citations',
-    ],
+    label: 'Programmatic SEO',
+    scheduleLabel: '10:05 UTC and 22:05 UTC / 06:05 ET and 18:05 ET during DST',
+    keywords: ['hard money lender in city', 'fix and flip loans state', 'DSCR loans state'],
   },
   strategy: {
     slug: 'strategy',
-    label: 'Evening SEO + AI Visibility Publish',
-    scheduleLabel: '22:05 UTC / 18:05 ET during DST',
-    keywords: [
-      'how to finance first fix and flip',
-      'how to qualify for DSCR loan',
-      'real estate investing guide',
-      'answer engine optimization',
-    ],
+    label: 'Content Strategy',
+    scheduleLabel: '16:05 UTC / 12:05 ET during DST',
+    keywords: ['how to finance first fix and flip', 'how to qualify for DSCR loan', 'real estate investing guide'],
   },
   ideas: {
     slug: 'ideas',
     label: 'Marketing Ideas',
-    scheduleLabel: 'Manual or future rotation',
+    scheduleLabel: '18:05 UTC / 14:05 ET during DST',
     keywords: ['fix and flip checklist', 'rental property underwriting', 'bridge loan strategy'],
   },
 };
+
+export const SEO_AUTHORITY_SCHEDULE = {
+  label: 'Authority / Search Console',
+  scheduleLabel: '08:05 UTC / 04:05 ET during DST',
+};
+
+export const SEO_DAILY_PRIORITY_MAP = [
+  {
+    key: '1',
+    label: 'Indexed pages',
+    focus: 'Programmatic city and market coverage',
+    job: 'Programmatic SEO',
+  },
+  {
+    key: '2',
+    label: 'Authority links',
+    focus: 'Backlink queue and sitemap submission',
+    job: 'Authority / Search Console',
+  },
+  {
+    key: '4',
+    label: 'E-E-A-T',
+    focus: 'Trust, expertise, and educational depth',
+    job: 'Content Strategy',
+  },
+  {
+    key: '5',
+    label: 'Content depth',
+    focus: 'Higher-intent educational and comparison content',
+    job: 'Content Strategy',
+  },
+  {
+    key: '6',
+    label: 'Internal linking',
+    focus: 'Cross-linking between cities, loans, and blog content',
+    job: 'SEO Audit',
+  },
+  {
+    key: '7',
+    label: 'Consistency',
+    focus: 'Repeated publishing across the day',
+    job: 'Programmatic SEO / Marketing Ideas',
+  },
+  {
+    key: '8',
+    label: 'Conversion tracking',
+    focus: 'Audit quality, lead flow, and action paths',
+    job: 'SEO Audit',
+  },
+] as const;
 
 export const SEO_CORE_PAGE_TARGETS = [
   '/',
@@ -65,11 +105,8 @@ export const SEO_CORE_PAGE_TARGETS = [
   '/loans/ground-up-construction',
   '/loans/dscr-rental',
   '/loans/bridge',
-  '/loans/commercial-lending',
   '/tools/fix-and-flip-calculator',
   '/tools/dscr-calculator',
-  '/llms.txt',
-  '/llms-full.txt',
 ];
 
 export const SEO_RESTRICTED_PHRASES = [

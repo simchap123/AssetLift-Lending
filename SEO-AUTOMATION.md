@@ -11,28 +11,33 @@ The scheduler hits these jobs:
 - `audit`: refreshes SEO health and prioritization artifacts
 - `programmatic`: morning publish for market, location, and high-intent SEO content
 - `strategy`: evening publish for educational, comparison, and answer-engine content tied to target keywords
+- `ideas`: low-friction conversion-supporting content and resource ideas
 - `authority`: runs after each publish window to refresh the backlink/action queue, AI-readable citation targets, and Google Search Console sitemap submission when credentials are configured
+
+The current cadence is designed to keep working the priorities we discussed:
+
+- `1` and `7`: publish and refresh indexed city and market content
+- `2`: keep authority and sitemap submission moving
+- `4` and `5`: ship deeper educational content
+- `6` and `8`: audit internal-linking, conversion, and tracking gaps
 
 ## Cron Schedule
 
 Configured in `vercel.json`:
 
 - `04:05 UTC` audit
-- `10:05 UTC` programmatic content publish
-- `10:35 UTC` authority, indexing, and AI visibility refresh
-- `22:05 UTC` strategy content publish
-- `22:35 UTC` authority, indexing, and AI visibility refresh
+- `08:05 UTC` authority
+- `10:05 UTC` programmatic
+- `13:05 UTC` audit refresh
+- `16:05 UTC` strategy
+- `18:05 UTC` ideas
+- `22:05 UTC` programmatic refresh
 
-These line up to roughly `00:05`, `06:05`, `06:35`, `18:05`, and `18:35` Eastern Time during daylight saving time. Vercel cron uses UTC, so review these times when DST changes.
-
-The two daily publishing windows are the operating schedule:
-
-- Morning: push market/local-intent content, then refresh indexing and AI citation signals.
-- Evening: push educational/comparison/answer-engine content, then refresh indexing and AI citation signals.
+These line up to repeated Eastern Time touches during daylight saving time. Vercel cron uses UTC, so review these times when DST changes.
 
 ## AI Visibility Layer
 
-The authority job now treats AI discoverability as part of the twice-daily schedule. It rotates and refreshes:
+The authority job treats AI discoverability as part of the schedule. It rotates and refreshes:
 
 - `llms.txt` and `llms-full.txt` as AI-readable entity and citation references
 - Product, market, and tool pages that AI systems can cite through web retrieval
