@@ -12,11 +12,11 @@ const LoanPrograms = () => {
       id: "fix-flip",
       title: "Fix & Flip",
       subtitle: "SHORT-TERM INVESTOR CAPITAL",
-      maxValue: "92.5",
+      maxValue: "95",
       loanType: "LTC",
       loanTypeLabel: "COST",
       highlights: [
-        "Up to 92.5% LTC & 75% LTV",
+        "Up to 95% LTC on purchase & 75% LTV",
         "Up to 100% rehab funded",
         "Loans up to $5MM",
         "Terms built for acquisition and rehab",

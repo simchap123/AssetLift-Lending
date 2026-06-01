@@ -25,13 +25,13 @@ export default function FlipCalculator() {
   const sellingPct = parseFloat(sellingCostPercent) || 6;
 
   const totalInvestment = purchase + rehab;
-  const loanAmount = purchase * 0.9;
+  const loanAmount = purchase * 0.95;
   const closingCosts = purchase * (closingPct / 100);
   const holdingCosts = loanAmount * (rate / 100 / 12) * months;
   const sellingCosts = afterRepair * (sellingPct / 100);
   const totalCosts = totalInvestment + closingCosts + holdingCosts + sellingCosts;
   const grossProfit = afterRepair - totalCosts;
-  const roi = totalInvestment > 0 ? (grossProfit / (purchase * 0.1 + rehab + closingCosts)) * 100 : 0;
+  const roi = totalInvestment > 0 ? (grossProfit / (purchase * 0.05 + rehab + closingCosts)) * 100 : 0;
 
   const hasValues = purchase > 0 && afterRepair > 0;
 
@@ -201,7 +201,7 @@ export default function FlipCalculator() {
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
                   <p className="font-semibold mb-2">Like these numbers?</p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Get funded in as fast as 5 business days. Up to 90% LTP + 100% rehab.
+                    Get funded in as fast as 5 business days. Up to 95% LTC on purchase + 100% rehab.
                   </p>
                   <Button asChild size="lg" className="glow-primary">
                     <Link href="/apply">

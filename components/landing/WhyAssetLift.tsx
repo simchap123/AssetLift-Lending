@@ -19,7 +19,7 @@ const proofCards = [
   {
     title: "Capital Efficiency",
     content:
-      "Up to 92.5% LTC on fix and flip and investor-friendly DSCR leverage help borrowers keep more capital available for additional deals and reserves.",
+      "Up to 95% LTC on the purchase for fix and flip and investor-friendly DSCR leverage help borrowers keep more capital available for additional deals and reserves.",
     icon: TrendingUp,
   },
   {
