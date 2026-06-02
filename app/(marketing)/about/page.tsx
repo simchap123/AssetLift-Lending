@@ -24,10 +24,8 @@ export default function AboutPage() {
     email: 'info@assetliftlending.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '7 Youmans Dr',
-      addressLocality: 'Spring Valley',
+      addressLocality: 'Queens',
       addressRegion: 'NY',
-      postalCode: '10977',
       addressCountry: 'US',
     },
     areaServed: 'US',
@@ -140,7 +138,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="font-semibold mb-1">Office</p>
-                <p className="text-muted-foreground">7 Youmans Dr, Spring Valley, NY 10977</p>
+                <p className="text-muted-foreground">Queens, NY</p>
               </div>
             </div>
           </div>
