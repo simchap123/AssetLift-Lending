@@ -294,7 +294,7 @@ export default function AboutPage() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>Spring Valley, NY</span>
+                <span>Queens, NY</span>
               </div>
             </div>
             <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
