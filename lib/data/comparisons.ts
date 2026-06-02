@@ -1365,6 +1365,411 @@ export const COMPARISONS: Comparison[] = [
       },
     ],
   },
+  {
+    slug: "assetlift-vs-kiavi",
+    title: "AssetLift Lending vs Kiavi: Hard Money Lender Comparison",
+    description:
+      "Compare AssetLift Lending and Kiavi on leverage, closing speed, underwriting flexibility, and rental loan fit for real estate investors evaluating private lending options.",
+    publishedAt: "2026-04-08",
+    heroTitle: "AssetLift Lending vs Kiavi",
+    introText:
+      "AssetLift Lending and Kiavi both serve active real estate investors, but they are built around different operating models. Kiavi is a scale-driven platform with broad name recognition and a large product footprint. AssetLift focuses on high-leverage execution, fast closings, and a borrower experience built around direct communication and flexible deal paths. Investors comparing the two usually care about leverage, timing, income documentation, and how quickly the lender can move a competitive file from application to closing. This guide lays out the differences that matter when the deal itself is on the line.",
+    comparisonTable: [
+      {
+        feature: "Fix & Flip Leverage",
+        optionA: "Up to 92.5% LTC with 100% rehab funding on qualifying deals",
+        optionB: "Competitive investor leverage with program-specific caps based on deal strength",
+      },
+      {
+        feature: "Closing Speed",
+        optionA: "Many files close in as fast as 5 business days",
+        optionB: "Fast for a scaled platform, but timelines vary more by channel and file complexity",
+      },
+      {
+        feature: "Underwriting Style",
+        optionA: "Direct, asset-based execution with an emphasis on the cleanest workable path",
+        optionB: "Platform underwriting with program rules that can be more standardized",
+      },
+      {
+        feature: "DSCR Income Docs",
+        optionA: "No personal income verification on DSCR rental loans",
+        optionB: "DSCR products available with underwriting that may require more documentation",
+      },
+      {
+        feature: "Max Loan Amount",
+        optionA: "Up to $5M on select loan types",
+        optionB: "Broad product coverage with loan sizing dependent on program and geography",
+      },
+      {
+        feature: "Best Fit",
+        optionA: "Investors who value speed, higher leverage, and a hands-on deal path",
+        optionB: "Investors who want a large, established platform with a wide product footprint",
+      },
+      {
+        feature: "Rehab Funding",
+        optionA: "100% rehab financing on qualifying fix-and-flip scenarios",
+        optionB: "Rehab support available on select products with program-specific limits",
+      },
+      {
+        feature: "Communication",
+        optionA: "Centralized borrower communication with a focus on execution",
+        optionB: "Platform-based process with more institutional workflow layers",
+      },
+    ],
+    sections: [
+      {
+        heading: "When AssetLift Wins",
+        content:
+          "AssetLift is a strong fit when the borrower needs high leverage, fast movement, and a lending team that can actually respond to deal-specific friction. If the opportunity is time-sensitive, if the rehab budget is meaningful, or if the borrower wants to minimize cash left in the file, the structure is designed to keep more equity in reserve. That matters most on competitive acquisitions where speed and capital efficiency are the difference between winning and losing the deal.",
+      },
+      {
+        heading: "When Kiavi Can Make Sense",
+        content:
+          "Kiavi can make sense for investors who prefer a large, established platform and are comfortable working within a more standardized product framework. That can be valuable when a borrower wants a known brand and a broad menu of options. For some repeat borrowers, the platform approach feels familiar and predictable, which can reduce uncertainty during the loan process.",
+      },
+      {
+        heading: "The Borrower Question That Matters",
+        content:
+          "The real question is not which lender is bigger. It is which lender gives you the best combination of leverage, speed, and certainty for this exact file. If you need to preserve capital and close quickly, AssetLift is built for that. If you want to compare a broader platform menu and are less sensitive to timing, Kiavi may still be worth a look.",
+      },
+      {
+        heading: "How to Decide",
+        content:
+          "Borrowers should compare leverage, expected closing time, documentation burden, and how much hand-holding the file will require. If the deal is strong but complex, the lender that can solve friction quickly is usually the better choice. If the file is simple and you want a familiar platform, the decision becomes more about pricing and product fit.",
+      },
+    ],
+    verdict:
+      "AssetLift Lending is the better fit for investors who want higher leverage, faster execution, and a more hands-on lending path. Kiavi remains a strong alternative for borrowers who value a large, established platform and a broad product footprint. If the deal is competitive, time-sensitive, or capital-constrained, AssetLift's higher leverage and 5-day execution target are the stronger practical advantages.",
+    faqs: [
+      {
+        question: "Which lender is faster, AssetLift or Kiavi?",
+        answer:
+          "AssetLift is built to close many files in as fast as 5 business days. Kiavi is also fast for a scaled lender, but closing time can vary more by program and file complexity.",
+      },
+      {
+        question: "Which lender offers higher leverage?",
+        answer:
+          "AssetLift markets up to 92.5% LTC on qualifying fix-and-flip deals plus 100% rehab funding. Kiavi's leverage is competitive, but the exact cap depends on the program and scenario.",
+      },
+      {
+        question: "Is AssetLift better for DSCR loans?",
+        answer:
+          "AssetLift can be a strong fit when the borrower wants no personal income verification on DSCR rental loans. That simplifies underwriting for self-employed investors and LLC-based borrowers.",
+      },
+      {
+        question: "Should I choose Kiavi because it is bigger?",
+        answer:
+          "Bigger is not always better. The right lender is the one that gives you the best combination of leverage, speed, and certainty for the specific deal in front of you.",
+      },
+    ],
+  },
+  {
+    slug: "assetlift-vs-lima-one",
+    title: "AssetLift Lending vs Lima One Capital: Hard Money Lender Comparison",
+    description:
+      "Compare AssetLift Lending and Lima One Capital on leverage, closing speed, no-income-doc DSCR lending, and execution model for investors choosing a private lender.",
+    publishedAt: "2026-04-09",
+    heroTitle: "AssetLift Lending vs Lima One Capital",
+    introText:
+      "AssetLift Lending and Lima One Capital both serve investors with hard money and rental financing solutions, but they are not built the same way. Lima One is a long-established platform with broad recognition. AssetLift is optimized around leverage, speed, and a direct borrower experience. Investors comparing the two are often trying to solve one of three problems: they need more cash out of pocket, they need to close faster, or they need a DSCR structure that avoids extra income documentation. This comparison focuses on those decision points.",
+    comparisonTable: [
+      {
+        feature: "Fix & Flip LTC",
+        optionA: "Up to 92.5% LTC with 100% rehab funding",
+        optionB: "Competitive leverage with program-specific caps that can be lower on baseline files",
+      },
+      {
+        feature: "Speed",
+        optionA: "Many files close in as fast as 5 business days",
+        optionB: "Fast relative to bank financing, but typically slower than AssetLift's target timeline",
+      },
+      {
+        feature: "DSCR Docs",
+        optionA: "No personal income verification on DSCR rental loans",
+        optionB: "DSCR documentation varies by program and borrower profile",
+      },
+      {
+        feature: "Borrower Experience",
+        optionA: "Hands-on and execution-oriented",
+        optionB: "Scaled institutional platform with a broader operating history",
+      },
+      {
+        feature: "Loan Amount",
+        optionA: "Up to $5M on select programs",
+        optionB: "Broad loan sizing with product-dependent maximums",
+      },
+      {
+        feature: "Best Fit",
+        optionA: "Investors who care most about speed and capital efficiency",
+        optionB: "Investors who prefer a large, well-known lender with a long operating history",
+      },
+    ],
+    sections: [
+      {
+        heading: "Why Borrowers Choose AssetLift",
+        content:
+          "Borrowers come to AssetLift when the deal needs more leverage or a cleaner path through underwriting. The model is built for investors who want to keep more cash in reserve, shorten the approval cycle, and avoid unnecessary documentation on rental loans. That combination matters on deals that are margin sensitive or time sensitive.",
+      },
+      {
+        heading: "Why Borrowers Choose Lima One",
+        content:
+          "Lima One has the benefit of scale and name recognition. Some investors prefer that because it feels familiar and institutional. The broader product footprint can be useful for borrowers who want a lender with a long operating history and are comfortable with a slightly heavier process.",
+      },
+      {
+        heading: "What Usually Decides It",
+        content:
+          "The deciding factor is usually not the logo. It is the file. If the borrower needs to minimize cash into the deal or close on a compressed timeline, AssetLift is the more direct fit. If the borrower cares more about choosing a large, long-established platform and the file is not especially time-sensitive, Lima One remains a reasonable alternative.",
+      },
+      {
+        heading: "Use the Right Product For the Exit",
+        content:
+          "If the exit is a quick resale, a fix-and-flip structure makes more sense. If the exit is a rental refinance, DSCR is the cleaner lane. AssetLift's advantage is that it makes both lanes easier to execute without forcing the borrower through unnecessary income verification or a slower capital path.",
+      },
+    ],
+    verdict:
+      "AssetLift Lending is the stronger choice for investors who need high leverage, faster execution, and a simpler DSCR process. Lima One Capital is still a credible alternative for borrowers who want a larger, more established lender with a broader institutional footprint. If the deal is capital constrained or time sensitive, AssetLift is the better practical fit.",
+    faqs: [
+      {
+        question: "Is AssetLift faster than Lima One?",
+        answer:
+          "AssetLift is structured to close many files in as fast as 5 business days. Lima One is generally fast for a scaled lender, but its timeline is usually longer.",
+      },
+      {
+        question: "Which lender has better leverage?",
+        answer:
+          "AssetLift markets up to 92.5% LTC on qualifying fix-and-flip loans and 100% rehab funding, which is a strong advantage for borrowers trying to preserve cash.",
+      },
+      {
+        question: "Does AssetLift require income docs for DSCR loans?",
+        answer:
+          "No. AssetLift does not require personal income verification on DSCR rental loans, which simplifies the file for self-employed investors and LLC borrowers.",
+      },
+    ],
+  },
+  {
+    slug: "assetlift-vs-new-silver",
+    title: "AssetLift Lending vs New Silver: Hard Money Lender Comparison",
+    description:
+      "Compare AssetLift Lending and New Silver on leverage, process simplicity, closing speed, and lender fit for residential investors using hard money or bridge financing.",
+    publishedAt: "2026-04-10",
+    heroTitle: "AssetLift Lending vs New Silver",
+    introText:
+      "AssetLift Lending and New Silver both target active real estate investors, but the practical experience can differ meaningfully depending on the file. Investors usually compare these lenders when they need fast short-term capital and want to understand how much leverage they can access, how long underwriting will take, and whether the process will become more complicated than expected. This page gives borrowers a clean comparison of the decision factors that matter most in an actual deal.",
+    comparisonTable: [
+      {
+        feature: "Leverage",
+        optionA: "Up to 92.5% LTC with 100% rehab funding",
+        optionB: "Competitive leverage with product-specific limits",
+      },
+      {
+        feature: "Execution Speed",
+        optionA: "Many files close in as fast as 5 business days",
+        optionB: "Fast on many files, but timelines depend on channel and underwriting complexity",
+      },
+      {
+        feature: "Documentation Burden",
+        optionA: "Simplified borrower experience with no-income-doc DSCR",
+        optionB: "Documentation can vary depending on the scenario and program",
+      },
+      {
+        feature: "Capital Efficiency",
+        optionA: "Designed to minimize cash in the deal",
+        optionB: "Competitive, but not primarily positioned around maximum leverage",
+      },
+      {
+        feature: "Best Fit",
+        optionA: "Borrowers who want speed plus strong leverage",
+        optionB: "Borrowers who want another scaled private lending option",
+      },
+    ],
+    sections: [
+      {
+        heading: "How AssetLift Positions Differently",
+        content:
+          "AssetLift is built to be the lender a borrower uses when the deal must move quickly and capital needs to stay flexible. That usually means higher leverage, fewer hoops on DSCR files, and a tighter communication loop. The goal is not to be the biggest platform in the market. The goal is to be the lender that solves the transaction cleanly.",
+      },
+      {
+        heading: "Where New Silver Fits",
+        content:
+          "New Silver is another viable option in the private lending market, especially for borrowers who are comparing multiple scaled lenders. It can fit files that are straightforward and do not require unusual leverage or a highly bespoke execution path. For some investors, that makes it a useful fallback or benchmark when shopping deals.",
+      },
+      {
+        heading: "What To Compare First",
+        content:
+          "Borrowers should compare the real leverage available, not just the advertised maximum. They should also look at how the lender handles rehab draws, whether DSCR underwriting requires personal income documentation, and whether the process feels like a partnership or a queue. Those friction points are usually what determine whether a deal closes on time.",
+      },
+      {
+        heading: "When AssetLift Is The Better Fit",
+        content:
+          "AssetLift is usually the better fit when the borrower wants a lender that can move quickly, keep the file simple, and maximize capital efficiency. That is especially true on competitive acquisitions or rental deals where excess cash left in the file reduces the investor's ability to keep scaling.",
+      },
+    ],
+    verdict:
+      "AssetLift Lending is the better fit for investors who want higher leverage, faster execution, and a simpler DSCR process. New Silver is still a viable alternative for borrowers who want another scaled private lender in the mix. If the goal is to preserve more capital and close fast, AssetLift has the clearer advantage.",
+    faqs: [
+      {
+        question: "Is AssetLift faster than New Silver?",
+        answer:
+          "AssetLift is structured so many files can close in as fast as 5 business days. New Silver is also fast on many files, but the timeline depends more on the exact program and file complexity.",
+      },
+      {
+        question: "Which lender has higher leverage?",
+        answer:
+          "AssetLift markets up to 92.5% LTC with 100% rehab funding on qualifying fix-and-flip deals, which is a strong capital-efficiency advantage.",
+      },
+      {
+        question: "Which lender is easier for DSCR loans?",
+        answer:
+          "AssetLift is easier for borrowers who want no personal income verification on DSCR rental loans. That cuts friction for self-employed investors and LLC structures.",
+      },
+    ],
+  },
+  {
+    slug: "fix-and-flip-vs-bridge-loan",
+    title: "Fix and Flip Loan vs Bridge Loan: Which Structure Fits Your Deal?",
+    description:
+      "Compare fix and flip loans and bridge loans for real estate investors. See when each structure makes sense based on acquisition, renovation, refinance, and exit timing.",
+    publishedAt: "2026-04-11",
+    heroTitle: "Fix and Flip Loan vs Bridge Loan",
+    introText:
+      "Fix and flip loans and bridge loans are closely related, but they are not the same thing. A fix and flip loan is built for buying and renovating a property with a sale as the expected exit. A bridge loan is built to get you from one financing stage to another when timing, title, occupancy, or stabilization makes conventional financing awkward. Investors confuse the two because both are short-term and both can close quickly, but the right choice depends on what the deal actually needs to accomplish.",
+    comparisonTable: [
+      {
+        feature: "Primary Use",
+        optionA: "Acquire and renovate a distressed property for resale",
+        optionB: "Bridge a time gap between one capital need and the next financing step",
+      },
+      {
+        feature: "Exit Strategy",
+        optionA: "Sale after rehab",
+        optionB: "Refinance, stabilization, or sale after a transition period",
+      },
+      {
+        feature: "Rehab Funding",
+        optionA: "Commonly includes construction draw support",
+        optionB: "May or may not include rehab depending on the file and structure",
+      },
+      {
+        feature: "Best Fit",
+        optionA: "Projects with clear renovation scope and resale plan",
+        optionB: "Deals that need timing flexibility or a temporary capital solution",
+      },
+      {
+        feature: "Borrower Profile",
+        optionA: "Flippers and value-add investors",
+        optionB: "Investors solving a gap in financing or awaiting a permanent takeout",
+      },
+    ],
+    sections: [
+      {
+        heading: "When to Use a Fix and Flip Loan",
+        content:
+          "Use a fix and flip loan when the business plan is to buy, improve, and sell the property. This is the cleanest product for investors who have a clear rehab scope and want a draw-based structure that matches construction progress. It is especially useful on distressed homes, cosmetic rehabs, and moderate value-add projects where resale is the natural exit.",
+      },
+      {
+        heading: "When to Use a Bridge Loan",
+        content:
+          "Use a bridge loan when the asset needs temporary capital before the next step can happen. That might be because a refinance is pending, the property needs to stabilize, or the borrower needs to close fast before permanent financing is available. Bridge debt is less about the renovation itself and more about the timing problem in front of the borrower.",
+      },
+      {
+        heading: "How To Decide",
+        content:
+          "Ask one question: what is the actual use of the money? If the capital is funding a rehab and the exit is resale, fix and flip is usually the right answer. If the capital is solving a short-term timing gap, bridge is usually the better fit. Choosing the wrong one can create unnecessary friction later when the lender or borrower realizes the structure does not match the deal.",
+      },
+    ],
+    verdict:
+      "Fix and flip loans are better when the project includes acquisition plus rehab and the intended exit is a resale. Bridge loans are better when the borrower needs temporary capital to solve a timing or stabilization problem. In practice, the best choice is the one that matches the actual business plan instead of forcing the deal into the wrong box.",
+    faqs: [
+      {
+        question: "Are bridge loans and fix and flip loans the same?",
+        answer:
+          "No. They are both short-term loans, but fix and flip is designed for renovation and resale while bridge financing is designed to cover a temporary gap in the capital stack.",
+      },
+      {
+        question: "Can a bridge loan include rehab money?",
+        answer:
+          "Sometimes, yes. It depends on the lender and the specific file, but bridge loans are generally more about timing than renovation.",
+      },
+      {
+        question: "Which one is cheaper?",
+        answer:
+          "It depends on the deal. The correct product is the one that fits the exit and reduces friction, not simply the one with the lowest headline rate.",
+      },
+    ],
+  },
+  {
+    slug: "dscr-loan-vs-conventional-rental-loan",
+    title: "DSCR Loan vs Conventional Rental Loan: Which Is Better for Investors?",
+    description:
+      "Compare DSCR rental loans and conventional rental mortgages for investors. Learn when to use debt-service coverage underwriting versus full borrower income documentation.",
+    publishedAt: "2026-04-12",
+    heroTitle: "DSCR Loan vs Conventional Rental Loan",
+    introText:
+      "DSCR loans and conventional rental mortgages both finance income-producing properties, but they underwrite very differently. A DSCR loan focuses on the property's cash flow and debt coverage ratio. A conventional rental loan focuses much more heavily on the borrower's personal income, credit profile, and debt-to-income ratio. Investors often compare the two when a property is already stabilized or when they want to know whether their tax return picture will limit how much they can borrow. This guide compares the structures side by side so borrowers can choose the cleaner path.",
+    comparisonTable: [
+      {
+        feature: "Underwriting Focus",
+        optionA: "Property cash flow and debt service coverage",
+        optionB: "Borrower income, DTI, credit, and conventional guidelines",
+      },
+      {
+        feature: "Income Docs",
+        optionA: "No personal income verification",
+        optionB: "Personal income documentation usually required",
+      },
+      {
+        feature: "Best For",
+        optionA: "Self-employed investors, LLC borrowers, and portfolio owners",
+        optionB: "Borrowers with strong W-2 income and conventional eligibility",
+      },
+      {
+        feature: "Speed",
+        optionA: "Faster and simpler for many investor files",
+        optionB: "Typically slower and more document-heavy",
+      },
+      {
+        feature: "Exit Flexibility",
+        optionA: "Strong for stabilized rentals that need investor-friendly underwriting",
+        optionB: "Can be cheaper if the borrower qualifies cleanly",
+      },
+    ],
+    sections: [
+      {
+        heading: "When DSCR Wins",
+        content:
+          "DSCR wins when the property cash flow is strong but the borrower wants to avoid income verification. That is especially useful for self-employed investors, investors with heavy write-offs, and LLC-based borrowers whose tax returns do not reflect the real economics of the portfolio. It is also useful when the borrower wants a clean, asset-focused approval process.",
+      },
+      {
+        heading: "When Conventional Wins",
+        content:
+          "Conventional rental financing can win on rate if the borrower qualifies easily and is willing to provide the documentation required. For some long-term holders, a lower monthly payment can outweigh the extra friction during underwriting. That makes conventional a good fit for borrowers with stable income and a simple file.",
+      },
+      {
+        heading: "How To Decide",
+        content:
+          "If your personal income picture is clean and conventional underwriting is easy, compare the rate and closing costs. If your income picture is messy or you want to preserve privacy and speed, DSCR is often the better lane. The best choice is the one that gets the property financed without creating an avoidable bottleneck.",
+      },
+    ],
+    verdict:
+      "DSCR loans are usually better for investors who want a property-based approval process with no personal income verification. Conventional rental loans are better for borrowers who qualify cleanly and want the lowest possible long-term cost. For most professional investors, DSCR is the more practical and scalable option.",
+    faqs: [
+      {
+        question: "What does DSCR mean?",
+        answer:
+          "DSCR stands for debt-service coverage ratio. It measures how much rental income a property produces relative to its debt obligations.",
+      },
+      {
+        question: "Do DSCR loans require tax returns?",
+        answer:
+          "Not at AssetLift. The DSCR structure is designed so the property qualifies on its own cash flow instead of the borrower's personal income documents.",
+      },
+      {
+        question: "When should I use a conventional rental loan instead?",
+        answer:
+          "Use conventional financing when you qualify easily, want the lowest possible long-term cost, and do not mind the extra underwriting documentation.",
+      },
+    ],
+  },
 ];
 
 
