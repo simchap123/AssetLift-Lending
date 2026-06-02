@@ -26,13 +26,19 @@ const PRIORITY_STATE_SLUGS = [
 
 const PRIORITY_CITY_SLUGS = [
   "miami",
-  "tampa",
   "fort-lauderdale",
   "st-petersburg",
+  "west-palm-beach",
+  "boca-raton",
+  "sarasota",
+  "tampa",
   "austin",
   "dallas",
   "plano",
   "arlington",
+  "scottsdale",
+  "chandler",
+  "long-beach",
   "atlanta",
   "charlotte",
 ];

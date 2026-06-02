@@ -2197,4 +2197,244 @@ export const CITIES: CityData[] = [
       },
     ],
   },
+  {
+    cityName: "West Palm Beach",
+    citySlug: "west-palm-beach",
+    stateSlug: "florida",
+    stateName: "Florida",
+    stateAbbreviation: "FL",
+    population: "117,000",
+    medianHomePrice: "$540,000",
+    overview:
+      "West Palm Beach gives investors a coastal South Florida market with strong demand for renovated single-family homes, transitional bridge deals, and selected condo opportunities. Hard money lenders are active when the file is built around speed, clean exit planning, and a realistic view of insurance, HOA, and resale timing.",
+    investmentHighlight:
+      "West Palm Beach works best when the borrower respects the coastal premium and keeps the renovation aligned with the submarket. The strongest deals usually come from buyers who can show local comps, a realistic carry budget, and a clear path to resale or refinance.",
+    topNeighborhoods: [
+      "Flamingo Park",
+      "SoSo",
+      "Grandview Heights",
+      "Northwood",
+      "El Cid",
+      "Downtown",
+      "Clearlake",
+      "Lake Mangonia",
+    ],
+    faqs: [
+      {
+        question: "Is West Palm Beach a good hard money market?",
+        answer:
+          "Yes. West Palm Beach can work very well for disciplined borrowers who understand coastal pricing, insurance, and resale timing. Lenders usually want to see a simple exit and realistic neighborhood comps.",
+      },
+      {
+        question: "Can I use hard money for a West Palm Beach condo flip?",
+        answer:
+          "Often yes, but condo files need stronger HOA and project review than standard single-family deals. The file gets better when the building profile and exit plan are both clean.",
+      },
+      {
+        question: "What makes a West Palm Beach file stronger?",
+        answer:
+          "A realistic budget, local comparable sales, and an exit strategy that still works if the market takes a bit longer to absorb the property.",
+      },
+    ],
+  },
+  {
+    cityName: "Boca Raton",
+    citySlug: "boca-raton",
+    stateSlug: "florida",
+    stateName: "Florida",
+    stateAbbreviation: "FL",
+    population: "97,000",
+    medianHomePrice: "$720,000",
+    overview:
+      "Boca Raton is a high-income coastal market where hard money lending often supports renovation, bridge, and select luxury repositioning projects. Investors here need a disciplined plan because finish level, HOA rules, and buyer expectations are materially higher than in many inland markets.",
+    investmentHighlight:
+      "Boca Raton is strongest when the deal is targeting a clear buyer profile and the numbers still work after coastal carrying costs are included. Lenders respond well to tight underwriting and conservative leverage.",
+    topNeighborhoods: [
+      "East Boca",
+      "Mizner Park",
+      "Boca Isles",
+      "Addison Mizner",
+      "Downtown Boca",
+      "Royal Palm Yacht & Country Club",
+      "Boca Del Mar",
+      "Boca Pointe",
+    ],
+    faqs: [
+      {
+        question: "Is Boca Raton good for hard money financing?",
+        answer:
+          "Yes, but the bar is higher than in many markets. Borrowers need strong comps, a clear renovation thesis, and a clean exit that fits the local luxury or coastal buyer profile.",
+      },
+      {
+        question: "Can Boca Raton work for a bridge loan?",
+        answer:
+          "Yes. Bridge debt can be useful when timing matters more than permanent financing, especially if the property needs repositioning before a conventional refinance or resale.",
+      },
+      {
+        question: "What is the biggest risk in Boca Raton deals?",
+        answer:
+          "Overestimating resale value or underestimating carrying costs. Coastal premium markets punish vague underwriting, so the file has to be specific and conservative.",
+      },
+    ],
+  },
+  {
+    cityName: "Sarasota",
+    citySlug: "sarasota",
+    stateSlug: "florida",
+    stateName: "Florida",
+    stateAbbreviation: "FL",
+    population: "58,000",
+    medianHomePrice: "$535,000",
+    overview:
+      "Sarasota offers a Gulf Coast market with strong appeal for renovated homes, vacation-oriented demand, and selective bridge or fix-and-flip projects. Hard money lenders tend to focus on the quality of the neighborhood, the realism of the exit, and whether insurance and carrying costs are properly modeled.",
+    investmentHighlight:
+      "Sarasota tends to reward clean, well-scoped projects that match neighborhood buyer expectations. The market can work for both flips and holds when the borrower is realistic about seasonality and coastal risk.",
+    topNeighborhoods: [
+      "Southside Village",
+      "Rosemary District",
+      "Glen Oaks",
+      "Bird Key",
+      "Palmer Ranch",
+      "West of Trail",
+      "Pinecraft",
+      "Indian Beach",
+    ],
+    faqs: [
+      {
+        question: "Can Sarasota work for hard money loans?",
+        answer:
+          "Yes. Sarasota can work well for short-term lending when the deal has a strong neighborhood fit and a realistic exit into resale or refinance.",
+      },
+      {
+        question: "Is Sarasota good for flips?",
+        answer:
+          "It can be. The best flip files in Sarasota usually have strong comps, an upgraded but not overbuilt finish level, and a budget that includes coastal realities.",
+      },
+      {
+        question: "What should investors watch in Sarasota underwriting?",
+        answer:
+          "Insurance, seasonality, and buyer profile. Coastal markets need more conservative assumptions than inland markets because carrying costs can move the deal quickly.",
+      },
+    ],
+  },
+  {
+    cityName: "Scottsdale",
+    citySlug: "scottsdale",
+    stateSlug: "arizona",
+    stateName: "Arizona",
+    stateAbbreviation: "AZ",
+    population: "243,000",
+    medianHomePrice: "$760,000",
+    overview:
+      "Scottsdale is one of the strongest luxury and lifestyle markets in the Southwest, with hard money activity concentrated in renovation, bridge, and high-end repositioning work. Investors need a careful exit plan because buyer expectations are sharp and finish quality matters a lot.",
+    investmentHighlight:
+      "Scottsdale works when the deal is designed around the neighborhood, the price band, and the final buyer profile. Lenders usually respond well to clean comparable sales and experienced execution.",
+    topNeighborhoods: [
+      "Old Town",
+      "McCormick Ranch",
+      "Gainey Ranch",
+      "North Scottsdale",
+      "DC Ranch",
+      "Grayhawk",
+      "Troon North",
+      "Arcadia-adjacent",
+    ],
+    faqs: [
+      {
+        question: "Is Scottsdale a good hard money market?",
+        answer:
+          "Yes, especially for experienced borrowers. Scottsdale supports short-term deals when the borrower understands the luxury buyer, the finish level, and the exit value.",
+      },
+      {
+        question: "Can I use hard money for a Scottsdale luxury renovation?",
+        answer:
+          "Often yes. Luxury renovations can work well with hard money if the borrower shows strong comps, a credible scope, and enough liquidity to carry the project properly.",
+      },
+      {
+        question: "What is the biggest underwriting issue in Scottsdale?",
+        answer:
+          "Overbuilding for the neighborhood. The best files stay inside the local comp range and avoid unnecessary scope creep.",
+      },
+    ],
+  },
+  {
+    cityName: "Chandler",
+    citySlug: "chandler",
+    stateSlug: "arizona",
+    stateName: "Arizona",
+    stateAbbreviation: "AZ",
+    population: "283,000",
+    medianHomePrice: "$520,000",
+    overview:
+      "Chandler gives investors a strong suburban Phoenix-market option with good employment support and steady owner-occupant demand. Hard money lenders are active on flips, bridge transactions, and rental transitions when the deal is underwritten around realistic local pricing and a clean exit.",
+    investmentHighlight:
+      "Chandler can produce efficient projects when the rehab scope is aligned with the neighborhood and the borrower stays disciplined on leverage. It is a good market for straightforward, well-bought deals.",
+    topNeighborhoods: [
+      "Downtown Chandler",
+      "Ocotillo",
+      "Sun Groves",
+      "Fulton Ranch",
+      "Andersen Springs",
+      "Tumbleweed",
+      "South Chandler",
+      "Warner Ranch",
+    ],
+    faqs: [
+      {
+        question: "Can Chandler work for hard money flips?",
+        answer:
+          "Yes. Chandler can work well for flips when the buy price is conservative and the renovation matches what the local buyer wants.",
+      },
+      {
+        question: "Is Chandler good for bridge financing?",
+        answer:
+          "Yes. Bridge debt can make sense when the property needs a transitional hold or a refinance path before permanent financing.",
+      },
+      {
+        question: "What helps a Chandler file the most?",
+        answer:
+          "Good comps, a realistic repair budget, and a clear exit that does not depend on aggressive appreciation assumptions.",
+      },
+    ],
+  },
+  {
+    cityName: "Long Beach",
+    citySlug: "long-beach",
+    stateSlug: "california",
+    stateName: "California",
+    stateAbbreviation: "CA",
+    population: "452,000",
+    medianHomePrice: "$770,000",
+    overview:
+      "Long Beach gives investors a large coastal Southern California market with broad residential diversity and strong demand for renovated homes. Hard money lenders are active on fix-and-flip, bridge, and selected small multifamily deals where the borrower understands local pricing, neighborhood variation, and exit timing.",
+    investmentHighlight:
+      "Long Beach works best when the borrower targets a specific submarket and keeps the renovation scope practical. The market can support strong resale outcomes, but only when underwriting is grounded in local comps and realistic carrying costs.",
+    topNeighborhoods: [
+      "Belmont Shore",
+      "Bixby Knolls",
+      "Los Altos",
+      "Downtown Long Beach",
+      "Naples",
+      "Rose Park",
+      "East Village",
+      "Wrigley",
+    ],
+    faqs: [
+      {
+        question: "Is Long Beach a good hard money market?",
+        answer:
+          "Yes. Long Beach has enough depth for a variety of short-term deals, but the borrower still needs to stay disciplined on the neighborhood and exit strategy.",
+      },
+      {
+        question: "Can I use hard money for a Long Beach duplex?",
+        answer:
+          "Often yes. Small multifamily deals can work well when the rent story and exit strategy are documented clearly from the start.",
+      },
+      {
+        question: "What should investors watch in Long Beach?",
+        answer:
+          "Submarket differences, hold costs, and finish level. A deal that works in one pocket may not underwrite the same way a few miles away.",
+      },
+    ],
+  },
 ];

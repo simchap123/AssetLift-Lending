@@ -5,13 +5,19 @@ import { CITIES } from "@/lib/data/cities";
 
 const FEATURED_CITY_SLUGS = [
   "miami",
-  "tampa",
   "fort-lauderdale",
   "st-petersburg",
+  "west-palm-beach",
+  "boca-raton",
+  "sarasota",
+  "tampa",
   "austin",
   "dallas",
   "plano",
   "arlington",
+  "scottsdale",
+  "chandler",
+  "long-beach",
 ];
 
 const FEATURED_CITIES = CITIES.filter((city) => FEATURED_CITY_SLUGS.includes(city.citySlug));
