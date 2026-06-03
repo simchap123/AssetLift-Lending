@@ -68,11 +68,11 @@ const LoanPrograms = () => {
       id: "rental",
       title: "Rental / DSCR",
       subtitle: "LONG-TERM RENTAL DEBT",
-      maxValue: "80",
+      maxValue: "85",
       loanType: "LTV",
       loanTypeLabel: "VALUE",
       highlights: [
-        "Up to 80% LTV on purchase & refi",
+        "Up to 85% LTV on purchase & refi",
         "Up to 75% LTV on cash out",
         "Loans up to $3MM",
         "30-year fixed and ARM options",

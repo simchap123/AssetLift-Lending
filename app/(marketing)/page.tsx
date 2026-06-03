@@ -121,7 +121,7 @@ export default function HomePage() {
         {
           '@type': 'Offer',
           name: 'DSCR Rental Loans',
-          description: 'Long-term financing for rental properties with rates starting as low as 5.85% for qualifying scenarios. Qualify on rental income, not personal income, with up to 80% LTV.',
+          description: 'Long-term financing for rental properties with rates starting as low as 5.85% for qualifying scenarios. Qualify on rental income, not personal income, with up to 85% LTV.',
           url: 'https://www.assetliftlending.com/loans/dscr-rental',
         },
         {
