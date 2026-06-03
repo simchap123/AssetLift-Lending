@@ -39,18 +39,6 @@ const Testimonials = () => {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 grid md:grid-cols-3 gap-4">
-        {[
-          'Speed shows up repeatedly because time-sensitive deals are where weak lenders usually break down.',
-          'Communication matters because borrowers need realistic expectations before appraisal, title, and insurance costs pile up.',
-          'Repeat business matters because the best proof is when investors come back for the next deal.',
-        ].map((item) => (
-          <div key={item} className="rounded-2xl border border-border bg-card p-5 text-left">
-            <p className="text-sm text-muted-foreground">{item}</p>
-          </div>
-          ))}
-      </div>
-
       <div className="md:hidden px-4 sm:px-6 lg:px-8">
         <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           {BORROWER_REVIEWS.map((review, i) => (

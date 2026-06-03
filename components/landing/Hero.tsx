@@ -1,15 +1,31 @@
 'use client';
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BadgeCheck, Building2, Clock3, MapPinned, TrendingUp } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { ArrowRight, BadgeCheck, CheckCircle, Clock3, MapPinned, Phone, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { sendNotification } from "@/services/notificationService";
+import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
+import { metaTrackLead } from "@/lib/meta-pixel";
 
 const Hero = () => {
+  const [miniForm, setMiniForm] = useState({ name: "", phone: "", strategy: "", state: "" });
+  const [miniSubmitting, setMiniSubmitting] = useState(false);
+  const [miniSubmitted, setMiniSubmitted] = useState(false);
+
   const proofItems = [
     { icon: Clock3, label: "Response Time", value: "Within 24 Hours" },
-    { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 5 Business Days" },
+    { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 5 Days" },
     { icon: MapPinned, label: "Coverage", value: "46 States" },
   ];
 
@@ -19,20 +35,54 @@ const Hero = () => {
     "One clear path from quote to closing",
   ];
 
-  const quickLinks = [
-    { label: "Compare lenders", href: "/compare" },
-    { label: "Browse states", href: "/markets" },
-    { label: "Run DSCR numbers", href: "/tools/dscr-calculator" },
-    { label: "Read investor guides", href: "/blog" },
-  ];
+  const formatPhone = (value: string): string => {
+    const numbers = value.replace(/\D/g, "");
+    const char: { [key: number]: string } = { 0: "(", 3: ") ", 6: "-" };
+    let formatted = "";
+    for (let i = 0; i < numbers.length && i < 10; i++) {
+      formatted += (char[i] || "") + numbers[i];
+    }
+    return formatted;
+  };
 
-  const programLinks = [
-    { label: "Fix & Flip", href: "/loans/fix-and-flip" },
-    { label: "DSCR Rental", href: "/loans/dscr-rental" },
-    { label: "Bridge", href: "/loans/bridge" },
-    { label: "Construction", href: "/loans/ground-up-construction" },
-    { label: "Commercial", href: "/loans/commercial-lending" },
-  ];
+  const handleMiniChange = (name: string, value: string) => {
+    const formatted = name === "phone" ? formatPhone(value) : value;
+    setMiniForm((prev) => ({ ...prev, [name]: formatted }));
+  };
+
+  const miniFormValid =
+    miniForm.name.trim().length >= 2 &&
+    miniForm.phone.replace(/\D/g, "").length >= 10 &&
+    miniForm.strategy !== "" &&
+    miniForm.state.trim().length >= 2;
+
+  const handleMiniSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!miniFormValid) return;
+    setMiniSubmitting(true);
+    try {
+      await sendNotification("form", {
+        name: miniForm.name,
+        phone: miniForm.phone,
+        program: miniForm.strategy,
+        propertyAddress: miniForm.state,
+        email: "",
+        loanPurpose: "",
+        contactMethod: "",
+        loanAmount: "",
+        arv: "",
+        rehabAmount: "",
+        creditScore: "",
+        message: "Quick quote request from homepage hero form",
+      });
+      gtagReportConversion();
+      gtagEvent("generate_lead", { currency: "USD", value: 0 });
+      metaTrackLead({ currency: "USD", value: 0 });
+      setMiniSubmitted(true);
+    } finally {
+      setMiniSubmitting(false);
+    }
+  };
 
   return (
     <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden py-24 sm:py-28">
@@ -89,17 +139,17 @@ const Hero = () => {
             </motion.p>
 
             <motion.p
-              className="text-sm md:text-base text-muted-foreground/90 max-w-2xl mb-10"
+              className="text-sm md:text-base text-muted-foreground/90 max-w-2xl mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
             >
-              We structure the most workable path to closing, whether that means private lending
-              directly or a capital-partner execution path for the scenario in front of us.
+              Fast closings, straight answers, and a clean path from application to funding —
+              whether that&apos;s our own capital or a vetted capital partner.
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 mb-8"
+              className="flex flex-col sm:flex-row gap-4 mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -116,30 +166,18 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-              className="mb-8 rounded-2xl border border-border/80 bg-background/72 p-4 backdrop-blur-sm"
+              className="mb-10"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.36 }}
+              transition={{ duration: 0.6, delay: 0.32 }}
             >
-              <div className="mb-3 flex items-center justify-between gap-3">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
-                  Programs We Offer
-                </p>
-                <a href="#programs" className="text-xs font-medium text-primary hover:text-primary/80 transition-colors">
-                  View all
-                </a>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {programLinks.map((program) => (
-                  <Link
-                    key={program.href}
-                    href={program.href}
-                    className="rounded-xl border border-border bg-secondary/25 px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/50 hover:bg-secondary/40"
-                  >
-                    {program.label}
-                  </Link>
-                ))}
-              </div>
+              <a
+                href="tel:+19296392284"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                (929) 639-2284 — call or text
+              </a>
             </motion.div>
 
             <motion.div
@@ -159,96 +197,115 @@ const Hero = () => {
             </motion.div>
           </div>
 
+          {/* Mini lead capture form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="lg:justify-self-end w-full max-w-md"
           >
-            <div className="rounded-[28px] border border-border/80 bg-background/88 p-5 shadow-2xl backdrop-blur-md sm:p-6">
-              <div className="mb-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-                  Borrower Snapshot
-                </p>
-                <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3">
-                  The cleaner the file, the faster the close.
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Borrowers usually come to us when a bank is too slow, the deal is too nuanced,
-                  or they need a direct answer on what can actually get done.
-                </p>
-              </div>
-
-              <div className="space-y-4 mb-6">
-                {proofItems.map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex items-start gap-4 rounded-2xl border border-border bg-secondary/25 p-4"
-                  >
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10">
-                      <item.icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                        {item.label}
-                      </p>
-                      <p className="text-base font-semibold">{item.value}</p>
-                    </div>
+            <div className="rounded-[28px] border border-border/80 bg-background/88 p-6 shadow-2xl backdrop-blur-md sm:p-7">
+              {miniSubmitted ? (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="text-center py-8"
+                >
+                  <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle className="w-7 h-7 text-primary" />
                   </div>
-                ))}
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2">
-                <div className="rounded-2xl bg-foreground px-5 py-4 text-background">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-2">
-                    DSCR
+                  <h3 className="text-xl font-bold mb-2">Got it — we&apos;ll be in touch shortly.</h3>
+                  <p className="text-sm text-muted-foreground mb-6">
+                    Usually within a few hours during business hours.
                   </p>
-                  <p className="text-lg font-semibold">Rates from 5.85%</p>
-                  <p className="mt-1 text-sm text-background/75">
-                    For qualifying rental-property scenarios.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-border bg-secondary/35 px-5 py-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-2">
-                    Fix &amp; Flip
-                  </p>
-                  <p className="text-lg font-semibold">Rates from 8.5%</p>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    High-leverage short-term investor financing.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-5 rounded-2xl border border-border bg-secondary/20 p-4">
-                <div className="mb-4 flex items-center gap-2">
-                  <Building2 className="h-4 w-4 text-primary" />
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                    Best Fit
-                  </p>
-                </div>
-                <div className="space-y-3 text-sm text-muted-foreground">
-                  <p>Buying a value-add property and need speed.</p>
-                  <p>Refinancing a stabilized rental without income docs.</p>
-                  <p>Working through a deal that needs a realistic capital path.</p>
-                </div>
-              </div>
-
-              <div className="mt-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-3">
-                  Quick Paths
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {quickLinks.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="rounded-xl border border-border bg-secondary/20 px-4 py-3 text-sm font-medium hover:border-primary/50 hover:bg-secondary/35 transition-colors"
-                    >
-                      {item.label}
+                  <Button asChild size="lg" className="w-full glow-primary">
+                    <Link href="/apply">
+                      Submit Full Deal Details
+                      <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
-                  ))}
-                </div>
-              </div>
+                  </Button>
+                </motion.div>
+              ) : (
+                <>
+                  <div className="mb-5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-2">
+                      Get a Quick Quote
+                    </p>
+                    <h2 className="text-2xl font-bold tracking-tight">
+                      Tell us the deal.
+                      <br />
+                      We&apos;ll tell you the rate.
+                    </h2>
+                    <p className="text-sm text-muted-foreground mt-2">We respond within a few hours.</p>
+                  </div>
+
+                  <form onSubmit={handleMiniSubmit} className="space-y-3">
+                    <Input
+                      placeholder="Your name"
+                      value={miniForm.name}
+                      onChange={(e) => handleMiniChange("name", e.target.value)}
+                      className="h-11 rounded-xl bg-background/60"
+                    />
+                    <Input
+                      placeholder="Phone number"
+                      type="tel"
+                      value={miniForm.phone}
+                      onChange={(e) => handleMiniChange("phone", e.target.value)}
+                      className="h-11 rounded-xl bg-background/60"
+                    />
+                    <Select
+                      value={miniForm.strategy}
+                      onValueChange={(v) => handleMiniChange("strategy", v)}
+                    >
+                      <SelectTrigger className="h-11 rounded-xl bg-background/60">
+                        <SelectValue placeholder="Loan type" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="fix-flip">Fix &amp; Flip</SelectItem>
+                        <SelectItem value="dscr-rental">DSCR Rental</SelectItem>
+                        <SelectItem value="bridge">Bridge Loan</SelectItem>
+                        <SelectItem value="ground-up">Ground-Up Construction</SelectItem>
+                        <SelectItem value="commercial">Commercial</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <Input
+                      placeholder="Property state (e.g. Texas, Florida)"
+                      value={miniForm.state}
+                      onChange={(e) => handleMiniChange("state", e.target.value)}
+                      className="h-11 rounded-xl bg-background/60"
+                    />
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full glow-primary rounded-xl"
+                      disabled={miniSubmitting || !miniFormValid}
+                    >
+                      {miniSubmitting ? (
+                        "Sending..."
+                      ) : (
+                        <>
+                          Get My Quote
+                          <ArrowRight className="ml-2 w-4 h-4" />
+                        </>
+                      )}
+                    </Button>
+                  </form>
+
+                  <div className="mt-5 pt-4 border-t border-border/50 grid grid-cols-3 gap-3">
+                    {proofItems.map((item) => (
+                      <div key={item.label} className="text-center">
+                        <item.icon className="w-4 h-4 text-primary mx-auto mb-1" />
+                        <p className="text-xs font-semibold leading-tight">{item.value}</p>
+                        <p className="text-[10px] text-muted-foreground">{item.label}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <p className="text-xs text-muted-foreground text-center mt-3">
+                    No commitment. Business-purpose loans only.
+                  </p>
+                </>
+              )}
             </div>
           </motion.div>
         </div>

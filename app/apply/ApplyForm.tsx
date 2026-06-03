@@ -154,9 +154,6 @@ const ApplyForm = () => {
     if (!formData.loanPurpose) {
       newErrors.loanPurpose = "Please select purchase or refinance";
     }
-    if (!formData.contactMethod) {
-      newErrors.contactMethod = "Please select a contact method";
-    }
     if (!formData.purchasePrice.trim()) {
       newErrors.purchasePrice = "Purchase price is required";
     }

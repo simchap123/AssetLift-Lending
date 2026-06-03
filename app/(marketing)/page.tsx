@@ -10,6 +10,7 @@ import Testimonials from "@/components/landing/Testimonials";
 import PromoBanner from "@/components/landing/PromoBanner";
 import MarketsPreview from "@/components/landing/MarketsPreview";
 import AnimatedStats from "@/components/landing/AnimatedStats";
+import StickyMobileCTA from "@/components/landing/StickyMobileCTA";
 import JsonLd from "@/components/JsonLd";
 import { AGGREGATE_REVIEW_RATING, BORROWER_REVIEWS } from "@/lib/data/reviews";
 
@@ -201,6 +202,7 @@ export default function HomePage() {
         <FAQ />
         <CTA />
       </main>
+      <StickyMobileCTA />
     </>
   );
 }

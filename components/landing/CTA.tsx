@@ -28,11 +28,11 @@ const CTA = () => {
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Ready for a <span className="gradient-text">Cleaner Borrowing Experience?</span>
+            Have a Deal. Need Capital. <span className="gradient-text">Let's Talk.</span>
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Submit the scenario, talk through the file, or compare your options first. The site should make every next step obvious.
+            Tell us the deal. We'll tell you the rate, the leverage, and the fastest path to closing.
           </p>
 
           <motion.div
