@@ -31,8 +31,8 @@ const Hero = () => {
 
   const borrowerSignals = [
     "Fix & flip, DSCR, bridge, and construction — four programs for every investor strategy",
-    "Real answers on leverage, timing, reserves, and exit strategy",
-    "One clear path from quote to closing",
+    "No bank timelines. No income docs for DSCR. No runaround.",
+    "Tell us the deal Thursday. Close next week.",
   ];
 
   const formatPhone = (value: string): string => {
@@ -144,8 +144,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
             >
-              Fast closings, straight answers, and a clean path from application to funding —
-              whether that&apos;s our own capital or a vetted capital partner.
+              Fast closings, straight answers, and a real answer before you&apos;ve spent money on the wrong path.
             </motion.p>
 
             <motion.div

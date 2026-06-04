@@ -35,7 +35,7 @@ const Testimonials = () => {
           What Borrowers Are Saying
         </h2>
         <p className="text-muted-foreground text-lg">
-          Speed, communication, and repeatability matter more than lender branding. That is what borrowers keep pointing to.
+          Every time: fast response, honest feedback early, and a deal that actually closed.
         </p>
       </div>
 

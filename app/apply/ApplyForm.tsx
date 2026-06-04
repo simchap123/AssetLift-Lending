@@ -111,7 +111,17 @@ const ApplyForm = () => {
             );
             if (res.ok) {
               const data = await res.json();
-              setSuggestions(data.map((item: any) => item.display_name));
+              setSuggestions(data.map((item: any) => {
+                const a = item.address || {};
+                const parts: string[] = [];
+                if (a.house_number && a.road) parts.push(`${a.house_number} ${a.road}`);
+                else if (a.road) parts.push(a.road);
+                const city = a.city || a.town || a.village || a.hamlet || a.suburb;
+                if (city) parts.push(city);
+                if (a.state) parts.push(a.state);
+                if (a.postcode) parts.push(a.postcode);
+                return parts.length > 0 ? parts.join(', ') : item.display_name;
+              }));
               setShowSuggestions(true);
             }
           } catch (error) {

@@ -130,8 +130,7 @@ const LoanPrograms = () => {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Choose the right structure faster. Every program is organized around deal type,
-            leverage, and the likely exit.
+            Four programs. One team. We&apos;ll tell you which fits your deal in the first conversation.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
