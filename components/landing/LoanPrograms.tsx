@@ -82,24 +82,6 @@ const LoanPrograms = () => {
       href: "/loans/dscr-rental",
       Icon: Home,
     },
-    {
-      id: "commercial",
-      title: "Commercial",
-      subtitle: "INVESTOR BUSINESS-PURPOSE DEBT",
-      maxValue: "75",
-      loanType: "LTV",
-      loanTypeLabel: "VALUE",
-      highlights: [
-        "Commercial and mixed-use scenarios",
-        "Acquisition, refinance, and bridge options",
-        "Loan structures matched to the asset",
-        "Fast scenario review",
-        "Flexible capital partner execution",
-        "Business-purpose investment properties",
-      ],
-      href: "/loans/commercial-lending",
-      Icon: Landmark,
-    },
   ];
 
   return (
@@ -170,7 +152,7 @@ const LoanPrograms = () => {
         </motion.div>
 
         {/* Program cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
@@ -262,6 +244,41 @@ const LoanPrograms = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Commercial — extended capability, not a core product */}
+        <motion.div
+          className="mt-8"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <div className="rounded-xl border border-border/60 bg-secondary/10 px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <Landmark className="w-4 h-4 text-primary" />
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-0.5">
+                  Extended Capabilities
+                </p>
+                <p className="font-semibold text-foreground">
+                  Commercial &amp; Mixed-Use Scenarios
+                </p>
+                <p className="text-sm text-muted-foreground mt-0.5">
+                  Acquisitions, refinances, bridge needs, and business-purpose investment properties. Structures matched to the asset.
+                </p>
+              </div>
+            </div>
+            <Link
+              href="/loans/commercial-lending"
+              className="shrink-0 inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2.5 text-sm font-semibold text-foreground/80 hover:border-primary/50 hover:text-primary transition-colors"
+            >
+              Learn More
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
