@@ -5,25 +5,25 @@ import { ArrowRightLeft, BadgeCheck, Layers3, TrendingUp } from "lucide-react";
 
 const proofCards = [
   {
-    title: "Faster Borrower Clarity",
+    title: "You Hear Back Fast",
     content:
       "Borrowers hear quickly whether the file is workable, what the leverage looks like, and what can slow it down before costs start stacking up.",
     icon: BadgeCheck,
   },
   {
-    title: "Flexible Capital Structure",
+    title: "We Shop the Deal for You",
     content:
       "Some deals fit direct private lending. Some are better handled through capital partners. The job is to route the file through the cleanest closing path, not force one structure everywhere.",
     icon: ArrowRightLeft,
   },
   {
-    title: "Capital Efficiency",
+    title: "Keep More Capital Working",
     content:
       "Up to 95% LTC on the purchase for fix and flip and investor-friendly DSCR leverage help borrowers keep more capital available for additional deals and reserves.",
     icon: TrendingUp,
   },
   {
-    title: "Cleaner Repeat Experience",
+    title: "Built for Repeat Investors",
     content:
       "Repeat investors want less friction, tighter communication, and a team that already understands the way they buy, rehab, refinance, and exit.",
     icon: Layers3,

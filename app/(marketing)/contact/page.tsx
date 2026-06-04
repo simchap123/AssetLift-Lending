@@ -5,6 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { ArrowRight, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import ContactForm from './ContactForm';
 
 export const metadata: Metadata = createMetadata({
   title: 'Contact AssetLift Lending | Hard Money Loan Quotes',
@@ -125,34 +126,45 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Apply CTA */}
-          <div className="max-w-3xl mx-auto text-center bg-card border border-border rounded-xl p-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Fastest Way to Get a Quote
-            </h2>
-            <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-              Submit your deal details through our online application. You will hear back within 24 hours, usually within a few hours, with a soft-quote or a request for any missing items.
-            </p>
-            <Button asChild size="lg" className="text-lg px-10 py-7 glow-primary">
-              <Link href="/apply">
-                Apply Online <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
-            <div className="grid md:grid-cols-4 gap-3 mt-8 text-left">
-              {[
-                { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
-                { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
-                { label: 'Commercial Lending', href: '/loans/commercial-lending' },
-                { label: 'How It Works', href: '/how-it-works' },
-              ].map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="rounded-lg border border-border px-4 py-4 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
-                >
-                  <span className="font-medium">{item.label}</span>
+          {/* Two-path section: contact form + apply CTA */}
+          <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8">
+            {/* Contact form */}
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
+              <h2 className="text-2xl font-bold mb-2">Send Us a Message</h2>
+              <p className="text-muted-foreground text-sm mb-6">
+                Have a question, want to introduce yourself, or just not ready to apply yet? Send us a note and we&apos;ll get back to you within a few hours.
+              </p>
+              <ContactForm />
+            </div>
+
+            {/* Apply CTA */}
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 flex flex-col">
+              <h2 className="text-2xl font-bold mb-2">Have a Deal Ready?</h2>
+              <p className="text-muted-foreground text-sm mb-6">
+                Submit your deal details and get a real answer on leverage, rate, and timeline — usually within a few hours.
+              </p>
+              <Button asChild size="lg" className="text-lg px-8 py-6 glow-primary mb-6">
+                <Link href="/apply">
+                  Review My Deal <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
-              ))}
+              </Button>
+              <div className="mt-auto space-y-2">
+                {[
+                  { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
+                  { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+                  { label: 'Bridge Loans', href: '/loans/bridge' },
+                  { label: 'How It Works', href: '/how-it-works' },
+                ].map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="flex items-center justify-between rounded-lg border border-border px-4 py-3 hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    <span className="text-sm font-medium">{item.label}</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

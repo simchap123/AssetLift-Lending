@@ -279,9 +279,9 @@ export default function AboutPage() {
 
           {/* CTA */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4">Work With Us</h2>
+            <h2 className="text-3xl font-bold mb-4">Have a Deal? Send It Over.</h2>
             <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              Whether you are an investor, broker, or capital partner, we would love to hear from you. Start with a quick application or reach out directly. No commitment, no hard credit pull to get a quote.
+              No commitment, no hard credit pull to get a quote. Submit the file and we&apos;ll tell you what&apos;s workable, what leverage looks like, and the fastest path to closing.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">

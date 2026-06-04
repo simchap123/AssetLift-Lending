@@ -32,7 +32,7 @@ const Testimonials = () => {
     <section className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
-          Borrower Feedback That Actually Matters
+          What Borrowers Are Saying
         </h2>
         <p className="text-muted-foreground text-lg">
           Speed, communication, and repeatability matter more than lender branding. That is what borrowers keep pointing to.

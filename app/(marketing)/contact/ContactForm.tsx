@@ -1,0 +1,105 @@
+'use client';
+
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { CheckCircle, Send } from "lucide-react";
+import { sendNotification } from "@/services/notificationService";
+
+export default function ContactForm() {
+  const [form, setForm] = useState({ name: "", contact: "", message: "" });
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const isValid = form.name.trim().length >= 2 && form.contact.trim().length >= 5 && form.message.trim().length >= 5;
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!isValid) return;
+    setSubmitting(true);
+    try {
+      await sendNotification("form", {
+        name: form.name,
+        phone: form.contact,
+        email: form.contact,
+        program: "General Inquiry",
+        loanPurpose: "",
+        contactMethod: "",
+        loanAmount: "",
+        arv: "",
+        rehabAmount: "",
+        creditScore: "",
+        propertyAddress: "",
+        message: form.message,
+      });
+      setSubmitted(true);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  if (submitted) {
+    return (
+      <div className="text-center py-10">
+        <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
+          <CheckCircle className="w-7 h-7 text-primary" />
+        </div>
+        <h3 className="text-xl font-bold mb-2">Message received.</h3>
+        <p className="text-muted-foreground">We&apos;ll get back to you within 24 hours, usually within a few hours.</p>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="space-y-2">
+        <Label htmlFor="c-name">Your Name</Label>
+        <Input
+          id="c-name"
+          placeholder="John Smith"
+          value={form.name}
+          onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))}
+          className="h-11 rounded-xl"
+        />
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="c-contact">Phone or Email</Label>
+        <Input
+          id="c-contact"
+          placeholder="(555) 123-4567 or john@example.com"
+          value={form.contact}
+          onChange={(e) => setForm((p) => ({ ...p, contact: e.target.value }))}
+          className="h-11 rounded-xl"
+        />
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="c-message">Message</Label>
+        <Textarea
+          id="c-message"
+          placeholder="Tell us about your deal or question..."
+          rows={4}
+          value={form.message}
+          onChange={(e) => setForm((p) => ({ ...p, message: e.target.value }))}
+          className="rounded-xl resize-none"
+        />
+      </div>
+      <Button
+        type="submit"
+        size="lg"
+        className="w-full glow-primary rounded-xl"
+        disabled={submitting || !isValid}
+      >
+        {submitting ? (
+          "Sending..."
+        ) : (
+          <>
+            <Send className="mr-2 w-4 h-4" />
+            Send Message
+          </>
+        )}
+      </Button>
+    </form>
+  );
+}

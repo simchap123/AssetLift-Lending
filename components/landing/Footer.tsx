@@ -16,12 +16,12 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Loan Programs */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">Loan Programs</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="/loans/fix-and-flip" className="hover:text-primary transition-colors">Fix & Flip Loans</Link>
+                <Link href="/loans/fix-and-flip" className="hover:text-primary transition-colors">Fix &amp; Flip Loans</Link>
               </li>
               <li>
                 <Link href="/loans/dscr-rental" className="hover:text-primary transition-colors">DSCR Rental Loans</Link>
@@ -36,28 +36,10 @@ const Footer = () => {
                 <Link href="/loans/commercial-lending" className="hover:text-primary transition-colors">Commercial Lending</Link>
               </li>
               <li>
-                <Link href="/markets" className="hover:text-primary transition-colors">Markets</Link>
-              </li>
-              <li>
                 <Link href="/apply" className="hover:text-primary transition-colors">Apply Now</Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link href="/how-funding-works" className="hover:text-primary transition-colors">How Funding Works</Link>
-              </li>
-              <li>
-                <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
-              </li>
-              <li>
-                <Link href="/licensing" className="hover:text-primary transition-colors">Licensing</Link>
-              </li>
-              <li>
-                <Link href="/state-disclosures" className="hover:text-primary transition-colors">State Disclosures</Link>
               </li>
             </ul>
           </div>

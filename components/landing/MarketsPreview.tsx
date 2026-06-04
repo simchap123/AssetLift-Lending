@@ -31,7 +31,7 @@ export default function MarketsPreview() {
             Investor Markets
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Hard Money Lending Across Our Coverage Areas
+            We Lend Where Investors Invest
           </h2>
           <p className="text-lg text-muted-foreground">
             Explore the states and cities where AssetLift Lending offers financing for fix and

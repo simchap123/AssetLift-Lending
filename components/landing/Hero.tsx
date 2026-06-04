@@ -30,7 +30,7 @@ const Hero = () => {
   ];
 
   const borrowerSignals = [
-    "Fix & flip, bridge, DSCR, construction, and commercial lending programs",
+    "Fix & flip, DSCR, bridge, and construction — four programs for every investor strategy",
     "Real answers on leverage, timing, reserves, and exit strategy",
     "One clear path from quote to closing",
   ];
@@ -110,7 +110,7 @@ const Hero = () => {
             >
               <TrendingUp className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">
-                Financing for Real Estate Investors
+                46 States &nbsp;·&nbsp; 24hr Response &nbsp;·&nbsp; 5-Day Close
               </span>
             </motion.div>
 
