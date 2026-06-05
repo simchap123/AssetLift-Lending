@@ -19,7 +19,15 @@ import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
 import { metaTrackLead } from "@/lib/meta-pixel";
 
 const Hero = () => {
-  const [miniForm, setMiniForm] = useState({ name: "", phone: "", strategy: "", state: "" });
+  const [miniForm, setMiniForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    strategy: "",
+    purchasePrice: "",
+    creditScore: "",
+    state: "",
+  });
   const [miniSubmitting, setMiniSubmitting] = useState(false);
   const [miniSubmitted, setMiniSubmitted] = useState(false);
 
@@ -45,15 +53,25 @@ const Hero = () => {
     return formatted;
   };
 
+  const formatCurrency = (value: string): string => {
+    const raw = value.replace(/\D/g, "");
+    return raw ? Number(raw).toLocaleString("en-US") : "";
+  };
+
   const handleMiniChange = (name: string, value: string) => {
-    const formatted = name === "phone" ? formatPhone(value) : value;
+    let formatted = value;
+    if (name === "phone") formatted = formatPhone(value);
+    if (name === "purchasePrice") formatted = formatCurrency(value);
     setMiniForm((prev) => ({ ...prev, [name]: formatted }));
   };
 
   const miniFormValid =
     miniForm.name.trim().length >= 2 &&
     miniForm.phone.replace(/\D/g, "").length >= 10 &&
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(miniForm.email) &&
     miniForm.strategy !== "" &&
+    miniForm.purchasePrice.trim().length > 0 &&
+    miniForm.creditScore !== "" &&
     miniForm.state.trim().length >= 2;
 
   const handleMiniSubmit = async (e: React.FormEvent) => {
@@ -64,20 +82,26 @@ const Hero = () => {
       await sendNotification("form", {
         name: miniForm.name,
         phone: miniForm.phone,
+        email: miniForm.email,
         program: miniForm.strategy,
+        loanAmount: miniForm.purchasePrice,
+        creditScore: miniForm.creditScore,
         propertyAddress: miniForm.state,
-        email: "",
         loanPurpose: "",
         contactMethod: "",
-        loanAmount: "",
         arv: "",
         rehabAmount: "",
-        creditScore: "",
         message: "Quick quote request from homepage hero form",
       });
       gtagReportConversion();
-      gtagEvent("generate_lead", { currency: "USD", value: 0 });
-      metaTrackLead({ currency: "USD", value: 0 });
+      gtagEvent("generate_lead", {
+        currency: "USD",
+        value: Number(miniForm.purchasePrice.replace(/\D/g, "")),
+      });
+      metaTrackLead({
+        currency: "USD",
+        value: Number(miniForm.purchasePrice.replace(/\D/g, "")),
+      });
       setMiniSubmitted(true);
     } finally {
       setMiniSubmitting(false);
@@ -226,38 +250,50 @@ const Hero = () => {
                 </motion.div>
               ) : (
                 <>
-                  <div className="mb-5">
+                  <div className="mb-4">
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-2">
                       Get a Quick Quote
                     </p>
-                    <h2 className="text-2xl font-bold tracking-tight">
-                      Tell us the deal.
-                      <br />
-                      We&apos;ll tell you the rate.
+                    <h2 className="text-xl font-bold tracking-tight">
+                      Tell us the deal. We&apos;ll tell you the rate.
                     </h2>
-                    <p className="text-sm text-muted-foreground mt-2">We respond within a few hours.</p>
+                    <p className="text-xs text-muted-foreground mt-1">We respond within a few hours.</p>
                   </div>
 
-                  <form onSubmit={handleMiniSubmit} className="space-y-3">
+                  <form onSubmit={handleMiniSubmit} className="space-y-2.5">
+                    {/* Row 1: Name */}
                     <Input
-                      placeholder="Your name"
+                      placeholder="Full name *"
                       value={miniForm.name}
                       onChange={(e) => handleMiniChange("name", e.target.value)}
-                      className="h-11 rounded-xl bg-background/60"
+                      className="h-10 rounded-xl bg-background/60 text-sm"
                     />
-                    <Input
-                      placeholder="Phone number"
-                      type="tel"
-                      value={miniForm.phone}
-                      onChange={(e) => handleMiniChange("phone", e.target.value)}
-                      className="h-11 rounded-xl bg-background/60"
-                    />
+
+                    {/* Row 2: Phone + Email */}
+                    <div className="grid grid-cols-2 gap-2">
+                      <Input
+                        placeholder="Phone *"
+                        type="tel"
+                        value={miniForm.phone}
+                        onChange={(e) => handleMiniChange("phone", e.target.value)}
+                        className="h-10 rounded-xl bg-background/60 text-sm"
+                      />
+                      <Input
+                        placeholder="Email *"
+                        type="email"
+                        value={miniForm.email}
+                        onChange={(e) => handleMiniChange("email", e.target.value)}
+                        className="h-10 rounded-xl bg-background/60 text-sm"
+                      />
+                    </div>
+
+                    {/* Row 3: Loan type */}
                     <Select
                       value={miniForm.strategy}
                       onValueChange={(v) => handleMiniChange("strategy", v)}
                     >
-                      <SelectTrigger className="h-11 rounded-xl bg-background/60">
-                        <SelectValue placeholder="Loan type" />
+                      <SelectTrigger className="h-10 rounded-xl bg-background/60 text-sm">
+                        <SelectValue placeholder="Loan type *" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="fix-flip">Fix &amp; Flip</SelectItem>
@@ -267,12 +303,44 @@ const Hero = () => {
                         <SelectItem value="commercial">Commercial</SelectItem>
                       </SelectContent>
                     </Select>
+
+                    {/* Row 4: Purchase price + Credit score */}
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="relative">
+                        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">$</span>
+                        <Input
+                          placeholder="Purchase price *"
+                          value={miniForm.purchasePrice}
+                          onChange={(e) => handleMiniChange("purchasePrice", e.target.value)}
+                          className="h-10 rounded-xl bg-background/60 pl-6 text-sm"
+                          inputMode="numeric"
+                        />
+                      </div>
+                      <Select
+                        value={miniForm.creditScore}
+                        onValueChange={(v) => handleMiniChange("creditScore", v)}
+                      >
+                        <SelectTrigger className="h-10 rounded-xl bg-background/60 text-sm">
+                          <SelectValue placeholder="Credit score *" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="760+">760+ Excellent</SelectItem>
+                          <SelectItem value="720-759">720–759 Very Good</SelectItem>
+                          <SelectItem value="680-719">680–719 Good</SelectItem>
+                          <SelectItem value="640-679">640–679 Fair</SelectItem>
+                          <SelectItem value="below-640">Below 640</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    {/* Row 5: Property state */}
                     <Input
-                      placeholder="Property state (e.g. Texas, Florida)"
+                      placeholder="Property state (e.g. Texas) *"
                       value={miniForm.state}
                       onChange={(e) => handleMiniChange("state", e.target.value)}
-                      className="h-11 rounded-xl bg-background/60"
+                      className="h-10 rounded-xl bg-background/60 text-sm"
                     />
+
                     <Button
                       type="submit"
                       size="lg"
@@ -290,7 +358,7 @@ const Hero = () => {
                     </Button>
                   </form>
 
-                  <div className="mt-5 pt-4 border-t border-border/50 grid grid-cols-3 gap-3">
+                  <div className="mt-4 pt-3 border-t border-border/50 grid grid-cols-3 gap-2">
                     {proofItems.map((item) => (
                       <div key={item.label} className="text-center">
                         <item.icon className="w-4 h-4 text-primary mx-auto mb-1" />
@@ -300,7 +368,7 @@ const Hero = () => {
                     ))}
                   </div>
 
-                  <p className="text-xs text-muted-foreground text-center mt-3">
+                  <p className="text-xs text-muted-foreground text-center mt-2">
                     No commitment. Business-purpose loans only.
                   </p>
                 </>
