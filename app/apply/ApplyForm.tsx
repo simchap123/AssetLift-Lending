@@ -19,6 +19,7 @@ import { toast } from "@/hooks/use-toast";
 import { sendNotification } from "@/services/notificationService";
 import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
 import { metaTrackLead } from "@/lib/meta-pixel";
+import { pushToGHL } from "@/services/ghlService";
 
 interface FormData {
   name: string;
@@ -214,6 +215,19 @@ const ApplyForm = () => {
         metaTrackLead({
           currency: 'USD',
           value: Number(formData.purchasePrice.replace(/\D/g, '')),
+        });
+        pushToGHL({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          loanType: formData.strategy,
+          propertyAddress: formData.location,
+          purchasePrice: formData.purchasePrice,
+          arv: formData.arv || undefined,
+          rehabAmount: formData.rehabAmount || undefined,
+          creditScore: formData.creditScore || undefined,
+          notes: formData.dealOverview || undefined,
+          source: 'apply-form',
         });
 
         setIsSubmitted(true);

@@ -17,6 +17,7 @@ import Image from "next/image";
 import { sendNotification } from "@/services/notificationService";
 import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
 import { metaTrackLead } from "@/lib/meta-pixel";
+import { pushToGHL } from "@/services/ghlService";
 
 const Hero = () => {
   const [miniForm, setMiniForm] = useState({
@@ -102,6 +103,17 @@ const Hero = () => {
       metaTrackLead({
         currency: "USD",
         value: Number(miniForm.purchasePrice.replace(/\D/g, "")),
+      });
+      pushToGHL({
+        name: miniForm.name,
+        email: miniForm.email,
+        phone: miniForm.phone,
+        loanType: miniForm.strategy,
+        propertyAddress: miniForm.state,
+        purchasePrice: miniForm.purchasePrice,
+        creditScore: miniForm.creditScore,
+        flipsCompleted: miniForm.flipsCompleted || undefined,
+        source: 'hero-form',
       });
       setMiniSubmitted(true);
     } finally {
