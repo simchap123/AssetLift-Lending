@@ -27,6 +27,7 @@ const Hero = () => {
     purchasePrice: "",
     creditScore: "",
     state: "",
+    flipsCompleted: "",
   });
   const [miniSubmitting, setMiniSubmitting] = useState(false);
   const [miniSubmitted, setMiniSubmitted] = useState(false);
@@ -91,7 +92,7 @@ const Hero = () => {
         contactMethod: "",
         arv: "",
         rehabAmount: "",
-        message: "Quick quote request from homepage hero form",
+        message: `Quick quote request from homepage hero form. Completed flips: ${miniForm.flipsCompleted || "Not specified"}`,
       });
       gtagReportConversion();
       gtagEvent("generate_lead", {
@@ -328,7 +329,8 @@ const Hero = () => {
                           <SelectItem value="720-759">720–759 Very Good</SelectItem>
                           <SelectItem value="680-719">680–719 Good</SelectItem>
                           <SelectItem value="640-679">640–679 Fair</SelectItem>
-                          <SelectItem value="below-640">Below 640</SelectItem>
+                          <SelectItem value="600-640">600–640</SelectItem>
+                          <SelectItem value="below-600">Below 600</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -340,6 +342,23 @@ const Hero = () => {
                       onChange={(e) => handleMiniChange("state", e.target.value)}
                       className="h-10 rounded-xl bg-background/60 text-sm"
                     />
+
+                    {/* Row 6: Completed flips */}
+                    <Select
+                      value={miniForm.flipsCompleted}
+                      onValueChange={(v) => handleMiniChange("flipsCompleted", v)}
+                    >
+                      <SelectTrigger className="h-10 rounded-xl bg-background/60 text-sm">
+                        <SelectValue placeholder="Completed flips" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="0">0 — First time</SelectItem>
+                        <SelectItem value="1-3">1–3 flips</SelectItem>
+                        <SelectItem value="4-10">4–10 flips</SelectItem>
+                        <SelectItem value="11-25">11–25 flips</SelectItem>
+                        <SelectItem value="25+">25+ flips</SelectItem>
+                      </SelectContent>
+                    </Select>
 
                     <Button
                       type="submit"
