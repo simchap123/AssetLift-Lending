@@ -1,6 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { ArrowRight, Phone, Mail } from 'lucide-react';
-import { MOCK_DEALS } from '@/lib/portal-mock-data';
+import { usePortalDeals } from '@/lib/portal-store';
 import { STATUS_CONFIG, LOAN_TYPE_LABELS, DealStatus } from '@/lib/portal-types';
 
 function StatusBadge({ status }: { status: DealStatus }) {
@@ -13,9 +15,16 @@ function StatusBadge({ status }: { status: DealStatus }) {
 }
 
 export default function ClientsPage() {
-  // Group deals by borrower email
-  const clientMap = new Map<string, typeof MOCK_DEALS>();
-  for (const deal of MOCK_DEALS) {
+  const { deals, ready } = usePortalDeals();
+
+  if (!ready) return (
+    <div className="p-8 flex items-center justify-center h-64">
+      <div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+    </div>
+  );
+
+  const clientMap = new Map<string, typeof deals>();
+  for (const deal of deals) {
     const existing = clientMap.get(deal.borrowerEmail) || [];
     clientMap.set(deal.borrowerEmail, [...existing, deal]);
   }
@@ -31,13 +40,16 @@ export default function ClientsPage() {
       </div>
 
       <div className="grid gap-4">
-        {clients.map(deals => {
-          const primary = deals[0];
+        {clients.map(clientDeals => {
+          const primary = clientDeals[0];
+          const clientId = encodeURIComponent(primary.borrowerEmail);
           return (
             <div key={primary.borrowerEmail} className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
-                  <p className="font-semibold text-white text-lg">{primary.borrowerName}</p>
+                  <Link href={`/portal/clients/${clientId}`} className="font-semibold text-white text-lg hover:text-primary transition-colors">
+                    {primary.borrowerName}
+                  </Link>
                   <div className="flex items-center gap-4 mt-1.5 flex-wrap">
                     <a href={`mailto:${primary.borrowerEmail}`} className="flex items-center gap-1.5 text-sm text-zinc-400 hover:text-primary transition-colors">
                       <Mail className="w-3.5 h-3.5" /> {primary.borrowerEmail}
@@ -47,18 +59,14 @@ export default function ClientsPage() {
                     </a>
                   </div>
                 </div>
-                <span className="text-xs font-medium text-zinc-400 bg-zinc-800 px-3 py-1 rounded-lg shrink-0">
-                  {deals.length} deal{deals.length !== 1 ? 's' : ''}
-                </span>
+                <Link href={`/portal/clients/${clientId}`} className="shrink-0 text-xs font-medium text-primary border border-primary/30 px-3 py-1.5 rounded-lg hover:bg-primary/10 transition-colors">
+                  View Dashboard
+                </Link>
               </div>
 
               <div className="space-y-2">
-                {deals.map(deal => (
-                  <Link
-                    key={deal.id}
-                    href={`/portal/deals/${deal.id}`}
-                    className="flex items-center justify-between gap-3 bg-zinc-800/50 border border-zinc-700/50 rounded-lg px-4 py-3 hover:border-primary/40 transition-colors"
-                  >
+                {clientDeals.map(deal => (
+                  <Link key={deal.id} href={`/portal/deals/${deal.id}`} className="flex items-center justify-between gap-3 bg-zinc-800/50 border border-zinc-700/50 rounded-lg px-4 py-3 hover:border-primary/40 transition-colors">
                     <div className="flex items-center gap-3 min-w-0 flex-1">
                       <span className="text-xs font-medium text-zinc-400 bg-zinc-700 px-2 py-0.5 rounded shrink-0">
                         {LOAN_TYPE_LABELS[deal.loanType]}

@@ -1,11 +1,11 @@
+'use client';
+
 import Link from 'next/link';
-import { ArrowRight, TrendingUp, Clock, FileCheck, DollarSign } from 'lucide-react';
-import { MOCK_DEALS } from '@/lib/portal-mock-data';
+import { ArrowRight, TrendingUp, Clock, FileCheck, DollarSign, Plus } from 'lucide-react';
+import { usePortalDeals } from '@/lib/portal-store';
 import { STATUS_CONFIG, LOAN_TYPE_LABELS, DealStatus } from '@/lib/portal-types';
 
-function fmt(n: number) {
-  return '$' + n.toLocaleString('en-US');
-}
+function fmt(n: number) { return '$' + n.toLocaleString('en-US'); }
 
 function StatusBadge({ status }: { status: DealStatus }) {
   const cfg = STATUS_CONFIG[status];
@@ -18,7 +18,14 @@ function StatusBadge({ status }: { status: DealStatus }) {
 }
 
 export default function DashboardPage() {
-  const deals = MOCK_DEALS;
+  const { deals, ready } = usePortalDeals();
+
+  if (!ready) return (
+    <div className="p-8 flex items-center justify-center h-64">
+      <div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+    </div>
+  );
+
   const active = deals.filter(d => !['funded', 'declined'].includes(d.status));
   const termSheets = deals.filter(d => d.termSheetIssuedAt);
   const funded = deals.filter(d => d.status === 'funded');
@@ -31,14 +38,23 @@ export default function DashboardPage() {
     { label: 'Funded Volume', value: fmt(totalVolume), icon: DollarSign, sub: 'Closed deals' },
   ];
 
+  const sorted = [...deals].sort((a, b) => new Date(b.submittedAt).getTime() - new Date(a.submittedAt).getTime());
+
   return (
     <div className="p-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-white">Deal Pipeline</h1>
-        <p className="text-sm text-zinc-400 mt-1">All active and recent deals</p>
+      <div className="mb-8 flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-white">Deal Pipeline</h1>
+          <p className="text-sm text-zinc-400 mt-1">All active and recent deals</p>
+        </div>
+        <Link
+          href="/portal/deals/new"
+          className="inline-flex items-center gap-2 bg-primary text-zinc-900 font-bold text-sm px-4 py-2.5 rounded-xl hover:bg-primary/90 transition-colors"
+        >
+          <Plus className="w-4 h-4" /> Add Deal
+        </Link>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         {stats.map(({ label, value, icon: Icon, sub }) => (
           <div key={label} className="bg-zinc-900 border border-zinc-800 rounded-xl p-5">
@@ -54,7 +70,6 @@ export default function DashboardPage() {
         ))}
       </div>
 
-      {/* Deal table */}
       <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
         <div className="px-6 py-4 border-b border-zinc-800 flex items-center justify-between">
           <h2 className="font-semibold text-white">All Deals</h2>
@@ -70,7 +85,7 @@ export default function DashboardPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-800/60">
-              {[...deals].sort((a, b) => new Date(b.submittedAt).getTime() - new Date(a.submittedAt).getTime()).map(deal => (
+              {sorted.map(deal => (
                 <tr key={deal.id} className="hover:bg-zinc-800/40 transition-colors">
                   <td className="px-6 py-4">
                     <p className="font-medium text-white">{deal.borrowerName}</p>
@@ -88,10 +103,7 @@ export default function DashboardPage() {
                     {new Date(deal.submittedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                   </td>
                   <td className="px-6 py-4">
-                    <Link
-                      href={`/portal/deals/${deal.id}`}
-                      className="flex items-center gap-1 text-primary text-xs font-semibold hover:text-primary/80 transition-colors whitespace-nowrap"
-                    >
+                    <Link href={`/portal/deals/${deal.id}`} className="flex items-center gap-1 text-primary text-xs font-semibold hover:text-primary/80 transition-colors whitespace-nowrap">
                       View <ArrowRight className="w-3 h-3" />
                     </Link>
                   </td>

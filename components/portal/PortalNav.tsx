@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { LayoutDashboard, FileText, Users, LogOut, ChevronRight } from 'lucide-react';
+import { LayoutDashboard, FileText, Users, LogOut, ChevronRight, Plus } from 'lucide-react';
 import Logo from '@/components/Logo';
 
 const NAV = [
@@ -47,6 +47,15 @@ export default function PortalNav() {
           );
         })}
       </nav>
+
+      <div className="px-3 pb-3">
+        <Link
+          href="/portal/deals/new"
+          className="w-full flex items-center justify-center gap-2 bg-primary text-zinc-900 font-bold text-sm px-3 py-2.5 rounded-xl hover:bg-primary/90 transition-colors"
+        >
+          <Plus className="w-4 h-4" /> New Deal
+        </Link>
+      </div>
 
       <div className="p-3 border-t border-zinc-800">
         <button
