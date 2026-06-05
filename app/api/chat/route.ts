@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { NextRequest } from "next/server";
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 const SYSTEM_INSTRUCTION = `
 You are the "AssetLift Analyst," the AI deal advisor for AssetLift Lending (assetliftlending.com).
@@ -147,7 +147,7 @@ export async function POST(req: NextRequest) {
 
     const ai = new GoogleGenAI({ apiKey });
     const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-2.0-flash',
       contents: chatHistory.map((m: any) => ({
         role: m.role,
         parts: [{ text: m.text }]
