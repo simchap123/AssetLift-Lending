@@ -61,7 +61,8 @@ function todayISO() {
   return new Date().toISOString();
 }
 
-async function callGemini(prompt) {
+async function callGemini(prompt, attempt = 1) {
+  const MAX_ATTEMPTS = 4;
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
   const res = await fetch(url, {
     method: 'POST',
@@ -74,6 +75,14 @@ async function callGemini(prompt) {
 
   if (!res.ok) {
     const err = await res.text();
+    // Rate limits and transient server errors: wait and retry
+    if ((res.status === 429 || res.status >= 500) && attempt < MAX_ATTEMPTS) {
+      const retryMatch = err.match(/"retryDelay":\s*"(\d+)s"/);
+      const delaySec = retryMatch ? Number(retryMatch[1]) + 5 : 60 * attempt;
+      console.log(`Gemini ${res.status} — retrying in ${delaySec}s (attempt ${attempt + 1}/${MAX_ATTEMPTS})`);
+      await new Promise(r => setTimeout(r, delaySec * 1000));
+      return callGemini(prompt, attempt + 1);
+    }
     throw new Error(`Gemini API error ${res.status}: ${err}`);
   }
 
