@@ -1,11 +1,14 @@
 {
-  "generatedAt": "2026-06-11T14:09:41.967Z",
-  "job": "audit",
-  "published": false,
-  "changedUrls": [],
+  "generatedAt": "2026-06-11T16:57:01.657Z",
+  "job": "strategy",
+  "published": true,
+  "changedUrls": [
+    "https://www.assetliftlending.com/blog/how-to-underwrite-fix-and-flip-margin",
+    "https://www.assetliftlending.com/blog"
+  ],
   "notes": [
-    "Job label: SEO Audit",
-    "Schedule slot: 04:05 UTC and 13:05 UTC / 00:05 ET and 09:05 ET during DST",
-    "Focus keywords: hard money lender, DSCR loans, fix and flip loans"
+    "Job label: Content Strategy",
+    "Schedule slot: 16:05 UTC / 12:05 ET during DST",
+    "Focus keywords: how to finance first fix and flip, how to qualify for DSCR loan, real estate investing guide"
   ]
 }
