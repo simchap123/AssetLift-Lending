@@ -1,4 +1,29 @@
 {
-  "generatedAt": null,
-  "items": []
+  "generatedAt": "2026-06-11T04:17:10.040Z",
+  "items": [
+    {
+      "page": "/loans/fix-and-flip",
+      "angle": "Offer a downloadable rehab draw schedule checklist inside the main CTA block.",
+      "cta": "Get the fix and flip checklist",
+      "reason": "Adds a softer conversion for investors not ready to apply today."
+    },
+    {
+      "page": "/loans/dscr-rental",
+      "angle": "Add a mini-case-study section showing what changes a borderline DSCR profile.",
+      "cta": "Send me a DSCR scenario review",
+      "reason": "Captures visitors comparing rental income strength before they fill the main form."
+    },
+    {
+      "page": "/compare/assetlift-vs-kiavi",
+      "angle": "Add a quick-fit selector that routes borrowers to the right product page.",
+      "cta": "See which loan fits this deal",
+      "reason": "Comparison traffic is high intent and usually needs a direct next step."
+    },
+    {
+      "page": "/markets",
+      "angle": "Feature top-performing city pages with investor-specific entry points by strategy.",
+      "cta": "Browse top lending markets",
+      "reason": "Improves internal linking and pushes users into location clusters more intentionally."
+    }
+  ]
 }
