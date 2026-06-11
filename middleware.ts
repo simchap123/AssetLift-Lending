@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { PORTAL_SESSION_COOKIE, verifySessionToken } from '@/lib/portal-auth';
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Allow login page and login API through unauthenticated
@@ -9,10 +10,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Protect all other /portal/* routes
+  // Protect all other /portal/* routes. Fails closed if the session
+  // secret is not configured.
   if (pathname.startsWith('/portal/')) {
-    const auth = request.cookies.get('portal_auth');
-    if (!auth || auth.value !== 'authenticated') {
+    const token = request.cookies.get(PORTAL_SESSION_COOKIE)?.value;
+    const valid = await verifySessionToken(token, process.env.PORTAL_SESSION_SECRET);
+    if (!valid) {
       return NextResponse.redirect(new URL('/portal', request.url));
     }
   }
