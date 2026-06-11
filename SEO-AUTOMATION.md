@@ -23,7 +23,12 @@ The current cadence is designed to keep working the priorities we discussed:
 
 ## Cron Schedule
 
-Configured in `vercel.json`:
+Configured in `.github/workflows/seo-pipeline.yml` (GitHub Actions). Publishing
+uses the workflow's built-in `GITHUB_TOKEN`, so no personal access token or
+Vercel environment variables are required. Each run commits its output to
+`main`, which triggers a Vercel deploy. (The schedule previously lived in
+`vercel.json` crons; those were removed because Vercel Hobby limits crons and
+the API route had no GitHub token to publish with.)
 
 - `04:05 UTC` audit
 - `08:05 UTC` authority
@@ -48,6 +53,10 @@ AI platforms generally do not provide a public "submit this page to the model" e
 
 ## Required Environment Variables
 
+None for the scheduled pipeline — GitHub Actions supplies `GITHUB_TOKEN` and
+the repo name automatically. The variables below are only needed if you also
+want to trigger jobs through the `/api/seo/run/[job]` API route on Vercel:
+
 - `SEO_AUTOMATION_SECRET`
   Used for manual authenticated runs.
 - `SEO_GITHUB_TOKEN`
@@ -56,6 +65,8 @@ AI platforms generally do not provide a public "submit this page to the model" e
   Repo in `owner/name` format.
 - `SEO_GITHUB_BRANCH`
   Optional. Defaults to `main`.
+
+Optional for all paths:
 - `INDEXNOW_KEY`
   Optional but recommended. Used to submit changed URLs after publish.
 - `GOOGLE_SERVICE_ACCOUNT_EMAIL`

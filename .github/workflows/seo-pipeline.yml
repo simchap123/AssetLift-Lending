@@ -1,0 +1,79 @@
+name: SEO Pipeline
+
+# Runs the SEO automation jobs on the cadence documented in SEO-AUTOMATION.md.
+# Publishing uses the built-in GITHUB_TOKEN (contents: write) — no PAT needed.
+
+on:
+  schedule:
+    - cron: '5 4 * * *'    # audit
+    - cron: '5 8 * * *'    # authority
+    - cron: '5 10 * * *'   # programmatic
+    - cron: '5 13 * * *'   # audit refresh
+    - cron: '5 16 * * *'   # strategy
+    - cron: '5 18 * * *'   # ideas
+    - cron: '5 22 * * *'   # programmatic refresh
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'SEO job to run'
+        required: true
+        default: 'audit'
+        type: choice
+        options:
+          - audit
+          - programmatic
+          - strategy
+          - ideas
+          - authority
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Pick job for this schedule slot
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.job }}" ]; then
+            JOB="${{ github.event.inputs.job }}"
+          else
+            HOUR=$(date -u +%H)
+            case "$HOUR" in
+              08) JOB=authority ;;
+              10) JOB=programmatic ;;
+              16) JOB=strategy ;;
+              18) JOB=ideas ;;
+              22) JOB=programmatic ;;
+              *)  JOB=audit ;;
+            esac
+          fi
+          echo "job=$JOB" >> "$GITHUB_OUTPUT"
+          echo "Running SEO job: $JOB"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run SEO job
+        env:
+          SEO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SEO_GITHUB_REPO: ${{ github.repository }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ secrets.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
+        run: npx tsx scripts/run-seo-job.ts "${{ steps.pick.outputs.job }}"
