@@ -1,11 +1,13 @@
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import PortalNav from '@/components/portal/PortalNav';
+import { PORTAL_SESSION_COOKIE, verifySessionToken } from '@/lib/portal-auth';
 
 export default async function PortalAppLayout({ children }: { children: React.ReactNode }) {
   const cookieStore = await cookies();
-  const auth = cookieStore.get('portal_auth');
-  if (!auth || auth.value !== 'authenticated') {
+  const token = cookieStore.get(PORTAL_SESSION_COOKIE)?.value;
+  const valid = await verifySessionToken(token, process.env.PORTAL_SESSION_SECRET);
+  if (!valid) {
     redirect('/portal');
   }
 
