@@ -1,4 +1,4 @@
-﻿# AssetLift Lending â€” Directory Submission Kit
+# AssetLift Lending Ã¢â‚¬â€ Directory Submission Kit
 
 
 > Compliance override: Do not describe AssetLift as necessarily funding every transaction from its own balance sheet, as a pure direct lender on every deal, or as categorically "not a broker." Use the updated language in this document. If any older wording below conflicts with this note, treat the older wording as obsolete before publishing.
@@ -22,7 +22,7 @@
 | Coverage | 46 U.S. states (all except AK, ND, SD, VT) |
 | Max Loan | $5,000,000 |
 | Max LTC | 92.5% |
-| Closing Speed | As fast as 7-10 business days on many files |
+| Closing Speed | As fast as 5 business days on many files |
 | Programs | Fix & Flip, DSCR Rental, Bridge, Ground-Up Construction |
 | Entity Type | LLC |
 | Hours | Monday-Friday 9:00 AM - 6:00 PM EST |
@@ -44,23 +44,23 @@ AssetLift Lending provides business-purpose financing for real estate investors 
 
 ### Long Description (~500 characters)
 ```
-AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, serving real estate investors across 46 U.S. states. Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift may handle financing through direct lending or capital-partner execution depending on the file. Products include fix & flip loans up to 92.5% LTC with 100% rehab financing, DSCR rental loans qualified on property cash flow, bridge loans, and ground-up construction financing. Loans range from $100,000 to $5,000,000, with many files closing in as fast as 7-10 business days subject to underwriting, valuation, title, and file complexity.
+AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, serving real estate investors across 46 U.S. states. Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift may handle financing through direct lending or capital-partner execution depending on the file. Products include fix & flip loans up to 92.5% LTC with 100% rehab financing, DSCR rental loans qualified on property cash flow, bridge loans, and ground-up construction financing. Loans range from $100,000 to $5,000,000, with many files closing in as fast as 5 business days subject to underwriting, valuation, title, and file complexity.
 ```
 
 ### Extended Description (~750 characters, for platforms that allow more)
 ```
-AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, providing fast, reliable financing for real estate investors across 46 U.S. states. Founded in 2024 by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift works with borrowers through direct lending or capital-partner execution depending on the file â€” helping borrowers navigate the most workable path to closing, with many files closing in as fast as 7-10 business days subject to underwriting, valuation, title, and file complexity.
+AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, providing fast, reliable financing for real estate investors across 46 U.S. states. Founded in 2024 by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift works with borrowers through direct lending or capital-partner execution depending on the file Ã¢â‚¬â€ helping borrowers navigate the most workable path to closing, with many files closing in as fast as 5 business days subject to underwriting, valuation, title, and file complexity.
 
 Loan programs include fix & flip financing up to 92.5% LTC with 100% of rehab costs covered, DSCR rental loans qualified on property cash flow (no W-2s or tax returns), bridge loans for transitional assets, and ground-up construction loans up to 90% LTC. Loan amounts range from $100,000 to $5,000,000. First-time investors are welcome. 24-hour quote turnaround. No prepayment penalties on short-term loans.
 ```
 
 ---
 
-## 1. Google Business Profile (CRITICAL â€” feeds Gemini AI + Google Maps)
+## 1. Google Business Profile (CRITICAL Ã¢â‚¬â€ feeds Gemini AI + Google Maps)
 
 **Sign up:** https://business.google.com
 
-**Priority: HIGH** â€” This is the single most important listing. It powers Google Maps, Google Search knowledge panels, and Gemini AI answers.
+**Priority: HIGH** Ã¢â‚¬â€ This is the single most important listing. It powers Google Maps, Google Search knowledge panels, and Gemini AI answers.
 
 ### Step-by-step:
 
@@ -74,14 +74,14 @@ Loan programs include fix & flip financing up to 92.5% LTC with 100% of rehab co
 | Business category (primary) | Financial Service |
 | Business category (secondary) | Loan Agency |
 | Business category (tertiary) | Mortgage Lender |
-| Do you serve customers at this address? | No â€” service-area business |
+| Do you serve customers at this address? | No Ã¢â‚¬â€ service-area business |
 | Service area | United States |
 | Phone | (929) 639-2284 |
 | Website | https://www.assetliftlending.com |
 
 **Business description (paste into "Description" field):**
 ```
-AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, serving real estate investors across 46 U.S. states. We work on fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing up to 90% LTC on qualifying scenarios. Loans from $100,000 to $5,000,000. Closings in 7-10 business days on many files. Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift works with borrowers through direct lending or capital-partner execution depending on the file. 24-hour quote turnaround. First-time investors welcome.
+AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, serving real estate investors across 46 U.S. states. We work on fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing up to 90% LTC on qualifying scenarios. Loans from $100,000 to $5,000,000. Closings in 5 business days on many files. Founded by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift works with borrowers through direct lending or capital-partner execution depending on the file. 24-hour quote turnaround. First-time investors welcome.
 ```
 
 **Opening date:** 2024
@@ -106,11 +106,11 @@ Sunday: Closed
 
 **Photos to upload:** Logo (logo-new.jpg), team headshots if available
 
-**Verification:** Google will mail a postcard to your business address, or offer phone/video verification. Complete this ASAP â€” the profile is not visible until verified.
+**Verification:** Google will mail a postcard to your business address, or offer phone/video verification. Complete this ASAP Ã¢â‚¬â€ the profile is not visible until verified.
 
 **Post-setup:** Create a Google Business post weekly. First post:
 ```
-Looking for fast real estate funding? AssetLift Lending closes fix & flip loans in 7-10 business days with up to 92.5% LTC. Apply today at assetliftlending.com/apply
+Looking for fast real estate funding? AssetLift Lending closes fix & flip loans in 5 business days with up to 92.5% LTC. Apply today at assetliftlending.com/apply
 ```
 
 ---
@@ -119,13 +119,13 @@ Looking for fast real estate funding? AssetLift Lending closes fix & flip loans 
 
 **Sign up:** https://www.bingplaces.com
 
-**Priority: HIGH** â€” Powers Microsoft Copilot AI responses and Bing search results.
+**Priority: HIGH** Ã¢â‚¬â€ Powers Microsoft Copilot AI responses and Bing search results.
 
 ### Step-by-step:
 
 1. Go to https://www.bingplaces.com
 2. Sign in with a Microsoft account
-3. Option: "Import from Google Business Profile" â€” if your GBP is already live, use this to auto-fill. Otherwise fill manually:
+3. Option: "Import from Google Business Profile" Ã¢â‚¬â€ if your GBP is already live, use this to auto-fill. Otherwise fill manually:
 
 | Field | Value |
 |---|---|
@@ -141,7 +141,7 @@ Looking for fast real estate funding? AssetLift Lending closes fix & flip loans 
 
 **Business description:**
 ```
-AssetLift Lending is a business-purpose financing platform serving real estate investors in 46 U.S. states. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing. Loans from $100K to $5M. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity. Financing may be provided directly or through lending partners depending on the transaction. Queens, NY headquarters. Apply at assetliftlending.com.
+AssetLift Lending is a business-purpose financing platform serving real estate investors in 46 U.S. states. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing. Loans from $100K to $5M. Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Financing may be provided directly or through lending partners depending on the transaction. Queens, NY headquarters. Apply at assetliftlending.com.
 ```
 
 **Verification:** Phone or postcard. Can sometimes auto-verify from GBP.
@@ -152,7 +152,7 @@ AssetLift Lending is a business-purpose financing platform serving real estate i
 
 **Sign up:** https://businessconnect.apple.com
 
-**Priority: HIGH** â€” Powers Siri responses and Apple Maps listings. Critical for iPhone users.
+**Priority: HIGH** Ã¢â‚¬â€ Powers Siri responses and Apple Maps listings. Critical for iPhone users.
 
 ### Step-by-step:
 
@@ -171,7 +171,7 @@ AssetLift Lending is a business-purpose financing platform serving real estate i
 
 **Description:**
 ```
-Business-purpose financing platform for real estate investors. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and construction financing. Loans from $100K to $5M across 46 states. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity.
+Business-purpose financing platform for real estate investors. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and construction financing. Loans from $100K to $5M across 46 states. Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.
 ```
 
 **Action links to add:**
@@ -186,7 +186,7 @@ Business-purpose financing platform for real estate investors. Fix & flip loans 
 
 **Sign up:** https://www.crunchbase.com/register
 
-**Priority: HIGH** â€” ChatGPT, Perplexity, and other AI engines index Crunchbase for company information.
+**Priority: HIGH** Ã¢â‚¬â€ ChatGPT, Perplexity, and other AI engines index Crunchbase for company information.
 
 ### Step-by-step:
 
@@ -210,7 +210,7 @@ Business-purpose financing platform for real estate investors. Fix & flip loans 
 | Contact Email | info@assetliftlending.com |
 | Phone | (929) 639-2284 |
 
-**Founders â€” add both as People profiles:**
+**Founders Ã¢â‚¬â€ add both as People profiles:**
 
 Person 1:
 | Field | Value |
@@ -239,7 +239,7 @@ Person 2:
 
 **Sign up:** https://www.linkedin.com/company/setup/new/
 
-**Priority: HIGH** â€” Visible in search, builds brand SERP, and AI engines index it.
+**Priority: HIGH** Ã¢â‚¬â€ Visible in search, builds brand SERP, and AI engines index it.
 
 ### Step-by-step:
 
@@ -263,14 +263,14 @@ AssetLift Lending is a business-purpose financing platform headquartered in Quee
 Founded in 2024 by Yaakov Pentelnik and Yisroel Pentelnik, AssetLift works with borrowers through direct lending or capital-partner execution depending on the file.
 
 LOAN PROGRAMS:
-- Fix & Flip Loans â€” Up to 92.5% LTC, 100% rehab financed, with many files closing in as fast as 7-10 business days
-- DSCR Rental Loans â€” Qualified on rental income, no W-2s or tax returns required
-- Bridge Loans â€” Up to 80% LTV, 7-10 day closings
-- Ground-Up Construction â€” Up to 90% LTC, milestone-based draws
+- Fix & Flip Loans Ã¢â‚¬â€ Up to 92.5% LTC, 100% rehab financed, with many files closing in as fast as 5 business days
+- DSCR Rental Loans Ã¢â‚¬â€ Qualified on rental income, no W-2s or tax returns required
+- Bridge Loans Ã¢â‚¬â€ Up to 80% LTV, 5 business day closings
+- Ground-Up Construction Ã¢â‚¬â€ Up to 90% LTC, milestone-based draws
 
 WHY INVESTORS CHOOSE ASSETLIFT:
 - Execution channel varies by transaction
-- Many files close in as fast as 7-10 business days
+- Many files close in as fast as 5 business days
 - Loans from $100,000 to $5,000,000
 - 24-hour quote turnaround
 - No prepayment penalties on short-term loans
@@ -295,13 +295,13 @@ Hard Money Loans, Fix and Flip Loans, DSCR Loans, Bridge Loans, Construction Loa
 
 **Sign up:** https://business.trustpilot.com
 
-**Priority: MEDIUM** â€” Strong trust signal. AI engines reference Trustpilot ratings.
+**Priority: MEDIUM** Ã¢â‚¬â€ Strong trust signal. AI engines reference Trustpilot ratings.
 
 ### Step-by-step:
 
 1. Go to https://business.trustpilot.com
 2. Click "Create a free account" or "Claim your profile"
-3. Search for "AssetLift Lending" â€” if it exists, claim it. If not, add it.
+3. Search for "AssetLift Lending" Ã¢â‚¬â€ if it exists, claim it. If not, add it.
 
 | Field | Value |
 |---|---|
@@ -314,7 +314,7 @@ Hard Money Loans, Fix and Flip Loans, DSCR Loans, Bridge Loans, Construction Loa
 
 **Company description:**
 ```
-AssetLift Lending is a business-purpose financing platform for real estate investors. We provide fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing across 46 U.S. states. Loans from $100K to $5M, with many files closing in as fast as 7-10 business days subject to underwriting, valuation, title, and file complexity. Financing may be provided directly or through lending partners depending on the transaction.
+AssetLift Lending is a business-purpose financing platform for real estate investors. We provide fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing across 46 U.S. states. Loans from $100K to $5M, with many files closing in as fast as 5 business days subject to underwriting, valuation, title, and file complexity. Financing may be provided directly or through lending partners depending on the transaction.
 ```
 
 **Verification:** Trustpilot verifies via email domain or website code snippet.
@@ -327,12 +327,12 @@ AssetLift Lending is a business-purpose financing platform for real estate inves
 
 **Sign up:** https://www.bbb.org/get-listed
 
-**Priority: MEDIUM** â€” Trust signal for consumers and AI engines.
+**Priority: MEDIUM** Ã¢â‚¬â€ Trust signal for consumers and AI engines.
 
 ### Step-by-step:
 
 1. Go to https://www.bbb.org/get-listed
-2. Search for "AssetLift Lending" first â€” claim if found
+2. Search for "AssetLift Lending" first Ã¢â‚¬â€ claim if found
 3. If not found, request a listing
 
 | Field | Value |
@@ -351,7 +351,7 @@ AssetLift Lending is a business-purpose financing platform for real estate inves
 
 **Business description:**
 ```
-AssetLift Lending is a business-purpose financing platform providing hard money loans for real estate investors across 46 U.S. states. Products include fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing. Loans range from $100,000 to $5,000,000, with many files closing in as fast as 7-10 business days subject to underwriting, valuation, title, and file complexity. Execution path depends on the transaction and applicable lending channel.
+AssetLift Lending is a business-purpose financing platform providing hard money loans for real estate investors across 46 U.S. states. Products include fix & flip loans, DSCR rental loans, bridge loans, and ground-up construction financing. Loans range from $100,000 to $5,000,000, with many files closing in as fast as 5 business days subject to underwriting, valuation, title, and file complexity. Execution path depends on the transaction and applicable lending channel.
 ```
 
 **Products/Services list:**
@@ -363,7 +363,7 @@ Ground-Up Construction Loans
 Hard Money Loans
 ```
 
-**Note:** BBB listing is free to claim. BBB accreditation is a paid upgrade â€” evaluate the cost/benefit later.
+**Note:** BBB listing is free to claim. BBB accreditation is a paid upgrade Ã¢â‚¬â€ evaluate the cost/benefit later.
 
 ---
 
@@ -371,7 +371,7 @@ Hard Money Loans
 
 **Sign up:** https://www.biggerpockets.com (create account, then set up company profile)
 
-**Priority: HIGH** â€” This is where real estate investors actively search for lenders.
+**Priority: HIGH** Ã¢â‚¬â€ This is where real estate investors actively search for lenders.
 
 ### Step-by-step:
 
@@ -391,12 +391,12 @@ Hard Money Loans
 
 **Profile bio / About section:**
 ```
-AssetLift Lending is a business-purpose financing platform funding fix & flip, DSCR rental, bridge, and ground-up construction loans for real estate investors across 46 states. Financing may be provided directly or through lending partners depending on the transaction. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity, with up to 92.5% LTC on fix & flip and 100% of rehab costs financed.
+AssetLift Lending is a business-purpose financing platform funding fix & flip, DSCR rental, bridge, and ground-up construction loans for real estate investors across 46 states. Financing may be provided directly or through lending partners depending on the transaction. Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity, with up to 92.5% LTC on fix & flip and 100% of rehab costs financed.
 
 Why work with us:
 - Execution may involve direct lending or partner-capital structures
 - Up to 92.5% LTC on fix & flip
-- DSCR loans â€” no W-2 or tax returns needed
+- DSCR loans Ã¢â‚¬â€ no W-2 or tax returns needed
 - 24-hour quote turnaround
 - Loans from $100K to $5M
 - First-time flippers welcome
@@ -427,13 +427,13 @@ Apply: assetliftlending.com/apply | Call: (929) 639-2284
 | States | 46 states (all except AK, ND, SD, VT) |
 | Loan Range | $100,000 - $5,000,000 |
 | Max LTV/LTC | 92.5% LTC |
-| Closing Speed | As fast as 7-10 business days on many files |
+| Closing Speed | As fast as 5 business days on many files |
 | Phone | (929) 639-2284 |
 | Website | https://www.assetliftlending.com |
 
 **Profile description:**
 ```
-AssetLift Lending is a business-purpose financing platform providing hard money financing for real estate investors across 46 U.S. states. We fund fix & flip loans up to 92.5% LTC with 100% rehab financing, DSCR rental loans qualified on cash flow, bridge loans, and ground-up construction loans up to 90% LTC. Execution path depends on the transaction and applicable lending channel. 7-10 business day closings. Loans from $100K to $5M.
+AssetLift Lending is a business-purpose financing platform providing hard money financing for real estate investors across 46 U.S. states. We fund fix & flip loans up to 92.5% LTC with 100% rehab financing, DSCR rental loans qualified on cash flow, bridge loans, and ground-up construction loans up to 90% LTC. Execution path depends on the transaction and applicable lending channel. 5 business day closings. Loans from $100K to $5M.
 ```
 
 ---
@@ -442,7 +442,7 @@ AssetLift Lending is a business-purpose financing platform providing hard money 
 
 **Sign up:** https://www.aaplonline.com/join
 
-**Priority: MEDIUM** â€” Industry credibility. Membership badge boosts trust. Networking.
+**Priority: MEDIUM** Ã¢â‚¬â€ Industry credibility. Membership badge boosts trust. Networking.
 
 **Cost:** ~$400/year
 
@@ -468,7 +468,7 @@ AssetLift Lending is a business-purpose financing platform providing hard money 
 
 **Company description for member directory:**
 ```
-AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, serving real estate investors across 46 states. We fund fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing up to 90% LTC. Execution path depends on the transaction and applicable lending channel. 7-10 business day closings. Loans from $100,000 to $5,000,000. 24-hour quote turnaround.
+AssetLift Lending is a business-purpose financing platform headquartered in Queens, New York, serving real estate investors across 46 states. We fund fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and ground-up construction financing up to 90% LTC. Execution path depends on the transaction and applicable lending channel. 5 business day closings. Loans from $100,000 to $5,000,000. 24-hour quote turnaround.
 ```
 
 **Post-setup action:** Display the AAPL member badge on your website. Attend AAPL conferences for networking with capital partners and borrowers.
@@ -479,7 +479,7 @@ AssetLift Lending is a business-purpose financing platform headquartered in Quee
 
 **Sign up:** https://www.hardmoneylist.org (look for "Add a Lender" or "Submit Listing")
 
-**Priority: MEDIUM** â€” Niche directory that ranks well for hard money searches.
+**Priority: MEDIUM** Ã¢â‚¬â€ Niche directory that ranks well for hard money searches.
 
 ### Fields to complete:
 
@@ -490,16 +490,16 @@ AssetLift Lending is a business-purpose financing platform headquartered in Quee
 | Phone | (929) 639-2284 |
 | Email | info@assetliftlending.com |
 | Location | Queens, New York |
-| Lending Areas | Nationwide â€” 46 states |
+| Lending Areas | Nationwide Ã¢â‚¬â€ 46 states |
 | Loan Types | Hard Money, Fix & Flip, Bridge, DSCR, Construction |
 | Loan Range | $100,000 - $5,000,000 |
 | Max LTV | 92.5% LTC |
-| Closing Time | As fast as 7-10 business days on many files |
+| Closing Time | As fast as 5 business days on many files |
 | Direct Lender? | Varies by transaction |
 
 **Description:**
 ```
-AssetLift Lending is a business-purpose financing platform funding real estate investors across 46 U.S. states. Fix & flip loans up to 92.5% LTC with 100% rehab financing. DSCR rental loans â€” no tax returns needed. Bridge loans and ground-up construction. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity. Loans from $100K to $5M. Financing may be provided directly or through lending partners depending on the transaction.
+AssetLift Lending is a business-purpose financing platform funding real estate investors across 46 U.S. states. Fix & flip loans up to 92.5% LTC with 100% rehab financing. DSCR rental loans Ã¢â‚¬â€ no tax returns needed. Bridge loans and ground-up construction. Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Loans from $100K to $5M. Financing may be provided directly or through lending partners depending on the transaction.
 ```
 
 ---
@@ -508,7 +508,7 @@ AssetLift Lending is a business-purpose financing platform funding real estate i
 
 **Sign up:** https://www.lendersa.com (look for "Add Lender" or "Claim Listing")
 
-**Priority: LOW-MEDIUM** â€” State-level directory. Good for geographic SEO.
+**Priority: LOW-MEDIUM** Ã¢â‚¬â€ State-level directory. Good for geographic SEO.
 
 ### Fields to complete:
 
@@ -526,7 +526,7 @@ AssetLift Lending is a business-purpose financing platform funding real estate i
 
 **Description:**
 ```
-Business-purpose financing platform for real estate investors. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and construction financing. Nationwide coverage across 46 states. Many files close in as fast as 7-10 business days, subject to underwriting, valuation, title, and file complexity. Loans from $100K to $5M.
+Business-purpose financing platform for real estate investors. Fix & flip loans up to 92.5% LTC, DSCR rental loans, bridge loans, and construction financing. Nationwide coverage across 46 states. Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. Loans from $100K to $5M.
 ```
 
 **Note:** Submit the listing for every major state you lend in. Prioritize: New York, Florida, Texas, California, Georgia, North Carolina, Ohio, Pennsylvania, New Jersey, Illinois.
@@ -537,13 +537,13 @@ Business-purpose financing platform for real estate investors. Fix & flip loans 
 
 **Sign up:** https://biz.yelp.com
 
-**Priority: MEDIUM** â€” Feeds AI assistants and appears in search results.
+**Priority: MEDIUM** Ã¢â‚¬â€ Feeds AI assistants and appears in search results.
 
 ### Step-by-step:
 
 1. Go to https://biz.yelp.com
 2. Click "Manage my free listing" or "Add your business"
-3. Search for "AssetLift Lending" first â€” claim if it exists
+3. Search for "AssetLift Lending" first Ã¢â‚¬â€ claim if it exists
 
 | Field | Value |
 |---|---|
@@ -560,7 +560,7 @@ Business-purpose financing platform for real estate investors. Fix & flip loans 
 
 **Business description:**
 ```
-AssetLift Lending is a business-purpose financing platform for real estate investors. We work on fix & flip, DSCR rental, bridge, and ground-up construction financing across 46 states. Closings in 7-10 business days on many files. Loans from $100,000 to $5,000,000. Financing may be provided directly or through lending partners depending on the transaction. Founded in Queens, New York. Call (929) 639-2284 or visit assetliftlending.com.
+AssetLift Lending is a business-purpose financing platform for real estate investors. We work on fix & flip, DSCR rental, bridge, and ground-up construction financing across 46 states. Closings in 5 business days on many files. Loans from $100,000 to $5,000,000. Financing may be provided directly or through lending partners depending on the transaction. Founded in Queens, New York. Call (929) 639-2284 or visit assetliftlending.com.
 ```
 
 **Specialties:**
@@ -579,7 +579,7 @@ We started AssetLift Lending because real estate investors deserve a lender that
 
 **Sign up:** https://www.facebook.com/pages/create
 
-**Priority: MEDIUM** â€” Brand SERP presence. Some AI engines reference Facebook pages.
+**Priority: MEDIUM** Ã¢â‚¬â€ Brand SERP presence. Some AI engines reference Facebook pages.
 
 ### Step-by-step:
 
@@ -605,10 +605,10 @@ AssetLift Lending is a business-purpose financing platform headquartered in Quee
 We help borrowers navigate the most workable path to closing.
 
 OUR LOAN PROGRAMS:
-- Fix & Flip Loans â€” Up to 92.5% LTC, 100% rehab financed, with many files closing in as fast as 7-10 business days
-- DSCR Rental Loans â€” Qualified on rental income, no W-2s or tax returns
-- Bridge Loans â€” Up to 80% LTV, with many files closing in as fast as 7-10 business days
-- Ground-Up Construction â€” Up to 90% LTC, milestone-based draws
+- Fix & Flip Loans Ã¢â‚¬â€ Up to 92.5% LTC, 100% rehab financed, with many files closing in as fast as 5 business days
+- DSCR Rental Loans Ã¢â‚¬â€ Qualified on rental income, no W-2s or tax returns
+- Bridge Loans Ã¢â‚¬â€ Up to 80% LTV, with many files closing in as fast as 5 business days
+- Ground-Up Construction Ã¢â‚¬â€ Up to 90% LTC, milestone-based draws
 
 Loans from $100,000 to $5,000,000. 24-hour quote turnaround. First-time investors welcome.
 
@@ -661,37 +661,37 @@ Los Angeles, CA
 Use this checklist to track progress:
 
 ```
-[ ] 1.  Google Business Profile â€” business.google.com
-[ ] 2.  Bing Places â€” bingplaces.com
-[ ] 3.  Apple Business Connect â€” businessconnect.apple.com
-[ ] 4.  Crunchbase â€” crunchbase.com/register
-[ ] 5.  LinkedIn Company Page â€” linkedin.com/company/setup
-[ ] 6.  Trustpilot â€” business.trustpilot.com
-[ ] 7.  BBB â€” bbb.org/get-listed
-[ ] 8.  BiggerPockets â€” biggerpockets.com
-[ ] 9.  PrivateLenderLink â€” privatelenderlink.com (verify existing)
-[ ] 10. AAPL â€” aaplonline.com/join ($400/yr)
+[ ] 1.  Google Business Profile Ã¢â‚¬â€ business.google.com
+[ ] 2.  Bing Places Ã¢â‚¬â€ bingplaces.com
+[ ] 3.  Apple Business Connect Ã¢â‚¬â€ businessconnect.apple.com
+[ ] 4.  Crunchbase Ã¢â‚¬â€ crunchbase.com/register
+[ ] 5.  LinkedIn Company Page Ã¢â‚¬â€ linkedin.com/company/setup
+[ ] 6.  Trustpilot Ã¢â‚¬â€ business.trustpilot.com
+[ ] 7.  BBB Ã¢â‚¬â€ bbb.org/get-listed
+[ ] 8.  BiggerPockets Ã¢â‚¬â€ biggerpockets.com
+[ ] 9.  PrivateLenderLink Ã¢â‚¬â€ privatelenderlink.com (verify existing)
+[ ] 10. AAPL Ã¢â‚¬â€ aaplonline.com/join ($400/yr)
 [ ] 11. HardMoneyList.org
 [ ] 12. LendersA.com
-[ ] 13. Yelp Business â€” biz.yelp.com
-[ ] 14. Facebook Business Page â€” facebook.com/pages/create
-[ ] 15. Google Maps â€” verify via GBP (no separate signup)
+[ ] 13. Yelp Business Ã¢â‚¬â€ biz.yelp.com
+[ ] 14. Facebook Business Page Ã¢â‚¬â€ facebook.com/pages/create
+[ ] 15. Google Maps Ã¢â‚¬â€ verify via GBP (no separate signup)
 ```
 
 ---
 
 ## Review Request Templates
 
-### Email Template â€” Review Request
+### Email Template Ã¢â‚¬â€ Review Request
 
-**Subject line:** Quick favor â€” would you share your experience with AssetLift?
+**Subject line:** Quick favor Ã¢â‚¬â€ would you share your experience with AssetLift?
 
 ```
 Hi [First Name],
 
 Thank you for working with us on your recent [fix & flip / rental / bridge] loan. We hope the process was smooth and the closing went well.
 
-If you have a minute, we would really appreciate a short review of your experience. It helps other investors find reliable funding â€” and it helps us keep improving.
+If you have a minute, we would really appreciate a short review of your experience. It helps other investors find reliable funding Ã¢â‚¬â€ and it helps us keep improving.
 
 You can leave a review on either platform (or both):
 
@@ -712,20 +712,20 @@ Co-Founder, AssetLift Lending
 assetliftlending.com
 ```
 
-**How to get your Google review link:** In your Google Business Profile dashboard, go to "Ask for reviews" â€” Google provides a short link you can paste into the email.
+**How to get your Google review link:** In your Google Business Profile dashboard, go to "Ask for reviews" Ã¢â‚¬â€ Google provides a short link you can paste into the email.
 
 ---
 
-### Text Message Template â€” Review Request
+### Text Message Template Ã¢â‚¬â€ Review Request
 
 **Template 1 (Casual):**
 ```
-Hey [First Name], it's Yaakov from AssetLift. Congrats again on closing! If you have 30 seconds, a quick Google review would mean a lot to us: [GOOGLE REVIEW LINK] â€” Thanks!
+Hey [First Name], it's Yaakov from AssetLift. Congrats again on closing! If you have 30 seconds, a quick Google review would mean a lot to us: [GOOGLE REVIEW LINK] Ã¢â‚¬â€ Thanks!
 ```
 
 **Template 2 (More detail):**
 ```
-Hi [First Name], this is Yaakov from AssetLift Lending. Hope the [flip/rental] is going great. Would you mind leaving a quick review about your experience? It really helps other investors find us. Here's the link: [GOOGLE REVIEW LINK] â€” Thank you!
+Hi [First Name], this is Yaakov from AssetLift Lending. Hope the [flip/rental] is going great. Would you mind leaving a quick review about your experience? It really helps other investors find us. Here's the link: [GOOGLE REVIEW LINK] Ã¢â‚¬â€ Thank you!
 ```
 
 ---
@@ -737,7 +737,7 @@ Hi [First Name], this is Yaakov from AssetLift Lending. Hope the [flip/rental] i
 | Day of closing | Text | Send Template 1 |
 | 3 days after closing | Email | Send email template |
 | 14 days after closing | Text | Send Template 2 (if no review yet) |
-| 30 days after closing | Email | Final follow-up: "Just checking in on the project â€” and if you get a chance, we'd still love a review" |
+| 30 days after closing | Email | Final follow-up: "Just checking in on the project Ã¢â‚¬â€ and if you get a chance, we'd still love a review" |
 
 ---
 
@@ -755,7 +755,7 @@ Do NOT use variations like:
 - "Asset Lift Lending" (no space)
 - "AssetLift" (missing "Lending")
 - "929-639-2284" (missing parentheses)
-- "Queens, NY" vs "Queens, New York" â€” pick one and be consistent everywhere. **Recommended: Queens, New York**
+- "Queens, NY" vs "Queens, New York" Ã¢â‚¬â€ pick one and be consistent everywhere. **Recommended: Queens, New York**
 
 NAP consistency is a direct ranking factor for local SEO. Mismatches confuse search engines and dilute your authority.
 
@@ -763,23 +763,23 @@ NAP consistency is a direct ranking factor for local SEO. Mismatches confuse sea
 
 ## Priority Order (if doing this in batches)
 
-**Batch 1 â€” Do these first (highest impact):**
+**Batch 1 Ã¢â‚¬â€ Do these first (highest impact):**
 1. Google Business Profile (+ Google Maps)
 2. Bing Places
 3. Apple Business Connect
 4. Crunchbase
 5. LinkedIn Company Page
 
-**Batch 2 â€” Do these next (strong value):**
+**Batch 2 Ã¢â‚¬â€ Do these next (strong value):**
 6. BiggerPockets
 7. PrivateLenderLink (verify)
 8. Trustpilot
 9. Facebook Business Page
 
-**Batch 3 â€” Complete the set:**
+**Batch 3 Ã¢â‚¬â€ Complete the set:**
 10. BBB
 11. Yelp Business
-12. AAPL ($400/yr â€” evaluate timing)
+12. AAPL ($400/yr Ã¢â‚¬â€ evaluate timing)
 13. HardMoneyList.org
 14. LendersA.com
 

@@ -11,6 +11,7 @@ import PromoBanner from "@/components/landing/PromoBanner";
 import MarketsPreview from "@/components/landing/MarketsPreview";
 import AnimatedStats from "@/components/landing/AnimatedStats";
 import StickyMobileCTA from "@/components/landing/StickyMobileCTA";
+import DiscoveryHub from "@/components/landing/DiscoveryHub";
 import JsonLd from "@/components/JsonLd";
 import { AGGREGATE_REVIEW_RATING, BORROWER_REVIEWS } from "@/lib/data/reviews";
 
@@ -198,6 +199,7 @@ export default function HomePage() {
         <WhyAssetLift />
         <HowItWorks />
         <MarketsPreview />
+        <DiscoveryHub />
         <Testimonials />
         <FAQ />
         <CTA />
