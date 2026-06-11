@@ -190,13 +190,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Blog posts
-  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: new Date(post.publishedAt),
-    changeFrequency: 'yearly' as const,
-    priority: 0.6,
-  }));
+  // Blog posts — higher priority for recent posts
+  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => {
+    const ageInDays = (Date.now() - new Date(post.publishedAt).getTime()) / (1000 * 60 * 60 * 24);
+    const priority = ageInDays < 30 ? 0.8 : ageInDays < 180 ? 0.7 : 0.6;
+    return {
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: new Date(post.publishedAt),
+      changeFrequency: (ageInDays < 90 ? 'monthly' : 'yearly') as 'monthly' | 'yearly',
+      priority,
+    };
+  });
 
   // Comparison pages
   const comparisonPages: MetadataRoute.Sitemap = COMPARISONS.map((comp) => ({

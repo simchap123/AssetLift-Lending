@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/'],
+        disallow: ['/api/', '/portal/'],
       },
       // Explicitly allow AI crawlers used for search and user-requested retrieval.
       {

@@ -2437,4 +2437,301 @@ export const CITIES: CityData[] = [
       },
     ],
   },
+  // Illinois
+  {
+    cityName: "Chicago",
+    citySlug: "chicago",
+    stateSlug: "illinois",
+    stateName: "Illinois",
+    stateAbbreviation: "IL",
+    population: "2,700,000",
+    medianHomePrice: "$310,000",
+    overview: "Chicago is the third-largest city in the United States and one of the most active real estate investment markets in the country. Lower entry prices relative to coastal markets, a deep pool of value-add properties, and strong rental demand make Chicago a premier market for fix-and-flip operators and buy-and-hold investors. Hard money lenders are active across the South and West Sides where older housing stock and consistent rehab opportunities produce strong spreads for experienced operators.",
+    investmentHighlight: "Chicago's affordability relative to other major metros gives investors better margins on rehab projects. The city's large renter population and strong employment base support DSCR qualification across multiple submarkets. Investors who understand neighborhood-level dynamics and underwrite conservatively have built large portfolios in this market.",
+    topNeighborhoods: ["Englewood", "Austin", "Pilsen", "Humboldt Park", "Avondale", "Logan Square", "West Pullman", "Roseland"],
+    faqs: [
+      {
+        question: "What are hard money loan rates in Chicago?",
+        answer: "Chicago hard money rates typically range from 9% to 12% interest with 1.5 to 2.5 points at closing. Lender competition and deal volume keep rates competitive. Borrowers with experience and solid reserves can often negotiate toward the lower end of that range.",
+      },
+      {
+        question: "Which Chicago neighborhoods are best for fix-and-flip investing?",
+        answer: "Englewood, Austin, West Pullman, and Roseland offer the lowest entry prices and the highest potential spreads for experienced investors. Humboldt Park and Pilsen offer a mix of value-add and appreciation plays. Logan Square is more competitive but supports higher ARVs for well-executed projects.",
+      },
+      {
+        question: "Does Cook County property tax affect hard money lending in Chicago?",
+        answer: "Yes. Chicago investors must factor Cook County's above-average property tax burden into holding costs and DSCR calculations. Tax bills can significantly affect cash flow projections, particularly on smaller multifamily properties where margins are tighter.",
+      },
+    ],
+  },
+  // New York
+  {
+    cityName: "Brooklyn",
+    citySlug: "brooklyn",
+    stateSlug: "new-york",
+    stateName: "New York",
+    stateAbbreviation: "NY",
+    population: "2,700,000",
+    medianHomePrice: "$780,000",
+    overview: "Brooklyn is one of the most active real estate investment markets on the East Coast. Massive rental demand, consistent appreciation, and a deep inventory of older housing stock create ongoing opportunity for fix-and-flip operators, BRRRR investors, and buy-and-hold landlords. Hard money lenders active in Brooklyn focus on 1-4 unit properties, mixed-use acquisitions, and bridge financing for borrowers navigating one of the most competitive markets in the country.",
+    investmentHighlight: "Brooklyn's combination of high rental demand, proximity to Manhattan employment, and ongoing gentrification in its eastern neighborhoods continues to drive both appreciation and strong DSCR performance. Experienced investors who understand borough-specific regulations and can execute cleanly have found consistent returns here.",
+    topNeighborhoods: ["Bed-Stuy", "Crown Heights", "East New York", "Bushwick", "Flatbush", "Brownsville", "East Flatbush", "Canarsie"],
+    faqs: [
+      {
+        question: "Can I get a hard money loan for a Brooklyn brownstone?",
+        answer: "Yes. Brownstones and 2-4 unit properties in Brooklyn are commonly financed with hard money for acquisition and renovation. Lenders focus on the as-is value, ARV, and exit plan. Given high property values, expect lenders to scrutinize comps carefully.",
+      },
+      {
+        question: "What are typical hard money terms in Brooklyn?",
+        answer: "Brooklyn hard money rates typically range from 10% to 13% with 2 to 3 points at closing. High property values mean larger loan amounts, and lenders generally require solid borrower experience and reserves given the market's complexity.",
+      },
+      {
+        question: "Are DSCR loans available for Brooklyn rental properties?",
+        answer: "Yes. Brooklyn has strong rental income that supports DSCR qualification across many neighborhoods. Rents in Bed-Stuy, Crown Heights, and Flatbush often allow investors to qualify for 30-year DSCR financing without income documentation.",
+      },
+    ],
+  },
+  // Massachusetts
+  {
+    cityName: "Boston",
+    citySlug: "boston",
+    stateSlug: "massachusetts",
+    stateName: "Massachusetts",
+    stateAbbreviation: "MA",
+    population: "675,000",
+    medianHomePrice: "$700,000",
+    overview: "Boston is one of the strongest rental markets in the United States, driven by a massive concentration of universities, hospitals, and technology employers. Hard money lenders are active on fix-and-flip and BRRRR deals in outer neighborhoods where entry prices are lower and value-add opportunity remains. The city's persistent housing shortage and high renter population make DSCR loans particularly strong here.",
+    investmentHighlight: "Boston's student and professional renter base creates extraordinarily low vacancy rates and reliable rental income. Investors targeting Dorchester, East Boston, and Mattapan find more favorable entry prices while still benefiting from the metro's rental demand and long-term appreciation.",
+    topNeighborhoods: ["Dorchester", "Roxbury", "East Boston", "Mattapan", "Hyde Park", "Roslindale", "Jamaica Plain", "Mission Hill"],
+    faqs: [
+      {
+        question: "What types of hard money loans are available in Boston?",
+        answer: "Fix-and-flip, bridge, and DSCR loans are all available in Boston. Given the metro's high property values, lenders often require greater reserves and borrower experience. DSCR loans are especially popular given Boston's consistently strong rental income and low vacancy rates.",
+      },
+      {
+        question: "Which Boston neighborhoods offer the best fix-and-flip margins?",
+        answer: "Dorchester, Mattapan, and Hyde Park offer the most accessible entry prices while still benefiting from Boston's strong resale demand. East Boston has gentrified significantly and now supports higher ARVs. Roxbury and Mission Hill offer strong appreciation potential for well-executed rehabs.",
+      },
+      {
+        question: "How does Massachusetts law affect hard money lending?",
+        answer: "Massachusetts has specific mortgage regulations that lenders must navigate, but private lending for investment properties is legal and common. Ensure your entity structure and title work are clean. Massachusetts closing costs tend to be slightly higher than the national average.",
+      },
+    ],
+  },
+  // District of Columbia
+  {
+    cityName: "Washington D.C.",
+    citySlug: "washington-dc",
+    stateSlug: "district-of-columbia",
+    stateName: "Washington D.C.",
+    stateAbbreviation: "DC",
+    population: "680,000",
+    medianHomePrice: "$620,000",
+    overview: "Washington D.C. offers one of the most stable real estate investment environments in the country, backed by consistent government and professional employment, low unemployment, and perpetual demand for rental housing. Hard money lenders fund fix-and-flip and bridge deals across the District, particularly in emerging neighborhoods east of the Anacostia River where entry prices remain below the city average and rehab opportunity is strong.",
+    investmentHighlight: "The District's renter-heavy population, strong income base, and limited housing supply make it an excellent DSCR market. Neighborhoods like Anacostia, Congress Heights, and Deanwood have seen significant appreciation and offer investors strong DSCR performance once properties are stabilized.",
+    topNeighborhoods: ["Anacostia", "Congress Heights", "Trinidad", "Deanwood", "Brightwood", "Petworth", "Columbia Heights", "Brookland"],
+    faqs: [
+      {
+        question: "What are hard money loan rates in Washington D.C.?",
+        answer: "D.C. hard money rates typically run from 10% to 13% with 1.5 to 3 points at closing. The District's stable market and strong fundamentals attract multiple active lenders, keeping competition healthy. Experience and deal quality drive pricing more than geography.",
+      },
+      {
+        question: "Are DSCR loans strong in Washington D.C.?",
+        answer: "Yes. D.C. has some of the highest average rents on the East Coast, which translates to favorable DSCR ratios across most submarkets. Even in more affordable neighborhoods like Anacostia or Congress Heights, rents typically cover DSCR loan payments at 75-80% LTV.",
+      },
+      {
+        question: "Which D.C. neighborhoods are best for value-add investing?",
+        answer: "Anacostia, Congress Heights, Deanwood, and Brightwood Park offer the strongest value-add opportunity with below-average entry prices and genuine appreciation trajectory. These areas are experiencing sustained neighborhood improvement and rising rents.",
+      },
+    ],
+  },
+  // California - San Francisco
+  {
+    cityName: "San Francisco",
+    citySlug: "san-francisco",
+    stateSlug: "california",
+    stateName: "California",
+    stateAbbreviation: "CA",
+    population: "874,000",
+    medianHomePrice: "$1,200,000",
+    overview: "San Francisco is one of the most expensive real estate markets in the world, with median home prices exceeding $1.2 million. For investors, the city is primarily a buy-and-hold market where DSCR financing and bridge loans are the dominant tools. Fix-and-flip margins are narrow due to high acquisition costs, but value-add opportunities exist in specific neighborhoods where renovation adds disproportionate value.",
+    investmentHighlight: "San Francisco's rental demand from tech workers and professionals keeps vacancy rates extremely low and supports strong DSCR qualification. Investors acquiring stabilized multifamily properties or transitional assets can leverage DSCR loans to build wealth through appreciation and rental income rather than short-term flips.",
+    topNeighborhoods: ["Tenderloin", "Western Addition", "Bayview-Hunters Point", "Excelsior", "Outer Mission", "Ingleside", "Visitacion Valley", "Portola"],
+    faqs: [
+      {
+        question: "Is hard money lending common in San Francisco?",
+        answer: "Hard money lending in San Francisco is more common for bridge and acquisition financing than traditional fix-and-flip. Given high property values, investors often use bridge loans to close quickly on multifamily acquisitions, then refinance into long-term DSCR debt once the asset is stabilized.",
+      },
+      {
+        question: "What LTV can I get on a San Francisco hard money loan?",
+        answer: "San Francisco lenders typically offer 65% to 75% LTV on purchases given the high asset values involved. On rehab projects, lenders remain conservative on ARV given the complexity of permitting, contractor costs, and exit timing in this market.",
+      },
+      {
+        question: "Are DSCR loans viable in San Francisco?",
+        answer: "Yes, particularly for multifamily properties. San Francisco rents are among the highest in the country, which supports strong DSCR ratios. Investors holding stabilized 2-4 unit properties often qualify for 30-year DSCR financing at favorable LTVs.",
+      },
+    ],
+  },
+  // Utah
+  {
+    cityName: "Salt Lake City",
+    citySlug: "salt-lake-city",
+    stateSlug: "utah",
+    stateName: "Utah",
+    stateAbbreviation: "UT",
+    population: "205,000",
+    medianHomePrice: "$520,000",
+    overview: "Salt Lake City is one of the fastest-growing real estate markets in the western United States. Tech sector expansion, strong in-migration from California and other high-cost states, and a young population have driven consistent appreciation and rental demand. Hard money lenders are active on fix-and-flip and bridge deals across the Salt Lake Valley, with strong borrower demand and competitive lending terms.",
+    investmentHighlight: "Utah's business-friendly environment, low taxes, and consistent population growth make Salt Lake City a strong long-term hold market. Investors who entered before 2020 have seen exceptional appreciation, and value-add opportunities continue to exist in outer neighborhoods and secondary suburbs.",
+    topNeighborhoods: ["Rose Park", "Glendale", "Poplar Grove", "Millcreek", "Kearns", "West Valley City", "Taylorsville", "Murray"],
+    faqs: [
+      {
+        question: "What are hard money loan rates in Salt Lake City?",
+        answer: "Salt Lake City hard money rates typically range from 9% to 12% with 1 to 2 points at closing. Utah's growing market attracts multiple active lenders, keeping rates competitive. Experienced borrowers with solid exit plans regularly access financing at favorable terms.",
+      },
+      {
+        question: "Is Salt Lake City a good fix-and-flip market?",
+        answer: "Yes. Older housing stock in Rose Park, Glendale, and West Valley City offers consistent rehab opportunity. Strong buyer demand from first-time homebuyers and relocating professionals ensures a healthy resale market for well-priced renovated homes.",
+      },
+      {
+        question: "How does Utah's growth affect DSCR loans?",
+        answer: "Utah's strong rent growth has improved DSCR ratios significantly over the past five years. Investors holding rental properties in the Salt Lake Valley often find that current rents support DSCR qualification that was not available when properties were originally purchased.",
+      },
+    ],
+  },
+  // Idaho
+  {
+    cityName: "Boise",
+    citySlug: "boise",
+    stateSlug: "idaho",
+    stateName: "Idaho",
+    stateAbbreviation: "ID",
+    population: "240,000",
+    medianHomePrice: "$450,000",
+    overview: "Boise has been one of the fastest-appreciating markets in the United States over the past decade, driven by tech relocation, in-migration from higher-cost states, and a business-friendly regulatory environment. Hard money lenders are active in the Treasure Valley area, supporting fix-and-flip, bridge, and DSCR deals for investors participating in one of the West's most dynamic markets.",
+    investmentHighlight: "Boise offers a combination of relative affordability compared to other western metros, strong population growth, and limited new housing supply that continues to support investor returns. Value-add properties in established neighborhoods still offer rehab margins for disciplined operators.",
+    topNeighborhoods: ["East End", "North End", "Bench Area", "Southeast Boise", "West Boise", "Meridian", "Nampa", "Caldwell"],
+    faqs: [
+      {
+        question: "Is Boise still a good real estate investment market?",
+        answer: "Yes. After significant appreciation in 2020-2022, Boise has moderated but remains fundamentally strong due to continued population growth and a constrained supply of housing. Investors who underwrite conservatively and target specific value-add opportunities continue to find viable deals.",
+      },
+      {
+        question: "What hard money loan options are available in Boise?",
+        answer: "Fix-and-flip, bridge, DSCR, and ground-up construction loans are all available in Boise. The market's growth has attracted multiple hard money and private lenders. Loan terms are generally competitive with the broader western U.S. market.",
+      },
+      {
+        question: "Are DSCR loans viable in Boise?",
+        answer: "Yes, particularly for investors who purchased before the 2021-2022 price peak. Current rents in Boise and the surrounding Treasure Valley support DSCR ratios above 1.0 on most well-priced acquisitions, though lenders will scrutinize appraisals carefully.",
+      },
+    ],
+  },
+  // Oklahoma
+  {
+    cityName: "Oklahoma City",
+    citySlug: "oklahoma-city",
+    stateSlug: "oklahoma",
+    stateName: "Oklahoma",
+    stateAbbreviation: "OK",
+    population: "680,000",
+    medianHomePrice: "$210,000",
+    overview: "Oklahoma City is one of the most cash-flow-friendly real estate investment markets in the country. Low median home prices, consistent rental demand, and a stable energy and government employment base make OKC a strong buy-and-hold market. Fix-and-flip operators find a deep inventory of value-add properties at accessible price points, while DSCR investors benefit from favorable purchase-to-rent ratios.",
+    investmentHighlight: "Oklahoma City's low cost of entry relative to rental income creates some of the strongest DSCR ratios in the country for qualifying rental properties. Investors focused on cash flow, not just appreciation, consistently find strong returns in OKC's northeast and southeast quadrants.",
+    topNeighborhoods: ["Northeast OKC", "Capitol Hill", "Eastside", "Southeast OKC", "Del City", "Midwest City", "Nichols Hills area", "Moore"],
+    faqs: [
+      {
+        question: "Why is Oklahoma City popular with DSCR investors?",
+        answer: "Oklahoma City's low home prices relative to rents create DSCR ratios well above 1.0 on most qualifying properties. A house purchased at $150,000 can often rent for $1,200-$1,500 per month, producing DSCR ratios that easily meet lender requirements for 30-year financing.",
+      },
+      {
+        question: "What are hard money loan rates in Oklahoma City?",
+        answer: "Oklahoma City hard money rates typically range from 9% to 11% with 1 to 2 points at closing. The market's lower property values mean smaller loan amounts, which some lenders factor into pricing. Borrowers with experience and clean files access the most competitive terms.",
+      },
+      {
+        question: "Is fix-and-flip viable in Oklahoma City?",
+        answer: "Yes, particularly in NE OKC and Capitol Hill where older housing stock and low entry prices create room for rehab margin. The key is controlling renovation costs relative to achievable ARV, which requires local market knowledge and a reliable contractor.",
+      },
+    ],
+  },
+  // Florida - Cape Coral
+  {
+    cityName: "Cape Coral",
+    citySlug: "cape-coral",
+    stateSlug: "florida",
+    stateName: "Florida",
+    stateAbbreviation: "FL",
+    population: "220,000",
+    medianHomePrice: "$380,000",
+    overview: "Cape Coral has been one of the fastest-growing cities in the United States, driven by retiree migration, remote workers, and strong demand for waterfront and near-waterfront properties. The city's extensive canal system and warm climate create robust short-term rental demand. Hard money lenders are active on fix-and-flip, bridge, and DSCR deals across the metro, including short-term rental acquisitions that require flexible financing.",
+    investmentHighlight: "Cape Coral's combination of affordable waterfront properties relative to other Florida coastal markets and strong short-term rental demand makes it a unique DSCR and STR financing market. Investors targeting canal-front single-family homes for vacation rental programs have found strong returns when acquisition and renovation costs are well-controlled.",
+    topNeighborhoods: ["SW Cape Coral", "NW Cape Coral", "NE Cape Coral", "Pelican", "Burnt Store Road corridor", "Pine Island Road area"],
+    faqs: [
+      {
+        question: "Can I get a DSCR loan for a Cape Coral short-term rental?",
+        answer: "Yes. Several DSCR lenders now accept short-term rental income from platforms like Airbnb and VRBO for qualification purposes, using trailing 12-month rental history or market STR projections. Cape Coral's strong vacation rental demand supports qualification on many well-located properties.",
+      },
+      {
+        question: "Is Cape Coral a good fix-and-flip market?",
+        answer: "Cape Coral can work for fix-and-flip when entry prices are conservative and the rehab scope is disciplined. The market has experienced significant appreciation but also increased competition. Canal-front properties with clean title and reasonable rehab budgets offer the strongest margins.",
+      },
+      {
+        question: "What hard money terms are typical in Cape Coral?",
+        answer: "Cape Coral hard money rates typically range from 10% to 12.5% with 1.5 to 2.5 points at closing. Florida's active investor market attracts multiple lenders. Insurance costs in Southwest Florida have increased significantly and must be factored into hold cost calculations.",
+      },
+    ],
+  },
+  // Alabama
+  {
+    cityName: "Birmingham",
+    citySlug: "birmingham",
+    stateSlug: "alabama",
+    stateName: "Alabama",
+    stateAbbreviation: "AL",
+    population: "210,000",
+    medianHomePrice: "$180,000",
+    overview: "Birmingham is one of the most accessible real estate investment markets in the southeastern United States. Low median home prices, strong rental demand from university students and medical professionals, and a recovering downtown core create consistent opportunity for fix-and-flip operators and buy-and-hold investors. Hard money lenders are active across the metro, supporting deals in neighborhoods with strong cash-flow fundamentals.",
+    investmentHighlight: "Birmingham's medical corridor, anchored by UAB Health System, creates steady demand for quality rental housing. The city's low entry prices relative to rental income produce some of the strongest cash-on-cash returns in the Southeast for disciplined buy-and-hold investors.",
+    topNeighborhoods: ["Ensley", "West End", "East Lake", "Woodlawn", "Avondale", "Five Points South", "Norwood", "Tarrant"],
+    faqs: [
+      {
+        question: "What makes Birmingham attractive for real estate investors?",
+        answer: "Birmingham offers low entry prices, strong rental demand from UAB students and medical workers, and improving neighborhoods with genuine appreciation potential. Cash-on-cash returns in Birmingham regularly exceed those available in higher-cost markets, making it attractive for yield-focused investors.",
+      },
+      {
+        question: "Are hard money loans available in Birmingham?",
+        answer: "Yes. Multiple lenders are active in the Birmingham metro, funding fix-and-flip, bridge, and DSCR deals. Alabama's investor-friendly legal environment and lower property values make it a viable market for lenders willing to fund smaller loan amounts.",
+      },
+      {
+        question: "What DSCR ratios can investors expect in Birmingham?",
+        answer: "Birmingham's low purchase prices relative to achievable rents typically produce DSCR ratios well above 1.0, often 1.2 to 1.5 on well-priced acquisitions. This makes Birmingham an excellent market for investors focused on cash flow and long-term hold strategies.",
+      },
+    ],
+  },
+  // New Mexico
+  {
+    cityName: "Albuquerque",
+    citySlug: "albuquerque",
+    stateSlug: "new-mexico",
+    stateName: "New Mexico",
+    stateAbbreviation: "NM",
+    population: "565,000",
+    medianHomePrice: "$290,000",
+    overview: "Albuquerque offers real estate investors a mid-sized southwestern market with affordable entry prices, growing technology and healthcare employment, and consistent rental demand. The University of New Mexico and Kirtland Air Force Base provide stable renter populations. Hard money lenders serve both fix-and-flip and buy-and-hold strategies, with DSCR lending increasingly available as the metro's fundamentals have strengthened.",
+    investmentHighlight: "Albuquerque's improving economy and affordable home prices make it a cash-flow-oriented investment market. Investors who acquire conservatively and focus on neighborhoods near the university or major employers find consistent rental demand and DSCR qualification well above 1.0.",
+    topNeighborhoods: ["Southeast Albuquerque", "Kirtland Corridor", "University Area", "North Valley", "Barelas", "South Valley", "Nob Hill", "Heights area"],
+    faqs: [
+      {
+        question: "Is Albuquerque a good real estate investment market?",
+        answer: "Albuquerque offers an accessible entry point with stable rental fundamentals. The university population and military presence provide consistent demand. While appreciation has been more moderate than sunbelt boom markets, the cash flow potential is strong for buy-and-hold investors.",
+      },
+      {
+        question: "What hard money loan options are available in Albuquerque?",
+        answer: "Fix-and-flip, bridge, and DSCR loans are available in Albuquerque through national and regional lenders. The market's lower property values mean some lenders set minimum loan floors that exclude smaller transactions. AssetLift funds deals from $100,000 across New Mexico.",
+      },
+      {
+        question: "How does Albuquerque compare to other New Mexico markets?",
+        answer: "Albuquerque is by far the largest market in New Mexico with the deepest lender pool and the most established investor community. Santa Fe has higher prices but narrower investor margins. For volume-oriented investors, Albuquerque is the primary New Mexico market.",
+      },
+    ],
+  },
 ];
