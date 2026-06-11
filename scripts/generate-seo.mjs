@@ -63,13 +63,18 @@ function todayISO() {
 
 async function callGemini(prompt, attempt = 1) {
   const MAX_ATTEMPTS = 4;
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: { temperature: 0.7, maxOutputTokens: 4096 },
+      generationConfig: {
+        temperature: 0.7,
+        maxOutputTokens: 8192,
+        // Disable thinking so the budget goes to the article JSON itself
+        thinkingConfig: { thinkingBudget: 0 },
+      },
     }),
   });
 
@@ -193,6 +198,13 @@ async function main() {
     console.error('Generated post missing required fields. Skipping.');
     console.error('Post:', JSON.stringify(post, null, 2).slice(0, 500));
     process.exit(1);
+  }
+
+  // Enforce meta description limit (155 chars) — trim at a word boundary
+  if (typeof post.description === 'string' && post.description.length > 155) {
+    const cut = post.description.slice(0, 152);
+    post.description = cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:.]?$/, '') + '...';
+    console.log(`Trimmed meta description to ${post.description.length} chars`);
   }
 
   // Append and save
