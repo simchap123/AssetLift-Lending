@@ -1,0 +1,33 @@
+name: Daily SEO Content
+
+on:
+  schedule:
+    - cron: '0 10 * * *'   # 10 AM UTC = 6 AM ET daily
+  workflow_dispatch:         # Also allows manual trigger from GitHub Actions tab
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate SEO content
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generate-seo.mjs
+
+      - name: Commit and push if content was added
+        run: |
+          git config user.name "AssetLift SEO Bot"
+          git config user.email "seo-bot@assetliftlending.com"
+          git add lib/data/seo-scheduled-posts.json
+          git diff --staged --quiet && echo "No new content today" || (git commit -m "Daily SEO: add new blog post [$(date +'%Y-%m-%d')]" && git push)
