@@ -1,5 +1,57 @@
 [
   {
+    "slug": "how-to-underwrite-fix-and-flip-margin",
+    "title": "How to Underwrite a Fix and Flip Margin Before You Borrow",
+    "description": "A practical framework for checking purchase basis, rehab scope, timeline risk, and financing fit before applying for a fix and flip loan.",
+    "publishedAt": "2026-06-11T16:57:01.657Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "7 min read",
+    "category": "Education",
+    "tags": [
+      "fix and flip loan requirements",
+      "real estate underwriting",
+      "investment property financing",
+      "hard money loans"
+    ],
+    "heroImage": "/blog/market-guide.jpg",
+    "sections": [
+      {
+        "heading": "Start With Margin, Not Loan Size",
+        "content": "The first underwriting question is not how much leverage you can get. It is whether the project margin survives realistic costs. Borrowers should model purchase basis, rehab spend, carry costs, and sale friction before looking at structure. If the deal only works with perfect execution, the financing is not the problem. The margin is."
+      },
+      {
+        "heading": "Scope Discipline Changes the Outcome",
+        "content": "Good files separate must-do work from optional upgrades. Lenders are far more comfortable with a line-item scope and a believable timeline than a vague renovation number. Borrowers comparing debt options should pressure-test the project against <a href=\"/loans/fix-and-flip\">fix and flip financing</a> and decide early whether the exit is a sale or a refinance."
+      },
+      {
+        "heading": "Match the Exit to the Debt",
+        "content": "If the plan is to hold the property, underwrite the refinance path on day one. That usually means understanding whether the finished property can move into <a href=\"/loans/dscr-rental\">DSCR financing</a> or whether a different exit is cleaner. Short-term debt works well when the next capital stage is already mapped."
+      },
+      {
+        "heading": "Use the Application When the Story Is Coherent",
+        "content": "Once the numbers are defensible, move the file into the <a href=\"/apply\">application</a> with the scope, reserves, and exit logic ready. Organized borrowers usually get better execution because underwriting can focus on the deal instead of pulling basic information together."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should I underwrite before applying for a fix and flip loan?",
+        "answer": "Start with purchase basis, repair budget, hold time, carry costs, resale assumptions, and whether the exit still works if the project runs longer than expected."
+      },
+      {
+        "question": "Does a stronger scope of work matter to lenders?",
+        "answer": "Yes. A specific scope makes underwriting cleaner because it shows where the rehab budget goes and whether the timeline is realistic."
+      },
+      {
+        "question": "Should I plan the refinance before I close the acquisition loan?",
+        "answer": "Yes. Borrowers who understand the long-term debt path early usually make better acquisition and renovation decisions."
+      }
+    ],
+    "sourceJob": "strategy",
+    "focusKeyword": "fix and flip loan requirements",
+    "publishReason": "Fill a mid-funnel educational gap that supports stronger, higher-intent loan applications."
+  },
+  {
     "slug": "investor-outlook-los-angeles-ca",
     "title": "Los Angeles Investor Outlook: Hard Money, Bridge, and DSCR Financing",
     "description": "A market-specific outlook for Los Angeles investors comparing hard money, bridge, and DSCR financing options with practical next steps.",
