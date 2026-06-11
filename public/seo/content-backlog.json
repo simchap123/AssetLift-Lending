@@ -1,4 +1,33 @@
 {
-  "generatedAt": null,
-  "items": []
+  "generatedAt": "2026-06-11T04:17:10.040Z",
+  "items": [
+    {
+      "title": "Hard Money Loan Rates by Scenario",
+      "keyword": "hard money loan rates 2026",
+      "intent": "commercial",
+      "targetPath": "/blog/hard-money-loan-rates-by-scenario",
+      "reason": "Commercial intent term that can feed both product pages and lead conversion."
+    },
+    {
+      "title": "How to Underwrite a Fix and Flip Before You Borrow",
+      "keyword": "fix and flip loan requirements",
+      "intent": "informational",
+      "targetPath": "/blog/how-to-underwrite-fix-and-flip",
+      "reason": "High-intent borrowers need a pre-application checklist before they submit a deal."
+    },
+    {
+      "title": "DSCR Refinance Playbook for BRRRR Investors",
+      "keyword": "how to qualify for DSCR loan",
+      "intent": "commercial",
+      "targetPath": "/blog/dscr-refinance-playbook-brrrr",
+      "reason": "Supports DSCR product intent and links naturally to the application flow."
+    },
+    {
+      "title": "Bridge Loan Exit Planning Worksheet",
+      "keyword": "bridge loan exit strategy",
+      "intent": "conversion",
+      "targetPath": "/blog/bridge-loan-exit-planning",
+      "reason": "Improves bridge borrower quality and creates a stronger CTA bridge to /apply."
+    }
+  ]
 }
