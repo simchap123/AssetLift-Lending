@@ -1,6 +1,20 @@
 {
-  "generatedAt": null,
-  "score": 0,
-  "summary": "SEO automation has not run yet.",
-  "findings": []
+  "generatedAt": "2026-06-11T04:17:10.040Z",
+  "score": 97,
+  "summary": "SEO foundation is healthy. The next gains come from compounding content, internal links, and distribution.",
+  "findings": [
+    {
+      "severity": "low",
+      "issue": "Cron timings are UTC-based and will shift by one hour when Eastern Time moves off DST.",
+      "evidence": "Vercel cron schedules are defined in UTC rather than America/New_York.",
+      "fix": "Review cron timing at the next DST boundary or move scheduling to an ET-aware worker."
+    }
+  ],
+  "totals": {
+    "blogPosts": 373,
+    "comparisons": 21,
+    "states": 46,
+    "cities": 81,
+    "corePages": 16
+  }
 }
