@@ -1,11 +1,14 @@
 {
-  "generatedAt": "2026-06-12T13:38:18.316Z",
-  "job": "audit",
-  "published": false,
-  "changedUrls": [],
+  "generatedAt": "2026-06-12T16:22:38.102Z",
+  "job": "strategy",
+  "published": true,
+  "changedUrls": [
+    "https://www.assetliftlending.com/blog/dscr-refinance-readiness-checklist",
+    "https://www.assetliftlending.com/blog"
+  ],
   "notes": [
-    "Job label: SEO Audit",
-    "Schedule slot: 04:05 UTC and 13:05 UTC / 00:05 ET and 09:05 ET during DST",
-    "Focus keywords: hard money lender, DSCR loans, fix and flip loans"
+    "Job label: Content Strategy",
+    "Schedule slot: 16:05 UTC / 12:05 ET during DST",
+    "Focus keywords: how to finance first fix and flip, how to qualify for DSCR loan, real estate investing guide"
   ]
 }
