@@ -1,4 +1,61 @@
 {
-  "generatedAt": null,
-  "items": []
+  "generatedAt": "2026-06-12T08:27:23.619Z",
+  "items": [
+    {
+      "tier": "Tier 1",
+      "platform": "Google Business Profile",
+      "targetUrl": "https://www.assetliftlending.com/",
+      "anchorTheme": "AssetLift Lending",
+      "status": "pending",
+      "notes": "Highest priority entity listing. Must be fully verified and kept active."
+    },
+    {
+      "tier": "Tier 1",
+      "platform": "LLMs.txt / AI crawler reference",
+      "targetUrl": "https://www.assetliftlending.com/llms.txt",
+      "anchorTheme": "AssetLift Lending entity facts",
+      "status": "pending",
+      "notes": "Keep AI-readable entity, product, contact, and citation facts current for AI crawlers that inspect llms.txt-style files."
+    },
+    {
+      "tier": "Tier 1",
+      "platform": "LLMs-full.txt / AI citation source",
+      "targetUrl": "https://www.assetliftlending.com/llms-full.txt",
+      "anchorTheme": "AssetLift Lending source summary",
+      "status": "pending",
+      "notes": "Maintain a comprehensive AI-readable site summary for systems that use web retrieval or citation-oriented crawling."
+    },
+    {
+      "tier": "Tier 1",
+      "platform": "LinkedIn Company Page",
+      "targetUrl": "https://www.assetliftlending.com/apply",
+      "anchorTheme": "AssetLift Lending",
+      "status": "pending",
+      "notes": "Use company overview plus application link."
+    },
+    {
+      "tier": "Tier 2",
+      "platform": "BBB Profile",
+      "targetUrl": "https://www.assetliftlending.com/licensing",
+      "anchorTheme": "private lending for real estate investors",
+      "status": "pending",
+      "notes": "Strong trust signal for financial services."
+    },
+    {
+      "tier": "Tier 3",
+      "platform": "BiggerPockets Profile or Mention",
+      "targetUrl": "https://www.assetliftlending.com/loans/fix-and-flip",
+      "anchorTheme": "fix and flip loans",
+      "status": "pending",
+      "notes": "Investor-relevant platform. Requires real account activity and value-first participation."
+    },
+    {
+      "tier": "Tier 4",
+      "platform": "Guest Post Outreach",
+      "targetUrl": "https://www.assetliftlending.com/loans/dscr-rental",
+      "anchorTheme": "DSCR rental loans",
+      "status": "pending",
+      "notes": "Needs manual outreach to real estate or lending publishers."
+    }
+  ]
 }
