@@ -1,8 +1,8 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-06-12T08:27:23.619Z",
   "connected": false,
   "submitted": false,
   "property": null,
   "sitemap": null,
-  "message": "Google Search Console automation has not run yet."
+  "message": "Missing Google Search Console service account configuration. Set GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY, and GOOGLE_SEARCH_CONSOLE_SITE_URL."
 }
