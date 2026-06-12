@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { LayoutDashboard, FileText, Users, LogOut, ChevronRight, Plus } from 'lucide-react';
+import { LayoutDashboard, FileText, Users, LogOut, ChevronRight, Plus, TrendingUp } from 'lucide-react';
 import Logo from '@/components/Logo';
 
 const NAV = [
   { label: 'Dashboard', href: '/portal/dashboard', icon: LayoutDashboard },
   { label: 'Deals', href: '/portal/deals', icon: FileText },
   { label: 'Clients', href: '/portal/clients', icon: Users },
+  { label: 'SEO', href: '/portal/seo', icon: TrendingUp },
 ];
 
 export default function PortalNav() {
