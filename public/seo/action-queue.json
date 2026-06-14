@@ -1,6 +1,157 @@
 {
-  "generatedAt": "2026-06-14T00:00:00.000Z",
-  "connected": false,
-  "summary": "Pending first authority run with Search Console analytics access.",
-  "items": []
+  "generatedAt": "2026-06-14T04:13:59.187Z",
+  "connected": true,
+  "summary": "15 prioritized actions from real Search Console demand (top priority: Maryland).",
+  "items": [
+    {
+      "type": "build-demand-page",
+      "target": "Maryland",
+      "category": "Geo",
+      "priority": 308,
+      "impressions": 308,
+      "position": 0,
+      "rationale": "308 impressions across 9 queries mention Maryland.",
+      "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "California",
+      "category": "Geo",
+      "priority": 280,
+      "impressions": 280,
+      "position": 0,
+      "rationale": "280 impressions across 9 queries mention California.",
+      "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Colorado",
+      "category": "Geo",
+      "priority": 217,
+      "impressions": 217,
+      "position": 0,
+      "rationale": "217 impressions across 6 queries mention Colorado.",
+      "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Arizona",
+      "category": "Geo",
+      "priority": 156,
+      "impressions": 156,
+      "position": 0,
+      "rationale": "156 impressions across 5 queries mention Arizona.",
+      "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Nevada",
+      "category": "Geo",
+      "priority": 143,
+      "impressions": 143,
+      "position": 0,
+      "rationale": "143 impressions across 4 queries mention Nevada.",
+      "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Idaho",
+      "category": "Geo",
+      "priority": 131,
+      "impressions": 131,
+      "position": 0,
+      "rationale": "131 impressions across 3 queries mention Idaho.",
+      "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/blog/no-income-verification-loans",
+      "category": "DSCR / Rental",
+      "priority": 96,
+      "impressions": 48,
+      "position": 15,
+      "rationale": "48 impressions at position 15 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/blog/real-estate-investor-guide-west-virginia",
+      "category": "General",
+      "priority": 84,
+      "impressions": 42,
+      "position": 16.5,
+      "rationale": "42 impressions at position 16.5 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/faq",
+      "category": "General",
+      "priority": 76,
+      "impressions": 38,
+      "position": 19.4,
+      "rationale": "38 impressions at position 19.4 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/about",
+      "category": "General",
+      "priority": 70,
+      "impressions": 35,
+      "position": 2.9,
+      "rationale": "35 impressions at position 2.9 but only 1 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/contact",
+      "category": "General",
+      "priority": 68,
+      "impressions": 34,
+      "position": 19.1,
+      "rationale": "34 impressions at position 19.1 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/blog/bridge-loan-requirements-real-estate-investors",
+      "category": "Bridge",
+      "priority": 54,
+      "impressions": 27,
+      "position": 11.7,
+      "rationale": "27 impressions at position 11.7 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/blog/bridge-loan-interest-reserve-explained",
+      "category": "Bridge",
+      "priority": 42,
+      "impressions": 21,
+      "position": 7.7,
+      "rationale": "21 impressions at position 7.7 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/blog/ground-up-construction-loan-for-investors",
+      "category": "Construction",
+      "priority": 40,
+      "impressions": 20,
+      "position": 18.8,
+      "rationale": "20 impressions at position 18.8 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "expand-content",
+      "target": "dscr loan hawaii guide",
+      "category": "DSCR / Rental",
+      "priority": 9,
+      "impressions": 6,
+      "position": 13.2,
+      "rationale": "Ranking at position 13.2 with 6 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    }
+  ]
 }
