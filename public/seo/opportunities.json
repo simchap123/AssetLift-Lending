@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T04:13:59.187Z",
+  "generatedAt": "2026-06-14T04:32:59.209Z",
   "connected": true,
   "dateRange": {
     "startDate": "2026-05-14",
@@ -989,5 +989,219 @@
       "position": 77.3
     }
   ],
+  "categories": [
+    {
+      "name": "DSCR / Rental",
+      "queries": 358,
+      "impressions": 3088,
+      "clicks": 0,
+      "position": 72.2,
+      "topQueries": [
+        {
+          "query": "dscr loan calculator",
+          "impressions": 125,
+          "position": 77.6
+        },
+        {
+          "query": "dscr loan for rental property",
+          "impressions": 87,
+          "position": 80.9
+        },
+        {
+          "query": "dscr loan maryland",
+          "impressions": 72,
+          "position": 64.4
+        },
+        {
+          "query": "dscr calculator",
+          "impressions": 67,
+          "position": 75.4
+        },
+        {
+          "query": "dscr loans new york",
+          "impressions": 61,
+          "position": 80.8
+        }
+      ]
+    },
+    {
+      "name": "Bridge",
+      "queries": 179,
+      "impressions": 1943,
+      "clicks": 0,
+      "position": 66.3,
+      "topQueries": [
+        {
+          "query": "bridge loan idaho",
+          "impressions": 77,
+          "position": 65.2
+        },
+        {
+          "query": "bridge loan colorado",
+          "impressions": 61,
+          "position": 80.5
+        },
+        {
+          "query": "bridge loans wisconsin",
+          "impressions": 60,
+          "position": 70.3
+        },
+        {
+          "query": "bridge loans denver",
+          "impressions": 46,
+          "position": 73.9
+        },
+        {
+          "query": "bridge loans atlanta",
+          "impressions": 45,
+          "position": 72.2
+        }
+      ]
+    },
+    {
+      "name": "Hard Money",
+      "queries": 57,
+      "impressions": 392,
+      "clicks": 1,
+      "position": 72.4,
+      "topQueries": [
+        {
+          "query": "connecticut hard money lenders",
+          "impressions": 35,
+          "position": 77.9
+        },
+        {
+          "query": "colorado hard money lenders",
+          "impressions": 26,
+          "position": 77.8
+        },
+        {
+          "query": "connecticut hard money",
+          "impressions": 24,
+          "position": 81.4
+        },
+        {
+          "query": "boise hard money loans",
+          "impressions": 23,
+          "position": 68.2
+        },
+        {
+          "query": "boise hard money lenders",
+          "impressions": 20,
+          "position": 64.2
+        }
+      ]
+    },
+    {
+      "name": "Construction",
+      "queries": 64,
+      "impressions": 241,
+      "clicks": 0,
+      "position": 81.3,
+      "topQueries": [
+        {
+          "query": "construction loans maryland",
+          "impressions": 33,
+          "position": 76.4
+        },
+        {
+          "query": "construction loan maryland",
+          "impressions": 31,
+          "position": 76.6
+        },
+        {
+          "query": "construction project financing omaha",
+          "impressions": 16,
+          "position": 80.1
+        },
+        {
+          "query": "construction loans arkansas",
+          "impressions": 11,
+          "position": 77.2
+        },
+        {
+          "query": "construction loans idaho",
+          "impressions": 11,
+          "position": 78.8
+        }
+      ]
+    },
+    {
+      "name": "Fix & Flip",
+      "queries": 27,
+      "impressions": 140,
+      "clicks": 0,
+      "position": 67.5,
+      "topQueries": [
+        {
+          "query": "dscr fix and flip loans",
+          "impressions": 35,
+          "position": 76.8
+        },
+        {
+          "query": "best fix and flip loans",
+          "impressions": 21,
+          "position": 70.3
+        },
+        {
+          "query": "alexandria fix and flip loan",
+          "impressions": 10,
+          "position": 67.4
+        },
+        {
+          "query": "colorado fix and flip loans",
+          "impressions": 10,
+          "position": 60.8
+        },
+        {
+          "query": "baltimore fix and flip loan",
+          "impressions": 9,
+          "position": 52.4
+        }
+      ]
+    },
+    {
+      "name": "Commercial / Multifamily",
+      "queries": 27,
+      "impressions": 133,
+      "clicks": 0,
+      "position": 73.6,
+      "topQueries": [
+        {
+          "query": "dallas apartment loans",
+          "impressions": 24,
+          "position": 69.5
+        },
+        {
+          "query": "austin apartment loans",
+          "impressions": 20,
+          "position": 78.1
+        },
+        {
+          "query": "delaware apartment loan",
+          "impressions": 14,
+          "position": 76.1
+        },
+        {
+          "query": "delaware multifamily loan",
+          "impressions": 13,
+          "position": 73.2
+        },
+        {
+          "query": "arkansas apartment loan",
+          "impressions": 12,
+          "position": 59.7
+        }
+      ]
+    }
+  ],
+  "recent": {
+    "startDate": "2026-06-04",
+    "endDate": "2026-06-11",
+    "clicks": 10,
+    "impressions": 6999,
+    "ctr": 0.0014,
+    "position": 63.8
+  },
   "message": "Found 1 striking-distance queries and 8 pages with weak click-through over the last 28 days."
 }
