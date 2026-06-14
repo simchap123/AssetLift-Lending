@@ -19,9 +19,11 @@ function getAuth() {
   const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
   const key = process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY?.replace(/\\n/g, '\n');
   if (!email || !key) throw new Error('Google service account credentials not configured.');
-  return new google.auth.JWT(email, undefined, key, [
-    'https://www.googleapis.com/auth/webmasters.readonly',
-  ]);
+  return new google.auth.JWT({
+    email,
+    key,
+    scopes: ['https://www.googleapis.com/auth/webmasters.readonly'],
+  });
 }
 
 export async function GET() {
@@ -38,7 +40,6 @@ export async function GET() {
           endDate,
           dimensions: ['query'],
           rowLimit: 10,
-          orderBy: [{ fieldName: 'clicks', sortOrder: 'DESCENDING' }],
         },
       }),
       sc.searchanalytics.query({
@@ -48,7 +49,6 @@ export async function GET() {
           endDate,
           dimensions: ['page'],
           rowLimit: 10,
-          orderBy: [{ fieldName: 'clicks', sortOrder: 'DESCENDING' }],
         },
       }),
       sc.searchanalytics.query({
