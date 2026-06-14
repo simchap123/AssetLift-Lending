@@ -85,6 +85,24 @@ export interface SeoTopQuery {
   position: number;
 }
 
+export interface SeoCategoryBreakdown {
+  name: string;
+  queries: number;
+  impressions: number;
+  clicks: number;
+  position: number;
+  topQueries: Array<{ query: string; impressions: number; position: number }>;
+}
+
+export interface SeoWindowSummary {
+  startDate: string;
+  endDate: string;
+  clicks: number;
+  impressions: number;
+  ctr: number;
+  position: number;
+}
+
 export interface SeoOpportunitiesReport {
   generatedAt: string;
   connected: boolean;
@@ -98,6 +116,8 @@ export interface SeoOpportunitiesReport {
   strikingDistanceQueries: SeoOpportunityQuery[];
   weakCtrPages: SeoOpportunityPage[];
   topQueries: SeoTopQuery[];
+  categories: SeoCategoryBreakdown[];
+  recent: SeoWindowSummary | null;
   message: string;
 }
 

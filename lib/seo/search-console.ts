@@ -1,9 +1,11 @@
 import { createSign } from 'node:crypto';
+import { buildCategoryBreakdown } from './categories';
 import type {
   SeoOpportunitiesReport,
   SeoOpportunityPage,
   SeoOpportunityQuery,
   SeoTopQuery,
+  SeoWindowSummary,
 } from './types';
 
 interface SearchConsoleResult {
@@ -160,6 +162,7 @@ const WEAK_CTR_MIN_IMPRESSIONS = 20;
 const WEAK_CTR_MAX_CTR = 0.03;
 const WEAK_CTR_MAX_POSITION = 20;
 const ANALYTICS_DAYS = 28;
+const RECENT_DAYS = 7;
 const GSC_DATA_LAG_DAYS = 3;
 
 interface SearchAnalyticsRow {
@@ -170,11 +173,11 @@ interface SearchAnalyticsRow {
   position?: number;
 }
 
-function getAnalyticsDateRange() {
+function getAnalyticsDateRange(days = ANALYTICS_DAYS) {
   const end = new Date();
   end.setDate(end.getDate() - GSC_DATA_LAG_DAYS);
   const start = new Date(end);
-  start.setDate(start.getDate() - ANALYTICS_DAYS);
+  start.setDate(start.getDate() - days);
   return {
     startDate: start.toISOString().slice(0, 10),
     endDate: end.toISOString().slice(0, 10),
@@ -228,6 +231,8 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       strikingDistanceQueries: [],
       weakCtrPages: [],
       topQueries: [],
+      categories: [],
+      recent: null,
       message:
         'Missing Google Search Console service account configuration. Set GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY, and GOOGLE_SEARCH_CONSOLE_SITE_URL.',
     };
@@ -236,8 +241,9 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
   try {
     const { accessToken } = await getAccessToken();
     const { startDate, endDate } = getAnalyticsDateRange();
+    const recentRange = getAnalyticsDateRange(RECENT_DAYS);
 
-    const [queryRows, pageRows, summaryRows] = await Promise.all([
+    const [queryRows, pageRows, summaryRows, recentRows] = await Promise.all([
       querySearchAnalytics(accessToken, config.property, {
         startDate,
         endDate,
@@ -253,6 +259,11 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       querySearchAnalytics(accessToken, config.property, {
         startDate,
         endDate,
+        dimensions: [],
+      }),
+      querySearchAnalytics(accessToken, config.property, {
+        startDate: recentRange.startDate,
+        endDate: recentRange.endDate,
         dimensions: [],
       }),
     ]);
@@ -304,7 +315,25 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
         position: Number((row.position ?? 0).toFixed(1)),
       }));
 
+    const categories = buildCategoryBreakdown(
+      queryRows.map((row) => ({
+        query: row.keys?.[0] ?? '',
+        impressions: row.impressions ?? 0,
+        clicks: row.clicks ?? 0,
+        position: row.position ?? 0,
+      })),
+    );
+
     const summaryRow = summaryRows[0] ?? {};
+    const recentRow = recentRows[0] ?? {};
+    const recent: SeoWindowSummary = {
+      startDate: recentRange.startDate,
+      endDate: recentRange.endDate,
+      clicks: recentRow.clicks ?? 0,
+      impressions: recentRow.impressions ?? 0,
+      ctr: Number((recentRow.ctr ?? 0).toFixed(4)),
+      position: Number((recentRow.position ?? 0).toFixed(1)),
+    };
 
     return {
       generatedAt,
@@ -319,6 +348,8 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       strikingDistanceQueries,
       weakCtrPages,
       topQueries,
+      categories,
+      recent,
       message: `Found ${strikingDistanceQueries.length} striking-distance queries and ${weakCtrPages.length} pages with weak click-through over the last ${ANALYTICS_DAYS} days.`,
     };
   } catch (error) {
@@ -331,6 +362,8 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       strikingDistanceQueries: [],
       weakCtrPages: [],
       topQueries: [],
+      categories: [],
+      recent: null,
       message,
     };
   }

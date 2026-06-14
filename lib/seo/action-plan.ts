@@ -1,19 +1,7 @@
 import { CITIES } from '@/lib/data/cities';
+import { categorize } from './categories';
 import { buildStateDemand } from './demand';
 import type { SeoActionItem, SeoActionQueue, SeoOpportunitiesReport } from './types';
-
-const CATEGORY_TESTS: Array<{ name: string; test: RegExp }> = [
-  { name: 'Fix & Flip', test: /fix.?and.?flip|fix.?n.?flip|\bflip\b|rehab/i },
-  { name: 'DSCR / Rental', test: /dscr|rental|brrrr|no.?income|cash.?flow/i },
-  { name: 'Bridge', test: /\bbridge\b/i },
-  { name: 'Construction', test: /construction|ground.?up|new.?build/i },
-  { name: 'Commercial / Multifamily', test: /commercial|multifamily|multi.?family|apartment/i },
-  { name: 'Hard Money', test: /hard.?money/i },
-];
-
-function categorize(text: string): string {
-  return CATEGORY_TESTS.find((c) => c.test.test(text))?.name ?? 'General';
-}
 
 /**
  * Turn raw Search Console opportunities into a ranked, concrete work list.

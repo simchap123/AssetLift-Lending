@@ -11,19 +11,11 @@
  */
 import { readFileSync } from 'node:fs';
 import { google } from 'googleapis';
+import { buildCategoryBreakdown } from '../lib/seo/categories';
 
 const SITE_URL = process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL || 'https://www.assetliftlending.com/';
 const KEY_FILE = process.env.GSC_KEY_FILE;
-const DAYS = 90;
-
-const CATEGORIES: Array<{ name: string; test: RegExp }> = [
-  { name: 'Fix & Flip', test: /fix.?and.?flip|fix.?n.?flip|\bflip\b|rehab/i },
-  { name: 'DSCR / Rental', test: /dscr|rental|brrrr|no.?income|cash.?flow/i },
-  { name: 'Bridge', test: /\bbridge\b/i },
-  { name: 'Construction', test: /construction|ground.?up|new.?build/i },
-  { name: 'Commercial / Multifamily', test: /commercial|multifamily|multi.?family|apartment/i },
-  { name: 'Hard Money', test: /hard.?money/i },
-];
+const DAYS = Number(process.env.GSC_DAYS) || 90;
 
 interface Row {
   query: string;
@@ -31,13 +23,6 @@ interface Row {
   impressions: number;
   ctr: number;
   position: number;
-}
-
-function categorize(query: string): string {
-  for (const cat of CATEGORIES) {
-    if (cat.test.test(query)) return cat.name;
-  }
-  return 'Other / Brand / Local';
 }
 
 function pad(value: string | number, width: number, right = false): string {
@@ -95,39 +80,20 @@ async function main() {
       );
     });
 
-  const buckets = new Map<string, Row[]>();
-  for (const r of rows) {
-    const cat = categorize(r.query);
-    if (!buckets.has(cat)) buckets.set(cat, []);
-    buckets.get(cat)!.push(r);
-  }
+  const breakdown = buildCategoryBreakdown(rows);
 
   console.log(`\n--- BY LOAN CATEGORY (impressions, clicks, weighted avg position) ---`);
-  const summary = [...buckets.entries()]
-    .map(([name, rs]) => {
-      const impr = rs.reduce((s, r) => s + r.impressions, 0);
-      const clicks = rs.reduce((s, r) => s + r.clicks, 0);
-      const wpos = impr > 0 ? rs.reduce((s, r) => s + r.position * r.impressions, 0) / impr : 0;
-      return { name, count: rs.length, impr, clicks, wpos };
-    })
-    .sort((a, b) => b.impr - a.impr);
-
   console.log(`${pad('Category', 26)}${pad('Queries', 9, true)}${pad('Impr', 8, true)}${pad('Clicks', 8, true)}${pad('AvgPos', 8, true)}`);
-  for (const s of summary) {
-    console.log(`${pad(s.name, 26)}${pad(s.count, 9, true)}${pad(s.impr, 8, true)}${pad(s.clicks, 8, true)}${pad(s.wpos.toFixed(1), 8, true)}`);
+  for (const c of breakdown) {
+    console.log(`${pad(c.name, 26)}${pad(c.queries, 9, true)}${pad(c.impressions, 8, true)}${pad(c.clicks, 8, true)}${pad(c.position.toFixed(1), 8, true)}`);
   }
 
   console.log(`\n--- BEST OPPORTUNITY QUERIES PER CATEGORY (highest impressions) ---`);
-  for (const cat of CATEGORIES) {
-    const rs = (buckets.get(cat.name) ?? [])
-      .filter((r) => r.impressions >= 2)
-      .sort((a, b) => b.impressions - a.impressions)
-      .slice(0, 5);
-    if (rs.length === 0) continue;
-    console.log(`\n  ${cat.name}:`);
-    rs.forEach((r) => {
+  for (const c of breakdown) {
+    console.log(`\n  ${c.name}:`);
+    c.topQueries.forEach((q) => {
       console.log(
-        `    ${pad(r.query.slice(0, 44), 45)} impr ${pad(r.impressions, 4, true)}  pos ${r.position.toFixed(1)}`,
+        `    ${pad(q.query.slice(0, 44), 45)} impr ${pad(q.impressions, 4, true)}  pos ${q.position.toFixed(1)}`,
       );
     });
   }
