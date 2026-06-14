@@ -1,9 +1,82 @@
 {
-  "generatedAt": "2026-06-14T00:00:00.000Z",
-  "connected": false,
-  "dateRange": null,
-  "summary": null,
+  "generatedAt": "2026-06-14T03:58:01.110Z",
+  "connected": true,
+  "dateRange": {
+    "startDate": "2026-05-14",
+    "endDate": "2026-06-11"
+  },
+  "summary": {
+    "clicks": 26,
+    "impressions": 20945,
+    "ctr": 0.0012,
+    "position": 68.6
+  },
   "strikingDistanceQueries": [],
-  "weakCtrPages": [],
-  "message": "Pending first authority run with Search Console analytics access."
+  "weakCtrPages": [
+    {
+      "page": "/blog/no-income-verification-loans",
+      "impressions": 48,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 15,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/blog/real-estate-investor-guide-west-virginia",
+      "impressions": 42,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 16.5,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/faq",
+      "impressions": 38,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 19.4,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/about",
+      "impressions": 35,
+      "clicks": 1,
+      "ctr": 0.0286,
+      "position": 2.9,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/contact",
+      "impressions": 34,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 19.1,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/blog/bridge-loan-requirements-real-estate-investors",
+      "impressions": 27,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 11.7,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/blog/bridge-loan-interest-reserve-explained",
+      "impressions": 21,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 7.7,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/blog/ground-up-construction-loan-for-investors",
+      "impressions": 20,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 18.8,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    }
+  ],
+  "message": "Found 0 striking-distance queries and 8 pages with weak click-through over the last 28 days."
 }
