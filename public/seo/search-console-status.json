@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-06-14T03:30:10.652Z",
+  "generatedAt": "2026-06-14T03:31:49.235Z",
   "connected": true,
-  "submitted": false,
-  "property": "﻿https://www.assetliftlending.com/",
+  "submitted": true,
+  "property": "https://www.assetliftlending.com/",
   "sitemap": "https://www.assetliftlending.com/sitemap.xml",
-  "message": "Google OAuth token request failed: 400 {\"error\":\"invalid_grant\",\"error_description\":\"Invalid grant: account not found\"}"
+  "message": "Sitemap submitted to Google Search Console successfully.",
+  "status": 204
 }
