@@ -3123,6 +3123,80 @@ const BASE_BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "build-to-rent-loans",
+    title: "Build-to-Rent Loans: How to Finance New Construction You Keep as Rentals",
+    description:
+      "Build-to-rent loans finance new rental construction, then refinance into a DSCR loan. Compare BTR terms, costs, leverage, and the exit strategy.",
+    publishedAt: "2026-06-14T08:00:00Z",
+    author: "AssetLift Team",
+    authorRole: "Lending Specialists",
+    readTime: "9 min read",
+    category: "Construction",
+    tags: [
+      "build to rent loans",
+      "build-to-rent financing",
+      "BTR loans",
+      "ground-up construction",
+      "DSCR rental loans",
+      "rental property financing",
+    ],
+    heroImage: "/blog/build-to-rent-loans.jpg",
+    sections: [
+      {
+        heading: "What Is a Build-to-Rent Loan?",
+        content:
+          "A build-to-rent (BTR) loan finances the ground-up construction of a property you intend to hold and rent rather than sell. It is the financing structure behind one of the fastest-growing strategies in residential real estate: building new single-family homes, duplexes, or small multifamily specifically to operate as long-term rentals.\n\nThe distinction matters because it changes how the deal is underwritten. A fix-and-flip lender cares about resale value and how fast you can sell. A build-to-rent borrower is not selling, so the numbers that matter are construction cost, the finished property's appraised value, and the rent it will produce. That rent is what carries the permanent loan after the build is finished.\n\nBuild-to-rent appeals to investors for a simple reason: a brand-new property rents at a premium, needs almost no maintenance for years, and avoids the bidding wars and hidden-condition risk of buying existing inventory. The trade-off is that you take on construction risk and a longer timeline before the property produces income. The financing is built to manage exactly that gap.",
+      },
+      {
+        heading: "How Build-to-Rent Financing Actually Works",
+        content:
+          "Build-to-rent is almost always financed in two stages, and understanding both is the key to making the strategy work.\n\n<strong>Stage 1 — The construction loan.</strong> This is a short-term loan (typically 12 to 18 months) that funds the land and the vertical construction. Lenders usually advance up to 80% to 90% of total project cost (land plus hard and soft construction costs), with the borrower covering the rest as equity. The loan is interest-only and disbursed in <a href=\"/loans/ground-up-construction\">draws tied to construction milestones</a> — foundation, framing, mechanicals, and completion — so you only pay interest on the funds actually drawn. Rates on ground-up construction debt for investors typically run in the 9% to 12% range with 1 to 3 points, reflecting the higher risk of an unbuilt asset.\n\n<strong>Stage 2 — The DSCR takeout.</strong> Once the property is complete and rent-ready (and ideally leased), you refinance the construction loan into a long-term <a href=\"/loans/dscr-rental\">DSCR rental loan</a>. A DSCR loan qualifies on the property's cash flow, not your personal income, so the deciding number is the debt-service coverage ratio: monthly rent divided by the monthly mortgage payment (principal, interest, taxes, insurance, and any HOA). Most DSCR lenders look for a ratio of at least 1.0 to 1.25 and will lend 75% to 80% of the finished appraised value on a 30-year term. The proceeds pay off the construction loan and, on a well-bought deal, can return part of your original equity.\n\nThe reason this two-step structure works is that the finished, leased property is worth more and is far less risky than the dirt you started with — so the permanent loan is cheaper and longer than the construction loan it replaces. Planning the takeout before you break ground is what separates a smooth build-to-rent project from a stranded one.",
+      },
+      {
+        heading: "A Build-to-Rent Example, Start to Finish",
+        content:
+          "Numbers make the structure concrete. Suppose you are building a single-family rental on a lot you can acquire for $80,000, with construction estimated at $220,000 — a total project cost of $300,000. Comparable new rentals in the area appraise around $390,000 and rent for about $2,650 per month.\n\n<strong>During construction:</strong> A lender advancing 85% of cost funds $255,000, leaving you to bring roughly $45,000 in equity plus closing costs. At an 11% interest-only rate, your carrying cost averages a few hundred to around a thousand dollars a month early on and rises as more of the loan is drawn — call it roughly $1,800 per month near completion when most funds are outstanding. Budget for that carry; it is a real cost that many first-time builders forget.\n\n<strong>At the DSCR takeout:</strong> The finished home appraises at $390,000. A DSCR lender at 75% loan-to-value writes a $292,500 loan that pays off the $255,000 construction balance. At, say, a 7.5% rate on a 30-year term, the principal and interest run about $2,045 per month; add roughly $500 for taxes and insurance and the full payment is near $2,545. Against $2,650 in rent, the DSCR is about 1.04 — thin but bankable, and stronger if you can push rent or buy the lot better. You have converted a $300,000 build into a $390,000 asset financed by a stable, cash-flowing 30-year loan, with much of your $45,000 equity recovered at the refinance.\n\nThese figures are illustrative — land prices, construction costs, appraisals, and rates vary widely by market and over time — but the shape of the deal is what to internalize: cost in, appraised value and rent out, and a permanent loan that has to be supported by the rent.",
+      },
+      {
+        heading: "What Lenders Look For in a Build-to-Rent Borrower",
+        content:
+          "Because a build-to-rent deal spans two loans, you are underwritten on both the project and the eventual cash flow. The files that move cleanly tend to share a few traits.\n\n<strong>A realistic, documented budget.</strong> Lenders want a detailed construction budget with a line-item scope and a contingency of at least 10%. A vague lump-sum number is a red flag; a builder's contract with a draw schedule is what gives a lender confidence.\n\n<strong>A defensible appraisal and rent estimate.</strong> The whole strategy rests on the finished value and the rent. Support both with recent comparable new-construction sales and lease comps, not optimistic projections. If the deal only works at the top of the comp range, it is too thin.\n\n<strong>Experience or a strong team.</strong> First-time builders can absolutely get financed, but lenders weigh your builder's track record heavily. A licensed, insured general contractor with completed projects offsets a borrower's limited experience.\n\n<strong>Reserves and equity.</strong> Expect to contribute 10% to 20% of project cost and to hold reserves for the interest carry and any overruns. Construction almost always runs longer and costs more than planned; the borrowers who survive that are the ones who budgeted for it.\n\n<strong>A credit profile for the takeout.</strong> The construction loan leans on the asset, but the DSCR refinance typically wants a mid credit score around 660 to 680 or higher for the best terms. Knowing your takeout lender's requirements before you build prevents an unpleasant surprise at the finish line. When the numbers are ready, the cleanest next step is to <a href=\"/apply\">start an application</a> with the budget, scope, and rent comps in hand.",
+      },
+      {
+        heading: "Common Build-to-Rent Mistakes to Avoid",
+        content:
+          "The strategy is powerful, but the same handful of errors sink most struggling build-to-rent projects.\n\n<strong>Not planning the takeout first.</strong> The single most expensive mistake is building without confirming the permanent loan. If the finished property will not support a DSCR loan large enough to retire the construction debt, you can finish a beautiful home and still be stuck. Underwrite the DSCR refinance on day one.\n\n<strong>Underestimating the interest carry.</strong> Every month of construction is a month of interest with no rental income coming in. Delays compound that cost. Build a carry reserve and a realistic timeline, then add a buffer.\n\n<strong>Over-building for the rental market.</strong> Finishes that would sell well in a flip can be wasted on a rental. Build to the standard the neighborhood's renters will pay for, not to resale-luxury spec, or your cost basis outruns the rent.\n\n<strong>Thin rent coverage.</strong> A DSCR right at 1.0 leaves no margin for a vacancy, a repair, or a rate that ticks up before you lock the refinance. Aim to build in coverage, ideally 1.15 or better, by buying the lot well or targeting rents you can actually achieve.\n\n<strong>Choosing the wrong construction partner.</strong> The builder makes or breaks the timeline and the budget. Vet licenses, insurance, references, and completed work, and tie draws to milestones rather than dates.\n\nIf the strategy fits, build-to-rent is one of the most durable ways to grow a rental portfolio: you end up owning a new, low-maintenance asset financed by long-term debt the rent comfortably covers. If a project is timing-driven or transitional instead, compare it against <a href=\"/loans/bridge\">bridge financing</a> before committing to a full construction build. The right structure follows the plan, not the other way around.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the difference between a build-to-rent loan and a fix-and-flip loan?",
+        answer:
+          "Both can fund construction or renovation, but the exit is different. A fix-and-flip loan assumes you sell the finished property, so it is underwritten on resale value and speed. A build-to-rent loan assumes you keep and rent the property, so it is underwritten on the finished appraised value and the rent, then refinanced into a long-term DSCR loan rather than paid off by a sale.",
+      },
+      {
+        question: "Can I get a build-to-rent loan as a first-time builder?",
+        answer:
+          "Yes. Lenders can finance first-time builders, but they weigh your general contractor's experience heavily. A licensed, insured builder with completed projects, a detailed budget, and adequate reserves can offset limited personal construction experience.",
+      },
+      {
+        question: "How much money do I need to put into a build-to-rent project?",
+        answer:
+          "Plan on roughly 10% to 20% of total project cost as equity, since construction lenders typically advance 80% to 90% of cost. You should also hold separate reserves for the interest carry during construction and for potential overruns, which are common.",
+      },
+      {
+        question: "What DSCR do I need to refinance a new rental?",
+        answer:
+          "Most DSCR lenders look for a debt-service coverage ratio of at least 1.0 to 1.25, meaning the rent covers the full mortgage payment (principal, interest, taxes, insurance, and any HOA) with some margin. Building in coverage of 1.15 or higher protects you against vacancies, repairs, and rate movement before you lock the takeout.",
+      },
+      {
+        question: "Is the construction loan and the DSCR loan one loan or two?",
+        answer:
+          "They are usually two separate loans. A short-term, interest-only construction loan funds the build in draws, and once the property is complete and leased you refinance into a separate 30-year DSCR loan. Some lenders offer programs that streamline the transition, but underwriting the permanent loan up front is essential either way.",
+      },
+    ],
+  },
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
