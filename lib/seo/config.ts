@@ -10,6 +10,7 @@ export const SEO_ARTIFACT_PATHS = {
   backlinkQueue: 'public/seo/backlink-queue.json',
   backlinkOutreach: 'public/seo/backlink-outreach.json',
   searchConsoleStatus: 'public/seo/search-console-status.json',
+  opportunities: 'public/seo/opportunities.json',
   lastRun: 'public/seo/last-run.json',
 } as const;
 

@@ -60,6 +60,39 @@ export interface SeoAuditReport {
   };
 }
 
+export interface SeoOpportunityQuery {
+  query: string;
+  impressions: number;
+  clicks: number;
+  ctr: number;
+  position: number;
+  recommendation: string;
+}
+
+export interface SeoOpportunityPage {
+  page: string;
+  impressions: number;
+  clicks: number;
+  ctr: number;
+  position: number;
+  recommendation: string;
+}
+
+export interface SeoOpportunitiesReport {
+  generatedAt: string;
+  connected: boolean;
+  dateRange: { startDate: string; endDate: string } | null;
+  summary: {
+    clicks: number;
+    impressions: number;
+    ctr: number;
+    position: number;
+  } | null;
+  strikingDistanceQueries: SeoOpportunityQuery[];
+  weakCtrPages: SeoOpportunityPage[];
+  message: string;
+}
+
 export interface PublishArtifact {
   path: string;
   content: string;

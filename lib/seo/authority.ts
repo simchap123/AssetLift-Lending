@@ -1,6 +1,6 @@
 import { SEO_ARTIFACT_PATHS } from './config';
 import { fetchRepoFile, writeRepoFile } from './github';
-import { submitSitemapToSearchConsole } from './search-console';
+import { fetchSearchOpportunities, submitSitemapToSearchConsole } from './search-console';
 
 interface BacklinkQueueItem {
   tier: string;
@@ -27,6 +27,7 @@ interface AuthorityRunResult {
   anchorRotationIndex: number;
   pageRotationIndex: number;
   searchConsole: Awaited<ReturnType<typeof submitSitemapToSearchConsole>>;
+  opportunities: Awaited<ReturnType<typeof fetchSearchOpportunities>>;
   notes: string[];
 }
 
@@ -147,6 +148,7 @@ function stringifyWithTrailingNewline(value: unknown) {
 export async function runAuthorityJob(options?: { dryRun?: boolean }): Promise<AuthorityRunResult> {
   const generatedAt = new Date().toISOString();
   const searchConsole = await submitSitemapToSearchConsole();
+  const opportunities = await fetchSearchOpportunities();
   const outreach = buildOutreachBatch(generatedAt);
 
   const backlinkQueuePayload = {
@@ -174,6 +176,7 @@ export async function runAuthorityJob(options?: { dryRun?: boolean }): Promise<A
   const notes = [
     'Backlink queue refreshed from existing authority plan.',
     searchConsole.message,
+    opportunities.message,
     'AI visibility targets refreshed: llms.txt, llms-full.txt, entity facts, product pages, and high-authority citation targets.',
     'AI platforms such as ChatGPT, Perplexity, Claude, Gemini, and Copilot generally discover brands through crawlable pages, citations, backlinks, structured data, and trusted third-party mentions; this job improves those inputs but cannot force inclusion in a model index.',
     'This job cannot create third-party backlinks by itself; it can only keep the queue current and update submission status.',
@@ -199,6 +202,14 @@ export async function runAuthorityJob(options?: { dryRun?: boolean }): Promise<A
       stringifyWithTrailingNewline(searchConsolePayload),
       'chore(seo): refresh search console status',
       consoleCurrent.sha,
+    );
+
+    const opportunitiesCurrent = await fetchRepoFile(SEO_ARTIFACT_PATHS.opportunities);
+    await writeRepoFile(
+      SEO_ARTIFACT_PATHS.opportunities,
+      stringifyWithTrailingNewline(opportunities),
+      'chore(seo): refresh search opportunities',
+      opportunitiesCurrent.sha,
     );
 
     const outreachCurrent = await fetchRepoFile('public/seo/backlink-outreach.json');
@@ -236,6 +247,7 @@ export async function runAuthorityJob(options?: { dryRun?: boolean }): Promise<A
     anchorRotationIndex: outreach.anchorRotationIndex,
     pageRotationIndex: outreach.pageRotationIndex,
     searchConsole,
+    opportunities,
     notes,
   };
 }

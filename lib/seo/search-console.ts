@@ -1,4 +1,9 @@
 import { createSign } from 'node:crypto';
+import type {
+  SeoOpportunitiesReport,
+  SeoOpportunityPage,
+  SeoOpportunityQuery,
+} from './types';
 
 interface SearchConsoleResult {
   connected: boolean;
@@ -135,6 +140,183 @@ export async function submitSitemapToSearchConsole(): Promise<SearchConsoleResul
       submitted: false,
       property: config.property,
       sitemap: config.sitemap,
+      message,
+    };
+  }
+}
+
+// Queries within this position band are visible in search but not yet on top of
+// page 1 — the band where a focused content/linking push can realistically move
+// the ranking up. Below 5 is already strong; above 20 is usually too far to chase
+// without a much larger effort.
+const STRIKING_MIN_POSITION = 5;
+const STRIKING_MAX_POSITION = 20;
+const STRIKING_MIN_IMPRESSIONS = 5;
+// Pages with real visibility but a click-through rate low enough that a sharper
+// title tag / meta description is likely to win clicks from impressions you
+// already have.
+const WEAK_CTR_MIN_IMPRESSIONS = 20;
+const WEAK_CTR_MAX_CTR = 0.03;
+const WEAK_CTR_MAX_POSITION = 20;
+const ANALYTICS_DAYS = 28;
+const GSC_DATA_LAG_DAYS = 3;
+
+interface SearchAnalyticsRow {
+  keys?: string[];
+  clicks?: number;
+  impressions?: number;
+  ctr?: number;
+  position?: number;
+}
+
+function getAnalyticsDateRange() {
+  const end = new Date();
+  end.setDate(end.getDate() - GSC_DATA_LAG_DAYS);
+  const start = new Date(end);
+  start.setDate(start.getDate() - ANALYTICS_DAYS);
+  return {
+    startDate: start.toISOString().slice(0, 10),
+    endDate: end.toISOString().slice(0, 10),
+  };
+}
+
+async function querySearchAnalytics(
+  accessToken: string,
+  property: string,
+  body: Record<string, unknown>,
+): Promise<SearchAnalyticsRow[]> {
+  const response = await fetch(
+    `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(property)}/searchAnalytics/query`,
+    {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+      cache: 'no-store',
+    },
+  );
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`Search Analytics query failed: ${response.status} ${text}`);
+  }
+
+  const json = (await response.json()) as { rows?: SearchAnalyticsRow[] };
+  return json.rows ?? [];
+}
+
+function recommendForQuery(position: number): string {
+  if (position <= 10) {
+    return 'On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots.';
+  }
+  return 'On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1.';
+}
+
+export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport> {
+  const generatedAt = new Date().toISOString();
+  const config = getConfig();
+
+  if (!config) {
+    return {
+      generatedAt,
+      connected: false,
+      dateRange: null,
+      summary: null,
+      strikingDistanceQueries: [],
+      weakCtrPages: [],
+      message:
+        'Missing Google Search Console service account configuration. Set GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY, and GOOGLE_SEARCH_CONSOLE_SITE_URL.',
+    };
+  }
+
+  try {
+    const { accessToken } = await getAccessToken();
+    const { startDate, endDate } = getAnalyticsDateRange();
+
+    const [queryRows, pageRows, summaryRows] = await Promise.all([
+      querySearchAnalytics(accessToken, config.property, {
+        startDate,
+        endDate,
+        dimensions: ['query'],
+        rowLimit: 250,
+      }),
+      querySearchAnalytics(accessToken, config.property, {
+        startDate,
+        endDate,
+        dimensions: ['page'],
+        rowLimit: 250,
+      }),
+      querySearchAnalytics(accessToken, config.property, {
+        startDate,
+        endDate,
+        dimensions: [],
+      }),
+    ]);
+
+    const strikingDistanceQueries: SeoOpportunityQuery[] = queryRows
+      .filter(
+        (row) =>
+          (row.position ?? 0) >= STRIKING_MIN_POSITION &&
+          (row.position ?? 0) <= STRIKING_MAX_POSITION &&
+          (row.impressions ?? 0) >= STRIKING_MIN_IMPRESSIONS,
+      )
+      .sort((a, b) => (b.impressions ?? 0) - (a.impressions ?? 0))
+      .slice(0, 20)
+      .map((row) => ({
+        query: row.keys?.[0] ?? '',
+        impressions: row.impressions ?? 0,
+        clicks: row.clicks ?? 0,
+        ctr: row.ctr ?? 0,
+        position: Number((row.position ?? 0).toFixed(1)),
+        recommendation: recommendForQuery(row.position ?? 0),
+      }));
+
+    const weakCtrPages: SeoOpportunityPage[] = pageRows
+      .filter(
+        (row) =>
+          (row.impressions ?? 0) >= WEAK_CTR_MIN_IMPRESSIONS &&
+          (row.ctr ?? 0) < WEAK_CTR_MAX_CTR &&
+          (row.position ?? 0) <= WEAK_CTR_MAX_POSITION,
+      )
+      .sort((a, b) => (b.impressions ?? 0) - (a.impressions ?? 0))
+      .slice(0, 15)
+      .map((row) => ({
+        page: (row.keys?.[0] ?? '').replace(config.property, '/'),
+        impressions: row.impressions ?? 0,
+        clicks: row.clicks ?? 0,
+        ctr: Number((row.ctr ?? 0).toFixed(4)),
+        position: Number((row.position ?? 0).toFixed(1)),
+        recommendation:
+          'High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn.',
+      }));
+
+    const summaryRow = summaryRows[0] ?? {};
+
+    return {
+      generatedAt,
+      connected: true,
+      dateRange: { startDate, endDate },
+      summary: {
+        clicks: summaryRow.clicks ?? 0,
+        impressions: summaryRow.impressions ?? 0,
+        ctr: Number((summaryRow.ctr ?? 0).toFixed(4)),
+        position: Number((summaryRow.position ?? 0).toFixed(1)),
+      },
+      strikingDistanceQueries,
+      weakCtrPages,
+      message: `Found ${strikingDistanceQueries.length} striking-distance queries and ${weakCtrPages.length} pages with weak click-through over the last ${ANALYTICS_DAYS} days.`,
+    };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'Unknown Search Console analytics error';
+    return {
+      generatedAt,
+      connected: true,
+      dateRange: null,
+      summary: null,
+      strikingDistanceQueries: [],
+      weakCtrPages: [],
       message,
     };
   }
