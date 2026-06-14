@@ -78,6 +78,13 @@ export interface SeoOpportunityPage {
   recommendation: string;
 }
 
+export interface SeoTopQuery {
+  query: string;
+  impressions: number;
+  clicks: number;
+  position: number;
+}
+
 export interface SeoOpportunitiesReport {
   generatedAt: string;
   connected: boolean;
@@ -90,7 +97,32 @@ export interface SeoOpportunitiesReport {
   } | null;
   strikingDistanceQueries: SeoOpportunityQuery[];
   weakCtrPages: SeoOpportunityPage[];
+  topQueries: SeoTopQuery[];
   message: string;
+}
+
+export type SeoActionType =
+  | 'improve-meta'
+  | 'expand-content'
+  | 'add-internal-links'
+  | 'build-demand-page';
+
+export interface SeoActionItem {
+  type: SeoActionType;
+  target: string;
+  category: string;
+  priority: number;
+  impressions: number;
+  position: number;
+  rationale: string;
+  action: string;
+}
+
+export interface SeoActionQueue {
+  generatedAt: string;
+  connected: boolean;
+  summary: string;
+  items: SeoActionItem[];
 }
 
 export interface PublishArtifact {

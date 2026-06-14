@@ -3,6 +3,7 @@ import type {
   SeoOpportunitiesReport,
   SeoOpportunityPage,
   SeoOpportunityQuery,
+  SeoTopQuery,
 } from './types';
 
 interface SearchConsoleResult {
@@ -226,6 +227,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       summary: null,
       strikingDistanceQueries: [],
       weakCtrPages: [],
+      topQueries: [],
       message:
         'Missing Google Search Console service account configuration. Set GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY, and GOOGLE_SEARCH_CONSOLE_SITE_URL.',
     };
@@ -240,7 +242,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
         startDate,
         endDate,
         dimensions: ['query'],
-        rowLimit: 250,
+        rowLimit: 1000,
       }),
       querySearchAnalytics(accessToken, config.property, {
         startDate,
@@ -292,6 +294,16 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
           'High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn.',
       }));
 
+    const topQueries: SeoTopQuery[] = [...queryRows]
+      .sort((a, b) => (b.impressions ?? 0) - (a.impressions ?? 0))
+      .slice(0, 150)
+      .map((row) => ({
+        query: row.keys?.[0] ?? '',
+        impressions: row.impressions ?? 0,
+        clicks: row.clicks ?? 0,
+        position: Number((row.position ?? 0).toFixed(1)),
+      }));
+
     const summaryRow = summaryRows[0] ?? {};
 
     return {
@@ -306,6 +318,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       },
       strikingDistanceQueries,
       weakCtrPages,
+      topQueries,
       message: `Found ${strikingDistanceQueries.length} striking-distance queries and ${weakCtrPages.length} pages with weak click-through over the last ${ANALYTICS_DAYS} days.`,
     };
   } catch (error) {
@@ -317,6 +330,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       summary: null,
       strikingDistanceQueries: [],
       weakCtrPages: [],
+      topQueries: [],
       message,
     };
   }

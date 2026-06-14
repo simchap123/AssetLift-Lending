@@ -1,4 +1,4 @@
-import { CITIES } from '@/lib/data/cities';
+import { CITIES, type CityData } from '@/lib/data/cities';
 import { STATES } from '@/lib/data/states';
 import type { SeoBacklogItem, SeoCandidate, SeoIdeaItem, SeoJobName } from './types';
 import { SEO_CONTENT_BACKLOG, SEO_MARKETING_IDEAS } from './config';
@@ -46,8 +46,13 @@ function buildPost(input: {
   };
 }
 
-export function buildProgrammaticCandidate(existingSlugs: Set<string>, date: Date): SeoCandidate | null {
-  const city = CITIES.find((entry) => !existingSlugs.has(`investor-outlook-${entry.citySlug}-${entry.stateAbbreviation.toLowerCase()}`));
+export function buildProgrammaticCandidate(
+  existingSlugs: Set<string>,
+  date: Date,
+  cityOrder?: CityData[],
+): SeoCandidate | null {
+  const pool = cityOrder && cityOrder.length > 0 ? cityOrder : CITIES;
+  const city = pool.find((entry) => !existingSlugs.has(`investor-outlook-${entry.citySlug}-${entry.stateAbbreviation.toLowerCase()}`));
   if (!city) {
     return null;
   }

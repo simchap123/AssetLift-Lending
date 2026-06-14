@@ -8,8 +8,10 @@ import {
   buildProgrammaticCandidate,
   buildStrategyCandidate,
 } from './content';
+import { orderCitiesByDemand } from './demand';
 import { evaluateCandidate } from './guardrails';
 import { publishSeoRun } from './publisher';
+import { fetchSearchOpportunities } from './search-console';
 import type { SeoCandidate, SeoJobName, SeoRunResult } from './types';
 
 function getChangedUrls(candidate: SeoCandidate | null) {
@@ -31,7 +33,12 @@ export async function runSeoJob(job: SeoJobName, options?: { dryRun?: boolean })
 
   let candidate: SeoCandidate | null = null;
   if (job === 'programmatic') {
-    candidate = buildProgrammaticCandidate(existingSlugs, now);
+    // Prioritize the next city by real Search Console demand so new pages target
+    // proven-interest markets instead of going alphabetically. Falls back to the
+    // natural city order when Search Console data is unavailable.
+    const opportunities = await fetchSearchOpportunities();
+    const cityOrder = orderCitiesByDemand(opportunities.topQueries);
+    candidate = buildProgrammaticCandidate(existingSlugs, now, cityOrder);
   } else if (job === 'strategy') {
     candidate = buildStrategyCandidate(existingSlugs, now);
   } else if (job === 'ideas') {
