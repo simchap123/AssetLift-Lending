@@ -1,11 +1,14 @@
 {
-  "generatedAt": "2026-06-14T23:21:09.537Z",
-  "job": "audit",
-  "published": false,
-  "changedUrls": [],
+  "generatedAt": "2026-06-15T10:26:09.916Z",
+  "job": "programmatic",
+  "published": true,
+  "changedUrls": [
+    "https://www.assetliftlending.com/blog/investor-outlook-austin-tx",
+    "https://www.assetliftlending.com/blog"
+  ],
   "notes": [
-    "Job label: SEO Audit",
-    "Schedule slot: 04:05 UTC and 13:05 UTC / 00:05 ET and 09:05 ET during DST",
-    "Focus keywords: hard money lender, DSCR loans, fix and flip loans"
+    "Job label: Programmatic SEO",
+    "Schedule slot: 10:05 UTC and 22:05 UTC / 06:05 ET and 18:05 ET during DST",
+    "Focus keywords: hard money lender in city, fix and flip loans state, DSCR loans state"
   ]
 }
