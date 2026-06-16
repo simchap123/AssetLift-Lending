@@ -52,18 +52,23 @@ jobs:
           if [ -n "${{ github.event.inputs.job }}" ]; then
             JOB="${{ github.event.inputs.job }}"
           else
-            HOUR=$(date -u +%H)
-            case "$HOUR" in
-              08) JOB=authority ;;
-              10) JOB=programmatic ;;
-              16) JOB=strategy ;;
-              18) JOB=ideas ;;
-              22) JOB=programmatic ;;
-              *)  JOB=audit ;;
+            # Select by the cron expression that triggered this run, NOT the
+            # wall-clock hour. GitHub Actions delays scheduled runs (often by
+            # 20-60 min), so an hour-based picker missed the authority/strategy/
+            # ideas slots and fell through to audit every day.
+            case "${{ github.event.schedule }}" in
+              "5 4 * * *")  JOB=audit ;;
+              "5 8 * * *")  JOB=authority ;;
+              "5 10 * * *") JOB=programmatic ;;
+              "5 13 * * *") JOB=audit ;;
+              "5 16 * * *") JOB=strategy ;;
+              "5 18 * * *") JOB=ideas ;;
+              "5 22 * * *") JOB=programmatic ;;
+              *)            JOB=audit ;;
             esac
           fi
           echo "job=$JOB" >> "$GITHUB_OUTPUT"
-          echo "Running SEO job: $JOB"
+          echo "Running SEO job: $JOB (schedule: ${{ github.event.schedule }})"
 
       - name: Install dependencies
         run: npm ci
