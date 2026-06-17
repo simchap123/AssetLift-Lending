@@ -3,6 +3,7 @@ import { STATES } from '@/lib/data/states';
 import { CITIES } from '@/lib/data/cities';
 import { BLOG_POSTS } from '@/lib/data/blog-posts';
 import { COMPARISONS } from '@/lib/data/comparisons';
+import geoAnswers from '@/lib/data/geo-answers.json';
 
 const BASE_URL = 'https://www.assetliftlending.com';
 
@@ -216,5 +217,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...statePages, ...cityPages, ...blogPages, ...comparisonPages];
+  // GEO answer pages
+  const geoPages: MetadataRoute.Sitemap = (geoAnswers as Array<{ slug: string; publishedAt: string }>).map(a => ({
+    url: `${BASE_URL}/answers/${a.slug}`,
+    lastModified: new Date(a.publishedAt),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  // Answers index
+  const answersIndex: MetadataRoute.Sitemap = geoAnswers.length > 0 ? [{
+    url: `${BASE_URL}/answers`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }] : [];
+
+  return [...staticPages, ...statePages, ...cityPages, ...blogPages, ...comparisonPages, ...answersIndex, ...geoPages];
 }

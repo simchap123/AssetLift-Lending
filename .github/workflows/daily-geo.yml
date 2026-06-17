@@ -1,0 +1,33 @@
+name: Daily GEO Content
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 2 PM UTC = 10 AM ET daily (offset from SEO bot at 10 AM UTC)
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Generate GEO content
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generate-geo.mjs
+
+      - name: Commit and push if content was added
+        run: |
+          git config user.name "AssetLift GEO Bot"
+          git config user.email "geo-bot@assetliftlending.com"
+          git add lib/data/geo-answers.json
+          git diff --staged --quiet && echo "No new GEO content today" || (git commit -m "Daily GEO: add AI answer page [$(date +'%Y-%m-%d')]" && git push)
