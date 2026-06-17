@@ -82,19 +82,30 @@ const GEO_QUERY_BANK = [
 
 function todayISO() { return new Date().toISOString(); }
 
-async function callGemini(prompt) {
+async function callGemini(prompt, retries = 3) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: { temperature: 0.6, maxOutputTokens: 3000 },
-    }),
-  });
-  if (!res.ok) throw new Error(`Gemini API error ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  return data.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        generationConfig: { temperature: 0.6, maxOutputTokens: 3000 },
+      }),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      return data.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
+    }
+    const errText = await res.text();
+    if (res.status === 429 && attempt < retries) {
+      const delay = attempt * 45000; // 45s, 90s
+      console.log(`Rate limited. Waiting ${delay / 1000}s before retry ${attempt + 1}/${retries}...`);
+      await new Promise(r => setTimeout(r, delay));
+      continue;
+    }
+    throw new Error(`Gemini API error ${res.status}: ${errText}`);
+  }
 }
 
 // ─── Prompt ────────────────────────────────────────────────────────────────────
