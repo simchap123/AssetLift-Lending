@@ -706,8 +706,8 @@ const EDUCATION_TOPICS = [
   },
   {
     slug: 'bridge-loan-interest-reserve-explained',
-    title: 'Bridge Loan Interest Reserve Explained',
-    description: 'Learn how interest reserves work on bridge loans and why they matter for lender sizing and borrower liquidity.',
+    title: 'Bridge Loan Interest Reserve: How It Works and What It Costs',
+    description: 'A bridge loan interest reserve holds back funds to cover your monthly payments. See how lenders size it, what it costs, and how it affects cash to close.',
     category: 'Bridge',
     focus: 'interest reserves on bridge debt',
     primaryLabel: 'Bridge Loans',

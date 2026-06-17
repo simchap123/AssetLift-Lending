@@ -2263,7 +2263,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
     slug: "no-income-verification-loans",
     title: "No Income Verification Loans for Real Estate Investors",
     description:
-      "Learn how no-income-verification DSCR loans work for real estate investors. Qualify based on property cash flow, not personal income. Understand eligibility, rates, and how AssetLift simplifies the process.",
+      "No-income-verification DSCR loans qualify you on rental cash flow, not tax returns or W-2s. See requirements, rates, and how to get approved fast.",
     publishedAt: "2026-03-22",
     author: "AssetLift Team",
     authorRole: "Content Team",
