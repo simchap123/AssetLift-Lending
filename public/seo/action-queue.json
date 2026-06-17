@@ -1,86 +1,86 @@
 {
-  "generatedAt": "2026-06-16T14:01:45.147Z",
+  "generatedAt": "2026-06-17T03:08:53.901Z",
   "connected": true,
-  "summary": "11 prioritized actions from real Search Console demand (top priority: Maryland).",
+  "summary": "10 prioritized actions from real Search Console demand (top priority: California).",
   "items": [
-    {
-      "type": "build-demand-page",
-      "target": "Maryland",
-      "category": "Geo",
-      "priority": 322,
-      "impressions": 322,
-      "position": 0,
-      "rationale": "322 impressions across 9 queries mention Maryland.",
-      "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
     {
       "type": "build-demand-page",
       "target": "California",
       "category": "Geo",
-      "priority": 318,
-      "impressions": 318,
+      "priority": 298,
+      "impressions": 298,
       "position": 0,
-      "rationale": "318 impressions across 10 queries mention California.",
+      "rationale": "298 impressions across 9 queries mention California.",
       "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Maryland",
+      "category": "Geo",
+      "priority": 281,
+      "impressions": 281,
+      "position": 0,
+      "rationale": "281 impressions across 8 queries mention Maryland.",
+      "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 232,
-      "impressions": 232,
+      "priority": 241,
+      "impressions": 241,
       "position": 0,
-      "rationale": "232 impressions across 7 queries mention Colorado.",
+      "rationale": "241 impressions across 7 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Arizona",
-      "category": "Geo",
-      "priority": 159,
-      "impressions": 159,
-      "position": 0,
-      "rationale": "159 impressions across 5 queries mention Arizona.",
-      "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Nevada",
       "category": "Geo",
-      "priority": 155,
-      "impressions": 155,
+      "priority": 153,
+      "impressions": 153,
       "position": 0,
-      "rationale": "155 impressions across 4 queries mention Nevada.",
+      "rationale": "153 impressions across 4 queries mention Nevada.",
       "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 132,
-      "impressions": 132,
+      "priority": 152,
+      "impressions": 152,
       "position": 0,
-      "rationale": "132 impressions across 3 queries mention Idaho.",
+      "rationale": "152 impressions across 4 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Arizona",
+      "category": "Geo",
+      "priority": 141,
+      "impressions": 141,
+      "position": 0,
+      "rationale": "141 impressions across 4 queries mention Arizona.",
+      "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/blog/real-estate-investor-guide-west-virginia",
       "category": "General",
-      "priority": 84,
-      "impressions": 42,
-      "position": 16.9,
-      "rationale": "42 impressions at position 16.9 but only 0 clicks.",
+      "priority": 82,
+      "impressions": 41,
+      "position": 16.2,
+      "rationale": "41 impressions at position 16.2 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/blog/no-income-verification-loans",
       "category": "DSCR / Rental",
-      "priority": 78,
-      "impressions": 39,
+      "priority": 76,
+      "impressions": 38,
       "position": 16.6,
-      "rationale": "39 impressions at position 16.6 but only 0 clicks.",
+      "rationale": "38 impressions at position 16.6 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -97,21 +97,11 @@
       "type": "improve-meta",
       "target": "/blog/bridge-loan-requirements-real-estate-investors",
       "category": "Bridge",
-      "priority": 50,
-      "impressions": 25,
-      "position": 12.2,
-      "rationale": "25 impressions at position 12.2 but only 0 clicks.",
+      "priority": 42,
+      "impressions": 21,
+      "position": 13.7,
+      "rationale": "21 impressions at position 13.7 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "expand-content",
-      "target": "dscr loan hawaii guide",
-      "category": "DSCR / Rental",
-      "priority": 8,
-      "impressions": 5,
-      "position": 12.6,
-      "rationale": "Ranking at position 12.6 with 5 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     }
   ]
 }
