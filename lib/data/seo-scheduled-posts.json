@@ -1300,5 +1300,60 @@
         "answer": "While hard money lenders focus more on the asset, a minimum credit score of 660 is generally required for most of AssetLift Lending's programs. A stronger credit profile can sometimes lead to more favorable terms."
       }
     ]
+  },
+  {
+    "slug": "construction-loan-draw-schedule",
+    "title": "Construction Loan Draw Schedule: How It Works for Investors",
+    "description": "Master the construction loan draw schedule. Learn how draws work, manage your project budget, and ensure efficient funding for your real estate...",
+    "publishedAt": "2026-06-17T13:49:25.642Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "8 min read",
+    "category": "Construction",
+    "tags": [
+      "construction loans",
+      "draw schedule",
+      "real estate investing",
+      "ground-up construction",
+      "fix and flip",
+      "hard money loans"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "The Core Mechanics of a Construction Loan Draw Schedule",
+        "content": "For experienced real estate investors, understanding the construction loan draw schedule isn't just about cash flow; it's about risk management and project efficiency. Unlike traditional mortgages, construction loans, including our ground-up construction and fix-and-flip programs, disburse funds incrementally. This structured release of capital is tied directly to project milestones, typically ranging from 5 to 10 draws over the project lifecycle. For a $1.5 million ground-up development, your initial draw might cover land acquisition and permits, perhaps 10-15% of the total loan. Subsequent draws are released upon the completion of specific stages – foundation, framing, rough-ins (electrical, plumbing, HVAC), drywall, finishes, and final inspections. This phased funding protects both the lender and the investor by ensuring funds are used as intended and the project progresses according to plan, mitigating the risk of funds being misallocated or the project stalling due to poor management. AssetLift typically funds up to 100% of the rehab costs for fix-and-flip projects, disbursed through a robust draw schedule."
+      },
+      {
+        "heading": "Structuring Your Draw Schedule: Key Milestones and Percentages",
+        "content": "A well-defined draw schedule is the backbone of any successful construction project. For a typical single-family ground-up build, a common draw breakdown might look like this: Draw 1 (Foundation & Site Work): 15% of the construction budget, released after permits, surveys, and concrete pour. Draw 2 (Framing & Exterior Shell): 25%, following the completion of framing, roofing, windows, and exterior sheathing. Draw 3 (Rough-ins): 20%, once all electrical, plumbing, and HVAC systems are installed but before drywall. Draw 4 (Drywall & Interior Finishes): 20%, covering insulation, drywall, flooring, and interior doors. Draw 5 (Completion & Punch List): 20%, for cabinetry, fixtures, landscaping, final inspections, and certificate of occupancy. Each draw requires an inspection by a third-party appraiser or construction monitor to verify the work completed. This meticulous process ensures that funds, whether for a $250,000 fix-and-flip or a $3 million multi-unit development, are disbursed only when progress warrants it, keeping your project on track and accountable."
+      },
+      {
+        "heading": "The Draw Request Process: From Inspection to Funding",
+        "content": "Initiating a draw request involves a clear, sequential process. Once a pre-defined milestone is met, your general contractor submits a formal draw request to you, detailing the work completed and materials on site. You then forward this request to AssetLift. We typically require a third-party inspection, often by an independent appraiser or construction consultant, who verifies the completed work against the approved plans and budget. This inspection usually costs between $150 and $500 per visit, depending on project complexity and location. After the inspection report confirms the progress, usually within 2-3 business days, AssetLift processes the draw. Funds are typically wired directly to your designated account or directly to subcontractors and suppliers, often within 24-48 hours post-approval. This streamlined process minimizes delays, ensuring your contractors and suppliers are paid promptly, which is crucial for maintaining project momentum and avoiding costly stoppages. Our minimum loan amount is $100,000, extending up to $5 million, accommodating a wide range of investor needs across 46 states."
+      },
+      {
+        "heading": "Navigating Challenges and Optimizing Your Draw Schedule",
+        "content": "Even with a robust draw schedule, unforeseen challenges can arise. Change orders, material delays, or unexpected site conditions can impact progress and budget. Proactive communication with your lender and contractor is paramount. Always maintain a contingency budget, typically 5-10% of the total project cost, to absorb minor overruns without derailing your draw schedule. If a significant change order impacts a draw, it's essential to discuss it with AssetLift immediately; we can often make adjustments subject to underwriting review and updated appraisals. For instance, if unexpected soil conditions require an additional $20,000 for foundation work, transparent communication can lead to a revised draw, potentially drawing from the contingency or an approved budget amendment. Remember, our goal is to help you succeed. A strong credit score, typically 660+, and a clear project plan enhance your ability to secure favorable terms and smoother draw approvals for programs like DSCR loans (up to 85% LTV) or bridge loans (up to 80% LTV) as exit strategies."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How many draws can I expect for a typical fix-and-flip loan?",
+        "answer": "For a standard fix-and-flip project, you can typically expect between 3 to 7 draws, depending on the scope and duration. A smaller project might have 3-4 draws (e.g., demo/rough-in, finishes, final), while a larger, more complex rehab could involve 6-7 draws over a 6-9 month period."
+      },
+      {
+        "question": "What is the typical timeframe from requesting a draw to receiving funds?",
+        "answer": "Once you submit a draw request and the required inspection is completed (usually 2-3 business days), funds are typically disbursed within 24-48 hours. This means the entire process, from request to funding, often takes 3-5 business days, assuming all documentation is in order."
+      },
+      {
+        "question": "Can I get an advance on a draw if I have unexpected expenses?",
+        "answer": "Generally, draws are released only after work is completed and verified. Lenders rarely provide advances. It's crucial to have a contingency fund (5-10% of project costs) for unexpected expenses. If a significant, approved change impacts the budget, a revised draw schedule might be considered, subject to underwriting and project reassessment."
+      },
+      {
+        "question": "What happens if my project falls behind schedule and misses a draw milestone?",
+        "answer": "If your project falls behind, simply inform AssetLift. Draws are tied to completed work, not strict calendar dates. While delays can impact interest accrual, missing a milestone doesn't automatically mean losing a draw. The draw will be released once the work for that stage is completed and verified by inspection. Persistent, significant delays may trigger a review of the loan terms, but transparency is key."
+      }
+    ]
   }
 ]
