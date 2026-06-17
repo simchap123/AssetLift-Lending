@@ -66,60 +66,6 @@ const buildStateGuide = (
   };
 };
 
-const buildCityGuide = (
-  city: (typeof CITIES)[number],
-  index: number,
-): BlogPost => ({
-  slug: `hard-money-loans-${city.citySlug}-${city.stateAbbreviation.toLowerCase()}`,
-  title: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}: Investor Guide`,
-  description: `A local guide to hard money loans, fix and flip financing, bridge loans, and DSCR options for investors buying in ${city.cityName}.`,
-  publishedAt: publishedAtFor(STATES.length + index),
-  author: 'AssetLift Team',
-  authorRole: 'Lending Specialists',
-  readTime: '8 min read',
-  category: 'Local Markets',
-  tags: [
-    `hard money lender ${city.cityName.toLowerCase()}`,
-    `fix and flip loans ${city.cityName.toLowerCase()}`,
-    `bridge loans ${city.cityName.toLowerCase()}`,
-    `${city.cityName.toLowerCase()} real estate investing`,
-    `${city.cityName.toLowerCase()} DSCR loan`,
-  ],
-  heroImage: '/blog/city-guide.jpg',
-  sections: [
-    {
-      heading: `Why ${city.cityName} Creates Local Borrower Intent`,
-      content: `${city.overview}\n\nBorrowers do not usually search for financing in abstract terms when they are active in ${city.cityName}. They search with a city modifier because local conditions affect everything from leverage expectations to exit timing. In a market with a median home price around ${city.medianHomePrice}, the lender needs to understand how renovation budgets, neighborhood comps, and buyer demand change from one submarket to the next.\n\nThat is why local content matters. A borrower looking at ${city.cityName} wants to know whether the lender can handle the kind of deal that actually trades there. The most useful starting points are the <a href="/lending/${city.stateSlug}/${city.citySlug}">${city.cityName} lending page</a> and the broader <a href="/lending/${city.stateSlug}">${city.stateName} market page</a>.`,
-    },
-    {
-      heading: `What Usually Makes a ${city.cityName} Deal Financeable`,
-      content: `${city.investmentHighlight}\n\nIn practical terms, the best files in ${city.cityName} usually have a credible scope, a realistic basis, and a clear exit. Fix and flip borrowers need ARV support that fits the neighborhood, bridge borrowers need a believable refinance or sale event, and rental borrowers need a path to stable cash flow. Lenders are far more comfortable when the borrower can explain exactly why the property works in ${city.cityName} instead of relying on generic market optimism.`,
-    },
-    {
-      heading: `Neighborhood and Execution Notes for ${city.cityName} Investors`,
-      content: `Local detail matters because different parts of ${city.cityName} behave differently. Investors often focus on neighborhoods like ${city.topNeighborhoods.slice(0, 4).join(', ')}, where property condition, buyer profile, and renovation standards can meaningfully shift the underwriting conversation. A deal that looks strong in one part of the metro can become thin very quickly if the finish level, budget, or resale assumptions do not line up with local demand.\n\nThe cleanest approach is to match the property to the right loan. Borrowers doing a shorter renovation-and-sale plan should start with <a href="/loans/fix-and-flip">fix and flip financing</a>. Transitional or timing-driven acquisitions often fit <a href="/loans/bridge">bridge loans</a>. Stabilized rental exits usually belong on the <a href="/loans/dscr-rental">DSCR side</a>.`,
-    },
-    {
-      heading: `Best Next Step for a ${city.cityName} Borrower`,
-      content: `The strongest next step is not asking for the most aggressive leverage first. It is building a file that survives real underwriting. That means purchase terms, scope, comp support, title readiness, and a timeline that accounts for valuation and insurance. Once those basics are in place, the lender can shape the structure around the actual opportunity.\n\nIf you are actively buying in ${city.cityName}, review the city page, compare it with the right product page, and move into the <a href="/apply">application</a> when the numbers are ready. Borrowers who arrive organized usually close faster than borrowers who spend weeks shopping for theoretical terms that fall apart once diligence starts.`,
-    },
-  ],
-  faqs: [
-    {
-      question: `Are hard money loans common in ${city.cityName}?`,
-      answer: `Yes. Hard money and other business-purpose investor loans are commonly used in ${city.cityName} for acquisitions, renovations, bridge situations, and rental exits when speed or flexibility matters more than bank-style underwriting.`,
-    },
-    {
-      question: `What should I show a lender for a ${city.cityName} flip?`,
-      answer: `Bring a clear purchase contract, realistic renovation scope, local comps that support the after-repair value, and a basic exit timeline. The more disciplined the file, the easier it is to underwrite cleanly.`,
-    },
-    {
-      question: `Should I use a bridge or fix and flip loan in ${city.cityName}?`,
-      answer: `Use a fix and flip loan when the plan is acquisition plus rehab and a resale or refinance after improvements. Use bridge financing when the project is mostly about timing, stabilization, or a short-term transition before permanent debt.`,
-    },
-  ],
-});
-
 const COMPARISON_TOPICS = [
   {
     slug: 'assetlift-vs-kiavi-fix-and-flip-loans',
@@ -1318,7 +1264,9 @@ const buildCityProgramPost = (
 
 export const GENERATED_BLOG_POSTS: BlogPost[] = [
   ...STATES.map((state, index) => buildStateGuide(state, index)),
-  ...CITIES.map((city, index) => buildCityGuide(city, index)),
+  // City "hard money loans {city}" guides removed: they duplicated the canonical
+  // /lending/{state}/{city} pages and were crawled-but-not-indexed. Old URLs 301
+  // to the lending pages via next.config redirects.
   ...COMPARISON_TOPICS.map((topic, index) => buildComparisonPost(topic, index)),
   ...EDUCATION_TOPICS.map((topic, index) => buildEducationPost(topic, index)),
   ...PROGRAM_MARKET_TOPICS.map((topic, index) => buildProgramMarketPost(topic, index)),
