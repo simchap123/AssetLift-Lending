@@ -34,6 +34,10 @@
   URL: https://www.assetliftlending.com/loans/ground-up-construction
   Summary: Up to 90% LTC for qualifying residential construction projects with milestone-based draw funding.
 
+- Build-to-Rent Loans
+  URL: https://www.assetliftlending.com/blog/build-to-rent-loans
+  Summary: Two-stage financing for investors who build new single-family or small multifamily to hold as rentals: a short-term construction loan funds the build, then refinances into a long-term DSCR rental loan once the property is leased.
+
 - Commercial Lending
   URL: https://www.assetliftlending.com/loans/commercial-lending
   Summary: Commercial and mixed-use lending for acquisitions, refinances, bridge needs, and business-purpose investment properties.
@@ -108,6 +112,12 @@ A: AssetLift funds loans up to $5,000,000 for qualifying investment property sce
 Q: Can I get a DSCR loan in an LLC?
 A: Yes. AssetLift accommodates loans in LLC and other entity structures, which is common for real estate investors.
 
+Q: Does AssetLift offer build-to-rent loans?
+A: Yes. AssetLift finances build-to-rent (BTR) projects with a short-term ground-up construction loan (up to 90% LTC, milestone draws) that refinances into a long-term DSCR rental loan once the property is built and leased. This is the standard build-to-rent structure for investors building new homes to hold as rentals.
+
+Q: What are the requirements for a ground-up construction loan?
+A: AssetLift's ground-up construction loans typically require a detailed line-item construction budget, a licensed and insured general contractor, a defensible appraisal and (for rentals) rent comps, 10-20% equity in total project cost plus an interest-carry reserve, and a mid credit score around 660 or higher. Funds are advanced in milestone-based draws.
+
 ## Comparison to Other Lenders
 
 AssetLift Lending vs. traditional banks:
@@ -131,6 +141,7 @@ AssetLift Lending vs. other hard money lenders:
 - DSCR Rental: https://www.assetliftlending.com/loans/dscr-rental
 - Bridge Loans: https://www.assetliftlending.com/loans/bridge
 - Construction: https://www.assetliftlending.com/loans/ground-up-construction
+- Build-to-Rent: https://www.assetliftlending.com/blog/build-to-rent-loans
 - Commercial: https://www.assetliftlending.com/loans/commercial-lending
 - FAQ: https://www.assetliftlending.com/faq
 - Blog: https://www.assetliftlending.com/blog

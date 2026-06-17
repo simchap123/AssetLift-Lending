@@ -5,13 +5,18 @@ name: SEO Pipeline
 
 on:
   schedule:
+    # Programmatic city-post auto-publishing was removed from the daily schedule:
+    # templated location pages were getting "crawled - currently not indexed" by
+    # Google (thin content) and diluting site quality. The 10:00 and 22:00 slots
+    # now run audit (data refresh only). `programmatic` remains available via
+    # workflow_dispatch for deliberate, demand-targeted city pages.
     - cron: '5 4 * * *'    # audit
-    - cron: '5 8 * * *'    # authority
-    - cron: '5 10 * * *'   # programmatic
+    - cron: '5 8 * * *'    # authority (Search Console submit + opportunities + action queue)
+    - cron: '5 10 * * *'   # audit (was programmatic)
     - cron: '5 13 * * *'   # audit refresh
     - cron: '5 16 * * *'   # strategy
     - cron: '5 18 * * *'   # ideas
-    - cron: '5 22 * * *'   # programmatic refresh
+    - cron: '5 22 * * *'   # audit (was programmatic refresh)
   workflow_dispatch:
     inputs:
       job:
@@ -59,11 +64,11 @@ jobs:
             case "${{ github.event.schedule }}" in
               "5 4 * * *")  JOB=audit ;;
               "5 8 * * *")  JOB=authority ;;
-              "5 10 * * *") JOB=programmatic ;;
+              "5 10 * * *") JOB=audit ;;      # was programmatic — paused to stop thin-page flooding
               "5 13 * * *") JOB=audit ;;
               "5 16 * * *") JOB=strategy ;;
               "5 18 * * *") JOB=ideas ;;
-              "5 22 * * *") JOB=programmatic ;;
+              "5 22 * * *") JOB=audit ;;      # was programmatic — paused to stop thin-page flooding
               *)            JOB=audit ;;
             esac
           fi

@@ -12,6 +12,7 @@ export const SEO_ARTIFACT_PATHS = {
   searchConsoleStatus: 'public/seo/search-console-status.json',
   opportunities: 'public/seo/opportunities.json',
   actionQueue: 'public/seo/action-queue.json',
+  jobStatus: 'public/seo/job-status.json',
   lastRun: 'public/seo/last-run.json',
 } as const;
 
