@@ -1,106 +1,86 @@
 {
-  "generatedAt": "2026-06-17T12:18:36.111Z",
+  "generatedAt": "2026-06-18T11:52:10.198Z",
   "connected": true,
-  "summary": "10 prioritized actions from real Search Console demand (top priority: California).",
+  "summary": "8 prioritized actions from real Search Console demand (top priority: California).",
   "items": [
     {
       "type": "build-demand-page",
       "target": "California",
       "category": "Geo",
-      "priority": 298,
-      "impressions": 298,
+      "priority": 359,
+      "impressions": 359,
       "position": 0,
-      "rationale": "298 impressions across 9 queries mention California.",
+      "rationale": "359 impressions across 11 queries mention California.",
       "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 281,
-      "impressions": 281,
+      "priority": 291,
+      "impressions": 291,
       "position": 0,
-      "rationale": "281 impressions across 8 queries mention Maryland.",
+      "rationale": "291 impressions across 8 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 241,
-      "impressions": 241,
+      "priority": 247,
+      "impressions": 247,
       "position": 0,
-      "rationale": "241 impressions across 7 queries mention Colorado.",
+      "rationale": "247 impressions across 7 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Nevada",
-      "category": "Geo",
-      "priority": 153,
-      "impressions": 153,
-      "position": 0,
-      "rationale": "153 impressions across 4 queries mention Nevada.",
-      "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Idaho",
-      "category": "Geo",
-      "priority": 152,
-      "impressions": 152,
-      "position": 0,
-      "rationale": "152 impressions across 4 queries mention Idaho.",
-      "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Arizona",
       "category": "Geo",
-      "priority": 141,
-      "impressions": 141,
+      "priority": 163,
+      "impressions": 163,
       "position": 0,
-      "rationale": "141 impressions across 4 queries mention Arizona.",
+      "rationale": "163 impressions across 5 queries mention Arizona.",
       "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Idaho",
+      "category": "Geo",
+      "priority": 159,
+      "impressions": 159,
+      "position": 0,
+      "rationale": "159 impressions across 4 queries mention Idaho.",
+      "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Nevada",
+      "category": "Geo",
+      "priority": 152,
+      "impressions": 152,
+      "position": 0,
+      "rationale": "152 impressions across 4 queries mention Nevada.",
+      "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/blog/real-estate-investor-guide-west-virginia",
       "category": "General",
-      "priority": 82,
-      "impressions": 41,
-      "position": 16.2,
-      "rationale": "41 impressions at position 16.2 but only 0 clicks.",
+      "priority": 80,
+      "impressions": 40,
+      "position": 16.1,
+      "rationale": "40 impressions at position 16.1 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/blog/no-income-verification-loans",
       "category": "DSCR / Rental",
-      "priority": 76,
-      "impressions": 38,
-      "position": 16.6,
-      "rationale": "38 impressions at position 16.6 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/about",
-      "category": "General",
       "priority": 70,
       "impressions": 35,
-      "position": 2.9,
-      "rationale": "35 impressions at position 2.9 but only 1 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/blog/bridge-loan-requirements-real-estate-investors",
-      "category": "Bridge",
-      "priority": 42,
-      "impressions": 21,
-      "position": 13.7,
-      "rationale": "21 impressions at position 13.7 but only 0 clicks.",
+      "position": 17,
+      "rationale": "35 impressions at position 17 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     }
   ]
