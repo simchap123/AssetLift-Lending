@@ -10,6 +10,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import crypto from 'crypto';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SCHEDULED_PATH = path.join(__dirname, '../lib/data/seo-scheduled-posts.json');
@@ -179,7 +180,7 @@ Important rules:
 - AssetLift covers 46 states (not Alaska, North Dakota, South Dakota, or Vermont)
 - Minimum credit score: 660 for most programs
 - Fix & Flip: up to 95% LTC on purchase, 100% rehab funded
-- DSCR: up to 85% LTV, rates from 5.85%
+- DSCR: up to 85% LTV for purchase, 80% LTV for cash-out refinances, rates from 5.85%
 - Bridge: up to 80% LTV
 - Loan range: $100K to $5M
 - Never guarantee approval — always say "subject to underwriting"

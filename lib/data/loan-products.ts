@@ -330,7 +330,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       "DSCR (Debt Service Coverage Ratio) rental loans represent the most significant innovation in investment property financing in the last decade. They solve a problem that has frustrated rental property investors for years: the disconnect between the income a portfolio generates and the income shown on personal tax returns. Real estate investors, especially those who are self-employed or who aggressively depreciate their properties, often report low taxable income despite holding portfolios worth millions of dollars. Conventional lenders see low reported income and decline the application. DSCR lenders see a cash-flowing property and fund the deal.\n\nThe concept is straightforward. Instead of verifying the borrower's personal income through tax returns and pay stubs, a DSCR lender divides the property's gross rental income by the total monthly debt obligation (principal, interest, taxes, insurance, and HOA). If the resulting ratio meets or exceeds the lender's minimum threshold, typically 1.0 to 1.25, the loan is approved. No W-2s. No 1099s. No tax returns. No debt-to-income ratio calculations. The property qualifies itself.\n\nAssetLift Lending's DSCR rental loan program offers rates starting as low as 5.85% for qualifying scenarios, 30-year fixed and adjustable-rate options, loan amounts from $75,000 to $2 million, and the ability to close in the name of an LLC or other business entity. We finance single-family homes, 2-4 unit properties, condos, and townhomes, and there is no limit on the number of properties you can finance with us. Whether you are refinancing a property you just finished rehabbing or purchasing a turnkey rental, our DSCR product is designed to keep your portfolio growing without the documentation headaches of conventional lending.\n\nFor investors who have outgrown the conventional lending box, hit the Fannie Mae property count ceiling, or simply prefer the speed and simplicity of asset-based qualification, DSCR loans from AssetLift Lending provide the most scalable path to building a rental portfolio that generates lasting, tax-advantaged wealth.",
     keyStats: [
       { label: "Loan-to-Value (Purchase)", value: "Up to 85%" },
-      { label: "Loan-to-Value (Cash-Out Refi)", value: "Up to 75%" },
+      { label: "Loan-to-Value (Cash-Out Refi)", value: "Up to 80%" },
       { label: "Minimum DSCR Ratio", value: "1.0 (lower available with adjustments)" },
       { label: "Loan Term", value: "30-year fixed or 5/6 ARM" },
       { label: "Interest Rates Starting At", value: "5.85%" },
@@ -359,7 +359,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
       {
         title: "Cash-Out Refinancing Available",
         description:
-          "Access the equity in your existing rental properties through cash-out refinances at up to 75% LTV. Use the proceeds to fund new acquisitions, complete renovations on other properties, or pay down higher-cost debt. Cash-out DSCR refinances are one of the most powerful tools for recycling capital within a rental portfolio.",
+          "Access the equity in your existing rental properties through cash-out refinances at up to 80% LTV. Use the proceeds to fund new acquisitions, complete renovations on other properties, or pay down higher-cost debt. Cash-out DSCR refinances are one of the most powerful tools for recycling capital within a rental portfolio.",
       },
       {
         title: "Interest-Only Payment Option",

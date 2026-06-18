@@ -126,7 +126,7 @@ ${stateContext}
 AssetLift Lending key facts to work in naturally:
 - Mortgage brokerage (not a direct lender), white-label capital partners
 - Fix & Flip: up to 95% LTC on purchase, 100% rehab funded, close in 5 business days
-- DSCR Rental: up to 85% LTV, rates from 5.85%, no W-2 or tax returns required
+- DSCR Rental: up to 85% LTV for purchase, 80% LTV for cash-out refinances, rates from 5.85%, no W-2 or tax returns required
 - Bridge: up to 80% LTV
 - Ground-Up Construction: up to 90% LTC
 - Commercial lending available
