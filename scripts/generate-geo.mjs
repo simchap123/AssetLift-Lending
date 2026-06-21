@@ -24,7 +24,7 @@ if (!API_KEY) {
 }
 
 // Use gemini-1.5-flash — separate free tier quota from gemini-2.0-flash used by the SEO bot
-const GEMINI_MODEL = 'gemini-1.5-flash-latest';
+const GEMINI_MODEL = 'gemini-2.0-flash-lite';
 
 // ─── GEO Query Bank ────────────────────────────────────────────────────────────
 // These mirror the exact types of questions users ask AI platforms.
