@@ -14,12 +14,17 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const GEO_PATH = path.join(__dirname, '../lib/data/geo-answers.json');
-const API_KEY = process.env.GEMINI_API_KEY;
+
+// Use a dedicated GEO key if available, otherwise fall back to the shared key
+const API_KEY = process.env.GEO_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
 
 if (!API_KEY) {
-  console.error('GEMINI_API_KEY is not set.');
+  console.error('No Gemini API key found. Set GEO_GEMINI_API_KEY or GEMINI_API_KEY.');
   process.exit(1);
 }
+
+// Use gemini-1.5-flash — separate free tier quota from gemini-2.0-flash used by the SEO bot
+const GEMINI_MODEL = 'gemini-1.5-flash';
 
 // ─── GEO Query Bank ────────────────────────────────────────────────────────────
 // These mirror the exact types of questions users ask AI platforms.
@@ -83,7 +88,7 @@ const GEO_QUERY_BANK = [
 function todayISO() { return new Date().toISOString(); }
 
 async function callGemini(prompt, retries = 3) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${API_KEY}`;
   for (let attempt = 1; attempt <= retries; attempt++) {
     const res = await fetch(url, {
       method: 'POST',

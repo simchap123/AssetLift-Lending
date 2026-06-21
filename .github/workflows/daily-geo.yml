@@ -23,6 +23,7 @@ jobs:
       - name: Generate GEO content
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEO_GEMINI_API_KEY: ${{ secrets.GEO_GEMINI_API_KEY }}
         run: node scripts/generate-geo.mjs
 
       - name: Commit and push if content was added
