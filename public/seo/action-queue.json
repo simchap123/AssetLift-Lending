@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T11:17:59.678Z",
+  "generatedAt": "2026-06-22T13:37:08.519Z",
   "connected": true,
   "summary": "8 prioritized actions from real Search Console demand (top priority: California).",
   "items": [
@@ -7,61 +7,61 @@
       "type": "build-demand-page",
       "target": "California",
       "category": "Geo",
-      "priority": 407,
-      "impressions": 407,
+      "priority": 361,
+      "impressions": 361,
       "position": 0,
-      "rationale": "407 impressions across 12 queries mention California.",
+      "rationale": "361 impressions across 11 queries mention California.",
       "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 300,
-      "impressions": 300,
+      "priority": 327,
+      "impressions": 327,
       "position": 0,
-      "rationale": "300 impressions across 8 queries mention Maryland.",
+      "rationale": "327 impressions across 8 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 262,
-      "impressions": 262,
+      "priority": 219,
+      "impressions": 219,
       "position": 0,
-      "rationale": "262 impressions across 7 queries mention Colorado.",
+      "rationale": "219 impressions across 6 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 183,
-      "impressions": 183,
+      "priority": 187,
+      "impressions": 187,
       "position": 0,
-      "rationale": "183 impressions across 5 queries mention Idaho.",
+      "rationale": "187 impressions across 5 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Nevada",
       "category": "Geo",
-      "priority": 157,
-      "impressions": 157,
+      "priority": 158,
+      "impressions": 158,
       "position": 0,
-      "rationale": "157 impressions across 4 queries mention Nevada.",
+      "rationale": "158 impressions across 4 queries mention Nevada.",
       "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
-      "target": "Arizona",
+      "target": "Wisconsin",
       "category": "Geo",
-      "priority": 147,
-      "impressions": 147,
+      "priority": 135,
+      "impressions": 135,
       "position": 0,
-      "rationale": "147 impressions across 4 queries mention Arizona.",
-      "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+      "rationale": "135 impressions across 2 queries mention Wisconsin.",
+      "action": "Strengthen the Wisconsin state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
@@ -77,10 +77,10 @@
       "type": "improve-meta",
       "target": "/blog/no-income-verification-loans",
       "category": "DSCR / Rental",
-      "priority": 62,
-      "impressions": 31,
-      "position": 17,
-      "rationale": "31 impressions at position 17 but only 0 clicks.",
+      "priority": 58,
+      "impressions": 29,
+      "position": 16.9,
+      "rationale": "29 impressions at position 16.9 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     }
   ]
