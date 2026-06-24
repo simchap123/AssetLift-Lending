@@ -1,6 +1,7 @@
 import { createSign } from 'node:crypto';
 import { buildCategoryBreakdown } from './categories';
 import type {
+  SeoDailyMetric,
   SeoOpportunitiesReport,
   SeoOpportunityPage,
   SeoOpportunityQuery,
@@ -233,6 +234,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       topQueries: [],
       categories: [],
       recent: null,
+      dailyMetrics: [],
       message:
         'Missing Google Search Console service account configuration. Set GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY, and GOOGLE_SEARCH_CONSOLE_SITE_URL.',
     };
@@ -243,7 +245,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
     const { startDate, endDate } = getAnalyticsDateRange();
     const recentRange = getAnalyticsDateRange(RECENT_DAYS);
 
-    const [queryRows, pageRows, summaryRows, recentRows] = await Promise.all([
+    const [queryRows, pageRows, summaryRows, recentRows, dateRows] = await Promise.all([
       querySearchAnalytics(accessToken, config.property, {
         startDate,
         endDate,
@@ -265,6 +267,13 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
         startDate: recentRange.startDate,
         endDate: recentRange.endDate,
         dimensions: [],
+      }),
+      // Per-day breakdown so we can track clicks/impressions day over day.
+      querySearchAnalytics(accessToken, config.property, {
+        startDate,
+        endDate,
+        dimensions: ['date'],
+        rowLimit: 60,
       }),
     ]);
 
@@ -324,6 +333,16 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       })),
     );
 
+    const dailyMetrics: SeoDailyMetric[] = dateRows
+      .map((row) => ({
+        date: row.keys?.[0] ?? '',
+        clicks: row.clicks ?? 0,
+        impressions: row.impressions ?? 0,
+        ctr: Number((row.ctr ?? 0).toFixed(4)),
+        position: Number((row.position ?? 0).toFixed(1)),
+      }))
+      .sort((a, b) => a.date.localeCompare(b.date));
+
     const summaryRow = summaryRows[0] ?? {};
     const recentRow = recentRows[0] ?? {};
     const recent: SeoWindowSummary = {
@@ -350,6 +369,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       topQueries,
       categories,
       recent,
+      dailyMetrics,
       message: `Found ${strikingDistanceQueries.length} striking-distance queries and ${weakCtrPages.length} pages with weak click-through over the last ${ANALYTICS_DAYS} days.`,
     };
   } catch (error) {
@@ -364,6 +384,7 @@ export async function fetchSearchOpportunities(): Promise<SeoOpportunitiesReport
       topQueries: [],
       categories: [],
       recent: null,
+      dailyMetrics: [],
       message,
     };
   }

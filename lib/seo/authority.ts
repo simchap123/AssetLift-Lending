@@ -224,6 +224,30 @@ export async function runAuthorityJob(options?: { dryRun?: boolean }): Promise<A
       actionQueueCurrent.sha,
     );
 
+    const days = opportunities.dailyMetrics;
+    const latest = days[days.length - 1];
+    const prior = days[days.length - 2];
+    const metricsPayload = {
+      generatedAt,
+      latestDay: latest ?? null,
+      dayOverDay:
+        latest && prior
+          ? {
+              clicks: latest.clicks - prior.clicks,
+              impressions: latest.impressions - prior.impressions,
+              positionChange: Number((prior.position - latest.position).toFixed(1)),
+            }
+          : null,
+      days,
+    };
+    const metricsCurrent = await fetchRepoFile(SEO_ARTIFACT_PATHS.metricsHistory);
+    await writeRepoFile(
+      SEO_ARTIFACT_PATHS.metricsHistory,
+      stringifyWithTrailingNewline(metricsPayload),
+      'chore(seo): refresh daily metrics history',
+      metricsCurrent.sha,
+    );
+
     const outreachCurrent = await fetchRepoFile('public/seo/backlink-outreach.json');
     await writeRepoFile(
       'public/seo/backlink-outreach.json',

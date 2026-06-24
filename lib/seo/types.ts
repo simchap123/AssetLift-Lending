@@ -118,7 +118,16 @@ export interface SeoOpportunitiesReport {
   topQueries: SeoTopQuery[];
   categories: SeoCategoryBreakdown[];
   recent: SeoWindowSummary | null;
+  dailyMetrics: SeoDailyMetric[];
   message: string;
+}
+
+export interface SeoDailyMetric {
+  date: string;
+  clicks: number;
+  impressions: number;
+  ctr: number;
+  position: number;
 }
 
 export type SeoActionType =
