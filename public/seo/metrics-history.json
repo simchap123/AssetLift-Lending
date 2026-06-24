@@ -1,0 +1,220 @@
+{
+  "generatedAt": "2026-06-24T03:39:37.045Z",
+  "latestDay": {
+    "date": "2026-06-21",
+    "clicks": 0,
+    "impressions": 1115,
+    "ctr": 0,
+    "position": 65.2
+  },
+  "dayOverDay": {
+    "clicks": 0,
+    "impressions": 215,
+    "positionChange": -3.1
+  },
+  "days": [
+    {
+      "date": "2026-05-24",
+      "clicks": 1,
+      "impressions": 651,
+      "ctr": 0.0015,
+      "position": 68
+    },
+    {
+      "date": "2026-05-25",
+      "clicks": 0,
+      "impressions": 798,
+      "ctr": 0,
+      "position": 70.6
+    },
+    {
+      "date": "2026-05-26",
+      "clicks": 0,
+      "impressions": 598,
+      "ctr": 0,
+      "position": 68.7
+    },
+    {
+      "date": "2026-05-27",
+      "clicks": 1,
+      "impressions": 555,
+      "ctr": 0.0018,
+      "position": 70.7
+    },
+    {
+      "date": "2026-05-28",
+      "clicks": 1,
+      "impressions": 822,
+      "ctr": 0.0012,
+      "position": 69
+    },
+    {
+      "date": "2026-05-29",
+      "clicks": 0,
+      "impressions": 712,
+      "ctr": 0,
+      "position": 69.9
+    },
+    {
+      "date": "2026-05-30",
+      "clicks": 1,
+      "impressions": 847,
+      "ctr": 0.0012,
+      "position": 64.8
+    },
+    {
+      "date": "2026-05-31",
+      "clicks": 1,
+      "impressions": 1168,
+      "ctr": 0.0009,
+      "position": 64.8
+    },
+    {
+      "date": "2026-06-01",
+      "clicks": 0,
+      "impressions": 794,
+      "ctr": 0,
+      "position": 67.6
+    },
+    {
+      "date": "2026-06-02",
+      "clicks": 1,
+      "impressions": 619,
+      "ctr": 0.0016,
+      "position": 68.8
+    },
+    {
+      "date": "2026-06-03",
+      "clicks": 2,
+      "impressions": 572,
+      "ctr": 0.0035,
+      "position": 65.9
+    },
+    {
+      "date": "2026-06-04",
+      "clicks": 1,
+      "impressions": 702,
+      "ctr": 0.0014,
+      "position": 65.2
+    },
+    {
+      "date": "2026-06-05",
+      "clicks": 0,
+      "impressions": 1199,
+      "ctr": 0,
+      "position": 64.1
+    },
+    {
+      "date": "2026-06-06",
+      "clicks": 0,
+      "impressions": 805,
+      "ctr": 0,
+      "position": 64.9
+    },
+    {
+      "date": "2026-06-07",
+      "clicks": 1,
+      "impressions": 1022,
+      "ctr": 0.001,
+      "position": 63.6
+    },
+    {
+      "date": "2026-06-08",
+      "clicks": 2,
+      "impressions": 969,
+      "ctr": 0.0021,
+      "position": 63
+    },
+    {
+      "date": "2026-06-09",
+      "clicks": 4,
+      "impressions": 795,
+      "ctr": 0.005,
+      "position": 61.6
+    },
+    {
+      "date": "2026-06-10",
+      "clicks": 2,
+      "impressions": 624,
+      "ctr": 0.0032,
+      "position": 63.5
+    },
+    {
+      "date": "2026-06-11",
+      "clicks": 0,
+      "impressions": 883,
+      "ctr": 0,
+      "position": 64.6
+    },
+    {
+      "date": "2026-06-12",
+      "clicks": 2,
+      "impressions": 869,
+      "ctr": 0.0023,
+      "position": 64.4
+    },
+    {
+      "date": "2026-06-13",
+      "clicks": 0,
+      "impressions": 1061,
+      "ctr": 0,
+      "position": 64.7
+    },
+    {
+      "date": "2026-06-14",
+      "clicks": 0,
+      "impressions": 1216,
+      "ctr": 0,
+      "position": 65.7
+    },
+    {
+      "date": "2026-06-15",
+      "clicks": 1,
+      "impressions": 1039,
+      "ctr": 0.001,
+      "position": 62.4
+    },
+    {
+      "date": "2026-06-16",
+      "clicks": 1,
+      "impressions": 835,
+      "ctr": 0.0012,
+      "position": 62.4
+    },
+    {
+      "date": "2026-06-17",
+      "clicks": 4,
+      "impressions": 777,
+      "ctr": 0.0051,
+      "position": 64.1
+    },
+    {
+      "date": "2026-06-18",
+      "clicks": 1,
+      "impressions": 759,
+      "ctr": 0.0013,
+      "position": 63.3
+    },
+    {
+      "date": "2026-06-19",
+      "clicks": 4,
+      "impressions": 1088,
+      "ctr": 0.0037,
+      "position": 60.8
+    },
+    {
+      "date": "2026-06-20",
+      "clicks": 0,
+      "impressions": 900,
+      "ctr": 0,
+      "position": 62.1
+    },
+    {
+      "date": "2026-06-21",
+      "clicks": 0,
+      "impressions": 1115,
+      "ctr": 0,
+      "position": 65.2
+    }
+  ]
+}
