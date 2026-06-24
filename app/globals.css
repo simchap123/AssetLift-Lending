@@ -224,6 +224,56 @@
   animation: floating 3s ease-in-out infinite;
 }
 
+@keyframes renovation-hero-drift {
+  0% {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.1) translate3d(-1.5%, -1%, 0);
+  }
+  100% {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+}
+
+.hero-renovation-motion {
+  animation: renovation-hero-drift 22s ease-in-out infinite;
+  transform-origin: 70% 42%;
+  will-change: transform;
+}
+
+.hero-funding-trace {
+  background:
+    linear-gradient(90deg, transparent 0%, hsl(var(--primary) / 0.42) 42%, transparent 76%),
+    linear-gradient(to top, hsl(var(--background)) 0%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%);
+}
+
+.hero-visible,
+.hero-visible * {
+  opacity: 1 !important;
+}
+
+.nav-transparent nav > a,
+.nav-transparent nav > div > button,
+.nav-transparent nav a[aria-label="Call us"],
+.nav-transparent .md\:hidden button {
+  color: rgb(255 255 255 / 0.92);
+}
+
+.nav-transparent nav > a:hover,
+.nav-transparent nav > div > button:hover,
+.nav-transparent nav a[aria-label="Call us"]:hover {
+  color: hsl(var(--primary));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-renovation-motion {
+    animation: none;
+    transform: scale(1.04);
+  }
+}
+
 /* Print styles */
 @media print {
   body {

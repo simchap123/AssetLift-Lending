@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { ArrowRight, BadgeCheck, CheckCircle, Clock3, MapPinned, Phone, TrendingUp } from "lucide-react";
+import { ArrowRight, BadgeCheck, CheckCircle, Clock3, DollarSign, FileCheck2, MapPinned, Phone, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { sendNotification } from "@/services/notificationService";
@@ -43,6 +43,12 @@ const Hero = () => {
     "Fix & flip, DSCR, bridge, and construction — four programs for every investor strategy",
     "No bank timelines. No income docs for DSCR. No runaround.",
     "Tell us the deal Thursday. Close next week.",
+  ];
+
+  const fundingSignals = [
+    { icon: FileCheck2, label: "Term Sheet", value: "Issued" },
+    { icon: DollarSign, label: "Funding", value: "$742K" },
+    { icon: CheckCircle, label: "Status", value: "Clear to Close" },
   ];
 
   const formatPhone = (value: string): string => {
@@ -123,27 +129,53 @@ const Hero = () => {
 
   return (
     <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden py-24 sm:py-28">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         <Image
-          src="/hero-house.jpg"
-          alt="Luxury investment property representing hard money loan opportunities for real estate investors"
+          src="/renovation-funding-hero.png"
+          alt="Investment property renovation in progress with plans being reviewed for funding"
           fill
-          className="object-cover"
+          className="hero-renovation-motion object-cover"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/52 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_38%,transparent_0%,rgb(0_0_0/0.12)_34%,rgb(0_0_0/0.62)_100%)]" />
+        <div className="hero-funding-trace absolute inset-x-0 bottom-0 h-32 opacity-60" />
       </div>
 
-      <div className="container relative z-10 px-4 md:px-6">
+      <motion.div
+        aria-hidden="true"
+        className="pointer-events-none absolute right-4 top-28 z-10 hidden w-[310px] rounded-xl border border-white/20 bg-background/70 p-4 shadow-2xl backdrop-blur-md xl:block"
+        initial={false}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.45 }}
+      >
+        <div className="mb-4 flex items-center justify-between">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">Renovation File</p>
+          <span className="rounded-full bg-primary px-2.5 py-1 text-xs font-bold text-primary-foreground">
+            Funded
+          </span>
+        </div>
+        <div className="grid grid-cols-3 gap-2">
+          {fundingSignals.map(({ icon: Icon, label, value }) => (
+            <div key={label} className="rounded-lg border border-border/70 bg-background/65 p-3">
+              <Icon className="mb-2 h-4 w-4 text-primary" />
+              <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{label}</p>
+              <p className="mt-1 text-sm font-bold text-foreground">{value}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      <div className="hero-visible container relative z-20 px-4 md:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl text-white">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full border border-primary/40 bg-black/35 backdrop-blur-sm"
             >
               <TrendingUp className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">
@@ -154,19 +186,19 @@ const Hero = () => {
             <motion.h1
               data-speakable
               className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
-              initial={{ opacity: 0, y: 30 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <span className="text-foreground">Hard Money Loans</span>
+              <span className="text-white">Hard Money Loans</span>
               <br />
               <span className="gradient-text">for Real Estate Investors</span>
             </motion.h1>
 
             <motion.p
               data-speakable
-              className="hero-description text-lg md:text-xl text-muted-foreground max-w-2xl mb-6"
-              initial={{ opacity: 0, y: 20 }}
+              className="hero-description text-lg md:text-xl text-white/82 max-w-2xl mb-6"
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
@@ -176,8 +208,8 @@ const Hero = () => {
             </motion.p>
 
             <motion.p
-              className="text-sm md:text-base text-muted-foreground/90 max-w-2xl mb-8"
-              initial={{ opacity: 0, y: 20 }}
+              className="text-sm md:text-base text-white/76 max-w-2xl mb-8"
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
             >
@@ -186,7 +218,7 @@ const Hero = () => {
 
             <motion.div
               className="flex flex-col sm:flex-row gap-4 mb-4"
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
@@ -196,20 +228,20 @@ const Hero = () => {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 border-primary/50 hover:bg-primary/10 backdrop-blur-sm">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 border-white/40 bg-black/25 text-white hover:bg-white/12 hover:text-white backdrop-blur-sm">
                 <a href="#programs">See Loan Options</a>
               </Button>
             </motion.div>
 
             <motion.div
               className="mb-10"
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.32 }}
             >
               <a
                 href="tel:+19296392284"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="inline-flex items-center gap-2 text-sm text-white/76 hover:text-primary transition-colors"
               >
                 <Phone className="w-4 h-4" />
                 (929) 639-2284 — call or text
@@ -218,16 +250,16 @@ const Hero = () => {
 
             <motion.div
               className="grid gap-3 sm:grid-cols-3"
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.42 }}
             >
               {borrowerSignals.map((point) => (
                 <div
                   key={point}
-                  className="rounded-2xl border border-border/80 bg-background/72 px-4 py-4 backdrop-blur-sm"
+                  className="rounded-2xl border border-white/18 bg-black/32 px-4 py-4 backdrop-blur-sm"
                 >
-                  <p className="text-sm leading-relaxed text-foreground/90">{point}</p>
+                  <p className="text-sm leading-relaxed text-white/90">{point}</p>
                 </div>
               ))}
             </motion.div>
@@ -235,15 +267,15 @@ const Hero = () => {
 
           {/* Mini lead capture form */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={false}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:justify-self-end w-full max-w-md"
+            className="lg:justify-self-end w-full max-w-md text-foreground"
           >
             <div className="rounded-[28px] border border-border/80 bg-background/88 p-6 shadow-2xl backdrop-blur-md sm:p-7">
               {miniSubmitted ? (
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
+                  initial={false}
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-center py-8"
                 >
