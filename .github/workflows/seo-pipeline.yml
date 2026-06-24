@@ -35,7 +35,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: seo-pipeline
+  group: content-push   # shared with daily-seo and daily-geo to serialize pushes to main
   cancel-in-progress: false
 
 jobs:

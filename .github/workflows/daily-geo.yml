@@ -5,6 +5,12 @@ on:
     - cron: '0 14 * * *'   # 2 PM UTC = 10 AM ET daily (offset from SEO bot at 10 AM UTC)
   workflow_dispatch:
 
+# Serialize with the SEO bot and SEO Pipeline so concurrent pushes to main
+# don't collide (the cause of the "failed to push some refs" failures).
+concurrency:
+  group: content-push
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -31,4 +37,14 @@ jobs:
           git config user.name "AssetLift GEO Bot"
           git config user.email "geo-bot@assetliftlending.com"
           git add lib/data/geo-answers.json
-          git diff --staged --quiet && echo "No new GEO content today" || (git commit -m "Daily GEO: add AI answer page [$(date +'%Y-%m-%d')]" && git push)
+          if git diff --staged --quiet; then
+            echo "No new GEO content today"
+          else
+            git commit -m "Daily GEO: add AI answer page [$(date +'%Y-%m-%d')]"
+            for i in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push; then
+                echo "pushed on attempt $i"; break
+              fi
+              echo "push attempt $i failed; retrying after backoff..."; sleep $((RANDOM % 8 + 3))
+            done
+          fi

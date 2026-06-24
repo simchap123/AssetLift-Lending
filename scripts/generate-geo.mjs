@@ -23,8 +23,10 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-// Use gemini-1.5-flash — separate free tier quota from gemini-2.0-flash used by the SEO bot
-const GEMINI_MODEL = 'gemini-2.0-flash-lite';
+// gemini-2.0* models have zero free-tier quota (429 "limit: 0"). gemini-2.5-flash
+// is the working model (also used by the SEO bot). A dedicated GEO_GEMINI_API_KEY
+// can be set to keep GEO quota separate from the SEO bot's key.
+const GEMINI_MODEL = 'gemini-2.5-flash';
 
 // ─── GEO Query Bank ────────────────────────────────────────────────────────────
 // These mirror the exact types of questions users ask AI platforms.
