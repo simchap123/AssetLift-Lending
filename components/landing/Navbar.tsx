@@ -19,6 +19,7 @@ const PROGRAMS = [
 const RESOURCES = [
   { label: 'Blog', href: '/blog' },
   { label: 'Compare', href: '/compare' },
+  { label: 'Broker Partners', href: '/brokers' },
   { label: 'Markets', href: '/markets' },
   { label: 'How Funding Works', href: '/how-funding-works' },
   { label: 'State Disclosures', href: '/state-disclosures' },
@@ -139,6 +140,12 @@ const Navbar = () => {
               Markets
             </Link>
             <Link
+              href="/brokers"
+              className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
+            >
+              Brokers
+            </Link>
+            <Link
               href="/about"
               className="text-sm font-semibold text-foreground/90 hover:text-primary transition-colors"
             >
@@ -243,6 +250,13 @@ const Navbar = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contact
+                </Link>
+                <Link
+                  href="/brokers"
+                  className="rounded-xl border border-border px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/35 hover:text-foreground"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Brokers
                 </Link>
                 <Link
                   href="/about"

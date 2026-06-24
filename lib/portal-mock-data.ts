@@ -3,6 +3,10 @@ import { Deal } from './portal-types';
 export const MOCK_DEALS: Deal[] = [
   {
     id: 'deal-001',
+    brokerName: 'Rachel Stein',
+    brokerCompany: 'Stein Capital Advisors',
+    brokerEmail: 'rachel@steincapital.com',
+    brokerPhone: '(516) 555-0144',
     borrowerName: 'Marcus Johnson',
     borrowerEmail: 'marcus@realestateinvest.com',
     borrowerPhone: '(718) 555-0182',
@@ -22,6 +26,8 @@ export const MOCK_DEALS: Deal[] = [
   },
   {
     id: 'deal-002',
+    brokerName: 'Direct Borrower',
+    brokerCompany: 'AssetLift Direct',
     borrowerName: 'Sarah Chen',
     borrowerEmail: 'sarah.chen@chenproperties.com',
     borrowerPhone: '(305) 555-0247',
@@ -38,6 +44,10 @@ export const MOCK_DEALS: Deal[] = [
   },
   {
     id: 'deal-003',
+    brokerName: 'Eli Cohen',
+    brokerCompany: 'Cohen Funding Group',
+    brokerEmail: 'eli@cohenfunding.com',
+    brokerPhone: '(718) 555-0188',
     borrowerName: 'Derek Williams',
     borrowerEmail: 'derek@dwilliamsinvestments.com',
     borrowerPhone: '(214) 555-0391',

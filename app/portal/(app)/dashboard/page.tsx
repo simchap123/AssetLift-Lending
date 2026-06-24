@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, TrendingUp, Clock, FileCheck, DollarSign, Plus } from 'lucide-react';
+import { ArrowRight, TrendingUp, Clock, FileCheck, Users, Plus } from 'lucide-react';
 import { usePortalDeals } from '@/lib/portal-store';
 import { STATUS_CONFIG, LOAN_TYPE_LABELS, DealStatus } from '@/lib/portal-types';
 
@@ -28,14 +28,13 @@ export default function DashboardPage() {
 
   const active = deals.filter(d => !['funded', 'declined'].includes(d.status));
   const termSheets = deals.filter(d => d.termSheetIssuedAt);
-  const funded = deals.filter(d => d.status === 'funded');
-  const totalVolume = funded.reduce((sum, d) => sum + (d.loanAmount || d.purchasePrice), 0);
+  const activeBrokerCount = new Set(deals.map(d => d.brokerCompany || d.brokerName).filter(Boolean)).size;
 
   const stats = [
     { label: 'Total Deals', value: deals.length.toString(), icon: TrendingUp, sub: 'All time' },
     { label: 'Active', value: active.length.toString(), icon: Clock, sub: 'In pipeline' },
     { label: 'Term Sheets Out', value: termSheets.length.toString(), icon: FileCheck, sub: 'Issued' },
-    { label: 'Funded Volume', value: fmt(totalVolume), icon: DollarSign, sub: 'Closed deals' },
+    { label: 'Active Brokers', value: activeBrokerCount.toString(), icon: Users, sub: 'With tracked deals' },
   ];
 
   const sorted = [...deals].sort((a, b) => new Date(b.submittedAt).getTime() - new Date(a.submittedAt).getTime());
@@ -79,7 +78,7 @@ export default function DashboardPage() {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-zinc-800">
-                {['Borrower', 'Property', 'Loan Type', 'Purchase Price', 'Status', 'Submitted', ''].map(h => (
+                {['Broker', 'Borrower', 'Property', 'Loan Type', 'Purchase Price', 'Status', 'Submitted', ''].map(h => (
                   <th key={h} className="px-6 py-3 text-left text-xs font-semibold text-zinc-400 uppercase tracking-wider whitespace-nowrap">{h}</th>
                 ))}
               </tr>
@@ -87,6 +86,12 @@ export default function DashboardPage() {
             <tbody className="divide-y divide-zinc-800/60">
               {sorted.map(deal => (
                 <tr key={deal.id} className="hover:bg-zinc-800/40 transition-colors">
+                  <td className="px-6 py-4">
+                    <p className="font-medium text-white">{deal.brokerCompany || deal.brokerName || 'Direct'}</p>
+                    {deal.brokerName && deal.brokerCompany && (
+                      <p className="text-xs text-zinc-500">{deal.brokerName}</p>
+                    )}
+                  </td>
                   <td className="px-6 py-4">
                     <p className="font-medium text-white">{deal.borrowerName}</p>
                     <p className="text-xs text-zinc-500">{deal.borrowerEmail}</p>

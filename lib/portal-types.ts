@@ -11,6 +11,10 @@ export type LoanType = 'fix-flip' | 'dscr-rental' | 'bridge' | 'ground-up' | 'co
 
 export interface Deal {
   id: string;
+  brokerName?: string;
+  brokerCompany?: string;
+  brokerEmail?: string;
+  brokerPhone?: string;
   borrowerName: string;
   borrowerEmail: string;
   borrowerPhone: string;
@@ -27,6 +31,8 @@ export interface Deal {
   updatedAt: string;
   notes?: string;
   termSheetUrl?: string;
+  termSheetName?: string;
+  termSheetSize?: number;
   termSheetIssuedAt?: string;
 }
 

@@ -50,7 +50,8 @@ export default function DealsPage() {
                   </span>
                 </div>
                 <p className="text-sm text-zinc-400 truncate">{deal.propertyAddress}</p>
-                <div className="flex items-center gap-6 mt-3 text-xs text-zinc-500">
+                <div className="flex items-center gap-6 mt-3 text-xs text-zinc-500 flex-wrap">
+                  <span>Broker: <span className="text-zinc-300 font-medium">{deal.brokerCompany || deal.brokerName || 'Direct'}</span></span>
                   <span>Purchase: <span className="text-zinc-300 font-medium">${deal.purchasePrice.toLocaleString()}</span></span>
                   {deal.arv && <span>ARV: <span className="text-zinc-300 font-medium">${deal.arv.toLocaleString()}</span></span>}
                   <span>Credit: <span className="text-zinc-300 font-medium">{deal.creditScore}</span></span>

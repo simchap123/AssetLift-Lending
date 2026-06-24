@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Phone, Mail, MapPin, FileText, CheckCircle, Circle, Pencil, X, Save, Trash2 } from 'lucide-react';
+import { ArrowLeft, Phone, Mail, MapPin, FileText, CheckCircle, Circle, Pencil, X, Save, Trash2, Upload } from 'lucide-react';
 import { usePortalDeals } from '@/lib/portal-store';
 import { STATUS_CONFIG, STATUS_PIPELINE, LOAN_TYPE_LABELS, DealStatus, LoanType } from '@/lib/portal-types';
 
@@ -31,6 +31,7 @@ export default function DealDetailPage() {
   const { deals, ready, updateDeal, deleteDeal } = usePortalDeals();
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState<Record<string, string>>({});
+  const [uploadError, setUploadError] = useState('');
 
   if (!ready) return (
     <div className="p-8 flex items-center justify-center h-64">
@@ -50,6 +51,10 @@ export default function DealDetailPage() {
 
   const startEdit = () => {
     setDraft({
+      brokerName: deal.brokerName || '',
+      brokerCompany: deal.brokerCompany || '',
+      brokerEmail: deal.brokerEmail || '',
+      brokerPhone: deal.brokerPhone || '',
       borrowerName: deal.borrowerName,
       borrowerEmail: deal.borrowerEmail,
       borrowerPhone: deal.borrowerPhone,
@@ -65,6 +70,10 @@ export default function DealDetailPage() {
 
   const saveEdit = () => {
     updateDeal(deal.id, {
+      brokerName: draft.brokerName || undefined,
+      brokerCompany: draft.brokerCompany || undefined,
+      brokerEmail: draft.brokerEmail || undefined,
+      brokerPhone: draft.brokerPhone || undefined,
       borrowerName: draft.borrowerName,
       borrowerEmail: draft.borrowerEmail,
       borrowerPhone: draft.borrowerPhone,
@@ -82,6 +91,28 @@ export default function DealDetailPage() {
     if (!confirm('Delete this deal? This cannot be undone.')) return;
     deleteDeal(deal.id);
     router.push('/portal/deals');
+  };
+
+  const handleTermSheetUpload = (file: File | undefined) => {
+    setUploadError('');
+    if (!file) return;
+    if (file.size > 8 * 1024 * 1024) {
+      setUploadError('Upload a file under 8 MB.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      updateDeal(deal.id, {
+        termSheetUrl: String(reader.result),
+        termSheetName: file.name,
+        termSheetSize: file.size,
+        termSheetIssuedAt: new Date().toISOString(),
+        status: 'term_sheet_issued',
+      });
+    };
+    reader.onerror = () => setUploadError('Could not read that file. Try another PDF or document.');
+    reader.readAsDataURL(file);
   };
 
   const set = (k: string, v: string) => setDraft(p => ({ ...p, [k]: v }));
@@ -153,6 +184,37 @@ export default function DealDetailPage() {
       )}
 
       <div className="grid lg:grid-cols-2 gap-6">
+        {/* Broker */}
+        <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-4">Broker</h2>
+          {editing ? (
+            <div className="space-y-3">
+              <input className={inputCls} placeholder="Broker name" value={draft.brokerName} onChange={e => set('brokerName', e.target.value)} />
+              <input className={inputCls} placeholder="Broker company" value={draft.brokerCompany} onChange={e => set('brokerCompany', e.target.value)} />
+              <input className={inputCls} type="email" placeholder="Broker email" value={draft.brokerEmail} onChange={e => set('brokerEmail', e.target.value)} />
+              <input className={inputCls} placeholder="Broker phone" value={draft.brokerPhone} onChange={e => set('brokerPhone', e.target.value)} />
+            </div>
+          ) : (
+            <div className="space-y-3">
+              <p className="text-white font-semibold text-lg">{deal.brokerCompany || deal.brokerName || 'Direct borrower'}</p>
+              {deal.brokerName && deal.brokerCompany && <p className="text-sm text-zinc-400">{deal.brokerName}</p>}
+              {deal.brokerEmail && (
+                <a href={`mailto:${deal.brokerEmail}`} className="flex items-center gap-2 text-sm text-zinc-300 hover:text-primary transition-colors">
+                  <Mail className="w-4 h-4 text-zinc-500" /> {deal.brokerEmail}
+                </a>
+              )}
+              {deal.brokerPhone && (
+                <a href={`tel:${deal.brokerPhone}`} className="flex items-center gap-2 text-sm text-zinc-300 hover:text-primary transition-colors">
+                  <Phone className="w-4 h-4 text-zinc-500" /> {deal.brokerPhone}
+                </a>
+              )}
+              {!deal.brokerEmail && !deal.brokerPhone && (
+                <p className="text-sm text-zinc-500">No broker contact details saved.</p>
+              )}
+            </div>
+          )}
+        </div>
+
         {/* Borrower */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
           <h2 className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-4">Borrower</h2>
@@ -239,18 +301,45 @@ export default function DealDetailPage() {
 
         {/* Term Sheet */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
-          <h2 className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-4">Term Sheet</h2>
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Term Sheet</h2>
+            <label className="inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-zinc-700 px-3 py-2 text-xs font-semibold text-zinc-300 transition-colors hover:border-primary hover:text-primary">
+              <Upload className="w-3.5 h-3.5" />
+              Upload
+              <input
+                type="file"
+                className="sr-only"
+                accept=".pdf,.doc,.docx,.png,.jpg,.jpeg"
+                onChange={e => handleTermSheetUpload(e.target.files?.[0])}
+              />
+            </label>
+          </div>
           {deal.termSheetUrl ? (
-            <a href={deal.termSheetUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-zinc-900 font-bold text-sm px-4 py-2.5 rounded-xl hover:bg-primary/90 transition-colors">
-              <FileText className="w-4 h-4" /> Download Term Sheet
-            </a>
+            <div className="rounded-xl border border-zinc-800 bg-zinc-950/60 p-4">
+              <div className="mb-4 flex items-start gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                  <FileText className="h-5 w-5 text-primary" />
+                </div>
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-semibold text-white">{deal.termSheetName || 'Term sheet uploaded'}</p>
+                  <p className="text-xs text-zinc-500">
+                    {deal.termSheetIssuedAt ? `Uploaded ${new Date(deal.termSheetIssuedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}` : 'Uploaded'}
+                    {deal.termSheetSize ? ` | ${(deal.termSheetSize / 1024 / 1024).toFixed(2)} MB` : ''}
+                  </p>
+                </div>
+              </div>
+              <a href={deal.termSheetUrl} download={deal.termSheetName || 'term-sheet'} className="inline-flex items-center gap-2 bg-primary text-zinc-900 font-bold text-sm px-4 py-2.5 rounded-xl hover:bg-primary/90 transition-colors">
+                <FileText className="w-4 h-4" /> Download Term Sheet
+              </a>
+            </div>
           ) : (
             <div className="border-2 border-dashed border-zinc-700 rounded-xl p-6 text-center">
               <FileText className="w-8 h-8 text-zinc-600 mx-auto mb-2" />
               <p className="text-sm text-zinc-400">No term sheet yet</p>
-              <p className="text-xs text-zinc-600 mt-1">File upload coming soon</p>
+              <p className="text-xs text-zinc-600 mt-1">Upload a PDF or document for this deal.</p>
             </div>
           )}
+          {uploadError && <p className="mt-3 text-sm text-red-400">{uploadError}</p>}
         </div>
 
         {/* Notes */}

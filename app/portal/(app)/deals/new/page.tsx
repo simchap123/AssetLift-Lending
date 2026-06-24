@@ -37,6 +37,7 @@ export default function NewDealPage() {
   const { addDeal } = usePortalDeals();
 
   const [form, setForm] = useState({
+    brokerName: '', brokerCompany: '', brokerEmail: '', brokerPhone: '',
     borrowerName: '', borrowerEmail: '', borrowerPhone: '',
     loanType: '' as LoanType | '',
     status: 'submitted' as DealStatus,
@@ -56,6 +57,10 @@ export default function NewDealPage() {
 
     const deal: Deal = {
       id: `deal-${Date.now()}`,
+      brokerName: form.brokerName || undefined,
+      brokerCompany: form.brokerCompany || undefined,
+      brokerEmail: form.brokerEmail || undefined,
+      brokerPhone: form.brokerPhone || undefined,
       borrowerName: form.borrowerName,
       borrowerEmail: form.borrowerEmail,
       borrowerPhone: form.borrowerPhone,
@@ -100,6 +105,25 @@ export default function NewDealPage() {
       <h1 className="text-2xl font-bold text-white mb-8">Add New Deal</h1>
 
       <form onSubmit={handleSubmit} className="space-y-6">
+
+        {/* Broker Info */}
+        <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+          <h2 className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-5">Broker Information</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Field label="Broker Name">
+              <input className={inputCls} placeholder="Jane Broker" value={form.brokerName} onChange={e => set('brokerName', e.target.value)} />
+            </Field>
+            <Field label="Broker Company">
+              <input className={inputCls} placeholder="Brokerage name" value={form.brokerCompany} onChange={e => set('brokerCompany', e.target.value)} />
+            </Field>
+            <Field label="Broker Email">
+              <input className={inputCls} type="email" placeholder="broker@example.com" value={form.brokerEmail} onChange={e => set('brokerEmail', e.target.value)} />
+            </Field>
+            <Field label="Broker Phone">
+              <input className={inputCls} placeholder="(555) 123-4567" value={form.brokerPhone} onChange={e => set('brokerPhone', e.target.value)} />
+            </Field>
+          </div>
+        </div>
 
         {/* Borrower Info */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">

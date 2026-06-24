@@ -45,8 +45,8 @@ export default function PortalLoginPage() {
           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mx-auto mb-5">
             <Lock className="w-5 h-5 text-primary" />
           </div>
-          <h1 className="text-xl font-bold text-center text-white mb-1">Borrower Portal</h1>
-          <p className="text-sm text-zinc-400 text-center mb-7">Admin access only</p>
+          <h1 className="text-xl font-bold text-center text-white mb-1">Broker Portal</h1>
+          <p className="text-sm text-zinc-400 text-center mb-7">Track submitted deals and term sheets</p>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="relative">
@@ -82,7 +82,7 @@ export default function PortalLoginPage() {
         </div>
 
         <p className="text-xs text-zinc-600 text-center mt-6">
-          AssetLift Lending · Internal Portal
+          AssetLift Lending · Broker Portal
         </p>
       </div>
     </div>
