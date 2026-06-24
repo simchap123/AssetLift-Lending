@@ -97,7 +97,14 @@ async function callGemini(prompt, retries = 3) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { temperature: 0.6, maxOutputTokens: 3000 },
+        generationConfig: {
+          temperature: 0.6,
+          maxOutputTokens: 8192,
+          // gemini-2.5-flash is a thinking model; disable thinking so the full
+          // token budget goes to the answer JSON (otherwise it truncates and
+          // JSON.parse fails). Matches the working SEO generator.
+          thinkingConfig: { thinkingBudget: 0 },
+        },
       }),
     });
     if (res.ok) {
