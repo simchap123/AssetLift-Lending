@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { ArrowRight, BadgeCheck, CheckCircle, Clock3, DollarSign, FileCheck2, MapPinned, Phone, TrendingUp } from "lucide-react";
+import { ArrowRight, BadgeCheck, CheckCircle, Clock3, MapPinned, Phone, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { sendNotification } from "@/services/notificationService";
@@ -43,12 +43,6 @@ const Hero = () => {
     "Fix & flip, DSCR, bridge, and construction — four programs for every investor strategy",
     "No bank timelines. No income docs for DSCR. No runaround.",
     "Tell us the deal Thursday. Close next week.",
-  ];
-
-  const fundingSignals = [
-    { icon: FileCheck2, label: "Term Sheet", value: "Issued" },
-    { icon: DollarSign, label: "Funding", value: "$742K" },
-    { icon: CheckCircle, label: "Status", value: "Clear to Close" },
   ];
 
   const formatPhone = (value: string): string => {
@@ -143,30 +137,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_38%,transparent_0%,rgb(0_0_0/0.12)_34%,rgb(0_0_0/0.62)_100%)]" />
         <div className="hero-funding-trace absolute inset-x-0 bottom-0 h-32 opacity-60" />
       </div>
-
-      <motion.div
-        aria-hidden="true"
-        className="pointer-events-none absolute right-4 top-28 z-10 hidden w-[310px] rounded-xl border border-white/20 bg-background/70 p-4 shadow-2xl backdrop-blur-md xl:block"
-        initial={false}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.45 }}
-      >
-        <div className="mb-4 flex items-center justify-between">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">Renovation File</p>
-          <span className="rounded-full bg-primary px-2.5 py-1 text-xs font-bold text-primary-foreground">
-            Funded
-          </span>
-        </div>
-        <div className="grid grid-cols-3 gap-2">
-          {fundingSignals.map(({ icon: Icon, label, value }) => (
-            <div key={label} className="rounded-lg border border-border/70 bg-background/65 p-3">
-              <Icon className="mb-2 h-4 w-4 text-primary" />
-              <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{label}</p>
-              <p className="mt-1 text-sm font-bold text-foreground">{value}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
 
       <div className="hero-visible container relative z-20 px-4 md:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">

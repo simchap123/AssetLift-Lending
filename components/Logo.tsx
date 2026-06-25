@@ -11,13 +11,13 @@ const Logo = ({ className = "", size = 40 }: LogoProps) => {
       <img
         src="/logo.png"
         alt="Asset Lift Lending"
-        className="dark:hidden"
+        className="dark:hidden drop-shadow-[0_8px_18px_rgba(0,0,0,0.28)]"
         style={imgStyle}
       />
       <img
         src="/logo-new.jpg"
         alt="Asset Lift Lending"
-        className="hidden dark:block rounded-lg"
+        className="hidden dark:block rounded-lg drop-shadow-[0_8px_18px_rgba(0,0,0,0.34)]"
         style={imgStyle}
       />
     </span>
