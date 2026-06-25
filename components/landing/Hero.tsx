@@ -132,7 +132,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <Image
           src="/renovation-funding-hero.png"
-          alt="Investment property renovation in progress with plans being reviewed for funding"
+          alt="Investment property renovation in progress with hammers and drills in motion while funding is being reviewed"
           fill
           className="hero-renovation-motion object-cover"
           priority
