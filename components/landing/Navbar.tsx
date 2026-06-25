@@ -108,8 +108,15 @@ const Navbar = () => {
       <div className="container px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center">
-            <Logo size={36} className="md:hidden" />
-            <Logo size={42} className="hidden md:block" />
+            <div className="flex flex-col items-start gap-0.5">
+              <Logo size={36} className="md:hidden" />
+              <div className="hidden md:flex flex-col items-start">
+                <Logo size={45} />
+                <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary/85">
+                  Capital That Lifts.
+                </span>
+              </div>
+            </div>
           </Link>
 
           <nav className="hidden md:flex items-center gap-5">
