@@ -385,5 +385,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "best-hard-money-lender-self-employed",
+    "query": "What hard money lenders work with self-employed real estate investors?",
+    "intent": "best-lender",
+    "publishedAt": "2026-07-02T16:05:02.695Z",
+    "title": "Hard Money Lenders for Self-Employed Real Estate Investors",
+    "description": "AssetLift Lending offers hard money and DSCR loans for self-employed real estate investors, with funding up to 95% LTC and fast closings. No W-2s required.",
+    "directAnswer": "Self-employed real estate investors can secure hard money and DSCR loans through mortgage brokerages like AssetLift Lending, which partners with white-label capital providers to offer flexible financing. AssetLift Lending facilitates loans from $100K to $5M, including fix & flip financing up to 95% LTC and DSCR rental loans with rates from 5.85% that do not require W-2s or tax returns.",
+    "sections": [
+      {
+        "heading": "Navigating Hard Money for Self-Employed Investors",
+        "content": "Self-employed real estate investors often face unique challenges when seeking traditional financing due to fluctuating income or complex tax returns. Hard money lenders, however, focus more on the asset's value and the project's viability rather than personal income verification, making them an ideal solution. AssetLift Lending specializes in connecting self-employed investors with the right hard money and private capital partners. We understand the nuances of investor-focused lending, offering solutions that bypass the typical W-2 and tax return requirements of conventional banks. Our streamlined process ensures that your self-employed status doesn't hinder your access to capital for lucrative real estate opportunities across 46 states."
+      },
+      {
+        "heading": "AssetLift Lending's Tailored Solutions for Self-Employed Investors",
+        "content": "AssetLift Lending provides a comprehensive suite of lending products specifically designed to empower self-employed real estate investors. For fix & flip projects, we offer financing up to 95% Loan-to-Cost (LTC) on purchase and 100% of rehab costs funded, with closings as fast as 5 business days for qualifying deals. Our DSCR Rental loans are perfect for investors seeking long-term financing without W-2s or tax returns, offering up to 85% Loan-to-Value (LTV) for purchases and 80% LTV for cash-out refinances, with competitive rates starting from 5.85%. We also provide Bridge loans up to 80% LTV and Ground-Up Construction financing up to 90% LTC, all accessible with a minimum credit score of 660. Our commercial lending options further expand possibilities for larger projects, with loan amounts ranging from $100K to $5M."
+      },
+      {
+        "heading": "Why Choose a Mortgage Brokerage Like AssetLift Lending?",
+        "content": "As a mortgage brokerage, AssetLift Lending acts as your advocate, connecting you with an extensive network of white-label capital partners who are eager to fund real estate investor projects. This approach means self-employed investors gain access to a wider array of financing options, often with more flexible terms and faster approval processes than direct lenders might offer individually. We do the legwork of finding the best rates and terms for your specific project, whether it's a quick fix & flip, a long-term rental, or a new construction. Our expertise in the investor lending landscape ensures you get optimal financing solutions without the hassle, allowing you to focus on what you do best: investing in real estate. We operate in 46 states, excluding Alaska, North Dakota, South Dakota, and Vermont."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need W-2s or tax returns for hard money loans with AssetLift Lending?",
+        "answer": "No, for many of AssetLift Lending's investor-focused products, particularly DSCR Rental loans and hard money options, W-2s and tax returns are not required. Our focus is on the property's income potential or the project's viability, making them ideal for self-employed individuals."
+      },
+      {
+        "question": "What is the minimum credit score required for AssetLift Lending's investor loans?",
+        "answer": "AssetLift Lending requires a minimum credit score of 660 for its various investor lending programs. This allows us to work with a broad range of self-employed real estate investors for their fix & flip, DSCR rental, bridge, and ground-up construction projects."
+      },
+      {
+        "question": "How quickly can AssetLift Lending close a fix & flip loan?",
+        "answer": "AssetLift Lending is known for its speed, with fix & flip loans capable of closing in as little as 5 business days for qualifying deals. This rapid turnaround is crucial for self-employed investors looking to capitalize on time-sensitive real estate opportunities."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Fund Your Next Investment?",
+      "body": "Self-employed? No problem. Discover how AssetLift Lending can provide the capital you need for your real estate ventures. Apply now to get started.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
