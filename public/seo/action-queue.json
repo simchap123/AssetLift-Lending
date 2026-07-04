@@ -1,87 +1,97 @@
 {
-  "generatedAt": "2026-07-03T10:38:08.048Z",
+  "generatedAt": "2026-07-04T10:11:54.158Z",
   "connected": true,
-  "summary": "8 prioritized actions from real Search Console demand (top priority: California).",
+  "summary": "9 prioritized actions from real Search Console demand (top priority: California).",
   "items": [
     {
       "type": "build-demand-page",
       "target": "California",
       "category": "Geo",
-      "priority": 373,
-      "impressions": 373,
+      "priority": 382,
+      "impressions": 382,
       "position": 0,
-      "rationale": "373 impressions across 12 queries mention California.",
+      "rationale": "382 impressions across 12 queries mention California.",
       "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Colorado",
-      "category": "Geo",
-      "priority": 236,
-      "impressions": 236,
-      "position": 0,
-      "rationale": "236 impressions across 6 queries mention Colorado.",
-      "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 207,
-      "impressions": 207,
+      "priority": 335,
+      "impressions": 335,
       "position": 0,
-      "rationale": "207 impressions across 5 queries mention Maryland.",
+      "rationale": "335 impressions across 7 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Colorado",
+      "category": "Geo",
+      "priority": 250,
+      "impressions": 250,
+      "position": 0,
+      "rationale": "250 impressions across 6 queries mention Colorado.",
+      "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 204,
-      "impressions": 204,
+      "priority": 208,
+      "impressions": 208,
       "position": 0,
-      "rationale": "204 impressions across 5 queries mention Idaho.",
+      "rationale": "208 impressions across 5 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Arizona",
       "category": "Geo",
-      "priority": 175,
-      "impressions": 175,
+      "priority": 181,
+      "impressions": 181,
       "position": 0,
-      "rationale": "175 impressions across 6 queries mention Arizona.",
+      "rationale": "181 impressions across 6 queries mention Arizona.",
       "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/about",
       "category": "General",
-      "priority": 152,
-      "impressions": 76,
-      "position": 3.3,
-      "rationale": "76 impressions at position 3.3 but only 2 clicks.",
+      "priority": 154,
+      "impressions": 77,
+      "position": 3.2,
+      "rationale": "77 impressions at position 3.2 but only 2 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/contact",
       "category": "General",
-      "priority": 128,
-      "impressions": 64,
-      "position": 14.6,
-      "rationale": "64 impressions at position 14.6 but only 1 clicks.",
+      "priority": 134,
+      "impressions": 67,
+      "position": 17.1,
+      "rationale": "67 impressions at position 17.1 but only 1 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "build-demand-page",
       "target": "Connecticut",
       "category": "Geo",
-      "priority": 116,
-      "impressions": 116,
+      "priority": 118,
+      "impressions": 118,
       "position": 0,
-      "rationale": "116 impressions across 4 queries mention Connecticut.",
+      "rationale": "118 impressions across 4 queries mention Connecticut.",
       "action": "Add genuine Connecticut market coverage (state page plus top-metro city pages) to capture this demand."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/blog/real-estate-investor-financing-options-2026",
+      "category": "General",
+      "priority": 82,
+      "impressions": 41,
+      "position": 8.7,
+      "rationale": "41 impressions at position 8.7 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     }
   ]
 }
