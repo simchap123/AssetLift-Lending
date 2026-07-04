@@ -471,5 +471,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "how-to-qualify-dscr-loan",
+    "query": "How do I qualify for a DSCR loan?",
+    "intent": "how-to",
+    "publishedAt": "2026-07-04T15:04:50.829Z",
+    "title": "Qualify for a DSCR Loan with AssetLift Lending",
+    "description": "Learn DSCR loan qualifications, including credit score, LTV, and property type, with AssetLift Lending, a mortgage brokerage for investors.",
+    "directAnswer": "To qualify for a DSCR loan through AssetLift Lending, you typically need a minimum credit score of 660, and the property's rental income must sufficiently cover the mortgage payment, often resulting in a Debt Service Coverage Ratio of 1.20 or higher. AssetLift Lending offers DSCR Rental loans up to 85% LTV for purchases and 80% LTV for cash-out refinances, with rates from 5.85%, and does not require W-2s or tax returns.",
+    "sections": [
+      {
+        "heading": "Understanding DSCR Loan Requirements",
+        "content": "Qualifying for a Debt Service Coverage Ratio (DSCR) loan primarily hinges on the subject property's ability to generate enough rental income to cover its mortgage payments, rather than your personal income. Lenders assess the DSCR by dividing the property's projected gross rental income by its principal, interest, taxes, and insurance (PITI). A common minimum DSCR requirement is 1.20, meaning the property's income is 20% higher than its expenses. AssetLift Lending, as a dedicated mortgage brokerage for real estate investors, partners with white-label capital providers to offer DSCR Rental loans across 46 states, from $100K to $5M. We focus on the investment's viability, making these loans ideal for investors seeking to expand their portfolios without traditional income verification."
+      },
+      {
+        "heading": "Key Qualification Factors for DSCR Loans",
+        "content": "Beyond the property's DSCR, several other factors influence your eligibility. A minimum credit score of 660 is generally required for DSCR loans offered through AssetLift Lending. While no W-2s or tax returns are needed, lenders will review your credit history and overall financial stability. Loan-to-Value (LTV) ratios are also crucial; AssetLift Lending provides DSCR Rental loans up to 85% LTV for purchases and up to 80% LTV for cash-out refinances, allowing significant leverage for your investments. Our competitive rates start from 5.85% for qualifying deals. These loans are designed for various investment property types, including single-family rentals, multi-family units, and short-term rentals, offering flexibility for diverse real estate strategies."
+      },
+      {
+        "heading": "The AssetLift Lending Advantage for DSCR Investors",
+        "content": "Choosing AssetLift Lending for your DSCR loan means partnering with a mortgage brokerage that understands the unique needs of real estate investors. We simplify the lending process by connecting you with specialized capital partners, ensuring efficient underwriting and competitive terms. Our DSCR Rental program is tailored for investors looking for quick closings and high LTVs, without the hassle of traditional income documentation. For example, while Fix & Flip loans can close in as little as 5 business days with up to 95% LTC on purchase and 100% rehab funded, our DSCR loans offer a streamlined path to long-term rental property financing. Our expert team is available to guide you through the application process and help you secure the best financing solution for your investment goals. We operate in 46 states, excluding Alaska, North Dakota, South Dakota, and Vermont."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the minimum credit score for an AssetLift Lending DSCR loan?",
+        "answer": "AssetLift Lending requires a minimum credit score of 660 for DSCR loan qualification, ensuring accessibility for a broad range of real estate investors."
+      },
+      {
+        "question": "Does AssetLift Lending require W-2s or tax returns for DSCR loans?",
+        "answer": "No, AssetLift Lending does not require W-2s or tax returns for DSCR Rental loans, making the application process simpler and faster for investors."
+      },
+      {
+        "question": "What LTV can I expect for a DSCR purchase or cash-out refinance with AssetLift Lending?",
+        "answer": "For DSCR Rental loans, AssetLift Lending offers up to 85% LTV for purchases and up to 80% LTV for cash-out refinances, providing substantial financing options."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Qualify for Your DSCR Loan?",
+      "body": "Discover how AssetLift Lending can help you secure competitive DSCR financing for your investment properties. Apply online today or contact us to speak with an expert.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
