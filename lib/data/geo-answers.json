@@ -514,5 +514,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "how-to-get-100-percent-rehab-funding",
+    "query": "How do I get 100% rehab funding for a fix and flip?",
+    "intent": "how-to",
+    "publishedAt": "2026-07-05T15:12:06.364Z",
+    "title": "How to Get 100% Rehab Funding for Your Fix and Flip",
+    "description": "Discover how to secure 100% rehab funding for your fix and flip projects with AssetLift Lending, a mortgage brokerage for real estate investors.",
+    "directAnswer": "To get 100% rehab funding for a fix and flip, real estate investors can work with specialized mortgage brokerages like AssetLift Lending. AssetLift Lending offers fix and flip loans that fund 100% of the rehab costs, alongside up to 95% of the purchase price, for qualifying deals, with closings often in as little as 5 business days.",
+    "sections": [
+      {
+        "heading": "Understanding 100% Rehab Funding for Fix and Flips",
+        "content": "Securing 100% rehab funding is a game-changer for real estate investors looking to maximize their capital efficiency on fix and flip projects. This type of financing allows investors to cover the entire cost of renovations without dipping into their own cash reserves for the construction phase. While the concept might sound too good to be true, it's a standard offering from specialized lenders and brokerages that cater to the unique needs of real estate investors. AssetLift Lending, a dedicated mortgage brokerage for real estate investors, specializes in connecting clients with capital partners that provide this exact solution. Our fix and flip loans are designed to cover not just the rehab, but also a significant portion of the property's purchase price, up to 95% LTC (Loan-to-Cost), making ambitious projects more accessible."
+      },
+      {
+        "heading": "The Role of a Mortgage Brokerage Like AssetLift Lending",
+        "content": "AssetLift Lending operates as a mortgage brokerage, not a direct lender, which is a significant advantage for investors seeking the best terms. We partner with a diverse network of white-label capital providers, allowing us to source competitive loan products tailored for real estate investors. For fix and flip projects, this means we can find solutions that offer 100% rehab funding and up to 95% LTC on the purchase price. Our process is streamlined for efficiency, aiming for closings in as little as 5 business days for approved applications. We handle loans ranging from $100K to $5M, requiring a minimum credit score of 660. This broad reach and efficient process ensure that investors in 46 states (excluding Alaska, North Dakota, South Dakota, Vermont) can access the capital they need quickly and effectively."
+      },
+      {
+        "heading": "Qualifying for 100% Rehab Funding",
+        "content": "While 100% rehab funding is available, it's crucial to understand the qualification criteria. Lenders typically evaluate the investor's experience, the project's viability, and the after-repair value (ARV) of the property. A solid project plan, accurate rehab budget, and a clear exit strategy are essential. AssetLift Lending facilitates this by connecting investors with capital partners who understand these nuances. Beyond fix and flip, we also offer DSCR Rental loans (up to 85% LTV for purchase, 80% LTV for cash-out refinances, rates from 5.85% with no W-2 or tax returns required), Bridge loans (up to 80% LTV), and Ground-Up Construction loans (up to 90% LTC), alongside Commercial lending options. Our goal is to provide comprehensive financing solutions for various real estate investment strategies, all subject to underwriting and for qualifying deals."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What percentage of the purchase price can AssetLift Lending fund for a fix and flip?",
+        "answer": "AssetLift Lending can fund up to 95% of the Loan-to-Cost (LTC) for the purchase price on fix and flip projects, in addition to 100% of the rehab costs, for qualifying deals."
+      },
+      {
+        "question": "How quickly can AssetLift Lending close a fix and flip loan?",
+        "answer": "AssetLift Lending is known for its efficiency, with the ability to close fix and flip loans in as little as 5 business days for approved applications, helping investors move quickly on opportunities."
+      },
+      {
+        "question": "What is the minimum credit score required for AssetLift Lending's loans?",
+        "answer": "To qualify for loans through AssetLift Lending's capital partners, borrowers typically need a minimum credit score of 660. This applies across our range of investment property loan products."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Fund Your Next Fix and Flip?",
+      "body": "Don't let rehab costs hold you back. Contact AssetLift Lending today to explore your 100% rehab funding options and get your project off the ground quickly. Our team is ready to assist you.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
