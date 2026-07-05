@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-04T10:11:54.158Z",
+  "generatedAt": "2026-07-05T10:15:52.658Z",
   "connected": true,
   "dateRange": {
-    "startDate": "2026-06-03",
-    "endDate": "2026-07-01"
+    "startDate": "2026-06-04",
+    "endDate": "2026-07-02"
   },
   "summary": {
-    "clicks": 41,
-    "impressions": 27914,
+    "clicks": 42,
+    "impressions": 28155,
     "ctr": 0.0015,
     "position": 63.6
   },
@@ -15,53 +15,53 @@
   "weakCtrPages": [
     {
       "page": "/about",
-      "impressions": 77,
+      "impressions": 79,
       "clicks": 2,
-      "ctr": 0.026,
+      "ctr": 0.0253,
       "position": 3.2,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
       "page": "/contact",
-      "impressions": 67,
+      "impressions": 71,
       "clicks": 1,
-      "ctr": 0.0149,
-      "position": 17.1,
+      "ctr": 0.0141,
+      "position": 18.7,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
       "page": "/blog/real-estate-investor-financing-options-2026",
-      "impressions": 41,
+      "impressions": 42,
       "clicks": 0,
       "ctr": 0,
-      "position": 8.7,
+      "position": 8.5,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     }
   ],
   "topQueries": [
     {
       "query": "dscr loan for rental property",
-      "impressions": 158,
+      "impressions": 163,
       "clicks": 0,
-      "position": 81
+      "position": 81.4
     },
     {
       "query": "build to rent loans",
-      "impressions": 140,
+      "impressions": 143,
       "clicks": 0,
-      "position": 80.3
+      "position": 80.4
     },
     {
       "query": "dscr loan calculator",
-      "impressions": 124,
+      "impressions": 123,
       "clicks": 0,
-      "position": 71.5
+      "position": 72.2
     },
     {
       "query": "dscr loan maryland",
-      "impressions": 98,
+      "impressions": 96,
       "clicks": 0,
-      "position": 57.1
+      "position": 57
     },
     {
       "query": "asset based loan companies",
@@ -71,15 +71,15 @@
     },
     {
       "query": "bridge loan idaho",
-      "impressions": 77,
+      "impressions": 76,
       "clicks": 0,
       "position": 56.2
     },
     {
       "query": "bridge loan colorado",
-      "impressions": 70,
+      "impressions": 72,
       "clicks": 0,
-      "position": 75.1
+      "position": 75.2
     },
     {
       "query": "credit builder loan north carolina",
@@ -89,81 +89,81 @@
     },
     {
       "query": "dscr loan california",
-      "impressions": 65,
+      "impressions": 66,
       "clicks": 0,
       "position": 83
+    },
+    {
+      "query": "boca raton hard money lenders",
+      "impressions": 63,
+      "clicks": 0,
+      "position": 40.3
     },
     {
       "query": "credit builder loan hawaii",
       "impressions": 63,
       "clicks": 0,
-      "position": 83.1
-    },
-    {
-      "query": "arkansas credit builder loan",
-      "impressions": 62,
-      "clicks": 0,
-      "position": 77.7
-    },
-    {
-      "query": "boca raton hard money lenders",
-      "impressions": 60,
-      "clicks": 0,
-      "position": 40.2
-    },
-    {
-      "query": "dscr calculator",
-      "impressions": 60,
-      "clicks": 0,
-      "position": 64.8
+      "position": 83
     },
     {
       "query": "bridge loans wisconsin",
-      "impressions": 58,
+      "impressions": 61,
       "clicks": 0,
-      "position": 67.9
+      "position": 68
     },
     {
-      "query": "credit builder loan wyoming",
-      "impressions": 58,
+      "query": "dscr calculator",
+      "impressions": 61,
       "clicks": 0,
-      "position": 86.4
+      "position": 64.7
+    },
+    {
+      "query": "arkansas credit builder loan",
+      "impressions": 60,
+      "clicks": 0,
+      "position": 78.2
+    },
+    {
+      "query": "asset loan san diego",
+      "impressions": 59,
+      "clicks": 0,
+      "position": 34.8
+    },
+    {
+      "query": "bridge loans denver",
+      "impressions": 56,
+      "clicks": 0,
+      "position": 56.6
     },
     {
       "query": "credit builder loan nebraska",
-      "impressions": 57,
+      "impressions": 56,
       "clicks": 0,
       "position": 89.3
     },
     {
-      "query": "bridge loans denver",
-      "impressions": 54,
+      "query": "credit builder loan kansas",
+      "impressions": 55,
       "clicks": 0,
-      "position": 56.2
+      "position": 93.6
     },
     {
       "query": "credit builder loan maryland",
       "impressions": 54,
       "clicks": 0,
-      "position": 95
+      "position": 95.2
     },
     {
-      "query": "asset loan san diego",
-      "impressions": 53,
+      "query": "credit builder loan wyoming",
+      "impressions": 54,
       "clicks": 0,
-      "position": 34.3
+      "position": 87.1
     },
     {
-      "query": "credit builder loan kansas",
+      "query": "credit builder loan new hampshire",
       "impressions": 53,
       "clicks": 0,
-      "position": 93.7
-    },
-    {
-      "query": "credit builder loan wy",
-      "impressions": 53,
-      "clicks": 0,
-      "position": 94.2
+      "position": 90.5
     },
     {
       "query": "construction loans maryland",
@@ -172,22 +172,34 @@
       "position": 73.4
     },
     {
-      "query": "credit builder loan new hampshire",
-      "impressions": 52,
+      "query": "credit builder loan mississippi",
+      "impressions": 51,
       "clicks": 0,
-      "position": 90.5
+      "position": 89.6
     },
     {
-      "query": "credit builder loan west virginia",
-      "impressions": 52,
+      "query": "boca raton hard money lender",
+      "impressions": 50,
       "clicks": 0,
-      "position": 87.8
+      "position": 50.7
     },
     {
       "query": "credit builder loan ct",
       "impressions": 50,
       "clicks": 0,
-      "position": 93
+      "position": 93.5
+    },
+    {
+      "query": "credit builder loan west virginia",
+      "impressions": 50,
+      "clicks": 0,
+      "position": 87.9
+    },
+    {
+      "query": "credit builder loan wy",
+      "impressions": 50,
+      "clicks": 0,
+      "position": 94.3
     },
     {
       "query": "dscr loan colorado",
@@ -196,22 +208,10 @@
       "position": 67.2
     },
     {
-      "query": "boca raton hard money lender",
-      "impressions": 49,
-      "clicks": 0,
-      "position": 50.8
-    },
-    {
       "query": "credit builder loan idaho",
       "impressions": 49,
       "clicks": 0,
-      "position": 71.2
-    },
-    {
-      "query": "credit builder loan mississippi",
-      "impressions": 48,
-      "clicks": 0,
-      "position": 89.7
+      "position": 71.4
     },
     {
       "query": "credit builder loan montana",
@@ -220,40 +220,34 @@
       "position": 90.3
     },
     {
-      "query": "credit builder loan oregon",
-      "impressions": 47,
+      "query": "dscr loan indiana",
+      "impressions": 48,
       "clicks": 0,
-      "position": 96.5
+      "position": 60.8
     },
     {
-      "query": "dscr loan indiana",
+      "query": "credit builder loan oregon",
       "impressions": 46,
       "clicks": 0,
-      "position": 60.9
+      "position": 96.7
     },
     {
       "query": "asset backed loan san diego",
-      "impressions": 44,
+      "impressions": 45,
       "clicks": 0,
-      "position": 51.9
+      "position": 51.6
     },
     {
-      "query": "credit builder loan rhode island",
+      "query": "colorado hard money lenders",
       "impressions": 44,
       "clicks": 0,
-      "position": 78.1
+      "position": 71.6
     },
     {
       "query": "dscr loan arizona",
       "impressions": 44,
       "clicks": 0,
       "position": 67.6
-    },
-    {
-      "query": "colorado hard money lenders",
-      "impressions": 43,
-      "clicks": 0,
-      "position": 71.5
     },
     {
       "query": "construction loan maryland",
@@ -263,51 +257,57 @@
     },
     {
       "query": "dscr loan maine",
-      "impressions": 42,
+      "impressions": 43,
       "clicks": 0,
       "position": 54.8
     },
     {
-      "query": "bridge loans atlanta",
-      "impressions": 41,
-      "clicks": 0,
-      "position": 44.6
-    },
-    {
       "query": "credit builder loan iowa",
-      "impressions": 40,
+      "impressions": 42,
       "clicks": 0,
       "position": 97
     },
     {
-      "query": "dlr loan",
-      "impressions": 40,
+      "query": "credit builder loan rhode island",
+      "impressions": 42,
       "clicks": 0,
-      "position": 69.8
+      "position": 78.2
     },
     {
-      "query": "dscr loan georgia",
-      "impressions": 40,
+      "query": "california asset backed loan",
+      "impressions": 41,
       "clicks": 0,
-      "position": 77.6
+      "position": 81.7
     },
     {
-      "query": "dscr loan mississippi",
+      "query": "bridge loans atlanta",
       "impressions": 40,
       "clicks": 0,
-      "position": 45.9
+      "position": 44
     },
     {
       "query": "bridge loan utah",
       "impressions": 39,
       "clicks": 0,
-      "position": 64.1
+      "position": 64.2
     },
     {
-      "query": "california asset backed loan",
+      "query": "bridge loans scottsdale",
       "impressions": 39,
       "clicks": 0,
-      "position": 81.7
+      "position": 67.3
+    },
+    {
+      "query": "bridge loans west palm beach",
+      "impressions": 39,
+      "clicks": 0,
+      "position": 41.7
+    },
+    {
+      "query": "dlr loan",
+      "impressions": 39,
+      "clicks": 0,
+      "position": 69.8
     },
     {
       "query": "dscr fix and flip loans",
@@ -316,10 +316,22 @@
       "position": 74.6
     },
     {
-      "query": "bridge loans scottsdale",
-      "impressions": 38,
+      "query": "dscr loan georgia",
+      "impressions": 39,
       "clicks": 0,
-      "position": 67.7
+      "position": 77.7
+    },
+    {
+      "query": "bridge loans austin",
+      "impressions": 37,
+      "clicks": 0,
+      "position": 63.8
+    },
+    {
+      "query": "connecticut hard money lenders",
+      "impressions": 37,
+      "clicks": 0,
+      "position": 70.2
     },
     {
       "query": "asset loans nevada",
@@ -328,226 +340,250 @@
       "position": 27.1
     },
     {
-      "query": "bridge loans austin",
+      "query": "credit builder loan alabama",
       "impressions": 36,
       "clicks": 0,
-      "position": 62.9
+      "position": 86
     },
     {
-      "query": "bridge loans west palm beach",
-      "impressions": 36,
+      "query": "asset bridge loan",
+      "impressions": 35,
       "clicks": 0,
-      "position": 43
-    },
-    {
-      "query": "connecticut hard money lenders",
-      "impressions": 36,
-      "clicks": 0,
-      "position": 70.6
+      "position": 43.3
     },
     {
       "query": "asset loan tucson",
       "impressions": 35,
       "clicks": 0,
-      "position": 39.8
-    },
-    {
-      "query": "asset loans michigan",
-      "impressions": 35,
-      "clicks": 0,
-      "position": 33.7
+      "position": 40.3
     },
     {
       "query": "bridge loan hawaii",
       "impressions": 35,
       "clicks": 0,
-      "position": 47.6
+      "position": 47.3
     },
     {
-      "query": "credit builder loan alabama",
+      "query": "colorado hard money lender",
       "impressions": 35,
       "clicks": 0,
-      "position": 86.2
+      "position": 77.2
     },
     {
-      "query": "asset‑based bridge loans",
+      "query": "dscr loan massachusetts",
+      "impressions": 35,
+      "clicks": 0,
+      "position": 59.9
+    },
+    {
+      "query": "asset loans michigan",
       "impressions": 34,
       "clicks": 0,
-      "position": 63.7
+      "position": 33.6
     },
     {
       "query": "bay area asset loan",
       "impressions": 34,
       "clicks": 0,
-      "position": 57.2
+      "position": 56.8
     },
     {
       "query": "bridge loan arkansas",
       "impressions": 34,
       "clicks": 0,
-      "position": 48.4
+      "position": 48.5
     },
     {
-      "query": "dscr loan massachusetts",
-      "impressions": 34,
-      "clicks": 0,
-      "position": 60
-    },
-    {
-      "query": "asset bridge loan",
+      "query": "asset‑based bridge loans",
       "impressions": 33,
       "clicks": 0,
-      "position": 43.7
+      "position": 63.2
     },
     {
-      "query": "colorado hard money lender",
+      "query": "dscr loan atlanta",
       "impressions": 33,
       "clicks": 0,
-      "position": 77
+      "position": 74
     },
     {
-      "query": "credit builder loan ri",
-      "impressions": 33,
-      "clicks": 0,
-      "position": 82.2
-    },
-    {
-      "query": "asset based loan florida",
+      "query": "166 loan",
       "impressions": 32,
       "clicks": 0,
-      "position": 81.7
+      "position": 64.3
+    },
+    {
+      "query": "asset backed loan scottsdale",
+      "impressions": 32,
+      "clicks": 0,
+      "position": 43.3
+    },
+    {
+      "query": "asset backed loans nevada",
+      "impressions": 32,
+      "clicks": 0,
+      "position": 41.5
     },
     {
       "query": "asset loan dallas",
       "impressions": 32,
       "clicks": 0,
-      "position": 42.5
+      "position": 42.3
     },
     {
-      "query": "dscr loan atlanta",
+      "query": "ca licensed asset lender",
       "impressions": 32,
       "clicks": 0,
-      "position": 74.2
+      "position": 60.3
+    },
+    {
+      "query": "compare luxury asset lenders",
+      "impressions": 32,
+      "clicks": 0,
+      "position": 57.3
     },
     {
       "query": "dscr loan lenders maryland",
       "impressions": 32,
       "clicks": 0,
-      "position": 68.1
-    },
-    {
-      "query": "166 loan",
-      "impressions": 31,
-      "clicks": 0,
-      "position": 64.3
+      "position": 68.4
     },
     {
       "query": "arv+based+lending+philadelphia",
       "impressions": 31,
       "clicks": 0,
-      "position": 67.5
+      "position": 66.8
     },
     {
-      "query": "asset backed loan scottsdale",
+      "query": "asset based lending florida",
       "impressions": 31,
       "clicks": 0,
-      "position": 43.4
-    },
-    {
-      "query": "asset backed loans nevada",
-      "impressions": 31,
-      "clicks": 0,
-      "position": 41.3
+      "position": 85
     },
     {
       "query": "asset based lending texas",
       "impressions": 31,
       "clicks": 0,
-      "position": 77.3
+      "position": 77.2
+    },
+    {
+      "query": "asset financing california",
+      "impressions": 31,
+      "clicks": 0,
+      "position": 36.3
     },
     {
       "query": "bridge loan arizona",
       "impressions": 31,
       "clicks": 0,
-      "position": 76.8
+      "position": 76.7
+    },
+    {
+      "query": "bridge loan las vegas",
+      "impressions": 31,
+      "clicks": 0,
+      "position": 44.9
     },
     {
       "query": "bridge loan oregon",
       "impressions": 31,
       "clicks": 0,
-      "position": 57.2
+      "position": 57.1
     },
     {
       "query": "bridge loans in maine",
       "impressions": 31,
       "clicks": 0,
-      "position": 51.1
+      "position": 51
     },
     {
-      "query": "asset based lending florida",
-      "impressions": 30,
+      "query": "ca asset loan",
+      "impressions": 31,
       "clicks": 0,
-      "position": 84.9
+      "position": 49.6
     },
     {
-      "query": "asset financing california",
-      "impressions": 30,
+      "query": "california asset loans",
+      "impressions": 31,
       "clicks": 0,
-      "position": 35.7
+      "position": 38.8
     },
     {
-      "query": "bridge loan las vegas",
+      "query": "connecticut bridge loan",
+      "impressions": 31,
+      "clicks": 0,
+      "position": 63.9
+    },
+    {
+      "query": "credit builder loan ri",
+      "impressions": 31,
+      "clicks": 0,
+      "position": 82.4
+    },
+    {
+      "query": "dscr loan long island ny",
+      "impressions": 31,
+      "clicks": 0,
+      "position": 54.7
+    },
+    {
+      "query": "asset based loan florida",
       "impressions": 30,
       "clicks": 0,
-      "position": 44.6
+      "position": 81.3
+    },
+    {
+      "query": "bridge loans idaho",
+      "impressions": 30,
+      "clicks": 0,
+      "position": 44.1
     },
     {
       "query": "bridge loans illinois",
       "impressions": 30,
       "clicks": 0,
-      "position": 60.2
+      "position": 59.9
     },
     {
       "query": "bridge loans nevada",
       "impressions": 30,
       "clicks": 0,
-      "position": 54.6
+      "position": 54.1
     },
     {
-      "query": "ca licensed asset lender",
+      "query": "bridge loans orlando fl",
       "impressions": 30,
       "clicks": 0,
-      "position": 60.6
+      "position": 75.5
     },
     {
-      "query": "california asset loans",
+      "query": "californian asset based loan",
       "impressions": 30,
       "clicks": 0,
-      "position": 38.6
+      "position": 72.8
     },
     {
-      "query": "compare luxury asset lenders",
-      "impressions": 30,
+      "query": "arizona asset backed loan",
+      "impressions": 29,
       "clicks": 0,
-      "position": 56.9
+      "position": 65.3
     },
     {
-      "query": "connecticut bridge loan",
-      "impressions": 30,
+      "query": "asset backed loan san antonio",
+      "impressions": 29,
       "clicks": 0,
-      "position": 63.7
+      "position": 60.1
     },
     {
-      "query": "dscr loan long island ny",
-      "impressions": 30,
+      "query": "asset backed loans arizona",
+      "impressions": 29,
       "clicks": 0,
-      "position": 54.4
+      "position": 66.8
     },
     {
       "query": "asset backed loans california",
       "impressions": 29,
       "clicks": 0,
-      "position": 78.1
+      "position": 77.8
     },
     {
       "query": "asset loan austin",
@@ -556,118 +592,112 @@
       "position": 46.2
     },
     {
-      "query": "bridge loan maryland",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 50
-    },
-    {
-      "query": "bridge loan oklahoma",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 63.8
-    },
-    {
-      "query": "bridge loan pennsylvania",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 57.9
-    },
-    {
-      "query": "bridge loans idaho",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 44
-    },
-    {
-      "query": "bridge loans in iowa",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 54.5
-    },
-    {
-      "query": "bridge loans orlando fl",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 75.5
-    },
-    {
-      "query": "ca asset loan",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 49.3
-    },
-    {
-      "query": "californian asset based loan",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 72.8
-    },
-    {
-      "query": "credit builder loan kentucky",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 93.4
-    },
-    {
-      "query": "arizona asset backed loan",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 64.5
-    },
-    {
-      "query": "asset backed loan dallas",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 77.8
-    },
-    {
-      "query": "asset backed loan san antonio",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 60
-    },
-    {
-      "query": "asset backed loans arizona",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 66.6
-    },
-    {
-      "query": "asset based lending colorado",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 68.3
-    },
-    {
       "query": "asset loan ca",
-      "impressions": 28,
+      "impressions": 29,
       "clicks": 0,
-      "position": 54.6
+      "position": 54.7
     },
     {
       "query": "asset loan scottsdale",
-      "impressions": 28,
+      "impressions": 29,
       "clicks": 0,
-      "position": 40.3
+      "position": 39.7
     },
     {
       "query": "asset loans california",
-      "impressions": 28,
+      "impressions": 29,
       "clicks": 0,
       "position": 45.8
     },
     {
       "query": "best installment loan west virginia",
-      "impressions": 28,
+      "impressions": 29,
       "clicks": 0,
-      "position": 72
+      "position": 71.9
     },
     {
       "query": "best installment loans west virginia",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 71.6
+    },
+    {
+      "query": "bridge loan maryland",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 50.3
+    },
+    {
+      "query": "bridge loan pennsylvania",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 57.7
+    },
+    {
+      "query": "bridge loans in ct",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 67.1
+    },
+    {
+      "query": "bridge loans in iowa",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 54.3
+    },
+    {
+      "query": "connecticut hard money",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 71
+    },
+    {
+      "query": "credit builder loan utah",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 90.1
+    },
+    {
+      "query": "asset backed loan dallas",
       "impressions": 28,
       "clicks": 0,
-      "position": 71.3
+      "position": 77.9
+    },
+    {
+      "query": "asset based lending colorado",
+      "impressions": 28,
+      "clicks": 0,
+      "position": 69.6
+    },
+    {
+      "query": "asset loan california",
+      "impressions": 28,
+      "clicks": 0,
+      "position": 60.6
+    },
+    {
+      "query": "asset loans texas",
+      "impressions": 28,
+      "clicks": 0,
+      "position": 48.8
+    },
+    {
+      "query": "asset secured credit california",
+      "impressions": 28,
+      "clicks": 0,
+      "position": 74.5
+    },
+    {
+      "query": "boise idaho hard money lenders",
+      "impressions": 28,
+      "clicks": 0,
+      "position": 66.6
+    },
+    {
+      "query": "borrow against assets california",
+      "impressions": 28,
+      "clicks": 0,
+      "position": 58.9
     },
     {
       "query": "bridge loan denver",
@@ -676,34 +706,22 @@
       "position": 71.5
     },
     {
-      "query": "bridge loans in ct",
+      "query": "bridge loan oklahoma",
       "impressions": 28,
       "clicks": 0,
-      "position": 67.2
+      "position": 63.8
     },
     {
-      "query": "build to rent financing",
+      "query": "bridge loans boise",
       "impressions": 28,
       "clicks": 0,
-      "position": 85.7
+      "position": 46.1
     },
     {
-      "query": "connecticut hard money",
+      "query": "credit builder loan kentucky",
       "impressions": 28,
       "clicks": 0,
-      "position": 71.4
-    },
-    {
-      "query": "credit builder loan new mexico",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 92.9
-    },
-    {
-      "query": "credit builder loan utah",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 90.3
+      "position": 93.8
     },
     {
       "query": "dallas apartment loans",
@@ -715,43 +733,67 @@
       "query": "asset backed loan fort worth",
       "impressions": 27,
       "clicks": 0,
-      "position": 60.4
+      "position": 61
     },
     {
       "query": "asset backed loans texas",
       "impressions": 27,
       "clicks": 0,
-      "position": 76.5
+      "position": 75.9
     },
     {
-      "query": "asset loan california",
+      "query": "asset loan fort worth",
       "impressions": 27,
       "clicks": 0,
-      "position": 60.6
+      "position": 40.3
     },
     {
-      "query": "asset loans texas",
+      "query": "asset loans arizona",
       "impressions": 27,
       "clicks": 0,
-      "position": 48.8
+      "position": 41.7
     },
     {
-      "query": "asset secured credit california",
+      "query": "asset secured loan california",
       "impressions": 27,
       "clicks": 0,
-      "position": 74.3
+      "position": 79.1
     },
     {
-      "query": "boise idaho hard money lenders",
+      "query": "austin apartment loans",
       "impressions": 27,
       "clicks": 0,
-      "position": 66.3
+      "position": 72.5
     },
     {
-      "query": "borrow against assets california",
+      "query": "az asset lender",
       "impressions": 27,
       "clicks": 0,
-      "position": 58.6
+      "position": 40.4
+    },
+    {
+      "query": "boise hard money loans",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 53.3
+    },
+    {
+      "query": "bridge loan indiana",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 62
+    },
+    {
+      "query": "bridge loan lender georgia",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 63.7
+    },
+    {
+      "query": "bridge loan lenders idaho",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 46.1
     },
     {
       "query": "business construction financing eastern panhandle",
@@ -760,10 +802,22 @@
       "position": 79.7
     },
     {
-      "query": "dscr loan maryland guide",
+      "query": "commercial hard money lenders georgia",
       "impressions": 27,
       "clicks": 0,
-      "position": 63.9
+      "position": 65.2
+    },
+    {
+      "query": "credit builder loan new mexico",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 92.8
+    },
+    {
+      "query": "dscr loan kansas",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 59.2
     },
     {
       "query": "asset based loans colorado",
@@ -772,64 +826,10 @@
       "position": 66.3
     },
     {
-      "query": "asset loan fort worth",
+      "query": "build to rent financing",
       "impressions": 26,
       "clicks": 0,
-      "position": 40.7
-    },
-    {
-      "query": "asset loans arizona",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 41.8
-    },
-    {
-      "query": "asset secured loan california",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 78.8
-    },
-    {
-      "query": "austin apartment loans",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 72.7
-    },
-    {
-      "query": "az asset lender",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 40.7
-    },
-    {
-      "query": "boise hard money loans",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 53.3
-    },
-    {
-      "query": "bridge loan indiana",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 61.7
-    },
-    {
-      "query": "bridge loan lender georgia",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 63.7
-    },
-    {
-      "query": "bridge loan lenders idaho",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 45.9
-    },
-    {
-      "query": "bridge loans boise",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 45.8
+      "position": 85.8
     },
     {
       "query": "build to rent loan",
@@ -838,10 +838,28 @@
       "position": 85.2
     },
     {
-      "query": "commercial hard money lenders georgia",
+      "query": "california asset loan",
       "impressions": 26,
       "clicks": 0,
-      "position": 65.2
+      "position": 45.8
+    },
+    {
+      "query": "dscr loan maryland guide",
+      "impressions": 26,
+      "clicks": 0,
+      "position": 64
+    },
+    {
+      "query": "arizona 6 figure asset loan",
+      "impressions": 25,
+      "clicks": 0,
+      "position": 75.7
+    },
+    {
+      "query": "asset based loan miami",
+      "impressions": 25,
+      "clicks": 0,
+      "position": 84.5
     },
     {
       "query": "bridge loans miami fl",
@@ -850,203 +868,185 @@
       "position": 34.6
     },
     {
-      "query": "california asset loan",
+      "query": "dscr loan lender in denver",
       "impressions": 25,
       "clicks": 0,
-      "position": 45.9
+      "position": 89.8
     },
     {
-      "query": "arizona 6 figure asset loan",
+      "query": "asset backed loan austin",
       "impressions": 24,
       "clicks": 0,
-      "position": 75.5
+      "position": 69.2
     },
     {
-      "query": "asset based loan miami",
+      "query": "asset backed loan tucson",
       "impressions": 24,
       "clicks": 0,
-      "position": 85.3
+      "position": 63.9
     },
     {
-      "query": "bridge loans connecticut",
+      "query": "asset loan san antonio",
       "impressions": 24,
       "clicks": 0,
-      "position": 73.5
+      "position": 36.3
+    },
+    {
+      "query": "bridge loan tennessee",
+      "impressions": 24,
+      "clicks": 0,
+      "position": 70.7
+    },
+    {
+      "query": "bridge loans colorado",
+      "impressions": 24,
+      "clicks": 0,
+      "position": 72.2
+    },
+    {
+      "query": "bridge loans fort lauderdale",
+      "impressions": 24,
+      "clicks": 0,
+      "position": 54.2
+    },
+    {
+      "query": "bridge loans ohio",
+      "impressions": 24,
+      "clicks": 0,
+      "position": 59
     },
     {
       "query": "construction project financing omaha",
       "impressions": 24,
       "clicks": 0,
-      "position": 75.5
+      "position": 75.3
     },
     {
-      "query": "credit builder loan ky",
+      "query": "dscr loan hauppauge ny",
       "impressions": 24,
       "clicks": 0,
-      "position": 93.8
+      "position": 75.2
     },
     {
-      "query": "dscr loan kansas",
+      "query": "dscr loan lender in chicago",
       "impressions": 24,
       "clicks": 0,
-      "position": 58.7
+      "position": 90.8
     },
     {
-      "query": "asset backed loan austin",
+      "query": "asset based loans denver",
       "impressions": 23,
       "clicks": 0,
-      "position": 69.1
-    },
-    {
-      "query": "asset backed loan tucson",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 63.7
-    },
-    {
-      "query": "asset loan san antonio",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 36.7
-    },
-    {
-      "query": "bridge loan orlando",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 76.7
-    },
-    {
-      "query": "bridge loan tennessee",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 70.7
-    },
-    {
-      "query": "bridge loans fort lauderdale",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 54.5
-    },
-    {
-      "query": "bridge loans ohio",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 59.1
-    },
-    {
-      "query": "ca asset based loan",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 81.6
+      "position": 76.5
     }
   ],
   "categories": [
     {
       "name": "Bridge",
-      "queries": 167,
-      "impressions": 1974,
+      "queries": 165,
+      "impressions": 1996,
       "clicks": 0,
       "position": 57.8,
       "topQueries": [
         {
           "query": "bridge loan idaho",
-          "impressions": 77,
+          "impressions": 76,
           "position": 56.2
         },
         {
           "query": "bridge loan colorado",
-          "impressions": 70,
-          "position": 75.1
+          "impressions": 72,
+          "position": 75.2
         },
         {
           "query": "bridge loans wisconsin",
-          "impressions": 58,
-          "position": 67.9
+          "impressions": 61,
+          "position": 68
         },
         {
           "query": "bridge loans denver",
-          "impressions": 54,
-          "position": 56.2
+          "impressions": 56,
+          "position": 56.6
         },
         {
           "query": "bridge loans atlanta",
-          "impressions": 41,
-          "position": 44.6
+          "impressions": 40,
+          "position": 44
         }
       ]
     },
     {
       "name": "DSCR / Rental",
-      "queries": 238,
-      "impressions": 1865,
+      "queries": 237,
+      "impressions": 1836,
       "clicks": 0,
-      "position": 68.1,
+      "position": 68.7,
       "topQueries": [
         {
           "query": "dscr loan for rental property",
-          "impressions": 158,
-          "position": 81
+          "impressions": 163,
+          "position": 81.4
         },
         {
           "query": "dscr loan calculator",
-          "impressions": 124,
-          "position": 71.5
+          "impressions": 123,
+          "position": 72.2
         },
         {
           "query": "dscr loan maryland",
-          "impressions": 98,
-          "position": 57.1
+          "impressions": 96,
+          "position": 57
         },
         {
           "query": "dscr loan california",
-          "impressions": 65,
+          "impressions": 66,
           "position": 83
         },
         {
           "query": "dscr calculator",
-          "impressions": 60,
-          "position": 64.8
+          "impressions": 61,
+          "position": 64.7
         }
       ]
     },
     {
       "name": "Hard Money",
-      "queries": 69,
-      "impressions": 606,
+      "queries": 73,
+      "impressions": 621,
       "clicks": 1,
-      "position": 61.7,
+      "position": 61.6,
       "topQueries": [
         {
           "query": "boca raton hard money lenders",
-          "impressions": 60,
-          "position": 40.2
+          "impressions": 63,
+          "position": 40.3
         },
         {
           "query": "boca raton hard money lender",
-          "impressions": 49,
-          "position": 50.8
+          "impressions": 50,
+          "position": 50.7
         },
         {
           "query": "colorado hard money lenders",
-          "impressions": 43,
-          "position": 71.5
+          "impressions": 44,
+          "position": 71.6
         },
         {
           "query": "connecticut hard money lenders",
-          "impressions": 36,
-          "position": 70.6
+          "impressions": 37,
+          "position": 70.2
         },
         {
           "query": "colorado hard money lender",
-          "impressions": 33,
-          "position": 77
+          "impressions": 35,
+          "position": 77.2
         }
       ]
     },
     {
       "name": "Construction",
-      "queries": 76,
-      "impressions": 415,
+      "queries": 77,
+      "impressions": 419,
       "clicks": 0,
       "position": 78.1,
       "topQueries": [
@@ -1068,7 +1068,7 @@
         {
           "query": "construction project financing omaha",
           "impressions": 24,
-          "position": 75.5
+          "position": 75.3
         },
         {
           "query": "construction project financing minneapolis",
@@ -1080,9 +1080,9 @@
     {
       "name": "Commercial / Multifamily",
       "queries": 55,
-      "impressions": 269,
+      "impressions": 279,
       "clicks": 0,
-      "position": 71.1,
+      "position": 70.9,
       "topQueries": [
         {
           "query": "dallas apartment loans",
@@ -1091,23 +1091,23 @@
         },
         {
           "query": "austin apartment loans",
-          "impressions": 26,
-          "position": 72.7
+          "impressions": 27,
+          "position": 72.5
         },
         {
           "query": "commercial hard money lenders georgia",
-          "impressions": 26,
+          "impressions": 27,
           "position": 65.2
         },
         {
           "query": "arkansas apartment loan",
-          "impressions": 20,
-          "position": 51.6
+          "impressions": 21,
+          "position": 51.7
         },
         {
           "query": "chandler apartment loans",
           "impressions": 16,
-          "position": 81.6
+          "position": 81
         }
       ]
     },
@@ -1116,7 +1116,7 @@
       "queries": 31,
       "impressions": 189,
       "clicks": 0,
-      "position": 63.9,
+      "position": 63.6,
       "topQueries": [
         {
           "query": "dscr fix and flip loans",
@@ -1124,44 +1124,37 @@
           "position": 74.6
         },
         {
-          "query": "best fix and flip loans",
-          "impressions": 18,
-          "position": 61.9
+          "query": "alexandria fix and flip loan",
+          "impressions": 17,
+          "position": 76.2
         },
         {
-          "query": "alexandria fix and flip loan",
-          "impressions": 16,
-          "position": 76.6
+          "query": "best fix and flip loans",
+          "impressions": 17,
+          "position": 60.8
         },
         {
           "query": "arlington fix and flip loan",
-          "impressions": 15,
-          "position": 35.8
+          "impressions": 16,
+          "position": 36.1
         },
         {
           "query": "baltimore fix and flip loan",
-          "impressions": 15,
-          "position": 49.1
+          "impressions": 16,
+          "position": 49.6
         }
       ]
     }
   ],
   "recent": {
-    "startDate": "2026-06-24",
-    "endDate": "2026-07-01",
-    "clicks": 15,
-    "impressions": 8809,
-    "ctr": 0.0017,
+    "startDate": "2026-06-25",
+    "endDate": "2026-07-02",
+    "clicks": 16,
+    "impressions": 8859,
+    "ctr": 0.0018,
     "position": 63.3
   },
   "dailyMetrics": [
-    {
-      "date": "2026-06-03",
-      "clicks": 2,
-      "impressions": 572,
-      "ctr": 0.0035,
-      "position": 65.9
-    },
     {
       "date": "2026-06-04",
       "clicks": 1,
@@ -1357,6 +1350,13 @@
       "impressions": 948,
       "ctr": 0.0053,
       "position": 61.6
+    },
+    {
+      "date": "2026-07-02",
+      "clicks": 3,
+      "impressions": 813,
+      "ctr": 0.0037,
+      "position": 64.1
     }
   ],
   "message": "Found 0 striking-distance queries and 3 pages with weak click-through over the last 28 days."
