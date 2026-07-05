@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-07-04T10:11:53.914Z",
-  "anchorRotationIndex": 5,
-  "pageRotationIndex": 4,
+  "generatedAt": "2026-07-05T10:15:52.381Z",
+  "anchorRotationIndex": 4,
+  "pageRotationIndex": 1,
   "items": [
     {
       "platform": "Google Business Profile",
-      "targetUrl": "https://www.assetliftlending.com/loans/dscr-rental",
-      "anchorTheme": "bridge loans for investors",
+      "targetUrl": "https://www.assetliftlending.com/llms-full.txt",
+      "anchorTheme": "DSCR rental loans",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Highest priority entity listing. Must be fully verified and kept active."
     },
     {
       "platform": "LLMs.txt / AI crawler reference",
-      "targetUrl": "https://www.assetliftlending.com/loans/bridge",
-      "anchorTheme": "commercial lending for investors",
+      "targetUrl": "https://www.assetliftlending.com/apply",
+      "anchorTheme": "bridge loans for investors",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Keep AI-readable entity, product, contact, and citation facts current for AI crawlers that inspect llms.txt-style files."
     },
     {
       "platform": "LLMs-full.txt / AI citation source",
-      "targetUrl": "https://www.assetliftlending.com/loans/commercial-lending",
-      "anchorTheme": "AssetLift Lending",
+      "targetUrl": "https://www.assetliftlending.com/loans/fix-and-flip",
+      "anchorTheme": "commercial lending for investors",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Maintain a comprehensive AI-readable site summary for systems that use web retrieval or citation-oriented crawling."
     },
     {
       "platform": "LinkedIn Company Page",
-      "targetUrl": "https://www.assetliftlending.com/tools/fix-and-flip-calculator",
-      "anchorTheme": "AssetLift Lending entity facts",
+      "targetUrl": "https://www.assetliftlending.com/loans/dscr-rental",
+      "anchorTheme": "AssetLift Lending",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Use company overview plus application link."
     }
