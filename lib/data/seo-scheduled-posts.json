@@ -2336,5 +2336,59 @@
         "answer": "At AssetLift, a minimum credit score of 660 is generally required for DSCR loan programs. While the focus is on the property, a solid credit history demonstrates responsible financial management."
       }
     ]
+  },
+  {
+    "slug": "after-repair-value-lender-appraisal",
+    "title": "How Lenders Calculate After Repair Value for Fix and Flip",
+    "description": "Understand how lenders calculate After Repair Value (ARV) for fix and flip loans. Learn the appraisal process, key factors, and how to maximize your...",
+    "publishedAt": "2026-07-06T13:54:09.139Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "8 min read",
+    "category": "Fix & Flip",
+    "tags": [
+      "After Repair Value",
+      "ARV",
+      "Fix and Flip",
+      "Real Estate Investing",
+      "Hard Money Loans"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "Understanding the Foundation: What is ARV and Why it Matters to Lenders",
+        "content": "For any seasoned real estate investor, After Repair Value (ARV) isn't just a number; it's the bedrock of a profitable fix-and-flip project. It represents the estimated market value of a property once all planned renovations are completed. Lenders, like AssetLift, rely heavily on ARV to determine the maximum loan amount they can offer you. Our fix-and-flip programs, for instance, can fund up to 95% of the total loan-to-cost (LTC) and 100% of rehab, but these percentages are always anchored to the projected ARV. If your projected ARV is $400,000, and your total project costs (purchase + rehab) are $300,000, a lender might offer you a loan up to $285,000 (95% of LTC) or potentially more if the ARV supports it. Without a strong, justifiable ARV, your financing options will be severely limited, regardless of how attractive the purchase price might seem."
+      },
+      {
+        "heading": "The Lender's Lens: The Appraisal Process for ARV",
+        "content": "When you apply for a fix-and-flip loan with AssetLift, our underwriting process includes a thorough appraisal to establish the ARV. This isn't a standard 'as-is' appraisal. Instead, the appraiser will conduct a 'subject-to' appraisal, meaning they evaluate the property based on the assumption that your proposed renovations will be completed. They'll review your scope of work (SOW), renovation budget, and architectural plans. The appraiser will typically use the sales comparison approach, analyzing at least three, but often five to seven, comparable properties (comps) that have recently sold within a 0.5 to 1-mile radius, ideally within the last 3 to 6 months. These comps must be similar in size, age, style, and, crucially, be in renovated condition, reflecting your planned finished product. For example, if you're flipping a 3-bed, 2-bath, 1,500 sq ft home, the appraiser will look for recently sold 3-bed, 2-bath, 1,400-1,600 sq ft homes in excellent, updated condition."
+      },
+      {
+        "heading": "Key Factors Influencing a Lender's ARV Calculation",
+        "content": "Several critical factors dictate how an appraiser and, subsequently, a lender calculates ARV. First, the quality and relevance of your comps are paramount. If your chosen comps are too old, too far, or not truly comparable in condition post-renovation, the ARV will be lower. Second, the scope and quality of your proposed renovations are heavily scrutinized. High-end finishes in a C-class neighborhood, or conversely, budget finishes in an A-class neighborhood, will result in value adjustments. Appraisers also consider market trends; a rapidly appreciating market might allow for slightly higher ARVs, while a cooling market could necessitate more conservative estimates. For instance, adding a 4th bedroom and 3rd bathroom to a 3-bed, 2-bath house that matches the neighborhood's demand could add $50,000-$75,000 in value, assuming similar renovated comps support that increase. Lenders are looking for a clear path to a profitable exit, and an accurate ARV is central to that assessment."
+      },
+      {
+        "heading": "Maximizing Your ARV: Strategies for Investors",
+        "content": "As an investor, your goal is to present a project that maximizes ARV in the lender's eyes. Start with meticulous due diligence on your comps. Before even making an offer, identify 3-5 solid, recently renovated comparables in your target area. Understand what features and finishes commanded top dollar for those properties. Second, develop a detailed, realistic scope of work and budget. Avoid over-improving for the neighborhood; an appraiser will 'cap' the value if your finishes exceed local expectations. Conversely, don't skimp on essential updates. Third, ensure your project addresses major functional obsolescence. For example, replacing a 30-year-old HVAC system or a failing roof will add significant value that an appraiser will recognize. A well-executed kitchen or bathroom renovation can yield a 70-80% return on investment in the ARV, while a new roof might be closer to 60-70%. By providing a clear, well-supported vision for the finished product, you enable the appraiser to arrive at a higher, more defensible ARV, which directly translates to better financing terms from AssetLift."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the typical timeframe for an ARV appraisal?",
+        "answer": "An ARV appraisal for a fix-and-flip loan typically takes 7-10 business days from the time the appraiser is ordered. This can vary based on appraiser availability and the complexity of the property."
+      },
+      {
+        "question": "Can I use my own comps to influence the ARV?",
+        "answer": "While the appraiser will conduct their own independent research, providing your well-researched comps along with your scope of work can be helpful. It gives the appraiser context and highlights what you believe are the most relevant sales, potentially guiding their analysis."
+      },
+      {
+        "question": "What happens if the ARV comes in lower than expected?",
+        "answer": "If the ARV comes in lower, it could impact your loan amount, as our funding is tied to ARV. For instance, if you were expecting a $500,000 ARV but it appraises at $475,000, your maximum loan amount would be recalculated based on the lower figure, potentially requiring you to bring more cash to closing. AssetLift offers loans from $100K to $5M, subject to underwriting."
+      },
+      {
+        "question": "Does AssetLift offer fix-and-flip loans in all 50 states?",
+        "answer": "AssetLift Lending provides fix-and-flip loans for real estate investors across 46 U.S. states. We do not currently lend in Alaska, North Dakota, South Dakota, or Vermont. Our minimum credit score for most programs is 660, subject to underwriting."
+      }
+    ]
   }
 ]
