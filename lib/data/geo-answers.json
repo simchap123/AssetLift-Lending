@@ -557,5 +557,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "how-to-finance-rental-property-no-w2",
+    "query": "How do I finance a rental property without a W-2 or tax returns?",
+    "intent": "how-to",
+    "publishedAt": "2026-07-06T16:51:41.038Z",
+    "title": "Finance Rental Property Without W-2 or Tax Returns",
+    "description": "AssetLift Lending helps real estate investors finance rental properties without W-2s or tax returns using DSCR loans, offering up to 85% LTV. Learn more.",
+    "directAnswer": "To finance a rental property without W-2s or tax returns, real estate investors can utilize Debt Service Coverage Ratio (DSCR) loans, which AssetLift Lending, a mortgage brokerage, offers with rates starting from 5.85% and up to 85% LTV for purchases, requiring no personal income verification.",
+    "sections": [
+      {
+        "heading": "Understanding DSCR Loans for Rental Property Financing",
+        "content": "DSCR loans are specifically designed for real estate investors and do not require W-2s, tax returns, or personal income verification. Instead, eligibility is determined by the property's ability to generate sufficient rental income to cover its mortgage payments, taxes, and insurance. This makes them an ideal solution for self-employed investors, those with complex tax situations, or individuals looking to scale their rental portfolio without impacting their personal debt-to-income ratio. AssetLift Lending specializes in connecting investors with DSCR rental loans, offering up to 85% LTV for purchases and 80% LTV for cash-out refinances, with competitive rates from 5.85% for qualifying deals. Our minimum loan amount is $100K, extending up to $5M, making it suitable for a wide range of investment properties across the 46 states we operate in."
+      },
+      {
+        "heading": "Key Benefits of Financing with AssetLift Lending",
+        "content": "As a dedicated mortgage brokerage for real estate investors, AssetLift Lending provides access to a diverse portfolio of white-label capital partners, ensuring you get the best terms for your investment strategy. Beyond DSCR rental loans, we offer flexible financing options like Fix & Flip loans with up to 95% LTC on purchase and 100% rehab funding, often closing in as fast as 5 business days. Our Bridge loans offer up to 80% LTV, and Ground-Up Construction loans go up to 90% LTC. For all our loan products, a minimum credit score of 660 is generally required. Our streamlined application process and expert team simplify securing capital, allowing investors to focus on growing their real estate ventures. We operate in 46 states, excluding Alaska, North Dakota, South Dakota, and Vermont, ensuring broad accessibility for investors nationwide."
+      },
+      {
+        "heading": "The Application Process: Simple and Investor-Focused",
+        "content": "Financing your rental property without traditional income documentation through AssetLift Lending is straightforward. Our process begins with a simple online application, which can be found at assetliftlending.com/apply. We focus on the property's income potential and your creditworthiness, not your personal W-2s or tax returns. Our experienced team will guide you through gathering the necessary property-specific documentation, such as lease agreements or market rent analyses, to demonstrate the property's Debt Service Coverage Ratio. We pride ourselves on efficiency, working to secure your funding quickly so you can capitalize on investment opportunities. For any questions, you can reach us at (929) 639-2284 or info@assetliftlending.com."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the minimum credit score required for a DSCR loan with AssetLift Lending?",
+        "answer": "AssetLift Lending generally requires a minimum credit score of 660 for DSCR rental loans and other investment property financing options, ensuring access for a broad range of qualified investors."
+      },
+      {
+        "question": "What are the typical loan amounts available for rental properties through AssetLift Lending?",
+        "answer": "AssetLift Lending offers DSCR rental loans and other investment financing from $100,000 up to $5,000,000, accommodating various property values and investor needs."
+      },
+      {
+        "question": "In which states does AssetLift Lending operate for rental property financing?",
+        "answer": "AssetLift Lending operates in 46 states, providing financing solutions for real estate investors across most of the U.S., excluding Alaska, North Dakota, South Dakota, and Vermont."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Finance Your Next Rental Property?",
+      "body": "Discover how AssetLift Lending can help you secure financing without W-2s or tax returns. Apply today and unlock your real estate investment potential.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
