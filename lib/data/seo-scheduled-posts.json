@@ -2444,5 +2444,60 @@
         "answer": "AssetLift provides bridge loans for real estate investors across 46 U.S. states. We do not currently lend in Alaska, North Dakota, South Dakota, or Vermont."
       }
     ]
+  },
+  {
+    "slug": "hard-money-loan-points-fees-explained",
+    "title": "Hard Money Loan Points & Fees Explained for Investors",
+    "description": "Understand hard money loan points and fees. Learn how to calculate costs, mitigate risks, and maximize profits on your next real estate investment.",
+    "publishedAt": "2026-07-08T11:51:02.008Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "8 min read",
+    "category": "Hard Money",
+    "tags": [
+      "hard money loans",
+      "loan points",
+      "lender fees",
+      "real estate investing",
+      "fix and flip",
+      "bridge loans"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "The Core Components: Understanding Hard Money Loan Points",
+        "content": "When you're evaluating a hard money loan, the first numbers that jump out are typically the 'points.' These are essentially an upfront fee paid to the lender at closing, expressed as a percentage of the loan amount. For example, a loan with 3 points means you're paying 3% of the principal as a fee. If you secure a $500,000 hard money loan, 3 points would equate to $15,000. Hard money points typically range from 2% to 5%, depending on the lender, the project's risk profile, and market conditions. At AssetLift, our hard money loans, including fix-and-flip and bridge options, often fall within the 2.5% to 4% range. This fee compensates the lender for the higher risk, faster processing, and shorter terms associated with hard money compared to conventional financing. Savvy investors always factor these points into their ARV (After Repair Value) calculations and profit projections from day one."
+      },
+      {
+        "heading": "Beyond Points: Essential Lender Fees to Anticipate",
+        "content": "While points are the most significant upfront cost, several other lender fees will impact your total closing expenses. Expect an underwriting fee, typically ranging from $995 to $2,500, which covers the lender's cost of processing and evaluating your application. There's also an origination fee, which might be a flat rate or a small percentage, often rolled into the points structure but sometimes itemized separately. For instance, a $1,500 origination fee on a $300,000 loan would be an additional 0.5% cost. AssetLift also includes a loan processing fee, generally between $500 and $1,500, covering administrative tasks. Keep an eye out for draw fees on fix-and-flip or construction loans, where each release of funds (e.g., for construction phases) might incur a $150 to $300 fee per draw. These fees, while smaller individually, add up and need to be accounted for in your total project budget."
+      },
+      {
+        "heading": "Third-Party Costs: Don't Forget the Closing Table",
+        "content": "In addition to lender-specific charges, you'll encounter various third-party costs at closing. These are not paid to AssetLift but are necessary for the transaction. Title insurance is crucial, protecting both you and the lender, with costs varying by state and loan amount (e.g., $1,500 to $3,000 for a $400,000 loan). Escrow fees, typically split between buyer and seller, can range from 0.5% to 1% of the purchase price. Appraisal fees are standard for hard money loans, often between $600 and $1,200, depending on the property type and location. For fix-and-flip projects, a property inspection report (PIR) or construction review might cost an additional $300 to $600. Recording fees, attorney fees (in attorney states), and potentially environmental reports can also add hundreds or even thousands to your closing costs. Always request a detailed closing statement or Loan Estimate to review all these items upfront."
+      },
+      {
+        "heading": "Calculating Your True Cost and Mitigating Surprises",
+        "content": "To get a clear picture of your total loan cost, you need to aggregate all these components. Let's say you're getting a $400,000 fix-and-flip loan with 3.5 points, a $1,500 underwriting fee, and a $750 processing fee. Your upfront lender fees would be $14,000 (points) + $1,500 (underwriting) + $750 (processing) = $16,250. Add estimated third-party costs like $2,000 for title, $1,800 for escrow, $800 for appraisal, and $500 for a PIR, bringing your total closing costs to roughly $21,350. This doesn't even include interest. AssetLift works across 46 U.S. states, and these costs can fluctuate slightly based on local regulations and market conditions. Always ask for a transparent breakdown. A good lender provides a clear term sheet detailing all fees. Don't be shy about asking questions and comparing offers to ensure you're getting competitive terms subject to underwriting."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the typical range for hard money loan points?",
+        "answer": "Hard money loan points generally range from 2% to 5% of the loan amount, depending on the lender, project risk, and market conditions. For AssetLift's hard money products like fix-and-flip and bridge loans, points often fall between 2.5% and 4%."
+      },
+      {
+        "question": "Are interest rates included in the points and fees?",
+        "answer": "No, interest rates are separate from points and fees. Points are an upfront charge, while the interest rate determines your monthly payment on the outstanding loan balance. Both are crucial components of your total loan cost."
+      },
+      {
+        "question": "Can I finance the points and fees into the hard money loan?",
+        "answer": "Often, yes, a portion of the points and fees can be financed into the loan, reducing your out-of-pocket cash at closing. However, this will increase your total loan amount and, consequently, your interest payments. It's subject to the lender's LTV limits, like AssetLift's fix-and-flip loans up to 95% LTC."
+      },
+      {
+        "question": "How do hard money loan fees compare to conventional bank loans?",
+        "answer": "Hard money loans typically have higher upfront points and interest rates than conventional bank loans due to their speed, flexibility, and focus on asset value over borrower credit. However, conventional loans involve more stringent qualification criteria (e.g., lower credit score thresholds for hard money, often 660+ for AssetLift) and much longer closing times."
+      }
+    ]
   }
 ]
