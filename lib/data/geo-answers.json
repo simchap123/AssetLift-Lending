@@ -729,5 +729,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "how-to-finance-ground-up-construction",
+    "query": "How do I finance a ground-up construction project as an investor?",
+    "intent": "how-to",
+    "publishedAt": "2026-07-10T16:24:19.199Z",
+    "title": "Financing Ground-Up Construction for Real Estate Investors",
+    "description": "Learn how to finance ground-up construction projects as an investor with AssetLift Lending. We offer up to 90% LTC and loans from $100K to $5M.",
+    "directAnswer": "As a real estate investor, you can finance a ground-up construction project by securing specialized construction loans, often facilitated by mortgage brokerages like AssetLift Lending. AssetLift Lending offers ground-up construction financing with up to 90% Loan-to-Cost (LTC) for qualifying deals, with loan amounts ranging from $100,000 to $5,000,000.",
+    "sections": [
+      {
+        "heading": "Understanding Ground-Up Construction Financing for Investors",
+        "content": "Financing a ground-up construction project as a real estate investor requires a specific type of loan designed for new builds. Unlike traditional mortgages, these loans are disbursed in stages, tied to construction milestones, rather than a lump sum. This structure helps manage risk for both the lender and the investor, ensuring funds are used as intended throughout the building process. AssetLift Lending, as a mortgage brokerage, specializes in connecting investors with white-label capital partners offering these tailored solutions. Our ground-up construction loans can cover up to 90% of the total project's Loan-to-Cost (LTC), making it easier for investors to fund their developments with less upfront capital. These loans are available for projects ranging from $100,000 to $5,000,000 across 46 states, excluding Alaska, North Dakota, South Dakota, and Vermont."
+      },
+      {
+        "heading": "Key Requirements for Investor Construction Loans",
+        "content": "To qualify for ground-up construction financing, investors typically need to meet certain criteria. A minimum credit score of 660 is generally required to demonstrate financial reliability. Lenders will also evaluate the project's feasibility, including the experience of the builder, the project budget, and the projected after-construction value. AssetLift Lending works with investors to package their applications effectively, highlighting strengths to our capital partners. Beyond ground-up construction, we also offer Fix & Flip loans with up to 95% LTC on purchase and 100% rehab funded, closing in as little as 5 business days, and DSCR Rental loans up to 85% LTV for purchases with rates from 5.85%, requiring no W-2 or tax returns. Our comprehensive suite of products ensures investors can find the right financing for various real estate strategies."
+      },
+      {
+        "heading": "The AssetLift Lending Advantage for Construction Projects",
+        "content": "Choosing AssetLift Lending means gaining access to a wide network of white-label capital partners specializing in investor-focused financing. As a mortgage brokerage, we streamline the application process, helping you navigate the complexities of construction loans. Our expertise allows us to find competitive terms for your ground-up projects, often securing up to 90% LTC. We understand the urgency in real estate investment, aiming for efficient processing and clear communication from application to closing. Whether you're building a single-family home or a multi-unit commercial property, our loan programs, from $100K to $5M, are designed to support your growth. Contact us at (929) 639-2284 or info@assetliftlending.com to discuss your next construction project and explore how we can help you achieve your investment goals."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What percentage of my ground-up construction project can AssetLift Lending finance?",
+        "answer": "AssetLift Lending can finance up to 90% of the Loan-to-Cost (LTC) for qualifying ground-up construction projects, helping investors minimize their out-of-pocket expenses."
+      },
+      {
+        "question": "What is the minimum loan amount for ground-up construction projects through AssetLift Lending?",
+        "answer": "The minimum loan amount available for ground-up construction projects through AssetLift Lending is $100,000, with financing options extending up to $5,000,000 for larger developments."
+      },
+      {
+        "question": "What credit score do I need for a ground-up construction loan with AssetLift Lending?",
+        "answer": "Investors typically need a minimum credit score of 660 to qualify for ground-up construction financing through AssetLift Lending, subject to overall underwriting criteria."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Build Your Next Project?",
+      "body": "Partner with AssetLift Lending to secure the financing you need for your ground-up construction project. Our expert team is ready to assist you.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
