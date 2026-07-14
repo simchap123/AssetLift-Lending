@@ -3,6 +3,8 @@ import { STATES } from '@/lib/data/states';
 import { CITIES } from '@/lib/data/cities';
 import { BLOG_POSTS } from '@/lib/data/blog-posts';
 import { COMPARISONS } from '@/lib/data/comparisons';
+import { TRI_STATE_PROGRAM_PAGES } from '@/lib/data/tri-state-program-pages';
+import { NOINDEX_BLOG_SLUGS } from '@/lib/seo/noindex';
 import geoAnswers from '@/lib/data/geo-answers.json';
 
 const BASE_URL = 'https://www.assetliftlending.com';
@@ -203,8 +205,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Blog posts — higher priority for recent posts
-  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => {
+  const triStateProgramPages: MetadataRoute.Sitemap = TRI_STATE_PROGRAM_PAGES.map((page) => ({
+    url: `${BASE_URL}/lending/${page.stateSlug}/${page.programSlug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
+  }));
+
+  // Blog posts - higher priority for recent posts
+  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.filter(
+    (post) => !NOINDEX_BLOG_SLUGS.has(post.slug),
+  ).map((post) => {
     const ageInDays = (Date.now() - new Date(post.publishedAt).getTime()) / (1000 * 60 * 60 * 24);
     const priority = ageInDays < 30 ? 0.8 : ageInDays < 180 ? 0.7 : 0.6;
     return {
@@ -239,5 +250,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }] : [];
 
-  return [...staticPages, ...statePages, ...cityPages, ...blogPages, ...comparisonPages, ...answersIndex, ...geoPages];
+  return [
+    ...staticPages,
+    ...statePages,
+    ...cityPages,
+    ...triStateProgramPages,
+    ...blogPages,
+    ...comparisonPages,
+    ...answersIndex,
+    ...geoPages,
+  ];
 }

@@ -5,7 +5,7 @@ const HUB_LINKS = [
   {
     label: "Markets Hub",
     href: "/markets",
-    blurb: "State and city lending pages for local hard money, bridge, and DSCR search intent.",
+    blurb: "Priority state and city pages for experienced investor lending search intent.",
   },
   {
     label: "Comparison Hub",
@@ -13,9 +13,14 @@ const HUB_LINKS = [
     blurb: "High-intent lender and loan-structure comparisons for borrowers evaluating options.",
   },
   {
+    label: "Investor Q&A",
+    href: "/answers",
+    blurb: "Direct answers to common real estate investor questions about hard money, DSCR, and fix and flip financing.",
+  },
+  {
     label: "Blog",
     href: "/blog",
-    blurb: "Investor education content that supports product, market, and refinance queries.",
+    blurb: "Investor education content focused on fix and flip, DSCR, and refinance queries.",
   },
   {
     label: "How Funding Works",
@@ -27,12 +32,26 @@ const HUB_LINKS = [
 const PRIORITY_PAGES = [
   { label: "Fix & Flip Loans", href: "/loans/fix-and-flip" },
   { label: "DSCR Rental Loans", href: "/loans/dscr-rental" },
-  { label: "Bridge Loans", href: "/loans/bridge" },
-  { label: "Ground-Up Construction", href: "/loans/ground-up-construction" },
+  { label: "NY Fix & Flip Loans", href: "/lending/new-york/fix-and-flip-loans" },
+  { label: "NY DSCR Loans", href: "/lending/new-york/dscr-loans" },
+  { label: "NJ Fix & Flip Loans", href: "/lending/new-jersey/fix-and-flip-loans" },
+  { label: "NJ DSCR Loans", href: "/lending/new-jersey/dscr-loans" },
+  { label: "CT Fix & Flip Loans", href: "/lending/connecticut/fix-and-flip-loans" },
+  { label: "CT DSCR Loans", href: "/lending/connecticut/dscr-loans" },
   { label: "Fix & Flip Calculator", href: "/tools/fix-and-flip-calculator" },
   { label: "DSCR Calculator", href: "/tools/dscr-calculator" },
-  { label: "Hard Money Loans in Florida", href: "/lending/florida" },
+  { label: "Hard Money Loans in New York", href: "/lending/new-york" },
+  { label: "Hard Money Loans in New Jersey", href: "/lending/new-jersey" },
+  { label: "Hard Money Loans in Connecticut", href: "/lending/connecticut" },
+  { label: "Hard Money Loans in California", href: "/lending/california" },
   { label: "Hard Money Loans in Texas", href: "/lending/texas" },
+  { label: "Hard Money Loans in North Carolina", href: "/lending/north-carolina" },
+  { label: "Hard Money Loans in South Carolina", href: "/lending/south-carolina" },
+  { label: "Hard Money Loans in Florida", href: "/lending/florida" },
+  { label: "Hard Money Loans in Indiana", href: "/lending/indiana" },
+  { label: "Hard Money Loans in Ohio", href: "/lending/ohio" },
+  { label: "DSCR Loans: No Income Verification", href: "/answers/best-dscr-lender-no-income-verification" },
+  { label: "100% Rehab Funding Explained", href: "/answers/fix-and-flip-loans-100-percent-rehab-funding" },
 ];
 
 export default function DiscoveryHub() {
@@ -78,8 +97,8 @@ export default function DiscoveryHub() {
           <div className="rounded-3xl border border-border bg-secondary/20 p-6 md:p-8">
             <h3 className="text-2xl font-bold mb-4">Priority Pages</h3>
             <p className="text-sm text-muted-foreground mb-5">
-              These are the pages most likely to support early indexing, product understanding, and
-              high-intent borrower discovery.
+              These are the pages most likely to support qualified borrower discovery in the states
+              and products you want most.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               {PRIORITY_PAGES.map((item) => (
