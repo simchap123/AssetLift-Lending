@@ -2,12 +2,12 @@ import Link from "next/link";
 import Logo from "@/components/Logo";
 
 const FEATURED_MARKETS = [
-  { label: "Florida", href: "/lending/florida" },
-  { label: "Texas", href: "/lending/texas" },
-  { label: "California", href: "/lending/california" },
-  { label: "Georgia", href: "/lending/georgia" },
-  { label: "Miami, FL", href: "/lending/florida/miami" },
-  { label: "Austin, TX", href: "/lending/texas/austin" },
+  { label: "NY Fix & Flip", href: "/lending/new-york/fix-and-flip-loans" },
+  { label: "NY DSCR Loans", href: "/lending/new-york/dscr-loans" },
+  { label: "NJ Fix & Flip", href: "/lending/new-jersey/fix-and-flip-loans" },
+  { label: "NJ DSCR Loans", href: "/lending/new-jersey/dscr-loans" },
+  { label: "CT Fix & Flip", href: "/lending/connecticut/fix-and-flip-loans" },
+  { label: "CT DSCR Loans", href: "/lending/connecticut/dscr-loans" },
 ];
 
 const Footer = () => {

@@ -10,9 +10,15 @@ import Logo from "@/components/Logo";
 
 const PROGRAMS = [
   { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
-  { label: 'Ground-Up Construction', href: '/loans/ground-up-construction' },
   { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
+  { label: 'NY Fix & Flip Loans', href: '/lending/new-york/fix-and-flip-loans' },
+  { label: 'NY DSCR Loans', href: '/lending/new-york/dscr-loans' },
+  { label: 'NJ Fix & Flip Loans', href: '/lending/new-jersey/fix-and-flip-loans' },
+  { label: 'NJ DSCR Loans', href: '/lending/new-jersey/dscr-loans' },
+  { label: 'CT Fix & Flip Loans', href: '/lending/connecticut/fix-and-flip-loans' },
+  { label: 'CT DSCR Loans', href: '/lending/connecticut/dscr-loans' },
   { label: 'Bridge Loans', href: '/loans/bridge' },
+  { label: 'Ground-Up Construction', href: '/loans/ground-up-construction' },
   { label: 'Commercial Lending', href: '/loans/commercial-lending' },
 ];
 
