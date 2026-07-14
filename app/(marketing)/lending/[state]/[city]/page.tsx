@@ -108,6 +108,7 @@ export default async function CityLendingPage({ params }: Props) {
 
   if (!city) notFound();
 
+  const isCountyPage = city.cityName.endsWith('County');
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -115,7 +116,7 @@ export default async function CityLendingPage({ params }: Props) {
     description: `Hard money loans and private lending in ${city.cityName}, ${city.stateName}`,
     url: `https://www.assetliftlending.com/lending/${city.stateSlug}/${city.citySlug}`,
     areaServed: {
-      '@type': 'City',
+      '@type': isCountyPage ? 'AdministrativeArea' : 'City',
       name: city.cityName,
       containedInPlace: {
         '@type': 'State',
