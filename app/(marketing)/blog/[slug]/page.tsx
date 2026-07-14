@@ -4,6 +4,7 @@ import { createMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { BLOG_POSTS } from '@/lib/data/blog-posts';
+import { NOINDEX_BLOG_SLUGS } from '@/lib/seo/noindex';
 import BlogPostLayout from '@/components/seo/BlogPostLayout';
 
 interface Props {
@@ -27,6 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     type: 'article',
     publishedTime: post.publishedAt,
     modifiedTime: post.publishedAt,
+    noIndex: NOINDEX_BLOG_SLUGS.has(post.slug),
   });
 }
 

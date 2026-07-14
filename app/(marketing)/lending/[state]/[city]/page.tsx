@@ -5,21 +5,49 @@ import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { CITIES } from '@/lib/data/cities';
 import CityPage from '@/components/seo/CityPage';
+import {
+  findTriStateProgramPage,
+  TRI_STATE_PROGRAM_PAGES,
+} from '@/lib/data/tri-state-program-pages';
+import TriStateProgramPage from '@/components/seo/TriStateProgramPage';
 
 interface Props {
   params: Promise<{ state: string; city: string }>;
 }
 
 export async function generateStaticParams() {
-  return CITIES.map((c) => ({
-    state: c.stateSlug,
-    city: c.citySlug,
-  }));
+  return [
+    ...CITIES.map((c) => ({
+      state: c.stateSlug,
+      city: c.citySlug,
+    })),
+    ...TRI_STATE_PROGRAM_PAGES.map((page) => ({
+      state: page.stateSlug,
+      city: page.programSlug,
+    })),
+  ];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { state: stateSlug, city: citySlug } = await params;
   const city = CITIES.find((c) => c.stateSlug === stateSlug && c.citySlug === citySlug);
+  const programPage = findTriStateProgramPage(stateSlug, citySlug);
+
+  if (programPage) {
+    return createMetadata({
+      title: programPage.title,
+      description: programPage.description,
+      path: `/lending/${programPage.stateSlug}/${programPage.programSlug}`,
+      keywords: [
+        `${programPage.stateName} ${programPage.programName}`,
+        `${programPage.stateAbbreviation} ${programPage.programName}`,
+        `${programPage.programName} for experienced investors`,
+        'private money lender',
+        'real estate investor loans',
+      ],
+    });
+  }
+
   if (!city) return {};
 
   return createMetadata({
@@ -32,6 +60,52 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function CityLendingPage({ params }: Props) {
   const { state: stateSlug, city: citySlug } = await params;
   const city = CITIES.find((c) => c.stateSlug === stateSlug && c.citySlug === citySlug);
+  const programPage = findTriStateProgramPage(stateSlug, citySlug);
+
+  if (programPage) {
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'FinancialService',
+      name: `AssetLift Lending - ${programPage.stateName} ${programPage.programName}`,
+      description: programPage.description,
+      url: `https://www.assetliftlending.com/lending/${programPage.stateSlug}/${programPage.programSlug}`,
+      areaServed: {
+        '@type': 'State',
+        name: programPage.stateName,
+      },
+      serviceType: programPage.programName,
+      provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
+    };
+
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: programPage.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    };
+
+    return (
+      <>
+        <JsonLd data={schema} />
+        <JsonLd data={faqSchema} />
+        <div className="container px-4 md:px-6 pt-32">
+          <Breadcrumbs
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Markets', href: '/markets' },
+              { label: programPage.stateName, href: `/lending/${programPage.stateSlug}` },
+              { label: programPage.programName },
+            ]}
+          />
+        </div>
+        <TriStateProgramPage page={programPage} />
+      </>
+    );
+  }
+
   if (!city) notFound();
 
   const schema = {
