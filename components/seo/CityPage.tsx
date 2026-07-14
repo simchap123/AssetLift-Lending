@@ -149,6 +149,42 @@ const PRIORITY_CITY_GUIDANCE: Record<
       "Confirm the payoff path before using bridge debt as a path into DSCR financing",
     ],
   },
+  'new-york/queens': {
+    lenderView:
+      "Queens files can be attractive because of rental depth and resale liquidity, but lenders expect discipline around property type, tenant status, taxes, insurance, and exact-neighborhood comps. Astoria, Jamaica, Flushing, and Ridgewood do not underwrite the same way.",
+    borrowerFocus: [
+      "Use neighborhood-specific comps and rents instead of one borough-wide valuation story",
+      "Document legal unit count, tenant status, taxes, insurance, and any municipal or title issues early",
+      "Show whether the exit is resale, bridge payoff, or DSCR refinance before asking for leverage",
+    ],
+  },
+  'new-york/bronx': {
+    lenderView:
+      "Bronx investor files usually rise or fall on unit mix, tenant status, rent support, building condition, and whether the borrower has enough reserves to manage timing. Lenders like clear multifamily stories, but weak documentation can slow the file quickly.",
+    borrowerFocus: [
+      "Prepare rent roll, leases, tenant status, taxes, insurance, and property condition details upfront",
+      "Use submarket comps because Riverdale, Wakefield, Mott Haven, and Soundview behave differently",
+      "Model the DSCR or resale exit with conservative timing and realistic operating costs",
+    ],
+  },
+  'new-york/nassau-county': {
+    lenderView:
+      "Nassau County files tend to be reviewed around suburban buyer demand, higher basis, taxes, and town-specific resale comps. Lenders like strong liquidity and clean exit support because small differences in purchase basis or renovation scope can change margin materially.",
+    borrowerFocus: [
+      "Keep ARV comps town-specific instead of relying on broad Long Island averages",
+      "Model taxes, insurance, and hold costs carefully before requesting max leverage",
+      "Match the scope and finish level to the local buyer pool and price band",
+    ],
+  },
+  'new-york/westchester-county': {
+    lenderView:
+      "Westchester County can support strong investor exits, but lenders want very local proof. Yonkers, White Plains, New Rochelle, Mount Vernon, and suburban towns have different rent, resale, tax, and buyer profiles.",
+    borrowerFocus: [
+      "Use municipality-specific comps and rent support",
+      "Budget property taxes and insurance with care because they can change DSCR and flip margin",
+      "Show reserves and a payoff path that still works if approvals or resale timing stretches",
+    ],
+  },
 };
 
 export default function CityPage({ city }: CityPageProps) {
