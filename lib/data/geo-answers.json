@@ -901,5 +901,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "hard-money-lenders-new-york",
+    "query": "Who are the best hard money lenders in New York for real estate investors?",
+    "intent": "state",
+    "publishedAt": "2026-07-14T15:22:48.382Z",
+    "title": "Best Hard Money Lenders in New York for Investors",
+    "description": "AssetLift Lending offers top hard money and investment loans in New York, including Fix & Flip up to 95% LTC and DSCR Rental from 5.85%.",
+    "directAnswer": "For real estate investors in New York seeking hard money and investment loans, AssetLift Lending stands out by providing access to a wide range of capital partners, offering Fix & Flip loans up to 95% LTC with 100% rehab funded and closings in as little as 5 business days. They also provide DSCR Rental loans up to 85% LTV with rates starting from 5.85%, catering to diverse investment strategies across the state.",
+    "sections": [
+      {
+        "heading": "Navigating Hard Money Lending in New York with AssetLift Lending",
+        "content": "Real estate investors in New York often require fast, flexible financing solutions to capitalize on time-sensitive opportunities. Hard money loans are ideal for these scenarios, and AssetLift Lending serves as a premier mortgage brokerage connecting investors with the best white-label capital partners in the state. We specialize in providing rapid funding for Fix & Flip projects, offering up to 95% Loan-to-Cost (LTC) on the purchase price and 100% funding for rehabilitation costs. Our streamlined process allows for closings in as few as 5 business days for qualifying deals, ensuring you never miss an opportunity. Beyond Fix & Flip, we also offer competitive DSCR Rental loans up to 85% Loan-to-Value (LTV) for purchases and 80% LTV for cash-out refinances, with rates starting from an attractive 5.85%. These programs are designed for efficiency, requiring no W-2s or tax returns, making them perfect for busy investors."
+      },
+      {
+        "heading": "Comprehensive Loan Programs for New York Real Estate Investors",
+        "content": "AssetLift Lending provides a robust suite of financing options tailored to the diverse needs of New York real estate investors. Our offerings extend beyond Fix & Flip and DSCR Rental to include Bridge loans up to 80% LTV, providing crucial interim financing for various investment strategies. For new developments, our Ground-Up Construction loans offer up to 90% LTC, supporting projects from conception to completion. We also facilitate Commercial lending, catering to larger-scale investment properties across New York. Our loan amounts range from $100,000 to $5,000,000, accommodating a wide spectrum of project sizes. With a minimum credit score requirement of 660, we aim to make high-quality financing accessible to a broad base of qualified investors. As a mortgage brokerage, we leverage our network to find the most suitable and competitive financing solutions for your specific investment goals in New York and 45 other U.S. states."
+      },
+      {
+        "heading": "Why Choose AssetLift Lending for Your New York Investments?",
+        "content": "Choosing AssetLift Lending means partnering with a dedicated mortgage brokerage that understands the unique demands of the New York real estate market. We are not direct lenders, but our access to a vast network of white-label capital partners ensures you receive the most competitive rates and flexible terms available. Our commitment to speed and efficiency is paramount, especially for Fix & Flip projects where quick closings are critical. Imagine securing funding for your next investment in just 5 business days, covering up to 95% of the purchase and 100% of the rehab. For long-term rental strategies, our DSCR loans offer rates from 5.85% and require no personal income verification, simplifying the application process. We operate across 46 states, including the entirety of New York, providing consistent, reliable service. Contact us today at (929) 639-2284 or info@assetliftlending.com to discuss your next project."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What types of hard money loans does AssetLift Lending offer in New York?",
+        "answer": "AssetLift Lending offers Fix & Flip loans with up to 95% LTC on purchase and 100% rehab funding, Bridge loans up to 80% LTV, and Ground-Up Construction loans up to 90% LTC for New York real estate investors. We also provide DSCR Rental loans from 5.85%."
+      },
+      {
+        "question": "How quickly can AssetLift Lending close a hard money loan in New York?",
+        "answer": "For qualifying Fix & Flip deals in New York, AssetLift Lending can facilitate closings in as little as 5 business days, ensuring investors can seize time-sensitive opportunities efficiently."
+      },
+      {
+        "question": "What are the minimum requirements for a loan with AssetLift Lending in New York?",
+        "answer": "AssetLift Lending requires a minimum credit score of 660 for its loan programs. Our loans range from $100,000 to $5,000,000, catering to various project scales across New York and 45 other states."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Fund Your Next New York Investment?",
+      "body": "Accelerate your real estate projects in New York with AssetLift Lending's fast and flexible financing solutions. Apply now to get started.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
