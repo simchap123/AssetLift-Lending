@@ -39,8 +39,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: programPage.description,
       path: `/lending/${programPage.stateSlug}/${programPage.programSlug}`,
       keywords: [
+        `${programPage.stateName} hard money lender`,
+        `${programPage.stateAbbreviation} hard money lender`,
         `${programPage.stateName} ${programPage.programName}`,
         `${programPage.stateAbbreviation} ${programPage.programName}`,
+        `${programPage.stateName} private money lender`,
+        `${programPage.stateAbbreviation} private money loans`,
         `${programPage.programName} for experienced investors`,
         'private money lender',
         'real estate investor loans',
@@ -51,9 +55,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city) return {};
 
   return createMetadata({
-    title: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
-    description: `Hard money loans in ${city.cityName}, ${city.stateAbbreviation}. Fix & flip, bridge, and DSCR rental financing for ${city.cityName} investors. Close in as fast as 5 business days.`,
+    title: `Hard Money Lender in ${city.cityName}, ${city.stateAbbreviation}`,
+    description: `Hard money lender in ${city.cityName}, ${city.stateAbbreviation}. Fix & flip, bridge, and DSCR rental financing for experienced ${city.cityName} investors.`,
     path: `/lending/${city.stateSlug}/${city.citySlug}`,
+    keywords: [
+      `hard money lender ${city.cityName}`,
+      `hard money loans ${city.cityName}`,
+      `${city.cityName} private money lender`,
+      `${city.cityName} fix and flip loans`,
+      `${city.cityName} DSCR loans`,
+      `${city.stateName} hard money lender`,
+    ],
   });
 }
 
@@ -74,7 +86,20 @@ export default async function CityLendingPage({ params }: Props) {
         name: programPage.stateName,
       },
       serviceType: programPage.programName,
+      priceRange: '$100,000 - $5,000,000',
+      telephone: '+1-929-639-2284',
+      email: 'info@assetliftlending.com',
       provider: { '@type': 'FinancialService', name: 'AssetLift Lending' },
+      makesOffer: {
+        '@type': 'Offer',
+        name: `${programPage.stateName} ${programPage.programName}`,
+        description: programPage.description,
+        url: `https://www.assetliftlending.com/lending/${programPage.stateSlug}/${programPage.programSlug}`,
+        eligibleRegion: {
+          '@type': 'State',
+          name: programPage.stateName,
+        },
+      },
     };
 
     const faqSchema = {
@@ -115,6 +140,9 @@ export default async function CityLendingPage({ params }: Props) {
     name: `AssetLift Lending - ${city.cityName}, ${city.stateAbbreviation}`,
     description: `Hard money loans and private lending in ${city.cityName}, ${city.stateName}`,
     url: `https://www.assetliftlending.com/lending/${city.stateSlug}/${city.citySlug}`,
+    telephone: '+1-929-639-2284',
+    email: 'info@assetliftlending.com',
+    priceRange: '$100,000 - $5,000,000',
     areaServed: {
       '@type': isCountyPage ? 'AdministrativeArea' : 'City',
       name: city.cityName,

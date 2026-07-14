@@ -31,9 +31,9 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
     stateAbbreviation: 'NY',
     programSlug: 'fix-and-flip-loans',
     programName: 'Fix & Flip Loans',
-    title: 'New York Fix & Flip Loans for Experienced Investors',
+    title: 'New York Fix & Flip Loans | Hard Money Lender NY',
     description:
-      'Fix and flip loans in New York for experienced investors. Fund acquisition and rehab on non-owner-occupied investment properties with fast scenario review.',
+      'New York fix and flip loans from a hard money lender focused on experienced investors. Fund acquisition and rehab on non-owner-occupied properties.',
     h1: 'New York Fix & Flip Loans for Experienced Investors',
     intro:
       'AssetLift helps New York real estate investors finance acquisition and rehab projects when the numbers, scope, and exit plan are ready for underwriting. We focus on experienced flippers working non-owner-occupied investment properties, not consumer or owner-occupied requests.',
@@ -78,9 +78,9 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
     stateAbbreviation: 'NY',
     programSlug: 'dscr-loans',
     programName: 'DSCR Rental Loans',
-    title: 'New York DSCR Loans for Rental Investors',
+    title: 'New York DSCR Loans | Rental Investor Lender',
     description:
-      'DSCR rental loans in New York for experienced investors buying or refinancing non-owner-occupied rental properties. Qualify based on property cash flow.',
+      'New York DSCR loans for rental investors buying, refinancing, or cashing out non-owner-occupied rental properties based on property cash flow.',
     h1: 'New York DSCR Loans for Rental Investors',
     intro:
       'AssetLift reviews New York DSCR rental loan scenarios for investors who want the property income to drive qualification. The best files show rent support, realistic expenses, and a clean ownership or refinance plan.',
@@ -125,9 +125,9 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
     stateAbbreviation: 'NJ',
     programSlug: 'fix-and-flip-loans',
     programName: 'Fix & Flip Loans',
-    title: 'New Jersey Fix & Flip Loans for Experienced Investors',
+    title: 'New Jersey Fix & Flip Loans | Hard Money Lender NJ',
     description:
-      'Fix and flip loans in New Jersey for experienced real estate investors. Fast review for North Jersey, Central Jersey, and South Jersey rehab deals.',
+      'New Jersey fix and flip loans from a hard money lender focused on experienced investors. Fast review for NJ acquisition and rehab deals.',
     h1: 'New Jersey Fix & Flip Loans for Experienced Investors',
     intro:
       'AssetLift helps New Jersey flippers move quickly when a property needs acquisition and rehab capital. We focus on non-owner-occupied investor deals with clear ARV support, borrower experience, and a realistic close-to-resale timeline.',
@@ -172,9 +172,9 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
     stateAbbreviation: 'NJ',
     programSlug: 'dscr-loans',
     programName: 'DSCR Rental Loans',
-    title: 'New Jersey DSCR Loans for Rental Investors',
+    title: 'New Jersey DSCR Loans | Rental Investor Lender',
     description:
-      'DSCR rental loans in New Jersey for experienced investors. Review rental purchases, refinances, and cash-out scenarios based on property cash flow.',
+      'New Jersey DSCR loans for experienced rental investors. Review purchases, refinances, and cash-out scenarios based on property cash flow.',
     h1: 'New Jersey DSCR Loans for Rental Investors',
     intro:
       'AssetLift reviews DSCR rental loan scenarios for New Jersey investors buying, refinancing, or cashing out non-owner-occupied rental properties. Strong files show rent support, realistic expenses, and a clear long-term hold plan.',
@@ -219,7 +219,7 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
     stateAbbreviation: 'CT',
     programSlug: 'fix-and-flip-loans',
     programName: 'Fix & Flip Loans',
-    title: 'Connecticut Fix & Flip Loans for Experienced Investors',
+    title: 'Connecticut Fix & Flip Loans | Hard Money Lender CT',
     description:
       'Fix and flip loans in Connecticut for experienced investors. Fast review for Stamford, Bridgeport, New Haven, Hartford, and nearby markets.',
     h1: 'Connecticut Fix & Flip Loans for Experienced Investors',
@@ -266,7 +266,7 @@ export const TRI_STATE_PROGRAM_PAGES: TriStateProgramPage[] = [
     stateAbbreviation: 'CT',
     programSlug: 'dscr-loans',
     programName: 'DSCR Rental Loans',
-    title: 'Connecticut DSCR Loans for Rental Investors',
+    title: 'Connecticut DSCR Loans | Rental Investor Lender',
     description:
       'DSCR rental loans in Connecticut for experienced investors buying or refinancing non-owner-occupied rental properties based on cash flow.',
     h1: 'Connecticut DSCR Loans for Rental Investors',

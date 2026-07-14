@@ -301,6 +301,35 @@ export default function CityPage({ city }: CityPageProps) {
 
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="max-w-3xl mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {city.cityName} Hard Money Loan Fit
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                AssetLift is best fit for business-purpose investment property loans where the
+                borrower can document the property, the numbers, and the exit. These pages are not
+                built for owner-occupied or consumer mortgage requests.
+              </p>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {[
+                '$100K+ loan requests',
+                '660+ credit preferred',
+                'Non-owner-occupied property',
+                'Fix and flip, bridge, DSCR, or construction exit',
+              ].map((item) => (
+                <div key={item} className="rounded-xl border border-border bg-card p-5">
+                  <p className="font-semibold">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 max-w-5xl mx-auto">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">

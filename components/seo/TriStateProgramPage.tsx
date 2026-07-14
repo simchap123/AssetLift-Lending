@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, FileText, MapPin, Phone } from 'lucide-react';
 import type { TriStateProgramPage as TriStateProgramPageData } from '@/lib/data/tri-state-program-pages';
+import { CITIES } from '@/lib/data/cities';
 
 interface Props {
   page: TriStateProgramPageData;
@@ -21,7 +22,45 @@ function calculatorHref(page: TriStateProgramPageData) {
     : '/tools/dscr-calculator';
 }
 
+const PROGRAM_GUIDES = {
+  'fix-and-flip-loans': [
+    {
+      label: 'Experienced Flipper Loan File Checklist',
+      href: '/blog/how-experienced-flippers-package-deals-for-fast-approval',
+    },
+    {
+      label: 'What Lenders Look For in Scope of Work',
+      href: '/blog/what-lenders-look-for-in-scope-of-work',
+    },
+    {
+      label: 'How to Compare Hard Money Term Sheets',
+      href: '/blog/how-to-compare-hard-money-term-sheets',
+    },
+  ],
+  'dscr-loans': [
+    {
+      label: 'DSCR File Checklist for Portfolio Investors',
+      href: '/blog/dscr-loan-file-checklist-portfolio-investors',
+    },
+    {
+      label: 'DSCR Loan Reserves Explained',
+      href: '/blog/dscr-loan-reserves-explained',
+    },
+    {
+      label: 'What Reserves Do Lenders Want?',
+      href: '/blog/what-reserves-do-lenders-want',
+    },
+  ],
+} satisfies Record<TriStateProgramPageData['programSlug'], Array<{ label: string; href: string }>>;
+
+function priorityMarketLinks(page: TriStateProgramPageData) {
+  return CITIES.filter((city) => city.stateSlug === page.stateSlug).slice(0, 12);
+}
+
 export default function TriStateProgramPage({ page }: Props) {
+  const marketLinks = priorityMarketLinks(page);
+  const programGuides = PROGRAM_GUIDES[page.programSlug];
+
   return (
     <main>
       <section className="pt-10 pb-16 md:pb-20">
@@ -37,6 +76,20 @@ export default function TriStateProgramPage({ page }: Props) {
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
                 {page.intro}
               </p>
+              <div className="grid gap-3 sm:grid-cols-3 mb-8">
+                <div className="rounded-xl border border-border bg-card px-4 py-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Loan Size</p>
+                  <p className="mt-1 font-bold">$100K-$5MM</p>
+                </div>
+                <div className="rounded-xl border border-border bg-card px-4 py-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Borrower</p>
+                  <p className="mt-1 font-bold">Experienced Investors</p>
+                </div>
+                <div className="rounded-xl border border-border bg-card px-4 py-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Property</p>
+                  <p className="mt-1 font-bold">Non-Owner Occupied</p>
+                </div>
+              </div>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/apply"
@@ -77,10 +130,14 @@ export default function TriStateProgramPage({ page }: Props) {
               <MapPin className="h-6 w-6 text-primary mb-4" />
               <h2 className="text-xl font-bold mb-4">Priority {page.stateAbbreviation} Markets</h2>
               <div className="flex flex-wrap gap-2">
-                {page.markets.map((market) => (
-                  <span key={market} className="rounded-full bg-secondary px-3 py-1 text-sm">
-                    {market}
-                  </span>
+                {marketLinks.map((market) => (
+                  <Link
+                    key={`${market.stateSlug}-${market.citySlug}`}
+                    href={`/lending/${market.stateSlug}/${market.citySlug}`}
+                    className="rounded-full bg-secondary px-3 py-1 text-sm hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    {market.cityName}
+                  </Link>
                 ))}
               </div>
             </div>
@@ -158,6 +215,24 @@ export default function TriStateProgramPage({ page }: Props) {
                 <Link className="rounded-xl bg-card border border-border px-4 py-3 text-sm font-medium hover:border-primary/50 transition-colors" href={siblingHref(page)}>
                   See the other {page.stateAbbreviation} investor loan page
                 </Link>
+                {marketLinks.slice(0, 4).map((market) => (
+                  <Link
+                    key={`${market.stateSlug}-${market.citySlug}`}
+                    className="rounded-xl bg-card border border-border px-4 py-3 text-sm font-medium hover:border-primary/50 transition-colors"
+                    href={`/lending/${market.stateSlug}/${market.citySlug}`}
+                  >
+                    Hard money loans in {market.cityName}
+                  </Link>
+                ))}
+                {programGuides.map((guide) => (
+                  <Link
+                    key={guide.href}
+                    className="rounded-xl bg-card border border-border px-4 py-3 text-sm font-medium hover:border-primary/50 transition-colors"
+                    href={guide.href}
+                  >
+                    {guide.label}
+                  </Link>
+                ))}
               </div>
             </aside>
           </div>
