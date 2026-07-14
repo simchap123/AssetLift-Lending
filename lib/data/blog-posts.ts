@@ -1,4 +1,5 @@
 import { GENERATED_BLOG_POSTS } from './generated-blog-posts';
+import { QUALIFIED_INVESTOR_BLOG_POSTS } from './qualified-investor-posts';
 import scheduledBlogPosts from './seo-scheduled-posts.json';
 
 export interface BlogPost {
@@ -3200,6 +3201,7 @@ const BASE_BLOG_POSTS: BlogPost[] = [
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...QUALIFIED_INVESTOR_BLOG_POSTS,
   ...BASE_BLOG_POSTS,
   ...GENERATED_BLOG_POSTS,
   ...SCHEDULED_BLOG_POSTS,

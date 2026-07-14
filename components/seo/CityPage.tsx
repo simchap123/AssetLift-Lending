@@ -113,6 +113,42 @@ const PRIORITY_CITY_GUIDANCE: Record<
       "Model the deal so it still works if resale or lease-up takes longer than planned",
     ],
   },
+  'new-jersey/newark': {
+    lenderView:
+      "Newark can work well for experienced investors, especially on 2-4 unit, mixed-use, and value-add rental files, but lenders pay close attention to tenant status, taxes, municipal items, and block-level comps. The strongest Newark files show a real rent or resale path and do not rely on broad Essex County averages.",
+    borrowerFocus: [
+      "Document tenant status, rent support, taxes, insurance, and municipal timing early",
+      "Use very local comps because values can move materially by neighborhood and property type",
+      "Show reserves for hold time, rehab variance, and DSCR refinance timing if the exit is rental debt",
+    ],
+  },
+  'new-jersey/jersey-city': {
+    lenderView:
+      "Jersey City files usually get reviewed through the lens of high basis, tight comps, condo or HOA restrictions, taxes, and exit liquidity. Lenders like the depth of demand, but they still need a borrower who understands the exact submarket, whether the asset is a condo, multifamily, or mixed-use property.",
+    borrowerFocus: [
+      "Separate Downtown, Journal Square, The Heights, Greenville, and Bergen-Lafayette comps",
+      "Confirm HOA, condo, insurance, and tax assumptions before asking for maximum leverage",
+      "Support DSCR files with leases, rent rolls, and conservative payment coverage",
+    ],
+  },
+  'new-jersey/bergen-county': {
+    lenderView:
+      "Bergen County can be attractive collateral because of deep buyer demand and strong suburban liquidity, but loan files still need disciplined pricing. Lenders usually want town-specific comps, a realistic finish level, and a clear answer on whether the exit is resale, bridge payoff, or DSCR refinance.",
+    borrowerFocus: [
+      "Keep comps town-specific instead of relying on broad Bergen County averages",
+      "Match rehab quality to the buyer pool and price band of the exact municipality",
+      "Model taxes and insurance carefully because they can change the DSCR or flip margin",
+    ],
+  },
+  'new-jersey/hudson-county': {
+    lenderView:
+      "Hudson County is dense and liquid, but complexity is common. Lenders focus on unit mix, tenant status, municipal requirements, taxes, insurance, and whether the borrower understands the difference between Jersey City, Hoboken, Bayonne, Union City, and North Bergen execution.",
+    borrowerFocus: [
+      "Document unit mix, rent status, and lease terms clearly on multifamily files",
+      "Use city-specific comps and rents instead of one county-wide valuation story",
+      "Confirm the payoff path before using bridge debt as a path into DSCR financing",
+    ],
+  },
 };
 
 export default function CityPage({ city }: CityPageProps) {
@@ -260,9 +296,9 @@ export default function CityPage({ city }: CityPageProps) {
                 {[
                   { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
                   { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
-                  { label: 'How to Finance Your First Fix and Flip', href: '/blog/how-to-finance-first-fix-and-flip' },
-                  { label: 'Questions to Ask a Hard Money Lender', href: '/blog/questions-to-ask-a-hard-money-lender' },
-                  { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+                  { label: 'Experienced Flipper Loan File Checklist', href: '/blog/how-experienced-flippers-package-deals-for-fast-approval' },
+                  { label: 'How to Compare Hard Money Term Sheets', href: '/blog/how-to-compare-hard-money-term-sheets' },
+                  { label: 'What Lenders Look For in Scope of Work', href: '/blog/what-lenders-look-for-in-scope-of-work' },
                 ].map((resource) => (
                   <Link
                     key={resource.href}
@@ -311,9 +347,9 @@ export default function CityPage({ city }: CityPageProps) {
               <div className="space-y-3">
                 {[
                   { label: 'What Is a Hard Money Loan?', href: '/blog/what-is-a-hard-money-loan' },
-                  { label: 'Fix and Flip for Beginners', href: '/blog/fix-and-flip-for-beginners' },
-                  { label: 'How Does a DSCR Loan Work?', href: '/blog/how-does-a-dscr-loan-work' },
-                  { label: 'How to Get a Construction Loan', href: '/blog/how-to-get-a-construction-loan' },
+                  { label: 'DSCR File Checklist for Portfolio Investors', href: '/blog/dscr-loan-file-checklist-portfolio-investors' },
+                  { label: 'New Jersey Investor Loan File Guide', href: '/blog/new-jersey-investor-loan-file-guide' },
+                  { label: 'What Reserves Do Lenders Want?', href: '/blog/what-reserves-do-lenders-want' },
                 ].map((resource) => (
                   <Link
                     key={resource.href}
