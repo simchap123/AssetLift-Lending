@@ -149,7 +149,7 @@ const Hero = () => {
             >
               <TrendingUp className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">
-                46 States &nbsp;·&nbsp; 24hr Response &nbsp;·&nbsp; 5-Day Close
+                NY & NJ Focus &nbsp;·&nbsp; 24hr Response &nbsp;·&nbsp; 5-Day Close
               </span>
             </motion.div>
 
@@ -162,7 +162,7 @@ const Hero = () => {
             >
               <span className="text-white">Hard Money Loans</span>
               <br />
-              <span className="gradient-text">for Real Estate Investors</span>
+              <span className="gradient-text">for Serious Investors</span>
             </motion.h1>
 
             <motion.p
@@ -172,9 +172,10 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Financing for borrowers who need speed, clean execution, and a lender that can
-              actually explain the file. AssetLift handles fix and flip, bridge, DSCR rental,
-              construction, and commercial lending scenarios across 46 states.
+              Financing for experienced real estate investors who need speed, clean execution, and
+              a lender that can actually explain the file. AssetLift handles fix and flip, bridge,
+              DSCR rental, construction, and commercial lending scenarios across New York, New
+              Jersey, Connecticut, and 46 states.
             </motion.p>
 
             <motion.p
@@ -183,7 +184,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
             >
-              Fast closings, straight answers, and a real answer before you&apos;ve spent money on the wrong path.
+              Upload a real scenario with purchase price, scope, ARV or rent, reserves, and exit
+              strategy. We will tell you what structure fits before you waste time on the wrong path.
             </motion.p>
 
             <motion.div

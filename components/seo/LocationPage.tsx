@@ -80,6 +80,28 @@ const PRIORITY_STATE_GUIDANCE: Record<
     caution:
       "North Carolina growth stories attract aggressive underwriting assumptions. Lenders respond better when the borrower shows a conservative local plan instead of macro optimism.",
   },
+  'new-york': {
+    lenderView:
+      "New York investor files are strong when the borrower makes the market-specific risks easy to underwrite. NYC boroughs, Long Island, Westchester, and upstate markets do not behave the same way. Lenders want exact comps, legal unit clarity, taxes, insurance, tenant status, reserves, and a payoff plan that works even if timing stretches.",
+    borrowerFocus: [
+      "Separate NYC borough, Long Island, Westchester, and upstate underwriting instead of using one statewide story",
+      "Document legal unit count, tenant status, rent support, taxes, insurance, and entity structure early",
+      "Use fix-and-flip debt for transitional assets and DSCR debt once the rental income supports the payment",
+    ],
+    caution:
+      "New York deals often look stronger than they are when taxes, legal units, building rules, or tenant status are not fully documented before underwriting.",
+  },
+  'new-jersey': {
+    lenderView:
+      "New Jersey files can move quickly when the borrower is specific about the town, county, unit mix, tax load, and exit. Newark, Jersey City, Bergen County, Hudson County, and shore markets each need different comp and rent logic. Lenders respond better to a complete file than to a broad claim that the deal is in a strong NJ market.",
+    borrowerFocus: [
+      "Use town-specific comps and rent support instead of broad county averages",
+      "Prepare taxes, insurance, tenant status, title, scope, reserves, and municipal timing before requesting leverage",
+      "Plan the bridge-to-DSCR exit before closing if the property is being stabilized as a rental",
+    ],
+    caution:
+      "New Jersey files can get delayed when taxes, municipal requirements, tenant status, or insurance assumptions are discovered late.",
+  },
 };
 
 export default function LocationPage({ state }: LocationPageProps) {
@@ -218,6 +240,33 @@ export default function LocationPage({ state }: LocationPageProps) {
         </div>
       </section>
 
+      {stateCities.length > 0 && (
+        <section className="py-16 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                {state.name} Investor Lending Markets
+              </h2>
+              <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-8">
+                Review city and county pages for local hard money, bridge, fix and flip, and DSCR
+                rental loan context before uploading a scenario.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {stateCities.map((city) => (
+                  <Link
+                    key={`${city.stateSlug}-${city.citySlug}`}
+                    href={`/lending/${city.stateSlug}/${city.citySlug}`}
+                    className="rounded-xl border border-border bg-card px-4 py-4 text-sm font-medium hover:border-primary/50 hover:bg-secondary/30 transition-colors"
+                  >
+                    Hard Money Loans in {city.cityName}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 max-w-5xl mx-auto">
@@ -251,9 +300,9 @@ export default function LocationPage({ state }: LocationPageProps) {
                 {[
                   { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
                   { label: 'DSCR Calculator', href: '/tools/dscr-calculator' },
-                  { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
-                  { label: 'What Is a Hard Money Loan?', href: '/blog/what-is-a-hard-money-loan' },
-                  { label: 'How Does a DSCR Loan Work?', href: '/blog/how-does-a-dscr-loan-work' },
+                  { label: 'Experienced Flipper Loan File Checklist', href: '/blog/how-experienced-flippers-package-deals-for-fast-approval' },
+                  { label: 'DSCR File Checklist for Portfolio Investors', href: '/blog/dscr-loan-file-checklist-portfolio-investors' },
+                  { label: 'How to Compare Hard Money Term Sheets', href: '/blog/how-to-compare-hard-money-term-sheets' },
                   { label: 'How It Works', href: '/how-it-works' },
                 ].map((resource) => (
                   <Link
@@ -305,9 +354,9 @@ export default function LocationPage({ state }: LocationPageProps) {
                 {[
                   { label: 'Questions to Ask a Hard Money Lender', href: '/blog/questions-to-ask-a-hard-money-lender' },
                   { label: 'When Not to Use a Hard Money Loan', href: '/blog/when-not-to-use-a-hard-money-loan' },
-                  { label: 'Fix and Flip for Beginners', href: '/blog/fix-and-flip-for-beginners' },
-                  { label: 'ARV Meaning in Real Estate', href: '/blog/arv-meaning-real-estate' },
-                  { label: 'What Is LTC in Real Estate?', href: '/blog/what-is-ltc-in-real-estate' },
+                  { label: 'What Lenders Look For in Scope of Work', href: '/blog/what-lenders-look-for-in-scope-of-work' },
+                  { label: 'What Reserves Do Lenders Want?', href: '/blog/what-reserves-do-lenders-want' },
+                  { label: 'New Jersey Investor Loan File Guide', href: '/blog/new-jersey-investor-loan-file-guide' },
                 ].map((resource) => (
                   <Link
                     key={resource.href}

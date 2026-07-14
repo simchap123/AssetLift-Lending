@@ -303,10 +303,10 @@ export default function FixAndFlipCalculatorPage() {
                 <span className="text-muted-foreground">-- understanding the draw process and inspection requirements</span>
               </li>
               <li>
-                <Link href="/blog/first-time-flipper-checklist" className="text-primary hover:underline">
-                  First-Time Flipper Checklist
+                <Link href="/blog/how-experienced-flippers-package-deals-for-fast-approval" className="text-primary hover:underline">
+                  Experienced Flipper Loan File Checklist
                 </Link>{' '}
-                <span className="text-muted-foreground">-- everything to prepare before your first project</span>
+                <span className="text-muted-foreground">-- what to package before asking for fast approval</span>
               </li>
               <li>
                 <Link href="/blog/fix-and-flip-budget-template-guide" className="text-primary hover:underline">

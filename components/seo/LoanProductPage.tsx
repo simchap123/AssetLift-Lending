@@ -21,10 +21,10 @@ const RELATED_GUIDES: Record<
   Array<{ label: string; href: string }>
 > = {
   'fix-and-flip': [
-    { label: 'How to Finance Your First Fix and Flip', href: '/blog/how-to-finance-first-fix-and-flip' },
+    { label: 'Experienced Flipper Loan File Checklist', href: '/blog/how-experienced-flippers-package-deals-for-fast-approval' },
     { label: 'Fix and Flip Loan Requirements', href: '/blog/fix-and-flip-loan-requirements' },
     { label: '90% LTC Fix and Flip Loans', href: '/blog/90-ltc-fix-and-flip-loan' },
-    { label: 'Fix and Flip for Beginners', href: '/blog/fix-and-flip-for-beginners' },
+    { label: 'What Lenders Look For in Scope of Work', href: '/blog/what-lenders-look-for-in-scope-of-work' },
     { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
     { label: 'Borrower Package', href: '/resources/fix-and-flip-borrower-package' },
     { label: 'Fix and Flip vs BRRRR Strategy', href: '/compare/fix-and-flip-vs-brrrr-strategy' },
@@ -98,8 +98,8 @@ const PRODUCT_INSIGHTS: Record<
     ],
     resources: [
       { label: 'Fix & Flip Calculator', href: '/tools/fix-and-flip-calculator' },
-      { label: 'How to Finance Your First Fix and Flip', href: '/blog/how-to-finance-first-fix-and-flip' },
-      { label: 'Hard Money vs. Bank Loans', href: '/blog/hard-money-vs-bank-loans' },
+      { label: 'Experienced Flipper Loan File Checklist', href: '/blog/how-experienced-flippers-package-deals-for-fast-approval' },
+      { label: 'How to Compare Hard Money Term Sheets', href: '/blog/how-to-compare-hard-money-term-sheets' },
     ],
     walkthroughs: [
       {
@@ -107,7 +107,7 @@ const PRODUCT_INSIGHTS: Record<
         duration: '3 min walkthrough',
         summary:
           'A simple borrower-facing explanation of what a fix and flip loan covers, how leverage usually works, and what makes a file financeable.',
-        href: '/blog/how-to-finance-first-fix-and-flip',
+        href: '/blog/how-experienced-flippers-package-deals-for-fast-approval',
         chapters: ['Acquisition leverage', 'Rehab escrow', 'ARV and exit plan'],
       },
       {

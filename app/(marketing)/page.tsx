@@ -16,12 +16,19 @@ import JsonLd from "@/components/JsonLd";
 import { AGGREGATE_REVIEW_RATING, BORROWER_REVIEWS } from "@/lib/data/reviews";
 
 export const metadata: Metadata = createMetadata({
-  title: "Hard Money Loans for Real Estate Investors",
+  title: "Hard Money Lender for NY & NJ Real Estate Investors",
   description:
-    "Fix & flip, DSCR, bridge, and construction loans in 46 states. Hear back within 24 hours. Close in as fast as 5 business days.",
+    "Hard money, fix & flip, bridge, DSCR, and construction loans for experienced real estate investors in NY, NJ, CT, and 46 states.",
   path: "/",
   keywords: [
     "hard money loans",
+    "hard money lender",
+    "New York hard money lender",
+    "New Jersey hard money lender",
+    "NY fix and flip loans",
+    "NJ fix and flip loans",
+    "NY DSCR loans",
+    "NJ DSCR loans",
     "private lending",
     "fix and flip loans",
     "DSCR loans",
@@ -47,7 +54,7 @@ export default function HomePage() {
     {
       question: "What are your minimum loan requirements?",
       answer:
-        "Our minimum loan amount is $100,000 and maximum is $5,000,000. We require a minimum credit score of 660 and prefer borrowers with real estate investing experience, though we work with first-time investors on a case-by-case basis.",
+        "Our minimum loan amount is $100,000 and maximum is $5,000,000. We require a minimum credit score of 660 and focus on experienced real estate investors with a clear property, budget, reserves, and exit strategy.",
     },
     {
       question: "What states do you lend in?",
@@ -61,7 +68,7 @@ export default function HomePage() {
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
     description:
-      'AssetLift Lending provides private lending for real estate investors, with some deals brokered with capital partners. Fix and flip, bridge, DSCR rental, ground-up construction, and commercial lending scenarios in 46 states.',
+      'AssetLift Lending provides private lending for experienced real estate investors, with some deals brokered with capital partners. Fix and flip, bridge, DSCR rental, ground-up construction, and commercial lending scenarios in New York, New Jersey, Connecticut, and 46 states.',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
@@ -73,7 +80,12 @@ export default function HomePage() {
       addressRegion: 'NY',
       addressCountry: 'US',
     },
-    areaServed: { '@type': 'Country', name: 'United States' },
+    areaServed: [
+      { '@type': 'State', name: 'New York' },
+      { '@type': 'State', name: 'New Jersey' },
+      { '@type': 'State', name: 'Connecticut' },
+      { '@type': 'Country', name: 'United States' },
+    ],
     founder: [
       { '@type': 'Person', name: 'Yaakov Pentelnik' },
       { '@type': 'Person', name: 'Yisroel Pentelnik' },
@@ -88,6 +100,8 @@ export default function HomePage() {
     },
     knowsAbout: [
       'Hard money loans',
+      'New York hard money loans',
+      'New Jersey hard money loans',
       'Private lending',
       'Fix and flip loans',
       'DSCR rental loans',
@@ -115,14 +129,14 @@ export default function HomePage() {
       itemListElement: [
           {
             '@type': 'Offer',
-            name: 'Fix & Flip Loans',
-            description: 'Short-term financing for purchasing and renovating investment properties. Up to 95% LTC on the purchase, 100% of rehab funded, and closings in as fast as 5 business days subject to underwriting, valuation, title, and file complexity.',
+            name: 'Fix & Flip Loans for Experienced Investors',
+            description: 'Short-term financing for purchasing and renovating non-owner-occupied investment properties. Up to 95% LTC on the purchase, 100% of rehab funded, and closings in as fast as 5 business days subject to underwriting, valuation, title, and file complexity.',
             url: 'https://www.assetliftlending.com/loans/fix-and-flip',
           },
         {
           '@type': 'Offer',
-          name: 'DSCR Rental Loans',
-          description: 'Long-term financing for rental properties with rates starting as low as 5.85% for qualifying scenarios. Qualify on rental income, not personal income, with up to 85% LTV.',
+          name: 'DSCR Rental Loans for Portfolio Investors',
+          description: 'Long-term financing for non-owner-occupied rental properties. Qualify on rental income, not personal income, with up to 85% LTV for qualifying scenarios.',
           url: 'https://www.assetliftlending.com/loans/dscr-rental',
         },
         {

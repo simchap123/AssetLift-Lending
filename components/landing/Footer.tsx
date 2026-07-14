@@ -4,8 +4,16 @@ import Logo from "@/components/Logo";
 const FEATURED_MARKETS = [
   { label: "NY Fix & Flip", href: "/lending/new-york/fix-and-flip-loans" },
   { label: "NY DSCR Loans", href: "/lending/new-york/dscr-loans" },
+  { label: "Queens Hard Money", href: "/lending/new-york/queens" },
+  { label: "Brooklyn Hard Money", href: "/lending/new-york/brooklyn" },
+  { label: "Nassau County Loans", href: "/lending/new-york/nassau-county" },
+  { label: "Westchester Loans", href: "/lending/new-york/westchester-county" },
   { label: "NJ Fix & Flip", href: "/lending/new-jersey/fix-and-flip-loans" },
   { label: "NJ DSCR Loans", href: "/lending/new-jersey/dscr-loans" },
+  { label: "Newark Hard Money", href: "/lending/new-jersey/newark" },
+  { label: "Jersey City Loans", href: "/lending/new-jersey/jersey-city" },
+  { label: "Bergen County Loans", href: "/lending/new-jersey/bergen-county" },
+  { label: "Hudson County Loans", href: "/lending/new-jersey/hudson-county" },
   { label: "CT Fix & Flip", href: "/lending/connecticut/fix-and-flip-loans" },
   { label: "CT DSCR Loans", href: "/lending/connecticut/dscr-loans" },
 ];
@@ -21,7 +29,8 @@ const Footer = () => {
               <Logo size={38} />
             </div>
             <p className="text-muted-foreground text-sm max-w-sm">
-              Private real estate lending solutions for investors who move fast.
+              Private real estate lending for experienced investors in NY, NJ, CT, and 46 states.
+              Fix and flip, DSCR, bridge, and construction scenarios reviewed fast.
             </p>
           </div>
 

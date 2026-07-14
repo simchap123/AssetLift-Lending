@@ -4,20 +4,22 @@ import LendingCoverageMap from "@/components/seo/LendingCoverageMap";
 import { CITIES } from "@/lib/data/cities";
 
 const FEATURED_CITY_SLUGS = [
-  "miami",
-  "fort-lauderdale",
-  "st-petersburg",
-  "west-palm-beach",
-  "boca-raton",
-  "sarasota",
-  "tampa",
-  "austin",
-  "dallas",
-  "plano",
-  "arlington",
-  "scottsdale",
-  "chandler",
-  "long-beach",
+  "queens",
+  "brooklyn",
+  "bronx",
+  "nassau-county",
+  "suffolk-county",
+  "westchester-county",
+  "yonkers",
+  "newark",
+  "jersey-city",
+  "bergen-county",
+  "hudson-county",
+  "essex-county",
+  "union-county",
+  "middlesex-county",
+  "monmouth-county",
+  "new-haven",
 ];
 
 const FEATURED_CITIES = CITIES.filter((city) => FEATURED_CITY_SLUGS.includes(city.citySlug));
@@ -34,8 +36,9 @@ export default function MarketsPreview() {
             We Lend Where Investors Invest
           </h2>
           <p className="text-lg text-muted-foreground">
-            Explore the states and cities where AssetLift Lending offers financing for fix and
-            flip, bridge, DSCR rental, and ground-up construction projects.
+            Explore priority NY, NJ, CT, and national markets where AssetLift Lending reviews fix
+            and flip, bridge, DSCR rental, and ground-up construction scenarios for qualified
+            investment property borrowers.
           </p>
         </div>
 

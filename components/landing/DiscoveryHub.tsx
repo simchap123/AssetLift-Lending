@@ -30,8 +30,8 @@ const HUB_LINKS = [
 ];
 
 const PRIORITY_PAGES = [
-  { label: "Fix & Flip Loans", href: "/loans/fix-and-flip" },
-  { label: "DSCR Rental Loans", href: "/loans/dscr-rental" },
+  { label: "Fix & Flip Loans for Experienced Investors", href: "/loans/fix-and-flip" },
+  { label: "DSCR Rental Loans for Portfolio Investors", href: "/loans/dscr-rental" },
   { label: "NY Fix & Flip Loans", href: "/lending/new-york/fix-and-flip-loans" },
   { label: "NY DSCR Loans", href: "/lending/new-york/dscr-loans" },
   { label: "NJ Fix & Flip Loans", href: "/lending/new-jersey/fix-and-flip-loans" },
@@ -43,15 +43,18 @@ const PRIORITY_PAGES = [
   { label: "Hard Money Loans in New York", href: "/lending/new-york" },
   { label: "Hard Money Loans in New Jersey", href: "/lending/new-jersey" },
   { label: "Hard Money Loans in Connecticut", href: "/lending/connecticut" },
-  { label: "Hard Money Loans in California", href: "/lending/california" },
-  { label: "Hard Money Loans in Texas", href: "/lending/texas" },
-  { label: "Hard Money Loans in North Carolina", href: "/lending/north-carolina" },
-  { label: "Hard Money Loans in South Carolina", href: "/lending/south-carolina" },
-  { label: "Hard Money Loans in Florida", href: "/lending/florida" },
-  { label: "Hard Money Loans in Indiana", href: "/lending/indiana" },
-  { label: "Hard Money Loans in Ohio", href: "/lending/ohio" },
+  { label: "Hard Money Loans in Queens", href: "/lending/new-york/queens" },
+  { label: "Hard Money Loans in Brooklyn", href: "/lending/new-york/brooklyn" },
+  { label: "Hard Money Loans in Nassau County", href: "/lending/new-york/nassau-county" },
+  { label: "Hard Money Loans in Westchester County", href: "/lending/new-york/westchester-county" },
+  { label: "Hard Money Loans in Newark", href: "/lending/new-jersey/newark" },
+  { label: "Hard Money Loans in Jersey City", href: "/lending/new-jersey/jersey-city" },
+  { label: "Hard Money Loans in Bergen County", href: "/lending/new-jersey/bergen-county" },
+  { label: "Hard Money Loans in Hudson County", href: "/lending/new-jersey/hudson-county" },
   { label: "DSCR Loans: No Income Verification", href: "/answers/best-dscr-lender-no-income-verification" },
   { label: "100% Rehab Funding Explained", href: "/answers/fix-and-flip-loans-100-percent-rehab-funding" },
+  { label: "Experienced Flipper Loan File Checklist", href: "/blog/how-experienced-flippers-package-deals-for-fast-approval" },
+  { label: "DSCR File Checklist for Portfolio Investors", href: "/blog/dscr-loan-file-checklist-portfolio-investors" },
 ];
 
 export default function DiscoveryHub() {

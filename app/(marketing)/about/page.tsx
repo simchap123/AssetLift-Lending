@@ -148,7 +148,7 @@ export default function AboutPage() {
             {[
               { icon: Zap, title: 'Speed', desc: 'Every inquiry gets a response within 24 hours, usually within a few hours. Many deals close in as few as 5 business days, subject to underwriting, valuation, title, and file complexity. We know that in competitive markets, a slow lender costs you the deal.' },
               { icon: Shield, title: 'Transparency', desc: 'No hidden fees, no bait-and-switch term sheets. We surface potential issues early in the process so you can make informed decisions before you spend more time or money on the file. If we cannot do the deal, we tell you upfront.' },
-              { icon: Users, title: 'Flexibility', desc: 'We work with first-time investors and experienced operators alike. Because we broker through multiple capital partners, we can find solutions for files that a single direct lender would decline. Different deal, different source, same service.' },
+              { icon: Users, title: 'Flexibility', desc: 'We focus on experienced investors and organized borrowers with real deals, clear numbers, and executable exit plans. Because we broker through multiple capital partners, we can find solutions for files that a single direct lender would decline. Different deal, different source, same service.' },
               { icon: Award, title: 'Expertise', desc: 'Our founders and team bring hands-on real estate investing experience to every file. We understand rehab scopes, ARV analysis, rental market dynamics, and exit strategies because we have been on the borrower side of the table.' },
             ].map((value, i) => (
               <div key={i} className="bg-card border border-border rounded-xl p-6 text-center">
@@ -249,8 +249,8 @@ export default function AboutPage() {
                 That means surfacing issues early, staying realistic about leverage and timeline,
                 and matching the loan structure to the actual business plan instead of the most
                 aggressive version of the story. A clean bridge file should move differently than a
-                ground-up build, and a BRRRR refinance should move differently than a first-time
-                flip.
+                ground-up build, and a BRRRR refinance should move differently than a complex
+                value-add flip.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Our approach is operationally simple: communicate quickly, underwrite the actual
