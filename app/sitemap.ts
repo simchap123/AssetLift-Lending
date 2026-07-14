@@ -9,6 +9,25 @@ import geoAnswers from '@/lib/data/geo-answers.json';
 
 const BASE_URL = 'https://www.assetliftlending.com';
 
+const PRIORITY_STATE_SLUGS = new Set(['new-york', 'new-jersey', 'connecticut']);
+const PRIORITY_CITY_SLUGS = new Set([
+  'queens',
+  'brooklyn',
+  'bronx',
+  'nassau-county',
+  'suffolk-county',
+  'westchester-county',
+  'yonkers',
+  'newark',
+  'jersey-city',
+  'bergen-county',
+  'hudson-county',
+  'essex-county',
+  'union-county',
+  'middlesex-county',
+  'monmouth-county',
+]);
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
@@ -193,23 +212,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const statePages: MetadataRoute.Sitemap = STATES.map((state) => ({
     url: `${BASE_URL}/lending/${state.slug}`,
     lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    changeFrequency: (PRIORITY_STATE_SLUGS.has(state.slug) ? 'weekly' : 'monthly') as
+      | 'weekly'
+      | 'monthly',
+    priority: PRIORITY_STATE_SLUGS.has(state.slug) ? 0.9 : 0.8,
   }));
 
   // City pages
   const cityPages: MetadataRoute.Sitemap = CITIES.map((city) => ({
     url: `${BASE_URL}/lending/${city.stateSlug}/${city.citySlug}`,
     lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    changeFrequency: (
+      PRIORITY_STATE_SLUGS.has(city.stateSlug) && PRIORITY_CITY_SLUGS.has(city.citySlug)
+        ? 'weekly'
+        : 'monthly'
+    ) as 'weekly' | 'monthly',
+    priority:
+      PRIORITY_STATE_SLUGS.has(city.stateSlug) && PRIORITY_CITY_SLUGS.has(city.citySlug)
+        ? 0.82
+        : 0.7,
   }));
 
   const triStateProgramPages: MetadataRoute.Sitemap = TRI_STATE_PROGRAM_PAGES.map((page) => ({
     url: `${BASE_URL}/lending/${page.stateSlug}/${page.programSlug}`,
     lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.85,
+    changeFrequency: 'weekly' as const,
+    priority: 0.92,
   }));
 
   // Blog posts - higher priority for recent posts
