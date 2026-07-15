@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-14T10:00:10.572Z",
+  "generatedAt": "2026-07-15T10:04:35.852Z",
   "items": [
     {
       "tier": "Tier 1",
       "platform": "Google Business Profile",
-      "targetUrl": "https://www.assetliftlending.com/",
-      "anchorTheme": "AssetLift Lending",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-york/fix-and-flip-loans",
+      "anchorTheme": "New York hard money lender",
       "status": "pending",
-      "notes": "Highest priority entity listing. Must be fully verified and kept active."
+      "notes": "Highest priority entity listing. Must be fully verified and kept active with NY/NJ investor lending language."
     },
     {
       "tier": "Tier 1",
@@ -28,32 +28,32 @@
     {
       "tier": "Tier 1",
       "platform": "LinkedIn Company Page",
-      "targetUrl": "https://www.assetliftlending.com/apply",
-      "anchorTheme": "AssetLift Lending",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/fix-and-flip-loans",
+      "anchorTheme": "New Jersey hard money lender",
       "status": "pending",
       "notes": "Use company overview plus application link."
     },
     {
       "tier": "Tier 2",
       "platform": "BBB Profile",
-      "targetUrl": "https://www.assetliftlending.com/licensing",
-      "anchorTheme": "private lending for real estate investors",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-york/dscr-loans",
+      "anchorTheme": "New York DSCR loans",
       "status": "pending",
       "notes": "Strong trust signal for financial services."
     },
     {
       "tier": "Tier 3",
       "platform": "BiggerPockets Profile or Mention",
-      "targetUrl": "https://www.assetliftlending.com/loans/fix-and-flip",
-      "anchorTheme": "fix and flip loans",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/dscr-loans",
+      "anchorTheme": "New Jersey DSCR loans",
       "status": "pending",
       "notes": "Investor-relevant platform. Requires real account activity and value-first participation."
     },
     {
       "tier": "Tier 4",
       "platform": "Guest Post Outreach",
-      "targetUrl": "https://www.assetliftlending.com/loans/dscr-rental",
-      "anchorTheme": "DSCR rental loans",
+      "targetUrl": "https://www.assetliftlending.com/blog/how-experienced-flippers-package-deals-for-fast-approval",
+      "anchorTheme": "experienced fix and flip lender",
       "status": "pending",
       "notes": "Needs manual outreach to real estate or lending publishers."
     }
