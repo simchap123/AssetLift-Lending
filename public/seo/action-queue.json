@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T10:00:10.802Z",
+  "generatedAt": "2026-07-15T10:04:36.156Z",
   "connected": true,
   "summary": "12 prioritized actions from real Search Console demand (top priority: California).",
   "items": [
@@ -7,50 +7,50 @@
       "type": "build-demand-page",
       "target": "California",
       "category": "Geo",
-      "priority": 383,
-      "impressions": 383,
+      "priority": 381,
+      "impressions": 381,
       "position": 0,
-      "rationale": "383 impressions across 12 queries mention California.",
+      "rationale": "381 impressions across 12 queries mention California.",
       "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 324,
-      "impressions": 324,
+      "priority": 296,
+      "impressions": 296,
       "position": 0,
-      "rationale": "324 impressions across 7 queries mention Maryland.",
+      "rationale": "296 impressions across 6 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 247,
-      "impressions": 247,
+      "priority": 246,
+      "impressions": 246,
       "position": 0,
-      "rationale": "247 impressions across 6 queries mention Colorado.",
+      "rationale": "246 impressions across 6 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 214,
-      "impressions": 214,
+      "priority": 216,
+      "impressions": 216,
       "position": 0,
-      "rationale": "214 impressions across 5 queries mention Idaho.",
+      "rationale": "216 impressions across 5 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Arizona",
       "category": "Geo",
-      "priority": 189,
-      "impressions": 189,
+      "priority": 188,
+      "impressions": 188,
       "position": 0,
-      "rationale": "189 impressions across 6 queries mention Arizona.",
+      "rationale": "188 impressions across 6 queries mention Arizona.",
       "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -75,23 +75,13 @@
     },
     {
       "type": "build-demand-page",
-      "target": "Texas",
+      "target": "Nevada",
       "category": "Geo",
-      "priority": 118,
-      "impressions": 118,
+      "priority": 155,
+      "impressions": 155,
       "position": 0,
-      "rationale": "118 impressions across 4 queries mention Texas.",
-      "action": "Strengthen the Texas state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/blog/real-estate-investor-financing-options-2026",
-      "category": "General",
-      "priority": 86,
-      "impressions": 43,
-      "position": 8.6,
-      "rationale": "43 impressions at position 8.6 but only 0 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+      "rationale": "155 impressions across 4 queries mention Nevada.",
+      "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
@@ -105,22 +95,32 @@
     },
     {
       "type": "improve-meta",
+      "target": "/blog/real-estate-investor-financing-options-2026",
+      "category": "General",
+      "priority": 68,
+      "impressions": 34,
+      "position": 6,
+      "rationale": "34 impressions at position 6 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
       "target": "/blog/fix-and-flip-profit-margins-2026",
       "category": "Fix & Flip",
-      "priority": 40,
-      "impressions": 20,
+      "priority": 42,
+      "impressions": 21,
       "position": 5.9,
-      "rationale": "20 impressions at position 5.9 but only 0 clicks.",
+      "rationale": "21 impressions at position 5.9 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "expand-content",
       "target": "chandler hard money loans",
       "category": "Hard Money",
-      "priority": 20,
-      "impressions": 13,
-      "position": 19.9,
-      "rationale": "Ranking at position 19.9 with 13 impressions — within striking distance of page 1.",
+      "priority": 21,
+      "impressions": 14,
+      "position": 19.6,
+      "rationale": "Ranking at position 19.6 with 14 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     }
   ]
