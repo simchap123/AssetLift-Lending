@@ -2985,5 +2985,60 @@
         "answer": "While DSCR loans are primarily income-driven, a minimum credit score of 660 is generally required for most AssetLift DSCR programs. A higher credit score can often result in more favorable interest rates, which for us start from 5.85%."
       }
     ]
+  },
+  {
+    "slug": "construction-loan-vs-hard-money-loan",
+    "title": "Construction Loan vs. Hard Money: Which is Better for You?",
+    "description": "Navigating construction loan vs. hard money loan options for real estate investors. Learn the pros, cons, and when to use each for your projects.",
+    "publishedAt": "2026-07-19T11:14:33.903Z",
+    "author": "AssetLift Team",
+    "authorRole": "Lending Specialists",
+    "readTime": "8 min read",
+    "category": "Construction",
+    "tags": [
+      "construction financing",
+      "hard money loans",
+      "real estate investing",
+      "ground-up construction",
+      "fix and flip",
+      "bridge loans"
+    ],
+    "heroImage": "/blog-placeholder.jpg",
+    "sections": [
+      {
+        "heading": "Understanding the Core Differences: Construction Loans",
+        "content": "When you're embarking on a ground-up construction project, understanding your financing options is critical. A traditional construction loan, often offered by banks or specialized lenders like AssetLift, is designed specifically for new builds. These loans are typically structured with a draw schedule, meaning funds are disbursed in stages as construction milestones are met and verified by an inspector. For example, after the foundation is poured and passes inspection, the first draw is released. This phased funding mitigates risk for the lender and ensures project progress. At AssetLift, our ground-up construction financing can cover projects from $100,000 to $5 million across 46 states, often requiring detailed plans, contractor bids, and a solid financial history. While approval can take 3-4 weeks due to extensive underwriting, the benefit is usually lower interest rates, often starting in the high single digits, compared to hard money alternatives."
+      },
+      {
+        "heading": "Understanding the Core Differences: Hard Money Loans",
+        "content": "Hard money loans, by contrast, are asset-based loans primarily focused on the property's value and the investor's exit strategy, rather than extensive personal financial documentation or the lengthy approval processes of traditional lenders. These are private loans, often from individual investors or specialized firms like AssetLift, designed for speed and flexibility. If you're looking at a fix-and-flip project with a tight acquisition window, a hard money loan could close in as little as 7-10 business days. While the speed and less stringent credit requirements (we typically look for a minimum credit score of 660, but the asset is paramount) are attractive, hard money loans come with higher interest rates, often ranging from 9% to 15% or more, plus origination fees of 2-5 points. The term is also shorter, typically 6-24 months, making them ideal for projects with a clear, quick exit strategy, like a flip or a bridge to permanent financing."
+      },
+      {
+        "heading": "When to Choose a Construction Loan: Lower Costs, Longer Timelines",
+        "content": "Opt for a dedicated construction loan when your project is a ground-up build, you have a solid contractor, detailed plans, and you're not under extreme time pressure for acquisition. The primary advantage here is cost. With interest rates potentially 3-6 percentage points lower than hard money, and often fewer points upfront, the savings over a 12-18 month build can be substantial. For a $1 million project, saving 4% annually on interest means $40,000 less in interest payments. AssetLift's ground-up construction loans are ideal for experienced developers building multi-family units or commercial properties where the project timeline is well-defined and the focus is on maximizing profit through lower carrying costs. These loans require a more robust underwriting process, including detailed appraisals, feasibility studies, and contractor vetting, ensuring a secure investment for both you and the lender."
+      },
+      {
+        "heading": "When to Choose a Hard Money Loan: Speed, Flexibility, and Specific Use Cases",
+        "content": "Hard money loans shine in scenarios demanding speed, flexibility, or when a traditional construction loan isn't feasible. Consider a fix-and-flip investor who identifies a distressed property at 70% ARV (After Repair Value). With a hard money loan, they can move quickly to acquire the property, often getting up to 95% of the purchase price and 100% of the rehab costs funded. This rapid deployment of capital means securing deals that others can't. Another excellent use case is a bridge loan, which is essentially a type of hard money loan. If you're acquiring a property that needs significant renovation before it qualifies for permanent financing, a bridge loan up to 80% LTV can provide the necessary capital for 6-18 months. While the rates are higher, the ability to close in 1-2 weeks and the focus on the asset's potential make hard money invaluable for time-sensitive or value-add projects where the exit strategy is clear and relatively short-term."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What credit score do I need for a construction loan or hard money loan with AssetLift?",
+        "answer": "For most of our programs, including hard money and construction loans, we typically look for a minimum credit score of 660. While hard money loans are more asset-centric, a stronger credit profile can still influence terms and rates, subject to full underwriting."
+      },
+      {
+        "question": "Can I use a hard money loan for a ground-up construction project?",
+        "answer": "Yes, you can. While traditional construction loans are often preferred for their lower rates, hard money loans can fund ground-up construction if speed is paramount or if you don't meet traditional lending criteria. Be prepared for higher interest rates, generally 9-15%, and shorter terms, typically 12-24 months, for such projects."
+      },
+      {
+        "question": "What is the maximum Loan-to-Value (LTV) for a DSCR loan with AssetLift?",
+        "answer": "For DSCR loans, AssetLift offers up to 85% LTV for purchases and up to 80% LTV for cash-out refinances. These loans are ideal for investors seeking to finance income-producing rental properties based on the property's cash flow rather than personal income."
+      },
+      {
+        "question": "How quickly can AssetLift close a fix-and-flip hard money loan?",
+        "answer": "AssetLift can typically close fix-and-flip hard money loans in as little as 7-10 business days, sometimes even faster depending on the completeness of documentation. This speed is crucial for investors needing to secure competitive deals quickly and efficiently."
+      }
+    ]
   }
 ]
