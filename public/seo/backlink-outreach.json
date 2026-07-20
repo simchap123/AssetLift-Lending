@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-07-19T09:53:16.457Z",
-  "anchorRotationIndex": 1,
-  "pageRotationIndex": 2,
+  "generatedAt": "2026-07-20T10:53:53.373Z",
+  "anchorRotationIndex": 5,
+  "pageRotationIndex": 3,
   "items": [
     {
       "platform": "Google Business Profile",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-york/queens",
-      "anchorTheme": "New York hard money lender",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-york/brooklyn",
+      "anchorTheme": "NY DSCR loans",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Highest priority entity listing. Must be fully verified and kept active with NY/NJ investor lending language."
     },
     {
       "platform": "LLMs.txt / AI crawler reference",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-york/brooklyn",
-      "anchorTheme": "New Jersey hard money lender",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-york/nassau-county",
+      "anchorTheme": "NJ DSCR loans",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Keep AI-readable entity, product, contact, and citation facts current for AI crawlers that inspect llms.txt-style files."
     },
     {
       "platform": "LLMs-full.txt / AI citation source",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-york/nassau-county",
-      "anchorTheme": "NY fix and flip loans",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-york/westchester-county",
+      "anchorTheme": "private lender for experienced investors",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Maintain a comprehensive AI-readable site summary for systems that use web retrieval or citation-oriented crawling."
     },
     {
       "platform": "LinkedIn Company Page",
-      "targetUrl": "https://www.assetliftlending.com/lending/new-york/westchester-county",
-      "anchorTheme": "NJ fix and flip loans",
+      "targetUrl": "https://www.assetliftlending.com/lending/new-jersey/fix-and-flip-loans",
+      "anchorTheme": "AssetLift Lending",
       "action": "Publish or update the profile/listing using the selected target page and anchor theme.",
       "notes": "Use company overview plus application link."
     }
