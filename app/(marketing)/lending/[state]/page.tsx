@@ -5,6 +5,7 @@ import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { STATES } from '@/lib/data/states';
 import LocationPage from '@/components/seo/LocationPage';
+import { shouldIndexState } from '@/lib/seo/routing-policy';
 
 interface Props {
   params: Promise<{ state: string }>;
@@ -22,6 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Hard Money Loans in ${state.name}`,
     description: `Hard money loans in ${state.name}. Fix & flip, bridge, DSCR, and construction financing. Close in as fast as 5 business days.`,
     path: `/lending/${state.slug}`,
+    noIndex: !shouldIndexState(state.slug),
   });
 }
 

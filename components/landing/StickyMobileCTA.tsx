@@ -1,24 +1,35 @@
 'use client';
 
 import Link from "next/link";
-import { ArrowRight, Phone } from "lucide-react";
+import { FileText, MessageSquare, Phone } from "lucide-react";
+import { gtagEvent } from "@/lib/gtag";
 
 const StickyMobileCTA = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-primary/20 bg-background/95 backdrop-blur-md px-4 py-3 flex gap-3">
+    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-primary/20 bg-background/95 backdrop-blur-md px-3 py-3 flex gap-2">
       <a
         href="tel:+19296392284"
-        className="flex flex-1 items-center justify-center gap-2 rounded-full border border-primary/50 py-3 text-sm font-semibold text-primary"
+        onClick={() => gtagEvent("phone_click", { location: "mobile_sticky" })}
+        className="flex flex-1 items-center justify-center gap-1.5 rounded-full border border-primary/50 py-3 text-xs font-semibold text-primary"
       >
         <Phone className="w-4 h-4" />
-        Call Now
+        Call
+      </a>
+      <a
+        href="sms:+19296392284"
+        onClick={() => gtagEvent("text_click", { location: "mobile_sticky" })}
+        className="flex flex-1 items-center justify-center gap-1.5 rounded-full border border-primary/50 py-3 text-xs font-semibold text-primary"
+      >
+        <MessageSquare className="w-4 h-4" />
+        Text
       </a>
       <Link
         href="/apply"
-        className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary py-3 text-sm font-bold text-primary-foreground"
+        onClick={() => gtagEvent("primary_cta_click", { location: "mobile_sticky", cta: "Get Terms" })}
+        className="flex flex-1 items-center justify-center gap-1.5 rounded-full bg-primary py-3 text-xs font-bold text-primary-foreground"
       >
-        Review My Deal
-        <ArrowRight className="w-4 h-4" />
+        <FileText className="w-4 h-4" />
+        Get Terms
       </Link>
     </div>
   );

@@ -11,6 +11,7 @@ export const metadata: Metadata = createMetadata({
   description:
     'Compare AssetLift Lending, hard money loans, DSCR options, and alternative financing paths with side-by-side guides built for real estate investors.',
   path: '/compare',
+  noIndex: true,
 });
 
 export default function CompareHubPage() {

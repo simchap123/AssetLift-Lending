@@ -17,7 +17,9 @@ const ANSWERS = geoAnswers as GeoAnswer[];
 
 const INTENT_LABELS: Record<string, string> = {
   'best-lender': 'Best Lender',
+  'geo-lender': 'By State',
   'how-to': 'How To',
+  'product-feature': 'Product Features',
   'state': 'By State',
   'comparison': 'Comparison',
   'explainer': 'Explainer',
@@ -27,6 +29,7 @@ export const metadata: Metadata = createMetadata({
   title: 'Real Estate Investor Q&A | Hard Money & DSCR Loan Answers',
   description: 'Direct answers to the most common real estate investor questions about hard money loans, DSCR rental financing, fix and flip funding, and more.',
   path: '/answers',
+  noIndex: true,
 });
 
 export default function AnswersIndexPage() {

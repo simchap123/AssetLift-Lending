@@ -12,6 +12,7 @@ export const metadata: Metadata = createMetadata({
   description:
     'Commercial lending for investor acquisition, refinance, bridge, mixed-use, and business-purpose real estate scenarios.',
   path: '/loans/commercial-lending',
+  noIndex: true,
 });
 
 export default function CommercialLendingPage() {

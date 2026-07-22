@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Calculator, DollarSign, TrendingUp, AlertCircle, Check, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { gtagEvent } from '@/lib/gtag';
 
 export default function DSCRCalculator() {
   const [monthlyRent, setMonthlyRent] = useState('');
@@ -14,6 +15,7 @@ export default function DSCRCalculator() {
   const [monthlyInsurance, setMonthlyInsurance] = useState('');
   const [monthlyHoa, setMonthlyHoa] = useState('');
   const [vacancy, setVacancy] = useState('5');
+  const trackedUse = useRef(false);
 
   const rent = parseFloat(monthlyRent) || 0;
   const mortgage = parseFloat(monthlyMortgage) || 0;
@@ -30,6 +32,13 @@ export default function DSCRCalculator() {
   const monthlyCashFlow = effectiveRent - totalDebt;
 
   const hasValues = rent > 0 && totalDebt > 0;
+
+  useEffect(() => {
+    if (hasValues && !trackedUse.current) {
+      trackedUse.current = true;
+      gtagEvent('calculator_used', { calculator: 'dscr' });
+    }
+  }, [hasValues]);
 
   const getDSCRStatus = (ratio: number) => {
     if (ratio >= 1.25) return { label: 'Strong', color: 'text-green-500', eligible: true };
@@ -160,7 +169,7 @@ export default function DSCRCalculator() {
                         )}
                         <span className="text-sm">
                           {status.eligible
-                            ? 'This property likely qualifies for a DSCR loan with AssetLift Lending.'
+                            ? 'This property may fit a DSCR review, subject to full underwriting.'
                             : 'This DSCR may not meet minimum lender requirements. Consider increasing rent or reducing debt.'}
                         </span>
                       </div>
@@ -224,7 +233,7 @@ export default function DSCRCalculator() {
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
                   <p className="font-semibold mb-2">Ready to lock in your DSCR loan?</p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    30-year fixed rate. No income verification. Close in 3-4 weeks.
+                    Get the property income, expenses, leverage, and borrower profile reviewed.
                   </p>
                   <Button asChild size="lg" className="glow-primary">
                     <Link href="/apply">

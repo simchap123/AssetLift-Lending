@@ -10,6 +10,7 @@ import {
   TRI_STATE_PROGRAM_PAGES,
 } from '@/lib/data/tri-state-program-pages';
 import TriStateProgramPage from '@/components/seo/TriStateProgramPage';
+import { shouldIndexCity } from '@/lib/seo/routing-policy';
 
 interface Props {
   params: Promise<{ state: string; city: string }>;
@@ -54,6 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Hard Money Loans in ${city.cityName}, ${city.stateAbbreviation}`,
     description: `Hard money loans in ${city.cityName}, ${city.stateAbbreviation}. Fix & flip, bridge, and DSCR rental financing for ${city.cityName} investors. Close in as fast as 5 business days.`,
     path: `/lending/${city.stateSlug}/${city.citySlug}`,
+    noIndex: !shouldIndexCity(city.stateSlug, city.citySlug),
   });
 }
 

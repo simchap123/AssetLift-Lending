@@ -1,417 +1,309 @@
 'use client';
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { useRef, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowRight, CheckCircle, Clock3, Coins, MapPinned, MessageSquare, Phone } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { ArrowRight, BadgeCheck, CheckCircle, Clock3, MapPinned, Phone, TrendingUp } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-import { sendNotification } from "@/services/notificationService";
-import { gtagReportConversion, gtagEvent } from "@/lib/gtag";
-import { metaTrackLead } from "@/lib/meta-pixel";
-import { pushToGHL } from "@/services/ghlService";
+} from '@/components/ui/select';
+import { sendNotification } from '@/services/notificationService';
+import { gtagEvent, gtagReportConversion } from '@/lib/gtag';
+import { metaTrackLead } from '@/lib/meta-pixel';
+import { pushToGHL } from '@/services/ghlService';
 
-const Hero = () => {
-  const [miniForm, setMiniForm] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    strategy: "",
-    purchasePrice: "",
-    creditScore: "",
-    state: "",
-    flipsCompleted: "",
-  });
-  const [miniSubmitting, setMiniSubmitting] = useState(false);
-  const [miniSubmitted, setMiniSubmitted] = useState(false);
+const trustPoints = [
+  { icon: Clock3, text: 'Fast initial review' },
+  { icon: Coins, text: 'Rehab financing available' },
+  { icon: CheckCircle, text: 'No interest on undrawn renovation funds when the draw structure supports it' },
+  { icon: MapPinned, text: 'NY, NJ, CT and approved nationwide markets' },
+];
 
-  const proofItems = [
-    { icon: Clock3, label: "Response Time", value: "Within 24 Hours" },
-    { icon: BadgeCheck, label: "Closing Speed", value: "As Fast As 5 Days" },
-    { icon: MapPinned, label: "Coverage", value: "46 States" },
-  ];
+const initialForm = {
+  loanType: '',
+  propertyState: '',
+  purchasePrice: '',
+  rehabAmount: '',
+  creditRange: '',
+  completedProjects: '',
+  name: '',
+  phone: '',
+  email: '',
+};
 
-  const borrowerSignals = [
-    "Fix & flip, DSCR, bridge, and construction — four programs for every investor strategy",
-    "No bank timelines. No income docs for DSCR. No runaround.",
-    "Tell us the deal Thursday. Close next week.",
-  ];
+function formatPhone(value: string) {
+  const numbers = value.replace(/\D/g, '').slice(0, 10);
+  if (numbers.length <= 3) return numbers;
+  if (numbers.length <= 6) return `(${numbers.slice(0, 3)}) ${numbers.slice(3)}`;
+  return `(${numbers.slice(0, 3)}) ${numbers.slice(3, 6)}-${numbers.slice(6)}`;
+}
 
-  const formatPhone = (value: string): string => {
-    const numbers = value.replace(/\D/g, "");
-    const char: { [key: number]: string } = { 0: "(", 3: ") ", 6: "-" };
-    let formatted = "";
-    for (let i = 0; i < numbers.length && i < 10; i++) {
-      formatted += (char[i] || "") + numbers[i];
+function formatCurrency(value: string) {
+  const raw = value.replace(/\D/g, '');
+  return raw ? Number(raw).toLocaleString('en-US') : '';
+}
+
+export default function Hero() {
+  const [form, setForm] = useState(initialForm);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
+  const started = useRef(false);
+
+  const update = (name: keyof typeof initialForm, value: string) => {
+    const formatted =
+      name === 'phone'
+        ? formatPhone(value)
+        : name === 'purchasePrice' || name === 'rehabAmount'
+          ? formatCurrency(value)
+          : value;
+
+    setForm((prev) => ({ ...prev, [name]: formatted }));
+    setError('');
+    if (!started.current) {
+      started.current = true;
+      gtagEvent('form_started', { form_name: 'homepage_hero' });
     }
-    return formatted;
   };
 
-  const formatCurrency = (value: string): string => {
-    const raw = value.replace(/\D/g, "");
-    return raw ? Number(raw).toLocaleString("en-US") : "";
-  };
+  const isValid =
+    form.loanType &&
+    form.propertyState.trim().length >= 2 &&
+    Number(form.purchasePrice.replace(/\D/g, '')) > 0 &&
+    form.creditRange &&
+    form.completedProjects &&
+    form.name.trim().length >= 2 &&
+    form.phone.replace(/\D/g, '').length >= 10 &&
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email);
 
-  const handleMiniChange = (name: string, value: string) => {
-    let formatted = value;
-    if (name === "phone") formatted = formatPhone(value);
-    if (name === "purchasePrice") formatted = formatCurrency(value);
-    setMiniForm((prev) => ({ ...prev, [name]: formatted }));
-  };
+  const submit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!isValid) {
+      setError('Please complete the required fields with a valid phone and email.');
+      return;
+    }
 
-  const miniFormValid =
-    miniForm.name.trim().length >= 2 &&
-    miniForm.phone.replace(/\D/g, "").length >= 10 &&
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(miniForm.email) &&
-    miniForm.strategy !== "" &&
-    miniForm.purchasePrice.trim().length > 0 &&
-    miniForm.creditScore !== "" &&
-    miniForm.state.trim().length >= 2;
-
-  const handleMiniSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!miniFormValid) return;
-    setMiniSubmitting(true);
+    setSubmitting(true);
     try {
-      await sendNotification("form", {
-        name: miniForm.name,
-        phone: miniForm.phone,
-        email: miniForm.email,
-        program: miniForm.strategy,
-        loanAmount: miniForm.purchasePrice,
-        creditScore: miniForm.creditScore,
-        propertyAddress: miniForm.state,
-        loanPurpose: "",
-        contactMethod: "",
-        arv: "",
-        rehabAmount: "",
-        message: `Quick quote request from homepage hero form. Completed flips: ${miniForm.flipsCompleted || "Not specified"}`,
+      const value = Number(form.purchasePrice.replace(/\D/g, ''));
+      const success = await sendNotification('form', {
+        name: form.name,
+        phone: form.phone,
+        email: form.email,
+        program: form.loanType,
+        loanAmount: form.purchasePrice,
+        rehabAmount: form.rehabAmount,
+        creditScore: form.creditRange,
+        propertyAddress: form.propertyState,
+        loanPurpose: '',
+        contactMethod: '',
+        arv: '',
+        message: `Homepage short form. Completed projects: ${form.completedProjects || 'Not specified'}`,
       });
+
+      if (!success) {
+        setError('We could not send the form. Please call or text (929) 639-2284.');
+        return;
+      }
+
       gtagReportConversion();
-      gtagEvent("generate_lead", {
-        currency: "USD",
-        value: Number(miniForm.purchasePrice.replace(/\D/g, "")),
-      });
-      metaTrackLead({
-        currency: "USD",
-        value: Number(miniForm.purchasePrice.replace(/\D/g, "")),
-      });
+      gtagEvent('form_submitted', { form_name: 'homepage_hero', loan_type: form.loanType });
+      gtagEvent('generate_lead', { currency: 'USD', value });
+      metaTrackLead({ currency: 'USD', value });
       pushToGHL({
-        name: miniForm.name,
-        email: miniForm.email,
-        phone: miniForm.phone,
-        loanType: miniForm.strategy,
-        propertyAddress: miniForm.state,
-        purchasePrice: miniForm.purchasePrice,
-        creditScore: miniForm.creditScore,
-        flipsCompleted: miniForm.flipsCompleted || undefined,
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        loanType: form.loanType,
+        propertyAddress: form.propertyState,
+        purchasePrice: form.purchasePrice,
+        rehabAmount: form.rehabAmount || undefined,
+        creditScore: form.creditRange,
+        flipsCompleted: form.completedProjects,
         source: 'hero-form',
       });
-      setMiniSubmitted(true);
+
+      setSubmitted(true);
     } finally {
-      setMiniSubmitting(false);
+      setSubmitting(false);
     }
   };
 
   return (
-    <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden py-24 sm:py-28">
+    <section className="relative flex min-h-[92svh] items-center overflow-hidden py-24 sm:py-28">
       <div className="absolute inset-0 z-0">
         <Image
           src="/renovation-funding-hero.png"
-          alt="Investment property renovation in progress with hammers and drills in motion while funding is being reviewed"
+          alt="Renovation project interior prepared for investor financing review"
           fill
-          className="hero-renovation-motion object-cover"
+          className="object-cover"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/52 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/58 to-black/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_38%,transparent_0%,rgb(0_0_0/0.12)_34%,rgb(0_0_0/0.62)_100%)]" />
-        <div className="hero-funding-trace absolute inset-x-0 bottom-0 h-32 opacity-60" />
       </div>
 
-      <div className="hero-visible container relative z-20 px-4 md:px-6">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="container relative z-20 px-4 md:px-6">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="max-w-3xl text-white">
-            <motion.div
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full border border-primary/40 bg-black/35 backdrop-blur-sm"
-            >
-              <TrendingUp className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">
-                46 States &nbsp;·&nbsp; 24hr Response &nbsp;·&nbsp; 5-Day Close
-              </span>
-            </motion.div>
+            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-black/35 px-4 py-2 text-sm font-medium text-primary">
+              NY, NJ, CT investor lending
+            </p>
+            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl">
+              Fix &amp; Flip Financing Without the Bank Delays
+            </h1>
+            <p className="mb-5 max-w-2xl text-lg text-white/85 md:text-xl">
+              Up to 95% of purchase and 100% of rehab for qualifying investors. Get your deal
+              reviewed and preliminary options within 24 hours.
+            </p>
+            <p className="mb-8 max-w-2xl text-sm text-white/75 md:text-base">
+              Maximum leverage depends on credit, experience, liquidity, property, and deal
+              strength. Business-purpose loans only.
+            </p>
 
-            <motion.h1
-              data-speakable
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              <span className="text-white">Hard Money Loans</span>
-              <br />
-              <span className="gradient-text">for Real Estate Investors</span>
-            </motion.h1>
-
-            <motion.p
-              data-speakable
-              className="hero-description text-lg md:text-xl text-white/82 max-w-2xl mb-6"
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              Financing for borrowers who need speed, clean execution, and a lender that can
-              actually explain the file. AssetLift handles fix and flip, bridge, DSCR rental,
-              construction, and commercial lending scenarios across 46 states.
-            </motion.p>
-
-            <motion.p
-              className="text-sm md:text-base text-white/76 max-w-2xl mb-8"
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
-            >
-              Fast closings, straight answers, and a real answer before you&apos;ve spent money on the wrong path.
-            </motion.p>
-
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 mb-4"
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <Button asChild size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 glow-primary">
-                <Link href="/apply">
-                  Review My Deal
-                  <ArrowRight className="ml-2 w-5 h-5" />
+            <div className="mb-9 flex flex-col gap-3 sm:flex-row">
+              <Button asChild size="lg" className="w-full px-7 py-6 text-base sm:w-auto">
+                <Link
+                  href="/apply"
+                  onClick={() => gtagEvent('primary_cta_click', { location: 'hero', cta: 'Get My Loan Options' })}
+                >
+                  Get My Loan Options
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-6 border-white/40 bg-black/25 text-white hover:bg-white/12 hover:text-white backdrop-blur-sm">
-                <a href="#programs">See Loan Options</a>
+              <Button asChild variant="outline" size="lg" className="w-full border-white/40 bg-black/25 px-7 py-6 text-base text-white hover:bg-white/12 hover:text-white sm:w-auto">
+                <a href="tel:+19296392284" onClick={() => gtagEvent('phone_click', { location: 'hero' })}>
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call or Text (929) 639-2284
+                </a>
               </Button>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="mb-10"
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.32 }}
-            >
-              <a
-                href="tel:+19296392284"
-                className="inline-flex items-center gap-2 text-sm text-white/76 hover:text-primary transition-colors"
-              >
-                <Phone className="w-4 h-4" />
-                (929) 639-2284 — call or text
-              </a>
-            </motion.div>
-
-            <motion.div
-              className="grid gap-3 sm:grid-cols-3"
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.42 }}
-            >
-              {borrowerSignals.map((point) => (
-                <div
-                  key={point}
-                  className="rounded-2xl border border-white/18 bg-black/32 px-4 py-4 backdrop-blur-sm"
-                >
-                  <p className="text-sm leading-relaxed text-white/90">{point}</p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {trustPoints.map((point) => (
+                <div key={point.text} className="flex items-start gap-3 rounded-xl border border-white/18 bg-black/32 px-4 py-3 backdrop-blur-sm">
+                  <point.icon className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                  <p className="text-sm leading-relaxed text-white/90">{point.text}</p>
                 </div>
               ))}
-            </motion.div>
+            </div>
           </div>
 
-          {/* Mini lead capture form */}
-          <motion.div
-            initial={false}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:justify-self-end w-full max-w-md text-foreground"
-          >
-            <div className="rounded-[28px] border border-border/80 bg-background/88 p-6 shadow-2xl backdrop-blur-md sm:p-7">
-              {miniSubmitted ? (
-                <motion.div
-                  initial={false}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="text-center py-8"
-                >
-                  <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
-                    <CheckCircle className="w-7 h-7 text-primary" />
+          <div className="w-full max-w-md justify-self-end text-foreground">
+            <div className="rounded-2xl border border-border/80 bg-background/92 p-6 shadow-2xl backdrop-blur-md sm:p-7">
+              {submitted ? (
+                <div className="py-8 text-center">
+                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/15">
+                    <CheckCircle className="h-7 w-7 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Got it — we&apos;ll be in touch shortly.</h3>
-                  <p className="text-sm text-muted-foreground mb-6">
-                    Usually within a few hours during business hours.
+                  <h2 className="mb-2 text-xl font-bold">We received your scenario.</h2>
+                  <p className="mb-6 text-sm text-muted-foreground">
+                    AssetLift will review it and follow up with preliminary options.
                   </p>
-                  <Button asChild size="lg" className="w-full glow-primary">
-                    <Link href="/apply">
-                      Submit Full Deal Details
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Link>
+                  <Button asChild className="w-full">
+                    <a href="sms:+19296392284" onClick={() => gtagEvent('text_click', { location: 'hero_success' })}>
+                      <MessageSquare className="mr-2 h-4 w-4" />
+                      Text the Team
+                    </a>
                   </Button>
-                </motion.div>
+                </div>
               ) : (
                 <>
                   <div className="mb-4">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-2">
-                      Get a Quick Quote
+                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+                      Short Quote Form
                     </p>
-                    <h2 className="text-xl font-bold tracking-tight">
-                      Tell us the deal. We&apos;ll tell you the rate.
-                    </h2>
-                    <p className="text-xs text-muted-foreground mt-1">We respond within a few hours.</p>
+                    <h2 className="text-xl font-bold tracking-tight">Get preliminary loan options.</h2>
                   </div>
 
-                  <form onSubmit={handleMiniSubmit} className="space-y-2.5">
-                    {/* Row 1: Name */}
-                    <Input
-                      placeholder="Full name *"
-                      value={miniForm.name}
-                      onChange={(e) => handleMiniChange("name", e.target.value)}
-                      className="h-10 rounded-xl bg-background/60 text-sm"
-                    />
-
-                    {/* Row 2: Phone + Email */}
-                    <div className="grid grid-cols-2 gap-2">
-                      <Input
-                        placeholder="Phone *"
-                        type="tel"
-                        value={miniForm.phone}
-                        onChange={(e) => handleMiniChange("phone", e.target.value)}
-                        className="h-10 rounded-xl bg-background/60 text-sm"
-                      />
-                      <Input
-                        placeholder="Email *"
-                        type="email"
-                        value={miniForm.email}
-                        onChange={(e) => handleMiniChange("email", e.target.value)}
-                        className="h-10 rounded-xl bg-background/60 text-sm"
-                      />
-                    </div>
-
-                    {/* Row 3: Loan type */}
-                    <Select
-                      value={miniForm.strategy}
-                      onValueChange={(v) => handleMiniChange("strategy", v)}
-                    >
-                      <SelectTrigger className="h-10 rounded-xl bg-background/60 text-sm">
+                  <form onSubmit={submit} className="space-y-2.5" noValidate>
+                    <Select value={form.loanType} onValueChange={(value) => update('loanType', value)}>
+                      <SelectTrigger aria-label="Loan type" className="h-10 rounded-lg bg-background/60 text-sm">
                         <SelectValue placeholder="Loan type *" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="fix-flip">Fix &amp; Flip</SelectItem>
+                        <SelectItem value="fix-and-flip">Fix &amp; Flip</SelectItem>
                         <SelectItem value="dscr-rental">DSCR Rental</SelectItem>
-                        <SelectItem value="bridge">Bridge Loan</SelectItem>
-                        <SelectItem value="ground-up">Ground-Up Construction</SelectItem>
-                        <SelectItem value="commercial">Commercial</SelectItem>
+                        <SelectItem value="bridge">Bridge</SelectItem>
+                        <SelectItem value="ground-up-construction">Ground-Up Construction</SelectItem>
                       </SelectContent>
                     </Select>
 
-                    {/* Row 4: Purchase price + Credit score */}
+                    <label className="sr-only" htmlFor="hero-state">Property state</label>
+                    <Input id="hero-state" value={form.propertyState} onChange={(event) => update('propertyState', event.target.value)} placeholder="Property state *" className="h-10 rounded-lg bg-background/60 text-sm" />
+
                     <div className="grid grid-cols-2 gap-2">
-                      <div className="relative">
-                        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">$</span>
-                        <Input
-                          placeholder="Purchase price *"
-                          value={miniForm.purchasePrice}
-                          onChange={(e) => handleMiniChange("purchasePrice", e.target.value)}
-                          className="h-10 rounded-xl bg-background/60 pl-6 text-sm"
-                          inputMode="numeric"
-                        />
-                      </div>
-                      <Select
-                        value={miniForm.creditScore}
-                        onValueChange={(v) => handleMiniChange("creditScore", v)}
-                      >
-                        <SelectTrigger className="h-10 rounded-xl bg-background/60 text-sm">
-                          <SelectValue placeholder="Credit score *" />
+                      <label className="sr-only" htmlFor="hero-price">Purchase price or value</label>
+                      <Input id="hero-price" value={form.purchasePrice} onChange={(event) => update('purchasePrice', event.target.value)} placeholder="Purchase/value *" inputMode="numeric" className="h-10 rounded-lg bg-background/60 text-sm" />
+                      <label className="sr-only" htmlFor="hero-rehab">Rehab amount</label>
+                      <Input id="hero-rehab" value={form.rehabAmount} onChange={(event) => update('rehabAmount', event.target.value)} placeholder="Rehab amount" inputMode="numeric" className="h-10 rounded-lg bg-background/60 text-sm" />
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-2">
+                      <Select value={form.creditRange} onValueChange={(value) => update('creditRange', value)}>
+                        <SelectTrigger aria-label="Credit range" className="h-10 rounded-lg bg-background/60 text-sm">
+                          <SelectValue placeholder="Credit range *" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="760+">760+ Excellent</SelectItem>
-                          <SelectItem value="720-759">720–759 Very Good</SelectItem>
-                          <SelectItem value="680-719">680–719 Good</SelectItem>
-                          <SelectItem value="640-679">640–679 Fair</SelectItem>
-                          <SelectItem value="600-640">600–640</SelectItem>
-                          <SelectItem value="below-600">Below 600</SelectItem>
+                          <SelectItem value="740+">740+</SelectItem>
+                          <SelectItem value="700-739">700-739</SelectItem>
+                          <SelectItem value="660-699">660-699</SelectItem>
+                          <SelectItem value="640-659">640-659</SelectItem>
+                          <SelectItem value="below-640">Below 640</SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <Select value={form.completedProjects} onValueChange={(value) => update('completedProjects', value)}>
+                        <SelectTrigger aria-label="Completed projects" className="h-10 rounded-lg bg-background/60 text-sm">
+                          <SelectValue placeholder="Completed projects *" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="0">0 completed</SelectItem>
+                          <SelectItem value="1-3">1-3 completed</SelectItem>
+                          <SelectItem value="4-10">4-10 completed</SelectItem>
+                          <SelectItem value="11+">11+ completed</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
-                    {/* Row 5: Property state */}
-                    <Input
-                      placeholder="Property state (e.g. Texas) *"
-                      value={miniForm.state}
-                      onChange={(e) => handleMiniChange("state", e.target.value)}
-                      className="h-10 rounded-xl bg-background/60 text-sm"
-                    />
+                    <label className="sr-only" htmlFor="hero-name">Full name</label>
+                    <Input id="hero-name" value={form.name} onChange={(event) => update('name', event.target.value)} placeholder="Full name *" className="h-10 rounded-lg bg-background/60 text-sm" />
 
-                    {/* Row 6: Completed flips */}
-                    <Select
-                      value={miniForm.flipsCompleted}
-                      onValueChange={(v) => handleMiniChange("flipsCompleted", v)}
-                    >
-                      <SelectTrigger className="h-10 rounded-xl bg-background/60 text-sm">
-                        <SelectValue placeholder="Completed flips" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="0">0 — First time</SelectItem>
-                        <SelectItem value="1-3">1–3 flips</SelectItem>
-                        <SelectItem value="4-10">4–10 flips</SelectItem>
-                        <SelectItem value="11-25">11–25 flips</SelectItem>
-                        <SelectItem value="25+">25+ flips</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <div className="grid grid-cols-2 gap-2">
+                      <label className="sr-only" htmlFor="hero-phone">Phone</label>
+                      <Input id="hero-phone" value={form.phone} onChange={(event) => update('phone', event.target.value)} placeholder="Phone *" type="tel" className="h-10 rounded-lg bg-background/60 text-sm" />
+                      <label className="sr-only" htmlFor="hero-email">Email</label>
+                      <Input id="hero-email" value={form.email} onChange={(event) => update('email', event.target.value)} placeholder="Email *" type="email" className="h-10 rounded-lg bg-background/60 text-sm" />
+                    </div>
 
-                    <Button
-                      type="submit"
-                      size="lg"
-                      className="w-full glow-primary rounded-xl"
-                      disabled={miniSubmitting || !miniFormValid}
-                    >
-                      {miniSubmitting ? (
-                        "Sending..."
-                      ) : (
-                        <>
-                          Get My Quote
-                          <ArrowRight className="ml-2 w-4 h-4" />
-                        </>
-                      )}
+                    {error && (
+                      <p className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-xs text-destructive" role="alert">
+                        {error}
+                      </p>
+                    )}
+
+                    <Button type="submit" size="lg" className="w-full rounded-lg" disabled={submitting}>
+                      {submitting ? 'Sending...' : 'Get My Loan Options'}
+                      {!submitting && <ArrowRight className="ml-2 h-4 w-4" />}
                     </Button>
                   </form>
 
-                  <div className="mt-4 pt-3 border-t border-border/50 grid grid-cols-3 gap-2">
-                    {proofItems.map((item) => (
-                      <div key={item.label} className="text-center">
-                        <item.icon className="w-4 h-4 text-primary mx-auto mb-1" />
-                        <p className="text-xs font-semibold leading-tight">{item.value}</p>
-                        <p className="text-[10px] text-muted-foreground">{item.label}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <p className="text-xs text-muted-foreground text-center mt-2">
-                    No commitment. Business-purpose loans only.
+                  <p className="mt-3 text-center text-xs text-muted-foreground">
+                    Maximum leverage is not available to every borrower. Non-owner-occupied
+                    investment property loans only.
                   </p>
                 </>
               )}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

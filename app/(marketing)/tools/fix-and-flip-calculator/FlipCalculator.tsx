@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Calculator, DollarSign, TrendingUp, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { gtagEvent } from '@/lib/gtag';
 
 export default function FlipCalculator() {
   const [purchasePrice, setPurchasePrice] = useState('');
@@ -15,6 +16,7 @@ export default function FlipCalculator() {
   const [interestRate, setInterestRate] = useState('10');
   const [closingCostPercent, setClosingCostPercent] = useState('3');
   const [sellingCostPercent, setSellingCostPercent] = useState('6');
+  const trackedUse = useRef(false);
 
   const purchase = parseFloat(purchasePrice) || 0;
   const rehab = parseFloat(rehabCost) || 0;
@@ -34,6 +36,13 @@ export default function FlipCalculator() {
   const roi = totalInvestment > 0 ? (grossProfit / (purchase * 0.05 + rehab + closingCosts)) * 100 : 0;
 
   const hasValues = purchase > 0 && afterRepair > 0;
+
+  useEffect(() => {
+    if (hasValues && !trackedUse.current) {
+      trackedUse.current = true;
+      gtagEvent('calculator_used', { calculator: 'fix_and_flip' });
+    }
+  }, [hasValues]);
 
   return (
     <div className="min-h-screen">
@@ -201,7 +210,7 @@ export default function FlipCalculator() {
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
                   <p className="font-semibold mb-2">Like these numbers?</p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Get funded in as fast as 5 business days. Up to 95% LTC on purchase + 100% rehab.
+                    Get your numbers reviewed against actual borrower, property, and exit details.
                   </p>
                   <Button asChild size="lg" className="glow-primary">
                     <Link href="/apply">

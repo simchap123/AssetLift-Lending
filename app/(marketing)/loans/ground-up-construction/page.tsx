@@ -4,7 +4,6 @@ import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { LOAN_PRODUCTS } from '@/lib/data/loan-products';
 import LoanProductPage from '@/components/seo/LoanProductPage';
-import { AGGREGATE_REVIEW_RATING, BORROWER_REVIEWS } from '@/lib/data/reviews';
 
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'ground-up-construction')!;
 
@@ -58,39 +57,12 @@ export default function GroundUpConstructionPage() {
     },
   };
 
-  const reviewSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FinancialService',
-    name: 'AssetLift Lending',
-    url: 'https://www.assetliftlending.com/loans/ground-up-construction',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ...AGGREGATE_REVIEW_RATING,
-    },
-    review: BORROWER_REVIEWS.map((review) => ({
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: review.rating,
-        bestRating: 5,
-        worstRating: 1,
-      },
-      author: {
-        '@type': 'Person',
-        name: review.name,
-      },
-      name: `${review.type} borrower review`,
-      reviewBody: review.text,
-    })),
-  };
-
   return (
     <>
       <JsonLd data={schema} />
       <JsonLd data={serviceSchema} />
       <JsonLd data={faqSchema} />
       <JsonLd data={speakableSchema} />
-      <JsonLd data={reviewSchema} />
       <div className="container px-4 md:px-6 pt-32">
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loans', href: '/loans' }, { label: 'Ground-Up Construction' }]} />
       </div>

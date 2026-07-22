@@ -3,9 +3,11 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Check, Hammer, Building2, Home, ArrowLeftRight, CalendarDays, Landmark } from "lucide-react";
+import { GLOBAL_PROGRAM_DISCLOSURE, PROGRAM_TERMS } from "@/lib/data/program-terms";
 
 const LoanPrograms = () => {
-  const consultHref = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_URL || "/contact";
+  const consultHref = "tel:+19296392284";
+  const terms = PROGRAM_TERMS;
 
   const programs = [
     {
@@ -16,12 +18,12 @@ const LoanPrograms = () => {
       loanType: "LTC",
       loanTypeLabel: "COST",
       highlights: [
-        "Up to 95% LTC on purchase & 75% LTV",
-        "Up to 100% rehab funded",
-        "Loans up to $5MM",
+        terms.fixAndFlip.maxPurchaseLtc,
+        terms.fixAndFlip.rehabFunding,
+        terms.fixAndFlip.loanRange,
         "Terms built for acquisition and rehab",
         "1-4 unit residential properties",
-        "Pay no interest on undrawn renovation funds",
+        "No interest on undrawn renovation funds when the draw structure supports it",
       ],
       otherOptions: "*Bridge only options available",
       href: "/loans/fix-and-flip",
@@ -35,12 +37,12 @@ const LoanPrograms = () => {
       loanType: "LTC",
       loanTypeLabel: "COST",
       highlights: [
-        "Up to 90% LTC & 70% LTARV",
-        "Up to 100% of construction",
-        "Loans up to $5MM",
+        terms.groundUp.maxLtc,
+        terms.groundUp.maxCompletedValue,
+        terms.groundUp.loanRange,
         "Built for experienced operators",
         "Spec builds, infills, neighborhood developments",
-        "Pay no interest on undrawn construction funds",
+        terms.groundUp.drawStructure,
       ],
       otherOptions: "BUILD2RENT\u00AE: Flexible DSCR options",
       href: "/loans/ground-up-construction",
@@ -54,9 +56,9 @@ const LoanPrograms = () => {
       loanType: "LTV",
       loanTypeLabel: "VALUE",
       highlights: [
-        "Up to 80% LTV",
-        "Quick closings in as fast as 5 days",
-        "Loans up to $5MM",
+        terms.bridge.maxLtv,
+        terms.bridge.timing,
+        terms.bridge.loanRange,
         "Flexible short-term structure",
         "Residential & commercial",
         "Flexible exit strategies",
@@ -72,12 +74,12 @@ const LoanPrograms = () => {
       loanType: "LTV",
       loanTypeLabel: "VALUE",
       highlights: [
-        "Up to 85% LTV on purchase & refi",
-        "Up to 75% LTV on cash out",
-        "Loans up to $3MM",
+        terms.dscr.maxLtv,
+        terms.dscr.cashOutLtv,
+        terms.dscr.loanRange,
         "30-year fixed and ARM options",
         "1-4 unit residential properties",
-        "No personal income verification",
+        terms.dscr.qualification,
       ],
       href: "/loans/dscr-rental",
       Icon: Home,
@@ -110,12 +112,12 @@ const LoanPrograms = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            Private Lending Solutions
+            Investor Lending Focus
           </motion.div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-            Loan Programs{" "}
+            Fix & Flip and DSCR{" "}
             <span className="relative">
-              <span className="gradient-text">Built for Investors</span>
+              <span className="gradient-text">Built for Operators</span>
               <motion.span
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 rounded-full"
                 initial={{ x: "-30%" }}
@@ -130,7 +132,8 @@ const LoanPrograms = () => {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Four programs. One team. We&apos;ll tell you which fits your deal in the first conversation.
+            We prioritize experienced flippers, rental portfolio borrowers, and fix-rent-refinance
+            files with clear numbers, clean exits, and $100K+ loan scenarios.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -138,13 +141,13 @@ const LoanPrograms = () => {
               className="inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
             >
               <CalendarDays className="w-4 h-4" />
-              Book a Free Consult
+              Call the Team
             </Link>
             <Link
               href="/apply"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-95 transition-opacity"
             >
-              Get Funded
+              Upload Scenario
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -234,7 +237,7 @@ const LoanPrograms = () => {
                         hover:shadow-[0_4px_20px_rgba(245,158,11,0.4)]
                         transition-all duration-300 ease-out"
                     >
-                      <span className="relative z-10">Get Started</span>
+                      <span className="relative z-10">Upload Scenario</span>
                       <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" />
                     </Link>
                   </div>
@@ -245,6 +248,10 @@ const LoanPrograms = () => {
         </div>
 
         {/* Commercial — extended capability, not a core product */}
+        <p className="mx-auto mt-8 max-w-4xl text-center text-xs leading-relaxed text-muted-foreground">
+          {GLOBAL_PROGRAM_DISCLOSURE}
+        </p>
+
         <motion.div
           className="mt-8"
           initial={{ opacity: 0, y: 20 }}
