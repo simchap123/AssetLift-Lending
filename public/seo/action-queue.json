@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T10:26:34.595Z",
+  "generatedAt": "2026-07-22T10:26:29.636Z",
   "connected": true,
   "summary": "10 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
@@ -7,10 +7,10 @@
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 276,
-      "impressions": 276,
+      "priority": 298,
+      "impressions": 298,
       "position": 0,
-      "rationale": "276 impressions across 6 queries mention Maryland.",
+      "rationale": "298 impressions across 7 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -25,43 +25,43 @@
     },
     {
       "type": "build-demand-page",
-      "target": "California",
-      "category": "Geo",
-      "priority": 207,
-      "impressions": 207,
-      "position": 0,
-      "rationale": "207 impressions across 7 queries mention California.",
-      "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 201,
-      "impressions": 201,
+      "priority": 230,
+      "impressions": 230,
       "position": 0,
-      "rationale": "201 impressions across 5 queries mention Idaho.",
+      "rationale": "230 impressions across 6 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
-      "target": "Arizona",
+      "target": "California",
       "category": "Geo",
-      "priority": 171,
-      "impressions": 171,
+      "priority": 177,
+      "impressions": 177,
       "position": 0,
-      "rationale": "171 impressions across 6 queries mention Arizona.",
-      "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+      "rationale": "177 impressions across 6 queries mention California.",
+      "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Nevada",
       "category": "Geo",
-      "priority": 160,
-      "impressions": 160,
+      "priority": 159,
+      "impressions": 159,
       "position": 0,
-      "rationale": "160 impressions across 4 queries mention Nevada.",
+      "rationale": "159 impressions across 4 queries mention Nevada.",
       "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Arizona",
+      "category": "Geo",
+      "priority": 141,
+      "impressions": 141,
+      "position": 0,
+      "rationale": "141 impressions across 5 queries mention Arizona.",
+      "action": "Strengthen the Arizona state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
