@@ -11,23 +11,8 @@ import Logo from "@/components/Logo";
 const PROGRAMS = [
   { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
   { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
-  { label: 'NY Fix & Flip Loans', href: '/lending/new-york/fix-and-flip-loans' },
-  { label: 'NY DSCR Loans', href: '/lending/new-york/dscr-loans' },
-  { label: 'Queens Hard Money Loans', href: '/lending/new-york/queens' },
-  { label: 'Brooklyn Hard Money Loans', href: '/lending/new-york/brooklyn' },
-  { label: 'Nassau County Hard Money', href: '/lending/new-york/nassau-county' },
-  { label: 'Westchester Hard Money', href: '/lending/new-york/westchester-county' },
-  { label: 'NJ Fix & Flip Loans', href: '/lending/new-jersey/fix-and-flip-loans' },
-  { label: 'NJ DSCR Loans', href: '/lending/new-jersey/dscr-loans' },
-  { label: 'Newark Hard Money Loans', href: '/lending/new-jersey/newark' },
-  { label: 'Jersey City Hard Money', href: '/lending/new-jersey/jersey-city' },
-  { label: 'Bergen County Hard Money', href: '/lending/new-jersey/bergen-county' },
-  { label: 'Hudson County Hard Money', href: '/lending/new-jersey/hudson-county' },
-  { label: 'CT Fix & Flip Loans', href: '/lending/connecticut/fix-and-flip-loans' },
-  { label: 'CT DSCR Loans', href: '/lending/connecticut/dscr-loans' },
   { label: 'Bridge Loans', href: '/loans/bridge' },
   { label: 'Ground-Up Construction', href: '/loans/ground-up-construction' },
-  { label: 'Commercial Lending', href: '/loans/commercial-lending' },
 ];
 
 const RESOURCES = [
