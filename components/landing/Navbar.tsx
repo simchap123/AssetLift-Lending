@@ -10,10 +10,9 @@ import Logo from "@/components/Logo";
 
 const PROGRAMS = [
   { label: 'Fix & Flip Loans', href: '/loans/fix-and-flip' },
-  { label: 'Ground-Up Construction', href: '/loans/ground-up-construction' },
   { label: 'DSCR Rental Loans', href: '/loans/dscr-rental' },
   { label: 'Bridge Loans', href: '/loans/bridge' },
-  { label: 'Commercial Lending', href: '/loans/commercial-lending' },
+  { label: 'Ground-Up Construction', href: '/loans/ground-up-construction' },
 ];
 
 const RESOURCES = [
