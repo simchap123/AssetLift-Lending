@@ -99,8 +99,6 @@ const HowItWorks = () => {
 
   return (
     <section className="py-24 md:py-32 bg-secondary/25 relative overflow-hidden">
-      <div className="absolute inset-0 grid-pattern opacity-20" />
-
       <div className="container px-4 md:px-6 relative z-10">
         <motion.div
           ref={headerRef}
@@ -128,7 +126,7 @@ const HowItWorks = () => {
         </motion.div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent -translate-y-1/2" />
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-border -translate-y-1/2" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
             {steps.map((step, index) => (
               <StepCard key={step.title} step={step} index={index} />

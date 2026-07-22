@@ -153,9 +153,7 @@ export default function Hero() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/88 via-zinc-950/62 to-zinc-950/22" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/18 to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_24%,rgba(250,204,21,0.22),transparent_34%),radial-gradient(circle_at_16%_72%,rgba(255,255,255,0.10),transparent_30%)]" />
+        <div className="absolute inset-0 bg-zinc-950/70" />
       </div>
 
       <div className="container relative z-20 px-4 md:px-6">
@@ -164,7 +162,7 @@ export default function Hero() {
             <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/45 bg-zinc-950/45 px-4 py-2 text-xs font-medium text-primary shadow-sm backdrop-blur-md sm:text-sm">
               Private lending for real estate investors
             </p>
-            <h1 className="mb-4 text-4xl font-bold tracking-tight sm:mb-6 sm:text-5xl md:text-7xl">
+            <h1 className="mb-4 text-4xl font-bold tracking-tight sm:mb-6 sm:text-5xl md:text-6xl">
               Capital That Keeps Investor Deals Moving
             </h1>
             <p className="mb-4 max-w-2xl text-base text-white/85 sm:text-lg md:text-xl">
@@ -239,8 +237,8 @@ export default function Hero() {
               ) : (
                 <>
                   <div className="mb-4">
-                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-                      Short Quote Form
+                    <p className="mb-2 text-sm font-semibold text-primary">
+                      Short quote form
                     </p>
                     <h2 className="text-xl font-bold tracking-tight">Get preliminary loan options.</h2>
                   </div>

@@ -50,9 +50,9 @@ const WhyAssetLift = () => {
               The pitch is simple: move faster than a bank, stay cleaner than a messy broker chain,
               and give investors a financing process that feels organized from the first call to funding.
             </p>
-            <div className="mt-8 rounded-2xl border border-border bg-secondary/25 p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary mb-3">
-                Core Borrower Outcomes
+            <div className="mt-8 border-t border-border pt-6">
+              <p className="mb-3 text-sm font-semibold text-primary">
+                Core borrower outcomes
               </p>
               <div className="space-y-3 text-sm text-muted-foreground">
                 <p>Move faster on time-sensitive purchases.</p>
@@ -63,22 +63,19 @@ const WhyAssetLift = () => {
           </motion.div>
 
           <motion.div
-            className="grid gap-4 sm:grid-cols-2"
+            className="divide-y divide-border"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
             {proofCards.map((card) => (
-              <div
-                key={card.title}
-                className="rounded-2xl border border-border bg-card p-6 transition-colors duration-300 hover:border-primary/40"
-              >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-                  <card.icon className="h-5 w-5 text-primary" />
+              <div key={card.title} className="flex gap-4 py-6 first:pt-0">
+                <card.icon className="mt-1 h-5 w-5 shrink-0 text-primary" />
+                <div>
+                  <h3 className="mb-1.5 text-xl font-semibold">{card.title}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{card.content}</p>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold">{card.title}</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">{card.content}</p>
               </div>
             ))}
           </motion.div>

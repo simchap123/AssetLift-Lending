@@ -29,8 +29,8 @@ export default function MarketsPreview() {
     <section className="py-20 md:py-28 bg-secondary/20">
       <div className="container px-4 md:px-6">
         <div className="max-w-3xl mb-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-4">
-            Investor Markets
+          <p className="text-sm font-semibold text-primary mb-4">
+            Investor markets
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
             We Lend Where Investors Invest
