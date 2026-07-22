@@ -146,21 +146,22 @@ export default function Hero() {
     <section className="relative flex min-h-[92svh] items-center overflow-hidden py-20 sm:py-28">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/renovation-funding-hero.png"
-          alt="Renovation project interior prepared for investor financing review"
+          src="/hero-house.jpg"
+          alt="Finished investment property exterior representing real estate investor financing"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/58 to-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/88 via-zinc-950/62 to-zinc-950/22" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/18 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_24%,rgba(250,204,21,0.22),transparent_34%),radial-gradient(circle_at_16%_72%,rgba(255,255,255,0.10),transparent_30%)]" />
       </div>
 
       <div className="container relative z-20 px-4 md:px-6">
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="max-w-3xl text-white">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-black/35 px-4 py-2 text-xs font-medium text-primary sm:text-sm">
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/45 bg-zinc-950/45 px-4 py-2 text-xs font-medium text-primary shadow-sm backdrop-blur-md sm:text-sm">
               Private lending for real estate investors
             </p>
             <h1 className="mb-4 text-4xl font-bold tracking-tight sm:mb-6 sm:text-5xl md:text-7xl">
@@ -199,7 +200,7 @@ export default function Hero() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="flex items-center justify-center gap-2 rounded-xl border border-white/18 bg-black/32 px-3 py-3 text-sm font-semibold text-white/90 backdrop-blur-sm transition-colors hover:border-primary/60 hover:text-primary"
+                  className="flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-zinc-950/42 px-3 py-3 text-sm font-semibold text-white/92 shadow-sm backdrop-blur-md transition-colors hover:border-primary/60 hover:text-primary"
                 >
                   <item.icon className="h-4 w-4" />
                   {item.label}
@@ -209,7 +210,7 @@ export default function Hero() {
 
             <div className="hidden gap-3 sm:grid sm:grid-cols-2">
               {trustPoints.map((point) => (
-                <div key={point.text} className="flex items-start gap-3 rounded-xl border border-white/18 bg-black/32 px-4 py-3 backdrop-blur-sm">
+                <div key={point.text} className="flex items-start gap-3 rounded-xl border border-white/20 bg-zinc-950/42 px-4 py-3 shadow-sm backdrop-blur-md">
                   <point.icon className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                   <p className="text-sm leading-relaxed text-white/90">{point.text}</p>
                 </div>
@@ -218,7 +219,7 @@ export default function Hero() {
           </div>
 
           <div className="w-full max-w-md justify-self-end text-foreground">
-            <div className="rounded-2xl border border-border/80 bg-background/92 p-6 shadow-2xl backdrop-blur-md sm:p-7">
+            <div className="rounded-2xl border border-white/25 bg-background/94 p-6 shadow-[0_24px_70px_rgba(0,0,0,0.34)] backdrop-blur-xl sm:p-7">
               {submitted ? (
                 <div className="py-8 text-center">
                   <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/15">
