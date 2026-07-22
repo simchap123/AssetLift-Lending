@@ -1,5 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 import { NextRequest } from "next/server";
+import { PROGRAM_TERMS } from "@/lib/data/program-terms";
 
 export const runtime = 'nodejs';
 
@@ -25,7 +26,7 @@ LOAN PROGRAMS:
    - Up to 95% LTC on qualifying scenarios
    - Total loan capped at 70-75% of ARV
    - Term: 6-18 months
-   - Rates starting at 8.5%
+   - Rates starting at ${PROGRAM_TERMS.fixAndFlip.startingRate}
    - Many files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
    - No prepayment penalties
    - Min FICO: 620+ (best rates at 700+)

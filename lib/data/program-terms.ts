@@ -1,5 +1,6 @@
 export const PROGRAM_TERMS = {
   fixAndFlip: {
+    startingRate: '8.25%',
     maxPurchaseLtc: 'Up to 95% of purchase',
     rehabFunding: 'Up to 100% of approved rehab budget',
     loanRange: '$100K to $5MM',

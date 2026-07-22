@@ -1,3 +1,5 @@
+import { PROGRAM_TERMS } from "./program-terms";
+
 export interface LoanProduct {
   slug: string;
   title: string;
@@ -18,7 +20,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
     slug: "fix-and-flip",
     title: "Fix & Flip Loans - Fast Funding for House Flipping Projects",
     description:
-      "AssetLift Lending offers fix-and-flip loans with rates starting as low as 8.5% for qualifying scenarios, up to 95% LTC on the purchase, and closings in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.",
+      `AssetLift Lending offers fix-and-flip loans with rates starting as low as ${PROGRAM_TERMS.fixAndFlip.startingRate} for qualifying scenarios, up to 95% LTC on the purchase, and closings in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity.`,
     heroTitle: "Fix & Flip Loans",
     heroSubtitle:
       "Close in days, not months. Get the capital you need to acquire and renovate investment properties with speed and certainty.",
@@ -32,7 +34,7 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
         label: "Closing Speed",
         value: "As fast as 5 business days",
       },
-      { label: "Interest Rates Starting At", value: "8.5%" },
+      { label: "Interest Rates Starting At", value: PROGRAM_TERMS.fixAndFlip.startingRate },
     ],
     features: [
       {
