@@ -7,8 +7,10 @@ import {
   Download,
   FileText,
   Mail,
+  Plus,
   Send,
   ShieldCheck,
+  Trash2,
 } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
@@ -48,6 +50,27 @@ interface BorrowerPackageFormValues {
   appraisalPaymentStatus: string;
   notes: string;
 }
+
+type RehabRow = {
+  unit: string;
+  room: string;
+  category: string;
+  description: string;
+  estimatedCost: string;
+  contractor: string;
+  notes: string;
+};
+
+type ReoRow = {
+  propertyAddress: string;
+  purchaseDate: string;
+  purchasePrice: string;
+  rehabBudget: string;
+  saleOrValue: string;
+  exitDate: string;
+  lender: string;
+  notes: string;
+};
 
 const DOWNLOADS = [
   { label: 'Rehab List Template', href: '/forms/rehab-list-template-multi-unit.xlsx' },
@@ -102,6 +125,27 @@ const EMPTY_FORM: BorrowerPackageFormValues = {
   notes: '',
 };
 
+const EMPTY_REHAB_ROW: RehabRow = {
+  unit: '',
+  room: '',
+  category: '',
+  description: '',
+  estimatedCost: '',
+  contractor: '',
+  notes: '',
+};
+
+const EMPTY_REO_ROW: ReoRow = {
+  propertyAddress: '',
+  purchaseDate: '',
+  purchasePrice: '',
+  rehabBudget: '',
+  saleOrValue: '',
+  exitDate: '',
+  lender: '',
+  notes: '',
+};
+
 function formatPhone(value: string) {
   const numbers = value.replace(/\D/g, '');
   const char: Record<number, string> = { 0: '(', 3: ') ', 6: '-' };
@@ -119,14 +163,26 @@ function formatCurrency(value: string) {
 
 export default function BorrowerPackageForm() {
   const [form, setForm] = useState<BorrowerPackageFormValues>(EMPTY_FORM);
-  const [files, setFiles] = useState<Record<UploadField, File | null>>({
-    llcDocumentsFile: null,
-    purchaseContractFile: null,
-    governmentIdFile: null,
-    scopeOfWorkFile: null,
-    recentExperienceFile: null,
-    bankStatementFile: null,
+  const [files, setFiles] = useState<Record<UploadField, File[]>>({
+    llcDocumentsFile: [],
+    purchaseContractFile: [],
+    governmentIdFile: [],
+    scopeOfWorkFile: [],
+    recentExperienceFile: [],
+    bankStatementFile: [],
   });
+  const [showOnlineRehab, setShowOnlineRehab] = useState(false);
+  const [showOnlineReo, setShowOnlineReo] = useState(false);
+  const [rehabRows, setRehabRows] = useState<RehabRow[]>([
+    { ...EMPTY_REHAB_ROW },
+    { ...EMPTY_REHAB_ROW },
+    { ...EMPTY_REHAB_ROW },
+  ]);
+  const [reoRows, setReoRows] = useState<ReoRow[]>([
+    { ...EMPTY_REO_ROW },
+    { ...EMPTY_REO_ROW },
+    { ...EMPTY_REO_ROW },
+  ]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const maxUploadBytes = 10 * 1024 * 1024;
@@ -151,16 +207,70 @@ export default function BorrowerPackageForm() {
     setForm((prev) => ({ ...prev, [key]: nextValue }));
   };
 
-  const handleFileChange = (field: UploadField, file: File | null) => {
-    if (file && file.size > maxUploadBytes) {
+  const handleFileChange = (field: UploadField, selectedFiles: FileList | null) => {
+    const nextFiles = Array.from(selectedFiles || []);
+    const oversized = nextFiles.find((file) => file.size > maxUploadBytes);
+
+    if (oversized) {
       toast({
         title: 'File too large',
-        description: `${file.name} is larger than 10MB. Please upload a smaller file or email it instead.`,
+        description: `${oversized.name} is larger than 10MB. Please upload a smaller file or email it instead.`,
         variant: 'destructive',
       });
       return;
     }
-    setFiles((prev) => ({ ...prev, [field]: file }));
+    setFiles((prev) => ({ ...prev, [field]: nextFiles }));
+  };
+
+  const updateRehabRow = (index: number, key: keyof RehabRow, value: string) => {
+    setRehabRows((prev) =>
+      prev.map((row, rowIndex) =>
+        rowIndex === index
+          ? {
+              ...row,
+              [key]: key === 'estimatedCost' ? formatCurrency(value) : value,
+            }
+          : row,
+      ),
+    );
+  };
+
+  const updateReoRow = (index: number, key: keyof ReoRow, value: string) => {
+    setReoRows((prev) =>
+      prev.map((row, rowIndex) =>
+        rowIndex === index
+          ? {
+              ...row,
+              [key]:
+                key === 'purchasePrice' || key === 'rehabBudget' || key === 'saleOrValue'
+                  ? formatCurrency(value)
+                  : value,
+            }
+          : row,
+      ),
+    );
+  };
+
+  const removeRehabRow = (index: number) => {
+    setRehabRows((prev) => (prev.length === 1 ? prev : prev.filter((_, rowIndex) => rowIndex !== index)));
+  };
+
+  const removeReoRow = (index: number) => {
+    setReoRows((prev) => (prev.length === 1 ? prev : prev.filter((_, rowIndex) => rowIndex !== index)));
+  };
+
+  const hasAnyWorksheetData = () => {
+    const activeRehabRows = showOnlineRehab
+      ? rehabRows.filter((row) => Object.values(row).some((value) => value.trim()))
+      : [];
+    const activeReoRows = showOnlineReo
+      ? reoRows.filter((row) => Object.values(row).some((value) => value.trim()))
+      : [];
+    return {
+      rehabRows: activeRehabRows,
+      reoRows: activeReoRows,
+      hasData: activeRehabRows.length > 0 || activeReoRows.length > 0,
+    };
   };
 
   const validate = () => {
@@ -196,7 +306,7 @@ export default function BorrowerPackageForm() {
     if (!validate()) return;
 
     const totalAttachmentSize = Object.values(files).reduce(
-      (sum, file) => sum + (file?.size || 0),
+      (sum, fileList) => sum + fileList.reduce((fileSum, file) => fileSum + file.size, 0),
       0,
     );
 
@@ -230,8 +340,19 @@ export default function BorrowerPackageForm() {
       submission.append('appraisalPaymentStatus', form.appraisalPaymentStatus);
       submission.append('message', form.notes);
 
-      for (const [key, file] of Object.entries(files) as Array<[UploadField, File | null]>) {
-        if (file) {
+      const onlineWorksheets = hasAnyWorksheetData();
+      if (onlineWorksheets.hasData) {
+        submission.append(
+          'onlineWorksheetsJson',
+          JSON.stringify({
+            rehabRows: onlineWorksheets.rehabRows,
+            reoRows: onlineWorksheets.reoRows,
+          }),
+        );
+      }
+
+      for (const [key, fileList] of Object.entries(files) as Array<[UploadField, File[]]>) {
+        for (const file of fileList) {
           submission.append(key, file);
         }
       }
@@ -343,7 +464,8 @@ export default function BorrowerPackageForm() {
                     <div>
                       <h2 className="text-2xl font-bold mb-2">Borrower Information</h2>
                       <p className="text-sm text-muted-foreground">
-                        Fill out the basics, then upload the supporting files you already have.
+                        Fill out the basics, add the worksheet details online if you do not want
+                        to download Excel, then upload the supporting files you already have.
                       </p>
                     </div>
 
@@ -403,6 +525,216 @@ export default function BorrowerPackageForm() {
                       </div>
                     </div>
 
+                    <div className="space-y-5">
+                      <div>
+                        <h3 className="text-xl font-semibold mb-2">Excel Worksheets</h3>
+                        <p className="text-sm text-muted-foreground">
+                          You can download the Excel templates or fill them out here. Online entries
+                          are emailed to AssetLift as an Excel-compatible workbook.
+                        </p>
+                      </div>
+
+                      <div className="grid gap-4 md:grid-cols-2">
+                        <div className="rounded-2xl border border-border bg-background p-4">
+                          <div className="mb-4 flex items-start justify-between gap-4">
+                            <div>
+                              <p className="font-semibold">Rehab List</p>
+                              <p className="text-xs text-muted-foreground">
+                                Add scope, budget, contractor, and notes directly on this page.
+                              </p>
+                            </div>
+                            <Button
+                              type="button"
+                              variant={showOnlineRehab ? 'secondary' : 'outline'}
+                              size="sm"
+                              onClick={() => setShowOnlineRehab((value) => !value)}
+                            >
+                              {showOnlineRehab ? 'Hide' : 'Fill Online'}
+                            </Button>
+                          </div>
+                          <a
+                            href="/forms/rehab-list-template-multi-unit.xlsx"
+                            download
+                            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                          >
+                            Download Excel instead
+                            <Download className="h-4 w-4" />
+                          </a>
+                        </div>
+
+                        <div className="rounded-2xl border border-border bg-background p-4">
+                          <div className="mb-4 flex items-start justify-between gap-4">
+                            <div>
+                              <p className="font-semibold">REO / Track Record</p>
+                              <p className="text-xs text-muted-foreground">
+                                Add recent experience, REO purchases, exits, and lender history.
+                              </p>
+                            </div>
+                            <Button
+                              type="button"
+                              variant={showOnlineReo ? 'secondary' : 'outline'}
+                              size="sm"
+                              onClick={() => setShowOnlineReo((value) => !value)}
+                            >
+                              {showOnlineReo ? 'Hide' : 'Fill Online'}
+                            </Button>
+                          </div>
+                          <a
+                            href="/forms/track-record-example.xlsx"
+                            download
+                            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                          >
+                            Download Excel instead
+                            <Download className="h-4 w-4" />
+                          </a>
+                        </div>
+                      </div>
+
+                      {showOnlineRehab && (
+                        <div className="rounded-2xl border border-border bg-background p-4">
+                          <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                            <div>
+                              <p className="font-semibold">Online Rehab List</p>
+                              <p className="text-xs text-muted-foreground">
+                                Add one line per scope item. Blank rows are ignored.
+                              </p>
+                            </div>
+                            <Button
+                              type="button"
+                              variant="outline"
+                              size="sm"
+                              onClick={() => setRehabRows((prev) => [...prev, { ...EMPTY_REHAB_ROW }])}
+                            >
+                              <Plus className="mr-2 h-4 w-4" />
+                              Add Row
+                            </Button>
+                          </div>
+                          <div className="overflow-x-auto">
+                            <table className="min-w-[920px] w-full text-sm">
+                              <thead className="text-left text-xs uppercase tracking-[0.12em] text-muted-foreground">
+                                <tr>
+                                  <th className="p-2">Unit / Area</th>
+                                  <th className="p-2">Room</th>
+                                  <th className="p-2">Category</th>
+                                  <th className="p-2">Work Description</th>
+                                  <th className="p-2">Est. Cost</th>
+                                  <th className="p-2">Contractor</th>
+                                  <th className="p-2">Notes</th>
+                                  <th className="p-2">Remove</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {rehabRows.map((row, index) => (
+                                  <tr key={`rehab-${index}`} className="border-t border-border">
+                                    <td className="p-2">
+                                      <Input value={row.unit} onChange={(e) => updateRehabRow(index, 'unit', e.target.value)} placeholder="Unit 1" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.room} onChange={(e) => updateRehabRow(index, 'room', e.target.value)} placeholder="Kitchen" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.category} onChange={(e) => updateRehabRow(index, 'category', e.target.value)} placeholder="Cabinets" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.description} onChange={(e) => updateRehabRow(index, 'description', e.target.value)} placeholder="Replace lowers" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.estimatedCost} onChange={(e) => updateRehabRow(index, 'estimatedCost', e.target.value)} placeholder="5,000" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.contractor} onChange={(e) => updateRehabRow(index, 'contractor', e.target.value)} placeholder="GC name" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.notes} onChange={(e) => updateRehabRow(index, 'notes', e.target.value)} placeholder="Draw 1" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Button type="button" variant="ghost" size="icon" onClick={() => removeRehabRow(index)} aria-label="Remove rehab row">
+                                        <Trash2 className="h-4 w-4" />
+                                      </Button>
+                                    </td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      )}
+
+                      {showOnlineReo && (
+                        <div className="rounded-2xl border border-border bg-background p-4">
+                          <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                            <div>
+                              <p className="font-semibold">Online REO / Track Record</p>
+                              <p className="text-xs text-muted-foreground">
+                                Add recent projects or REO purchases. Blank rows are ignored.
+                              </p>
+                            </div>
+                            <Button
+                              type="button"
+                              variant="outline"
+                              size="sm"
+                              onClick={() => setReoRows((prev) => [...prev, { ...EMPTY_REO_ROW }])}
+                            >
+                              <Plus className="mr-2 h-4 w-4" />
+                              Add Row
+                            </Button>
+                          </div>
+                          <div className="overflow-x-auto">
+                            <table className="min-w-[1020px] w-full text-sm">
+                              <thead className="text-left text-xs uppercase tracking-[0.12em] text-muted-foreground">
+                                <tr>
+                                  <th className="p-2">Property Address</th>
+                                  <th className="p-2">Purchase Date</th>
+                                  <th className="p-2">Purchase Price</th>
+                                  <th className="p-2">Rehab Budget</th>
+                                  <th className="p-2">Sale / Refi Value</th>
+                                  <th className="p-2">Exit Date</th>
+                                  <th className="p-2">Lender</th>
+                                  <th className="p-2">Notes</th>
+                                  <th className="p-2">Remove</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {reoRows.map((row, index) => (
+                                  <tr key={`reo-${index}`} className="border-t border-border">
+                                    <td className="p-2">
+                                      <Input value={row.propertyAddress} onChange={(e) => updateReoRow(index, 'propertyAddress', e.target.value)} placeholder="123 Main St" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.purchaseDate} onChange={(e) => updateReoRow(index, 'purchaseDate', e.target.value)} placeholder="MM/YYYY" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.purchasePrice} onChange={(e) => updateReoRow(index, 'purchasePrice', e.target.value)} placeholder="250,000" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.rehabBudget} onChange={(e) => updateReoRow(index, 'rehabBudget', e.target.value)} placeholder="50,000" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.saleOrValue} onChange={(e) => updateReoRow(index, 'saleOrValue', e.target.value)} placeholder="375,000" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.exitDate} onChange={(e) => updateReoRow(index, 'exitDate', e.target.value)} placeholder="MM/YYYY" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.lender} onChange={(e) => updateReoRow(index, 'lender', e.target.value)} placeholder="Prior lender" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Input value={row.notes} onChange={(e) => updateReoRow(index, 'notes', e.target.value)} placeholder="Sold / refi" />
+                                    </td>
+                                    <td className="p-2">
+                                      <Button type="button" variant="ghost" size="icon" onClick={() => removeReoRow(index)} aria-label="Remove REO row">
+                                        <Trash2 className="h-4 w-4" />
+                                      </Button>
+                                    </td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
                     <div>
                       <h3 className="text-xl font-semibold mb-4">Upload Documents</h3>
                       <div className="grid md:grid-cols-2 gap-5">
@@ -415,12 +747,20 @@ export default function BorrowerPackageForm() {
                             <Input
                               id={field.key}
                               type="file"
-                              onChange={(e) => handleFileChange(field.key, e.target.files?.[0] ?? null)}
+                              multiple
+                              onChange={(e) => handleFileChange(field.key, e.target.files)}
                               accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.jpg,.jpeg,.png"
                             />
                             <p className="text-xs text-muted-foreground">{field.description}</p>
-                            {files[field.key] && (
-                              <p className="text-xs text-primary">Attached: {files[field.key]?.name}</p>
+                            {files[field.key].length > 0 && (
+                              <div className="space-y-1 text-xs text-primary">
+                                <p>{files[field.key].length} file(s) attached:</p>
+                                <ul className="list-disc pl-4">
+                                  {files[field.key].map((file) => (
+                                    <li key={`${field.key}-${file.name}`}>{file.name}</li>
+                                  ))}
+                                </ul>
+                              </div>
                             )}
                           </div>
                         ))}

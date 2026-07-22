@@ -12,6 +12,105 @@ const DOCUMENT_LABELS: Record<string, string> = {
   bankStatementFile: 'Bank Statement',
 };
 
+const ONLINE_WORKSHEET_COLUMNS: Record<string, string[]> = {
+  rehabRows: [
+    'Unit / Area',
+    'Room',
+    'Category',
+    'Work Description',
+    'Estimated Cost',
+    'Contractor',
+    'Notes',
+  ],
+  reoRows: [
+    'Property Address',
+    'Purchase Date',
+    'Purchase Price',
+    'Rehab Budget',
+    'Sale / Refi Value',
+    'Exit Date',
+    'Lender',
+    'Notes',
+  ],
+};
+
+const ONLINE_WORKSHEET_KEYS: Record<string, string[]> = {
+  rehabRows: ['unit', 'room', 'category', 'description', 'estimatedCost', 'contractor', 'notes'],
+  reoRows: ['propertyAddress', 'purchaseDate', 'purchasePrice', 'rehabBudget', 'saleOrValue', 'exitDate', 'lender', 'notes'],
+};
+
+function escapeXml(value: unknown) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function worksheetXml(name: string, columns: string[], keys: string[], rows: Array<Record<string, unknown>>) {
+  const header = columns
+    .map((column) => `<Cell><Data ss:Type="String">${escapeXml(column)}</Data></Cell>`)
+    .join('');
+  const body = rows
+    .map((row) => {
+      const cells = keys
+        .map((key) => `<Cell><Data ss:Type="String">${escapeXml(row[key])}</Data></Cell>`)
+        .join('');
+      return `<Row>${cells}</Row>`;
+    })
+    .join('');
+
+  return `
+    <Worksheet ss:Name="${escapeXml(name)}">
+      <Table>
+        <Row>${header}</Row>
+        ${body}
+      </Table>
+    </Worksheet>
+  `;
+}
+
+function buildOnlineWorkbook(payload: Record<string, any>) {
+  if (!payload.onlineWorksheetsJson) return null;
+
+  try {
+    const parsed = JSON.parse(String(payload.onlineWorksheetsJson));
+    const rehabRows = Array.isArray(parsed.rehabRows) ? parsed.rehabRows : [];
+    const reoRows = Array.isArray(parsed.reoRows) ? parsed.reoRows : [];
+
+    const hasRows = [...rehabRows, ...reoRows].some((row) =>
+      Object.values(row || {}).some((value) => String(value ?? '').trim()),
+    );
+    if (!hasRows) return null;
+
+    const sheets = [
+      worksheetXml('Rehab List', ONLINE_WORKSHEET_COLUMNS.rehabRows, ONLINE_WORKSHEET_KEYS.rehabRows, rehabRows),
+      worksheetXml('REO Track Record', ONLINE_WORKSHEET_COLUMNS.reoRows, ONLINE_WORKSHEET_KEYS.reoRows, reoRows),
+    ].join('');
+
+    const workbook = `<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Normal">
+      <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+    </Style>
+  </Styles>
+  ${sheets}
+</Workbook>`;
+
+    return Buffer.from(workbook, 'utf8');
+  } catch (error) {
+    console.error('Online worksheet parsing failed:', error);
+    return null;
+  }
+}
+
 export async function POST(req: NextRequest) {
   try {
     const contentType = req.headers.get('content-type') || '';
@@ -32,14 +131,32 @@ export async function POST(req: NextRequest) {
       const uploadedDocuments: string[] = [];
 
       for (const [fieldName, label] of Object.entries(DOCUMENT_LABELS)) {
-        const value = formData.get(fieldName);
-        if (value instanceof File && value.size > 0) {
+        const values = formData.getAll(fieldName);
+        const uploadedForField = values.filter(
+          (value): value is File => value instanceof File && value.size > 0,
+        );
+
+        for (const value of uploadedForField) {
           attachments.push({
             filename: value.name,
             content: Buffer.from(await value.arrayBuffer()),
           });
-          uploadedDocuments.push(label);
         }
+
+        if (uploadedForField.length > 0) {
+          uploadedDocuments.push(
+            uploadedForField.length === 1 ? label : `${label} (${uploadedForField.length} files)`,
+          );
+        }
+      }
+
+      const workbook = buildOnlineWorkbook(payload);
+      if (workbook) {
+        attachments.push({
+          filename: 'assetlift-online-borrower-package.xls',
+          content: workbook,
+        });
+        uploadedDocuments.push('Online Rehab / REO workbook');
       }
 
       payload.uploadedDocuments = uploadedDocuments;
