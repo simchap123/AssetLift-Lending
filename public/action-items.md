@@ -91,12 +91,12 @@
 - [ ] Go to https://aaplonline.com/join
 - [ ] Individual membership: $400/yr
 - [ ] Gets you listed in their Member Directory with credibility badge
-- [ ] **WHY:** Industry association listing = instant credibility. ABL Funding uses this.
+- [ ] **WHY:** Industry association listing = instant credibility.
 
 ### 13. Scotsman Guide Submission
 - [ ] Go to https://www.scotsmanguide.com
 - [ ] Apply to be listed as a lender
-- [ ] **WHY:** Major industry publication. Being listed here is a huge authority signal (ABL Funding is on their list)
+- [ ] **WHY:** Major industry publication. Being listed here is a huge authority signal.
 
 ### 14. HardMoneyList.org
 - [ ] Visit https://www.hardmoneylist.org
@@ -115,7 +115,7 @@
 ### 16. Collect Google Reviews
 - [ ] After every loan closing, send borrowers a review request
 - [ ] **Email template:** "Hi [Name], congratulations on your closing! If you had a positive experience with AssetLift Lending, we'd really appreciate a quick Google review. It helps other investors find us. Here's the link: [your Google review link]"
-- [ ] **Goal:** 50+ five-star reviews (ABL Funding has 500+)
+- [ ] **Goal:** 50+ five-star reviews
 - [ ] **WHY:** Google reviews are the #1 local ranking factor AND Gemini cites them
 
 ### 17. Publish Content Regularly
@@ -163,7 +163,7 @@ These are being built right now and will be deployed to your site:
 
 | Competitor | Their Edge | How to Beat Them |
 |---|---|---|
-| **ABL Funding** | 9,000 projects, $3.8B funded, 500+ reviews | Get reviews, get on same directories |
+| Established private lenders | Funded-project history, review depth, publication mentions | Get verified reviews, build approved proof points, get listed in relevant directories |
 | **Kiavi** | Tech platform, 17,000 investors | Better leverage (92.5% vs their 90%) |
 | **Lima One** | Full-cycle lender, large track record | Faster closings, simpler process |
 | **RCN Capital** | $3B+ funded, nationwide | Direct lender advantage, higher LTC |

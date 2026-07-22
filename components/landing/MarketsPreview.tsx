@@ -36,9 +36,9 @@ export default function MarketsPreview() {
             We Lend Where Investors Invest
           </h2>
           <p className="text-lg text-muted-foreground">
-            Explore priority NY, NJ, CT, and national markets where AssetLift Lending reviews fix
-            and flip, bridge, DSCR rental, and ground-up construction scenarios for qualified
-            investment property borrowers.
+            Explore representative markets where AssetLift Lending reviews fix and flip, bridge,
+            DSCR rental, and ground-up construction scenarios for qualified investment property
+            borrowers.
           </p>
         </div>
 

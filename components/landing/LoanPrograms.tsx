@@ -115,9 +115,9 @@ const LoanPrograms = () => {
             Investor Lending Focus
           </motion.div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-            Fix & Flip and DSCR{" "}
+            Loan Programs{" "}
             <span className="relative">
-              <span className="gradient-text">Built for Operators</span>
+              <span className="gradient-text">Built for Investors</span>
               <motion.span
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 rounded-full"
                 initial={{ x: "-30%" }}
@@ -132,8 +132,8 @@ const LoanPrograms = () => {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            We prioritize experienced flippers, rental portfolio borrowers, and fix-rent-refinance
-            files with clear numbers, clean exits, and $100K+ loan scenarios.
+            Choose the structure that fits the deal: acquisition and rehab, long-term rental debt,
+            short-term bridge capital, or ground-up construction financing.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

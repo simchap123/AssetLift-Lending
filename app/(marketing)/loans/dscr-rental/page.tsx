@@ -8,10 +8,18 @@ import LoanProductPage from '@/components/seo/LoanProductPage';
 const product = LOAN_PRODUCTS.find((p) => p.slug === 'dscr-rental')!;
 
 export const metadata: Metadata = createMetadata({
-  title: 'DSCR Rental Loans | 30-Year Investor Financing',
+  title: 'DSCR Loans for Rental Investors | No Tax Returns',
   description:
-    'Qualify for DSCR rental loans based on property cash flow, not personal income. Get fast quotes for purchase and refinance investor loans.',
+    'DSCR loans for rental investors. Qualify on property cash flow, not tax returns. Up to 85% LTV on purchases and 80% LTV on cash-out refinances.',
   path: '/loans/dscr-rental',
+  keywords: [
+    'DSCR loans',
+    'DSCR rental loans',
+    'DSCR loan lender',
+    'rental property loans',
+    'no tax return rental loan',
+    'cash-out DSCR refinance',
+  ],
 });
 
 export default function DSCRRentalPage() {

@@ -214,6 +214,7 @@ const PRODUCT_INSIGHTS: Record<
 export default function LoanProductPage({ product }: LoanProductPageProps) {
   const insights = PRODUCT_INSIGHTS[product.slug];
   const isFixAndFlip = product.slug === 'fix-and-flip';
+  const isDscr = product.slug === 'dscr-rental';
 
   return (
     <div className="min-h-screen">
@@ -267,26 +268,34 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
                 </div>
               </div>
 
-              {isFixAndFlip && (
+              {(isFixAndFlip || isDscr) && (
                 <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-                    Borrower Quick Start
+                    {isDscr ? 'DSCR Quick Terms' : 'Borrower Quick Start'}
                   </p>
                   <h2 className="text-2xl font-bold tracking-tight mb-3">
-                    What helps a flip file move fast.
+                    {isDscr ? 'What matters before you request DSCR loan terms.' : 'What helps a flip file move fast.'}
                   </h2>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-5">
-                    Experienced investors with 3 or more completed flips may close in as fast as
-                    5 business days, subject to underwriting, valuation, title, and file complexity.
-                    The fastest files usually come in organized from day one.
+                    {isDscr
+                      ? 'DSCR loan terms depend on rent support, credit, reserves, property type, leverage, and current program guidelines. Strong files usually document the rent story before underwriting starts.'
+                      : 'Experienced investors with 3 or more completed flips may close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity. The fastest files usually come in organized from day one.'}
                   </p>
                   <div className="space-y-3 mb-5">
-                    {[
-                      'Signed purchase contract',
-                      'Line-item rehab scope and budget',
-                      'Local comp support for ARV',
-                      'Borrower or GC experience summary',
-                    ].map((item) => (
+                    {(isDscr
+                      ? [
+                          'Up to 85% LTV on qualifying purchases',
+                          'Up to 80% LTV on qualifying cash-out refinances',
+                          'No personal tax returns for DSCR qualification',
+                          'Rent-ready 1-4 unit and eligible STR properties',
+                        ]
+                      : [
+                          'Signed purchase contract',
+                          'Line-item rehab scope and budget',
+                          'Local comp support for ARV',
+                          'Borrower or GC experience summary',
+                        ]
+                    ).map((item) => (
                       <div key={item} className="flex items-start gap-3 rounded-xl bg-secondary/30 px-4 py-3">
                         <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
                         <span className="text-sm text-foreground/90">{item}</span>
@@ -295,17 +304,17 @@ export default function LoanProductPage({ product }: LoanProductPageProps) {
                   </div>
                   <div className="grid gap-3 sm:grid-cols-2">
                     <Link
-                      href="/resources/fix-and-flip-deal-checklist"
+                      href={isDscr ? '/tools/dscr-calculator' : '/resources/fix-and-flip-deal-checklist'}
                       className="flex items-center justify-between rounded-xl border border-border px-4 py-3 text-sm font-medium transition-colors hover:border-primary/50 hover:bg-secondary/30"
                     >
-                      Free deal checklist
+                      {isDscr ? 'Run DSCR math' : 'Free deal checklist'}
                       <ChevronRight className="h-4 w-4 text-primary" />
                     </Link>
                     <Link
-                      href="/tools/fix-and-flip-calculator"
+                      href={isDscr ? '/apply' : '/tools/fix-and-flip-calculator'}
                       className="flex items-center justify-between rounded-xl border border-border px-4 py-3 text-sm font-medium transition-colors hover:border-primary/50 hover:bg-secondary/30"
                     >
-                      Run deal math
+                      {isDscr ? 'Review my rental' : 'Run deal math'}
                       <ChevronRight className="h-4 w-4 text-primary" />
                     </Link>
                   </div>

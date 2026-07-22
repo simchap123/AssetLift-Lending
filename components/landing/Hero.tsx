@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle, Clock3, Coins, MapPinned, MessageSquare, Phone } from 'lucide-react';
+import { ArrowRight, Building2, CheckCircle, Clock3, Coins, Hammer, Home, MessageSquare, Phone, Repeat2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -20,9 +20,16 @@ import { pushToGHL } from '@/services/ghlService';
 
 const trustPoints = [
   { icon: Clock3, text: 'Fast initial review' },
-  { icon: Coins, text: 'Rehab financing available' },
-  { icon: CheckCircle, text: 'No interest on undrawn renovation funds when the draw structure supports it' },
-  { icon: MapPinned, text: 'NY, NJ, CT and approved nationwide markets' },
+  { icon: Coins, text: 'Purchase, refinance, and rehab capital' },
+  { icon: CheckCircle, text: 'Clear terms before you spend time on a file' },
+  { icon: Building2, text: 'Fix & flip, DSCR, bridge, and construction programs' },
+];
+
+const intentLinks = [
+  { icon: Hammer, label: "I'm Flipping", href: '/loans/fix-and-flip' },
+  { icon: Home, label: "I'm Buying Rentals", href: '/loans/dscr-rental' },
+  { icon: Building2, label: "I'm Building", href: '/loans/ground-up-construction' },
+  { icon: Repeat2, label: "I'm Refinancing", href: '/loans/bridge' },
 ];
 
 const initialForm = {
@@ -154,18 +161,19 @@ export default function Hero() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="max-w-3xl text-white">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-black/35 px-4 py-2 text-sm font-medium text-primary">
-              NY, NJ, CT investor lending
+              Private lending for real estate investors
             </p>
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl">
-              Fix &amp; Flip Financing Without the Bank Delays
+              Capital That Keeps Investor Deals Moving
             </h1>
             <p className="mb-5 max-w-2xl text-lg text-white/85 md:text-xl">
-              Up to 95% of purchase and 100% of rehab for qualifying investors. Get your deal
-              reviewed and preliminary options within 24 hours.
+              Fix &amp; flip, DSCR rental, bridge, and ground-up construction financing for
+              business-purpose investment properties. Send the deal and get preliminary options
+              within 24 hours.
             </p>
             <p className="mb-8 max-w-2xl text-sm text-white/75 md:text-base">
-              Maximum leverage depends on credit, experience, liquidity, property, and deal
-              strength. Business-purpose loans only.
+              Maximum leverage depends on credit, experience, liquidity, property, rent support,
+              valuation, title, and deal strength. Non-owner-occupied investor loans only.
             </p>
 
             <div className="mb-9 flex flex-col gap-3 sm:flex-row">
@@ -184,6 +192,19 @@ export default function Hero() {
                   Call or Text (929) 639-2284
                 </a>
               </Button>
+            </div>
+
+            <div className="mb-7 grid gap-2 sm:grid-cols-4">
+              {intentLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="flex items-center justify-center gap-2 rounded-xl border border-white/18 bg-black/32 px-3 py-3 text-sm font-semibold text-white/90 backdrop-blur-sm transition-colors hover:border-primary/60 hover:text-primary"
+                >
+                  <item.icon className="h-4 w-4" />
+                  {item.label}
+                </Link>
+              ))}
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2">

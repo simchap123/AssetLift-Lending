@@ -320,14 +320,14 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
   },
   {
     slug: "dscr-rental",
-    title: "DSCR Rental Loans - No Income Verification Financing for Investment Properties",
+    title: "DSCR Loans for Rental Investors - No Tax Return Rental Property Financing",
     description:
-      "Qualify for a rental property loan based on property cash flow, not personal income. AssetLift Lending's DSCR loans offer rates starting as low as 5.85% for qualifying scenarios, 30-year terms, LLC vesting, and no tax return requirements for real estate investors.",
-    heroTitle: "DSCR Rental Loans",
+      "Qualify for DSCR loans based on property cash flow, not personal income. AssetLift Lending reviews rental purchases, rate-term refinances, and cash-out refinances for real estate investors.",
+    heroTitle: "DSCR Loans for Rental Investors",
     heroSubtitle:
-      "Qualify on rental income, not tax returns. Scale your rental portfolio with 30-year financing designed exclusively for real estate investors.",
+      "Qualify on rental income, not tax returns. Use 30-year rental property financing to buy, refinance, or cash out qualifying investment properties.",
     overview:
-      "DSCR (Debt Service Coverage Ratio) rental loans represent the most significant innovation in investment property financing in the last decade. They solve a problem that has frustrated rental property investors for years: the disconnect between the income a portfolio generates and the income shown on personal tax returns. Real estate investors, especially those who are self-employed or who aggressively depreciate their properties, often report low taxable income despite holding portfolios worth millions of dollars. Conventional lenders see low reported income and decline the application. DSCR lenders see a cash-flowing property and fund the deal.\n\nThe concept is straightforward. Instead of verifying the borrower's personal income through tax returns and pay stubs, a DSCR lender divides the property's gross rental income by the total monthly debt obligation (principal, interest, taxes, insurance, and HOA). If the resulting ratio meets or exceeds the lender's minimum threshold, typically 1.0 to 1.25, the loan is approved. No W-2s. No 1099s. No tax returns. No debt-to-income ratio calculations. The property qualifies itself.\n\nAssetLift Lending's DSCR rental loan program offers rates starting as low as 5.85% for qualifying scenarios, 30-year fixed and adjustable-rate options, loan amounts from $75,000 to $2 million, and the ability to close in the name of an LLC or other business entity. We finance single-family homes, 2-4 unit properties, condos, and townhomes, and there is no limit on the number of properties you can finance with us. Whether you are refinancing a property you just finished rehabbing or purchasing a turnkey rental, our DSCR product is designed to keep your portfolio growing without the documentation headaches of conventional lending.\n\nFor investors who have outgrown the conventional lending box, hit the Fannie Mae property count ceiling, or simply prefer the speed and simplicity of asset-based qualification, DSCR loans from AssetLift Lending provide the most scalable path to building a rental portfolio that generates lasting, tax-advantaged wealth.",
+      "DSCR loans are rental property loans for real estate investors who want the property income to drive qualification. Instead of underwriting personal tax returns, W-2s, or debt-to-income ratios first, a DSCR lender compares the property's rent to the full monthly housing payment. If the rental income supports the PITIA payment and the file meets credit, reserve, property, and leverage guidelines, the loan may qualify.\n\nAssetLift Lending reviews DSCR loan scenarios for purchases, rate-term refinances, cash-out refinances, short-term rentals, and BRRRR exits. Qualifying rental purchases may reach up to 85% LTV, and qualifying DSCR cash-out refinances may reach up to 80% LTV. Maximum leverage is not available on every file and depends on credit, DSCR, property type, liquidity, rent support, value, seasoning, and program guidelines.\n\nThe strongest DSCR files usually have clean rent support, realistic tax and insurance assumptions, an entity ready to close, adequate reserves, and a property that is rent-ready at closing. AssetLift's DSCR rental loan program supports 30-year fixed and adjustable-rate structures, loan amounts from $100,000 to $3 million, LLC or entity vesting, and investment properties such as single-family rentals, 2-4 unit properties, warrantable condos, townhomes, and eligible short-term rentals.",
     keyStats: [
       { label: "Loan-to-Value (Purchase)", value: "Up to 85%" },
       { label: "Loan-to-Value (Cash-Out Refi)", value: "Up to 80%" },
@@ -458,6 +458,11 @@ export const LOAN_PRODUCTS: LoanProduct[] = [
         question: "What is the minimum down payment for a DSCR purchase loan?",
         answer:
           "The minimum down payment is 20% of the purchase price for properties with a DSCR of 1.25 or higher. For properties with lower DSCR ratios (between 1.0 and 1.24), a 25% down payment may be required. Properties with DSCR ratios below 1.0 typically require 25% to 30% down. A larger down payment also qualifies you for a lower interest rate, so putting down 25% to 30% can meaningfully improve your borrowing terms.",
+      },
+      {
+        question: "What is the maximum LTV for AssetLift DSCR loans?",
+        answer:
+          "Qualifying DSCR purchase loans may reach up to 85% LTV, and qualifying DSCR cash-out refinances may reach up to 80% LTV. Maximum leverage depends on credit score, DSCR ratio, property type, value, rent support, reserves, seasoning, and current program guidelines.",
       },
       {
         question: "Is there a maximum number of DSCR loans I can have?",

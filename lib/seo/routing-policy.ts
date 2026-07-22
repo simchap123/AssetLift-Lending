@@ -47,6 +47,12 @@ export const NOINDEX_STATIC_PATHS = new Set([
 ]);
 
 export const INDEXABLE_BLOG_SLUGS = new Set([
+  'dscr-loans-explained',
+  'how-to-qualify-for-dscr-loan',
+  'dscr-loan-for-rental-property',
+  'how-does-a-dscr-loan-work',
+  'brrrr-refinance-into-dscr-loan',
+  'dscr-loan-for-short-term-rental',
   'dscr-loan-llc-vs-personal-name',
   'brrrr-method-complete-guide-2026',
   'hard-money-lender-prepayment-penalty',

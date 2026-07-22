@@ -11,9 +11,9 @@ import StickyMobileCTA from "@/components/landing/StickyMobileCTA";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = createMetadata({
-  title: "Fix & Flip and DSCR Loans for Experienced Investors",
+  title: "Private Real Estate Lending for Investors",
   description:
-    "Private lending for experienced fix and flip operators and DSCR rental investors. $100K+ business-purpose loans, 660+ credit preferred, fast deal review.",
+    "Private lending for real estate investors. Fix and flip, DSCR rental, bridge, and ground-up construction loans for business-purpose investment properties.",
   path: "/",
   keywords: [
     "fix and flip loans",
@@ -43,7 +43,7 @@ export default function HomePage() {
     {
       question: "What are your minimum loan requirements?",
       answer:
-        "Our minimum loan amount is $100,000 and maximum is $5,000,000. We require a minimum credit score of 660 and prioritize experienced fix and flip operators, DSCR rental investors, and borrowers with a clear investment property exit strategy.",
+        "Our minimum loan amount is $100,000 and maximum is $5,000,000. We require a minimum credit score of 660 and prioritize borrowers with a clear investment property strategy, documented numbers, and a credible exit plan.",
     },
     {
       question: "What states do you lend in?",
@@ -57,7 +57,7 @@ export default function HomePage() {
     '@type': 'FinancialService',
     name: 'AssetLift Lending',
     description:
-      'Private lending for experienced fix and flip operators and DSCR rental investors. Business-purpose investment property loans from $100K to $5M, 660+ credit preferred, priority markets including NY, NJ, CT, CA, TX, NC, SC, FL, IN, and OH.',
+      'Private lending for real estate investors. Business-purpose fix and flip, DSCR rental, bridge, and ground-up construction loans from $100K to $5M, 660+ credit preferred.',
     url: 'https://www.assetliftlending.com',
     telephone: '+1-929-639-2284',
     email: 'info@assetliftlending.com',
@@ -85,7 +85,8 @@ export default function HomePage() {
     knowsAbout: [
       'Fix and flip loans',
       'DSCR rental loans',
-      'Hard money loans for experienced flippers',
+      'Bridge loans',
+      'Ground-up construction loans',
       'Private lending',
       'Rental property financing',
       'Real estate investor financing',
@@ -99,7 +100,8 @@ export default function HomePage() {
     serviceType: [
       'Fix and Flip Loans',
       'DSCR Rental Loans',
-      'Investment Property Loans',
+      'Bridge Loans',
+      'Ground-Up Construction Loans',
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -116,6 +118,18 @@ export default function HomePage() {
           name: 'DSCR Rental Loans',
           description: 'Long-term financing for rental properties. Qualify primarily on property cash flow, subject to program guidelines, leverage, reserves, and underwriting.',
           url: 'https://www.assetliftlending.com/loans/dscr-rental',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Bridge Loans',
+          description: 'Short-term capital for acquisitions, transitions, and refinance timing gaps when speed and exit clarity matter.',
+          url: 'https://www.assetliftlending.com/loans/bridge',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Ground-Up Construction Loans',
+          description: 'Construction financing for residential investment builds, with draw structures tied to verified progress.',
+          url: 'https://www.assetliftlending.com/loans/ground-up-construction',
         },
       ],
     },

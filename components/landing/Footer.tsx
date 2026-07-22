@@ -2,20 +2,11 @@ import Link from "next/link";
 import Logo from "@/components/Logo";
 
 const FEATURED_MARKETS = [
-  { label: "NY Fix & Flip", href: "/lending/new-york/fix-and-flip-loans" },
-  { label: "NY DSCR Loans", href: "/lending/new-york/dscr-loans" },
-  { label: "Queens Hard Money", href: "/lending/new-york/queens" },
-  { label: "Brooklyn Hard Money", href: "/lending/new-york/brooklyn" },
-  { label: "Nassau County Loans", href: "/lending/new-york/nassau-county" },
-  { label: "Westchester Loans", href: "/lending/new-york/westchester-county" },
-  { label: "NJ Fix & Flip", href: "/lending/new-jersey/fix-and-flip-loans" },
-  { label: "NJ DSCR Loans", href: "/lending/new-jersey/dscr-loans" },
-  { label: "Newark Hard Money", href: "/lending/new-jersey/newark" },
-  { label: "Jersey City Loans", href: "/lending/new-jersey/jersey-city" },
-  { label: "Bergen County Loans", href: "/lending/new-jersey/bergen-county" },
-  { label: "Hudson County Loans", href: "/lending/new-jersey/hudson-county" },
-  { label: "CT Fix & Flip", href: "/lending/connecticut/fix-and-flip-loans" },
-  { label: "CT DSCR Loans", href: "/lending/connecticut/dscr-loans" },
+  { label: "Where We Lend", href: "/markets" },
+  { label: "New York", href: "/lending/new-york" },
+  { label: "New Jersey", href: "/lending/new-jersey" },
+  { label: "Connecticut", href: "/lending/connecticut" },
+  { label: "State Disclosures", href: "/state-disclosures" },
 ];
 
 const Footer = () => {
@@ -29,8 +20,8 @@ const Footer = () => {
               <Logo size={38} />
             </div>
             <p className="text-muted-foreground text-sm max-w-sm">
-              Private real estate lending for experienced investors in NY, NJ, CT, and 46 states.
-              Fix and flip, DSCR, bridge, and construction scenarios reviewed fast.
+              Private real estate lending for investors buying, renovating, building, refinancing,
+              and scaling investment property portfolios.
             </p>
           </div>
 
@@ -94,7 +85,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Featured Markets</h4>
+            <h4 className="font-semibold mb-4">Markets</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               {FEATURED_MARKETS.map((market) => (
                 <li key={market.href}>
