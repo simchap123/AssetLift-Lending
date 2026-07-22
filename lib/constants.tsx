@@ -42,7 +42,7 @@ export const LOAN_PROGRAMS: LoanProgram[] = [
     maxLTV: '85%',
     highlights: [
       'Up to 85% LTV on purchase & refi',
-      'Up to 75% LTV on cash out',
+      'Up to 80% LTV on cash out',
       'Loans up to $3MM',
       '30-year fixed rate, 10|1 ARM & 5 year interest-only',
       '1-4 unit residential properties'

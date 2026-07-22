@@ -50,7 +50,7 @@ LOAN PROGRAMS:
    - Timeline: feasibility review in 48 hours, with many files closing in as fast as 5 business days subject to underwriting, valuation, title, and file complexity
 
 3. DSCR RENTAL LOANS
-   - Up to 85% LTV (purchase), 75% LTV (cash-out refi)
+   - Up to 85% LTV (purchase), 80% LTV (cash-out refi)
    - 30-year fixed or 5/6 ARM
    - Rates starting as low as 5.85%
    - NO personal income verification - no tax returns, W-2s, or 1099s needed
@@ -61,7 +61,7 @@ LOAN PROGRAMS:
    - No limit on number of DSCR loans
    - Close in LLC or entity name from day one
    - Interest-only option available (first 5-10 years)
-   - Cash-out refinance up to 75% LTV
+   - Cash-out refinance up to 80% LTV
    - Down payment: 20% (DSCR 1.25+), 25% (DSCR 1.0-1.24), 25-30% (DSCR <1.0)
    - Many DSCR files close in as fast as 5 business days, subject to underwriting, valuation, title, and file complexity
    - Perfect for BRRRR strategy (convert fix & flip to long-term rental)

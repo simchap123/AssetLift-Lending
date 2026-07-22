@@ -83,7 +83,7 @@ const PROGRAMS = [
   {
     name: 'DSCR Rental Loans',
     href: '/loans/dscr-rental',
-    facts: ['Up to 85% LTV', 'Rates from 5.85%', 'No W-2 or tax returns required', 'LLC lending available'],
+    facts: ['Up to 85% LTV on purchases', 'Up to 80% LTV on cash-out refinances', 'No W-2 or tax returns required', 'LLC lending available'],
   },
   {
     name: 'Bridge Loans',

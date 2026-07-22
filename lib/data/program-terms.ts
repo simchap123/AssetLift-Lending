@@ -8,7 +8,7 @@ export const PROGRAM_TERMS = {
   },
   dscr: {
     maxLtv: 'Up to 85% LTV',
-    cashOutLtv: 'Up to 75% LTV on cash-out scenarios',
+    cashOutLtv: 'Up to 80% LTV on cash-out refinance scenarios',
     loanRange: '$100K to $3MM',
     qualification: 'Property cash-flow based qualification',
     disclosure:
