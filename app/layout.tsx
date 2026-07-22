@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import Script from "next/script";
@@ -8,12 +7,6 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import MetaPixel from "@/components/MetaPixel";
 import AnalyticsPageTracker from "@/components/AnalyticsPageTracker";
 import ChatBot from "@/components/ChatBot";
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-space-grotesk",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.assetliftlending.com"),
@@ -88,7 +81,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={spaceGrotesk.variable} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Anti-FOUC: set theme before paint */}
         <script

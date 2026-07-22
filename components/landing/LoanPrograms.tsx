@@ -13,7 +13,7 @@ const LoanPrograms = () => {
     {
       id: "fix-flip",
       title: "Fix & Flip",
-      subtitle: "SHORT-TERM INVESTOR CAPITAL",
+      subtitle: "Short-term investor capital",
       maxValue: "95",
       loanType: "LTC",
       loanTypeLabel: "COST",
@@ -32,7 +32,7 @@ const LoanPrograms = () => {
     {
       id: "ground-up",
       title: "Ground-Up",
-      subtitle: "NEW BUILD FINANCING",
+      subtitle: "New build financing",
       maxValue: "90",
       loanType: "LTC",
       loanTypeLabel: "COST",
@@ -51,7 +51,7 @@ const LoanPrograms = () => {
     {
       id: "bridge",
       title: "Bridge",
-      subtitle: "SPEED AND TRANSITIONAL CAPITAL",
+      subtitle: "Speed and transitional capital",
       maxValue: "80",
       loanType: "LTV",
       loanTypeLabel: "VALUE",
@@ -69,7 +69,7 @@ const LoanPrograms = () => {
     {
       id: "rental",
       title: "Rental / DSCR",
-      subtitle: "LONG-TERM RENTAL DEBT",
+      subtitle: "Long-term rental debt",
       maxValue: "85",
       loanType: "LTV",
       loanTypeLabel: "VALUE",
@@ -105,31 +105,17 @@ const LoanPrograms = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.div
-            className="inline-flex items-center gap-2 px-5 py-2.5 mb-6 text-xs font-bold uppercase tracking-[0.2em] text-primary border border-primary/30 bg-primary/5 rounded-full backdrop-blur-sm"
+            className="inline-flex items-center gap-2 px-5 py-2.5 mb-6 text-sm font-semibold text-primary border border-primary/30 bg-primary/5 rounded-full"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            Investor Lending Focus
+            <span className="w-2 h-2 rounded-full bg-primary" />
+            Investor lending focus
           </motion.div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-            Loan Programs{" "}
-            <span className="relative">
-              <span className="gradient-text">Built for Investors</span>
-              <motion.span
-                className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 rounded-full"
-                initial={{ x: "-30%" }}
-                animate={{ x: "30%" }}
-                transition={{
-                  duration: 2.5,
-                  repeat: Infinity,
-                  repeatType: "mirror",
-                  ease: "easeInOut",
-                }}
-              />
-            </span>
+            Loan Programs <span className="gradient-text">Built for Investors</span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Choose the structure that fits the deal: acquisition and rehab, long-term rental debt,
@@ -168,13 +154,12 @@ const LoanPrograms = () => {
               }}
               className="group h-full"
             >
-              <div className="relative flex flex-col h-full bg-card rounded-xl border border-border overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
+              <div className="relative flex flex-col h-full bg-card rounded-xl border border-border overflow-hidden transition-all duration-300 hover:border-primary/50 hover:-translate-y-1">
                 {/* Header */}
-                <div className="relative bg-gradient-to-br from-zinc-900 to-zinc-800 dark:from-zinc-800 dark:to-zinc-900 p-5">
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-amber-400 to-primary" />
+                <div className="relative bg-zinc-900 p-5">
                   <div className="flex items-start justify-between">
                     <div>
-                      <p className="text-primary text-[10px] font-semibold uppercase tracking-[0.2em] mb-1">
+                      <p className="text-primary text-xs font-semibold mb-1">
                         {program.subtitle}
                       </p>
                       <h3 className="text-white text-xl font-bold">
@@ -190,15 +175,15 @@ const LoanPrograms = () => {
                 {/* Content */}
                 <div className="p-5 flex flex-col flex-grow">
                   <div className="mb-5 pb-5 border-b border-border">
-                    <p className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground mb-2">
-                      Top End Leverage
+                    <p className="text-xs font-medium text-muted-foreground mb-2">
+                      Top-end leverage
                     </p>
                     <div className="flex items-baseline gap-1">
-                      <span className="text-5xl font-black tracking-tight text-foreground">
+                      <span className="text-3xl font-bold tracking-tight text-foreground">
                         {program.maxValue}
                       </span>
-                      <span className="text-2xl font-bold text-foreground/70">%</span>
-                      <span className="ml-2 text-xs font-semibold text-muted-foreground uppercase">
+                      <span className="text-xl font-bold text-foreground/70">%</span>
+                      <span className="ml-2 text-xs font-semibold text-muted-foreground">
                         {program.loanType}
                       </span>
                     </div>
@@ -229,13 +214,10 @@ const LoanPrograms = () => {
                     <Link
                       href="/apply"
                       className="group/btn relative flex h-12 items-center justify-center gap-2
-                        bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500
-                        hover:from-amber-400 hover:via-yellow-400 hover:to-amber-400
-                        text-zinc-900 font-bold text-sm tracking-wide
+                        bg-primary hover:bg-primary/90
+                        text-primary-foreground font-bold text-sm
                         rounded-lg overflow-hidden
-                        shadow-[0_2px_8px_rgba(245,158,11,0.25)]
-                        hover:shadow-[0_4px_20px_rgba(245,158,11,0.4)]
-                        transition-all duration-300 ease-out"
+                        transition-colors duration-200 ease-out"
                     >
                       <span className="relative z-10">Upload Scenario</span>
                       <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1" />
@@ -265,8 +247,8 @@ const LoanPrograms = () => {
                 <Landmark className="w-4 h-4 text-primary" />
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-0.5">
-                  Extended Capabilities
+                <p className="text-sm font-semibold text-muted-foreground mb-0.5">
+                  Extended capabilities
                 </p>
                 <p className="font-semibold text-foreground">
                   Commercial &amp; Mixed-Use Scenarios

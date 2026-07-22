@@ -111,8 +111,8 @@ const Navbar = () => {
               <Logo size={36} className="md:hidden" />
               <div className="hidden md:flex flex-col items-start">
                 <Logo size={45} />
-                <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary/85">
-                  Capital That Lifts.
+                <span className="mt-1 text-xs font-semibold text-primary/85">
+                  Capital that lifts.
                 </span>
               </div>
             </div>
@@ -169,7 +169,7 @@ const Navbar = () => {
               <div className="h-4 w-px bg-border" />
             <ThemeToggle />
             </div>
-            <Button asChild size="sm" className="rounded-full px-5 font-bold shadow-[0_0_20px_hsl(45,93%,47%,0.28)] transition-all duration-200 hover:shadow-[0_0_30px_hsl(45,93%,47%,0.45)]">
+            <Button asChild size="sm" className="rounded-full px-5 font-bold">
               <Link href="/apply">
                 Review Deal
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -202,8 +202,8 @@ const Navbar = () => {
           >
             <nav className="flex flex-col gap-4">
               <div className="rounded-2xl border border-border bg-secondary/20 p-4">
-                <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">
-                  Fast Investor Financing
+                <p className="text-sm font-bold text-primary">
+                  Fast investor financing
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Review programs, compare options, or send a deal for a real answer.
@@ -211,7 +211,7 @@ const Navbar = () => {
               </div>
 
               <div>
-              <p className="px-2 py-1 text-xs font-bold uppercase text-muted-foreground tracking-wider">
+              <p className="px-2 py-1 text-sm font-bold text-muted-foreground">
                 Programs
               </p>
               {PROGRAMS.map((item) => (
@@ -227,7 +227,7 @@ const Navbar = () => {
               </div>
 
               <div>
-              <p className="px-2 py-1 text-xs font-bold uppercase text-muted-foreground tracking-wider">
+              <p className="px-2 py-1 text-sm font-bold text-muted-foreground">
                 Resources
               </p>
               {RESOURCES.map((item) => (

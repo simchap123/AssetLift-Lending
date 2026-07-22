@@ -157,7 +157,7 @@ export default function HomePage() {
         <section className="border-y border-border bg-secondary/25 py-12">
           <div className="container grid gap-6 px-4 md:grid-cols-3 md:px-6">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Funding Fit</p>
+              <p className="text-sm font-semibold text-primary">Funding fit</p>
               <h2 className="mt-2 text-2xl font-bold">Terms depend on the file.</h2>
             </div>
             <p className="text-sm leading-relaxed text-muted-foreground">
@@ -176,8 +176,8 @@ export default function HomePage() {
         <section className="py-20">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-4xl rounded-xl border border-dashed border-border bg-card p-8">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary">
-                Funded Deals
+              <p className="mb-3 text-sm font-semibold text-primary">
+                Funded deals
               </p>
               <h2 className="mb-3 text-3xl font-bold tracking-tight">Verified deal examples will appear here.</h2>
               <p className="text-muted-foreground">
@@ -194,7 +194,7 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
-                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary">
+                <p className="mb-3 text-sm font-semibold text-primary">
                   About AssetLift
                 </p>
                 <h2 className="text-3xl font-bold tracking-tight">A focused private lending team for investor deals.</h2>
@@ -216,8 +216,8 @@ export default function HomePage() {
         <section className="py-20">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-4xl rounded-xl border border-dashed border-border bg-card p-8">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary">
-                Verified Reviews
+              <p className="mb-3 text-sm font-semibold text-primary">
+                Verified reviews
               </p>
               <h2 className="mb-3 text-3xl font-bold tracking-tight">Review integration pending verified sources.</h2>
               <p className="text-muted-foreground">
