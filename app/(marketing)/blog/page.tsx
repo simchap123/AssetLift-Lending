@@ -49,6 +49,7 @@ export const metadata: Metadata = createMetadata({
   description:
     'Read expert guides on hard money loans, fix and flip financing, DSCR rentals, bridge loans, construction lending, and real estate investing strategy.',
   path: '/blog',
+  noIndex: true,
 });
 
 export default function BlogListingPage() {

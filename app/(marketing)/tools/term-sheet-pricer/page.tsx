@@ -9,6 +9,7 @@ export const metadata: Metadata = createMetadata({
   description:
     'Model loan proceeds, leverage caps, closing fees, and cash to close with this private lending term sheet pricer.',
   path: '/tools/term-sheet-pricer',
+  noIndex: true,
 });
 
 export default function TermSheetPricerPage() {

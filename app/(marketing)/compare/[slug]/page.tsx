@@ -4,6 +4,7 @@ import { createMetadata } from '@/lib/metadata';
 import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { COMPARISONS } from '@/lib/data/comparisons';
+import { INDEXABLE_COMPARISON_SLUGS } from '@/lib/seo/routing-policy';
 import ComparisonPage from '@/components/seo/ComparisonPage';
 
 interface Props {
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     type: 'article',
     publishedTime: comparison.publishedAt,
     modifiedTime: comparison.publishedAt,
+    noIndex: !INDEXABLE_COMPARISON_SLUGS.has(comparison.slug),
   });
 }
 

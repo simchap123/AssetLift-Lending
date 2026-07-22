@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.assetliftlending.com/brokers',
   },
+  robots: { index: false, follow: true },
 };
 
 const STEPS = [

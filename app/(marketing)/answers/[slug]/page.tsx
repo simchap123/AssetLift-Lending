@@ -4,6 +4,7 @@ import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { createMetadata } from '@/lib/metadata';
+import { INDEXABLE_ANSWER_SLUGS } from '@/lib/seo/routing-policy';
 import geoAnswers from '@/lib/data/geo-answers.json';
 
 interface GeoAnswer {
@@ -39,6 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     path: `/answers/${answer.slug}`,
     type: 'article',
     publishedTime: answer.publishedAt,
+    noIndex: !INDEXABLE_ANSWER_SLUGS.has(answer.slug),
   });
 }
 
@@ -46,6 +48,12 @@ export default async function AnswerPage({ params }: Props) {
   const { slug } = await params;
   const answer = ANSWERS.find(a => a.slug === slug);
   if (!answer) notFound();
+
+  // Related answers: same intent first, then cross-intent, max 4
+  const related = [
+    ...ANSWERS.filter(a => a.slug !== slug && a.intent === answer.intent),
+    ...ANSWERS.filter(a => a.slug !== slug && a.intent !== answer.intent),
+  ].slice(0, 4);
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -144,6 +152,26 @@ export default async function AnswerPage({ params }: Props) {
                       <h3 className="font-semibold mb-2">{faq.question}</h3>
                       <p className="text-sm text-muted-foreground">{faq.answer}</p>
                     </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* More Q&A — internal linking between answer pages */}
+            {related.length > 0 && (
+              <div className="mb-12">
+                <h2 className="text-xl font-bold mb-5">More Investor Q&A</h2>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {related.map(a => (
+                    <Link
+                      key={a.slug}
+                      href={'/answers/' + a.slug}
+                      className="border border-border rounded-xl p-4 hover:border-primary/50 hover:bg-secondary/20 transition-colors group"
+                    >
+                      <p className="font-semibold text-sm group-hover:text-primary transition-colors line-clamp-2">
+                        {a.query}
+                      </p>
+                    </Link>
                   ))}
                 </div>
               </div>
