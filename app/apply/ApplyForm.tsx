@@ -297,33 +297,41 @@ const ApplyForm = () => {
         </div>
       </header>
 
-      <div className="container px-4 md:px-6 pt-32 pb-20">
+      <div className="container px-4 md:px-6 pt-24 pb-20 md:pt-32">
         <motion.div
           className="max-w-6xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mb-12 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-            <div className="lg:sticky lg:top-28">
+          <div className="mb-6 lg:hidden">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Loan Application</p>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight">Submit your deal.</h1>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Start with the application. Add the basics now and the team can ask for anything else after review.
+            </p>
+          </div>
+
+          <div className="mb-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start lg:gap-10">
+            <div className="order-2 lg:order-1 lg:sticky lg:top-28">
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="inline-block rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
+                className="hidden rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-primary lg:inline-block"
               >
                 Deal Review
               </motion.div>
-              <h1 className="mt-5 text-4xl font-bold tracking-tight md:text-5xl">
+              <h1 className="mt-5 hidden text-4xl font-bold tracking-tight md:text-5xl lg:block">
                 Send the File.
                 <br />
                 <span className="gradient-text">Get a Real Answer.</span>
               </h1>
-              <p className="mt-5 text-lg text-muted-foreground">
+              <p className="hidden mt-5 text-lg text-muted-foreground lg:block">
                 This form is for borrowers who want a clean read on the deal, the likely leverage,
                 and the fastest workable path to closing.
               </p>
 
-              <div className="mt-8 grid gap-4">
+              <div className="mt-2 grid gap-3 lg:mt-8 lg:gap-4">
                 {[
                   {
                     icon: Clock3,
@@ -341,7 +349,7 @@ const ApplyForm = () => {
                     text: "If the file needs more support, we would rather say it early than waste your time.",
                   },
                 ].map((item) => (
-                  <div key={item.title} className="rounded-2xl border border-border bg-card p-5">
+                  <div key={item.title} className="rounded-2xl border border-border bg-card p-4 lg:p-5">
                     <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl bg-primary/10">
                       <item.icon className="h-5 w-5 text-primary" />
                     </div>
@@ -351,7 +359,7 @@ const ApplyForm = () => {
                 ))}
               </div>
 
-              <div className="mt-6 rounded-2xl border border-border bg-secondary/20 p-5">
+              <div className="mt-4 rounded-2xl border border-border bg-secondary/20 p-4 lg:mt-6 lg:p-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Best to include</p>
                 <div className="mt-3 space-y-2 text-sm text-muted-foreground">
                   <p>Purchase or current value</p>
@@ -381,19 +389,19 @@ const ApplyForm = () => {
 
           <motion.form
             onSubmit={onSubmit}
-            className="space-y-8"
+            className="order-1 space-y-5 lg:order-2 lg:space-y-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
-              <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
+            <div className="rounded-2xl border border-border bg-card p-4 shadow-sm md:p-8 lg:rounded-3xl">
+              <h3 className="text-base font-semibold mb-4 flex items-center gap-2 md:mb-6 md:text-lg">
                 <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">1</span>
                 Contact Information
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid gap-4 md:grid-cols-2 md:gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Investor Full Name *</Label>
+                  <Label htmlFor="name">Full Name *</Label>
                   <Input
                     id="name"
                     placeholder="John Smith"
@@ -405,7 +413,7 @@ const ApplyForm = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email">Direct Email Address *</Label>
+                  <Label htmlFor="email">Email *</Label>
                   <Input
                     id="email"
                     type="email"
@@ -418,7 +426,7 @@ const ApplyForm = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Primary Phone Number *</Label>
+                  <Label htmlFor="phone">Phone *</Label>
                   <Input
                     id="phone"
                     type="tel"
@@ -488,12 +496,12 @@ const ApplyForm = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
-              <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
+            <div className="rounded-2xl border border-border bg-card p-4 shadow-sm md:p-8 lg:rounded-3xl">
+              <h3 className="text-base font-semibold mb-4 flex items-center gap-2 md:mb-6 md:text-lg">
                 <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">2</span>
                 Deal Details
               </h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid gap-4 mb-5 md:grid-cols-2 md:gap-6 md:mb-6">
                 <div className="space-y-2">
                   <Label htmlFor="purchasePrice">Purchase Price / Refi *</Label>
                   <div className="relative">
@@ -596,8 +604,8 @@ const ApplyForm = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
-              <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
+            <div className="rounded-2xl border border-border bg-card p-4 shadow-sm md:p-8 lg:rounded-3xl">
+              <h3 className="text-base font-semibold mb-4 flex items-center gap-2 md:mb-6 md:text-lg">
                 <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm flex items-center justify-center">3</span>
                 Additional Information
               </h3>

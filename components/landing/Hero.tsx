@@ -143,7 +143,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative flex min-h-[92svh] items-center overflow-hidden py-24 sm:py-28">
+    <section className="relative flex min-h-[92svh] items-center overflow-hidden py-20 sm:py-28">
       <div className="absolute inset-0 z-0">
         <Image
           src="/renovation-funding-hero.png"
@@ -160,23 +160,23 @@ export default function Hero() {
       <div className="container relative z-20 px-4 md:px-6">
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="max-w-3xl text-white">
-            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-black/35 px-4 py-2 text-sm font-medium text-primary">
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-black/35 px-4 py-2 text-xs font-medium text-primary sm:text-sm">
               Private lending for real estate investors
             </p>
-            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl">
+            <h1 className="mb-4 text-4xl font-bold tracking-tight sm:mb-6 sm:text-5xl md:text-7xl">
               Capital That Keeps Investor Deals Moving
             </h1>
-            <p className="mb-5 max-w-2xl text-lg text-white/85 md:text-xl">
+            <p className="mb-4 max-w-2xl text-base text-white/85 sm:text-lg md:text-xl">
               Fix &amp; flip, DSCR rental, bridge, and ground-up construction financing for
               business-purpose investment properties. Send the deal and get preliminary options
               within 24 hours.
             </p>
-            <p className="mb-8 max-w-2xl text-sm text-white/75 md:text-base">
+            <p className="mb-6 max-w-2xl text-xs text-white/75 sm:text-sm md:text-base">
               Maximum leverage depends on credit, experience, liquidity, property, rent support,
               valuation, title, and deal strength. Non-owner-occupied investor loans only.
             </p>
 
-            <div className="mb-9 flex flex-col gap-3 sm:flex-row">
+            <div className="mb-5 flex flex-col gap-3 sm:mb-9 sm:flex-row">
               <Button asChild size="lg" className="w-full px-7 py-6 text-base sm:w-auto">
                 <Link
                   href="/apply"
@@ -194,7 +194,7 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="mb-7 grid gap-2 sm:grid-cols-4">
+            <div className="mb-6 grid grid-cols-2 gap-2 sm:mb-7 sm:grid-cols-4">
               {intentLinks.map((item) => (
                 <Link
                   key={item.href}
@@ -207,7 +207,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="hidden gap-3 sm:grid sm:grid-cols-2">
               {trustPoints.map((point) => (
                 <div key={point.text} className="flex items-start gap-3 rounded-xl border border-white/18 bg-black/32 px-4 py-3 backdrop-blur-sm">
                   <point.icon className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
