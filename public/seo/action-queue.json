@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T11:24:47.764Z",
+  "generatedAt": "2026-07-28T10:37:26.954Z",
   "connected": true,
   "summary": "11 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
@@ -7,20 +7,20 @@
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 306,
-      "impressions": 306,
+      "priority": 286,
+      "impressions": 286,
       "position": 0,
-      "rationale": "306 impressions across 7 queries mention Maryland.",
+      "rationale": "286 impressions across 7 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 254,
-      "impressions": 254,
+      "priority": 252,
+      "impressions": 252,
       "position": 0,
-      "rationale": "254 impressions across 7 queries mention Idaho.",
+      "rationale": "252 impressions across 7 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -37,40 +37,40 @@
       "type": "build-demand-page",
       "target": "Nevada",
       "category": "Geo",
-      "priority": 127,
-      "impressions": 127,
+      "priority": 128,
+      "impressions": 128,
       "position": 0,
-      "rationale": "127 impressions across 3 queries mention Nevada.",
+      "rationale": "128 impressions across 3 queries mention Nevada.",
       "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Georgia",
       "category": "Geo",
-      "priority": 126,
-      "impressions": 126,
+      "priority": 125,
+      "impressions": 125,
       "position": 0,
-      "rationale": "126 impressions across 4 queries mention Georgia.",
+      "rationale": "125 impressions across 4 queries mention Georgia.",
       "action": "Strengthen the Georgia state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
-      "target": "Florida",
+      "target": "West Virginia",
       "category": "Geo",
-      "priority": 108,
-      "impressions": 108,
+      "priority": 113,
+      "impressions": 113,
       "position": 0,
-      "rationale": "108 impressions across 3 queries mention Florida.",
-      "action": "Strengthen the Florida state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+      "rationale": "113 impressions across 4 queries mention West Virginia.",
+      "action": "Add genuine West Virginia market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
       "type": "improve-meta",
       "target": "/about",
       "category": "General",
-      "priority": 104,
-      "impressions": 52,
-      "position": 5.9,
-      "rationale": "52 impressions at position 5.9 but only 0 clicks.",
+      "priority": 96,
+      "impressions": 48,
+      "position": 6.1,
+      "rationale": "48 impressions at position 6.1 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
