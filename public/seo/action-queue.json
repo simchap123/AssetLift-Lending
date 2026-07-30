@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-07-29T10:40:47.689Z",
+  "generatedAt": "2026-07-30T10:26:07.747Z",
   "connected": true,
-  "summary": "11 prioritized actions from real Search Console demand (top priority: Maryland).",
+  "summary": "12 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 288,
-      "impressions": 288,
+      "priority": 286,
+      "impressions": 286,
       "position": 0,
-      "rationale": "288 impressions across 7 queries mention Maryland.",
+      "rationale": "286 impressions across 7 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -27,40 +27,40 @@
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 244,
-      "impressions": 244,
+      "priority": 243,
+      "impressions": 243,
       "position": 0,
-      "rationale": "244 impressions across 7 queries mention Colorado.",
+      "rationale": "243 impressions across 7 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Nevada",
       "category": "Geo",
-      "priority": 130,
-      "impressions": 130,
+      "priority": 127,
+      "impressions": 127,
       "position": 0,
-      "rationale": "130 impressions across 3 queries mention Nevada.",
+      "rationale": "127 impressions across 3 queries mention Nevada.",
       "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Georgia",
       "category": "Geo",
-      "priority": 124,
-      "impressions": 124,
+      "priority": 121,
+      "impressions": 121,
       "position": 0,
-      "rationale": "124 impressions across 4 queries mention Georgia.",
+      "rationale": "121 impressions across 4 queries mention Georgia.",
       "action": "Strengthen the Georgia state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "West Virginia",
       "category": "Geo",
-      "priority": 113,
-      "impressions": 113,
+      "priority": 115,
+      "impressions": 115,
       "position": 0,
-      "rationale": "113 impressions across 4 queries mention West Virginia.",
+      "rationale": "115 impressions across 4 queries mention West Virginia.",
       "action": "Add genuine West Virginia market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
@@ -69,8 +69,8 @@
       "category": "General",
       "priority": 98,
       "impressions": 49,
-      "position": 6,
-      "rationale": "49 impressions at position 6 but only 0 clicks.",
+      "position": 5.8,
+      "rationale": "49 impressions at position 5.8 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -97,20 +97,30 @@
       "type": "expand-content",
       "target": "construction finance arlington tx",
       "category": "Construction",
-      "priority": 21,
-      "impressions": 14,
-      "position": 19.9,
-      "rationale": "Ranking at position 19.9 with 14 impressions — within striking distance of page 1.",
+      "priority": 20,
+      "impressions": 13,
+      "position": 17.2,
+      "rationale": "Ranking at position 17.2 with 13 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "type": "expand-content",
       "target": "chandler hard money loans",
       "category": "Hard Money",
-      "priority": 17,
-      "impressions": 11,
-      "position": 16.9,
-      "rationale": "Ranking at position 16.9 with 11 impressions — within striking distance of page 1.",
+      "priority": 14,
+      "impressions": 9,
+      "position": 17,
+      "rationale": "Ranking at position 17 with 9 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "expand-content",
+      "target": "dscr loan lehigh acres",
+      "category": "DSCR / Rental",
+      "priority": 8,
+      "impressions": 5,
+      "position": 16.2,
+      "rationale": "Ranking at position 16.2 with 5 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     }
   ]
