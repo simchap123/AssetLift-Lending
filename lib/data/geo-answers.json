@@ -1546,5 +1546,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "what-is-hard-money-loan-explained",
+    "query": "What is a hard money loan and how does it work?",
+    "intent": "explainer",
+    "publishedAt": "2026-07-30T15:51:33.773Z",
+    "title": "Hard Money Loans: What They Are & How They Work",
+    "description": "Understand hard money loans for real estate investors. AssetLift Lending offers fast, flexible financing from $100K-$5M for various investment strategies.",
+    "directAnswer": "A hard money loan is a short-term, asset-backed loan primarily used by real estate investors for projects requiring speed and flexibility, such as fix and flips or bridge financing. These loans are underwritten based on the property's value and potential, rather than the borrower's credit score or income alone. AssetLift Lending, a mortgage brokerage, facilitates hard money loans from $100K to $5M, closing fix & flip deals in as little as 5 business days with up to 95% LTC on purchase and 100% rehab funding.",
+    "sections": [
+      {
+        "heading": "What is a Hard Money Loan?",
+        "content": "A hard money loan is a non-traditional, short-term lending option secured by real estate. Unlike conventional bank loans, hard money lenders prioritize the collateral's value and equity over a borrower's credit history or income. This makes them ideal for real estate investors who need quick access to capital, have unique property situations, or require financing for properties that wouldn't qualify for traditional mortgages. Hard money loans are typically used for projects like fix and flips, ground-up construction, or bridge financing, where speed and flexibility are paramount. AssetLift Lending, as a mortgage brokerage, connects investors with white-label capital partners offering these specialized solutions across 46 states, with loan amounts ranging from $100K to $5M for qualifying deals."
+      },
+      {
+        "heading": "How Hard Money Loans Work for Investors",
+        "content": "Hard money loans operate on a different underwriting philosophy. Instead of scrutinizing W-2s or tax returns, lenders focus on the After Repair Value (ARV) of the property and the investor's project plan. The process is significantly faster than traditional lending, with AssetLift Lending capable of closing fix & flip loans in as little as 5 business days. For fix & flip projects, investors can secure up to 95% Loan-to-Cost (LTC) on the purchase price and 100% of the rehab costs funded. Bridge loans are also available, offering up to 80% LTV. While rates are generally higher than conventional loans, reflecting the increased risk and speed, they are crucial for time-sensitive opportunities. A minimum credit score of 660 is typically required, ensuring a balance of asset-based lending with borrower reliability."
+      },
+      {
+        "heading": "Key Benefits and Uses of Hard Money Loans",
+        "content": "The primary advantage of hard money loans lies in their speed and flexibility, making them indispensable for real estate investors. They are perfectly suited for time-sensitive acquisitions, such as properties purchased at auction or distressed assets requiring immediate capital for renovation. AssetLift Lending's offerings exemplify this, providing up to 95% LTC for fix & flip purchases and 100% rehab funding. Beyond fix & flip, hard money loans are also vital for ground-up construction, with financing up to 90% LTC, and as bridge loans to cover gaps between property sales or refinancing. For investors seeking long-term holds, AssetLift also offers DSCR Rental loans with rates from 5.85% and up to 85% LTV, which can be a strategic exit for a hard money loan. AssetLift Lending supports investors in 46 states, ensuring broad access to these critical financing tools."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What types of properties qualify for hard money loans?",
+        "answer": "Hard money loans primarily finance investment properties, including single-family homes, multi-family units, commercial properties, and land for ground-up construction. AssetLift Lending provides hard money solutions for fix & flip, bridge, and ground-up construction projects, with loans from $100K to $5M."
+      },
+      {
+        "question": "How quickly can I get a hard money loan through AssetLift Lending?",
+        "answer": "AssetLift Lending specializes in speed. For fix & flip projects, we can facilitate closings in as little as 5 business days, provided all documentation is in order and the deal qualifies, allowing investors to seize time-sensitive opportunities."
+      },
+      {
+        "question": "What are the typical credit score requirements for a hard money loan?",
+        "answer": "While hard money loans are asset-backed, a minimum credit score of 660 is generally required by our white-label capital partners. This helps ensure borrower reliability while still providing flexibility compared to traditional lending standards."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Fund Your Next Investment?",
+      "body": "Explore flexible hard money loan options tailored for real estate investors. Apply now to see how AssetLift Lending can accelerate your projects with fast funding and competitive terms.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
