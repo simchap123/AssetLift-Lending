@@ -1589,5 +1589,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "what-is-loan-to-cost-fix-and-flip",
+    "query": "What is loan to cost (LTC) in fix and flip real estate financing?",
+    "intent": "explainer",
+    "publishedAt": "2026-07-31T16:01:47.679Z",
+    "title": "What is Loan to Cost (LTC) in Fix and Flip Financing?",
+    "description": "Understand Loan to Cost (LTC) in fix and flip real estate financing. AssetLift Lending offers up to 95% LTC on purchases and 100% rehab funding.",
+    "directAnswer": "Loan to Cost (LTC) in fix and flip real estate financing is a metric that compares the loan amount to the total project cost, including both the property purchase price and all renovation expenses. AssetLift Lending, a mortgage brokerage for real estate investors, offers fix and flip financing with up to 95% LTC on the purchase and 100% of rehab costs funded for qualifying deals.",
+    "sections": [
+      {
+        "heading": "Understanding Loan to Cost (LTC) in Real Estate Investing",
+        "content": "Loan to Cost (LTC) is a crucial metric for real estate investors, particularly in the fix and flip strategy. Unlike Loan to Value (LTV), which compares the loan amount to the property's current or after-repair value, LTC focuses on the total investment required for a project. This includes the initial purchase price of the property, all associated closing costs, and the entire budget for renovations and repairs. Lenders use LTC to assess the risk of a project, determining how much of the investor's total capital outlay they are willing to finance. A higher LTC means the investor needs less of their own cash upfront, making projects more accessible. AssetLift Lending understands this need, providing competitive LTC options to empower real estate investors across 46 states."
+      },
+      {
+        "heading": "How AssetLift Lending Utilizes LTC for Fix and Flip Projects",
+        "content": "AssetLift Lending, as a dedicated mortgage brokerage for real estate investors, leverages LTC to structure highly advantageous fix and flip loans. For qualifying fix and flip projects, we can offer financing up to an impressive 95% LTC on the purchase component. This means investors only need to bring a small percentage of the purchase price to the table. Furthermore, we are able to fund 100% of the rehab costs, significantly reducing the out-of-pocket expenses for renovations. This comprehensive funding approach, coupled with our ability to close loans in as little as 5 business days, allows investors to acquire properties, execute renovations efficiently, and maximize their return on investment. Our loans range from $100K to $5M, accommodating a wide spectrum of investment opportunities, all while requiring a minimum credit score of 660."
+      },
+      {
+        "heading": "Beyond Fix and Flip: Other Lending Options from AssetLift Lending",
+        "content": "While fix and flip financing with strong LTC is a cornerstone of our offerings, AssetLift Lending provides a full suite of lending solutions for diverse real estate investment strategies. For DSCR Rental properties, investors can access up to 85% LTV for purchases and 80% LTV for cash-out refinances, with rates starting from 5.85% and no W-2 or tax returns required. Our Bridge loans offer up to 80% LTV, providing flexible short-term financing. For those looking to build from the ground up, our Ground-Up Construction loans go up to 90% LTC. We also offer commercial lending options, ensuring that real estate investors have a reliable capital partner for virtually any project type across our 46-state operational footprint, excluding Alaska, North Dakota, South Dakota, and Vermont."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between LTC and LTV?",
+        "answer": "LTC (Loan to Cost) calculates the loan amount against the total project cost, including purchase and rehab. LTV (Loan to Value) calculates the loan amount against the property's current or after-repair value. AssetLift Lending offers up to 95% LTC for fix and flip purchases and up to 85% LTV for DSCR rental purchases."
+      },
+      {
+        "question": "How much rehab funding does AssetLift Lending offer for fix and flip projects?",
+        "answer": "AssetLift Lending provides 100% funding for rehab costs on qualifying fix and flip projects. This means investors can get all their renovation expenses covered, alongside up to 95% of the purchase price, reducing the need for significant upfront capital."
+      },
+      {
+        "question": "What are the minimum requirements for a fix and flip loan with AssetLift Lending?",
+        "answer": "To qualify for a fix and flip loan with AssetLift Lending, investors typically need a minimum credit score of 660. Our loans range from $100K to $5M, and we can close in as little as 5 business days for efficient project execution."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Fund Your Next Fix and Flip Project?",
+      "body": "Discover how AssetLift Lending's competitive LTC options and fast closing times can accelerate your real estate investment goals. Apply today to get started.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
