@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T10:26:07.747Z",
+  "generatedAt": "2026-07-31T10:41:05.069Z",
   "connected": true,
   "summary": "12 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
@@ -7,40 +7,40 @@
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 286,
-      "impressions": 286,
+      "priority": 288,
+      "impressions": 288,
       "position": 0,
-      "rationale": "286 impressions across 7 queries mention Maryland.",
+      "rationale": "288 impressions across 7 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 249,
-      "impressions": 249,
+      "priority": 246,
+      "impressions": 246,
       "position": 0,
-      "rationale": "249 impressions across 7 queries mention Idaho.",
+      "rationale": "246 impressions across 7 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 243,
-      "impressions": 243,
+      "priority": 218,
+      "impressions": 218,
       "position": 0,
-      "rationale": "243 impressions across 7 queries mention Colorado.",
+      "rationale": "218 impressions across 6 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Nevada",
       "category": "Geo",
-      "priority": 127,
-      "impressions": 127,
+      "priority": 125,
+      "impressions": 125,
       "position": 0,
-      "rationale": "127 impressions across 3 queries mention Nevada.",
+      "rationale": "125 impressions across 3 queries mention Nevada.",
       "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -57,10 +57,10 @@
       "type": "build-demand-page",
       "target": "West Virginia",
       "category": "Geo",
-      "priority": 115,
-      "impressions": 115,
+      "priority": 117,
+      "impressions": 117,
       "position": 0,
-      "rationale": "115 impressions across 4 queries mention West Virginia.",
+      "rationale": "117 impressions across 4 queries mention West Virginia.",
       "action": "Add genuine West Virginia market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
@@ -97,10 +97,10 @@
       "type": "expand-content",
       "target": "construction finance arlington tx",
       "category": "Construction",
-      "priority": 20,
-      "impressions": 13,
-      "position": 17.2,
-      "rationale": "Ranking at position 17.2 with 13 impressions — within striking distance of page 1.",
+      "priority": 18,
+      "impressions": 12,
+      "position": 16.3,
+      "rationale": "Ranking at position 16.3 with 12 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
