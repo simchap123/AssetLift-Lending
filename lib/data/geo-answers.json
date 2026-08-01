@@ -1632,5 +1632,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "what-is-after-repair-value-arv",
+    "query": "What is after repair value (ARV) and how do lenders use it?",
+    "intent": "explainer",
+    "publishedAt": "2026-08-01T14:59:54.334Z",
+    "title": "After Repair Value (ARV): Definition & Lender Use",
+    "description": "Understand After Repair Value (ARV) and how lenders like AssetLift Lending use it for real estate investor loans, including fix & flip and bridge loans.",
+    "directAnswer": "After Repair Value (ARV) is the estimated market value of a property after all planned renovations and improvements have been completed. Lenders, including AssetLift Lending, utilize ARV to determine maximum loan amounts, particularly for Fix & Flip and Bridge loans, often funding up to 95% of the loan-to-cost (LTC) and 100% of rehab for qualifying Fix & Flip projects.",
+    "sections": [
+      {
+        "heading": "Understanding After Repair Value (ARV)",
+        "content": "After Repair Value (ARV) is a crucial metric for real estate investors, representing the projected market value of a property once all necessary repairs, renovations, and upgrades are completed. It's a forward-looking appraisal that considers what the property would be worth in its fully optimized, market-ready condition. Calculating ARV involves analyzing comparable recently sold properties in the same area that have undergone similar renovations. This valuation helps investors gauge the potential profitability of a project and is a cornerstone for securing financing. For instance, a property purchased for $200,000 with $50,000 in renovations might have an ARV of $350,000, indicating a significant value add. AssetLift Lending, a mortgage brokerage for real estate investors, relies heavily on accurate ARV assessments to structure competitive loan products."
+      },
+      {
+        "heading": "How Lenders Use ARV in Financing Decisions",
+        "content": "Lenders, including AssetLift Lending and its white-label capital partners, primarily use ARV to assess the collateral value for loans on properties requiring significant improvements. For Fix & Flip loans, ARV is paramount, as it dictates the maximum loan amount an investor can receive. AssetLift Lending offers Fix & Flip loans with up to 95% LTC on purchase and 100% rehab funding, with closing possible in as little as 5 business days for qualifying deals. The ARV ensures that the loan amount is appropriately secured by the property's future value. Similarly, Bridge loans, which AssetLift Lending provides up to 80% LTV, also factor in ARV, especially when the bridge period involves value-add improvements. Even for Ground-Up Construction loans, where AssetLift Lending offers up to 90% LTC, the projected end value (similar to ARV) is a key determinant. This approach allows investors to leverage the future potential of their assets, with loans available from $100K to $5M and a minimum credit score of 660."
+      },
+      {
+        "heading": "ARV in Different Loan Products at AssetLift Lending",
+        "content": "At AssetLift Lending, ARV's application varies across our diverse product offerings designed for real estate investors. For Fix & Flip projects, ARV directly influences the loan-to-ARV (LTARV) ratio, which is a critical underwriting metric. A strong ARV allows AssetLift Lending to provide robust financing, including up to 95% LTC on the purchase and 100% of the rehab costs, enabling investors to maximize their leverage. While DSCR Rental loans, offering up to 85% LTV for purchase and 80% LTV for cash-out refinances with rates from 5.85% and no W-2 or tax returns required, primarily focus on current market value and rental income, the potential for future value (and thus ARV) can be a consideration for investors planning future value-add strategies. Bridge loans, up to 80% LTV, also benefit from ARV assessments, especially when the bridge is used to execute renovations before a long-term exit. AssetLift Lending operates in 46 states, providing these tailored solutions to investors nationwide, excluding Alaska, North Dakota, South Dakota, and Vermont."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between ARV and current market value?",
+        "answer": "Current market value is what a property is worth today, in its present condition. ARV, or After Repair Value, is the estimated value of the property after all planned renovations and improvements have been completed, reflecting its potential future worth."
+      },
+      {
+        "question": "How does AssetLift Lending determine ARV for a loan?",
+        "answer": "AssetLift Lending, working with its capital partners, relies on professional appraisals that include a detailed analysis of comparable sales of recently renovated properties in the subject property's market to accurately determine the After Repair Value (ARV) for underwriting purposes."
+      },
+      {
+        "question": "Can I get a loan from AssetLift Lending if my ARV is high?",
+        "answer": "A high ARV is generally favorable for securing financing, especially for Fix & Flip and Ground-Up Construction loans. AssetLift Lending offers competitive terms, such as up to 95% LTC on purchase for Fix & Flip and up to 90% LTC for Ground-Up, for qualifying deals with strong ARV projections."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Leverage ARV for Your Next Project?",
+      "body": "Discover how AssetLift Lending can help you finance your real estate investments with competitive rates and fast closing times. Apply now to get started!",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
