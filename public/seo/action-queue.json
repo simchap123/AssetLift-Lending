@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-08-02T09:59:06.016Z",
+  "generatedAt": "2026-08-03T11:25:02.584Z",
   "connected": true,
-  "summary": "11 prioritized actions from real Search Console demand (top priority: Maryland).",
+  "summary": "13 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 276,
-      "impressions": 276,
+      "priority": 286,
+      "impressions": 286,
       "position": 0,
-      "rationale": "276 impressions across 7 queries mention Maryland.",
+      "rationale": "286 impressions across 7 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 231,
-      "impressions": 231,
+      "priority": 226,
+      "impressions": 226,
       "position": 0,
-      "rationale": "231 impressions across 7 queries mention Colorado.",
+      "rationale": "226 impressions across 7 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 216,
-      "impressions": 216,
+      "priority": 209,
+      "impressions": 209,
       "position": 0,
-      "rationale": "216 impressions across 6 queries mention Idaho.",
+      "rationale": "209 impressions across 6 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -57,20 +57,40 @@
       "type": "build-demand-page",
       "target": "Florida",
       "category": "Geo",
-      "priority": 109,
-      "impressions": 109,
+      "priority": 110,
+      "impressions": 110,
       "position": 0,
-      "rationale": "109 impressions across 3 queries mention Florida.",
+      "rationale": "110 impressions across 3 queries mention Florida.",
       "action": "Strengthen the Florida state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/contact",
+      "category": "General",
+      "priority": 98,
+      "impressions": 49,
+      "position": 18.4,
+      "rationale": "49 impressions at position 18.4 but only 1 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/about",
       "category": "General",
-      "priority": 80,
-      "impressions": 40,
-      "position": 6.6,
-      "rationale": "40 impressions at position 6.6 but only 0 clicks.",
+      "priority": 76,
+      "impressions": 38,
+      "position": 6.7,
+      "rationale": "38 impressions at position 6.7 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/how-it-works",
+      "category": "General",
+      "priority": 52,
+      "impressions": 26,
+      "position": 4.8,
+      "rationale": "26 impressions at position 4.8 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -97,10 +117,10 @@
       "type": "expand-content",
       "target": "chandler hard money loans",
       "category": "Hard Money",
-      "priority": 14,
-      "impressions": 9,
-      "position": 17,
-      "rationale": "Ranking at position 17 with 9 impressions — within striking distance of page 1.",
+      "priority": 11,
+      "impressions": 7,
+      "position": 17.1,
+      "rationale": "Ranking at position 17.1 with 7 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
