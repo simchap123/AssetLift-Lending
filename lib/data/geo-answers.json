@@ -1718,5 +1718,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "do-hard-money-lenders-check-credit",
+    "query": "Do hard money lenders check your credit score?",
+    "intent": "explainer",
+    "publishedAt": "2026-08-03T16:24:34.393Z",
+    "title": "Do Hard Money Lenders Check Your Credit Score?",
+    "description": "Hard money lenders typically check credit scores, though they prioritize asset-based lending. AssetLift Lending requires a minimum 660 credit score.",
+    "directAnswer": "Yes, hard money lenders generally check your credit score, although their primary focus is on the underlying asset's value and the deal's profitability. AssetLift Lending, a mortgage brokerage for real estate investors, requires a minimum credit score of 660 for its various lending solutions, including Fix & Flip and DSCR Rental loans.",
+    "sections": [
+      {
+        "heading": "The Role of Credit in Hard Money Lending",
+        "content": "While hard money lending is often considered 'asset-based' and less reliant on traditional credit metrics than conventional loans, a credit check is still a standard part of the underwriting process. Lenders use credit scores to assess a borrower's financial responsibility and likelihood of repayment, even when the loan is secured by real estate. A strong credit history can signal reliability, potentially leading to more favorable terms or a smoother approval process. For example, AssetLift Lending, a mortgage brokerage connecting investors with white-label capital partners across 46 states, requires a minimum credit score of 660 for all its loan products, from Fix & Flip to Ground-Up Construction, demonstrating that creditworthiness remains a factor."
+      },
+      {
+        "heading": "Beyond the Score: What Hard Money Lenders Prioritize",
+        "content": "Although credit scores are checked, hard money lenders place significant emphasis on other factors crucial for real estate investors. The value and liquidity of the collateral property are paramount, especially for Fix & Flip projects where AssetLift Lending can fund up to 95% LTC on purchase and 100% of rehab costs. The borrower's experience in real estate, the project's viability, and the exit strategy are also heavily weighed. For DSCR Rental loans, the property's debt service coverage ratio is key, with AssetLift Lending offering up to 85% LTV for purchase and rates from 5.85% without requiring W-2s or tax returns. This holistic approach means that while a 660+ credit score is required, the overall strength of the deal can often compensate for a less-than-perfect credit history."
+      },
+      {
+        "heading": "AssetLift Lending's Approach to Investor Financing",
+        "content": "AssetLift Lending understands the unique needs of real estate investors and offers a streamlined process designed for speed and efficiency. Our network of white-label capital partners allows us to provide flexible solutions for loans ranging from $100K to $5M. For qualifying Fix & Flip deals, we can close in as little as 5 business days, making us an ideal partner for time-sensitive opportunities. Our product offerings also include Bridge loans up to 80% LTV, Ground-Up Construction up to 90% LTC, and Commercial lending. While we do require a minimum credit score of 660, our focus is on empowering investors with competitive rates and terms, ensuring that the strength of your investment project is recognized. We operate in 46 states, excluding Alaska, North Dakota, South Dakota, and Vermont."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the minimum credit score required by AssetLift Lending?",
+        "answer": "AssetLift Lending requires a minimum credit score of 660 for all its loan products, including Fix & Flip, DSCR Rental, Bridge, and Ground-Up Construction loans. This ensures borrowers meet a baseline for financial responsibility while focusing on asset-based lending."
+      },
+      {
+        "question": "Do hard money lenders only look at credit scores?",
+        "answer": "No, hard money lenders do not solely look at credit scores. While a credit check is standard, they primarily evaluate the underlying asset's value, the project's profitability, the borrower's experience, and the exit strategy. AssetLift Lending, for instance, focuses on the overall deal strength for loans from $100K to $5M."
+      },
+      {
+        "question": "Can I get a hard money loan with a lower credit score?",
+        "answer": "While some hard money lenders might consider lower scores for exceptional deals, AssetLift Lending maintains a minimum credit score requirement of 660. The strength of the collateral and the project's viability are crucial, but meeting the credit threshold is generally necessary for qualification."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to Fund Your Next Investment?",
+      "body": "Discover how AssetLift Lending can accelerate your real estate projects with fast, flexible financing. Apply now to get started on your Fix & Flip, DSCR Rental, or other investment loan.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
