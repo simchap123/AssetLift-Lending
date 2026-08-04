@@ -1761,5 +1761,48 @@
       "buttonText": "Apply Now",
       "buttonUrl": "https://www.assetliftlending.com/apply"
     }
+  },
+  {
+    "slug": "how-many-hard-money-loans-can-you-have",
+    "query": "How many hard money loans can you have at the same time?",
+    "intent": "explainer",
+    "publishedAt": "2026-08-04T16:11:19.461Z",
+    "title": "Unlimited Hard Money Loans for Investors",
+    "description": "Discover how many hard money loans real estate investors can have simultaneously with AssetLift Lending, a mortgage brokerage for your investment needs.",
+    "directAnswer": "There is generally no strict limit to the number of hard money loans an investor can have at the same time, as long as each deal qualifies for financing and the investor demonstrates the capacity to manage multiple projects. AssetLift Lending, as a mortgage brokerage, partners with white-label capital providers who assess each project individually, focusing on the asset's viability and the investor's experience rather than a fixed loan count.",
+    "sections": [
+      {
+        "heading": "Investor Capacity and Project Viability Determine Loan Limits",
+        "content": "Unlike traditional mortgages that often cap the number of loans an individual can hold, hard money lending for real estate investors primarily focuses on the viability of each specific investment project and the borrower's proven ability to execute. Lenders, including the capital partners AssetLift Lending works with, evaluate factors such as the property's potential, the investor's experience, and their financial capacity to manage multiple projects simultaneously. For example, a seasoned investor with a strong track record in Fix & Flip projects might secure multiple loans, each up to 95% LTC on purchase and 100% rehab funded, provided each deal meets underwriting criteria. The focus remains on the asset's strength and the investor's strategy, not a predefined limit on the number of active loans."
+      },
+      {
+        "heading": "Asset-Based Lending for Multiple Investment Strategies",
+        "content": "Hard money loans are asset-based, meaning the collateral (the property itself) plays a significant role in the lending decision. This structure allows investors to pursue various strategies concurrently. AssetLift Lending facilitates multiple loan types for investors across 46 states, from Fix & Flip and Ground-Up Construction (up to 90% LTC) to DSCR Rental (up to 85% LTV) and Bridge loans (up to 80% LTV). An investor could simultaneously have a Fix & Flip loan closing in as little as 5 business days, a DSCR Rental loan for a stabilized property with rates from 5.85% (no W-2 or tax returns required), and a Bridge loan for another transitional asset. Each loan, ranging from $100K to $5M, is assessed on its own merits, requiring a minimum credit score of 660 for the borrower."
+      },
+      {
+        "heading": "Strategic Portfolio Growth with AssetLift Lending",
+        "content": "AssetLift Lending acts as a crucial partner for real estate investors looking to scale their portfolios without arbitrary limits on loan count. By leveraging our network of white-label capital partners, we help investors secure financing for multiple projects, allowing for strategic diversification and accelerated growth. Whether you're managing several Fix & Flip projects, expanding your DSCR rental portfolio, or undertaking multiple Ground-Up Construction ventures, our brokerage model supports your ambitions. Our commercial lending options further extend the possibilities for larger-scale developments. We focus on enabling your investment goals, offering flexible solutions for qualifying deals rather than restricting your potential based on a fixed number of loans."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do hard money lenders cap the number of loans an investor can have?",
+        "answer": "Generally, hard money lenders do not impose a strict cap on the number of loans an investor can have. Instead, they evaluate each new project and the investor's overall capacity, experience, and the viability of the specific asset. AssetLift Lending's partners prioritize the strength of the deal."
+      },
+      {
+        "question": "Can I get multiple Fix & Flip loans at the same time?",
+        "answer": "Yes, it is possible to secure multiple Fix & Flip loans simultaneously, provided each project meets underwriting criteria and you demonstrate the capacity to manage them. AssetLift Lending offers Fix & Flip loans with up to 95% LTC on purchase and 100% rehab funded, closing in as little as 5 business days for qualifying deals."
+      },
+      {
+        "question": "What factors influence approval for multiple hard money loans?",
+        "answer": "Key factors influencing approval for multiple hard money loans include the investor's experience and track record, the equity and profitability of each individual project, the investor's liquid reserves, and their creditworthiness (minimum 660 credit score with AssetLift Lending). The strength of the asset itself is paramount."
+      }
+    ],
+    "cta": {
+      "heading": "Expand Your Investment Portfolio with AssetLift Lending",
+      "body": "Ready to scale your real estate investments with multiple hard money loans? Contact AssetLift Lending today to discuss your projects or start your application. Our team is here to help you achieve your goals.",
+      "buttonText": "Apply Now",
+      "buttonUrl": "https://www.assetliftlending.com/apply"
+    }
   }
 ]
