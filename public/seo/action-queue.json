@@ -1,56 +1,56 @@
 {
-  "generatedAt": "2026-08-04T10:40:44.316Z",
+  "generatedAt": "2026-08-05T10:36:43.730Z",
   "connected": true,
-  "summary": "13 prioritized actions from real Search Console demand (top priority: Maryland).",
+  "summary": "14 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 271,
-      "impressions": 271,
+      "priority": 268,
+      "impressions": 268,
       "position": 0,
-      "rationale": "271 impressions across 7 queries mention Maryland.",
+      "rationale": "268 impressions across 7 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 206,
-      "impressions": 206,
+      "priority": 207,
+      "impressions": 207,
       "position": 0,
-      "rationale": "206 impressions across 6 queries mention Colorado.",
+      "rationale": "207 impressions across 6 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 202,
-      "impressions": 202,
+      "priority": 195,
+      "impressions": 195,
       "position": 0,
-      "rationale": "202 impressions across 6 queries mention Idaho.",
+      "rationale": "195 impressions across 6 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "West Virginia",
       "category": "Geo",
-      "priority": 122,
-      "impressions": 122,
+      "priority": 123,
+      "impressions": 123,
       "position": 0,
-      "rationale": "122 impressions across 4 queries mention West Virginia.",
+      "rationale": "123 impressions across 4 queries mention West Virginia.",
       "action": "Add genuine West Virginia market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
       "type": "build-demand-page",
       "target": "Georgia",
       "category": "Geo",
-      "priority": 118,
-      "impressions": 118,
+      "priority": 117,
+      "impressions": 117,
       "position": 0,
-      "rationale": "118 impressions across 4 queries mention Georgia.",
+      "rationale": "117 impressions across 4 queries mention Georgia.",
       "action": "Strengthen the Georgia state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -67,10 +67,10 @@
       "type": "improve-meta",
       "target": "/contact",
       "category": "General",
-      "priority": 96,
-      "impressions": 48,
-      "position": 18.8,
-      "rationale": "48 impressions at position 18.8 but only 0 clicks.",
+      "priority": 94,
+      "impressions": 47,
+      "position": 16.6,
+      "rationale": "47 impressions at position 16.6 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -79,8 +79,8 @@
       "category": "General",
       "priority": 76,
       "impressions": 38,
-      "position": 6.8,
-      "rationale": "38 impressions at position 6.8 but only 0 clicks.",
+      "position": 6.7,
+      "rationale": "38 impressions at position 6.7 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -95,12 +95,22 @@
     },
     {
       "type": "improve-meta",
+      "target": "/lending/new-jersey/ocean-county",
+      "category": "General",
+      "priority": 46,
+      "impressions": 23,
+      "position": 15.2,
+      "rationale": "23 impressions at position 15.2 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
       "target": "/blog/fix-and-flip-profit-margins-2026",
       "category": "Fix & Flip",
       "priority": 44,
       "impressions": 22,
-      "position": 5.7,
-      "rationale": "22 impressions at position 5.7 but only 0 clicks.",
+      "position": 6,
+      "rationale": "22 impressions at position 6 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
