@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T09:00:21.560Z",
+  "generatedAt": "2026-08-08T08:42:37.662Z",
   "connected": true,
   "summary": "14 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
@@ -7,80 +7,80 @@
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 269,
-      "impressions": 269,
+      "priority": 265,
+      "impressions": 265,
       "position": 0,
-      "rationale": "269 impressions across 7 queries mention Maryland.",
+      "rationale": "265 impressions across 7 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 220,
-      "impressions": 220,
+      "priority": 236,
+      "impressions": 236,
       "position": 0,
-      "rationale": "220 impressions across 7 queries mention Colorado.",
+      "rationale": "236 impressions across 8 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 178,
-      "impressions": 178,
+      "priority": 171,
+      "impressions": 171,
       "position": 0,
-      "rationale": "178 impressions across 6 queries mention Idaho.",
+      "rationale": "171 impressions across 6 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "West Virginia",
       "category": "Geo",
-      "priority": 116,
-      "impressions": 116,
+      "priority": 119,
+      "impressions": 119,
       "position": 0,
-      "rationale": "116 impressions across 4 queries mention West Virginia.",
+      "rationale": "119 impressions across 4 queries mention West Virginia.",
       "action": "Add genuine West Virginia market coverage (state page plus top-metro city pages) to capture this demand."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Florida",
-      "category": "Geo",
-      "priority": 102,
-      "impressions": 102,
-      "position": 0,
-      "rationale": "102 impressions across 3 queries mention Florida.",
-      "action": "Strengthen the Florida state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Nevada",
       "category": "Geo",
-      "priority": 101,
-      "impressions": 101,
+      "priority": 104,
+      "impressions": 104,
       "position": 0,
-      "rationale": "101 impressions across 2 queries mention Nevada.",
+      "rationale": "104 impressions across 2 queries mention Nevada.",
       "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Florida",
+      "category": "Geo",
+      "priority": 100,
+      "impressions": 100,
+      "position": 0,
+      "rationale": "100 impressions across 3 queries mention Florida.",
+      "action": "Strengthen the Florida state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/contact",
       "category": "General",
-      "priority": 98,
-      "impressions": 49,
-      "position": 17.6,
-      "rationale": "49 impressions at position 17.6 but only 0 clicks.",
+      "priority": 90,
+      "impressions": 45,
+      "position": 16.6,
+      "rationale": "45 impressions at position 16.6 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/about",
       "category": "General",
-      "priority": 78,
-      "impressions": 39,
-      "position": 6.7,
-      "rationale": "39 impressions at position 6.7 but only 0 clicks.",
+      "priority": 74,
+      "impressions": 37,
+      "position": 7.5,
+      "rationale": "37 impressions at position 7.5 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -105,32 +105,32 @@
     },
     {
       "type": "expand-content",
-      "target": "construction finance arlington tx",
-      "category": "Construction",
-      "priority": 11,
-      "impressions": 7,
-      "position": 13.1,
-      "rationale": "Ranking at position 13.1 with 7 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "expand-content",
-      "target": "bridge loan nebraska",
-      "category": "Bridge",
-      "priority": 9,
-      "impressions": 6,
-      "position": 19.8,
-      "rationale": "Ranking at position 19.8 with 6 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "expand-content",
       "target": "chandler hard money loans",
       "category": "Hard Money",
       "priority": 9,
       "impressions": 6,
       "position": 16.8,
       "rationale": "Ranking at position 16.8 with 6 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "expand-content",
+      "target": "construction finance arlington tx",
+      "category": "Construction",
+      "priority": 9,
+      "impressions": 6,
+      "position": 12.8,
+      "rationale": "Ranking at position 12.8 with 6 impressions — within striking distance of page 1.",
+      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
+    },
+    {
+      "type": "expand-content",
+      "target": "bridge loan nebraska",
+      "category": "Bridge",
+      "priority": 8,
+      "impressions": 5,
+      "position": 18.8,
+      "rationale": "Ranking at position 18.8 with 5 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
