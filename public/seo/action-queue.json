@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-08-10T09:23:44.575Z",
+  "generatedAt": "2026-08-11T08:58:23.485Z",
   "connected": true,
-  "summary": "13 prioritized actions from real Search Console demand (top priority: Maryland).",
+  "summary": "13 prioritized actions from real Search Console demand (top priority: Colorado).",
   "items": [
-    {
-      "type": "build-demand-page",
-      "target": "Maryland",
-      "category": "Geo",
-      "priority": 274,
-      "impressions": 274,
-      "position": 0,
-      "rationale": "274 impressions across 7 queries mention Maryland.",
-      "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 263,
-      "impressions": 263,
+      "priority": 298,
+      "impressions": 298,
       "position": 0,
-      "rationale": "263 impressions across 9 queries mention Colorado.",
+      "rationale": "298 impressions across 10 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Maryland",
+      "category": "Geo",
+      "priority": 256,
+      "impressions": 256,
+      "position": 0,
+      "rationale": "256 impressions across 7 queries mention Maryland.",
+      "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Idaho",
       "category": "Geo",
-      "priority": 159,
-      "impressions": 159,
+      "priority": 135,
+      "impressions": 135,
       "position": 0,
-      "rationale": "159 impressions across 6 queries mention Idaho.",
+      "rationale": "135 impressions across 5 queries mention Idaho.",
       "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -47,10 +47,10 @@
       "type": "build-demand-page",
       "target": "New Jersey",
       "category": "Geo",
-      "priority": 111,
-      "impressions": 111,
+      "priority": 112,
+      "impressions": 112,
       "position": 0,
-      "rationale": "111 impressions across 2 queries mention New Jersey.",
+      "rationale": "112 impressions across 2 queries mention New Jersey.",
       "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -77,20 +77,10 @@
       "type": "improve-meta",
       "target": "/about",
       "category": "General",
-      "priority": 76,
-      "impressions": 38,
-      "position": 9.2,
-      "rationale": "38 impressions at position 9.2 but only 1 clicks.",
-      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
-    },
-    {
-      "type": "improve-meta",
-      "target": "/how-it-works",
-      "category": "General",
-      "priority": 48,
-      "impressions": 24,
-      "position": 3.4,
-      "rationale": "24 impressions at position 3.4 but only 0 clicks.",
+      "priority": 74,
+      "impressions": 37,
+      "position": 9.4,
+      "rationale": "37 impressions at position 9.4 but only 1 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -101,6 +91,16 @@
       "impressions": 21,
       "position": 7.1,
       "rationale": "21 impressions at position 7.1 but only 0 clicks.",
+      "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "improve-meta",
+      "target": "/how-it-works",
+      "category": "General",
+      "priority": 42,
+      "impressions": 21,
+      "position": 7,
+      "rationale": "21 impressions at position 7 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
