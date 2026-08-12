@@ -1,86 +1,86 @@
 {
-  "generatedAt": "2026-08-11T08:58:23.485Z",
+  "generatedAt": "2026-08-12T09:12:55.198Z",
   "connected": true,
-  "summary": "13 prioritized actions from real Search Console demand (top priority: Colorado).",
+  "summary": "12 prioritized actions from real Search Console demand (top priority: Colorado).",
   "items": [
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 298,
-      "impressions": 298,
+      "priority": 305,
+      "impressions": 305,
       "position": 0,
-      "rationale": "298 impressions across 10 queries mention Colorado.",
+      "rationale": "305 impressions across 10 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 256,
-      "impressions": 256,
+      "priority": 290,
+      "impressions": 290,
       "position": 0,
-      "rationale": "256 impressions across 7 queries mention Maryland.",
+      "rationale": "290 impressions across 8 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
-      "target": "Idaho",
+      "target": "Georgia",
       "category": "Geo",
-      "priority": 135,
-      "impressions": 135,
+      "priority": 132,
+      "impressions": 132,
       "position": 0,
-      "rationale": "135 impressions across 5 queries mention Idaho.",
-      "action": "Strengthen the Idaho state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+      "rationale": "132 impressions across 4 queries mention Georgia.",
+      "action": "Strengthen the Georgia state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "New York",
+      "category": "Geo",
+      "priority": 129,
+      "impressions": 129,
+      "position": 0,
+      "rationale": "129 impressions across 2 queries mention New York.",
+      "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "California",
+      "category": "Geo",
+      "priority": 128,
+      "impressions": 128,
+      "position": 0,
+      "rationale": "128 impressions across 4 queries mention California.",
+      "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "West Virginia",
       "category": "Geo",
-      "priority": 119,
-      "impressions": 119,
+      "priority": 118,
+      "impressions": 118,
       "position": 0,
-      "rationale": "119 impressions across 4 queries mention West Virginia.",
+      "rationale": "118 impressions across 4 queries mention West Virginia.",
       "action": "Add genuine West Virginia market coverage (state page plus top-metro city pages) to capture this demand."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "New Jersey",
-      "category": "Geo",
-      "priority": 112,
-      "impressions": 112,
-      "position": 0,
-      "rationale": "112 impressions across 2 queries mention New Jersey.",
-      "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "Nevada",
-      "category": "Geo",
-      "priority": 110,
-      "impressions": 110,
-      "position": 0,
-      "rationale": "110 impressions across 2 queries mention Nevada.",
-      "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
       "target": "/lending/new-jersey/ocean-county",
       "category": "General",
-      "priority": 94,
-      "impressions": 47,
+      "priority": 106,
+      "impressions": 53,
       "position": 16.2,
-      "rationale": "47 impressions at position 16.2 but only 0 clicks.",
+      "rationale": "53 impressions at position 16.2 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/about",
       "category": "General",
-      "priority": 74,
-      "impressions": 37,
-      "position": 9.4,
-      "rationale": "37 impressions at position 9.4 but only 1 clicks.",
+      "priority": 70,
+      "impressions": 35,
+      "position": 8.3,
+      "rationale": "35 impressions at position 8.3 but only 1 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -111,16 +111,6 @@
       "impressions": 5,
       "position": 18.8,
       "rationale": "Ranking at position 18.8 with 5 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "expand-content",
-      "target": "construction finance arlington tx",
-      "category": "Construction",
-      "priority": 8,
-      "impressions": 5,
-      "position": 12.4,
-      "rationale": "Ranking at position 12.4 with 5 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
