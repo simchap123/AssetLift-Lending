@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-08-17T08:45:03.334Z",
+  "generatedAt": "2026-08-18T08:38:13.248Z",
   "connected": true,
-  "summary": "12 prioritized actions from real Search Console demand (top priority: Maryland).",
+  "summary": "11 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 410,
-      "impressions": 410,
+      "priority": 452,
+      "impressions": 452,
       "position": 0,
-      "rationale": "410 impressions across 11 queries mention Maryland.",
+      "rationale": "452 impressions across 13 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 377,
-      "impressions": 377,
+      "priority": 367,
+      "impressions": 367,
       "position": 0,
-      "rationale": "377 impressions across 11 queries mention Colorado.",
+      "rationale": "367 impressions across 11 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 219,
-      "impressions": 219,
+      "priority": 212,
+      "impressions": 212,
       "position": 0,
-      "rationale": "219 impressions across 5 queries mention New York.",
+      "rationale": "212 impressions across 5 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
@@ -45,33 +45,33 @@
     },
     {
       "type": "build-demand-page",
-      "target": "West Virginia",
+      "target": "New Jersey",
       "category": "Geo",
-      "priority": 135,
-      "impressions": 135,
+      "priority": 139,
+      "impressions": 139,
       "position": 0,
-      "rationale": "135 impressions across 5 queries mention West Virginia.",
-      "action": "Add genuine West Virginia market coverage (state page plus top-metro city pages) to capture this demand."
+      "rationale": "139 impressions across 3 queries mention New Jersey.",
+      "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "California",
       "category": "Geo",
-      "priority": 132,
-      "impressions": 132,
+      "priority": 133,
+      "impressions": 133,
       "position": 0,
-      "rationale": "132 impressions across 4 queries mention California.",
+      "rationale": "133 impressions across 4 queries mention California.",
       "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
-      "target": "New Jersey",
+      "target": "West Virginia",
       "category": "Geo",
-      "priority": 123,
-      "impressions": 123,
+      "priority": 119,
+      "impressions": 119,
       "position": 0,
-      "rationale": "123 impressions across 2 queries mention New Jersey.",
-      "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+      "rationale": "119 impressions across 4 queries mention West Virginia.",
+      "action": "Add genuine West Virginia market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
       "type": "improve-meta",
@@ -105,22 +105,12 @@
     },
     {
       "type": "expand-content",
-      "target": "bridge loans west palm beach",
-      "category": "Bridge",
-      "priority": 24,
-      "impressions": 16,
-      "position": 19.6,
-      "rationale": "Ranking at position 19.6 with 16 impressions — within striking distance of page 1.",
-      "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
-    },
-    {
-      "type": "expand-content",
-      "target": "dscr loan lehigh acres",
-      "category": "DSCR / Rental",
+      "target": "asset-based lending michigan",
+      "category": "General",
       "priority": 8,
       "impressions": 5,
-      "position": 16.2,
-      "rationale": "Ranking at position 16.2 with 5 impressions — within striking distance of page 1.",
+      "position": 19.4,
+      "rationale": "Ranking at position 19.4 with 5 impressions — within striking distance of page 1.",
       "action": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     }
   ]
