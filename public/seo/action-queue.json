@@ -1,47 +1,47 @@
 {
-  "generatedAt": "2026-08-19T08:38:43.332Z",
+  "generatedAt": "2026-08-20T08:39:55.032Z",
   "connected": true,
-  "summary": "11 prioritized actions from real Search Console demand (top priority: Maryland).",
+  "summary": "12 prioritized actions from real Search Console demand (top priority: Maryland).",
   "items": [
     {
       "type": "build-demand-page",
       "target": "Maryland",
       "category": "Geo",
-      "priority": 460,
-      "impressions": 460,
+      "priority": 464,
+      "impressions": 464,
       "position": 0,
-      "rationale": "460 impressions across 13 queries mention Maryland.",
+      "rationale": "464 impressions across 13 queries mention Maryland.",
       "action": "Strengthen the Maryland state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
       "target": "Colorado",
       "category": "Geo",
-      "priority": 373,
-      "impressions": 373,
+      "priority": 364,
+      "impressions": 364,
       "position": 0,
-      "rationale": "373 impressions across 11 queries mention Colorado.",
+      "rationale": "364 impressions across 10 queries mention Colorado.",
       "action": "Strengthen the Colorado state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+    },
+    {
+      "type": "build-demand-page",
+      "target": "Hawaii",
+      "category": "Geo",
+      "priority": 266,
+      "impressions": 266,
+      "position": 0,
+      "rationale": "266 impressions across 10 queries mention Hawaii.",
+      "action": "Add genuine Hawaii market coverage (state page plus top-metro city pages) to capture this demand."
     },
     {
       "type": "build-demand-page",
       "target": "New York",
       "category": "Geo",
-      "priority": 222,
-      "impressions": 222,
+      "priority": 218,
+      "impressions": 218,
       "position": 0,
-      "rationale": "222 impressions across 5 queries mention New York.",
+      "rationale": "218 impressions across 5 queries mention New York.",
       "action": "Strengthen the New York state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
-    },
-    {
-      "type": "build-demand-page",
-      "target": "New Jersey",
-      "category": "Geo",
-      "priority": 182,
-      "impressions": 182,
-      "position": 0,
-      "rationale": "182 impressions across 5 queries mention New Jersey.",
-      "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
@@ -55,23 +55,23 @@
     },
     {
       "type": "build-demand-page",
-      "target": "California",
+      "target": "New Jersey",
       "category": "Geo",
-      "priority": 134,
-      "impressions": 134,
+      "priority": 159,
+      "impressions": 159,
       "position": 0,
-      "rationale": "134 impressions across 4 queries mention California.",
-      "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+      "rationale": "159 impressions across 4 queries mention New Jersey.",
+      "action": "Strengthen the New Jersey state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "build-demand-page",
-      "target": "Nevada",
+      "target": "California",
       "category": "Geo",
-      "priority": 123,
-      "impressions": 123,
+      "priority": 136,
+      "impressions": 136,
       "position": 0,
-      "rationale": "123 impressions across 3 queries mention Nevada.",
-      "action": "Strengthen the Nevada state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
+      "rationale": "136 impressions across 4 queries mention California.",
+      "action": "Strengthen the California state page and its city pages with local rates, market specifics, and links to DSCR/bridge/hard-money products."
     },
     {
       "type": "improve-meta",
@@ -79,18 +79,18 @@
       "category": "DSCR / Rental",
       "priority": 54,
       "impressions": 27,
-      "position": 7.5,
-      "rationale": "27 impressions at position 7.5 but only 0 clicks.",
+      "position": 7.3,
+      "rationale": "27 impressions at position 7.3 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
       "type": "improve-meta",
       "target": "/blog/hard-money-loan-points-fees-explained",
       "category": "Hard Money",
-      "priority": 44,
-      "impressions": 22,
-      "position": 11.3,
-      "rationale": "22 impressions at position 11.3 but only 0 clicks.",
+      "priority": 48,
+      "impressions": 24,
+      "position": 11.1,
+      "rationale": "24 impressions at position 11.1 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
     },
     {
@@ -102,6 +102,16 @@
       "position": 10.4,
       "rationale": "21 impressions at position 10.4 but only 0 clicks.",
       "action": "Rewrite the title tag and meta description to be specific and compelling for the queries this page already ranks for."
+    },
+    {
+      "type": "add-internal-links",
+      "target": "construction equipment financing hawaii",
+      "category": "Construction",
+      "priority": 27,
+      "impressions": 18,
+      "position": 6.3,
+      "rationale": "Ranking at position 6.3 with 18 impressions — within striking distance of page 1.",
+      "action": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
     },
     {
       "type": "expand-content",
