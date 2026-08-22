@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-08-21T08:41:41.355Z",
+  "generatedAt": "2026-08-22T08:31:30.840Z",
   "connected": true,
   "dateRange": {
-    "startDate": "2026-07-21",
-    "endDate": "2026-08-18"
+    "startDate": "2026-07-22",
+    "endDate": "2026-08-19"
   },
   "summary": {
-    "clicks": 24,
-    "impressions": 20429,
-    "ctr": 0.0012,
-    "position": 59.5
+    "clicks": 26,
+    "impressions": 19979,
+    "ctr": 0.0013,
+    "position": 59.8
   },
   "strikingDistanceQueries": [
     {
       "query": "construction equipment financing hawaii",
-      "impressions": 19,
+      "impressions": 21,
       "clicks": 0,
       "ctr": 0,
-      "position": 6,
-      "recommendation": "On page 1 but not at the top. Strengthen the ranking page with more depth and add internal links pointing to it to climb the last few spots."
+      "position": 10.1,
+      "recommendation": "On page 2-3. Expand or create focused content targeting this exact query, then link to it from related loan and city pages to break into page 1."
     },
     {
       "query": "easyrent dscr loans",
@@ -32,61 +32,55 @@
   "weakCtrPages": [
     {
       "page": "/lending/new-jersey/ocean-county",
-      "impressions": 91,
+      "impressions": 94,
       "clicks": 0,
       "ctr": 0,
       "position": 17.7,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
-      "page": "/blog/hard-money-loan-points-fees-explained",
-      "impressions": 29,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 10.4,
-      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
-    },
-    {
       "page": "/blog/dscr-loan-llc-vs-personal-name",
-      "impressions": 28,
+      "impressions": 30,
       "clicks": 0,
       "ctr": 0,
       "position": 7.4,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     },
     {
-      "page": "/how-it-works",
-      "impressions": 20,
+      "page": "/blog/hard-money-loan-points-fees-explained",
+      "impressions": 30,
       "clicks": 0,
       "ctr": 0,
-      "position": 10.8,
+      "position": 10.7,
+      "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
+    },
+    {
+      "page": "/how-it-works",
+      "impressions": 21,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 10.4,
       "recommendation": "High impressions but low click-through. Rewrite the title tag and meta description to be more specific and compelling to capture clicks you already earn."
     }
   ],
   "topQueries": [
     {
       "query": "asset based loan companies",
-      "impressions": 474,
+      "impressions": 473,
       "clicks": 0,
-      "position": 80.1
+      "position": 80.2
     },
     {
       "query": "dscr loan for rental property",
-      "impressions": 270,
+      "impressions": 267,
       "clicks": 0,
-      "position": 73.3
+      "position": 73
     },
     {
       "query": "dscr loan calculator",
-      "impressions": 139,
+      "impressions": 134,
       "clicks": 0,
-      "position": 56.9
-    },
-    {
-      "query": "dscr loan maryland",
-      "impressions": 103,
-      "clicks": 0,
-      "position": 60.4
+      "position": 57.6
     },
     {
       "query": "build to rent loans",
@@ -95,34 +89,40 @@
       "position": 80.6
     },
     {
-      "query": "dscr loans new york",
-      "impressions": 95,
+      "query": "dscr loan maryland",
+      "impressions": 97,
       "clicks": 0,
-      "position": 78.5
+      "position": 60.8
     },
     {
       "query": "dscr loan new jersey",
       "impressions": 94,
       "clicks": 0,
-      "position": 74.2
+      "position": 74.3
+    },
+    {
+      "query": "dscr loans new york",
+      "impressions": 87,
+      "clicks": 0,
+      "position": 80.3
+    },
+    {
+      "query": "fix and flip loans jersey city",
+      "impressions": 86,
+      "clicks": 0,
+      "position": 32.9
     },
     {
       "query": "dscr calculator",
-      "impressions": 83,
+      "impressions": 85,
       "clicks": 0,
-      "position": 47.8
-    },
-    {
-      "query": "fix and flip loan calculator",
-      "impressions": 83,
-      "clicks": 0,
-      "position": 47.2
+      "position": 48
     },
     {
       "query": "166 loan",
-      "impressions": 81,
+      "impressions": 83,
       "clicks": 0,
-      "position": 61.1
+      "position": 61
     },
     {
       "query": "dscr loan nevada",
@@ -131,16 +131,22 @@
       "position": 38.4
     },
     {
-      "query": "fix and flip loans connecticut",
-      "impressions": 67,
+      "query": "fix and flip loan calculator",
+      "impressions": 81,
       "clicks": 0,
-      "position": 57.3
+      "position": 47.2
+    },
+    {
+      "query": "fix and flip loans connecticut",
+      "impressions": 66,
+      "clicks": 0,
+      "position": 58
     },
     {
       "query": "dscr loan mississippi",
-      "impressions": 63,
+      "impressions": 60,
       "clicks": 0,
-      "position": 39.2
+      "position": 39.1
     },
     {
       "query": "dscr rental loan",
@@ -149,40 +155,46 @@
       "position": 62.4
     },
     {
+      "query": "dscr rental loans",
+      "impressions": 59,
+      "clicks": 0,
+      "position": 62.5
+    },
+    {
       "query": "dscr loan ohio",
       "impressions": 58,
       "clicks": 0,
-      "position": 73.4
-    },
-    {
-      "query": "dscr rental loans",
-      "impressions": 58,
-      "clicks": 0,
-      "position": 62.3
+      "position": 73.5
     },
     {
       "query": "fast+closing+hard+money+philadelphia",
-      "impressions": 54,
+      "impressions": 55,
       "clicks": 0,
-      "position": 39.8
+      "position": 39.9
     },
     {
-      "query": "credit builder loan colorado",
-      "impressions": 53,
+      "query": "construction+lender+philadelphia",
+      "impressions": 54,
       "clicks": 0,
-      "position": 88.5
+      "position": 48.4
     },
     {
       "query": "credit builder loan west virginia",
       "impressions": 53,
       "clicks": 0,
-      "position": 80.1
+      "position": 80
     },
     {
-      "query": "dscr loan ct",
+      "query": "credit builder loan colorado",
       "impressions": 52,
       "clicks": 0,
-      "position": 66.5
+      "position": 88.3
+    },
+    {
+      "query": "credit builder loan nc",
+      "impressions": 52,
+      "clicks": 0,
+      "position": 97.7
     },
     {
       "query": "fix and flip loan",
@@ -191,22 +203,28 @@
       "position": 76.7
     },
     {
+      "query": "bridge+loans+philadelphia",
+      "impressions": 51,
+      "clicks": 0,
+      "position": 39.1
+    },
+    {
       "query": "credit builder loan hawaii",
       "impressions": 51,
       "clicks": 0,
       "position": 84.3
     },
     {
-      "query": "credit builder loan nc",
+      "query": "credit builder loan montana",
       "impressions": 51,
       "clicks": 0,
-      "position": 97.6
+      "position": 89.9
     },
     {
-      "query": "credit builder loan montana",
-      "impressions": 50,
+      "query": "dscr loan ct",
+      "impressions": 51,
       "clicks": 0,
-      "position": 89.7
+      "position": 67.7
     },
     {
       "query": "dscr loans for airbnb properties",
@@ -215,82 +233,64 @@
       "position": 81.3
     },
     {
-      "query": "fix and flip calculator",
-      "impressions": 50,
-      "clicks": 0,
-      "position": 38.1
-    },
-    {
-      "query": "bridge+loans+philadelphia",
-      "impressions": 49,
-      "clicks": 0,
-      "position": 39.1
-    },
-    {
-      "query": "construction+lender+philadelphia",
-      "impressions": 48,
-      "clicks": 0,
-      "position": 48.9
-    },
-    {
       "query": "credit builder loan new hampshire",
       "impressions": 48,
       "clicks": 0,
-      "position": 92
+      "position": 91.9
     },
     {
       "query": "credit builder loan north carolina",
-      "impressions": 48,
+      "impressions": 47,
       "clicks": 0,
-      "position": 93.4
+      "position": 93.3
     },
     {
       "query": "dscr loan california",
-      "impressions": 48,
-      "clicks": 0,
-      "position": 82.8
-    },
-    {
-      "query": "dscr loan nj",
       "impressions": 47,
       "clicks": 0,
-      "position": 77.5
+      "position": 82.7
+    },
+    {
+      "query": "fix and flip calculator",
+      "impressions": 47,
+      "clicks": 0,
+      "position": 38.7
     },
     {
       "query": "credit builder loan wv",
       "impressions": 46,
       "clicks": 0,
-      "position": 97.5
+      "position": 97.6
+    },
+    {
+      "query": "dscr loan nj",
+      "impressions": 46,
+      "clicks": 0,
+      "position": 78.7
     },
     {
       "query": "dscr loan tennessee",
-      "impressions": 45,
+      "impressions": 46,
       "clicks": 0,
       "position": 69.8
+    },
+    {
+      "query": "colorado credit builder loan",
+      "impressions": 45,
+      "clicks": 0,
+      "position": 92.5
     },
     {
       "query": "fix and flip loan colorado",
       "impressions": 45,
       "clicks": 0,
-      "position": 52.8
+      "position": 52.9
     },
     {
       "query": "colorado hard money lender",
-      "impressions": 44,
-      "clicks": 0,
-      "position": 73.9
-    },
-    {
-      "query": "credit builder loan utah",
-      "impressions": 44,
-      "clicks": 0,
-      "position": 81.2
-    },
-    {
-      "query": "colorado credit builder loan",
       "impressions": 43,
       "clicks": 0,
-      "position": 92.6
+      "position": 73.9
     },
     {
       "query": "dscr loans california",
@@ -305,22 +305,22 @@
       "position": 82
     },
     {
+      "query": "fix and flip lenders new york",
+      "impressions": 42,
+      "clicks": 0,
+      "position": 62.2
+    },
+    {
       "query": "fix and flip loan maryland",
-      "impressions": 43,
+      "impressions": 42,
       "clicks": 0,
       "position": 46.6
     },
     {
-      "query": "fix and flip lenders new york",
-      "impressions": 42,
-      "clicks": 0,
-      "position": 61.7
-    },
-    {
-      "query": "dscr loans minnesota",
+      "query": "credit builder loan utah",
       "impressions": 41,
       "clicks": 0,
-      "position": 43.2
+      "position": 81.2
     },
     {
       "query": "construction loans maryland",
@@ -329,28 +329,34 @@
       "position": 77.3
     },
     {
-      "query": "fix and flip bridge loans maryland",
-      "impressions": 39,
+      "query": "arv+based+lending+philadelphia",
+      "impressions": 38,
       "clicks": 0,
-      "position": 34.7
+      "position": 60.3
+    },
+    {
+      "query": "dscr loans minnesota",
+      "impressions": 38,
+      "clicks": 0,
+      "position": 44.4
+    },
+    {
+      "query": "fix and flip bridge loans maryland",
+      "impressions": 38,
+      "clicks": 0,
+      "position": 34.6
     },
     {
       "query": "asset based loan florida",
-      "impressions": 38,
+      "impressions": 37,
       "clicks": 0,
-      "position": 68.9
+      "position": 70.7
     },
     {
-      "query": "asset based loan miami",
-      "impressions": 36,
+      "query": "dscr loans ohio",
+      "impressions": 37,
       "clicks": 0,
-      "position": 65.7
-    },
-    {
-      "query": "connecticut hard money lenders",
-      "impressions": 36,
-      "clicks": 0,
-      "position": 61.2
+      "position": 70.7
     },
     {
       "query": "dscr loan colorado",
@@ -359,22 +365,16 @@
       "position": 62.4
     },
     {
-      "query": "dscr loans maryland",
-      "impressions": 36,
-      "clicks": 0,
-      "position": 56.1
-    },
-    {
-      "query": "dscr loans ohio",
-      "impressions": 36,
-      "clicks": 0,
-      "position": 70.7
-    },
-    {
-      "query": "arv+based+lending+philadelphia",
+      "query": "asset based loan miami",
       "impressions": 35,
       "clicks": 0,
-      "position": 60.2
+      "position": 66.8
+    },
+    {
+      "query": "connecticut hard money lenders",
+      "impressions": 35,
+      "clicks": 0,
+      "position": 61.3
     },
     {
       "query": "construction loan maryland",
@@ -386,43 +386,55 @@
       "query": "bridge loan arkansas",
       "impressions": 34,
       "clicks": 0,
-      "position": 47.5
+      "position": 48.5
     },
     {
-      "query": "colorado hard money lenders",
+      "query": "dscr loans maryland",
       "impressions": 34,
       "clicks": 0,
-      "position": 69.5
+      "position": 56.1
     },
     {
-      "query": "dscr loan lenders maryland",
+      "query": "fix and flip loans maryland",
       "impressions": 34,
       "clicks": 0,
-      "position": 71.5
-    },
-    {
-      "query": "dscr loans colorado",
-      "impressions": 34,
-      "clicks": 0,
-      "position": 59.1
-    },
-    {
-      "query": "fix and flip loans california",
-      "impressions": 34,
-      "clicks": 0,
-      "position": 77
+      "position": 45.6
     },
     {
       "query": "bridge loan hawaii",
       "impressions": 33,
       "clicks": 0,
-      "position": 51.9
+      "position": 52.1
+    },
+    {
+      "query": "colorado hard money lenders",
+      "impressions": 33,
+      "clicks": 0,
+      "position": 69.5
     },
     {
       "query": "dscr loan georgia",
       "impressions": 33,
       "clicks": 0,
-      "position": 77.8
+      "position": 78
+    },
+    {
+      "query": "dscr loan lenders maryland",
+      "impressions": 33,
+      "clicks": 0,
+      "position": 71.6
+    },
+    {
+      "query": "dscr loans colorado",
+      "impressions": 33,
+      "clicks": 0,
+      "position": 59.2
+    },
+    {
+      "query": "fix and flip loans california",
+      "impressions": 33,
+      "clicks": 0,
+      "position": 77
     },
     {
       "query": "connecticut hard money",
@@ -431,10 +443,16 @@
       "position": 62.7
     },
     {
+      "query": "dscr lenders hawaii",
+      "impressions": 32,
+      "clicks": 0,
+      "position": 63.4
+    },
+    {
       "query": "fix and flip deal calculator",
       "impressions": 32,
       "clicks": 0,
-      "position": 39.6
+      "position": 39.5
     },
     {
       "query": "commercial construction loans hawaii",
@@ -443,22 +461,22 @@
       "position": 65.5
     },
     {
-      "query": "dscr lenders hawaii",
+      "query": "credit builder loan nv",
       "impressions": 31,
       "clicks": 0,
-      "position": 63.5
+      "position": 77.9
     },
     {
       "query": "asset based lending colorado",
       "impressions": 30,
       "clicks": 0,
-      "position": 58.9
+      "position": 59.1
     },
     {
       "query": "asset based loans denver",
       "impressions": 30,
       "clicks": 0,
-      "position": 59.8
+      "position": 60.5
     },
     {
       "query": "dscr calculator rental property",
@@ -474,33 +492,15 @@
     },
     {
       "query": "fix and flip lender new york",
-      "impressions": 30,
+      "impressions": 29,
       "clicks": 0,
-      "position": 60.3
+      "position": 60.8
     },
     {
       "query": "asset based lending georgia",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 74.5
-    },
-    {
-      "query": "fix and flip loan mississippi",
-      "impressions": 29,
-      "clicks": 0,
-      "position": 33.6
-    },
-    {
-      "query": "100 rehab funding",
       "impressions": 28,
       "clicks": 0,
-      "position": 35.9
-    },
-    {
-      "query": "bridge loan maryland",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 57.1
+      "position": 74.2
     },
     {
       "query": "construction financing hawaii",
@@ -509,22 +509,16 @@
       "position": 69.8
     },
     {
-      "query": "credit builder loan ct",
+      "query": "construction loans beckley wv",
       "impressions": 28,
       "clicks": 0,
-      "position": 91.9
-    },
-    {
-      "query": "credit builder loan nv",
-      "impressions": 28,
-      "clicks": 0,
-      "position": 77.8
+      "position": 76.4
     },
     {
       "query": "fix and flip bridge loans new york",
       "impressions": 28,
       "clicks": 0,
-      "position": 54.6
+      "position": 55.7
     },
     {
       "query": "fix and flip financing",
@@ -533,64 +527,70 @@
       "position": 74
     },
     {
-      "query": "fix and flip lenders maryland",
+      "query": "fix and flip loan mississippi",
       "impressions": 28,
       "clicks": 0,
-      "position": 47
+      "position": 34.3
+    },
+    {
+      "query": "fix and flip loans miami",
+      "impressions": 28,
+      "clicks": 0,
+      "position": 44.6
+    },
+    {
+      "query": "100 rehab funding",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 36.5
     },
     {
       "query": "bergen county apartment loans",
       "impressions": 27,
       "clicks": 0,
-      "position": 30.5
+      "position": 30.7
+    },
+    {
+      "query": "bridge loan maryland",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 57.3
     },
     {
       "query": "business construction financing eastern panhandle",
       "impressions": 27,
       "clicks": 0,
-      "position": 87
+      "position": 87.5
     },
     {
       "query": "commercial hard money lenders georgia",
       "impressions": 27,
       "clicks": 0,
-      "position": 62.1
+      "position": 62.2
     },
     {
-      "query": "construction loans beckley wv",
+      "query": "construction+loans+jersey+shore",
       "impressions": 27,
       "clicks": 0,
-      "position": 76.4
+      "position": 57.3
     },
     {
       "query": "dscr loan long island ny",
       "impressions": 27,
       "clicks": 0,
-      "position": 41.7
+      "position": 42.4
     },
     {
       "query": "asset based loans colorado",
       "impressions": 26,
       "clicks": 0,
-      "position": 59.4
+      "position": 59.7
     },
     {
-      "query": "bridge loan idaho",
+      "query": "credit builder loan ct",
       "impressions": 26,
       "clicks": 0,
-      "position": 47
-    },
-    {
-      "query": "bridge loans in ct",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 63
-    },
-    {
-      "query": "construction+loans+jersey+shore",
-      "impressions": 26,
-      "clicks": 0,
-      "position": 57.2
+      "position": 91.7
     },
     {
       "query": "dscr loan hawaii",
@@ -602,13 +602,13 @@
       "query": "dscr loans north carolina",
       "impressions": 26,
       "clicks": 0,
-      "position": 69.6
+      "position": 70
     },
     {
-      "query": "dscr long island ny",
+      "query": "fix and flip lenders maryland",
       "impressions": 26,
       "clicks": 0,
-      "position": 41.1
+      "position": 47.9
     },
     {
       "query": "asset based bridge loan",
@@ -626,7 +626,19 @@
       "query": "baltimore fix and flip loan",
       "impressions": 25,
       "clicks": 0,
-      "position": 51.2
+      "position": 51.1
+    },
+    {
+      "query": "bridge loan new jersey",
+      "impressions": 25,
+      "clicks": 0,
+      "position": 56.4
+    },
+    {
+      "query": "bridge loans in ct",
+      "impressions": 25,
+      "clicks": 0,
+      "position": 64.1
     },
     {
       "query": "colorado hard money loans",
@@ -644,67 +656,61 @@
       "query": "credit builder loan maryland",
       "impressions": 25,
       "clicks": 0,
-      "position": 93.4
+      "position": 93.3
     },
     {
-      "query": "fix and flip loan connecticut",
-      "impressions": 25,
-      "clicks": 0,
-      "position": 57.8
-    },
-    {
-      "query": "bridge loan new jersey",
+      "query": "brooklyn apartment loans",
       "impressions": 24,
       "clicks": 0,
-      "position": 56.2
+      "position": 47.6
     },
     {
       "query": "dscr loan lender in denver",
       "impressions": 24,
       "clicks": 0,
-      "position": 76
+      "position": 75.1
     },
     {
       "query": "dscr loans for rental property",
       "impressions": 24,
       "clicks": 0,
-      "position": 68.3
+      "position": 70.5
+    },
+    {
+      "query": "dscr long island ny",
+      "impressions": 24,
+      "clicks": 0,
+      "position": 42.2
+    },
+    {
+      "query": "equipment financing hawaii",
+      "impressions": 24,
+      "clicks": 0,
+      "position": 4.8
     },
     {
       "query": "fix and flip loan denver",
       "impressions": 24,
       "clicks": 0,
-      "position": 65.7
+      "position": 65.8
+    },
+    {
+      "query": "bridge loan idaho",
+      "impressions": 23,
+      "clicks": 0,
+      "position": 47.1
+    },
+    {
+      "query": "fix and flip loan connecticut",
+      "impressions": 23,
+      "clicks": 0,
+      "position": 58.3
     },
     {
       "query": "bridge loan west virginia",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 34
-    },
-    {
-      "query": "brooklyn apartment loans",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 47.4
-    },
-    {
-      "query": "dscr loan hauppauge ny",
-      "impressions": 23,
-      "clicks": 0,
-      "position": 84.7
-    },
-    {
-      "query": "hard money lenders maryland",
-      "impressions": 22,
-      "clicks": 1,
-      "position": 61.6
-    },
-    {
-      "query": "best installment loan west virginia",
       "impressions": 22,
       "clicks": 0,
-      "position": 67.5
+      "position": 35
     },
     {
       "query": "build to rent loan",
@@ -713,16 +719,40 @@
       "position": 75.8
     },
     {
-      "query": "equipment financing hawaii",
+      "query": "collateral loan brooklyn",
       "impressions": 22,
       "clicks": 0,
-      "position": 1.9
+      "position": 60.6
     },
     {
-      "query": "collateral loan brooklyn",
+      "query": "dscr loan hauppauge ny",
+      "impressions": 22,
+      "clicks": 0,
+      "position": 84.7
+    },
+    {
+      "query": "fix and flip loans massachusetts",
+      "impressions": 22,
+      "clicks": 0,
+      "position": 43
+    },
+    {
+      "query": "best installment loan west virginia",
       "impressions": 21,
       "clicks": 0,
-      "position": 60.5
+      "position": 67.5
+    },
+    {
+      "query": "construction equipment financing hawaii",
+      "impressions": 21,
+      "clicks": 0,
+      "position": 10.1
+    },
+    {
+      "query": "dscr fix and flip loans",
+      "impressions": 21,
+      "clicks": 0,
+      "position": 63
     },
     {
       "query": "dscr loan indiana",
@@ -731,10 +761,10 @@
       "position": 59.6
     },
     {
-      "query": "dscr loan new hampshire",
-      "impressions": 21,
-      "clicks": 0,
-      "position": 36.9
+      "query": "hard money lenders maryland",
+      "impressions": 20,
+      "clicks": 1,
+      "position": 61.7
     },
     {
       "query": "arkansas credit builder loan",
@@ -743,28 +773,16 @@
       "position": 76
     },
     {
-      "query": "asset loans michigan",
-      "impressions": 20,
-      "clicks": 0,
-      "position": 41.5
-    },
-    {
-      "query": "dscr fix and flip loans",
-      "impressions": 20,
-      "clicks": 0,
-      "position": 62.9
-    },
-    {
-      "query": "dscr loan maryland guide",
-      "impressions": 20,
-      "clicks": 0,
-      "position": 69.3
-    },
-    {
       "query": "dscr loan nc",
       "impressions": 20,
       "clicks": 0,
       "position": 77.7
+    },
+    {
+      "query": "dscr loan new hampshire",
+      "impressions": 20,
+      "clicks": 0,
+      "position": 36.9
     },
     {
       "query": "dscr loan new york",
@@ -773,28 +791,16 @@
       "position": 77.7
     },
     {
-      "query": "dscr loan pennsylvania",
-      "impressions": 20,
-      "clicks": 0,
-      "position": 59.7
-    },
-    {
       "query": "fix and flip loans colorado",
       "impressions": 20,
       "clicks": 0,
       "position": 49.4
     },
     {
-      "query": "asset based lending in indiana",
+      "query": "asset loans michigan",
       "impressions": 19,
       "clicks": 0,
-      "position": 71.4
-    },
-    {
-      "query": "bridge loan utah",
-      "impressions": 19,
-      "clicks": 0,
-      "position": 59.8
+      "position": 42.6
     },
     {
       "query": "bridge loans jacksonville fl",
@@ -803,22 +809,16 @@
       "position": 45.4
     },
     {
-      "query": "california dscr loans",
+      "query": "dscr loan maryland guide",
       "impressions": 19,
       "clicks": 0,
-      "position": 81.7
+      "position": 69.2
     },
     {
-      "query": "construction equipment financing hawaii",
+      "query": "dscr loan pennsylvania",
       "impressions": 19,
       "clicks": 0,
-      "position": 6
-    },
-    {
-      "query": "fix and flip loan new hampshire",
-      "impressions": 19,
-      "clicks": 0,
-      "position": 32.6
+      "position": 59.7
     },
     {
       "query": "fix and flip loan new jersey",
@@ -827,16 +827,34 @@
       "position": 69.1
     },
     {
+      "query": "asset based lending in indiana",
+      "impressions": 18,
+      "clicks": 0,
+      "position": 74.6
+    },
+    {
       "query": "asset‑based bridge loans",
       "impressions": 18,
       "clicks": 0,
-      "position": 64.6
+      "position": 65.5
     },
     {
-      "query": "best installment loans west virginia",
+      "query": "bridge loan utah",
       "impressions": 18,
       "clicks": 0,
-      "position": 65.8
+      "position": 59.8
+    },
+    {
+      "query": "california dscr loans",
+      "impressions": 18,
+      "clicks": 0,
+      "position": 81.6
+    },
+    {
+      "query": "commercial equipment financing hawaii",
+      "impressions": 18,
+      "clicks": 0,
+      "position": 77.2
     },
     {
       "query": "fix and flip loan hawaii",
@@ -851,34 +869,22 @@
       "position": 32.6
     },
     {
-      "query": "bridge loans nevada",
-      "impressions": 17,
+      "query": "fix and flip loan new hampshire",
+      "impressions": 18,
       "clicks": 0,
-      "position": 47.9
+      "position": 33.7
     },
     {
-      "query": "castlerock lending",
+      "query": "best installment loans west virginia",
       "impressions": 17,
       "clicks": 0,
-      "position": 55
+      "position": 65.8
     },
     {
       "query": "commercial building loans nh",
       "impressions": 17,
       "clicks": 0,
       "position": 80.4
-    },
-    {
-      "query": "commercial equipment financing hawaii",
-      "impressions": 17,
-      "clicks": 0,
-      "position": 77.2
-    },
-    {
-      "query": "connecticut bridge loan",
-      "impressions": 17,
-      "clicks": 0,
-      "position": 68.1
     },
     {
       "query": "credit builder loan md",
@@ -905,16 +911,40 @@
       "position": 36.4
     },
     {
+      "query": "fix and flip loans georgia",
+      "impressions": 17,
+      "clicks": 0,
+      "position": 47.9
+    },
+    {
       "query": "best fix and flip loans",
       "impressions": 16,
       "clicks": 0,
       "position": 59.1
     },
     {
-      "query": "bridge loans miami fl",
+      "query": "bridge loans nevada",
       "impressions": 16,
       "clicks": 0,
-      "position": 30.4
+      "position": 47.7
+    },
+    {
+      "query": "castlerock lending",
+      "impressions": 16,
+      "clicks": 0,
+      "position": 54.9
+    },
+    {
+      "query": "commercial real estate financing hawaii",
+      "impressions": 16,
+      "clicks": 0,
+      "position": 74.2
+    },
+    {
+      "query": "connecticut bridge loan",
+      "impressions": 16,
+      "clicks": 0,
+      "position": 68.1
     },
     {
       "query": "construction to permanent loan maryland",
@@ -929,93 +959,68 @@
       "position": 44.9
     },
     {
-      "query": "dscr loan wisconsin",
-      "impressions": 16,
-      "clicks": 0,
-      "position": 61.5
-    },
-    {
       "query": "dscr loans new jersey",
       "impressions": 16,
       "clicks": 0,
       "position": 78.8
-    },
-    {
-      "query": "dscr+loans+philadelphia",
-      "impressions": 16,
-      "clicks": 0,
-      "position": 68.5
-    },
-    {
-      "query": "fix and flip loans georgia",
-      "impressions": 16,
-      "clicks": 0,
-      "position": 48.2
-    },
-    {
-      "query": "asset based lending los angeles",
-      "impressions": 15,
-      "clicks": 0,
-      "position": 76.2
-    },
-    {
-      "query": "bridge loan oklahoma",
-      "impressions": 15,
-      "clicks": 0,
-      "position": 61.1
     }
   ],
   "categories": [
     {
       "name": "DSCR / Rental",
-      "queries": 311,
-      "impressions": 3207,
+      "queries": 307,
+      "impressions": 3124,
       "clicks": 0,
-      "position": 62.4,
+      "position": 62.9,
       "topQueries": [
         {
           "query": "dscr loan for rental property",
-          "impressions": 270,
-          "position": 73.3
+          "impressions": 267,
+          "position": 73
         },
         {
           "query": "dscr loan calculator",
-          "impressions": 139,
-          "position": 56.9
+          "impressions": 134,
+          "position": 57.6
         },
         {
           "query": "dscr loan maryland",
-          "impressions": 103,
-          "position": 60.4
-        },
-        {
-          "query": "dscr loans new york",
-          "impressions": 95,
-          "position": 78.5
+          "impressions": 97,
+          "position": 60.8
         },
         {
           "query": "dscr loan new jersey",
           "impressions": 94,
-          "position": 74.2
+          "position": 74.3
+        },
+        {
+          "query": "dscr loans new york",
+          "impressions": 87,
+          "position": 80.3
         }
       ]
     },
     {
       "name": "Fix & Flip",
-      "queries": 172,
-      "impressions": 1496,
+      "queries": 187,
+      "impressions": 1691,
       "clicks": 0,
-      "position": 53.1,
+      "position": 51.8,
       "topQueries": [
         {
+          "query": "fix and flip loans jersey city",
+          "impressions": 86,
+          "position": 32.9
+        },
+        {
           "query": "fix and flip loan calculator",
-          "impressions": 83,
+          "impressions": 81,
           "position": 47.2
         },
         {
           "query": "fix and flip loans connecticut",
-          "impressions": 67,
-          "position": 57.3
+          "impressions": 66,
+          "position": 58
         },
         {
           "query": "fix and flip loan",
@@ -1024,75 +1029,70 @@
         },
         {
           "query": "fix and flip calculator",
-          "impressions": 50,
-          "position": 38.1
-        },
-        {
-          "query": "fix and flip loan colorado",
-          "impressions": 45,
-          "position": 52.8
+          "impressions": 47,
+          "position": 38.7
         }
       ]
     },
     {
       "name": "Bridge",
-      "queries": 107,
-      "impressions": 798,
+      "queries": 103,
+      "impressions": 761,
       "clicks": 0,
-      "position": 55.1,
+      "position": 55.2,
       "topQueries": [
         {
           "query": "bridge+loans+philadelphia",
-          "impressions": 49,
+          "impressions": 51,
           "position": 39.1
         },
         {
           "query": "bridge loan arkansas",
           "impressions": 34,
-          "position": 47.5
+          "position": 48.5
         },
         {
           "query": "bridge loan hawaii",
           "impressions": 33,
-          "position": 51.9
+          "position": 52.1
         },
         {
           "query": "bridge loan maryland",
-          "impressions": 28,
-          "position": 57.1
+          "impressions": 27,
+          "position": 57.3
         },
         {
-          "query": "bridge loan idaho",
-          "impressions": 26,
-          "position": 47
+          "query": "asset based bridge loan",
+          "impressions": 25,
+          "position": 72.1
         }
       ]
     },
     {
       "name": "Hard Money",
       "queries": 60,
-      "impressions": 460,
+      "impressions": 450,
       "clicks": 1,
-      "position": 60.8,
+      "position": 60.7,
       "topQueries": [
         {
           "query": "fast+closing+hard+money+philadelphia",
-          "impressions": 54,
-          "position": 39.8
+          "impressions": 55,
+          "position": 39.9
         },
         {
           "query": "colorado hard money lender",
-          "impressions": 44,
+          "impressions": 43,
           "position": 73.9
         },
         {
           "query": "connecticut hard money lenders",
-          "impressions": 36,
-          "position": 61.2
+          "impressions": 35,
+          "position": 61.3
         },
         {
           "query": "colorado hard money lenders",
-          "impressions": 34,
+          "impressions": 33,
           "position": 69.5
         },
         {
@@ -1104,15 +1104,15 @@
     },
     {
       "name": "Construction",
-      "queries": 57,
-      "impressions": 444,
+      "queries": 56,
+      "impressions": 449,
       "clicks": 0,
-      "position": 70,
+      "position": 69.5,
       "topQueries": [
         {
           "query": "construction+lender+philadelphia",
-          "impressions": 48,
-          "position": 48.9
+          "impressions": 54,
+          "position": 48.4
         },
         {
           "query": "construction loans maryland",
@@ -1138,10 +1138,10 @@
     },
     {
       "name": "Commercial / Multifamily",
-      "queries": 48,
-      "impressions": 288,
+      "queries": 46,
+      "impressions": 279,
       "clicks": 0,
-      "position": 63.4,
+      "position": 62.9,
       "topQueries": [
         {
           "query": "essex county apartment loans",
@@ -1151,42 +1151,35 @@
         {
           "query": "bergen county apartment loans",
           "impressions": 27,
-          "position": 30.5
+          "position": 30.7
         },
         {
           "query": "commercial hard money lenders georgia",
           "impressions": 27,
-          "position": 62.1
+          "position": 62.2
         },
         {
           "query": "brooklyn apartment loans",
-          "impressions": 23,
-          "position": 47.4
+          "impressions": 24,
+          "position": 47.6
         },
         {
-          "query": "commercial building loans nh",
-          "impressions": 17,
-          "position": 80.4
+          "query": "commercial equipment financing hawaii",
+          "impressions": 18,
+          "position": 77.2
         }
       ]
     }
   ],
   "recent": {
-    "startDate": "2026-08-11",
-    "endDate": "2026-08-18",
-    "clicks": 6,
-    "impressions": 4595,
-    "ctr": 0.0013,
-    "position": 57.8
+    "startDate": "2026-08-12",
+    "endDate": "2026-08-19",
+    "clicks": 8,
+    "impressions": 4374,
+    "ctr": 0.0018,
+    "position": 57.5
   },
   "dailyMetrics": [
-    {
-      "date": "2026-07-21",
-      "clicks": 1,
-      "impressions": 826,
-      "ctr": 0.0012,
-      "position": 52.2
-    },
     {
       "date": "2026-07-22",
       "clicks": 1,
@@ -1358,9 +1351,9 @@
     {
       "date": "2026-08-15",
       "clicks": 0,
-      "impressions": 352,
+      "impressions": 353,
       "ctr": 0,
-      "position": 60.5
+      "position": 60.3
     },
     {
       "date": "2026-08-16",
@@ -1382,6 +1375,13 @@
       "impressions": 520,
       "ctr": 0,
       "position": 56.6
+    },
+    {
+      "date": "2026-08-19",
+      "clicks": 3,
+      "impressions": 375,
+      "ctr": 0.008,
+      "position": 55.5
     }
   ],
   "message": "Found 2 striking-distance queries and 4 pages with weak click-through over the last 28 days."
