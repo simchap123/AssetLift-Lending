@@ -1,6 +1,7 @@
 {
-  "generatedAt": "2026-09-12T23:56:00.827Z",
+  "generatedAt": "2026-09-13T09:14:31.315Z",
   "job": "audit",
-  "ok": true,
-  "durationMs": 3606
+  "ok": false,
+  "durationMs": 4343,
+  "error": "GitHub write failed for public/seo/health.json: 500 "
 }
